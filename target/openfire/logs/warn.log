@@ -1,0 +1,47 @@
+2013.08.30 12:47:35 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.08.30 12:47:36 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.10 10:40:34 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.10 10:40:34 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.12 10:40:36 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.12 10:40:36 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.12 10:45:14 org.jivesoftware.openfire.nio.ConnectionHandler - Closing session due to exception: (SOCKET, R: /127.0.0.1:62139, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
+org.apache.mina.filter.codec.ProtocolDecoderException: org.jivesoftware.openfire.nio.XMLNotWellFormedException: Character is invalid in:  (Hexdump: C2 80 C2 8C C2 84 36 C2 B2 C2 B9 C2 B9 C2 B0 C2 B3 C2 B2 C2 92 00 48 C2 9C C3 9B 58 58 C3 9A C3 9D 5C C3 99 5C C2 90 1A C2 98 5D C2 9A 59 5C C2 8B C2 9C 1B 18 58 C3 99 5B C2 98 C3 9A 5B C3 8B C3 94 C3 9B 58 58 C3 9A C3 A4 C2 80 20 C2 97 C2 87 C2 85 24 47 32 C3 93 48 C2 90 08 32 C3 94 C3 82 C3 AC C3 92 C3 8A C3 A4 C2 80 C3 94 C3 82 C3 AC C3 92 C3 8A C3 A4 5C C3 A0 C3 98 C3 82 C3 86 C3 8A C3 9C C3 86 C3 92 C3 9F C2 92 01 41 C2 98 C3 9A 18 5D 23 20 C2 AC 4D C3 AC C2 8F 30 1D 21 C2 BD C2 B1 C2 84 C2 85 08 3B C2 A3 43 C2 93 2B 0B 24 08 75 64 31 45 39 30 20)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:170)
+	at org.apache.mina.common.support.AbstractIoFilterChain.callNextMessageReceived(AbstractIoFilterChain.java:299)
+	at org.apache.mina.common.support.AbstractIoFilterChain.access$1100(AbstractIoFilterChain.java:53)
+	at org.apache.mina.common.support.AbstractIoFilterChain$EntryImpl$1.messageReceived(AbstractIoFilterChain.java:648)
+	at org.apache.mina.common.IoFilterAdapter.messageReceived(IoFilterAdapter.java:80)
+	at org.jivesoftware.openfire.plugin.RawPrintFilter.messageReceived(RawPrintFilter.java:66)
+	at org.apache.mina.common.support.AbstractIoFilterChain.callNextMessageReceived(AbstractIoFilterChain.java:299)
+	at org.apache.mina.common.support.AbstractIoFilterChain.access$1100(AbstractIoFilterChain.java:53)
+	at org.apache.mina.common.support.AbstractIoFilterChain$EntryImpl$1.messageReceived(AbstractIoFilterChain.java:648)
+	at org.apache.mina.common.IoFilterAdapter.messageReceived(IoFilterAdapter.java:80)
+	at cl.clayster.exi.EXIDecoderFilter.messageReceived(EXIDecoderFilter.java:47)
+	at org.apache.mina.common.support.AbstractIoFilterChain.callNextMessageReceived(AbstractIoFilterChain.java:299)
+	at org.apache.mina.common.support.AbstractIoFilterChain.access$1100(AbstractIoFilterChain.java:53)
+	at org.apache.mina.common.support.AbstractIoFilterChain$EntryImpl$1.messageReceived(AbstractIoFilterChain.java:648)
+	at org.apache.mina.common.IoFilterAdapter.messageReceived(IoFilterAdapter.java:80)
+	at cl.clayster.exi.EXIFilter.messageReceived(EXIFilter.java:54)
+	at org.apache.mina.common.support.AbstractIoFilterChain.callNextMessageReceived(AbstractIoFilterChain.java:299)
+	at org.apache.mina.common.support.AbstractIoFilterChain.access$1100(AbstractIoFilterChain.java:53)
+	at org.apache.mina.common.support.AbstractIoFilterChain$EntryImpl$1.messageReceived(AbstractIoFilterChain.java:648)
+	at org.apache.mina.filter.executor.ExecutorFilter.processEvent(ExecutorFilter.java:239)
+	at org.apache.mina.filter.executor.ExecutorFilter$ProcessEventsRunnable.run(ExecutorFilter.java:283)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.jivesoftware.openfire.nio.XMLNotWellFormedException: Character is invalid in: 
+	at org.jivesoftware.openfire.nio.XMLLightweightParser.read(XMLLightweightParser.java:208)
+	at org.jivesoftware.openfire.nio.XMPPDecoder.doDecode(XMPPDecoder.java:41)
+	at org.apache.mina.filter.codec.CumulativeProtocolDecoder.decode(CumulativeProtocolDecoder.java:133)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:163)
+	... 24 more
+2013.09.16 12:04:26 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.16 12:04:26 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.23 12:17:02 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.23 12:17:02 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.23 13:57:18 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2013.09.23 13:57:25 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
+2013.09.23 13:57:53 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.09.23 13:57:53 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
