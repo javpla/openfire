@@ -59,7 +59,7 @@ public final class setup_002dldap_002duser_005ftest_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     String errorDetail = null;
     Map<String, String> attributes = null;
@@ -102,330 +102,330 @@ public final class setup_002dldap_002duser_005ftest_jsp extends org.apache.jaspe
         errorDetail = LocaleUtils.getLocalizedString("setup.ldap.user.test.internal-server-error");
     }
 
-      out.write("\r\n<html>\r\n<head>\r\n<meta name=\"decorator\" content=\"none\"/>\r\n</head>\r\n<body>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"../js/tooltips/domTT.js\"></script>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"../js/tooltips/domLib.js\"></script>\r\n<style type=\"text/css\">\r\n#lightbox{\r\n\ttop: 20%;\r\n\tmargin-top: -20px;\r\n\t}\r\n\r\n.jive-testPanel {\r\n\tmargin-top: -100px;\r\n\t}\r\nhtml>body .jive-testPanel {\r\n\tmargin-top: 0px;\r\n\t}\r\n</style>\r\n\r\n<!-- BEGIN connection settings test panel -->\r\n<div class=\"jive-testPanel\">\r\n\t<div class=\"jive-testPanel-content\">\r\n\r\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\r\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
+      out.write("\n<html>\n<head>\n<meta name=\"decorator\" content=\"none\"/>\n</head>\n<body>\n<script type=\"text/javascript\" language=\"javascript\" src=\"../js/tooltips/domTT.js\"></script>\n<script type=\"text/javascript\" language=\"javascript\" src=\"../js/tooltips/domLib.js\"></script>\n<style type=\"text/css\">\n#lightbox{\n\ttop: 20%;\n\tmargin-top: -20px;\n\t}\n\n.jive-testPanel {\n\tmargin-top: -100px;\n\t}\nhtml>body .jive-testPanel {\n\tmargin-top: 0px;\n\t}\n</style>\n\n<!-- BEGIN connection settings test panel -->\n<div class=\"jive-testPanel\">\n\t<div class=\"jive-testPanel-content\">\n\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<h2>");
+      out.write("</a>\n\t\t</div>\n\n\n\t\t<h2>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
       out.write(": <span>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</span></h2>\r\n\r\n\t\t<!--<h4 class=\"jive-testSuccess\">Success!</h4>-->\r\n\t\t<!-- <h4 class=\"jive-testError\">Error</h4> -->\r\n\r\n\t\t<p>");
+      out.write("</span></h2>\n\n\t\t<!--<h4 class=\"jive-testSuccess\">Success!</h4>-->\n\t\t<!-- <h4 class=\"jive-testError\">Error</h4> -->\n\n\t\t<p>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n\t\t<div class=\"jive-testpanel-vcard\">\r\n            ");
+      out.write("</p>\n\n\t\t<div class=\"jive-testpanel-vcard\">\n            ");
  if (attributes != null) { 
-      out.write("\r\n            <table width=\"331\" border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\" style=\"margin-right: 5px;\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
+      out.write("\n            <table width=\"331\" border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\" style=\"margin-right: 5px;\">\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  String value = attributes.get(LdapUserTester.NAME);
                        boolean failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\" width=\"20%\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\" width=\"20%\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.EMAIL);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.NICKNAME);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BIRTHDAY);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.PHOTO);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : StringUtils.chopAtWord(value , 17) + "...");
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\"></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\"></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_STREET);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_CITY);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_STATE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_ZIP);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_COUNTRY);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_PHONE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_MOBILE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_FAX);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.HOME_PAGER);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\r\n\t\t\t<table width=\"331\" border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n\n\t\t\t<table width=\"331\" border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\">\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_STREET);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\" width=\"20%\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\" width=\"20%\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_CITY);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_STATE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_ZIP);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_COUNTRY);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_JOB_TITLE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_DEPARTMENT);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_PHONE);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_MOBILE);
                         failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_FAX);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n                    ");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n                    ");
  value = attributes.get(LdapUserTester.BUSINESS_PAGER);
                        failed = value != null && value.contains("{");
                     
-      out.write("\r\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
+      out.write("\n\t\t\t\t\t<td class=\"jive-testpanel-vcard-label\">");
       out.print( value != null ? "<strong>" : "");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
       out.write(':');
       out.print( value != null ? "</strong>" : "");
-      out.write("</td>\r\n                    <td class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                    <td class=\"jive-testpanel-vcard-value\">");
       out.print( failed || value == null? "" : value);
-      out.write("</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-next\">\r\n\t\t\t\t\t\t<a href=\"");
+      out.write("</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\" class=\"jive-testpanel-vcard-next\">\n\t\t\t\t\t\t<a href=\"");
       out.print( ParamUtils.getParameter(request, "currentPage"));
       out.write("?test=true&serverType=");
       out.print( ParamUtils.getParameter(request, "serverType"));
@@ -435,16 +435,16 @@ public final class setup_002dldap_002duser_005ftest_jsp extends org.apache.jaspe
       out.write('>');
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n            ");
+      out.write("</a>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n            ");
  } else { 
-      out.write("\r\n            <h4 class=\"jive-testError\">");
+      out.write("\n            <h4 class=\"jive-testError\">");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("</h4>\r\n            <p>");
+      out.write("</h4>\n            <p>");
       out.print( errorDetail );
-      out.write("</p>\r\n            ");
+      out.write("</p>\n            ");
  } 
-      out.write("\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\t\t</div>\n\n\t</div>\n</div>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

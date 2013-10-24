@@ -86,8 +86,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
       out.write('\n');
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
@@ -97,7 +96,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Simple logout code
     if ("true".equals(request.getParameter("logout"))) {
         session.removeAttribute("jive.admin.authToken");
@@ -105,8 +105,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
@@ -116,11 +116,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out); 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
  // Get parameters //
     boolean serverOn = (webManager.getXMPPServer() != null);
@@ -152,18 +151,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
     boolean rssEnabled = JiveGlobals.getBooleanProperty("rss.enabled", true);
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-settings\"/>\r\n        <meta name=\"helpPage\" content=\"about_the_server.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-settings\"/>\n        <meta name=\"helpPage\" content=\"about_the_server.html\"/>\n    </head>\n    <body>\n\n");
 
     UpdateManager updateManager = XMPPServer.getInstance().getUpdateManager();
     Update serverUpdate = updateManager.getServerUpdate();
     if (serverUpdate != null) { 
-      out.write("\r\n    <div class=\"warning\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" >\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon-label\">\r\n            <b>");
+      out.write("\n    <div class=\"warning\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" >\n    <tbody>\n        <tr>\n            <td class=\"jive-icon-label\">\n            <b>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</b><br/><br/>\r\n            </td>\r\n        </tr>\r\n        <td valign=\"top\" align=\"left\" colspan=\"2\">\r\n        <span>");
+      out.write("</b><br/><br/>\n            </td>\n        </tr>\n        <td valign=\"top\" align=\"left\" colspan=\"2\">\n        <span>");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_2 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_2.setPageContext(_jspx_page_context);
@@ -177,7 +176,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_th_fmt_message_2.doInitBody();
         }
         do {
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -189,7 +188,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -201,7 +200,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_2 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_2.setPageContext(_jspx_page_context);
@@ -213,7 +212,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_2);
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_3 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_3.setPageContext(_jspx_page_context);
@@ -225,7 +224,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_3);
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_4 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_4.setPageContext(_jspx_page_context);
@@ -237,7 +236,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_4);
-          out.write("\r\n            ");
+          out.write("\n            ");
           int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -250,85 +249,85 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_2);
-      out.write("</span>\r\n        </td>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n\r\n");
+      out.write("</span>\n        </td>\n    </tbody>\n    </table>\n    </div>\n    <br>\n\n");
 
     }
 
-      out.write("\r\n<style type=\"text/css\">\r\n.bar TD {\r\n    padding : 0;\r\n}\r\n#jive-latest-activity .jive-bottom-line {\r\n\tpadding-top: 10px;\r\n    border-bottom : 1px #e8a400 solid;\r\n\t}\r\n#jive-latest-activity {\r\n    border: 1px #E8A400 solid;\r\n    background-color: #FFFBE2;\r\n\tfont-family: Lucida Grande, Arial, Helvetica, sans-serif;\r\n\tfont-size: 9pt;\r\n    padding: 0 10px 10px 10px;\r\n    margin-bottom: 10px;\r\n    min-height: 280px;\r\n    -moz-border-radius: 4px;\r\n    width: 95%;\r\n    margin-right: 20px;\r\n\t}\r\n#jive-latest-activity h4 {\r\n\tfont-size: 13pt;\r\n\tmargin: 15px 0 4px 0;\r\n\t}\r\n#jive-latest-activity h5 {\r\n\tfont-size: 9pt;\r\n\tfont-weight: normal;\r\n    margin: 15px 0 5px 5px;\r\n\tpadding: 0;\r\n\t}\r\n#jive-latest-activity .jive-blog-date {\r\n    font-size: 8pt;\r\n    white-space: nowrap;\r\n\t}\r\n#jive-latest-activity .jive-feed-icon {\r\n    float: right;\r\n    padding-top: 10px;\r\n\t}\r\n.info-header {\r\n    background-color: #eee;\r\n    font-size: 10pt;\r\n}\r\n.info-table {\r\n    margin-right: 12px;\r\n}\r\n.info-table .c1 {\r\n    text-align: right;\r\n    vertical-align: top;\r\n");
-      out.write("    color: #666;\r\n    font-weight: bold;\r\n    font-size: 9pt;\r\n    white-space: nowrap;\r\n}\r\n.info-table .c2 {\r\n    font-size: 9pt;\r\n    width: 90%;\r\n}\r\n</style>\r\n\r\n<p>\r\n");
+      out.write("\n<style type=\"text/css\">\n.bar TD {\n    padding : 0;\n}\n#jive-latest-activity .jive-bottom-line {\n\tpadding-top: 10px;\n    border-bottom : 1px #e8a400 solid;\n\t}\n#jive-latest-activity {\n    border: 1px #E8A400 solid;\n    background-color: #FFFBE2;\n\tfont-family: Lucida Grande, Arial, Helvetica, sans-serif;\n\tfont-size: 9pt;\n    padding: 0 10px 10px 10px;\n    margin-bottom: 10px;\n    min-height: 280px;\n    -moz-border-radius: 4px;\n    width: 95%;\n    margin-right: 20px;\n\t}\n#jive-latest-activity h4 {\n\tfont-size: 13pt;\n\tmargin: 15px 0 4px 0;\n\t}\n#jive-latest-activity h5 {\n\tfont-size: 9pt;\n\tfont-weight: normal;\n    margin: 15px 0 5px 5px;\n\tpadding: 0;\n\t}\n#jive-latest-activity .jive-blog-date {\n    font-size: 8pt;\n    white-space: nowrap;\n\t}\n#jive-latest-activity .jive-feed-icon {\n    float: right;\n    padding-top: 10px;\n\t}\n.info-header {\n    background-color: #eee;\n    font-size: 10pt;\n}\n.info-table {\n    margin-right: 12px;\n}\n.info-table .c1 {\n    text-align: right;\n    vertical-align: top;\n    color: #666;\n    font-weight: bold;\n");
+      out.write("    font-size: 9pt;\n    white-space: nowrap;\n}\n.info-table .c2 {\n    font-size: 9pt;\n    width: 90%;\n}\n</style>\n\n<p>\n");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n<table border=\"0\" width=\"100%\">\r\n    <td valign=\"top\">\r\n\r\n        <!-- <div class=\"jive-table\"> -->\r\n        <table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"100%\" class=\"info-table\">\r\n        <thead>\r\n            <tr>\r\n                <th colspan=\"2\" align=\"left\" class=\"info-header\">");
+      out.write("\n</p>\n<table border=\"0\" width=\"100%\">\n    <td valign=\"top\">\n\n        <!-- <div class=\"jive-table\"> -->\n        <table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"100%\" class=\"info-table\">\n        <thead>\n            <tr>\n                <th colspan=\"2\" align=\"left\" class=\"info-header\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n\r\n            ");
+      out.write("</th>\n            </tr>\n        </thead>\n        <tbody>\n\n            ");
   if (serverOn) { 
-      out.write("\r\n\r\n                 <tr>\r\n                    <td class=\"c1\">");
+      out.write("\n\n                 <tr>\n                    <td class=\"c1\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</td>\r\n                    <td class=\"c2\">\r\n                        ");
+      out.write("</td>\n                    <td class=\"c2\">\n                        ");
 
                             long now = System.currentTimeMillis();
                             long lastStarted = webManager.getXMPPServer().getServerInfo().getLastStarted().getTime();
                             long uptime = now - lastStarted;
                             String uptimeDisplay = StringUtils.getElapsedTime(uptime);
                         
-      out.write("\r\n\r\n                        ");
+      out.write("\n\n                        ");
   if (uptimeDisplay != null) { 
-      out.write("\r\n                            ");
+      out.write("\n                            ");
       out.print( uptimeDisplay );
-      out.write(" -- started\r\n                        ");
+      out.write(" -- started\n                        ");
   } 
-      out.write("\r\n\r\n                        ");
+      out.write("\n\n                        ");
       out.print( JiveGlobals.formatDateTime(webManager.getXMPPServer().getServerInfo().getLastStarted()) );
-      out.write("\r\n                    </td>\r\n                </tr>\r\n\r\n            ");
+      out.write("\n                    </td>\n                </tr>\n\n            ");
   } 
-      out.write("\r\n\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("\n\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
       out.print( AdminConsole.getAppName() );
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       out.print( AdminConsole.getVersionString() );
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
       out.print( JiveGlobals.getHomeDirectory() );
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">\r\n                    ");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">\n                    ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("\n                </td>\n                <td class=\"c2\">\n                    ");
  try { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (!CertificateManager.isRSACertificate(SSLConfig.getKeyStore(), XMPPServer.getInstance().getServerInfo().getXMPPDomain())) {
-      out.write("\r\n                    <img src=\"images/warning-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n                    <img src=\"images/warning-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\">&nbsp;\r\n                    ");
+      out.write("\">&nbsp;\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  } catch (Exception e) { 
-      out.write("\r\n                    <img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n                    <img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\">&nbsp;\r\n                    ");
+      out.write("\">&nbsp;\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${webManager.serverInfo.XMPPDomain}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr><td>&nbsp;</td></tr>\r\n        </tbody>\r\n        <thead>\r\n            <tr>\r\n                <th colspan=\"2\" align=\"left\" class=\"info-header\">");
+      out.write("\n                </td>\n            </tr>\n            <tr><td>&nbsp;</td></tr>\n        </tbody>\n        <thead>\n            <tr>\n                <th colspan=\"2\" align=\"left\" class=\"info-header\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
 
                         String vmName = System.getProperty("java.vm.name");
                         if (vmName == null) {
@@ -338,45 +337,45 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                             vmName = " -- " + vmName;
                         }
                     
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       out.print( System.getProperty("java.version") );
       out.write(' ');
       out.print( System.getProperty("java.vendor") );
       out.print( vmName );
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
       out.print( application.getServerInfo() );
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">\r\n                    ");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">\n                    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("\n                </td>\n                <td class=\"c2\">\n                    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${webManager.serverInfo.hostname}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
       out.print( System.getProperty("os.name") );
       out.write(' ');
       out.write('/');
       out.write(' ');
       out.print( System.getProperty("os.arch") );
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td class=\"c2\">\r\n                    ");
+      out.write("</td>\n                <td class=\"c2\">\n                    ");
       out.print( JiveGlobals.getLocale() );
       out.write(' ');
       out.write('/');
       out.write(' ');
       out.print( JiveGlobals.getTimeZone().getDisplayName(JiveGlobals.getLocale()) );
-      out.write("\r\n                    (");
+      out.write("\n                    (");
       out.print( (JiveGlobals.getTimeZone().getRawOffset()/1000/60/60) );
-      out.write(" GMT)\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">");
+      out.write(" GMT)\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td>\r\n                ");
+      out.write("</td>\n                <td>\n                ");
     // The java runtime
                     Runtime runtime = Runtime.getRuntime();
 
@@ -391,38 +390,38 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     DecimalFormat mbFormat = new DecimalFormat("#0.00");
                     DecimalFormat percentFormat = new DecimalFormat("#0.0");
                 
-      out.write("\r\n\r\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"300\">\r\n                <tr valign=\"middle\">\r\n                    <td width=\"99%\" valign=\"middle\">\r\n                        <div class=\"bar\">\r\n                        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\r\n                        <tr>\r\n                            ");
+      out.write("\n\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"300\">\n                <tr valign=\"middle\">\n                    <td width=\"99%\" valign=\"middle\">\n                        <div class=\"bar\">\n                        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\n                        <tr>\n                            ");
   if (percent == 0) { 
-      out.write("\r\n\r\n                                <td width=\"100%\"><img src=\"images/percent-bar-left.gif\" width=\"100%\" height=\"8\" border=\"0\" alt=\"\"></td>\r\n\r\n                            ");
+      out.write("\n\n                                <td width=\"100%\"><img src=\"images/percent-bar-left.gif\" width=\"100%\" height=\"8\" border=\"0\" alt=\"\"></td>\n\n                            ");
   } else { 
-      out.write("\r\n\r\n                                ");
+      out.write("\n\n                                ");
   if (percent >= 90) { 
-      out.write("\r\n\r\n                                    <td width=\"");
+      out.write("\n\n                                    <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"images/percent-bar-used-high.gif\"\r\n                                        ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\r\n\r\n                                ");
+      out.write("%\" background=\"images/percent-bar-used-high.gif\"\n                                        ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\n\n                                ");
   } else { 
-      out.write("\r\n\r\n                                    <td width=\"");
+      out.write("\n\n                                    <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"images/percent-bar-used-low.gif\"\r\n                                        ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\r\n\r\n                                ");
+      out.write("%\" background=\"images/percent-bar-used-low.gif\"\n                                        ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\n\n                                ");
   } 
-      out.write("\r\n                                <td width=\"");
+      out.write("\n                                <td width=\"");
       out.print( (100-percent) );
-      out.write("%\" background=\"images/percent-bar-left.gif\"\r\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\r\n                            ");
+      out.write("%\" background=\"images/percent-bar-left.gif\"\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"8\" border=\"0\" alt=\"\"></td>\n                            ");
   } 
-      out.write("\r\n                        </tr>\r\n                        </table>\r\n                        </div>\r\n                    </td>\r\n                    <td width=\"1%\" nowrap>\r\n                        <div style=\"padding-left:6px;\" class=\"c2\">\r\n                        ");
+      out.write("\n                        </tr>\n                        </table>\n                        </div>\n                    </td>\n                    <td width=\"1%\" nowrap>\n                        <div style=\"padding-left:6px;\" class=\"c2\">\n                        ");
       out.print( mbFormat.format(usedMemory) );
       out.write(" MB of ");
       out.print( mbFormat.format(maxMemory) );
       out.write(" MB (");
       out.print( percentFormat.format(percentUsed) );
-      out.write("%) used\r\n                        </div>\r\n                    </td>\r\n                </tr>\r\n                </table>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n        </table>\r\n        <!-- </div> -->\r\n    </td>\r\n    ");
+      out.write("%) used\n                        </div>\n                    </td>\n                </tr>\n                </table>\n                </td>\n            </tr>\n        </tbody>\n        </table>\n        <!-- </div> -->\n    </td>\n    ");
  if (rssEnabled) { 
-      out.write("\r\n    <td valign=\"top\" width=\"40%\"> \r\n        <div id=\"jive-latest-activity\">\r\n\r\n            <a href=\"");
+      out.write("\n    <td valign=\"top\" width=\"40%\"> \n        <div id=\"jive-latest-activity\">\n\n            <a href=\"");
       out.print( blogFeedRSS );
-      out.write("\" class=\"jive-feed-icon\"><img src=\"images/feed-icon-16x16.gif\" alt=\"\" style=\"border:0;\" /></a>\r\n            <h4>");
+      out.write("\" class=\"jive-feed-icon\"><img src=\"images/feed-icon-16x16.gif\" alt=\"\" style=\"border:0;\" /></a>\n            <h4>");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</h4>\r\n            ");
+      out.write("</h4>\n            ");
  long nowTime = System.currentTimeMillis();
                 if (lastBlogFeed == null || lastReleaseFeed == null || nowTime - lastRRSFecth > 21600000) {
 
@@ -448,20 +447,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     List entries = lastBlogFeed.getEntries();
                     for (int i = 0; i < entries.size() && i < 3; i++) {
                         SyndEntry entry = (SyndEntry) entries.get(i); 
-      out.write("\r\n                        <h5><a href=\"");
+      out.write("\n                        <h5><a href=\"");
       out.print( entry.getLink() );
       out.write("\" target=\"_blank\">");
       out.print( entry.getTitle());
-      out.write("</a>,\r\n                        <span class=\"jive-blog-date\">");
+      out.write("</a>,\n                        <span class=\"jive-blog-date\">");
       out.print( JiveGlobals.formatDate(entry.getPublishedDate()));
-      out.write("</span></h5>\r\n                    ");
+      out.write("</span></h5>\n                    ");
  }
 
                 } else { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n                 ");
+      out.write("\n                 ");
  }
 
                  
@@ -472,301 +471,301 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     List entries = lastReleaseFeed.getEntries();
                     for (int i = 0; i < entries.size() && i < 3; i++) {
                         SyndEntry entry = (SyndEntry) entries.get(i); 
-      out.write("\r\n                        <h5><a href=\"");
+      out.write("\n                        <h5><a href=\"");
       out.print( entry.getLink() );
       out.write("\" target=\"_blank\">");
       out.print( entry.getTitle());
-      out.write("</a>,\r\n                        <span class=\"jive-blog-date\">");
+      out.write("</a>,\n                        <span class=\"jive-blog-date\">");
       out.print( JiveGlobals.formatDate(entry.getPublishedDate()));
-      out.write("</span></h5>\r\n                    ");
+      out.write("</span></h5>\n                    ");
  }
 
                 } else { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n                 ");
+      out.write("\n                 ");
  }
             
-      out.write("\r\n\r\n        </div>\r\n    </td>\r\n    ");
+      out.write("\n\n        </div>\n    </td>\n    ");
  } 
-      out.write("\r\n</table>\r\n\r\n<br>\r\n\r\n<div id=\"jive-title\">");
+      out.write("\n</table>\n\n<br>\n\n<div id=\"jive-title\">");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th width=\"80\">");
+      out.write("</div>\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th width=\"80\">");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"1\">");
+      out.write("</th>\n        <th width=\"1\">");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"1\">&nbsp;</th>\r\n        <th width=\"130\">");
+      out.write("</th>\n        <th width=\"1\">&nbsp;</th>\n        <th width=\"130\">");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th>");
+      out.write("</th>\n        <th>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n    ");
  if (socketAcceptor != null) {
         for (SocketAddress socketAddress : socketAcceptor.getManagedServiceAddresses()) {
             InetSocketAddress address = (InetSocketAddress) socketAddress;
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( "0.0.0.0".equals(address.getHostName()) ? LocaleUtils.getLocalizedString("ports.all_ports") : address.getHostName() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( address.getPort() );
-      out.write("</td>\r\n        ");
+      out.write("</td>\n        ");
  try { 
-      out.write("\r\n        ");
+      out.write("\n        ");
  if (!CertificateManager.isRSACertificate(SSLConfig.getKeyStore(), XMPPServer.getInstance().getServerInfo().getXMPPDomain()) || LocalClientSession.getTLSPolicy() == org.jivesoftware.openfire.Connection.TLSPolicy.disabled) { 
-      out.write("\r\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\r\n        ");
+      out.write("\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\n        ");
  } else { 
-      out.write("\r\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n        ");
+      out.write("\"/></td>\n        ");
  } 
-      out.write("\r\n        ");
+      out.write("\n        ");
  } catch (Exception e) { 
-      out.write("\r\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\r\n        ");
+      out.write("\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\n        ");
  } 
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } } 
-      out.write("\r\n    ");
+      out.write("\n    ");
  if (sslSocketAcceptor != null) {
         for (SocketAddress socketAddress : sslSocketAcceptor.getManagedServiceAddresses()) {
             InetSocketAddress address = (InetSocketAddress) socketAddress;
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( "0.0.0.0".equals(address.getHostName()) ? LocaleUtils.getLocalizedString("ports.all_ports") : address.getHostName() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( address.getPort() );
-      out.write("</td>\r\n        <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("</td>\n        <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n        <td>");
+      out.write("\"/></td>\n        <td>");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } } 
-      out.write("\r\n    ");
+      out.write("\n    ");
 
         if (serverPort != null) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : serverPort.getIPAddress() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( serverPort.getPort() );
-      out.write("</td>\r\n        ");
+      out.write("</td>\n        ");
  if (JiveGlobals.getBooleanProperty("xmpp.server.tls.enabled", true)) { 
-      out.write("\r\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n        ");
+      out.write("\"/></td>\n        ");
  } else { 
-      out.write("\r\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\r\n        ");
+      out.write("\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"/></td>\n        ");
  } 
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td>\r\n</td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n        <td>\n</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
  if (multiplexerSocketAcceptor != null) {
         for (SocketAddress socketAddress : multiplexerSocketAcceptor.getManagedServiceAddresses()) {
             InetSocketAddress address = (InetSocketAddress) socketAddress;
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( "0.0.0.0".equals(address.getHostName()) ? LocaleUtils.getLocalizedString("ports.all_ports") : address.getHostName() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( address.getPort() );
-      out.write("</td>\r\n        ");
+      out.write("</td>\n        ");
  if (LocalConnectionMultiplexerSession.getTLSPolicy() == org.jivesoftware.openfire.Connection.TLSPolicy.disabled) { 
-      out.write("\r\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        ");
+      out.write("\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        ");
  } else { 
-      out.write("\r\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n        ");
+      out.write("\"/></td>\n        ");
  } 
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_43(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } } 
-      out.write("\r\n    ");
+      out.write("\n    ");
 
         if (componentPort != null) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : componentPort.getIPAddress() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( componentPort.getPort() );
-      out.write("</td>\r\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        <td>");
+      out.write("</td>\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        <td>");
       if (_jspx_meth_fmt_message_44(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_45(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } 
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( adminConsolePlugin.getAdminUnsecurePort() );
-      out.write("</td>\r\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        <td>");
+      out.write("</td>\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        <td>");
       if (_jspx_meth_fmt_message_46(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_47(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
 
         if (adminConsolePlugin.getAdminSecurePort() > 0) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( adminConsolePlugin.getAdminSecurePort() );
-      out.write("</td>\r\n        <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("</td>\n        <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_48(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_49(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n        <td>");
+      out.write("\"/></td>\n        <td>");
       if (_jspx_meth_fmt_message_50(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_51(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
 
         if (fileTransferProxy.isProxyEnabled()) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( fileTransferProxy.getProxyPort() );
-      out.write("</td>\r\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        <td>");
+      out.write("</td>\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        <td>");
       if (_jspx_meth_fmt_message_52(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_53(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
 
         if (httpBindManager.isHttpBindEnabled()) {
     
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             if (httpBindManager.getHttpBindUnsecurePort() > 0) {
         
-      out.write("\r\n        <tr>\r\n            <td>");
+      out.write("\n        <tr>\n            <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       out.print( httpBindManager.getHttpBindUnsecurePort() );
-      out.write("</td>\r\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n            <td>");
+      out.write("</td>\n            <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n            <td>");
       if (_jspx_meth_fmt_message_54(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       if (_jspx_meth_fmt_message_55(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        ");
+      out.write("</td>\n        </tr>\n        ");
  } 
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             if (httpBindManager.isHttpsBindActive()) {
         
-      out.write("\r\n        <tr>\r\n            <td>");
+      out.write("\n        <tr>\n            <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       out.print( httpBindManager.getHttpBindSecurePort() );
-      out.write("</td>\r\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("</td>\n            <td><img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_56(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_57(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n            <td>");
+      out.write("\"/></td>\n            <td>");
       if (_jspx_meth_fmt_message_58(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       if (_jspx_meth_fmt_message_59(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        ");
+      out.write("</td>\n        </tr>\n        ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
 
         if (mediaProxyService.isEnabled()) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( mediaProxyService.getMinPort() );
       out.write(' ');
       out.write('-');
       out.write(' ');
       out.print( mediaProxyService.getMaxPort() );
-      out.write("</td>\r\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        <td>");
+      out.write("</td>\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        <td>");
       if (_jspx_meth_fmt_message_60(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_61(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( flashCrossDomainHandler.getPort() );
-      out.write("</td>\r\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n        <td>");
+      out.write("</td>\n        <td><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n        <td>");
       if (_jspx_meth_fmt_message_62(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_63(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
 
         if (JMXManager.isEnabled()) {
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( interfaceName == null ? LocaleUtils.getLocalizedString("ports.all_ports") : interfaceName );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( JMXManager.getPort() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
  if (JMXManager.isSecure()) {
             
       out.write("<img src=\"images/user.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
@@ -784,18 +783,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\">");
  }
         
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_66(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       if (_jspx_meth_fmt_message_67(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n</tbody>\r\n</table>\r\n</div>\r\n<br>\r\n\r\n<form action=\"server-props.jsp\">\r\n<input type=\"submit\" value=\"");
+      out.write("\n</tbody>\n</table>\n</div>\n<br>\n\n<form action=\"server-props.jsp\">\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_68(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\">\n</form>\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -1365,13 +1364,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_31.doInitBody();
       }
       do {
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_5(_jspx_th_fmt_message_31, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_6(_jspx_th_fmt_message_31, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_31.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1494,13 +1493,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_35.doInitBody();
       }
       do {
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_7(_jspx_th_fmt_message_35, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_8(_jspx_th_fmt_message_35, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_35.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1623,13 +1622,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_39.doInitBody();
       }
       do {
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_9(_jspx_th_fmt_message_39, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_10(_jspx_th_fmt_message_39, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_39.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1752,13 +1751,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_43.doInitBody();
       }
       do {
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_11(_jspx_th_fmt_message_43, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_12(_jspx_th_fmt_message_43, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_43.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1845,13 +1844,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_45.doInitBody();
       }
       do {
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_13(_jspx_th_fmt_message_45, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         if (_jspx_meth_fmt_param_14(_jspx_th_fmt_message_45, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_45.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

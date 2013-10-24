@@ -45,7 +45,7 @@ public final class chat_002dconversation_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>Chat Conversation</title>\r\n        <meta name=\"pageID\" content=\"chat-summary\"/>\r\n      <style type=\"text/css\">\r\n          .conversation-label1 {\r\n              color: blue;\r\n              font-size: 10px;\r\n              font-family: Verdana, Arial, sans-serif;\r\n          }\r\n\r\n          .conversation-label2 {\r\n              color: red;\r\n              font-size: 10px;\r\n              font-family: Verdana, Arial, sans-serif;\r\n          }\r\n\r\n          .notification-label {\r\n              color: #060;\r\n              font-size: 10px;\r\n              font-family: Verdana, Arial, sans-serif;\r\n          }\r\n\r\n          .conversation-body {\r\n               color: black;\r\n               font-size: 11px;\r\n               font-family: Verdana, Arial, sans-serif;\r\n           }\r\n    </style>\r\n    </head>\r\n    <body>\r\n");
+      out.write("\n\n\n<html>\n    <head>\n        <title>Chat Conversation</title>\n        <meta name=\"pageID\" content=\"chat-summary\"/>\n      <style type=\"text/css\">\n          .conversation-label1 {\n              color: blue;\n              font-size: 10px;\n              font-family: Verdana, Arial, sans-serif;\n          }\n\n          .conversation-label2 {\n              color: red;\n              font-size: 10px;\n              font-family: Verdana, Arial, sans-serif;\n          }\n\n          .notification-label {\n              color: #060;\n              font-size: 10px;\n              font-family: Verdana, Arial, sans-serif;\n          }\n\n          .conversation-body {\n               color: black;\n               font-size: 11px;\n               font-family: Verdana, Arial, sans-serif;\n           }\n    </style>\n    </head>\n    <body>\n");
 
     String sessionID = request.getParameter("sessionID");
     ChatSession chatSession = ChatTranscriptManager.getChatSession(sessionID);
@@ -73,9 +73,9 @@ public final class chat_002dconversation_jsp extends org.apache.jasper.runtime.H
     }
 
 
-      out.write("\r\n<div  class=\"jive-contentBox\">\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"70%\">\r\n        <h4>Conversation Metadata</h4>\r\n        <tr>\r\n            <td  colspan=1 class=\"conversation-body\">\r\n                <b>Question:</b>\r\n            </td>\r\n            <td colspan=4 class=\"conversation-body\">\r\n                ");
+      out.write("\n<div  class=\"jive-contentBox\">\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"70%\">\n        <h4>Conversation Metadata</h4>\n        <tr>\n            <td  colspan=1 class=\"conversation-body\">\n                <b>Question:</b>\n            </td>\n            <td colspan=4 class=\"conversation-body\">\n                ");
       out.print( question );
-      out.write("\r\n            </td>\r\n        </tr>\r\n");
+      out.write("\n            </td>\n        </tr>\n");
 
     int counter = 0;
     Iterator<String> metaIter = chatSession.getMetadata().keySet().iterator();
@@ -87,31 +87,30 @@ public final class chat_002dconversation_jsp extends org.apache.jasper.runtime.H
 
         counter++;
 
-      out.write("\r\n            <tr>\r\n                <td nowrap class=\"conversation-body\">\r\n                    ");
+      out.write("\n            <tr>\n                <td nowrap class=\"conversation-body\">\n                    ");
       out.print( metaname );
-      out.write("\r\n                </td>\r\n                <td colspan=\"3\" class=\"conversation-body\">\r\n                    ");
+      out.write("\n                </td>\n                <td colspan=\"3\" class=\"conversation-body\">\n                    ");
       out.print( metavalue );
-      out.write("\r\n            </tr>\r\n");
+      out.write("\n            </tr>\n");
 
 
         }
 
-      out.write('\r');
       out.write('\n');
 
         String transcript = chatSession.getTranscript();
 
-      out.write("\r\n</table>\r\n   </div>\r\n<br/>\r\n<div  class=\"jive-contentBox\">\r\n <table  cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"70%\">\r\n        <tr class=\"jive-even\" >\r\n            <td colspan=4>\r\n             <h4>Chat Transcripts</h4>\r\n               </td>\r\n        </tr>\r\n        <tr>\r\n          <td>");
+      out.write("\n</table>\n   </div>\n<br/>\n<div  class=\"jive-contentBox\">\n <table  cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"70%\">\n        <tr class=\"jive-even\" >\n            <td colspan=4>\n             <h4>Chat Transcripts</h4>\n               </td>\n        </tr>\n        <tr>\n          <td>");
       out.print( transcript );
-      out.write("</td>\r\n        </tr>\r\n    </table>\r\n");
+      out.write("</td>\n        </tr>\n    </table>\n");
 
     if (!ModelUtil.hasLength(chatSession.getTranscript())) {
 
-      out.write("\r\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\r\n            <tr>\r\n                <td class=\"c1\" colspan=4>\r\n                    <tr>\r\n                        <td>\r\n                            No Chats have occured in this workgroup.\r\n                        </td>\r\n                    </tr>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n");
+      out.write("\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\n            <tr>\n                <td class=\"c1\" colspan=4>\n                    <tr>\n                        <td>\n                            No Chats have occured in this workgroup.\n                        </td>\n                    </tr>\n                </td>\n            </tr>\n        </table>\n");
 
     }
 
-      out.write("\r\n    </body>\r\n</html>\r\n");
+      out.write("\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

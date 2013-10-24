@@ -84,7 +84,6 @@ public final class upload_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
 
     DiskFileUpload upload = new DiskFileUpload();
@@ -137,7 +136,9 @@ public final class upload_jsp extends org.apache.jasper.runtime.HttpJspBase
         Log.error(ex);
     }
 
-      out.write("\r\n\r\n ");
+      out.write('\n');
+      out.write('\n');
+      out.write(' ');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

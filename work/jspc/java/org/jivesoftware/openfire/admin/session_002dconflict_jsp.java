@@ -53,7 +53,7 @@ public final class session_002dconflict_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,13 +62,12 @@ public final class session_002dconflict_jsp extends org.apache.jasper.runtime.Ht
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"server-session-conflict\"/>\r\n<meta name=\"helpPage\" content=\"set_the_server_resource_conflict_policy.html\"/>\r\n</head>\r\n <body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"server-session-conflict\"/>\n<meta name=\"helpPage\" content=\"set_the_server_resource_conflict_policy.html\"/>\n</head>\n <body>\n\n");
   // Get parameters
     boolean update = request.getParameter("update") != null;
     int kickPolicy = ParamUtils.getIntParameter(request,"kickPolicy",Integer.MAX_VALUE);
@@ -96,10 +95,10 @@ public final class session_002dconflict_jsp extends org.apache.jasper.runtime.Ht
                 webManager.getSessionManager().setConflictKickLimit(kickPolicy);
             }
             
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n            ");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n            ");
 
           
           
@@ -109,68 +108,68 @@ public final class session_002dconflict_jsp extends org.apache.jasper.runtime.Ht
     // Update variable values
     kickPolicy = webManager.getSessionManager().getConflictKickLimit();
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<!-- BEGIN 'Set Conflict Policy' -->\r\n<form action=\"session-conflict.jsp\" method=\"post\">\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n</p>\n\n<!-- BEGIN 'Set Conflict Policy' -->\n<form action=\"session-conflict.jsp\" method=\"post\">\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td valign=\"top\" width=\"1%\">\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"0\" id=\"rb01\"\r\n\t\t\t\t\t ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td valign=\"top\" width=\"1%\">\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"0\" id=\"rb01\"\n\t\t\t\t\t ");
       out.print( ((kickPolicy==0) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb01\"><b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb01\"><b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</b></label> -\r\n\t\t\t\t\t");
+      out.write("</b></label> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td valign=\"top\" width=\"1%\">\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"");
+      out.write("\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td valign=\"top\" width=\"1%\">\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"");
       out.print( SessionManager.NEVER_KICK );
-      out.write("\" id=\"rb02\"\r\n\t\t\t\t\t ");
+      out.write("\" id=\"rb02\"\n\t\t\t\t\t ");
       out.print( ((kickPolicy==SessionManager.NEVER_KICK) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb02\"><b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb02\"><b>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</b></label> -\r\n\t\t\t\t\t");
+      out.write("</b></label> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td valign=\"top\" width=\"1%\">\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"1\" id=\"rb04\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td valign=\"top\" width=\"1%\">\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"1\" id=\"rb04\"\n\t\t\t\t\t ");
       out.print( ((kickPolicy==1) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb04\"><b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb04\"><b>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</b></label> -\r\n\t\t\t\t\t");
+      out.write("</b></label> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t");
+      out.write("\n\t\t\t\t</td>\n\t\t\t</tr>\n\t");
   // Figure out if the kick policy is neither 0 nor SessionManager.NEVER_KICK:
 		boolean assignedKickPolicy = false;
 		if (kickPolicy != 0 && kickPolicy != 1 && kickPolicy != SessionManager.NEVER_KICK) {
 		   assignedKickPolicy = true;
 		}
 	
-      out.write("\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td valign=\"top\" width=\"1%\">\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"");
+      out.write("\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td valign=\"top\" width=\"1%\">\n\t\t\t\t\t<input type=\"radio\" name=\"kickPolicy\" value=\"");
       out.print( Integer.MAX_VALUE );
-      out.write("\" id=\"rb03\"\r\n\t\t\t\t\t onfocus=\"this.form.kickValue.focus();\"\r\n\t\t\t\t\t ");
+      out.write("\" id=\"rb03\"\n\t\t\t\t\t onfocus=\"this.form.kickValue.focus();\"\n\t\t\t\t\t ");
       out.print( ((assignedKickPolicy) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb03\"><b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb03\"><b>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</b></label> -\r\n\t\t\t\t\t");
+      out.write("</b></label> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td width=\"1%\">\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td width=\"1%\">\n\t\t\t\t\t&nbsp;\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t");
   if (errors.get("kickValue") != null) { 
-      out.write("\r\n\t\t\t\t\t\t<span class=\"jive-error-text\">\r\n\t\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t<span class=\"jive-error-text\">\n\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</span><br>\r\n\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t</span><br>\n\t\t\t\t\t");
   } 
-      out.write("\r\n\t\t\t\t\t<input type=\"text\" name=\"kickValue\" value=\"");
+      out.write("\n\t\t\t\t\t<input type=\"text\" name=\"kickValue\" value=\"");
       out.print( ((assignedKickPolicy) ? ""+kickPolicy : "") );
-      out.write("\"\r\n\t\t\t\t\t size=\"5\" maxlength=\"10\"\r\n\t\t\t\t\t onclick=\"this.form.kickPolicy[3].checked=true;\">\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n\r\n\r\n\t</div>\r\n<input type=\"submit\" name=\"update\" value=\"");
+      out.write("\"\n\t\t\t\t\t size=\"5\" maxlength=\"10\"\n\t\t\t\t\t onclick=\"this.form.kickPolicy[3].checked=true;\">\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n\n\n\t</div>\n<input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END 'Set Conflict Policy' -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n<!-- END 'Set Conflict Policy' -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

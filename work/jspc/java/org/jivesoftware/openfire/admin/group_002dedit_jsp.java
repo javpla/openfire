@@ -100,7 +100,7 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!-- Define Administration Bean -->\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Define Administration Bean -->\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -109,10 +109,10 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
   webManager.init(pageContext); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     boolean add = request.getParameter("add") != null;
     boolean delete = request.getParameter("remove") != null;
@@ -324,76 +324,76 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
         groupDisplayName = group.getProperties().get("sharedRoster.displayName"); 
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"subPageID\" content=\"group-edit\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("</title>\n<meta name=\"subPageID\" content=\"group-edit\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "group="+URLEncoder.encode(groupName, "UTF-8") );
-      out.write("\"/>\r\n<meta name=\"helpPage\" content=\"edit_group_properties.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("\"/>\n<meta name=\"helpPage\" content=\"edit_group_properties.html\"/>\n</head>\n<body>\n\n");
  if (webManager.getGroupManager().isReadOnly() && webManager.getGroupManager().isPropertyReadOnly()) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n\t");
+      out.write("\n\n<p>\n\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<p>\r\n\t<a href=\"group-summary.jsp\" class=\"jive-link-back\"><span>&laquo;</span> Back to all groups</a>\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n<p>\n\t<a href=\"group-summary.jsp\" class=\"jive-link-back\"><span>&laquo;</span> Back to all groups</a>\n</p>\n\n");
 
     if (success) {
 
-      out.write("\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
  if (groupInfoChanged) { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if ("true".equals(request.getParameter("success"))) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if ("true".equals(request.getParameter("deletesuccess"))) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if ("true".equals(request.getParameter("updatesuccess"))) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n         ");
+      out.write("\n         ");
  } else if ("true".equals(request.getParameter("creategroupsuccess"))) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             }
         
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n");
 
     }
     else if(!success && add){
 
-      out.write("\r\n\t<div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\t<div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
  if(add) { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
       out.print( errorBuf );
-      out.write("\r\n        ");
+      out.write("\n        ");
  } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n");
  } 
-      out.write("\r\n\r\n\t<div class=\"jive-horizontalRule\"></div>\r\n\r\n<form name=\"ff\" action=\"group-edit.jsp\">\r\n<input type=\"hidden\" name=\"group\" value=\"");
+      out.write("\n\n\t<div class=\"jive-horizontalRule\"></div>\n\n<form name=\"ff\" action=\"group-edit.jsp\">\n<input type=\"hidden\" name=\"group\" value=\"");
       out.print( groupName );
-      out.write("\"/>\r\n\r\n\r\n\t<!-- BEGIN group name and description -->\r\n\t<div class=\"jive-contentBox-plain\">\r\n        ");
+      out.write("\"/>\n\n\n\t<!-- BEGIN group name and description -->\n\t<div class=\"jive-contentBox-plain\">\n        ");
   // Only show edit and delete options if the groups aren't read-only.
             if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n        <div class=\"jive-contentBox-toolbox\">\r\n\t\t\t<a href=\"group-create.jsp?group=");
+      out.write("\n        <div class=\"jive-contentBox-toolbox\">\n\t\t\t<a href=\"group-create.jsp?group=");
       out.print( URLEncoder.encode(group.getName(), "UTF-8"));
       out.write("&name=");
       out.print( URLEncoder.encode(group.getName(), "UTF-8"));
@@ -402,81 +402,81 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\" class=\"jive-link-edit\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t\t<a href=\"group-delete.jsp?group=");
+      out.write("</a>\n\t\t\t<a href=\"group-delete.jsp?group=");
       out.print( URLEncoder.encode(group.getName(), "UTF-8"));
       out.write("\" class=\"jive-link-delete\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t</div>\r\n        ");
+      out.write("</a>\n\t\t</div>\n        ");
  } 
-      out.write("\r\n\r\n        <h3>\r\n\t\t\t");
+      out.write("\n\n        <h3>\n\t\t\t");
       out.print( StringUtils.escapeHTMLTags(group.getName()) );
-      out.write("\r\n\t\t</h3>\r\n\t\t<p>\r\n\t\t\t");
+      out.write("\n\t\t</h3>\n\t\t<p>\n\t\t\t");
       out.print( group.getDescription() != null ? StringUtils.escapeHTMLTags(group.getDescription()) : "" );
-      out.write("\r\n\t\t</p>\r\n    </div>\r\n\t<!-- END group name and description -->\r\n\r\n\r\n\t<!-- BEGIN contact list settings -->\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\t\t</p>\n    </div>\n\t<!-- END group name and description -->\n\n\n\t<!-- BEGIN contact list settings -->\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n            ");
+      out.write("\n\n\t</div>\n\t<div class=\"jive-contentBox\">\n            ");
  if (webManager.getGroupManager().isPropertyReadOnly()) { 
-      out.write("\r\n        <p>\r\n                ");
+      out.write("\n        <p>\n                ");
  if (enableRosterGroups) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n                ");
+      out.write("\n                ");
  } else { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n                ");
+      out.write("\n                ");
  } 
-      out.write("\r\n        </p>\r\n\r\n            ");
+      out.write("\n        </p>\n\n            ");
  } else { 
-      out.write("\r\n        <p>\r\n            ");
+      out.write("\n        <p>\n            ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n        </p>\r\n\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t<tr>\r\n            <td width=\"1%\">\r\n                <input type=\"radio\" name=\"enableRosterGroups\" value=\"false\" id=\"rb201\" ");
+      out.write("\n        </p>\n\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t<tr>\n            <td width=\"1%\">\n                <input type=\"radio\" name=\"enableRosterGroups\" value=\"false\" id=\"rb201\" ");
       out.print( !enableRosterGroups ? "checked" : "" );
-      out.write(" onClick=\"document.getElementById('jive-roster').style.display = 'none';\">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb201\">");
+      out.write(" onClick=\"document.getElementById('jive-roster').style.display = 'none';\">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb201\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" valign=\"top\">\r\n                <input type=\"radio\" name=\"enableRosterGroups\" value=\"true\" id=\"rb202\" ");
+      out.write("</label>\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\" valign=\"top\">\n                <input type=\"radio\" name=\"enableRosterGroups\" value=\"true\" id=\"rb202\" ");
       out.print( enableRosterGroups ? "checked" : "" );
-      out.write(" onClick=\"document.getElementById('jive-roster').style.display = 'block';\">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb202\">");
+      out.write(" onClick=\"document.getElementById('jive-roster').style.display = 'block';\">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb202\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</label>\r\n\r\n                <div id=\"jive-roster\" style=\"display: ");
+      out.write("</label>\n\n                <div id=\"jive-roster\" style=\"display: ");
       out.print( !enableRosterGroups ? "none" : "block"  );
-      out.write(";\">\r\n\t               <b>");
+      out.write(";\">\n\t               <b>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</b>\r\n\t               <input type=\"text\" name=\"groupDisplayName\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write("</b>\n\t               <input type=\"text\" name=\"groupDisplayName\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (groupDisplayName != null ? groupDisplayName : "") );
-      out.write("\"><br>\r\n                       ");
+      out.write("\"><br>\n                       ");
   if (errors.get("groupDisplayName") != null) { 
-      out.write("\r\n                           <span class=\"jive-error-text\">");
+      out.write("\n                           <span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</span><br/>\r\n                       ");
+      out.write("</span><br/>\n                       ");
   } 
-      out.write("\r\n\t                   <script type=\"text/javascript\" language=\"JavaScript\">\r\n\t\t                   function toggleRosterShare() {\r\n\t\t\t                   if (document.getElementById('cb101').checked == false) {\r\n\t\t\t                       document.getElementById('jive-rosterShare').style.display = 'none';\r\n                                } else {\r\n\t\t\t\t                   document.getElementById('jive-rosterShare').style.display = 'block';\r\n                                   document.getElementById('rb002').checked = true;\r\n\t\t\t                   }\r\n\t\t                   }\r\n\t                   </script>\r\n\r\n\t               <input type=\"checkbox\" id=\"cb101\" name=\"shareContactList\" onClick=\"toggleRosterShare();\" style=\"vertical-align: middle;\"\r\n\t\t\t\t\t\t\t\t\t\t ");
+      out.write("\n\t                   <script type=\"text/javascript\" language=\"JavaScript\">\n\t\t                   function toggleRosterShare() {\n\t\t\t                   if (document.getElementById('cb101').checked == false) {\n\t\t\t                       document.getElementById('jive-rosterShare').style.display = 'none';\n                                } else {\n\t\t\t\t                   document.getElementById('jive-rosterShare').style.display = 'block';\n                                   document.getElementById('rb002').checked = true;\n\t\t\t                   }\n\t\t                   }\n\t                   </script>\n\n\t               <input type=\"checkbox\" id=\"cb101\" name=\"shareContactList\" onClick=\"toggleRosterShare();\" style=\"vertical-align: middle;\"\n\t\t\t\t\t\t\t\t\t\t ");
       out.print( (shareAdditional ? "checked" : "") );
-      out.write(">\r\n\t               <label for=\"cb101\">");
+      out.write(">\n\t               <label for=\"cb101\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t                    <div id=\"jive-rosterShare\" style=\"display: ");
+      out.write("</label>\n\t                    <div id=\"jive-rosterShare\" style=\"display: ");
       out.print( (enableRosterGroups && shareAdditional) ? "block" : "none"  );
-      out.write(";\">\r\n\t\t                    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"showGroup\" value=\"everybody\" id=\"rb002\"\r\n\t\t\t\t\t\t\t\t\t\t ");
+      out.write(";\">\n\t\t                    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"showGroup\" value=\"everybody\" id=\"rb002\"\n\t\t\t\t\t\t\t\t\t\t ");
       out.print( ("everybody".equals(showGroup) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t\t\t<label for=\"rb002\">");
+      out.write(">\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t\t\t<label for=\"rb002\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"showGroup\" value=\"spefgroups\" id=\"rb003\"\r\n\t\t\t\t\t\t\t\t\t\t ");
+      out.write("</label>\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"showGroup\" value=\"spefgroups\" id=\"rb003\"\n\t\t\t\t\t\t\t\t\t\t ");
       out.print( (groupNames != null && groupNames.length > 0) ? "checked" : "" );
-      out.write(">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t\t\t<label for=\"rb003\">");
+      out.write(">\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t\t\t<label for=\"rb003\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t\t\t<select name=\"groupNames\" size=\"6\" onclick=\"this.form.showGroup[1].checked=true;\"\r\n\t\t\t\t\t\t\t\t\t\t multiple style=\"width:340px;font-family:verdana,arial,helvetica,sans-serif;font-size:8pt;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t");
+      out.write("</label>\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t\t\t<select name=\"groupNames\" size=\"6\" onclick=\"this.form.showGroup[1].checked=true;\"\n\t\t\t\t\t\t\t\t\t\t multiple style=\"width:340px;font-family:verdana,arial,helvetica,sans-serif;font-size:8pt;\">\n\n\t\t\t\t\t\t\t\t\t\t");
   for (Group g : webManager.getGroupManager().getGroups()) {
 											// Do not offer the edited group in the list of groups
 											// Members of the editing group can always see each other
@@ -484,65 +484,65 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
 												continue;
 											}
 										
-      out.write("\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<option value=\"");
+      out.write("\n\n\t\t\t\t\t\t\t\t\t\t\t<option value=\"");
       out.print( URLEncoder.encode(g.getName(), "UTF-8") );
-      out.write("\"\r\n\t\t\t\t\t\t\t\t\t\t\t ");
+      out.write("\"\n\t\t\t\t\t\t\t\t\t\t\t ");
       out.print( (contains(groupNames, g.getName()) ? "selected" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t\t\t >");
+      out.write("\n\t\t\t\t\t\t\t\t\t\t\t >");
       out.print( StringUtils.escapeHTMLTags(g.getName()) );
-      out.write("</option>\r\n\r\n\t\t\t\t\t\t\t\t\t\t");
+      out.write("</option>\n\n\t\t\t\t\t\t\t\t\t\t");
   } 
-      out.write("\r\n\r\n\t\t\t\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t                </div>\r\n                </div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n                &nbsp;\r\n            </td>\r\n            <td width=\"99%\">\r\n\r\n                <input type=\"submit\" name=\"save\" value=\"");
+      out.write("\n\n\t\t\t\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t</table>\n\t\t                </div>\n                </div>\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n                &nbsp;\n            </td>\n            <td width=\"99%\">\n\n                <input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\">\r\n\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n            ");
+      out.write("\">\n\n            </td>\n        </tr>\n    </tbody>\n    </table>\n            ");
  } 
-      out.write("\r\n\t</div>\r\n\t<!-- END contact list settings -->\r\n\r\n\r\n</form>\r\n\r\n\r\n\t<!-- BEGIN group membership management -->\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\t</div>\n\t<!-- END contact list settings -->\n\n\n</form>\n\n\n\t<!-- BEGIN group membership management -->\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t");
   // Only show if the group isn't read-only.
             if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n        <p>\r\n\t\t\t");
+      out.write("\n        <p>\n\t\t\t");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\r\n\t\t</p>\r\n\r\n        <form action=\"group-edit.jsp\" method=\"post\" name=\"f\">\r\n        <input type=\"hidden\" name=\"group\" value=\"");
+      out.write("\n\t\t</p>\n\n        <form action=\"group-edit.jsp\" method=\"post\" name=\"f\">\n        <input type=\"hidden\" name=\"group\" value=\"");
       out.print( groupName );
-      out.write("\">\r\n        <input type=\"hidden\" name=\"add\" value=\"Add\"/>\r\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" style=\"margin: 0 0 8px 0;\">\r\n            <tr>\r\n                <td nowrap width=\"1%\">\r\n                    ");
+      out.write("\">\n        <input type=\"hidden\" name=\"add\" value=\"Add\"/>\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" style=\"margin: 0 0 8px 0;\">\n            <tr>\n                <td nowrap width=\"1%\">\n                    ");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n                <td nowrap class=\"c1\" align=\"left\">\r\n                    <input type=\"text\" size=\"45\" name=\"username\"/>\r\n                    &nbsp;<input type=\"submit\" name=\"addbutton\" value=\"");
+      out.write("\n                </td>\n                <td nowrap class=\"c1\" align=\"left\">\n                    <input type=\"text\" size=\"45\" name=\"username\"/>\n                    &nbsp;<input type=\"submit\" name=\"addbutton\" value=\"");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("\">\r\n                </td>\r\n            </tr>\r\n        </table>\r\n        </form>\r\n\r\n        ");
+      out.write("\">\n                </td>\n            </tr>\n        </table>\n        </form>\n\n        ");
  } 
-      out.write("\r\n\r\n        <form action=\"group-edit.jsp\" method=\"post\" name=\"main\">\r\n        <input type=\"hidden\" name=\"group\" value=\"");
+      out.write("\n\n        <form action=\"group-edit.jsp\" method=\"post\" name=\"main\">\n        <input type=\"hidden\" name=\"group\" value=\"");
       out.print( groupName );
-      out.write("\">\r\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"435\">\r\n            <tr>\r\n\t            <th>&nbsp;</th>\r\n                <th nowrap>");
+      out.write("\">\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"435\">\n            <tr>\n\t            <th>&nbsp;</th>\n                <th nowrap>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</th>\r\n                ");
+      out.write("</th>\n                ");
   // Only show if the group isn't read-only.
                 if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n                <th width=\"1%\" nowrap class=\"jive-table-th-center\">");
+      out.write("\n                <th width=\"1%\" nowrap class=\"jive-table-th-center\">");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</th>\r\n                <th width=\"1%\" nowrap class=\"jive-table-th-center\">");
+      out.write("</th>\n                <th width=\"1%\" nowrap class=\"jive-table-th-center\">");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</th>\r\n                ");
+      out.write("</th>\n                ");
  } 
-      out.write("\r\n            </tr>\r\n            <!-- Add admins first -->\r\n");
+      out.write("\n            </tr>\n            <!-- Add admins first -->\n");
 
             int memberCount = group.getMembers().size() + group.getAdmins().size();
             boolean showUpdateButtons = memberCount > 0;
             boolean showRemoteJIDsWarning = false;
             if (memberCount == 0) {
 
-      out.write("\r\n                <tr>\r\n                    <td align=\"center\" colspan=\"4\">\r\n                        <br>\r\n                        ");
+      out.write("\n                <tr>\n                    <td align=\"center\" colspan=\"4\">\n                        <br>\n                        ");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("\r\n                        <br>\r\n                        <br>\r\n                    </td>\r\n                </tr>\r\n");
+      out.write("\n                        <br>\n                        <br>\n                    </td>\n                </tr>\n");
 
             }
             else {
@@ -564,73 +564,73 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
                         }
                     }
 
-      out.write("\r\n                <tr>\r\n                    <td width=\"1%\">\r\n                    ");
+      out.write("\n                <tr>\n                    <td width=\"1%\">\n                    ");
   if (user != null && presenceManager.isAvailable(user)) {
                             Presence presence = presenceManager.getPresence(user);
                     
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (presence.getShow() == null) { 
-      out.write("\r\n                    <img src=\"images/im_available.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_available.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (presence.getShow() == Presence.Show.chat) { 
-      out.write("\r\n                    <img src=\"images/im_free_chat.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_free_chat.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (presence.getShow() == Presence.Show.away) { 
-      out.write("\r\n                    <img src=\"images/im_away.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_away.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (presence.getShow() == Presence.Show.xa) { 
-      out.write("\r\n                    <img src=\"images/im_away.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_away.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (presence.getShow() == Presence.Show.dnd) { 
-      out.write("\r\n                    <img src=\"images/im_dnd.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_dnd.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
  } 
-      out.write("\r\n\r\n                    ");
+      out.write("\n\n                    ");
   } else { 
-      out.write("\r\n                    <img src=\"images/im_unavailable.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                    <img src=\"images/im_unavailable.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("\">\r\n                    ");
+      out.write("\">\n                    ");
   } 
-      out.write("\r\n\r\n                    </td>\r\n                    ");
+      out.write("\n\n                    </td>\n                    ");
  if (user != null) { 
-      out.write("\r\n                    <td><a href=\"user-properties.jsp?username=");
+      out.write("\n                    <td><a href=\"user-properties.jsp?username=");
       out.print( URLEncoder.encode(user.getUsername(), "UTF-8") );
       out.write('"');
       out.write('>');
@@ -639,47 +639,47 @@ public final class group_002dedit_jsp extends org.apache.jasper.runtime.HttpJspB
  if (!isLocal) { showRemoteJIDsWarning = true; 
       out.write(" <font color=\"red\"><b>*</b></font>");
 }
-      out.write("</td>\r\n                    ");
+      out.write("</td>\n                    ");
  } else { 
-      out.write("\r\n                    <td>");
+      out.write("\n                    <td>");
       out.print( jid );
  showRemoteJIDsWarning = true; 
-      out.write(" <font color=\"red\"><b>*</b></font></td>\r\n                    ");
+      out.write(" <font color=\"red\"><b>*</b></font></td>\n                    ");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
   // Only show if the group isn't read-only.
                     if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n                    <td align=\"center\">\r\n                        <input type=\"checkbox\" name=\"admin\" value=\"");
+      out.write("\n                    <td align=\"center\">\n                        <input type=\"checkbox\" name=\"admin\" value=\"");
       out.print( jid );
       out.write('"');
       out.write(' ');
  if (admins.contains(jid)) { 
       out.write("checked");
  } 
-      out.write(">\r\n                    </td>\r\n                    <td align=\"center\">\r\n                        <input type=\"checkbox\" name=\"delete\" value=\"");
+      out.write(">\n                    </td>\n                    <td align=\"center\">\n                        <input type=\"checkbox\" name=\"delete\" value=\"");
       out.print( jid );
-      out.write("\">\r\n                    </td>\r\n                    ");
+      out.write("\">\n                    </td>\n                    ");
  } 
-      out.write("\r\n                </tr>\r\n");
+      out.write("\n                </tr>\n");
 
                 }
             }
             if (showUpdateButtons && !webManager.getGroupManager().isReadOnly()) {
 
-      out.write("\r\n                <tr>\r\n                    <td colspan=\"2\">\r\n                        &nbsp;\r\n                    </td>\r\n                    <td align=\"center\">\r\n                        <input type=\"submit\" name=\"updateMember\" value=\"Update\">\r\n                    </td>\r\n                    <td align=\"center\">\r\n                        <input type=\"submit\" name=\"remove\" value=\"Remove\">\r\n                    </td>\r\n                </tr>\r\n");
+      out.write("\n                <tr>\n                    <td colspan=\"2\">\n                        &nbsp;\n                    </td>\n                    <td align=\"center\">\n                        <input type=\"submit\" name=\"updateMember\" value=\"Update\">\n                    </td>\n                    <td align=\"center\">\n                        <input type=\"submit\" name=\"remove\" value=\"Remove\">\n                    </td>\n                </tr>\n");
 
             }
 
             if (showRemoteJIDsWarning) {
 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"4\">\r\n                    <font color=\"red\">* ");
+      out.write("\n            <tr>\n                <td colspan=\"4\">\n                    <font color=\"red\">* ");
       if (_jspx_meth_fmt_message_43(_jspx_page_context))
         return;
-      out.write("</font>\r\n                </td>\r\n            </tr>\r\n");
+      out.write("</font>\n                </td>\n            </tr>\n");
 
             }
 
-      out.write("\r\n        </table>\r\n        </form>\r\n\r\n    <script type=\"text/javascript\">\r\n        document.f.username.focus();\r\n    </script>\r\n\r\n\t</div>\r\n\t<!-- END group membership management -->\r\n\r\n\r\n\r\n</body>\r\n</html>\r\n\r\n\r\n");
+      out.write("\n        </table>\n        </form>\n\n    <script type=\"text/javascript\">\n        document.f.username.focus();\n    </script>\n\n\t</div>\n\t<!-- END group membership management -->\n\n\n\n</body>\n</html>\n\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -50,23 +50,21 @@ public final class workgroup_002dproperties_jsp extends org.apache.jasper.runtim
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
 
     // Get parameters //
     String wgID = ParamUtils.getParameter(request, "wgID");
     boolean created = ParamUtils.getParameter(request, "created") != null;
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>Workgroup Settings For ");
+      out.write("\n\n<html>\n    <head>\n        <title>Workgroup Settings For ");
       out.print(wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-properties\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-properties\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"edit_workgroup_properties.html\"/>-->\r\n    </head>\r\n    <body>\r\n\r\n    ");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"edit_workgroup_properties.html\"/>-->\n    </head>\n    <body>\n\n    ");
  if(created) { 
-      out.write("\r\n        <div class=\"jive-success\">\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                <tbody>\r\n                    <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\r\n                    border=\"0\"></td>\r\n                        <td class=\"jive-icon-label\">\r\n                            Workgroup has been created. To add members to the workgroup, click on the Queues link in the sidebar.\r\n                        </td></tr>\r\n                </tbody>\r\n            </table>\r\n        </div><br>\r\n    ");
+      out.write("\n        <div class=\"jive-success\">\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                <tbody>\n                    <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\n                    border=\"0\"></td>\n                        <td class=\"jive-icon-label\">\n                            Workgroup has been created. To add members to the workgroup, click on the Queues link in the sidebar.\n                        </td></tr>\n                </tbody>\n            </table>\n        </div><br>\n    ");
  } 
-      out.write('\r');
       out.write('\n');
 
     // Get a workgroup manager
@@ -77,7 +75,6 @@ public final class workgroup_002dproperties_jsp extends org.apache.jasper.runtim
         return;
     }
 
-      out.write('\r');
       out.write('\n');
 
     // Load the workgroup object
@@ -190,67 +187,68 @@ public final class workgroup_002dproperties_jsp extends org.apache.jasper.runtim
     }
 
 
-      out.write("\r\n    <p>Below are the general settings for the <b>");
+      out.write("\n    <p>Below are the general settings for the <b>");
       out.print( workgroupJID.getNode() );
-      out.write("</b> workgroup.</p>\r\n    <script langauge=\"JavaScript\" type=\"text/javascript\">\r\n        function wgEnable(enable) {\r\n            if (enable) {\r\n                document.overview.enableWorkgroup.value = 'true';\r\n            }\r\n            else{\r\n                document.overview.enableWorkgroup.value = 'false';\r\n            }\r\n            document.overview.submit();\r\n        }\r\n    </script>\r\n\r\n");
+      out.write("</b> workgroup.</p>\n    <script langauge=\"JavaScript\" type=\"text/javascript\">\n        function wgEnable(enable) {\n            if (enable) {\n                document.overview.enableWorkgroup.value = 'true';\n            }\n            else{\n                document.overview.enableWorkgroup.value = 'false';\n            }\n            document.overview.submit();\n        }\n    </script>\n\n");
   if (!errors.isEmpty()) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/></td>\n            <td class=\"jive-icon-label\">\n\n            ");
  if (errors.get("displayName") != null) { 
-      out.write("\r\n                Please enter a valid display name.\r\n            ");
+      out.write("\n                Please enter a valid display name.\n            ");
  } else if (errors.get("maxChats") != null) { 
-      out.write("\r\n                Please enter a valid max number of chats value.\r\n            ");
+      out.write("\n                Please enter a valid max number of chats value.\n            ");
  } else if (errors.get("minChats") != null) { 
-      out.write("\r\n                Please enter a valid min number of chats value.\r\n            ");
+      out.write("\n                Please enter a valid min number of chats value.\n            ");
  } else if (errors.get("minChatsGreater") != null) { 
-      out.write("\r\n                Min chats must be less than max chats.\r\n            ");
+      out.write("\n                Min chats must be less than max chats.\n            ");
  } else if (errors.get("requestTimeout") != null) { 
-      out.write("\r\n                Please enter a valid request timeout value.\r\n            ");
+      out.write("\n                Please enter a valid request timeout value.\n            ");
  } else if (errors.get("offerTimeout") != null) { 
-      out.write("\r\n                Please enter a valid offer timeout value.\r\n            ");
+      out.write("\n                Please enter a valid offer timeout value.\n            ");
  } else if (errors.get("offerGreater") != null) { 
-      out.write("\r\n                Offer timeout must be less than request timeout.\r\n            ");
+      out.write("\n                Offer timeout must be less than request timeout.\n            ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n\n");
   } else { 
-      out.write("\r\n\r\n      ");
+      out.write("\n\n      ");
       out.print( statusMessage );
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   } 
-      out.write("\r\n\r\n    <form action=\"workgroup-properties.jsp\" name=\"overview\">\r\n    <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tr>\r\n            <th colspan=\"2\">Workgroup Details</th>\r\n        </tr>\r\n\r\n        <tr>\r\n            <td class=\"c1\"><b>Current Status</b></td>\r\n            <td>\r\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-width : 0px !important;\">\r\n                    <tr>\r\n");
+      out.write("\n\n    <form action=\"workgroup-properties.jsp\" name=\"overview\">\n    <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tr>\n            <th colspan=\"2\">Workgroup Details</th>\n        </tr>\n\n        <tr>\n            <td class=\"c1\"><b>Current Status</b></td>\n            <td>\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-width : 0px !important;\">\n                    <tr>\n");
 
                         if (workgroup.getStatus() == Workgroup.Status.OPEN) {
 
-      out.write("\r\n                            <td class=\"c2\">\r\n                                <img src=\"images/bullet-green-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\r\n                            </td>\r\n                            <td class=\"c2\">Workgroup is currently active and accepting requests.</td>\r\n                            <td>&nbsp;\r\n                                <input type=\"button\" value=\"Close\" onclick=\"wgEnable(false);return false;\"/>\r\n                            </td>\r\n");
+      out.write("\n                            <td class=\"c2\">\n                                <img src=\"images/bullet-green-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\n                            </td>\n                            <td class=\"c2\">Workgroup is currently active and accepting requests.</td>\n                            <td>&nbsp;\n                                <input type=\"button\" value=\"Close\" onclick=\"wgEnable(false);return false;\"/>\n                            </td>\n");
 
                         }
                         else if (workgroup.getStatus() == Workgroup.Status.READY) {
 
-      out.write("\r\n                            <td class=\"c2\">\r\n                                <img src=\"images/bullet-yellow-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\r\n                            </td>\r\n                            <td class=\"c2\">Waiting for member.</td>\r\n                            <td>&nbsp;\r\n                                <input type=\"button\" value=\"Close\" onclick=\"wgEnable(false);return false;\"/>\r\n                            </td>\r\n");
+      out.write("\n                            <td class=\"c2\">\n                                <img src=\"images/bullet-yellow-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\n                            </td>\n                            <td class=\"c2\">Waiting for member.</td>\n                            <td>&nbsp;\n                                <input type=\"button\" value=\"Close\" onclick=\"wgEnable(false);return false;\"/>\n                            </td>\n");
 
                         }
                         else{
 
-      out.write("\r\n                            <td class=\"c2\">\r\n                                <img src=\"images/bullet-red-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\r\n                            </td>\r\n                            <td class=\"c2\">&nbsp; Workgroup is currently closed.</td>\r\n                            <td>&nbsp;\r\n                                <input type=\"button\" value=\"Enable\" onclick=\"wgEnable(true);return false;\"/>\r\n                            </td>\r\n");
+      out.write("\n                            <td class=\"c2\">\n                                <img src=\"images/bullet-red-14x14.gif\" width=\"14\" height=\"14\" border=\"0\"/>\n                            </td>\n                            <td class=\"c2\">&nbsp; Workgroup is currently closed.</td>\n                            <td>&nbsp;\n                                <input type=\"button\" value=\"Enable\" onclick=\"wgEnable(true);return false;\"/>\n                            </td>\n");
 
                         }
 
-      out.write("\r\n                    </tr>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n       \r\n         <tr>\r\n            <td class=\"c1\">\r\n                <b>Display Name</b>\r\n            </td>\r\n            <td class=\"c2\">\r\n                <input type=\"text\" name=\"displayName\" size=\"30\" maxlength=\"50\" value=\"");
+      out.write("\n                    </tr>\n                </table>\n            </td>\n        </tr>\n       \n         <tr>\n            <td class=\"c1\">\n                <b>Display Name</b>\n            </td>\n            <td class=\"c2\">\n                <input type=\"text\" name=\"displayName\" size=\"30\" maxlength=\"50\" value=\"");
       out.print( ((displayName != null) ? displayName : "") );
-      out.write("\">\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n           <td class=\"c1\">\r\n               <b>Description</b>\r\n           </td>\r\n           <td class=\"c2\">\r\n               <textarea id=\"description\" name=\"description\" cols=\"30\" rows=\"3\">");
+      out.write("\">\n            </td>\n        </tr>\n        <tr>\n           <td class=\"c1\">\n               <b>Description</b>\n           </td>\n           <td class=\"c2\">\n               <textarea id=\"description\" name=\"description\" cols=\"30\" rows=\"3\">");
       out.print( ((description != null) ? description : "") );
-      out.write("</textarea>\r\n           </td>\r\n       </tr>\r\n        </table>\r\n    <br/>\r\n     <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tr>\r\n            <th colspan=\"2\">Chat Request Settings</th>\r\n        </tr>\r\n         <tr>\r\n            <td class=\"c1\">\r\n                <b>Max Sessions</b><br/><span class=\"jive-description\">Specify the maximum number of chats for a workgroup member.</span>\r\n            </td>\r\n            <td class=\"c2\">\r\n                            <input type=\"text\" name=\"maxChats\" value=\"");
+      out.write("</textarea>\n           </td>\n       </tr>\n        </table>\n    <br/>\n     <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tr>\n            <th colspan=\"2\">Chat Request Settings</th>\n        </tr>\n         <tr>\n            <td class=\"c1\">\n                <b>Max Sessions</b><br/><span class=\"jive-description\">Specify the maximum number of chats for a workgroup member.</span>\n            </td>\n            <td class=\"c2\">\n                            <input type=\"text\" name=\"maxChats\" value=\"");
       out.print( maxChats );
-      out.write("\"\r\n                             size=\"5\" maxlength=\"5\"\r\n                            >\r\n                        </td>\r\n                    </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n              <b>Min Sessions</b><br/><span class=\"jive-description\">Specify the minimum number of chats for a workgroup member.</span>\r\n            </td>\r\n                  <td class=\"c2\">\r\n                            <input type=\"text\" name=\"minChats\" value=\"");
+      out.write("\"\n                             size=\"5\" maxlength=\"5\"\n                            >\n                        </td>\n                    </tr>\n        <tr>\n            <td class=\"c1\">\n              <b>Min Sessions</b><br/><span class=\"jive-description\">Specify the minimum number of chats for a workgroup member.</span>\n            </td>\n                  <td class=\"c2\">\n                            <input type=\"text\" name=\"minChats\" value=\"");
       out.print( minChats );
-      out.write("\"\r\n                             size=\"5\" maxlength=\"5\">\r\n                        </td>\r\n                    </tr>\r\n\r\n        <tr>\r\n            <td class=\"c1\">\r\n                <b>Request timeout</b><br/><span class=\"jive-description\">Total time a user will be in a queue before timing out.</span>\r\n            </td>\r\n  <td class=\"c2\">\r\n                            <input type=\"text\" name=\"requestTimeout\" value=\"");
+      out.write("\"\n                             size=\"5\" maxlength=\"5\">\n                        </td>\n                    </tr>\n\n        <tr>\n            <td class=\"c1\">\n                <b>Request timeout</b><br/><span class=\"jive-description\">Total time a user will be in a queue before timing out.</span>\n            </td>\n  <td class=\"c2\">\n                            <input type=\"text\" name=\"requestTimeout\" value=\"");
       out.print(requestTimeout);
-      out.write("\"\r\n                             size=\"5\" maxlength=\"10\"> seconds\r\n      </td>\r\n\r\n        </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                <b>Offer Timeout</b><br/><span class=\"jive-description\">Amount of time each member has to answer an incoming request.</span>\r\n            </td>\r\n            <td class=\"c2\">\r\n\r\n                            <input type=\"text\" name=\"offerTimeout\" value=\"");
+      out.write("\"\n                             size=\"5\" maxlength=\"10\"> seconds\n      </td>\n\n        </tr>\n        <tr>\n            <td class=\"c1\">\n                <b>Offer Timeout</b><br/><span class=\"jive-description\">Amount of time each member has to answer an incoming request.</span>\n            </td>\n            <td class=\"c2\">\n\n                            <input type=\"text\" name=\"offerTimeout\" value=\"");
       out.print( offerTimeout );
-      out.write("\"\r\n                             size=\"5\" maxlength=\"10\"> seconds\r\n                        </td>\r\n                    </tr>\r\n\r\n\r\n        <tr>\r\n            <td class=\"c1\">\r\n                <b>Web authentication</b><br/><span class=\"jive-description\">If checked, requires user to have a valid Openfire account.</span>\r\n            </td>\r\n            <td class=\"c2\">\r\n                <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                <tbody>\r\n                    <input type=\"checkbox\" name=\"authRequired\" ");
+      out.write("\"\n                             size=\"5\" maxlength=\"10\"> seconds\n                        </td>\n                    </tr>\n\n\n        <tr>\n            <td class=\"c1\">\n                <b>Web authentication</b><br/><span class=\"jive-description\">If checked, requires user to have a valid Openfire account.</span>\n            </td>\n            <td class=\"c2\">\n                <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                <tbody>\n                    <input type=\"checkbox\" name=\"authRequired\" ");
       out.print( (authRequired ? "checked" : "") );
-      out.write(">\r\n                </tbody>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </table>\r\n    <br/>\r\n     <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write(">\n                </tbody>\n                </table>\n            </td>\n        </tr>\n    </table>\n    <br/>\n     <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\"/>\r\n        <input type=\"hidden\" name=\"enableWorkgroup\" value=\"\"/>\r\n        <input type=\"hidden\" name=\"doEnable\" value=\"true\"/>\r\n        <input type=\"submit\" name=\"update\" value=\"Update Workgroup\" />\r\n     </form>\r\n\r\n\r\n    </body>\r\n</html>\r\n\r\n\r\n\r\n\r\n");
+      out.write("\"/>\n        <input type=\"hidden\" name=\"enableWorkgroup\" value=\"\"/>\n        <input type=\"hidden\" name=\"doEnable\" value=\"true\"/>\n        <input type=\"submit\" name=\"update\" value=\"Update Workgroup\" />\n     </form>\n\n\n    </body>\n</html>\n\n\n\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -110,9 +110,8 @@ public final class setup_002ddatasource_002dstandard_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -120,8 +119,11 @@ public final class setup_002ddatasource_002dstandard_jsp extends org.apache.jasp
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     String driver = ParamUtils.getParameter(request,"driver");
     String serverURL = ParamUtils.getParameter(request,"serverURL");
@@ -241,40 +243,40 @@ public final class setup_002ddatasource_002dstandard_jsp extends org.apache.jasp
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"currentStep\" content=\"2\"/>\r\n</head>\r\n<body>\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n    <meta name=\"currentStep\" content=\"2\"/>\n</head>\n<body>\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n\t<p>\r\n\t");
+      out.write("\n\t</h1>\n\n\t<p>\n\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write(".\r\n\t</p>\r\n\r\n\t<p>\r\n\t<b>");
+      out.write(".\n\t</p>\n\n\t<p>\n\t<b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(" </b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(" <tt>[Openfire_HOME]/resources/database</tt>.\r\n\t</p>\r\n\r\n");
+      out.write(" <tt>[Openfire_HOME]/resources/database</tt>.\n\t</p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n    <div class=\"error\">\r\n    ");
+      out.write("\n    <div class=\"error\">\n    ");
   if (errors.get("general") != null) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       out.print( errors.get("general") );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } else { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    </div>\r\n");
+      out.write("\n    </div>\n");
   } 
-      out.write("\r\n\r\n\r\n\r\n\t<!-- BEGIN jive-contentBox -->\r\n\t<div class=\"jive-contentBox\">\r\n\r\n\r\n");
+      out.write("\n\n\n\n\t<!-- BEGIN jive-contentBox -->\n\t<div class=\"jive-contentBox\">\n\n\n");
   // DB preset data
     List<String[]> presets = new ArrayList<String []>();
     presets.add(new String[]{"MySQL","com.mysql.jdbc.Driver","jdbc:mysql://[host-name]:3306/[database-name]?rewriteBatchedStatements=true"});
@@ -283,11 +285,11 @@ public final class setup_002ddatasource_002dstandard_jsp extends org.apache.jasp
     presets.add(new String[]{"PostgreSQL","org.postgresql.Driver","jdbc:postgresql://[host-name]:5432/[database-name]"});
     presets.add(new String[]{"IBM DB2","com.ibm.db2.jcc.DB2Driver","jdbc:db2://[host]:50000/[database-name]"});
 
-      out.write("\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nvar data = new Array();\r\n");
+      out.write("\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar data = new Array();\n");
   for (int i=0; i<presets.size(); i++) {
         String[] data = presets.get(i);
 
-      out.write("\r\n    data[");
+      out.write("\n    data[");
       out.print( i );
       out.write("] = new Array('");
       out.print( data[0] );
@@ -299,125 +301,125 @@ public final class setup_002ddatasource_002dstandard_jsp extends org.apache.jasp
       out.write(',');
       out.write('\'');
       out.print( data[2] );
-      out.write("');\r\n");
+      out.write("');\n");
   } 
-      out.write("\r\nfunction populate(i) {\r\n    document.dbform.driver.value=data[i][1];\r\n    document.dbform.serverURL.value=data[i][2];\r\n}\r\nvar submitted = false;\r\nfunction checkSubmit() {\r\n    if (!submitted) {\r\n        submitted = true;\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n</script>\r\n\r\n<form action=\"setup-datasource-standard.jsp\" method=\"post\" name=\"dbform\" onsubmit=\"return checkSubmit();\">\r\n\r\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n<tr>\r\n\t<td nowrap align=\"right\">");
+      out.write("\nfunction populate(i) {\n    document.dbform.driver.value=data[i][1];\n    document.dbform.serverURL.value=data[i][2];\n}\nvar submitted = false;\nfunction checkSubmit() {\n    if (!submitted) {\n        submitted = true;\n        return true;\n    }\n    return false;\n}\n</script>\n\n<form action=\"setup-datasource-standard.jsp\" method=\"post\" name=\"dbform\" onsubmit=\"return checkSubmit();\">\n\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n<tr>\n\t<td nowrap align=\"right\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write(":</td>\r\n    <td>\r\n        <select size=\"1\" name=\"presets\" onchange=\"populate(this.options[this.selectedIndex].value)\">\r\n            <option value=\"\">");
+      out.write(":</td>\n    <td>\n        <select size=\"1\" name=\"presets\" onchange=\"populate(this.options[this.selectedIndex].value)\">\n            <option value=\"\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
   for (int i=0; i<presets.size(); i++) {
                     String[] data = presets.get(i);
             
-      out.write("\r\n                <option value=\"");
+      out.write("\n                <option value=\"");
       out.print( i );
       out.write("\"> &#149; ");
       out.print( data[0] );
-      out.write("\r\n            ");
+      out.write("\n            ");
   } 
-      out.write("\r\n        </select>\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
+      out.write("\n        </select>\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"text\" name=\"driver\" size=\"50\" maxlength=\"150\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"text\" name=\"driver\" size=\"50\" maxlength=\"150\"\n         value=\"");
       out.print( ((driver != null) ? driver : "") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("driver") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("driver") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"text\" name=\"serverURL\" size=\"50\" maxlength=\"250\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"text\" name=\"serverURL\" size=\"50\" maxlength=\"250\"\n         value=\"");
       out.print( ((serverURL != null) ? serverURL : "") );
-      out.write("\">\r\n\t    <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n\t    <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("serverURL") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("serverURL") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr><td colspan=\"2\">&nbsp;</td></tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr><td colspan=\"2\">&nbsp;</td></tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"text\" name=\"username\" size=\"20\" maxlength=\"50\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"text\" name=\"username\" size=\"20\" maxlength=\"50\"\n         value=\"");
       out.print( ((username != null) ? username : "") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("username") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("username") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"password\" name=\"password\" size=\"20\" maxlength=\"50\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"password\" name=\"password\" size=\"20\" maxlength=\"50\"\n         value=\"");
       out.print( ((password != null) ? password : "") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("password") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("password") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr><td colspan=\"2\">&nbsp;</td></tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
-      out.write("\r\n        Minimum Connections:\r\n    </td>\r\n    <td>\r\n\t    <input type=\"text\" name=\"minConnections\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n    </td>\n</tr>\n<tr><td colspan=\"2\">&nbsp;</td></tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
+      out.write("\n        Minimum Connections:\n    </td>\n    <td>\n\t    <input type=\"text\" name=\"minConnections\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( ((minConnections != -1) ? ""+minConnections : "") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("minConnections") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("minConnections") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
-      out.write("\r\n        Maximum Connections:\r\n    </td>\r\n    <td>\r\n\t    <input type=\"text\" name=\"maxConnections\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
+      out.write("\n        Maximum Connections:\n    </td>\n    <td>\n\t    <input type=\"text\" name=\"maxConnections\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( ((maxConnections != -1) ? ""+maxConnections : "") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("maxConnections") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("maxConnections") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td nowrap align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"text\" name=\"connectionTimeout\" size=\"5\" maxlength=\"5\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"text\" name=\"connectionTimeout\" size=\"5\" maxlength=\"5\"\n         value=\"");
       out.print( connectionTimeout );
-      out.write("\"> <span style=\"display: block; float: left; padding: 2px 5px 0px 2px;\">Days</span>\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\"> <span style=\"display: block; float: left; padding: 2px 5px 0px 2px;\">Days</span>\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("connectionTimeout") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       out.print( errors.get("connectionTimeout") );
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<br>\r\n\r\n\t\t<div align=\"right\"><div class=\"jive-description\" style=\"padding-bottom:10px;\">\r\n\t\t\t");
+      out.write("\n    </td>\n</tr>\n</table>\n\n<br>\n\n\t\t<div align=\"right\"><div class=\"jive-description\" style=\"padding-bottom:10px;\">\n\t\t\t");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</div>\r\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
+      out.write("</div>\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-save\" border=\"0\">\r\n\t\t</div>\r\n\t</form>\r\n\r\n\t</div>\r\n\t<!-- END jive-contentBox -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\" id=\"jive-setup-save\" border=\"0\">\n\t\t</div>\n\t</form>\n\n\t</div>\n\t<!-- END jive-contentBox -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

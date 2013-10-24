@@ -62,7 +62,7 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -71,10 +71,10 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     JID roomJID = new JID(ParamUtils.getParameter(request,"roomJID"));
     String affiliation = ParamUtils.getParameter(request,"affiliation");
@@ -173,98 +173,98 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"muc-room-affiliations\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"muc-room-affiliations\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "roomJID="+URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
-      out.write("\"/>\r\n        <meta name=\"helpPage\" content=\"edit_group_chat_room_user_permissions.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n        <meta name=\"helpPage\" content=\"edit_group_chat_room_user_permissions.html\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n<b><a href=\"muc-room-edit-form.jsp?roomJID=");
+      out.write("\n<b><a href=\"muc-room-edit-form.jsp?roomJID=");
       out.print( URLEncoder.encode(room.getJID().toBareJID(), "UTF-8") );
       out.write('"');
       out.write('>');
       out.print( room.getJID().toBareJID() );
-      out.write("</a></b>.\r\n");
+      out.write("</a></b>.\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
   if (errors.containsKey("ConflictException")) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } else if (errors.containsKey("NotAllowedException")) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } else { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (addsuccess || deletesuccess) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
   if (addsuccess) { 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } else if (deletesuccess) { 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"muc-room-affiliations.jsp?add\" method=\"post\">\r\n<input type=\"hidden\" name=\"roomJID\" value=\"");
+      out.write("\n\n<form action=\"muc-room-affiliations.jsp?add\" method=\"post\">\n<input type=\"hidden\" name=\"roomJID\" value=\"");
       out.print( roomJID.toBareJID() );
-      out.write("\">\r\n\r\n<fieldset>\r\n    <legend>");
+      out.write("\">\n\n<fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</legend>\r\n    <div>\r\n    <p>\r\n    <label for=\"memberJID\">");
+      out.write("</legend>\n    <div>\n    <p>\n    <label for=\"memberJID\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</label>\r\n    <input type=\"text\" name=\"userJID\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write("</label>\n    <input type=\"text\" name=\"userJID\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (userJID != null ? userJID : "") );
-      out.write("\" id=\"memberJID\">\r\n    <select name=\"affiliation\">\r\n        <option value=\"owner\">");
+      out.write("\" id=\"memberJID\">\n    <select name=\"affiliation\">\n        <option value=\"owner\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</option>\r\n        <option value=\"admin\">");
+      out.write("</option>\n        <option value=\"admin\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</option>\r\n        <option value=\"member\">");
+      out.write("</option>\n        <option value=\"member\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</option>\r\n        <option value=\"outcast\">");
+      out.write("</option>\n        <option value=\"outcast\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</option>\r\n    </select>\r\n    <input type=\"submit\" value=\"");
+      out.write("</option>\n    </select>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\">\r\n    </p>\r\n\r\n    <div class=\"jive-table\" style=\"width:400px;\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <thead>\r\n        <tr>\r\n            <th colspan=\"2\">");
+      out.write("\">\n    </p>\n\n    <div class=\"jive-table\" style=\"width:400px;\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <thead>\n        <tr>\n            <th colspan=\"2\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th width=\"1%\">");
+      out.write("</th>\n            <th width=\"1%\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n    ");
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\"><b>");
+      out.write("</th>\n        </tr>\n    </thead>\n    <tbody>\n    ");
+      out.write("\n            <tr>\n                <td colspan=\"2\"><b>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n\r\n        ");
+      out.write("</b></td>\n                <td>&nbsp;</td>\n            </tr>\n\n        ");
   if (room.getOwners().isEmpty()) { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\"><i>");
+      out.write("\n            <tr>\n                <td colspan=\"2\" align=\"center\"><i>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</i></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n        ");
+      out.write("</i></td>\n                <td>&nbsp;</td>\n            </tr>\n        ");
   }
             else {
                 ArrayList<JID> owners = new ArrayList<JID>(room.getOwners());
@@ -273,30 +273,30 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
                 	String username = JID.unescapeNode(user.getNode());
                     String userDisplay = username + '@' + user.getDomain();
         
-      out.write("\r\n            <tr>\r\n                <td>&nbsp;</td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td>&nbsp;</td>\n                <td>\n                    ");
       out.print( userDisplay );
-      out.write("\r\n                </td>\r\n                <td width=\"1%\" align=\"center\">\r\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
+      out.write("\n                </td>\n                <td width=\"1%\" align=\"center\">\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
       out.print( URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
       out.write("&userJID=");
       out.print( user );
-      out.write("&delete=true&affiliation=owner\"\r\n                     title=\"");
+      out.write("&delete=true&affiliation=owner\"\n                     title=\"");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\"\r\n                     onclick=\"return confirm('");
+      out.write("\"\n                     onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("');\"\r\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n                </td>\r\n            </tr>\r\n        ");
+      out.write("');\"\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n                </td>\n            </tr>\n        ");
   } } 
-      out.write("\r\n    ");
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\"><b>");
+      out.write("\n    ");
+      out.write("\n            <tr>\n                <td colspan=\"2\"><b>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n\r\n        ");
+      out.write("</b></td>\n                <td>&nbsp;</td>\n            </tr>\n\n        ");
   if (room.getAdmins().isEmpty()) { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\"><i>");
+      out.write("\n            <tr>\n                <td colspan=\"2\" align=\"center\"><i>");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</i></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n        ");
+      out.write("</i></td>\n                <td>&nbsp;</td>\n            </tr>\n        ");
   }
             else {
                 ArrayList<JID> admins = new ArrayList<JID>(room.getAdmins());
@@ -305,30 +305,30 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
                 	String username = JID.unescapeNode(user.getNode());
                     String userDisplay = username + '@' + user.getDomain();
         
-      out.write("\r\n            <tr>\r\n                <td>&nbsp;</td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td>&nbsp;</td>\n                <td>\n                    ");
       out.print( userDisplay );
-      out.write("\r\n                </td>\r\n                <td width=\"1%\" align=\"center\">\r\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
+      out.write("\n                </td>\n                <td width=\"1%\" align=\"center\">\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
       out.print( URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
       out.write("&userJID=");
       out.print( user );
-      out.write("&delete=true&affiliation=admin\"\r\n                     title=\"");
+      out.write("&delete=true&affiliation=admin\"\n                     title=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\"\r\n                     onclick=\"return confirm('");
+      out.write("\"\n                     onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("');\"\r\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n                </td>\r\n            </tr>\r\n        ");
+      out.write("');\"\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n                </td>\n            </tr>\n        ");
   } } 
-      out.write("\r\n    ");
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\"><b>");
+      out.write("\n    ");
+      out.write("\n            <tr>\n                <td colspan=\"2\"><b>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n\r\n        ");
+      out.write("</b></td>\n                <td>&nbsp;</td>\n            </tr>\n\n        ");
   if (room.getMembers().isEmpty()) { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\"><i>");
+      out.write("\n            <tr>\n                <td colspan=\"2\" align=\"center\"><i>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</i></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n        ");
+      out.write("</i></td>\n                <td>&nbsp;</td>\n            </tr>\n        ");
   }
             else {
                 ArrayList<JID> members = new ArrayList<JID>(room.getMembers());
@@ -339,31 +339,31 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
                     String nickname = room.getReservedNickname(user);
                     nickname = (nickname == null ? "" : " (" + nickname + ")");
         
-      out.write("\r\n            <tr>\r\n                <td>&nbsp;</td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td>&nbsp;</td>\n                <td>\n                    ");
       out.print( userDisplay );
       out.print(  nickname );
-      out.write("\r\n                </td>\r\n                <td width=\"1%\" align=\"center\">\r\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
+      out.write("\n                </td>\n                <td width=\"1%\" align=\"center\">\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
       out.print( URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
       out.write("&userJID=");
       out.print( user );
-      out.write("&delete=true&affiliation=member\"\r\n                     title=\"");
+      out.write("&delete=true&affiliation=member\"\n                     title=\"");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("\"\r\n                     onclick=\"return confirm('");
+      out.write("\"\n                     onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("');\"\r\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n                </td>\r\n            </tr>\r\n        ");
+      out.write("');\"\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n                </td>\n            </tr>\n        ");
   } } 
-      out.write("\r\n    ");
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\"><b>");
+      out.write("\n    ");
+      out.write("\n            <tr>\n                <td colspan=\"2\"><b>");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n\r\n        ");
+      out.write("</b></td>\n                <td>&nbsp;</td>\n            </tr>\n\n        ");
   if (room.getOutcasts().isEmpty()) { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\"><i>");
+      out.write("\n            <tr>\n                <td colspan=\"2\" align=\"center\"><i>");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</i></td>\r\n                <td>&nbsp;</td>\r\n            </tr>\r\n        ");
+      out.write("</i></td>\n                <td>&nbsp;</td>\n            </tr>\n        ");
   }
             else {
                 ArrayList<JID> outcasts = new ArrayList<JID>(room.getOutcasts());
@@ -372,21 +372,21 @@ public final class muc_002droom_002daffiliations_jsp extends org.apache.jasper.r
                 	String username = JID.unescapeNode(user.getNode());
                     String userDisplay = username + '@' + user.getDomain();
         
-      out.write("\r\n            <tr>\r\n                <td>&nbsp;</td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td>&nbsp;</td>\n                <td>\n                    ");
       out.print( userDisplay );
-      out.write("\r\n                </td>\r\n                <td width=\"1%\" align=\"center\">\r\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
+      out.write("\n                </td>\n                <td width=\"1%\" align=\"center\">\n                    <a href=\"muc-room-affiliations.jsp?roomJID=");
       out.print( URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
       out.write("&userJID=");
       out.print( user );
-      out.write("&delete=true&affiliation=outcast\"\r\n                     title=\"");
+      out.write("&delete=true&affiliation=outcast\"\n                     title=\"");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("\"\r\n                     onclick=\"return confirm('");
+      out.write("\"\n                     onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("');\"\r\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n                </td>\r\n            </tr>\r\n        ");
+      out.write("');\"\n                     ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n                </td>\n            </tr>\n        ");
   } } 
-      out.write("\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    </div>\r\n</fieldset>\r\n\r\n</form>\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\n    </tbody>\n    </table>\n    </div>\n    </div>\n</fieldset>\n\n</form>\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

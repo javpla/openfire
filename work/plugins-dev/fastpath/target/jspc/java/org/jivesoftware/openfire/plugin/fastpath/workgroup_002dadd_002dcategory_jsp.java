@@ -49,9 +49,8 @@ public final class workgroup_002dadd_002dcategory_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
  // Get parameters
     String wgID = ParamUtils.getParameter(request, "wgID");
     boolean add = request.getParameter("add") != null;
@@ -97,35 +96,35 @@ public final class workgroup_002dadd_002dcategory_jsp extends org.apache.jasper.
     }
 
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>Workgroup Add/Edit Category</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("\n\n<html>\n    <head>\n        <title>Workgroup Add/Edit Category</title>\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n    </head>\r\n    <body>\r\n<script language=\"javascript\">\r\n        function Jtrim(st) {\r\n            var len = st.length;\r\n            var begin = 0, end = len - 1;\r\n            while (st.charAt(begin) == \" \" && begin < len) {\r\n                begin++;\r\n            }\r\n            while (st.charAt(end) == \" \" && end > begin) {\r\n                end--;\r\n            }\r\n            return st.substring(begin, end + 1);\r\n        }\r\n\r\n        function validateForm(){\r\n           if(!Jtrim(document.f.categoryTitle.value)){\r\n              alert(\"You must specify a valid name for the new category.\");\r\n              document.f.categoryTitle.focus();\r\n              return false;\r\n           }\r\n           return true;\r\n        }\r\n</script>\r\n\r\n");
+      out.write("\"/>\n    </head>\n    <body>\n<script language=\"javascript\">\n        function Jtrim(st) {\n            var len = st.length;\n            var begin = 0, end = len - 1;\n            while (st.charAt(begin) == \" \" && begin < len) {\n                begin++;\n            }\n            while (st.charAt(end) == \" \" && end > begin) {\n                end--;\n            }\n            return st.substring(begin, end + 1);\n        }\n\n        function validateForm(){\n           if(!Jtrim(document.f.categoryTitle.value)){\n              alert(\"You must specify a valid name for the new category.\");\n              document.f.categoryTitle.focus();\n              return false;\n           }\n           return true;\n        }\n</script>\n\n");
  if(!edit){ 
-      out.write("\r\n<p>\r\nCreate a new Category as a sub-category to \"<b>");
+      out.write("\n<p>\nCreate a new Category as a sub-category to \"<b>");
       out.print( groupTitle);
-      out.write("</b>\" in the Form below.\r\n</p>\r\n");
+      out.write("</b>\" in the Form below.\n</p>\n");
  } else { 
-      out.write("\r\n<p>\r\nUse the form below to edit the \"<b>");
+      out.write("\n<p>\nUse the form below to edit the \"<b>");
       out.print( groupTitle);
-      out.write("</b>\" category.\r\n</p>\r\n");
+      out.write("</b>\" category.\n</p>\n");
  } 
-      out.write("\r\n\r\n<form name=\"f\" action=\"workgroup-add-category.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\r\n<input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n<form name=\"f\" action=\"workgroup-add-category.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\n<input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\" />\r\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
+      out.write("\" />\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
       out.print( URLEncoder.encode(groupTitle, "UTF-8") );
-      out.write("\" />\r\n<input type=\"hidden\" name=\"add\" value=\"true\" />\r\n");
+      out.write("\" />\n<input type=\"hidden\" name=\"add\" value=\"true\" />\n");
  if(edit){ 
-      out.write("\r\n<input type=\"hidden\" name=\"edit\" value=\"true\" />\r\n");
+      out.write("\n<input type=\"hidden\" name=\"edit\" value=\"true\" />\n");
  }
-      out.write("\r\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\r\n<th colspan=\"2\">");
+      out.write("\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\n<th colspan=\"2\">");
       out.print( edit ? "Edit Category" : "Add Category" );
-      out.write("</th>\r\n  <tr>\r\n  <td>Category Title</td><td><input type=\"text\" name=\"categoryTitle\" size=\"40\" maxlength=\"40\"><br><span class=\"jive-description\">");
+      out.write("</th>\n  <tr>\n  <td>Category Title</td><td><input type=\"text\" name=\"categoryTitle\" size=\"40\" maxlength=\"40\"><br><span class=\"jive-description\">");
       out.print(edit ? "Edit category" : "Adding new category to ");
       out.write(" <b>");
       out.print( rootGroup.getTitle() );
-      out.write("</b></span></td>\r\n  </tr>\r\n  <tr>\r\n  <td colspan=\"2\">\r\n  <input type=\"submit\" name=\"Add\" value=\"");
+      out.write("</b></span></td>\n  </tr>\n  <tr>\n  <td colspan=\"2\">\n  <input type=\"submit\" name=\"Add\" value=\"");
       out.print( edit ? "Edit Category" : "Add Category");
-      out.write("\">\r\n  </td>\r\n  </tr>\r\n</table>\r\n</form>\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\">\n  </td>\n  </tr>\n</table>\n</form>\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

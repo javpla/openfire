@@ -79,34 +79,35 @@ public final class groupchat_002dbookmarks_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
 
     boolean bookmarkCreated = request.getParameter("bookmarkCreated") != null;
 
     boolean delete = request.getParameter("delete") != null;
     final Collection<Bookmark> bookmarks = BookmarkManager.getBookmarks();
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\r\n    <meta name=\"pageID\" content=\"groupchat-bookmarks\"/>\r\n    <script src=\"/js/prototype.js\" type=\"text/javascript\"></script>\r\n    <script src=\"/js/scriptaculous.js\" type=\"text/javascript\"></script>\r\n    <style type=\"text/css\">\r\n        .div-border {\r\n            border: 1px solid #CCCCCC;\r\n            -moz-border-radius: 3px;\r\n        }\r\n    </style>\r\n    <style type=\"text/css\">\r\n        @import \"style/style.css\";\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n<p>\r\n    ");
+      out.write("</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\n    <meta name=\"pageID\" content=\"groupchat-bookmarks\"/>\n    <script src=\"/js/prototype.js\" type=\"text/javascript\"></script>\n    <script src=\"/js/scriptaculous.js\" type=\"text/javascript\"></script>\n    <style type=\"text/css\">\n        .div-border {\n            border: 1px solid #CCCCCC;\n            -moz-border-radius: 3px;\n        }\n    </style>\n    <style type=\"text/css\">\n        @import \"style/style.css\";\n    </style>\n</head>\n\n<body>\n\n<p>\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
  if (bookmarkCreated) { 
-      out.write("\r\n<div class=\"success\">\r\n   ");
+      out.write("\n<div class=\"success\">\n   ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
 }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (delete) { 
-      out.write("\r\n<div class=\"success\">\r\n     ");
+      out.write("\n<div class=\"success\">\n     ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n<br/>\r\n\r\n    <div class=\"div-border\" style=\"padding: 12px; width: 95%;\">\r\n        <table class=\"jive-table\" cellspacing=\"0\" width=\"100%\">\r\n            <th>");
+      out.write("\n\n<br/>\n\n    <div class=\"div-border\" style=\"padding: 12px; width: 95%;\">\n        <table class=\"jive-table\" cellspacing=\"0\" width=\"100%\">\n            <th>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write("</th><th>");
@@ -124,7 +125,7 @@ public final class groupchat_002dbookmarks_jsp extends org.apache.jasper.runtime
       out.write("</th><th>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n            ");
+      out.write("</th>\n            ");
 
                 boolean hasBookmarks = false;
                 for (Bookmark bookmark : bookmarks) {
@@ -145,33 +146,33 @@ public final class groupchat_002dbookmarks_jsp extends org.apache.jasper.runtime
                         }
                     }
             
-      out.write("\r\n            <tr style=\"border-left: none;\">\r\n                <td>");
+      out.write("\n            <tr style=\"border-left: none;\">\n                <td>");
       out.print( bookmark.getName());
-      out.write("</td>\r\n                <td>");
+      out.write("</td>\n                <td>");
       out.print( bookmark.getValue());
-      out.write("</td>\r\n                <td>");
+      out.write("</td>\n                <td>");
       out.print( users);
-      out.write("</td>\r\n                <td>");
+      out.write("</td>\n                <td>");
       out.print( groups);
-      out.write("</td>\r\n                <td>");
+      out.write("</td>\n                <td>");
       out.print( bookmark.getProperty("autojoin") != null ? "<img src='/images/check.gif'>" : "&nbsp;");
-      out.write("</td>\r\n                <td>\r\n                    <a href=\"create-bookmark.jsp?edit=true&bookmarkID=");
+      out.write("</td>\n                <td>\n                    <a href=\"create-bookmark.jsp?edit=true&bookmarkID=");
       out.print( bookmark.getBookmarkID());
-      out.write("\"><img src=\"/images/edit-16x16.gif\" border=\"0\" width=\"16\" height=\"16\" alt=\"Edit Bookmark\"/></a>\r\n                    <a href=\"confirm-bookmark-delete.jsp?bookmarkID=");
+      out.write("\"><img src=\"/images/edit-16x16.gif\" border=\"0\" width=\"16\" height=\"16\" alt=\"Edit Bookmark\"/></a>\n                    <a href=\"confirm-bookmark-delete.jsp?bookmarkID=");
       out.print( bookmark.getBookmarkID());
-      out.write("\"><img src=\"/images/delete-16x16.gif\" border=\"0\" width=\"16\" height=\"16\" alt=\"Delete Bookmark\"/></a>\r\n\r\n                </td>\r\n            </tr>\r\n            ");
+      out.write("\"><img src=\"/images/delete-16x16.gif\" border=\"0\" width=\"16\" height=\"16\" alt=\"Delete Bookmark\"/></a>\n\n                </td>\n            </tr>\n            ");
  } 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
  if (!hasBookmarks) { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"6\" align=\"center\">");
+      out.write("\n            <tr>\n                <td colspan=\"6\" align=\"center\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</td>\r\n            </tr>\r\n            ");
+      out.write("</td>\n            </tr>\n            ");
 } 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"6\">\r\n                    <a href=\"create-bookmark.jsp?type=group_chat\"><img src=\"/images/add-16x16.gif\" border=\"0\" align=\"texttop\" style=\"margin-right: 3px;\"/>");
+      out.write("\n            <tr>\n                <td colspan=\"6\">\n                    <a href=\"create-bookmark.jsp?type=group_chat\"><img src=\"/images/add-16x16.gif\" border=\"0\" align=\"texttop\" style=\"margin-right: 3px;\"/>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</a>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n    </div>\r\n\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("</a>\n                </td>\n            </tr>\n        </table>\n    </div>\n\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -69,8 +69,9 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n");
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.util.WebManager admin = null;
       synchronized (_jspx_page_context) {
         admin = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("admin", PageContext.PAGE_SCOPE);
@@ -79,10 +80,10 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
           _jspx_page_context.setAttribute("admin", admin, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  admin.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters
     int start = ParamUtils.getIntParameter(request, "start", 0);
     int range = ParamUtils
@@ -126,68 +127,69 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
     int curPage = (start / range) + 1;
     int maxIndex = (start + range <= sessionCount ? start + range : sessionCount);
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"component-session-summary\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"component-session-summary\"/>\n    </head>\n    <body>\n\n");
   if ("success".equals(request.getParameter("close"))) { 
-      out.write("\r\n\r\n    <p class=\"jive-success-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-success-text\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write(": <b>");
       out.print( sessions.size() );
-      out.write("</b>\r\n\r\n");
+      out.write("</b>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    - ");
+      out.write("\n\n    - ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(' ');
       out.print( (start+1) );
       out.write('-');
       out.print( (start+range) );
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   } 
-      out.write("\r\n - ");
+      out.write("\n - ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write(":\r\n<select size=\"1\" onchange=\"location.href='component-session-summary.jsp?start=0&range=' + this.options[this.selectedIndex].value;\">\r\n\r\n    ");
+      out.write(":\n<select size=\"1\" onchange=\"location.href='component-session-summary.jsp?start=0&range=' + this.options[this.selectedIndex].value;\">\n\n    ");
  for (int aRANGE_PRESETS : RANGE_PRESETS) { 
-      out.write("\r\n\r\n    <option value=\"");
+      out.write("\n\n    <option value=\"");
       out.print( aRANGE_PRESETS );
-      out.write("\"\r\n            ");
+      out.write("\"\n            ");
       out.print( (aRANGE_PRESETS == range ? "selected" : "") );
       out.write('>');
       out.print( aRANGE_PRESETS );
-      out.write("\r\n    </option>\r\n\r\n    ");
+      out.write("\n    </option>\n\n    ");
  } 
-      out.write("\r\n\r\n</select>\r\n</p>\r\n\r\n");
+      out.write("\n\n</select>\n</p>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n    [\r\n    ");
+      out.write(":\n    [\n    ");
   for (int i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"component-session-summary.jsp?start=");
+      out.write("\n        <a href=\"component-session-summary.jsp?start=");
       out.print( (i*range) );
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_6 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_6.setPageContext(_jspx_page_context);
@@ -201,7 +203,7 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
           _jspx_th_fmt_message_6.doInitBody();
         }
         do {
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -213,7 +215,7 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -225,7 +227,6 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write('\r');
           out.write('\n');
           int evalDoAfterBody = _jspx_th_fmt_message_6.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -239,47 +240,47 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_6);
-      out.write("\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th>&nbsp;</th>\r\n        <th nowrap>");
+      out.write("\n</p>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th>&nbsp;</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n    ");
   // Check if no out/in connection to/from a remote server exists
         if (sessions.isEmpty()) {
     
-      out.write("\r\n        <tr>\r\n            <td colspan=\"9\">\r\n\r\n                ");
+      out.write("\n        <tr>\n            <td colspan=\"9\">\n\n                ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n\r\n            </td>\r\n        </tr>\r\n\r\n    ");
+      out.write("\n\n            </td>\n        </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   int count = 0;
         sessions = new ArrayList<ComponentSession>(sessions).subList(start, maxIndex);
         for (ComponentSession componentSession : sessions) {
             count++;
     
-      out.write("\r\n    <tr class=\"jive-");
+      out.write("\n    <tr class=\"jive-");
       out.print( (((count % 2) == 0) ? "even" : "odd") );
-      out.write("\">\r\n        <td width=\"1%\" nowrap>");
+      out.write("\">\n        <td width=\"1%\" nowrap>");
       out.print( count );
-      out.write("</td>\r\n        <td width=\"43%\" nowrap>\r\n            <a href=\"component-session-details.jsp?jid=");
+      out.write("</td>\n        <td width=\"43%\" nowrap>\n            <a href=\"component-session-details.jsp?jid=");
       out.print( URLEncoder.encode(componentSession.getAddress().toString(), "UTF-8") );
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
@@ -287,37 +288,37 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
       out.write('"');
       out.write('>');
       out.print( componentSession.getAddress() );
-      out.write("</a>\r\n        </td>\r\n        <td align=\"center\" width=\"15%\" nowrap>\r\n            ");
+      out.write("</a>\n        </td>\n        <td align=\"center\" width=\"15%\" nowrap>\n            ");
       out.print( componentSession.getExternalComponent().getName() );
-      out.write("\r\n        </td>\r\n        <td align=\"center\" width=\"10%\" nowrap>\r\n            ");
+      out.write("\n        </td>\n        <td align=\"center\" width=\"10%\" nowrap>\n            ");
       out.print( componentSession.getExternalComponent().getCategory() );
-      out.write("\r\n        </td>\r\n        <td align=\"center\" width=\"10%\" nowrap>\r\n            <table border=\"0\">\r\n            <tr valign=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td align=\"center\" width=\"10%\" nowrap>\n            <table border=\"0\">\n            <tr valign=\"center\">\n            ");
  if ("gateway".equals(componentSession.getExternalComponent().getCategory())) {
                 if ("msn".equals(componentSession.getExternalComponent().getType())) { 
-      out.write("\r\n                <td><img src=\"images/msn.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"MSN\"></td>\r\n             ");
+      out.write("\n                <td><img src=\"images/msn.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"MSN\"></td>\n             ");
  }
                 else if ("aim".equals(componentSession.getExternalComponent().getType())) { 
-      out.write("\r\n                <td><img src=\"images/aim.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"AIM\"></td>\r\n             ");
+      out.write("\n                <td><img src=\"images/aim.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"AIM\"></td>\n             ");
  }
                 else if ("yahoo".equals(componentSession.getExternalComponent().getType())) { 
-      out.write("\r\n                <td><img src=\"images/yahoo.gif\" width=\"22\" height=\"16\" border=\"0\" alt=\"Yahoo!\"></td>\r\n             ");
+      out.write("\n                <td><img src=\"images/yahoo.gif\" width=\"22\" height=\"16\" border=\"0\" alt=\"Yahoo!\"></td>\n             ");
  }
                 else if ("icq".equals(componentSession.getExternalComponent().getType())) { 
-      out.write("\r\n                <td><img src=\"images/icq.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"ICQ\"></td>\r\n             ");
+      out.write("\n                <td><img src=\"images/icq.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"ICQ\"></td>\n             ");
  }
                 else if ("irc".equals(componentSession.getExternalComponent().getType())) { 
-      out.write("\r\n                <td><img src=\"images/irc.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"IRC\"></td>\r\n             ");
+      out.write("\n                <td><img src=\"images/irc.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"IRC\"></td>\n             ");
  }
                }
                else if ("component".equals(componentSession.getExternalComponent().getCategory())) {
                 if ("clearspace".equals(componentSession.getExternalComponent().getType().toLowerCase())) { 
-      out.write("\r\n                <td><img src=\"images/clearspace.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"Clearspace\"></td> \r\n             ");
+      out.write("\n                <td><img src=\"images/clearspace.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"Clearspace\"></td> \n             ");
  }
                }
             
-      out.write("\r\n            <td>");
+      out.write("\n            <td>");
       out.print( componentSession.getExternalComponent().getType() );
-      out.write("</td>\r\n            </tr></table>\r\n        </td>\r\n        ");
+      out.write("</td>\n            </tr></table>\n        </td>\n        ");
   Date creationDate = componentSession.getCreationDate();
             Calendar creationCal = Calendar.getInstance();
             creationCal.setTime(creationDate);
@@ -331,49 +332,49 @@ public final class component_002dsession_002dsummary_jsp extends org.apache.jasp
             boolean sameCreationDay = nowCal.get(Calendar.DAY_OF_YEAR) == creationCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == creationCal.get(Calendar.YEAR);
             boolean sameActiveDay = nowCal.get(Calendar.DAY_OF_YEAR) == lastActiveCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == lastActiveCal.get(Calendar.YEAR);
         
-      out.write("\r\n        <td align=\"center\" width=\"10%\" nowrap>\r\n            ");
+      out.write("\n        <td align=\"center\" width=\"10%\" nowrap>\n            ");
       out.print( sameCreationDay ? JiveGlobals.formatTime(creationDate) : JiveGlobals.formatDateTime(creationDate) );
-      out.write("\r\n        </td>\r\n        <td align=\"center\" width=\"10%\" nowrap>\r\n            ");
+      out.write("\n        </td>\n        <td align=\"center\" width=\"10%\" nowrap>\n            ");
       out.print( sameActiveDay ? JiveGlobals.formatTime(lastActiveDate) : JiveGlobals.formatDateTime(lastActiveDate) );
-      out.write("\r\n        </td>\r\n\r\n        <td width=\"1%\" nowrap align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n            <a href=\"component-session-summary.jsp?jid=");
+      out.write("\n        </td>\n\n        <td width=\"1%\" nowrap align=\"center\" style=\"border-right:1px #ccc solid;\">\n            <a href=\"component-session-summary.jsp?jid=");
       out.print( URLEncoder.encode(componentSession.getAddress().toString(), "UTF-8") );
-      out.write("&close=true\"\r\n             title=\"");
+      out.write("&close=true\"\n             title=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\"\r\n             onclick=\"return confirm('");
+      out.write("\"\n             onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("');\"\r\n             ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("');\"\n             ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n        </td>\n    </tr>\n    ");
   } 
-      out.write("\r\n\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n\n</tbody>\n</table>\n</div>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write(":\r\n    [\r\n    ");
+      out.write(":\n    [\n    ");
   for (int i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"component-session-summary.jsp?start=");
+      out.write("\n        <a href=\"component-session-summary.jsp?start=");
       out.print( (i*range) );
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<br>\r\n<p>\r\n");
+      out.write("\n\n<br>\n<p>\n");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write(':');
       out.write(' ');
       out.print( JiveGlobals.formatDateTime(new Date()) );
-      out.write("\r\n</p>\r\n\r\n    </body>\r\n</html>");
+      out.write("\n</p>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

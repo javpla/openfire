@@ -47,10 +47,10 @@ public final class agent_002dselectors_jsp extends org.apache.jasper.runtime.Htt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
  try { 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters
     boolean addAlgorithm = ParamUtils.getBooleanParameter(request, "addAlgorithm");
     String newClassname = ParamUtils.getParameter(request, "newClassname");
@@ -93,7 +93,7 @@ public final class agent_002dselectors_jsp extends org.apache.jasper.runtime.Htt
     }
 
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>Dispatcher Settings</title>\r\n        <meta name=\"pageID\" content=\"member-selectors\"/>\r\n        <!--<meta name=\"helpPage\" content=\"configure_global_dispatcher_settings.html\"/>-->\r\n\r\n        <script language=\"JavaScript\" type=\"text/javascript\">\r\n        var algorithmInfo = new Array(\r\n");
+      out.write("\n\n<html>\n    <head>\n        <title>Dispatcher Settings</title>\n        <meta name=\"pageID\" content=\"member-selectors\"/>\n        <!--<meta name=\"helpPage\" content=\"configure_global_dispatcher_settings.html\"/>-->\n\n        <script language=\"JavaScript\" type=\"text/javascript\">\n        var algorithmInfo = new Array(\n");
 	    int i = 0;
         List<AgentSelector> availableAgentSelectors = WorkgroupUtils.getAvailableAgentSelectors();
         for(AgentSelector agentSelector : availableAgentSelectors){
@@ -101,48 +101,49 @@ public final class agent_002dselectors_jsp extends org.apache.jasper.runtime.Htt
             try {
                 BeanDescriptor descriptor = (Introspector.getBeanInfo(agentSelector.getClass())).getBeanDescriptor();
 
-      out.write("\r\n            new Array(\r\n                \"");
+      out.write("\n            new Array(\n                \"");
       out.print( descriptor.getBeanClass().getName() );
-      out.write("\",\r\n                \"");
+      out.write("\",\n                \"");
       out.print( descriptor.getValue("version") );
-      out.write("\",\r\n                \"");
+      out.write("\",\n                \"");
       out.print( descriptor.getValue("author") );
-      out.write("\",\r\n                \"");
+      out.write("\",\n                \"");
       out.print( StringUtils.replace(descriptor.getShortDescription(), "\"", "\\\"") );
-      out.write("\"\r\n            )\r\n");
+      out.write("\"\n            )\n");
           if ((availableAgentSelectors.size() - i) > 1) { 
-      out.write("\r\n                ,\r\n");
+      out.write("\n                ,\n");
 	        }
                 } catch (Exception e) {}
                  i++;
             }
 
-      out.write("\r\n        );\r\n        function properties(theForm) {\r\n            var className = theForm.algorithms.options[theForm.algorithms.selectedIndex].value;\r\n            var selected = 0;\r\n            for (selected=0; selected<algorithmInfo.length; selected++) {\r\n                if (algorithmInfo[selected][0] == className) {\r\n                    var version = algorithmInfo[selected][1];\r\n                    var author = algorithmInfo[selected][2];\r\n                    var description = algorithmInfo[selected][3];\r\n                    theForm.version.value = ((version==\"null\")?\"\":version);\r\n                    theForm.author.value = ((author==\"null\")?\"\":author);\r\n                    theForm.description.value = ((description==\"null\")?\"\":description);\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n        </script>\r\n    </head>\r\n    <body>\r\n\r\n<span>\r\n\r\n<p>Below is a list of available algorithms for choosing the best agent in a queue that may\r\nreceive an offer. Use the form below to install new algorithms.\r\n");
-      out.write("</p>\r\n\r\n</span>\r\n\r\n<p>\r\n\r\n");
+      out.write("\n        );\n        function properties(theForm) {\n            var className = theForm.algorithms.options[theForm.algorithms.selectedIndex].value;\n            var selected = 0;\n            for (selected=0; selected<algorithmInfo.length; selected++) {\n                if (algorithmInfo[selected][0] == className) {\n                    var version = algorithmInfo[selected][1];\n                    var author = algorithmInfo[selected][2];\n                    var description = algorithmInfo[selected][3];\n                    theForm.version.value = ((version==\"null\")?\"\":version);\n                    theForm.author.value = ((author==\"null\")?\"\":author);\n                    theForm.description.value = ((description==\"null\")?\"\":description);\n                    break;\n                }\n            }\n        }\n        </script>\n    </head>\n    <body>\n\n<span>\n\n<p>Below is a list of available algorithms for choosing the best agent in a queue that may\nreceive an offer. Use the form below to install new algorithms.\n</p>\n\n</span>\n");
+      out.write("\n<p>\n\n");
   // Print out a message if one exists
     String oneTimeMessage = errorMessage;
     if (oneTimeMessage != null) {
 
-      out.write("\r\n    <font size=\"-1\" color=\"#ff0000\">\r\n    <p><i>");
+      out.write("\n    <font size=\"-1\" color=\"#ff0000\">\n    <p><i>");
       out.print( oneTimeMessage );
-      out.write("</i></p>\r\n\r\n");
+      out.write("</i></p>\n\n");
   }
 
-      out.write("\r\n\r\n<p>\r\n\r\n<form action=\"agent-selectors.jsp\" method=\"post\">\r\n\r\n<span class=\"jive-install-interceptor\">\r\n\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n<tr><td>\r\n    <b>Available Algorithms</b>\r\n    </td>\r\n    <td>\r\n    <a href=\"#\" onclick=\"helpwin('algorithms','install_interceptor');return false;\"\r\n     title=\"Click for help\"\r\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\r\n    </td>\r\n</tr>\r\n</table><br>\r\n\r\n<ul>\r\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1%\">\r\n    <tr><td>\r\n        <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n        <tr bgcolor=\"#eeeeee\">\r\n            <td align=\"center\">\r\n                <font size=\"-2\" face=\"verdana\"><b>AVAILABLE ALGORITHMS</b></font>\r\n            </td>\r\n        </tr>\r\n        <tr bgcolor=\"#ffffff\">\r\n            <td>\r\n                <table cellpadding=\"1\" cellspacing=\"0\" border=\"0\">\r\n                <tr>\r\n                    <td width=\"48%\" valign=\"top\">\r\n                        <select size=\"8\" name=\"algorithms\" onchange=\"properties(this.form);\">\r\n");
+      out.write("\n\n<p>\n\n<form action=\"agent-selectors.jsp\" method=\"post\">\n\n<span class=\"jive-install-interceptor\">\n\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n<tr><td>\n    <b>Available Algorithms</b>\n    </td>\n    <td>\n    <a href=\"#\" onclick=\"helpwin('algorithms','install_interceptor');return false;\"\n     title=\"Click for help\"\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\n    </td>\n</tr>\n</table><br>\n\n<ul>\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1%\">\n    <tr><td>\n        <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n        <tr bgcolor=\"#eeeeee\">\n            <td align=\"center\">\n                <font size=\"-2\" face=\"verdana\"><b>AVAILABLE ALGORITHMS</b></font>\n            </td>\n        </tr>\n        <tr bgcolor=\"#ffffff\">\n            <td>\n                <table cellpadding=\"1\" cellspacing=\"0\" border=\"0\">\n                <tr>\n                    <td width=\"48%\" valign=\"top\">\n                        <select size=\"8\" name=\"algorithms\" onchange=\"properties(this.form);\">\n");
       out.write("                        ");
   for(AgentSelector agentSelector : WorkgroupUtils.getAvailableAgentSelectors()) {
                             BeanDescriptor descriptor = (Introspector.getBeanInfo(agentSelector.getClass())).getBeanDescriptor();
                         
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( descriptor.getBeanClass().getName() );
-      out.write("\"\r\n                             >");
+      out.write("\"\n                             >");
       out.print( descriptor.getDisplayName() );
-      out.write("\r\n\r\n                        ");
+      out.write("\n\n                        ");
   } 
-      out.write("\r\n                        </select>\r\n                        <br>\r\n                    </td>\r\n                    <td width=\"2%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\" /></td>\r\n                    <td width=\"48%\" valign=\"top\">\r\n\r\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                        <tr>\r\n                            <td><font size=\"-2\">VERSION</font></td>\r\n                            <td><input type=\"text\" size=\"20\" name=\"version\" style=\"width:100%\"></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td><font size=\"-2\">AUTHOR</font></td>\r\n                            <td><input type=\"text\" size=\"20\" name=\"author\" style=\"width:100%\"></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td valign=\"top\"><font size=\"-2\">DESCRIPTION</font></td>\r\n                            <td><textarea name=\"description\" cols=\"20\" rows=\"5\" wrap=\"virtual\"></textarea></td>\r\n");
-      out.write("                        </tr>\r\n                        </table>\r\n\r\n                    </td>\r\n                </tr>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n        </table>\r\n    </td></tr>\r\n    </table>\r\n</ul>\r\n\r\n</span>\r\n\r\n</form>\r\n\r\n<form action=\"agent-selectors.jsp\">\r\n<input type=\"hidden\" name=\"addAlgorithm\" value=\"true\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n<tr><td>\r\n    <b>Add Algorithm Class</b>\r\n    </td>\r\n    <td>\r\n    <a href=\"#\" onclick=\"helpwin('algorithms','add_algorithm_class');return false;\"\r\n     title=\"Click for help\"\r\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\r\n    </td>\r\n</tr>\r\n</table><br>\r\n<ul>\r\n    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\r\n    <tr>\r\n    \t<td>Class Name:</td>\r\n    \t<td><input type=\"text\" name=\"newClassname\" value=\"\" size=\"30\" maxlength=\"100\"></td>\r\n    \t<td><input type=\"submit\" value=\"Add Algorithm\"></td>\r\n    </tr>\r\n    </table>\r\n</ul>\r\n</form>\r\n\r\n<p>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n                        </select>\n                        <br>\n                    </td>\n                    <td width=\"2%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\" /></td>\n                    <td width=\"48%\" valign=\"top\">\n\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                        <tr>\n                            <td><font size=\"-2\">VERSION</font></td>\n                            <td><input type=\"text\" size=\"20\" name=\"version\" style=\"width:100%\"></td>\n                        </tr>\n                        <tr>\n                            <td><font size=\"-2\">AUTHOR</font></td>\n                            <td><input type=\"text\" size=\"20\" name=\"author\" style=\"width:100%\"></td>\n                        </tr>\n                        <tr>\n                            <td valign=\"top\"><font size=\"-2\">DESCRIPTION</font></td>\n                            <td><textarea name=\"description\" cols=\"20\" rows=\"5\" wrap=\"virtual\"></textarea></td>\n                        </tr>\n");
+      out.write("                        </table>\n\n                    </td>\n                </tr>\n                </table>\n            </td>\n        </tr>\n        </table>\n    </td></tr>\n    </table>\n</ul>\n\n</span>\n\n</form>\n\n<form action=\"agent-selectors.jsp\">\n<input type=\"hidden\" name=\"addAlgorithm\" value=\"true\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n<tr><td>\n    <b>Add Algorithm Class</b>\n    </td>\n    <td>\n    <a href=\"#\" onclick=\"helpwin('algorithms','add_algorithm_class');return false;\"\n     title=\"Click for help\"\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\n    </td>\n</tr>\n</table><br>\n<ul>\n    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\n    <tr>\n    \t<td>Class Name:</td>\n    \t<td><input type=\"text\" name=\"newClassname\" value=\"\" size=\"30\" maxlength=\"100\"></td>\n    \t<td><input type=\"submit\" value=\"Add Algorithm\"></td>\n    </tr>\n    </table>\n</ul>\n</form>\n\n<p>\n\n\n</body>\n</html>\n");
  } catch(Exception ex){ex.printStackTrace(); } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

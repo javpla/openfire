@@ -65,7 +65,8 @@ public final class setup_002dldap_002duser_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Redirect if we've already run setup:
     if (!XMPPServer.getInstance().isSetupMode()) {
@@ -73,7 +74,8 @@ public final class setup_002dldap_002duser_jsp extends org.apache.jasper.runtime
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     boolean initialSetup = true;
     String currentPage = "setup-ldap-user.jsp";
@@ -82,7 +84,6 @@ public final class setup_002dldap_002duser_jsp extends org.apache.jasper.runtime
     Map<String, String> meta = new HashMap<String, String>();
     meta.put("currentStep", "3");
 
-      out.write('\r');
       out.write('\n');
       out.write("\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.admin.LdapUserProfile vcardBean = null;

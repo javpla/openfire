@@ -66,7 +66,7 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     long conversationID = ParamUtils.getLongParameter(request, "conversationID", -1);
     int start = ParamUtils.getIntParameter(request, "start", 0);
@@ -102,14 +102,14 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
     int numPages = (int) Math.ceil((double) (values.size() / 2) / (double) (range / 2));
     int curPage = (start / range) + 1;
 
-      out.write("\r\n<html>\r\n<head>\r\n<meta name=\"decorator\" content=\"none\"/>\r\n</head>\r\n<body>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domTT.js\"></script>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domLib.js\"></script>\r\n<style type=\"text/css\">\r\n#lightbox{\r\n\ttop: 20%;\r\n\tmargin-top: -20px;\r\n\t}\r\n\r\n.jive-testPanel {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 2px solid #666666;\r\n\tbackground-color: #f8f7eb;\r\n\toverflow: hidden;\r\n\tz-index: 9997;\r\n\t-moz-border-radius: 6px;\r\n\t}\r\n.jive-testPanel-content {\r\n\tdisplay: block;\r\n\tfloat: left;\r\n\tpadding: 20px;\r\n\tfont-size: 8pt;\r\n\tz-index: 9999;\r\n\t}\r\n.jive-testPanel-close a,\r\n.jive-testPanel-close a:visited {\r\n\tfloat: right;\r\n\tcolor: #666;\r\n\tpadding: 2px 5px 2px 18px;\r\n\tmargin: 0;\r\n\tfont-size: 8pt;\r\n\tbackground: transparent url(../../../images/setup_btn_closetestx.gif) no-repeat left;\r\n\tbackground-position: 4;\r\n\tborder: 1px solid #ccc;\r\n\tz-index: 9999;\r\n\t}\r\n.jive-testPanel-close a:hover {\r\n");
-      out.write("\tbackground-color: #e9e8d9;\r\n\t}\r\n.jive-testPanel-content h2 {\r\n\tfont-size: 14pt;\r\n\tcolor: #396b9c;\r\n\tmargin: 0 0 10px 0;\r\n\tpadding: 0;\r\n\t}\r\n.jive-testPanel-content h2 span {\r\n\tfont-size: 10pt;\r\n\tcolor: #000;\r\n\t}\r\n.jive-testPanel-content h4 {\r\n\tfont-size: 12pt;\r\n\tmargin: 0 0 10px 0;\r\n\tpadding: 0;\r\n\t}\r\n.jive-testPanel-content h4.jive-testSuccess {\r\n\tcolor: #1e7100;\r\n\t}\r\n.jive-testPanel-content h4.jive-testError {\r\n\tcolor: #890000;\r\n\t}\r\n</style>\r\n\r\n<!-- BEGIN connection settings test panel -->\r\n<div class=\"jive-testPanel\">\r\n\t<div class=\"jive-testPanel-content\">\r\n\r\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\r\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
+      out.write("\n<html>\n<head>\n<meta name=\"decorator\" content=\"none\"/>\n</head>\n<body>\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domTT.js\"></script>\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domLib.js\"></script>\n<style type=\"text/css\">\n#lightbox{\n\ttop: 20%;\n\tmargin-top: -20px;\n\t}\n\n.jive-testPanel {\n\tdisplay: block;\n\tposition: relative;\n\tfloat: left;\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 2px solid #666666;\n\tbackground-color: #f8f7eb;\n\toverflow: hidden;\n\tz-index: 9997;\n\t-moz-border-radius: 6px;\n\t}\n.jive-testPanel-content {\n\tdisplay: block;\n\tfloat: left;\n\tpadding: 20px;\n\tfont-size: 8pt;\n\tz-index: 9999;\n\t}\n.jive-testPanel-close a,\n.jive-testPanel-close a:visited {\n\tfloat: right;\n\tcolor: #666;\n\tpadding: 2px 5px 2px 18px;\n\tmargin: 0;\n\tfont-size: 8pt;\n\tbackground: transparent url(../../../images/setup_btn_closetestx.gif) no-repeat left;\n\tbackground-position: 4;\n\tborder: 1px solid #ccc;\n\tz-index: 9999;\n\t}\n.jive-testPanel-close a:hover {\n\tbackground-color: #e9e8d9;\n\t}\n.jive-testPanel-content h2 {\n");
+      out.write("\tfont-size: 14pt;\n\tcolor: #396b9c;\n\tmargin: 0 0 10px 0;\n\tpadding: 0;\n\t}\n.jive-testPanel-content h2 span {\n\tfont-size: 10pt;\n\tcolor: #000;\n\t}\n.jive-testPanel-content h4 {\n\tfont-size: 12pt;\n\tmargin: 0 0 10px 0;\n\tpadding: 0;\n\t}\n.jive-testPanel-content h4.jive-testSuccess {\n\tcolor: #1e7100;\n\t}\n.jive-testPanel-content h4.jive-testError {\n\tcolor: #890000;\n\t}\n</style>\n\n<!-- BEGIN connection settings test panel -->\n<div class=\"jive-testPanel\">\n\t<div class=\"jive-testPanel-content\">\n\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<h2>");
+      out.write("</a>\n\t\t</div>\n\n\n\t\t<h2>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</h2>\r\n\r\n\t\t<p>");
+      out.write("</h2>\n\n\t\t<p>");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_2 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_2.setPageContext(_jspx_page_context);
@@ -123,7 +123,7 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
           _jspx_th_fmt_message_2.doInitBody();
         }
         do {
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -135,7 +135,7 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n            ");
+          out.write("\n            ");
           int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -148,33 +148,33 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_2);
-      out.write("\r\n        </p>\r\n\r\n        ");
+      out.write("\n        </p>\n\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(": <b>");
       out.print( values.size() );
-      out.write("</b>\r\n\r\n        ");
+      out.write("</b>\n\n        ");
   if (numPages > 1) { 
-      out.write("\r\n\r\n            -- ");
+      out.write("\n\n            -- ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(' ');
       out.print( (start+1) );
       out.write('-');
       out.print( (start+range) );
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   if (numPages > 1) { 
-      out.write("\r\n\r\n            <p>\r\n            ");
+      out.write("\n\n            <p>\n            ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n            [\r\n            ");
+      out.write(":\n            [\n            ");
   for (int i=0; i<numPages; i++) {
                     String sep = ((i+1)<numPages) ? " " : "";
                     boolean isCurrent = (i+1) == curPage;
             
-      out.write("\r\n                <a href=\"#\" rel=\"deactivate\" onclick=\"showOccupants('");
+      out.write("\n                <a href=\"#\" rel=\"deactivate\" onclick=\"showOccupants('");
       out.print(conversationID);
       out.write('\'');
       out.write(',');
@@ -187,14 +187,14 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n            ");
+      out.write("\n            ");
   } 
-      out.write("\r\n            ]\r\n\r\n        ");
+      out.write("\n            ]\n\n        ");
   } 
-      out.write("\r\n        <div class=\"jive-table\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n        <thead>\r\n            <tr>\r\n                <th colspan=\"2\">");
+      out.write("\n        <div class=\"jive-table\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n        <thead>\n            <tr>\n                <th colspan=\"2\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            ");
+      out.write("</th>\n            </tr>\n        </thead>\n        <tbody>\n            ");
  if (!values.isEmpty()) {
                 int from = (curPage-1) * range;
                 int to = curPage * range;
@@ -208,32 +208,32 @@ public final class archive_002dconversation_002dparticipants_jsp extends org.apa
                     String nickname = participation[0];
                     JID participant = new  JID(participation[1]);
             
-      out.write("\r\n            <tr>\r\n                \r\n                <td>");
+      out.write("\n            <tr>\n                \n                <td>");
       out.print(nickname);
       out.write(" <i>(");
       out.print( server.isLocal(participant) && userManager.isRegisteredUser(participant) ? "<a href='/user-properties.jsp?username=" + participant.getNode() + "'>" + participant.toBareJID() + "</a>" : participant.toBareJID() );
-      out.write(")</i></td>\r\n\r\n                ");
+      out.write(")</i></td>\n\n                ");
  if (it.hasNext()) {
                     participation = it.next();
                     nickname = participation[0];
                     participant = new  JID(participation[1]);
                 
-      out.write("\r\n                <td>");
+      out.write("\n                <td>");
       out.print(nickname);
       out.write(" <i>(");
       out.print( server.isLocal(participant) && userManager.isRegisteredUser(participant) ? "<a href='/user-properties.jsp?username=" + participant.getNode() + "'>" + participant.toBareJID() + "</a>" : participant.toBareJID() );
-      out.write(")</i></td>\r\n                ");
+      out.write(")</i></td>\n                ");
  } else { 
-      out.write("\r\n                <td>&nbsp;</td>\r\n                ");
+      out.write("\n                <td>&nbsp;</td>\n                ");
  } 
-      out.write("\r\n            </tr>\r\n            ");
+      out.write("\n            </tr>\n            ");
  } } else { 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"3\">");
+      out.write("\n            <tr>\n                <td colspan=\"3\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</td>\r\n            </tr>\r\n            ");
+      out.write("</td>\n            </tr>\n            ");
  } 
-      out.write("\r\n        </tbody>\r\n        </table>\r\n        </div>\r\n\t</div>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n        </tbody>\n        </table>\n        </div>\n\t</div>\n</div>\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -58,7 +58,7 @@ public final class archiving_002dsettings_jsp extends org.apache.jasper.runtime.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
 
     // Get handle on the Monitoring plugin
     MonitoringPlugin plugin = (MonitoringPlugin) XMPPServer.getInstance().getPluginManager().getPlugin("monitoring");
@@ -69,13 +69,12 @@ public final class archiving_002dsettings_jsp extends org.apache.jasper.runtime.
     ByteFormat byteFormatter = new ByteFormat();
     String indexSize = byteFormatter.format(archiveIndexer.getIndexSize());
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"archiving-settings\"/>\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"style/global.css\">\r\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/interface/conversations.js\" type=\"text/javascript\"></script>\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"style/style.css\">\r\n<script type=\"text/javascript\">\r\n    // Calls a getBuildProgress\r\n    function getBuildProgress() {\r\n        conversations.getBuildProgress(showBuildProgress);\r\n    }\r\n\r\n    function showBuildProgress(progress) {\r\n        var rebuildElement = document.getElementById(\"rebuildElement\");\r\n        if (progress != null && progress != -1){\r\n            // Update progress item.\r\n            rebuildElement.style.display = '';\r\n            var rebuildProgress = document.getElementById('rebuildProgress');\r\n            rebuildProgress.innerHTML = progress;\r\n            setTimeout(\"getBuildProgress()\", 1000);\r\n        }\r\n        else {\r\n");
-      out.write("            var rebuildProgress = document.getElementById('rebuildProgress');\r\n            rebuildProgress.innerHTML = \"100\";\r\n            Effect.Fade('rebuildElement');\r\n        }\r\n    }\r\n</script>\r\n<style type=\"text/css\">\r\n    .small-label {\r\n        font-size: 11px;\r\n        font-weight: bold;\r\n        font-family: verdana;\r\n    }\r\n\r\n    .small-text {\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n    }\r\n\r\n    .stat {\r\n        border: 1px;\r\n        border-color: #ccc;\r\n        border-style: dotted;\r\n    }\r\n\r\n    .conversation-body {\r\n        color: black;\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n    }\r\n\r\n    .conversation-label1 {\r\n        color: blue;\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n    }\r\n\r\n    .conversation-label2 {\r\n        color: red;\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n    }\r\n\r\n    .conversation-table {\r\n        font-family: verdana;\r\n        font-size: 12px;\r\n    }\r\n\r\n    .light-gray-border {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n");
-      out.write("        border-width: 1px 1px 1px 1px;\r\n    }\r\n\r\n    .light-gray-border-bottom {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n        border-width: 0px 0px 1px 0px;\r\n    }\r\n\r\n    .content {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n        border-width: 0px 0px 1px 0px;\r\n    }\r\n\r\n    /* Default DOM Tooltip Style */\r\n    div.domTT {\r\n        border: 1px solid #bbb;\r\n        background-color: #F9F5D5;\r\n        font-family: arial;\r\n        font-size: 9px;\r\n        padding: 5px;\r\n    }\r\n\r\n    div.domTT .caption {\r\n        font-family: serif;\r\n        font-size: 12px;\r\n        font-weight: bold;\r\n        padding: 1px 2px;\r\n        color: #FFFFFF;\r\n    }\r\n\r\n    div.domTT .contents {\r\n        font-size: 12px;\r\n        font-family: sans-serif;\r\n        padding: 3px 2px;\r\n    }\r\n\r\n    .textfield {\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n        padding: 3px 2px;\r\n        background: #efefef;\r\n    }\r\n\r\n    .keyword-field {\r\n        font-size: 11px;\r\n        font-family: verdana;\r\n");
-      out.write("        padding: 3px 2px;\r\n    }\r\n\r\n\r\n</style>\r\n\r\n<style type=\"text/css\">\r\n\t@import \"style/style.css\";\r\n</style>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"archiving-settings\"/>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"style/global.css\">\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/interface/conversations.js\" type=\"text/javascript\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"style/style.css\">\n<script type=\"text/javascript\">\n    // Calls a getBuildProgress\n    function getBuildProgress() {\n        conversations.getBuildProgress(showBuildProgress);\n    }\n\n    function showBuildProgress(progress) {\n        var rebuildElement = document.getElementById(\"rebuildElement\");\n        if (progress != null && progress != -1){\n            // Update progress item.\n            rebuildElement.style.display = '';\n            var rebuildProgress = document.getElementById('rebuildProgress');\n            rebuildProgress.innerHTML = progress;\n            setTimeout(\"getBuildProgress()\", 1000);\n        }\n        else {\n            var rebuildProgress = document.getElementById('rebuildProgress');\n");
+      out.write("            rebuildProgress.innerHTML = \"100\";\n            Effect.Fade('rebuildElement');\n        }\n    }\n</script>\n<style type=\"text/css\">\n    .small-label {\n        font-size: 11px;\n        font-weight: bold;\n        font-family: verdana;\n    }\n\n    .small-text {\n        font-size: 11px;\n        font-family: verdana;\n    }\n\n    .stat {\n        border: 1px;\n        border-color: #ccc;\n        border-style: dotted;\n    }\n\n    .conversation-body {\n        color: black;\n        font-size: 11px;\n        font-family: verdana;\n    }\n\n    .conversation-label1 {\n        color: blue;\n        font-size: 11px;\n        font-family: verdana;\n    }\n\n    .conversation-label2 {\n        color: red;\n        font-size: 11px;\n        font-family: verdana;\n    }\n\n    .conversation-table {\n        font-family: verdana;\n        font-size: 12px;\n    }\n\n    .light-gray-border {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 1px 1px 1px 1px;\n    }\n\n    .light-gray-border-bottom {\n        border-color: #bbb;\n");
+      out.write("        border-style: solid;\n        border-width: 0px 0px 1px 0px;\n    }\n\n    .content {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 0px 0px 1px 0px;\n    }\n\n    /* Default DOM Tooltip Style */\n    div.domTT {\n        border: 1px solid #bbb;\n        background-color: #F9F5D5;\n        font-family: arial;\n        font-size: 9px;\n        padding: 5px;\n    }\n\n    div.domTT .caption {\n        font-family: serif;\n        font-size: 12px;\n        font-weight: bold;\n        padding: 1px 2px;\n        color: #FFFFFF;\n    }\n\n    div.domTT .contents {\n        font-size: 12px;\n        font-family: sans-serif;\n        padding: 3px 2px;\n    }\n\n    .textfield {\n        font-size: 11px;\n        font-family: verdana;\n        padding: 3px 2px;\n        background: #efefef;\n    }\n\n    .keyword-field {\n        font-size: 11px;\n        font-family: verdana;\n        padding: 3px 2px;\n    }\n\n\n</style>\n\n<style type=\"text/css\">\n\t@import \"style/style.css\";\n</style>\n</head>\n\n<body>\n\n");
  // Get parameters
     boolean update = request.getParameter("update") != null;
     boolean messageArchiving = conversationManager.isMessageArchivingEnabled();
@@ -141,146 +140,148 @@ public final class archiving_002dsettings_jsp extends org.apache.jasper.runtime.
             conversationManager.setMaxRetrievable(maxRetrievable);
 
 
-      out.write("\r\n<div class=\"success\">\r\n    ");
+      out.write("\n<div class=\"success\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</div><br>\r\n");
+      out.write("\n</div><br>\n");
 
         }
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     if (rebuildIndex) {
 
-      out.write("\r\n<div class=\"success\">\r\n    ");
+      out.write("\n<div class=\"success\">\n    ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</div><br/>\r\n\r\n<script type=\"text/javascript\">\r\n    getBuildProgress();\r\n</script>\r\n");
+      out.write("\n</div><br/>\n\n<script type=\"text/javascript\">\n    getBuildProgress();\n</script>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (errors.size() > 0) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       out.print( errorMessage);
-      out.write("\r\n</div>\r\n<br/>\r\n");
+      out.write("\n</div>\n<br/>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n    ");
+      out.write("\n\n<p>\n    ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"archiving-settings.jsp\" method=\"post\">\r\n    <table class=\"settingsTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"90%\">\r\n        <thead>\r\n            <tr>\r\n                <th colspan=\"3\">");
+      out.write("\n</p>\n\n<form action=\"archiving-settings.jsp\" method=\"post\">\n    <table class=\"settingsTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"90%\">\n        <thead>\n            <tr>\n                <th colspan=\"3\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td colspan=\"3\"><p>");
+      out.write("</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td colspan=\"3\"><p>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</p></td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"2\" width=\"90%\"><label class=\"jive-label\" for=\"metadata\">");
+      out.write("</p></td>\n            </tr>\n            <tr>\n                <td colspan=\"2\" width=\"90%\"><label class=\"jive-label\" for=\"metadata\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td><input type=\"checkbox\" id=\"metadata\" name=\"metadataArchiving\" ");
+      out.write("</td>\n                <td><input type=\"checkbox\" id=\"metadata\" name=\"metadataArchiving\" ");
       out.print( conversationManager.isMetadataArchivingEnabled() ? "checked" : "" );
-      out.write(" /></td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"3\"><label class=\"jive-label\">");
+      out.write(" /></td>\n            </tr>\n            <tr>\n                <td colspan=\"3\"><label class=\"jive-label\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("<br>\r\n                <table width=70% align=right border=\"0\" cellpadding=\"3\" cellspacing=\"0\">\r\n                    <tr>\r\n                        <td>");
+      out.write("<br>\n                <table width=70% align=right border=\"0\" cellpadding=\"3\" cellspacing=\"0\">\n                    <tr>\n                        <td>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</td>\r\n                        <td><input type=\"checkbox\" name=\"messageArchiving\" ");
+      out.write("</td>\n                        <td><input type=\"checkbox\" name=\"messageArchiving\" ");
       out.print( conversationManager.isMessageArchivingEnabled() ? "checked" : "");
-      out.write(" /></td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>");
+      out.write(" /></td>\n                    </tr>\n                    <tr>\n                        <td>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</td>\r\n                        <td><input type=\"checkbox\" name=\"roomArchiving\" ");
+      out.write("</td>\n                        <td><input type=\"checkbox\" name=\"roomArchiving\" ");
       out.print( conversationManager.isRoomArchivingEnabled() ? "checked" : "");
-      out.write(" /></td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>");
+      out.write(" /></td>\n                    </tr>\n                    <tr>\n                        <td>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</td>\r\n                        <td><textarea name=\"roomsArchived\" cols=\"30\" rows=\"2\" wrap=\"virtual\">");
+      out.write("</td>\n                        <td><textarea name=\"roomsArchived\" cols=\"30\" rows=\"2\" wrap=\"virtual\">");
       out.print( StringUtils.collectionToString(conversationManager.getRoomsArchived()) );
-      out.write("</textarea></td>\r\n                    </tr>\r\n                </table>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td><label class=\"jive-label\">");
+      out.write("</textarea></td>\n                    </tr>\n                </table>\n                </td>\n            </tr>\n            <tr>\n                <td><label class=\"jive-label\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td><input type=\"text\" name=\"idleTime\" size=\"10\" maxlength=\"10\" value=\"");
+      out.write("</td>\n                <td><input type=\"text\" name=\"idleTime\" size=\"10\" maxlength=\"10\" value=\"");
       out.print( conversationManager.getIdleTime());
-      out.write("\" /></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td><label class=\"jive-label\">");
+      out.write("\" /></td>\n                <td></td>\n            </tr>\n            <tr>\n                <td><label class=\"jive-label\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("<br><br></td>\r\n                <td><input type=\"text\" name=\"maxTime\" size=\"10\" maxlength=\"10\" value=\"");
+      out.write("<br><br></td>\n                <td><input type=\"text\" name=\"maxTime\" size=\"10\" maxlength=\"10\" value=\"");
       out.print( conversationManager.getMaxTime());
-      out.write("\" /></td>\r\n                <td></td>\r\n            </tr>\r\n            \r\n            <tr>\r\n                <td><label class=\"jive-label\">");
+      out.write("\" /></td>\n                <td></td>\n            </tr>\n            \n            <tr>\n                <td><label class=\"jive-label\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("<br><br>\r\n                <font color=\"FF0000\">");
+      out.write("<br><br>\n                <font color=\"FF0000\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</font><br><br></td>\r\n                <td><input type=\"text\" name=\"maxAge\" size=\"10\" maxlength=\"10\" value=\"");
+      out.write("</font><br><br></td>\n                <td><input type=\"text\" name=\"maxAge\" size=\"10\" maxlength=\"10\" value=\"");
       out.print( conversationManager.getMaxAge());
-      out.write("\" /></td>\r\n                <td></td>\r\n            </tr>\r\n            \r\n            <tr>\r\n                <td><label class=\"jive-label\">");
+      out.write("\" /></td>\n                <td></td>\n            </tr>\n            \n            <tr>\n                <td><label class=\"jive-label\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write(":</label><br>\r\n                ");
+      out.write(":</label><br>\n                ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("<br><br></td>\r\n                <td><input type=\"text\" name=\"maxRetrievable\" size=\"10\" maxlength=\"10\" value=\"");
+      out.write("<br><br></td>\n                <td><input type=\"text\" name=\"maxRetrievable\" size=\"10\" maxlength=\"10\" value=\"");
       out.print( conversationManager.getMaxRetrievable());
-      out.write("\" /></td>\r\n                <td></td>\r\n            </tr>\r\n            \r\n        </tbody>\r\n    </table>\r\n\r\n\r\n    <input type=\"submit\" name=\"update\" value=\"");
+      out.write("\" /></td>\n                <td></td>\n            </tr>\n            \n        </tbody>\n    </table>\n\n\n    <input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\">\r\n    <input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n    <input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\">\r\n\r\n    <br>\r\n    <br>\r\n    ");
+      out.write("\">\n\n    <br>\n    <br>\n    ");
  if (messageArchiving || roomArchiving) { 
-      out.write("\r\n    <br>\r\n\r\n    <table class=\"settingsTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"90%\">\r\n        <thead>\r\n            <tr>\r\n               <th colspan=\"3\" width=\"100%\">");
+      out.write("\n    <br>\n\n    <table class=\"settingsTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"90%\">\n        <thead>\n            <tr>\n               <th colspan=\"3\" width=\"100%\">");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n           <tr>\r\n               <td colspan=\"3\" width=\"100%\"><p>");
+      out.write("</th>\n            </tr>\n        </thead>\n        <tbody>\n           <tr>\n               <td colspan=\"3\" width=\"100%\"><p>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</p></td>\r\n           </tr>\r\n           <tr valign=\"top\">\r\n               <td width=\"80%\"><b>");
+      out.write("</p></td>\n           </tr>\n           <tr valign=\"top\">\n               <td width=\"80%\"><b>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</td>\r\n               <td>");
+      out.write("</td>\n               <td>");
       out.print( indexSize );
-      out.write("</td>\r\n               <td></td>\r\n           </tr>\r\n           <tr valign=\"top\">\r\n               <td><b>");
+      out.write("</td>\n               <td></td>\n           </tr>\n           <tr valign=\"top\">\n               <td><b>");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</td>\r\n               <td>");
+      out.write("</td>\n               <td>");
       out.print( conversationManager.getArchivedMessageCount());
-      out.write("</td>\r\n               <td></td>\r\n           </tr>\r\n           <tr valign=\"top\">\r\n               <td><b>");
+      out.write("</td>\n               <td></td>\n           </tr>\n           <tr valign=\"top\">\n               <td><b>");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("<br><br></td>\r\n               <td>");
+      out.write("<br><br></td>\n               <td>");
       out.print( conversationManager.getArchivedConversationCount());
-      out.write("</td>\r\n               <td></td>\r\n           </tr>\r\n        </tbody>\r\n    </table>\r\n\r\n    <input type=\"submit\" name=\"rebuild\" value=\"");
+      out.write("</td>\n               <td></td>\n           </tr>\n        </tbody>\n    </table>\n\n    <input type=\"submit\" name=\"rebuild\" value=\"");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("\"/>\r\n    <span id=\"rebuildElement\" style=\"display:none;\" class=\"jive-description\">Rebuilding is <span id=\"rebuildProgress\"></span>% complete.</span>\r\n\r\n    ");
+      out.write("\"/>\n    <span id=\"rebuildElement\" style=\"display:none;\" class=\"jive-description\">Rebuilding is <span id=\"rebuildProgress\"></span>% complete.</span>\n\n    ");
 } 
-      out.write("\r\n</form>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n</form>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

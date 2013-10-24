@@ -78,9 +78,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n");
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write("\n\n\n\n\n\n\n\n\n");
+      out.write('\n');
+      out.write('\n');
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -88,8 +91,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write("\n\n\n\n\n");
   // Check the user's environment for minimum requirements.
 
     boolean jdk13Installed = false;
@@ -146,19 +150,19 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             || !openfireHomeExists)
     {
 
-      out.write("\r\n        <html>\r\n        <head>\r\n            <title>");
+      out.write("\n        <html>\n        <head>\n            <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</title>\r\n            <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\r\n        </head>\r\n        <body>\r\n\r\n        <p class=\"jive-setup-page-header\">\r\n        ");
+      out.write("</title>\n            <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n        </head>\n        <body>\n\n        <p class=\"jive-setup-page-header\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </p>\r\n\r\n        <p class=\"jive-setup-error-text\">\r\n        ");
+      out.write("\n        </p>\n\n        <p class=\"jive-setup-error-text\">\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(' ');
@@ -167,7 +171,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(' ');
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write(".\r\n        </p>\r\n\r\n        <p>\r\n        ");
+      out.write(".\n        </p>\n\n        <p>\n        ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_7 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_7.setPageContext(_jspx_page_context);
@@ -181,7 +185,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_th_fmt_message_7.doInitBody();
         }
         do {
-          out.write("\r\n            ");
+          out.write("\n            ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -193,7 +197,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n        ");
+          out.write("\n        ");
           int evalDoAfterBody = _jspx_th_fmt_message_7.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -206,84 +210,85 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_7);
-      out.write("\r\n        </p>\r\n\r\n        <ul>\r\n        <table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n        ");
+      out.write("\n        </p>\n\n        <ul>\n        <table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n        ");
   if (jdk13Installed) { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                </td>\n            </tr>\n\n        ");
   } else { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                    </span>\n                </td>\n            </tr>\n\n        ");
   }
             if (servlet22Installed) {
         
-      out.write("\r\n            <tr>\r\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                </td>\n            </tr>\n\n        ");
   } else { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                    </span>\n                </td>\n            </tr>\n\n        ");
   }
             if (jsp11Installed) {
         
-      out.write("\r\n            <tr>\r\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                </td>\n            </tr>\n\n        ");
   } else { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                    </span>\n                </td>\n            </tr>\n\n        ");
   }
             if (jiveJarsInstalled) {
         
-      out.write("\r\n            <tr>\r\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    ");
+      out.write("\n            <tr>\n                <td><img src=\"../images/check.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                </td>\n            </tr>\n\n        ");
   } else { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                    </span>\n                </td>\n            </tr>\n\n        ");
   }
             if (openfireHomeExists) {
         
-      out.write("\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
       out.write(' ');
       out.write('(');
       out.print( openfireHome.toString() );
-      out.write(")\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write(")\n                    </span>\n                </td>\n            </tr>\n\n        ");
   } else { 
-      out.write("\r\n\r\n            <tr>\r\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\r\n                <td>\r\n                    <span class=\"jive-setup-error-text\">\r\n                    ");
+      out.write("\n\n            <tr>\n                <td><img src=\"../images/x.gif\" width=\"13\" height=\"13\" border=\"0\"></td>\n                <td>\n                    <span class=\"jive-setup-error-text\">\n                    ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("\n                    </span>\n                </td>\n            </tr>\n\n        ");
   } 
-      out.write("\r\n        </table>\r\n        </ul>\r\n\r\n        <p>\r\n        ");
+      out.write("\n        </table>\n        </ul>\n\n        <p>\n        ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n        </p>\r\n\r\n        </body>\r\n        </html>\r\n\r\n");
+      out.write("\n        </p>\n\n        </body>\n        </html>\n\n");
       // return so we stop showing the page:
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     String localeCode = ParamUtils.getParameter(request,"localeCode");
     boolean save = request.getParameter("save") != null;
@@ -308,13 +313,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
     Locale locale = JiveGlobals.getLocale();
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"currentStep\" content=\"0\"/>\r\n</head>\r\n<body>\r\n\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n<meta name=\"currentStep\" content=\"0\"/>\n</head>\n<body>\n\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n\t<p>\r\n\t");
+      out.write("\n\t</h1>\n\n\t<p>\n\t");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_23 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_23.setPageContext(_jspx_page_context);
@@ -328,7 +333,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_th_fmt_message_23.doInitBody();
         }
         do {
-          out.write("\r\n\t\t");
+          out.write('\n');
+          out.write('	');
+          out.write('	');
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -340,7 +347,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write('\r');
           out.write('\n');
           out.write('	');
           int evalDoAfterBody = _jspx_th_fmt_message_23.doAfterBody();
@@ -355,10 +361,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_23);
-      out.write("\r\n\t</p>\r\n\r\n\r\n\t<!-- BEGIN jive-contentBox -->\r\n\t<div class=\"jive-contentBox\">\r\n\r\n\t<h2>");
+      out.write("\n\t</p>\n\n\n\t<!-- BEGIN jive-contentBox -->\n\t<div class=\"jive-contentBox\">\n\n\t<h2>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</h2>\r\n\r\n\t<form action=\"index.jsp\" name=\"sform\">\r\n");
+      out.write("</h2>\n\n\t<form action=\"index.jsp\" name=\"sform\">\n");
   boolean usingPreset = false;
     Locale[] locales = Locale.getAvailableLocales();
     for (int i=0; i<locales.length; i++) {
@@ -366,32 +372,32 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         if (usingPreset) { break; }
     }
 
-      out.write("\r\n\t\t<div id=\"jive-setup-language\">\r\n\t\t\t<p>\r\n\t\t\t<label for=\"loc01\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"cs_CZ\" ");
+      out.write("\n\t\t<div id=\"jive-setup-language\">\n\t\t\t<p>\n\t\t\t<label for=\"loc01\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"cs_CZ\" ");
       out.print( ("cs_CZ".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc01\" />\r\n\t\t\t<b>Czech</b> (cs_CZ)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc02\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"de\" ");
+      out.write(" id=\"loc01\" />\n\t\t\t<b>Czech</b> (cs_CZ)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc02\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"de\" ");
       out.print( ("de".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc02\" />\r\n\t\t\t<b>Deutsch</b> (de)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc03\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"en\" ");
+      out.write(" id=\"loc02\" />\n\t\t\t<b>Deutsch</b> (de)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc03\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"en\" ");
       out.print( ("en".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc03\" />\r\n\t\t\t<b>English</b> (en)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc04\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"es\" ");
+      out.write(" id=\"loc03\" />\n\t\t\t<b>English</b> (en)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc04\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"es\" ");
       out.print( ("es".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc04\" />\r\n\t\t\t<b>Espa&ntilde;ol</b> (es)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc05\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"fr\" ");
+      out.write(" id=\"loc04\" />\n\t\t\t<b>Espa&ntilde;ol</b> (es)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc05\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"fr\" ");
       out.print( ("fr".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc05\" />\r\n\t\t\t<b>Fran&ccedil;ais</b> (fr)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc06\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"nl\" ");
+      out.write(" id=\"loc05\" />\n\t\t\t<b>Fran&ccedil;ais</b> (fr)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc06\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"nl\" ");
       out.print( ("nl".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc06\" />\r\n\t\t\t<b>Nederlands</b> (nl)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc07\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"pl_PL\" ");
+      out.write(" id=\"loc06\" />\n\t\t\t<b>Nederlands</b> (nl)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc07\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"pl_PL\" ");
       out.print( ("pl_PL".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc07\" />\r\n\t\t\t<b>Polski</b> (pl_PL)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc08\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"pt_BR\" ");
+      out.write(" id=\"loc07\" />\n\t\t\t<b>Polski</b> (pl_PL)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc08\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"pt_BR\" ");
       out.print( ("pt_BR".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc08\" />\r\n\t\t\t<b>Portugu&ecirc;s Brasileiro</b> (pt_BR)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc09\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"ru_RU\" ");
+      out.write(" id=\"loc08\" />\n\t\t\t<b>Portugu&ecirc;s Brasileiro</b> (pt_BR)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc09\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"ru_RU\" ");
       out.print( ("ru_RU".equals(locale.toString()) ? "checked" : "") );
-      out.write("  id=\"loc09\" />\r\n            <b>&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</b> (ru_RU)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc10\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"sk\" ");
+      out.write("  id=\"loc09\" />\n            <b>&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</b> (ru_RU)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc10\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"sk\" ");
       out.print( ("sk".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc10\" />\r\n\t\t\t<b>Sloven&#269;ina</b> (sk)\r\n\t\t\t</label><br>\r\n\r\n\t\t\t<label for=\"loc11\">\r\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"zh_CN\" ");
+      out.write(" id=\"loc10\" />\n\t\t\t<b>Sloven&#269;ina</b> (sk)\n\t\t\t</label><br>\n\n\t\t\t<label for=\"loc11\">\n\t\t\t<input type=\"radio\" name=\"localeCode\" value=\"zh_CN\" ");
       out.print( ("zh_CN".equals(locale.toString()) ? "checked" : "") );
-      out.write(" id=\"loc11\" />\r\n            <img src=\"../images/setup_language_zh_CN.gif\" border=\"0\" align=\"top\" />\r\n            <b>Simplified Chinese</b> (zh_CN)\r\n\t\t\t</label><br>\r\n\t\t\t</p>\r\n\t\t</div>\r\n\r\n\t\t<div align=\"right\">\r\n\t\t\t<input type=\"Submit\" name=\"save\" value=\"");
+      out.write(" id=\"loc11\" />\n            <img src=\"../images/setup_language_zh_CN.gif\" border=\"0\" align=\"top\" />\n            <b>Simplified Chinese</b> (zh_CN)\n\t\t\t</label><br>\n\t\t\t</p>\n\t\t</div>\n\n\t\t<div align=\"right\">\n\t\t\t<input type=\"Submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-save\" border=\"0\">\r\n\t\t</div>\r\n\t</form>\r\n\r\n\t</div>\r\n\t<!-- END jive-contentBox -->\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\" id=\"jive-setup-save\" border=\"0\">\n\t\t</div>\n\t</form>\n\n\t</div>\n\t<!-- END jive-contentBox -->\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

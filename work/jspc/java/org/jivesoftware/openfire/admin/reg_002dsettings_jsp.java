@@ -59,7 +59,7 @@ public final class reg_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -68,13 +68,12 @@ public final class reg_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"server-reg-and-login\"/>\r\n<meta name=\"helpPage\" content=\"manage_registration_and_login_settings.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"server-reg-and-login\"/>\n<meta name=\"helpPage\" content=\"manage_registration_and_login_settings.html\"/>\n</head>\n<body>\n\n");
  // Get parameters
     boolean save = request.getParameter("save") != null;
     boolean inbandEnabled = ParamUtils.getBooleanParameter(request, "inbandEnabled");
@@ -145,102 +144,102 @@ public final class reg_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
     }
     allowedAnonymIPs = buf1.toString();
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"reg-settings.jsp\">\r\n\r\n");
+      out.write("\n</p>\n\n<form action=\"reg-settings.jsp\">\n\n");
  if (save) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
  } 
-      out.write("\r\n\r\n<!-- BEGIN registration settings -->\r\n\t<!--<div class=\"jive-contentBoxHeader\">\r\n\r\n\t</div>-->\r\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\r\n\r\n\t<h4>");
+      out.write("\n\n<!-- BEGIN registration settings -->\n\t<!--<div class=\"jive-contentBoxHeader\">\n\n\t</div>-->\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\n\n\t<h4>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t<p>\r\n    ");
+      out.write("</h4>\n\t<p>\n    ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\">\r\n                <input type=\"radio\" name=\"inbandEnabled\" value=\"true\" id=\"rb01\"\r\n                 ");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\">\n                <input type=\"radio\" name=\"inbandEnabled\" value=\"true\" id=\"rb01\"\n                 ");
       out.print( ((inbandEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb01\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb01\"><b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</b> -\r\n                ");
+      out.write("</b> -\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n                <input type=\"radio\" name=\"inbandEnabled\" value=\"false\" id=\"rb02\"\r\n                 ");
+      out.write("</label>\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n                <input type=\"radio\" name=\"inbandEnabled\" value=\"false\" id=\"rb02\"\n                 ");
       out.print( ((!inbandEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb02\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb02\"><b>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n\r\n\t<br>\r\n\t<br>\r\n\r\n\t<h4>");
+      out.write("</label>\n            </td>\n        </tr>\n    </tbody>\n    </table>\n\n\t<br>\n\t<br>\n\n\t<h4>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t<p>\r\n    ");
+      out.write("</h4>\n\t<p>\n    ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"canChangePassword\" value=\"true\" id=\"rb03\"\r\n             ");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"canChangePassword\" value=\"true\" id=\"rb03\"\n             ");
       out.print( ((canChangePassword) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb03\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb03\"><b>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"canChangePassword\" value=\"false\" id=\"rb04\"\r\n             ");
+      out.write("</label>\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"canChangePassword\" value=\"false\" id=\"rb04\"\n             ");
       out.print( ((!canChangePassword) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb04\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb04\"><b>");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n\r\n\t<br>\r\n\t<br>\r\n\r\n\t<h4>");
+      out.write("</label>\n            </td>\n        </tr>\n    </tbody>\n    </table>\n\n\t<br>\n\t<br>\n\n\t<h4>");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t<p>\r\n    ");
+      out.write("</h4>\n\t<p>\n    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"anonLogin\" value=\"true\" id=\"rb05\"\r\n             ");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"anonLogin\" value=\"true\" id=\"rb05\"\n             ");
       out.print( ((anonLogin) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb05\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb05\"><b>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"anonLogin\" value=\"false\" id=\"rb06\"\r\n             ");
+      out.write("</label>\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"anonLogin\" value=\"false\" id=\"rb06\"\n             ");
       out.print( ((!anonLogin) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb06\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb06\"><b>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</label>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n\r\n\t<br>\r\n\t<br>\r\n\r\n\t<h4>");
+      out.write("</label>\n            </td>\n        </tr>\n    </tbody>\n    </table>\n\n\t<br>\n\t<br>\n\n\t<h4>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t<p>\r\n    ");
+      out.write("</h4>\n\t<p>\n    ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td valign='top'><b>");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td valign='top'><b>");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>\r\n                <textarea name=\"allowedIPs\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
+      out.write("</b></td>\n            <td>\n                <textarea name=\"allowedIPs\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
       out.print( ((allowedIPs != null) ? allowedIPs : "") );
-      out.write("</textarea>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td valign='top'><b>");
+      out.write("</textarea>\n            </td>\n        </tr>\n        <tr>\n            <td valign='top'><b>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>\r\n                <textarea name=\"allowedAnonymIPs\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
+      out.write("</b></td>\n            <td>\n                <textarea name=\"allowedAnonymIPs\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
       out.print( ((allowedAnonymIPs != null) ? allowedAnonymIPs : "") );
-      out.write("</textarea>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n\t\r\n\t</div>\r\n    <input type=\"submit\" name=\"save\" value=\"");
+      out.write("</textarea>\n            </td>\n        </tr>\n    </tbody>\n    </table>\n\t\n\t</div>\n    <input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\">\r\n<!-- END registration settings -->\r\n\r\n</form>\r\n\r\n\r\n</body>\r\n\r\n</html>\r\n");
+      out.write("\">\n<!-- END registration settings -->\n\n</form>\n\n\n</body>\n\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

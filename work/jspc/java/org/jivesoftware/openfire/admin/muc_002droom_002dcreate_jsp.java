@@ -39,7 +39,8 @@ public final class muc_002droom_002dcreate_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Redirect to muc-room-edit-form and set that a room will be created
     response.sendRedirect("muc-room-edit-form.jsp?create=true");

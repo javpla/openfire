@@ -49,9 +49,8 @@ public final class workgroup_002dview_002dresponses_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
  // Get parameters
     String wgID = ParamUtils.getParameter(request, "wgID");
     boolean add = request.getParameter("add") != null;
@@ -80,23 +79,23 @@ public final class workgroup_002dview_002dresponses_jsp extends org.apache.jaspe
 
 
 
-      out.write("\r\n\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>Canned Response List</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("\n\n\n\n<html>\n    <head>\n        <title>Canned Response List</title>\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\nViewing all responses in <b>\"");
+      out.write("\"/>\n    </head>\n    <body>\n\n<p>\nViewing all responses in <b>\"");
       out.print( groupTitle );
-      out.write("\"</b>\r\n</p>\r\n\r\n<form action=\"workgroup-add-response.jsp\" method=\"post\">\r\n<input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\"</b>\n</p>\n\n<form action=\"workgroup-add-response.jsp\" method=\"post\">\n<input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\" />\r\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
+      out.write("\" />\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
       out.print( URLEncoder.encode(groupTitle, "UTF-8") );
-      out.write("\" />\r\n<input type=\"hidden\" name=\"add\" value=\"true\" />\r\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\r\n<th colspan=\"1\">Title</th><th>Type</th><th>Options</th>\r\n");
+      out.write("\" />\n<input type=\"hidden\" name=\"add\" value=\"true\" />\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\n<th colspan=\"1\">Title</th><th>Type</th><th>Options</th>\n");
 
     int count = 0;
     for(Macro macro : group.getMacros()){
-      out.write("\r\n        <tr>\r\n        <td>");
+      out.write("\n        <tr>\n        <td>");
       out.print( macro.getTitle());
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( "Text");
-      out.write("</td>\r\n        <td align=\"center\"><a href=\"workgroup-add-response.jsp?edit=true&wgID=");
+      out.write("</td>\n        <td align=\"center\"><a href=\"workgroup-add-response.jsp?edit=true&wgID=");
       out.print(wgID);
       out.write("&macroGroupTitle=");
       out.print( URLEncoder.encode(groupTitle, "UTF-8"));
@@ -108,12 +107,12 @@ public final class workgroup_002dview_002dresponses_jsp extends org.apache.jaspe
       out.print( URLEncoder.encode(groupTitle, "UTF-8"));
       out.write("&entry=");
       out.print(count);
-      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\r\n        </tr>\r\n\r\n");
+      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\n        </tr>\n\n");
 
         count++;
     }
 
-      out.write("\r\n</table>\r\n</form>\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\n</table>\n</form>\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

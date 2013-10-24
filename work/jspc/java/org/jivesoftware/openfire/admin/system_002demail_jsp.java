@@ -51,7 +51,7 @@ public final class system_002demail_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -60,10 +60,10 @@ public final class system_002demail_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // get parameters
     String host = ParamUtils.getParameter(request,"host");
@@ -138,79 +138,80 @@ public final class system_002demail_jsp extends org.apache.jasper.runtime.HttpJs
     ssl = service.isSSLEnabled();
     debug = service.isDebugEnabled();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"system-email\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"system-email\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if ("true".equals(request.getParameter("success"))) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        \t<td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        \t<td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        \t<td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        \t<td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n\r\n");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        \t<td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        \t<td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n\r\n");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n\n");
 	} 
-      out.write("\r\n\r\n<p>\r\n\r\n<!-- BEGIN SMTP settings -->\r\n<form action=\"system-email.jsp\" name=\"f\" method=\"post\">\r\n\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\n<p>\n\n<!-- BEGIN SMTP settings -->\n<form action=\"system-email.jsp\" name=\"f\" method=\"post\">\n\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table width=\"80%\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tr>\r\n\t\t\t<td width=\"30%\" nowrap>\r\n\t\t\t\t");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table width=\"80%\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tr>\n\t\t\t<td width=\"30%\" nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"text\" name=\"host\" value=\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"text\" name=\"host\" value=\"");
       out.print( (host != null)?host:"" );
-      out.write("\" size=\"40\" maxlength=\"150\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\r\n\t\t");
+      out.write("\" size=\"40\" maxlength=\"150\">\n\t\t\t</td>\n\t\t</tr>\n\n\t\t");
   if (errors.containsKey("host")) { 
-      out.write("\r\n\r\n\t\t\t<tr>\r\n\t\t\t\t<td nowrap>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</td>\r\n\t\t\t\t<td nowrap class=\"jive-error-text\">\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t<tr>\n\t\t\t\t<td nowrap>\n\t\t\t\t\t&nbsp;\n\t\t\t\t</td>\n\t\t\t\t<td nowrap class=\"jive-error-text\">\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\r\n\t\t");
+      out.write("\n\t\t\t\t</td>\n\t\t\t</tr>\n\n\t\t");
   } 
-      out.write("\r\n\r\n\t\t<tr>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t");
+      out.write("\n\n\t\t<tr>\n\t\t\t<td nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"text\" name=\"port\" value=\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"text\" name=\"port\" value=\"");
       out.print( (port > 0) ? String.valueOf(port) : "" );
-      out.write("\" size=\"10\" maxlength=\"15\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t");
+      out.write("\" size=\"10\" maxlength=\"15\">\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"radio\" name=\"debug\" value=\"true\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"radio\" name=\"debug\" value=\"true\"");
       out.print( (debug ? " checked" : "") );
-      out.write(" id=\"rb01\"> <label for=\"rb01\">On</label>\r\n\t\t\t\t&nbsp;\r\n\t\t\t\t<input type=\"radio\" name=\"debug\" value=\"false\"");
+      out.write(" id=\"rb01\"> <label for=\"rb01\">On</label>\n\t\t\t\t&nbsp;\n\t\t\t\t<input type=\"radio\" name=\"debug\" value=\"false\"");
       out.print( (debug ? "" : " checked") );
-      out.write(" id=\"rb02\"> <label for=\"rb02\">Off</label>\r\n\t\t\t\t&nbsp; (");
+      out.write(" id=\"rb02\"> <label for=\"rb02\">Off</label>\n\t\t\t\t&nbsp; (");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(")\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\r\n\t\t");
-      out.write("\r\n\t\t<tr><td colspan=\"2\">&nbsp;</td></tr>\r\n\r\n\t\t<tr>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t");
+      out.write(")\n\t\t\t</td>\n\t\t</tr>\n\n\t\t");
+      out.write("\n\t\t<tr><td colspan=\"2\">&nbsp;</td></tr>\n\n\t\t<tr>\n\t\t\t<td nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"text\" name=\"server_username\" value=\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"text\" name=\"server_username\" value=\"");
       out.print( (username != null) ? username : "" );
-      out.write("\" size=\"40\" maxlength=\"150\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t");
+      out.write("\" size=\"40\" maxlength=\"150\">\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"password\" name=\"server_password\" value=\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"password\" name=\"server_password\" value=\"");
       out.print( (password != null) ? StringUtils.hash(password) : "" );
-      out.write("\" size=\"40\" maxlength=\"150\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\r\n\t\t<tr>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t");
+      out.write("\" size=\"40\" maxlength=\"150\">\n\t\t\t</td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td nowrap>\n\t\t\t\t");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td nowrap>\r\n\t\t\t\t<input type=\"checkbox\" name=\"ssl\"");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td nowrap>\n\t\t\t\t<input type=\"checkbox\" name=\"ssl\"");
       out.print( (ssl) ? " checked" : "" );
-      out.write(">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t</table>\r\n\t</div>\r\n\r\n<input type=\"submit\" name=\"save\" value=\"");
+      out.write(">\n\t\t\t</td>\n\t\t</tr>\n\t\t</table>\n\t</div>\n\n<input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\">\r\n<input type=\"submit\" name=\"test\" value=\"");
+      out.write("\">\n<input type=\"submit\" name=\"test\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END SMTP settings -->\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n<!-- END SMTP settings -->\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

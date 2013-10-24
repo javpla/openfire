@@ -56,7 +56,7 @@ public final class setup_002dhost_002dsettings_jsp extends org.apache.jasper.run
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -64,7 +64,8 @@ public final class setup_002dhost_002dsettings_jsp extends org.apache.jasper.run
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters
     String domain = ParamUtils.getParameter(request, "domain");
     int embeddedPort = ParamUtils.getIntParameter(request, "embeddedPort", Integer.MIN_VALUE);
@@ -138,68 +139,68 @@ public final class setup_002dhost_002dsettings_jsp extends org.apache.jasper.run
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"currentStep\" content=\"1\"/>\r\n</head>\r\n<body>\r\n\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n    <meta name=\"currentStep\" content=\"1\"/>\n</head>\n<body>\n\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n\t<p>\r\n\t");
+      out.write("\n\t</h1>\n\n\t<p>\n\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n\t</p>\r\n\r\n\t<!-- BEGIN jive-contentBox -->\r\n\t<div class=\"jive-contentBox\">\r\n\r\n\t\t<form action=\"setup-host-settings.jsp\" name=\"f\" method=\"post\">\r\n\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n<tr valign=\"top\">\r\n    <td width=\"1%\" nowrap align=\"right\">\r\n        ");
+      out.write("\n\t</p>\n\n\t<!-- BEGIN jive-contentBox -->\n\t<div class=\"jive-contentBox\">\n\n\t\t<form action=\"setup-host-settings.jsp\" name=\"f\" method=\"post\">\n\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n<tr valign=\"top\">\n    <td width=\"1%\" nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td width=\"99%\">\r\n        <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"domain\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td width=\"99%\">\n        <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"domain\"\n         value=\"");
       out.print( ((domain != null) ? domain : "") );
-      out.write("\">\r\n\t    <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n\t    <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("domain") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n");
+      out.write("\n    </td>\n</tr>\n");
  if (XMPPServer.getInstance().isStandAlone()){ 
-      out.write("\r\n<tr valign=\"top\">\r\n    <td width=\"1%\" nowrap align=\"right\">\r\n        ");
+      out.write("\n<tr valign=\"top\">\n    <td width=\"1%\" nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td width=\"99%\">\r\n        <input type=\"text\" size=\"6\" maxlength=\"6\" name=\"embeddedPort\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td width=\"99%\">\n        <input type=\"text\" size=\"6\" maxlength=\"6\" name=\"embeddedPort\"\n         value=\"");
       out.print( ((embeddedPort != Integer.MIN_VALUE) ? ""+embeddedPort : "9090") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n        ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n        ");
   if (errors.get("embeddedPort") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td width=\"1%\" nowrap align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td width=\"1%\" nowrap align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td width=\"99%\">\r\n        <input type=\"text\" size=\"6\" maxlength=\"6\" name=\"securePort\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td width=\"99%\">\n        <input type=\"text\" size=\"6\" maxlength=\"6\" name=\"securePort\"\n         value=\"");
       out.print( ((securePort != Integer.MIN_VALUE) ? ""+securePort : "9091") );
-      out.write("\">\r\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
+      out.write("\">\n        <span class=\"jive-setup-helpicon\" onmouseover=\"domTT_activate(this, event, 'content', '");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\r\n         ");
+      out.write("', 'styleClass', 'jiveTooltip', 'trail', true, 'delay', 300, 'lifetime', 8000);\"></span>\n         ");
   if (errors.get("securePort") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n");
+      out.write("\n    </td>\n</tr>\n");
  } 
-      out.write("\r\n</table>\r\n\r\n<br><br>\r\n\r\n\r\n\t\t<div align=\"right\">\r\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
+      out.write("\n</table>\n\n<br><br>\n\n\n\t\t<div align=\"right\">\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-save\" border=\"0\">\r\n\t\t</div>\r\n\t</form>\r\n\r\n\t</div>\r\n\t<!-- END jive-contentBox -->\r\n\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\n// give focus to domain field\r\ndocument.f.domain.focus();\r\n</script>\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\" id=\"jive-setup-save\" border=\"0\">\n\t\t</div>\n\t</form>\n\n\t</div>\n\t<!-- END jive-contentBox -->\n\n\n<script language=\"JavaScript\" type=\"text/javascript\">\n// give focus to domain field\ndocument.f.domain.focus();\n</script>\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

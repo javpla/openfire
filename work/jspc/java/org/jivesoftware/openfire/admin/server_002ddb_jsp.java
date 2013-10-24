@@ -57,7 +57,7 @@ public final class server_002ddb_jsp extends org.apache.jasper.runtime.HttpJspBa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -66,87 +66,87 @@ public final class server_002ddb_jsp extends org.apache.jasper.runtime.HttpJspBa
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-db\"/>\r\n        <meta name=\"helpPage\" content=\"view_database_connection_properties.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-db\"/>\n        <meta name=\"helpPage\" content=\"view_database_connection_properties.html\"/>\n    </head>\n    <body>\n\n");
   // Get metadata about the database
     Connection con = null;
     try {
         con = DbConnectionManager.getConnection();
         DatabaseMetaData metaData = con.getMetaData();
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">");
+      out.write("\n</p>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( metaData.getDatabaseProductName() );
-      out.write("\r\n            ");
+      out.write("\n            ");
       out.print( metaData.getDatabaseProductVersion() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( metaData.getDriverName() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n             ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n             ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( metaData.getDriverVersion() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( metaData.getURL() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( metaData.getUserName() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (metaData.supportsTransactions()) ? "Yes" : "No" );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
   if (metaData.supportsTransactions()) { 
-      out.write("\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n            <td class=\"c2\">\r\n                ");
+      out.write("\n            </td>\n            <td class=\"c2\">\n                ");
   if (con.getTransactionIsolation() == Connection.TRANSACTION_NONE) { 
-      out.write("\r\n\r\n                        TRANSACTION_NONE\r\n\r\n                ");
+      out.write("\n\n                        TRANSACTION_NONE\n\n                ");
   } else if (con.getTransactionIsolation() == Connection.TRANSACTION_READ_COMMITTED) { 
-      out.write("\r\n\r\n                        TRANSACTION_READ_COMMITTED\r\n\r\n                ");
+      out.write("\n\n                        TRANSACTION_READ_COMMITTED\n\n                ");
   } else if (con.getTransactionIsolation() == Connection.TRANSACTION_READ_UNCOMMITTED) { 
-      out.write("\r\n\r\n                        TRANSACTION_READ_UNCOMMITTED\r\n\r\n                ");
+      out.write("\n\n                        TRANSACTION_READ_UNCOMMITTED\n\n                ");
   } else if (con.getTransactionIsolation() == Connection.TRANSACTION_REPEATABLE_READ) { 
-      out.write("\r\n\r\n                        TRANSACTION_REPEATABLE_READ\r\n\r\n                ");
+      out.write("\n\n                        TRANSACTION_REPEATABLE_READ\n\n                ");
   } else if (con.getTransactionIsolation() == Connection.TRANSACTION_SERIALIZABLE) { 
-      out.write("\r\n\r\n                        TRANSACTION_SERIALIZABLE\r\n\r\n                ");
+      out.write("\n\n                        TRANSACTION_SERIALIZABLE\n\n                ");
   } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    ");
+      out.write("\n            </td>\n        </tr>\n    ");
   } 
-      out.write("\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("<br>\r\n            ");
+      out.write("<br>\n            ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (metaData.supportsMultipleTransactions()) ? "Yes" : "No" );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (metaData.isReadOnly()) ? "Yes" : "No" );
-      out.write("\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n");
   }
     finally {
         try { if (con != null) { con.close(); } }
@@ -163,127 +163,127 @@ public final class server_002ddb_jsp extends org.apache.jasper.runtime.HttpJspBa
             Integer notopened = 100 - active - inactive;
             SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-      out.write("\r\n\r\n<br/><br/>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">");
+      out.write("\n\n<br/><br/>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (poolDef.getHouseKeepingSleepTime() / 1000) );
       out.write(' ');
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (poolDef.getMaximumConnectionLifetime() / 1000) );
       out.write(' ');
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolDef.getMinimumConnectionCount() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolDef.getMaximumConnectionCount() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolDef.getHouseKeepingTestSql() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (poolDef.isTestBeforeUse() ? "Yes" : "No") );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( (poolDef.isTestAfterUse() ? "Yes" : "No") );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolStats.getActiveConnectionCount() );
       out.write(' ');
       out.write('(');
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("),\r\n            ");
+      out.write("),\n            ");
       out.print( poolStats.getAvailableConnectionCount() );
       out.write(' ');
       out.write('(');
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("),\r\n            ");
+      out.write("),\n            ");
       out.print( poolStats.getMaximumConnectionCount() );
       out.write(' ');
       out.write('(');
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write(")<br/>\r\n            <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"250px\" style=\"margin: 8px; font-size: 50%\">\r\n                <tr>\r\n                    ");
+      out.write(")<br/>\n            <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"250px\" style=\"margin: 8px; font-size: 50%\">\n                <tr>\n                    ");
  if (active > 0) { 
       out.write("<td style=\"border: 1.0px solid #000000; background-color: #ffffaa\" width=\"");
       out.print( active );
       out.write("%\">&nbsp;</td>");
  } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  if (inactive > 0) { 
       out.write("<td style=\"border: 1.0px solid #000000; background-color: #aaffaa\" width=\"");
       out.print( inactive );
       out.write("%\">&nbsp;</td>");
  } 
-      out.write("\r\n                    <td style=\"border: 1.0px solid #000000; background-color: #eeeeee\" width=\"");
+      out.write("\n                    <td style=\"border: 1.0px solid #000000; background-color: #eeeeee\" width=\"");
       out.print( notopened );
-      out.write("%\">&nbsp;</td>\r\n                </tr>\r\n            </table>\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("%\">&nbsp;</td>\n                </tr>\n            </table>\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolStats.getServedCount() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            ");
       out.print( poolStats.getRefusedCount() );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n            <table cellspacing=\"0\">\r\n                <thead>\r\n                    <tr>\r\n                        <th>");
+      out.write("\n        </td>\n        <td class=\"c2\">\n            <table cellspacing=\"0\">\n                <thead>\n                    <tr>\n                        <th>");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</th>\r\n                        <th>");
+      out.write("</th>\n                        <th>");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("</th>\r\n                        <th>");
+      out.write("</th>\n                        <th>");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("</th>\r\n                        <th>");
+      out.write("</th>\n                        <th>");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n");
+      out.write("</th>\n                    </tr>\n                </thead>\n                <tbody>\n");
 
                         for (ConnectionInfoIF info : poolStats.getConnectionInfos()) {
 
-      out.write("\r\n                    <tr>\r\n                        <td align=\"center\" style=\"padding: 2px\">");
+      out.write("\n                    <tr>\n                        <td align=\"center\" style=\"padding: 2px\">");
       out.print( info.getId() );
-      out.write("</td>\r\n                        <td align=\"center\" style=\"padding: 2px\">");
+      out.write("</td>\n                        <td align=\"center\" style=\"padding: 2px\">");
       out.print( dateFormat.format(info.getBirthDate()) );
-      out.write("</td>\r\n                        <td align=\"center\" style=\"padding: 2px\">");
+      out.write("</td>\n                        <td align=\"center\" style=\"padding: 2px\">");
       out.print( info.getTimeLastStartActive() > 0 ? dateFormat.format(new Date(info.getTimeLastStartActive())) : "-" );
-      out.write("</td>\r\n                        <td align=\"center\" style=\"padding: 2px\">");
+      out.write("</td>\n                        <td align=\"center\" style=\"padding: 2px\">");
       out.print( info.getRequester() != null ? info.getRequester() : "-" );
-      out.write("</td>\r\n                    </tr>\r\n");
+      out.write("</td>\n                    </tr>\n");
 
                         }
 
-      out.write("\r\n                </tbody>\r\n            </table>\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n");
+      out.write("\n                </tbody>\n            </table>\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n");
 
         }
         catch (Exception e) {
@@ -292,13 +292,13 @@ public final class server_002ddb_jsp extends org.apache.jasper.runtime.HttpJspBa
         }
     }
 
-      out.write("\r\n\r\n    <br/><br/>\r\n    <table border=\"0\">\r\n        <tr>\r\n            <td valign=\"center\">\r\n                <a href=\"server-db-stats.jsp\"><img src=\"images/arrow_right_blue.gif\" width=\"24\" height=\"24\" border=\"0\" alt=\"");
+      out.write("\n\n    <br/><br/>\n    <table border=\"0\">\n        <tr>\n            <td valign=\"center\">\n                <a href=\"server-db-stats.jsp\"><img src=\"images/arrow_right_blue.gif\" width=\"24\" height=\"24\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("\" /></a>\r\n            </td>\r\n            <td valign=\"center\"><a href=\"server-db-stats.jsp\">");
+      out.write("\" /></a>\n            </td>\n            <td valign=\"center\"><a href=\"server-db-stats.jsp\">");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("</a></td>\r\n        </tr>\r\n    </table>\r\n\r\n    </body>\r\n</html>");
+      out.write("</a></td>\n        </tr>\n    </table>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

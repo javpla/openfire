@@ -59,10 +59,10 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n\n\n\n\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\r\n    <style type=\"text/css\">\r\n        .drop-shadow {\r\n             font-weight: bold;\r\n             font-size: 14pt;\r\n             color: white;\r\n             text-shadow: black 0.1em 0.1em 0.2em;\r\n             padding-top: 21px;}\r\n    </style>\r\n    <meta name=\"decorator\" content=\"none\"/>\r\n</head>\r\n\r\n");
+      out.write("</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\n    <style type=\"text/css\">\n        .drop-shadow {\n             font-weight: bold;\n             font-size: 14pt;\n             color: white;\n             text-shadow: black 0.1em 0.1em 0.2em;\n             padding-top: 21px;}\n    </style>\n    <meta name=\"decorator\" content=\"none\"/>\n</head>\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -71,7 +71,6 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
       java.util.HashMap errors = null;
       synchronized (_jspx_page_context) {
@@ -81,7 +80,6 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("errors", errors, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
   webManager.init(request, response, session, application, out);
 
@@ -161,122 +159,122 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
     }
 
-      out.write("\r\n\r\n<body>\r\n\r\n<div id=\"jive-header\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"drop-shadow\">&nbsp;");
+      out.write("\n\n<body>\n\n<div id=\"jive-header\">\n<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" border=\"0\">\n    <tbody>\n        <tr><td class=\"drop-shadow\">&nbsp;");
       out.print(plugin.getHeader() );
-      out.write("</td></tr>    \r\n    </tbody>\r\n</table>\r\n</div>\r\n\r\n<div id=\"jive-content\">\r\n\r\n");
+      out.write("</td></tr>    \n    </tbody>\n</table>\n</div>\n\n<div id=\"jive-content\">\n\n");
  if (!plugin.webEnabled()) { 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  } else { 
-      out.write("\r\n\r\n<p>");
+      out.write("\n\n<p>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n");
+      out.write("</p>\n\n");
       if (_jspx_meth_c_set_0(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_set_1(_jspx_page_context))
         return;
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (!errors.isEmpty()) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/></td>\n            <td class=\"jive-icon-label\">\n\n            ");
  if (errors.get("general") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("username") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("usernameAlreadyExists") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("name") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("email") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("password") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("passwordMatch") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("passwordConfirm") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("reCaptchaFail") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n\n");
   } else if (request.getParameter("success") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<form name=\"f\" action=\"sign-up.jsp\" method=\"get\">\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n\n<form name=\"f\" action=\"sign-up.jsp\" method=\"get\">\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <div>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n    <tr>\r\n        <td width=\"1%\" nowrap><label for=\"usernametf\">");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <div>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n    <tr>\n        <td width=\"1%\" nowrap><label for=\"usernametf\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write(":</label> *</td>\r\n        <td width=\"99%\">\r\n            <input type=\"text\" name=\"username\" size=\"30\" maxlength=\"75\" value=\"");
+      out.write(":</label> *</td>\n        <td width=\"99%\">\n            <input type=\"text\" name=\"username\" size=\"30\" maxlength=\"75\" value=\"");
       out.print( ((username!=null) ? username : "") );
-      out.write("\"\r\n             id=\"usernametf\" autocomplete=\"off\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td width=\"1%\" nowrap>\r\n            <label for=\"nametf\">");
+      out.write("\"\n             id=\"usernametf\" autocomplete=\"off\">\n        </td>\n    </tr>\n    <tr>\n        <td width=\"1%\" nowrap>\n            <label for=\"nametf\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write(":</label>\r\n        </td>\r\n        <td width=\"99%\">\r\n            <input type=\"text\" name=\"name\" size=\"30\" maxlength=\"75\" value=\"");
+      out.write(":</label>\n        </td>\n        <td width=\"99%\">\n            <input type=\"text\" name=\"name\" size=\"30\" maxlength=\"75\" value=\"");
       out.print( ((name!=null) ? name : "") );
-      out.write("\"\r\n             id=\"nametf\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td width=\"1%\" nowrap>\r\n            <label for=\"emailtf\">");
+      out.write("\"\n             id=\"nametf\">\n        </td>\n    </tr>\n    <tr>\n        <td width=\"1%\" nowrap>\n            <label for=\"emailtf\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write(":</label></td>\r\n        <td width=\"99%\">\r\n            <input type=\"text\" name=\"email\" size=\"30\" maxlength=\"75\" value=\"");
+      out.write(":</label></td>\n        <td width=\"99%\">\n            <input type=\"text\" name=\"email\" size=\"30\" maxlength=\"75\" value=\"");
       out.print( ((email!=null) ? email : "") );
-      out.write("\"\r\n             id=\"emailtf\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td nowrap>\r\n            <label for=\"passtf\">");
+      out.write("\"\n             id=\"emailtf\">\n        </td>\n    </tr>\n    <tr>\n        <td nowrap>\n            <label for=\"passtf\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write(":</label> *\r\n        </td>\r\n        <td width=\"99%\">\r\n            <input type=\"password\" name=\"password\" value=\"\" size=\"20\" maxlength=\"75\"\r\n             id=\"passtf\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td width=\"1%\" nowrap>\r\n            <label for=\"confpasstf\">");
+      out.write(":</label> *\n        </td>\n        <td width=\"99%\">\n            <input type=\"password\" name=\"password\" value=\"\" size=\"20\" maxlength=\"75\"\n             id=\"passtf\">\n        </td>\n    </tr>\n    <tr>\n        <td width=\"1%\" nowrap>\n            <label for=\"confpasstf\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write(":</label> *\r\n        </td>\r\n        <td width=\"99%\">\r\n            <input type=\"password\" name=\"passwordConfirm\" value=\"\" size=\"20\" maxlength=\"75\"\r\n             id=\"confpasstf\">\r\n        </td>\r\n    </tr>\r\n    </tbody>\r\n    </table>\r\n    <br>\r\n    <span class=\"jive-description\">\r\n    * ");
+      out.write(":</label> *\n        </td>\n        <td width=\"99%\">\n            <input type=\"password\" name=\"passwordConfirm\" value=\"\" size=\"20\" maxlength=\"75\"\n             id=\"confpasstf\">\n        </td>\n    </tr>\n    </tbody>\n    </table>\n    <br>\n    <span class=\"jive-description\">\n    * ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n    </span>\r\n    </div>\r\n</div>\r\n\r\n");
+      out.write("\n    </span>\n    </div>\n</div>\n\n");
   if (reCaptcha != null) { 
-      out.write('\r');
       out.write('\n');
       out.print( reCaptcha.createRecaptchaHtml(null, null, 0) );
-      out.write('\r');
       out.write('\n');
   } 
-      out.write("\r\n<input type=\"submit\" name=\"create\" value=\"");
+      out.write("\n<input type=\"submit\" name=\"create\" value=\"");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\">\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.username.focus();\r\n</script>\r\n\r\n");
+      out.write("\">\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.username.focus();\n</script>\n\n");
  } 
-      out.write("\r\n\r\n</body>\r\n</html>");
+      out.write("\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -352,7 +350,7 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_set_0.setPageContext(_jspx_page_context);
     _jspx_th_c_set_0.setParent(null);
     _jspx_th_c_set_0.setVar("submit");
-    _jspx_th_c_set_0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.create}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_c_set_0.setValue(new String("${param.create}"));
     int _jspx_eval_c_set_0 = _jspx_th_c_set_0.doStartTag();
     if (_jspx_th_c_set_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
@@ -371,7 +369,7 @@ public final class sign_002dup_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_set_1.setPageContext(_jspx_page_context);
     _jspx_th_c_set_1.setParent(null);
     _jspx_th_c_set_1.setVar("errors");
-    _jspx_th_c_set_1.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${errors}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_c_set_1.setValue(new String("${errors}"));
     int _jspx_eval_c_set_1 = _jspx_th_c_set_1.doStartTag();
     if (_jspx_th_c_set_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_1);

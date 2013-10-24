@@ -84,7 +84,7 @@ public final class confirm_002dbookmark_002ddelete_jsp extends org.apache.jasper
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
 
     String bookmarkID = request.getParameter("bookmarkID");
 
@@ -104,83 +104,83 @@ public final class confirm_002dbookmark_002ddelete_jsp extends org.apache.jasper
         return;
     }
 
-      out.write("\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"pageID\" content=\"");
+      out.write("</title>\n    <meta name=\"pageID\" content=\"");
       out.print( bookmark.getType() == Bookmark.Type.group_chat ? "groupchat-bookmarks" : "url-bookmarks");
-      out.write("\"/>\r\n    <script type=\"text/javascript\">\r\n    </script>\r\n    <style type=\"text/css\">\r\n\r\n        .field-label {\r\n            font-size: 11px;\r\n            font-weight: bold;\r\n        }\r\n\r\n        .field-text {\r\n            font-size: 12px;\r\n            font-family: verdana;\r\n        }\r\n\r\n        .div-border {\r\n            border: 1px;\r\n            border-color: #ccc;\r\n            border-style: dotted;\r\n        }\r\n\r\n\r\n    </style>\r\n    <style type=\"text/css\">\r\n        @import \"style/style.css\";\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- Create URL Bookmark -->\r\n<p>\r\n    ");
+      out.write("\"/>\n    <script type=\"text/javascript\">\n    </script>\n    <style type=\"text/css\">\n\n        .field-label {\n            font-size: 11px;\n            font-weight: bold;\n        }\n\n        .field-text {\n            font-size: 12px;\n            font-family: verdana;\n        }\n\n        .div-border {\n            border: 1px;\n            border-color: #ccc;\n            border-style: dotted;\n        }\n\n\n    </style>\n    <style type=\"text/css\">\n        @import \"style/style.css\";\n    </style>\n</head>\n\n<body>\n\n<!-- Create URL Bookmark -->\n<p>\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n\r\n");
+      out.write("\n</p>\n\n\n");
  if (bookmark.getType() == Bookmark.Type.url) { 
-      out.write("\r\n<form name=\"urlForm\" action=\"confirm-bookmark-delete.jsp\" method=\"post\">\r\n    <table class=\"div-border\">\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n<form name=\"urlForm\" action=\"confirm-bookmark-delete.jsp\" method=\"post\">\n    <table class=\"div-border\">\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( bookmark.getName());
-      out.write("\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n        </tr>\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( bookmark.getValue());
-      out.write("</td>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("</td>\n        </tr>\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( bookmark.getUsers());
-      out.write("\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n        </tr>\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( bookmark.getGroups());
-      out.write("\r\n        </tr>\r\n        <tr><td></td>\r\n            <td>\r\n                <input type=\"submit\" name=\"delete\" value=\"");
+      out.write("\n        </tr>\n        <tr><td></td>\n            <td>\n                <input type=\"submit\" name=\"delete\" value=\"");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\"/>&nbsp;\r\n                <input type=\"button\" value=\"");
+      out.write("\"/>&nbsp;\n                <input type=\"button\" value=\"");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\"\r\n                       onclick=\"window.location.href='url-bookmarks.jsp'; return false;\">\r\n            </td>\r\n        </tr>\r\n\r\n    </table>\r\n    <input type=\"hidden\" name=\"bookmarkID\" value=\"");
+      out.write("\"\n                       onclick=\"window.location.href='url-bookmarks.jsp'; return false;\">\n            </td>\n        </tr>\n\n    </table>\n    <input type=\"hidden\" name=\"bookmarkID\" value=\"");
       out.print( bookmarkID);
-      out.write("\"/>\r\n</form>\r\n\r\n");
+      out.write("\"/>\n</form>\n\n");
  }
 else { 
-      out.write("\r\n\r\n<form name=\"f\" action=\"confirm-bookmark-delete.jsp\" method=\"post\">\r\n\r\n    <table class=\"div-border\" width=\"50%\">\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n\n<form name=\"f\" action=\"confirm-bookmark-delete.jsp\" method=\"post\">\n\n    <table class=\"div-border\" width=\"50%\">\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td class=\"field-text\">");
+      out.write("</b></td>\n            <td class=\"field-text\">");
       out.print( bookmark.getName());
-      out.write("</td>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("</td>\n        </tr>\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td class=\"field-text\">");
+      out.write("</b></td>\n            <td class=\"field-text\">");
       out.print( bookmark.getValue());
-      out.write("\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n        </tr>\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td class=\"field-text\">");
+      out.write("</b></td>\n            <td class=\"field-text\">");
       out.print( bookmark.isGlobalBookmark() ? "ALL" : getCommaDelimitedList(bookmark.getUsers(), 5));
-      out.write("</td>\r\n        </tr>\r\n\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("</td>\n        </tr>\n\n        <tr valign=\"top\">\n            <td><b>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td class=\"field-text\">");
+      out.write("</b></td>\n            <td class=\"field-text\">");
       out.print( bookmark.isGlobalBookmark() ? "ALL" : getCommaDelimitedList(bookmark.getGroups(), 5) );
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td><b>");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td><b>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( bookmark.getProperty("autojoin") != null ? "<img src='/images/check.gif'>" : "&nbsp;");
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td></td>\r\n            <td>\r\n                <input type=\"submit\" name=\"delete\" value=\"");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td></td>\n            <td>\n                <input type=\"submit\" name=\"delete\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\">\r\n                <input type=\"button\" value=\"");
+      out.write("\">\n                <input type=\"button\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\"\r\n                       onclick=\"window.location.href='groupchat-bookmarks.jsp'; return false;\">\r\n        </td>\r\n        </tr>\r\n\r\n    </table>\r\n    <input type=\"hidden\" name=\"bookmarkID\" value=\"");
+      out.write("\"\n                       onclick=\"window.location.href='groupchat-bookmarks.jsp'; return false;\">\n        </td>\n        </tr>\n\n    </table>\n    <input type=\"hidden\" name=\"bookmarkID\" value=\"");
       out.print( bookmarkID);
-      out.write("\"/>\r\n</form>\r\n");
+      out.write("\"/>\n</form>\n");
  } 
-      out.write("\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

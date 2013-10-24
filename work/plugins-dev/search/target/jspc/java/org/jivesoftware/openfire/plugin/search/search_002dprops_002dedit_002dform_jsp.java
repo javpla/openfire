@@ -54,7 +54,7 @@ public final class search_002dprops_002dedit_002dform_jsp extends org.apache.jas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n");
   // Get parameters
     boolean save = request.getParameter("save") != null;
     boolean success = request.getParameter("success") != null;
@@ -100,113 +100,113 @@ public final class search_002dprops_002dedit_002dform_jsp extends org.apache.jas
     Collection<String> searchableFields = plugin.getFilteredSearchFields();
     groupOnly = plugin.isGroupOnly();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"search-props-edit-form\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"search-props-edit-form\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n            ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n            ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"search-props-edit-form.jsp?save\" method=\"post\">\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n\n<form action=\"search-props-edit-form.jsp?save\" method=\"post\">\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>\r\n    ");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>\n    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"searchEnabled\" value=\"true\" id=\"rb01\"\r\n             ");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"searchEnabled\" value=\"true\" id=\"rb01\"\n             ");
       out.print( ((searchEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb01\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb01\"><b>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
       out.write("</b></label> - ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"searchEnabled\" value=\"false\" id=\"rb02\"\r\n             ");
+      out.write("\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"searchEnabled\" value=\"false\" id=\"rb02\"\n             ");
       out.print( ((!searchEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb02\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb02\"><b>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
       out.write("</b></label> - ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n</div>\r\n\r\n<br>\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n</div>\n\n<br>\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n    <tr>\r\n        <td class=\"c1\">\r\n           ");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n    <tr>\n        <td class=\"c1\">\n           ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n        <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"searchname\"  value=\"");
+      out.write(":\n        </td>\n        <td>\n        <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"searchname\"  value=\"");
       out.print( (searchName != null ? searchName : "") );
       out.write('"');
       out.write('>');
       out.write('.');
       out.print(XMPPServer.getInstance().getServerInfo().getXMPPDomain() );
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   if (errors.containsKey("searchname")) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n\r\n        ");
+      out.write("\n            </span>\n\n        ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    </table>\r\n</div>\r\n\r\n<br>\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n        </td>\n    </tr>\n    </table>\n</div>\n\n<br>\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>\r\n    ");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>\n    ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"400\">\r\n        <tr>\r\n            <th align=\"center\" width=\"1%\">");
+      out.write("\n    </p>\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"400\">\n        <tr>\n            <th align=\"center\" width=\"1%\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th align=\"left\" width=\"99%\">");
+      out.write("</th>\n            <th align=\"left\" width=\"99%\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n        ");
+      out.write("</th>\n        </tr>\n        ");
  for (String field : UserManager.getInstance().getSearchFields()) { 
-      out.write("\r\n        <tr>\r\n            <td align=\"center\" width=\"1%\"><input type=\"checkbox\"  ");
+      out.write("\n        <tr>\n            <td align=\"center\" width=\"1%\"><input type=\"checkbox\"  ");
       out.print(searchableFields.contains(field) ? "checked" : "" );
       out.write("  name=\"");
       out.print(field );
-      out.write("\"></td>\r\n            <td align=\"left\" width=\"99%\">");
+      out.write("\"></td>\n            <td align=\"left\" width=\"99%\">");
       out.print(field );
-      out.write("</td>\r\n        </tr>\r\n        ");
+      out.write("</td>\n        </tr>\n        ");
  } 
-      out.write("\r\n    </table>\r\n</div>\r\n\r\n<br>\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n    </table>\n</div>\n\n<br>\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>\r\n    ");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>\n    ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"groupOnly\" value=\"false\" id=\"rb-grouponly-01\"\r\n             ");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"groupOnly\" value=\"false\" id=\"rb-grouponly-01\"\n             ");
       out.print( ((!groupOnly) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb-grouponly-01\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb-grouponly-01\"><b>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write("</b></label> - ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"groupOnly\" value=\"true\" id=\"rb-grouponly-02\"\r\n             ");
+      out.write("\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"groupOnly\" value=\"true\" id=\"rb-grouponly-02\"\n             ");
       out.print( ((groupOnly) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb-grouponly-02\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb-grouponly-02\"><b>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
       out.write("</b></label> - ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n</div>\r\n\r\n<br>\r\n\r\n\r\n<input type=\"submit\" value=\"");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n</div>\n\n<br>\n\n\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -82,7 +82,7 @@ public final class server_002dproperties_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -91,7 +91,8 @@ public final class server_002dproperties_jsp extends org.apache.jasper.runtime.H
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -100,11 +101,12 @@ public final class server_002dproperties_jsp extends org.apache.jasper.runtime.H
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     String propName = ParamUtils.getParameter(request,"propName");
     String propValue = ParamUtils.getParameter(request,"propValue",true);
@@ -158,160 +160,162 @@ public final class server_002dproperties_jsp extends org.apache.jasper.runtime.H
         propValue = JiveGlobals.getProperty(propName);
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-props\"/>\r\n        <meta name=\"helpPage\" content=\"manage_system_properties.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-props\"/>\n        <meta name=\"helpPage\" content=\"manage_system_properties.html\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<p><b>");
+      out.write("\n</p>\n\n<p><b>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</b></p>\r\n\r\n");
+      out.write("</b></p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if ("true".equals(request.getParameter("success"))) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if ("true".equals(request.getParameter("deletesuccess"))) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (edit) { 
-      out.write("\r\n\r\n    <div class=\"jive-info\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/info-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-info\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/info-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (request.getParameter("delerror") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nfunction doedit(propName) {\r\n    document.propform.propName.value = propName;\r\n    document.propform.edit.value = 'true';\r\n    document.propform.action = document.propform.action + '#edit';\r\n    document.propform.submit();\r\n}\r\nfunction dodelete(propName) {\r\n    var dodelete = confirm('Are you sure you want to delete this property?');\r\n    if (dodelete) {\r\n        document.propform.propName.value = propName;\r\n        document.propform.del.value = 'true';\r\n        document.propform.submit();\r\n        return true;\r\n    }\r\n    else {\r\n        return false;\r\n    }\r\n}\r\n</script>\r\n\r\n<form action=\"server-properties.jsp\" method=\"post\" name=\"propform\">\r\n<input type=\"hidden\" name=\"edit\" value=\"\">\r\n<input type=\"hidden\" name=\"del\" value=\"\">\r\n<input type=\"hidden\" name=\"propName\" value=\"\">\r\n\r\n<style type=\"text/css\">\r\n.hidebox {\r\n    text-overflow : ellipsis;\r\n    overflow : hidden;\r\n    white-space : nowrap;\r\n}\r\n</style>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n");
-      out.write("<thead>\r\n    <tr>\r\n        <th nowrap>");
+      out.write("\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nfunction doedit(propName) {\n    document.propform.propName.value = propName;\n    document.propform.edit.value = 'true';\n    document.propform.action = document.propform.action + '#edit';\n    document.propform.submit();\n}\nfunction dodelete(propName) {\n    var dodelete = confirm('Are you sure you want to delete this property?');\n    if (dodelete) {\n        document.propform.propName.value = propName;\n        document.propform.del.value = 'true';\n        document.propform.submit();\n        return true;\n    }\n    else {\n        return false;\n    }\n}\n</script>\n\n<form action=\"server-properties.jsp\" method=\"post\" name=\"propform\">\n<input type=\"hidden\" name=\"edit\" value=\"\">\n<input type=\"hidden\" name=\"del\" value=\"\">\n<input type=\"hidden\" name=\"propName\" value=\"\">\n\n<style type=\"text/css\">\n.hidebox {\n    text-overflow : ellipsis;\n    overflow : hidden;\n    white-space : nowrap;\n}\n</style>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n");
+      out.write("<thead>\n    <tr>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th style=\"text-align:center;\">");
+      out.write("</th>\n        <th style=\"text-align:center;\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th style=\"text-align:center;\">");
+      out.write("</th>\n        <th style=\"text-align:center;\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n\r\n    ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n\n    ");
   if (properties.size() == 0) { 
-      out.write("\r\n\r\n        <tr>\r\n            <td colspan=\"4\">\r\n                ");
+      out.write("\n\n        <tr>\n            <td colspan=\"4\">\n                ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n\r\n    ");
+      out.write("\n            </td>\n        </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
  for (String n : properties) {
         String v = JiveGlobals.getProperty(n);
         v = StringUtils.replace(StringUtils.escapeHTMLTags(v), "\n", "<br>");
     
-      out.write("\r\n    <tr class=\"");
+      out.write("\n    <tr class=\"");
       out.print( (n.equals(propName) ? "hilite" : "") );
-      out.write("\">\r\n\r\n        <td>\r\n            <div class=\"hidebox\" style=\"width:200px;\">\r\n                <span title=\"");
+      out.write("\">\n\n        <td>\n            <div class=\"hidebox\" style=\"width:200px;\">\n                <span title=\"");
       out.print( StringUtils.escapeHTMLTags(n) );
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
       out.print( StringUtils.escapeHTMLTags(n) );
-      out.write("\r\n                </span>\r\n            </div>\r\n        </td>\r\n        <td>\r\n            <div class=\"hidebox\" style=\"width:300px;\">\r\n                ");
+      out.write("\n                </span>\n            </div>\n        </td>\n        <td>\n            <div class=\"hidebox\" style=\"width:300px;\">\n                ");
  if (n.toLowerCase().indexOf("passwd") > -1 || 
                        n.toLowerCase().indexOf("password") > -1 ||
                        n.toLowerCase().indexOf("cookiekey") > -1) { 
-      out.write("\r\n                <span style=\"color:#999;\"><i>hidden</i></span>\r\n                ");
+      out.write("\n                <span style=\"color:#999;\"><i>hidden</i></span>\n                ");
  } else { 
-      out.write("\r\n                <span title=\"");
+      out.write("\n                <span title=\"");
       out.print( ("".equals(v) ? "&nbsp;" : v) );
       out.write('"');
       out.write('>');
       out.print( ("".equals(v) ? "&nbsp;" : v) );
-      out.write("</span>\r\n                ");
+      out.write("</span>\n                ");
  } 
-      out.write("\r\n            </div>\r\n        </td>\r\n        <td align=\"center\"><a href=\"#\" onclick=\"doedit('");
+      out.write("\n            </div>\n        </td>\n        <td align=\"center\"><a href=\"#\" onclick=\"doedit('");
       out.print( StringUtils.replace(StringUtils.escapeHTMLTags(n),"'","''") );
-      out.write("');\"\r\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\"\r\n                      alt=\"");
+      out.write("');\"\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\"\n                      alt=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\" border=\"0\"></a\r\n                >\r\n        </td>\r\n        <td align=\"center\"><a href=\"#\" onclick=\"return dodelete('");
+      out.write("\" border=\"0\"></a\n                >\n        </td>\n        <td align=\"center\"><a href=\"#\" onclick=\"return dodelete('");
       out.print( StringUtils.replace(StringUtils.escapeHTMLTags(n),"'","''") );
-      out.write("');\"\r\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\r\n                      alt=\"");
+      out.write("');\"\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\n                      alt=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\" border=\"0\"></a\r\n                >\r\n        </td>\r\n    </tr>\r\n\r\n    ");
+      out.write("\" border=\"0\"></a\n                >\n        </td>\n    </tr>\n\n    ");
  } 
-      out.write("\r\n\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n</form>\r\n\r\n<br><br>\r\n\r\n<a name=\"edit\"></a>\r\n<form action=\"server-properties.jsp\" method=\"post\" name=\"editform\">\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">\r\n            ");
+      out.write("\n\n</tbody>\n</table>\n</div>\n\n</form>\n\n<br><br>\n\n<a name=\"edit\"></a>\n<form action=\"server-properties.jsp\" method=\"post\" name=\"editform\">\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">\n            ");
   if (edit) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
   } else { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
   } 
-      out.write("\r\n        </th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <tr valign=\"top\">\r\n        <td>\r\n            ");
+      out.write("\n        </th>\n    </tr>\n</thead>\n<tbody>\n    <tr valign=\"top\">\n        <td>\n            ");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
   if (edit) { 
-      out.write("\r\n\r\n                <input type=\"hidden\" name=\"propName\" value=\"");
+      out.write("\n\n                <input type=\"hidden\" name=\"propName\" value=\"");
       out.print( StringUtils.escapeHTMLTags(propName) );
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
       out.print( StringUtils.escapeHTMLTags(propName) );
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   } else { 
-      out.write("\r\n\r\n                <input type=\"text\" name=\"propName\" size=\"40\" maxlength=\"100\" value=\"");
+      out.write("\n\n                <input type=\"text\" name=\"propName\" size=\"40\" maxlength=\"100\" value=\"");
       out.print( (propName != null ? StringUtils.escapeHTMLTags(propName) : "") );
-      out.write("\">\r\n\r\n                ");
+      out.write("\">\n\n                ");
   if (errors.containsKey("propName")) { 
-      out.write("\r\n\r\n                    <br><span class=\"jive-error-text\">");
+      out.write("\n\n                    <br><span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</span>\r\n\r\n                ");
+      out.write("</span>\n\n                ");
   } 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr valign=\"top\">\r\n        <td>\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr valign=\"top\">\n        <td>\n            ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            <textarea cols=\"45\" rows=\"5\" name=\"propValue\" wrap=\"virtual\">");
+      out.write(":\n        </td>\n        <td>\n            <textarea cols=\"45\" rows=\"5\" name=\"propValue\" wrap=\"virtual\">");
       out.print( (propValue != null ? StringUtils.escapeHTMLTags(propValue, false) : "") );
-      out.write("</textarea>\r\n\r\n            ");
+      out.write("</textarea>\n\n            ");
   if (errors.containsKey("propValue")) { 
-      out.write("\r\n\r\n                <br><span class=\"jive-error-text\">");
+      out.write("\n\n                <br><span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</span>\r\n\r\n            ");
+      out.write("</span>\n\n            ");
   } else if (errors.containsKey("propValueLength")) { 
-      out.write("\r\n\r\n                <br><span class=\"jive-error-text\">");
+      out.write("\n\n                <br><span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</span>\r\n\r\n            ");
+      out.write("</span>\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n<tfoot>\r\n    <tr>\r\n        <td colspan=\"2\">\r\n            <input type=\"submit\" name=\"save\" value=\"");
+      out.write("\n        </td>\n    </tr>\n</tbody>\n<tfoot>\n    <tr>\n        <td colspan=\"2\">\n            <input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\">\r\n            <input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n            <input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n    </tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n</form>\r\n\r\n<br><br><br><br><br><br>\r\n<br><br><br><br><br><br>\r\n<br><br><br><br><br><br>\r\n<br><br><br><br><br><br>\r\n\r\n    </body>\r\n</html>");
+      out.write("\">\n        </td>\n    </tr>\n</tfoot>\n</table>\n</div>\n\n</form>\n\n<br><br><br><br><br><br>\n<br><br><br><br><br><br>\n<br><br><br><br><br><br>\n<br><br><br><br><br><br>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

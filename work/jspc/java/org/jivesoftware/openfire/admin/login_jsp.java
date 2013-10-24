@@ -70,8 +70,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
       out.write('\n');
       org.jivesoftware.util.WebManager admin = null;
       synchronized (_jspx_page_context) {
@@ -81,12 +80,12 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("admin", admin, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  admin.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
 
     if (admin.isSetupMode()) {
@@ -94,7 +93,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // get parameters
     String username = ParamUtils.getParameter(request, "username");
 
@@ -207,45 +207,45 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     username = org.jivesoftware.util.StringUtils.escapeHTMLTags(username);
 
 
-      out.write("\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\r\n\r\n<html>\r\n<head>\r\n\t<title>");
+      out.write("\n\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n\n<html>\n<head>\n\t<title>");
       out.print( AdminConsole.getAppName() );
       out.write(' ');
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n\t<script language=\"JavaScript\" type=\"text/javascript\">\r\n\t\t<!--\r\n\t\t// break out of frames\r\n\t\tif (self.parent.frames.length != 0) {\r\n\t\t\tself.parent.location=document.location;\r\n\t\t}\r\n        function updateFields(el) {\r\n            if (el.checked) {\r\n                document.loginForm.username.disabled = true;\r\n                document.loginForm.password.disabled = true;\r\n            }\r\n            else {\r\n                document.loginForm.username.disabled = false;\r\n                document.loginForm.password.disabled = false;\r\n                document.loginForm.username.focus();\r\n            }\r\n        }\r\n\t\t//-->\r\n\t</script>\r\n    <link rel=\"stylesheet\" href=\"style/global.css\" type=\"text/css\">\r\n    <link rel=\"stylesheet\" href=\"style/login.css\" type=\"text/css\">\r\n</head>\r\n\r\n<body>\r\n\r\n<form action=\"login.jsp\" name=\"loginForm\" method=\"post\">\r\n\r\n");
+      out.write("</title>\n\t<script language=\"JavaScript\" type=\"text/javascript\">\n\t\t<!--\n\t\t// break out of frames\n\t\tif (self.parent.frames.length != 0) {\n\t\t\tself.parent.location=document.location;\n\t\t}\n        function updateFields(el) {\n            if (el.checked) {\n                document.loginForm.username.disabled = true;\n                document.loginForm.password.disabled = true;\n            }\n            else {\n                document.loginForm.username.disabled = false;\n                document.loginForm.password.disabled = false;\n                document.loginForm.username.focus();\n            }\n        }\n\t\t//-->\n\t</script>\n    <link rel=\"stylesheet\" href=\"style/global.css\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"style/login.css\" type=\"text/css\">\n</head>\n\n<body>\n\n<form action=\"login.jsp\" name=\"loginForm\" method=\"post\">\n\n");
   if (url != null) { try { 
-      out.write("\r\n\r\n    <input type=\"hidden\" name=\"url\" value=\"");
+      out.write("\n\n    <input type=\"hidden\" name=\"url\" value=\"");
       out.print( url );
-      out.write("\">\r\n\r\n");
+      out.write("\">\n\n");
   } catch (Exception e) { Log.error(e); } } 
-      out.write("\r\n\r\n<input type=\"hidden\" name=\"login\" value=\"true\">\r\n\r\n<div align=\"center\">\r\n    <!-- BEGIN login box -->\r\n    <div id=\"jive-loginBox\">\r\n        \r\n        <div align=\"center\" id=\"jive-loginTable\">\r\n\r\n            <span id=\"jive-login-header\" style=\"background: transparent url(images/login_logo.gif) no-repeat left; padding: 29px 0 10px 205px;\">\r\n            ");
+      out.write("\n\n<input type=\"hidden\" name=\"login\" value=\"true\">\n\n<div align=\"center\">\n    <!-- BEGIN login box -->\n    <div id=\"jive-loginBox\">\n        \n        <div align=\"center\" id=\"jive-loginTable\">\n\n            <span id=\"jive-login-header\" style=\"background: transparent url(images/login_logo.gif) no-repeat left; padding: 29px 0 10px 205px;\">\n            ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n\r\n            <div style=\"text-align: center; width: 380px;\">\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"center\">\r\n                <tr>\r\n                    <td align=\"right\" class=\"loginFormTable\">\r\n\r\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\r\n                        <noscript>\r\n                            <tr>\r\n                                <td colspan=\"3\">\r\n                                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                                    <tr valign=\"top\">\r\n                                        <td><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" vspace=\"2\"></td>\r\n                                        <td><div class=\"jive-error-text\" style=\"padding-left:5px; color:#cc0000;\">");
+      out.write("\n            </span>\n\n            <div style=\"text-align: center; width: 380px;\">\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"center\">\n                <tr>\n                    <td align=\"right\" class=\"loginFormTable\">\n\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\n                        <noscript>\n                            <tr>\n                                <td colspan=\"3\">\n                                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                                    <tr valign=\"top\">\n                                        <td><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" vspace=\"2\"></td>\n                                        <td><div class=\"jive-error-text\" style=\"padding-left:5px; color:#cc0000;\">");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</div></td>\r\n                                    </tr>\r\n                                    </table>\r\n                                </td>\r\n                            </tr>\r\n                        </noscript>\r\n                        ");
+      out.write("</div></td>\n                                    </tr>\n                                    </table>\n                                </td>\n                            </tr>\n                        </noscript>\n                        ");
   if (errors.size() > 0) { 
-      out.write("\r\n                            <tr>\r\n                                <td colspan=\"3\">\r\n                                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                                        ");
+      out.write("\n                            <tr>\n                                <td colspan=\"3\">\n                                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                                        ");
  for (String error:errors.values()) { 
-      out.write("\r\n                                    <tr valign=\"top\">\r\n                                        <td><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" vspace=\"2\"></td>\r\n                                        <td><div class=\"jive-error-text\" style=\"padding-left:5px; color:#cc0000;\">");
+      out.write("\n                                    <tr valign=\"top\">\n                                        <td><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" vspace=\"2\"></td>\n                                        <td><div class=\"jive-error-text\" style=\"padding-left:5px; color:#cc0000;\">");
       out.print( error);
-      out.write("</div></td>\r\n                                    </tr>\r\n                                        ");
+      out.write("</div></td>\n                                    </tr>\n                                        ");
  } 
-      out.write("\r\n                                    </table>\r\n                                </td>\r\n                            </tr>\r\n                        ");
+      out.write("\n                                    </table>\n                                </td>\n                            </tr>\n                        ");
   } 
-      out.write("\r\n                        <tr>\r\n                            <td><input type=\"text\" name=\"username\" size=\"15\" maxlength=\"50\" id=\"u01\" value=\"");
+      out.write("\n                        <tr>\n                            <td><input type=\"text\" name=\"username\" size=\"15\" maxlength=\"50\" id=\"u01\" value=\"");
       out.print( (username != null ? StringUtils.removeXSSCharacters(username) : "") );
-      out.write("\"></td>\r\n                            <td><input type=\"password\" name=\"password\" size=\"15\" maxlength=\"50\" id=\"p01\"></td>\r\n                            <td align=\"center\"><input type=\"submit\" value=\"&nbsp; ");
+      out.write("\"></td>\n                            <td><input type=\"password\" name=\"password\" size=\"15\" maxlength=\"50\" id=\"p01\"></td>\n                            <td align=\"center\"><input type=\"submit\" value=\"&nbsp; ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write(" &nbsp;\"></td>\r\n                        </tr>\r\n                        <tr valign=\"top\">\r\n                            <td class=\"jive-login-label\"><label for=\"u01\">");
+      out.write(" &nbsp;\"></td>\n                        </tr>\n                        <tr valign=\"top\">\n                            <td class=\"jive-login-label\"><label for=\"u01\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</label></td>\r\n                            <td class=\"jive-login-label\"><label for=\"p01\">");
+      out.write("</label></td>\n                            <td class=\"jive-login-label\"><label for=\"p01\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</label></td>\r\n                            <td>&nbsp;</td>\r\n                        </tr>\r\n                        </table>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"right\">\r\n                        <div align=\"right\" id=\"jive-loginVersion\">\r\n                        ");
+      out.write("</label></td>\n                            <td>&nbsp;</td>\n                        </tr>\n                        </table>\n                    </td>\n                </tr>\n                <tr>\n                    <td align=\"right\">\n                        <div align=\"right\" id=\"jive-loginVersion\">\n                        ");
       out.print( AdminConsole.getAppName() );
       out.write(',');
       out.write(' ');
@@ -254,7 +254,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(':');
       out.write(' ');
       out.print( AdminConsole.getVersionString() );
-      out.write("\r\n                        </div>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    <!-- END login box -->\r\n</div>\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\n<!--\r\n    if (document.loginForm.username.value == '')  {\r\n\t    document.loginForm.username.focus();\r\n    } else {\r\n        document.loginForm.password.focus();\r\n    }\r\n//-->\r\n</script>\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n                        </div>\n                    </td>\n                </tr>\n            </table>\n            </div>\n        </div>\n\n    </div>\n    <!-- END login box -->\n</div>\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\n<!--\n    if (document.loginForm.username.value == '')  {\n\t    document.loginForm.username.focus();\n    } else {\n        document.loginForm.password.focus();\n    }\n//-->\n</script>\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -43,9 +43,8 @@ public final class workgroup_002ddelete_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n<!-- Define Administration Bean -->\r\n");
+      out.write("\n\n<!-- Define Administration Bean -->\n");
    // Get parameters //
     String wgID = ParamUtils.getParameter(request,"wgID");
     boolean cancel = request.getParameter("cancel") != null;
@@ -69,13 +68,13 @@ public final class workgroup_002ddelete_jsp extends org.apache.jasper.runtime.Ht
         return;
     }
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n<html>\n    <head>\n        <title>");
       out.print( "Delete Workgroup: "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-properties\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-properties\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"delete_a_workgroup.html\"/>-->\r\n    </head>\r\n    <body>\r\n<p>Are you sure you want to delete this workgroup?</p>\r\n<form action=\"workgroup-delete.jsp\">\r\n  <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"delete_a_workgroup.html\"/>-->\n    </head>\n    <body>\n<p>Are you sure you want to delete this workgroup?</p>\n<form action=\"workgroup-delete.jsp\">\n  <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\"/>\r\n  <input type=\"submit\" name=\"delete\" value=\"Yes\"/>\r\n  <input type=\"submit\" name=\"cancel\" value=\"No\"/>\r\n</form>\r\n</body>\r\n</html>\r\n");
+      out.write("\"/>\n  <input type=\"submit\" name=\"delete\" value=\"Yes\"/>\n  <input type=\"submit\" name=\"cancel\" value=\"No\"/>\n</form>\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

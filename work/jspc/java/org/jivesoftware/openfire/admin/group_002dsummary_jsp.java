@@ -53,7 +53,7 @@ public final class group_002dsummary_jsp extends org.apache.jasper.runtime.HttpJ
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,13 +62,12 @@ public final class group_002dsummary_jsp extends org.apache.jasper.runtime.HttpJ
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"group-summary\"/>\r\n        <meta name=\"helpPage\" content=\"about_users_and_groups.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"group-summary\"/>\n        <meta name=\"helpPage\" content=\"about_users_and_groups.html\"/>\n    </head>\n    <body>\n\n");
   // Get parameters
     int start = ParamUtils.getIntParameter(request,"start",0);
     int range = ParamUtils.getIntParameter(request,"range",webManager.getRowsPerPage("group-summary", 15));
@@ -98,110 +97,114 @@ public final class group_002dsummary_jsp extends org.apache.jasper.runtime.HttpJ
     int numPages = (int)Math.ceil((double)groupCount/(double)range);
     int curPage = (start/range) + 1;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (request.getParameter("deletesuccess") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (webManager.getGroupManager().isSearchSupported()) { 
-      out.write("\r\n\r\n<form action=\"group-summary.jsp\" method=\"get\" name=\"searchForm\">\r\n<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\r\n    <tr>\r\n        <td valign=\"bottom\">\r\n");
+      out.write("\n\n<form action=\"group-summary.jsp\" method=\"get\" name=\"searchForm\">\n<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\n    <tr>\n        <td valign=\"bottom\">\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write(" <b>");
       out.print( groupCount );
-      out.write("</b>\r\n");
+      out.write("</b>\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    , ");
+      out.write("\n\n    , ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(' ');
       out.print( LocaleUtils.getLocalizedNumber(start+1) );
       out.write('-');
       out.print( LocaleUtils.getLocalizedNumber(start+range > groupCount ? groupCount:start+range) );
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   } 
-      out.write("\r\n        </td>\r\n        <td align=\"right\" valign=\"bottom\">\r\n   ");
+      out.write("\n        </td>\n        <td align=\"right\" valign=\"bottom\">\n   ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(": <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"search\" value=\"");
       out.print( ((search!=null) ? search : "") );
-      out.write("\">\r\n        </td>\r\n    </tr>\r\n</table>\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.searchForm.search.focus();\r\n</script>\r\n\r\n");
+      out.write("\">\n        </td>\n    </tr>\n</table>\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.searchForm.search.focus();\n</script>\n\n");
  }
    // Otherwise, searching is not supported.
    else {
 
-      out.write("\r\n    <p>\r\n    ");
+      out.write("\n    <p>\n    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
       out.write(" <b>");
       out.print( groupCount );
-      out.write("</b>\r\n    ");
+      out.write("</b>\n    ");
   if (numPages > 1) { 
-      out.write("\r\n\r\n        , ");
+      out.write("\n\n        , ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
       out.write(' ');
       out.print( (start+1) );
       out.write('-');
       out.print( (start+range) );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    </p>\r\n");
+      out.write("\n    </p>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (numPages > 1) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n    [\r\n    ");
+      out.write("\n    [\n    ");
   for (int i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"group-summary.jsp?start=");
+      out.write("\n        <a href=\"group-summary.jsp?start=");
       out.print( (i*range) );
       out.print( search!=null? "&search=" + URLEncoder.encode(search, "UTF-8") : "");
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th>&nbsp;</th>\r\n        <th nowrap>");
+      out.write("\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th>&nbsp;</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n        ");
+      out.write("</th>\n        ");
   // Only show edit and delete options if the groups aren't read-only.
             if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n        <th nowrap>");
+      out.write("\n        <th nowrap>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</th>\r\n        ");
+      out.write("</th>\n        ");
  } 
-      out.write("\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n\r\n");
+      out.write("\n    </tr>\n</thead>\n<tbody>\n\n");
   // Print the list of groups
     if (groups.isEmpty()) {
 
-      out.write("\r\n    <tr>\r\n        <td align=\"center\" colspan=\"6\">\r\n            ");
+      out.write("\n    <tr>\n        <td align=\"center\" colspan=\"6\">\n            ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n\r\n");
+      out.write("\n        </td>\n    </tr>\n\n");
 
     }
     int i = start;
@@ -209,68 +212,68 @@ public final class group_002dsummary_jsp extends org.apache.jasper.runtime.HttpJ
         String groupName = URLEncoder.encode(group.getName(), "UTF-8");
         i++;
 
-      out.write("\r\n    <tr class=\"jive-");
+      out.write("\n    <tr class=\"jive-");
       out.print( (((i%2)==0) ? "even" : "odd") );
-      out.write("\">\r\n        <td width=\"1%\" valign=\"top\">\r\n            ");
+      out.write("\">\n        <td width=\"1%\" valign=\"top\">\n            ");
       out.print( i );
-      out.write("\r\n        </td>\r\n        <td width=\"60%\">\r\n            <a href=\"group-edit.jsp?group=");
+      out.write("\n        </td>\n        <td width=\"60%\">\n            <a href=\"group-edit.jsp?group=");
       out.print( groupName );
       out.write('"');
       out.write('>');
       out.print( StringUtils.escapeHTMLTags(group.getName()) );
-      out.write("</a>\r\n            ");
+      out.write("</a>\n            ");
  if (group.getDescription() != null) { 
-      out.write("\r\n            <br>\r\n                <span class=\"jive-description\">\r\n                ");
+      out.write("\n            <br>\n                <span class=\"jive-description\">\n                ");
       out.print( StringUtils.escapeHTMLTags(group.getDescription()) );
-      out.write("\r\n                </span>\r\n             ");
+      out.write("\n                </span>\n             ");
  } 
-      out.write("\r\n        </td>\r\n        <td width=\"10%\" align=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td width=\"10%\" align=\"center\">\n            ");
       out.print( group.getMembers().size() );
-      out.write("\r\n        </td>\r\n        <td width=\"10%\" align=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td width=\"10%\" align=\"center\">\n            ");
       out.print( group.getAdmins().size() );
-      out.write("\r\n        </td>\r\n        ");
+      out.write("\n        </td>\n        ");
   // Only show edit and delete options if the groups aren't read-only.
             if (!webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n        <td width=\"1%\" align=\"center\">\r\n            <a href=\"group-edit.jsp?group=");
+      out.write("\n        <td width=\"1%\" align=\"center\">\n            <a href=\"group-edit.jsp?group=");
       out.print( groupName );
-      out.write("\"\r\n             title=");
+      out.write("\"\n             title=");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n            ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n        </td>\r\n        <td width=\"1%\" align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n            <a href=\"group-delete.jsp?group=");
+      out.write("\n            ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n        </td>\n        <td width=\"1%\" align=\"center\" style=\"border-right:1px #ccc solid;\">\n            <a href=\"group-delete.jsp?group=");
       out.print( groupName );
-      out.write("\"\r\n             title=");
+      out.write("\"\n             title=");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n             ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n        </td>\r\n        ");
+      out.write("\n             ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n        </td>\n        ");
  } 
-      out.write("\r\n    </tr>\r\n\r\n");
+      out.write("\n    </tr>\n\n");
 
     }
 
-      out.write("\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n</tbody>\n</table>\n</div>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n    <br>\r\n    <p>\r\n    ");
+      out.write("\n    <br>\n    <p>\n    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n    [\r\n    ");
+      out.write("\n    [\n    ");
   for (i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"group-summary.jsp?start=");
+      out.write("\n        <a href=\"group-summary.jsp?start=");
       out.print( (i*range) );
       out.print( search!=null? "&search=" + URLEncoder.encode(search, "UTF-8") : "");
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n    </body>\r\n</html>");
+      out.write("\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

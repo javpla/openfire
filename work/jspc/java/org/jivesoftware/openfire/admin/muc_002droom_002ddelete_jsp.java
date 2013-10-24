@@ -53,7 +53,7 @@ public final class muc_002droom_002ddelete_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,10 +62,10 @@ public final class muc_002droom_002ddelete_jsp extends org.apache.jasper.runtime
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     boolean cancel = request.getParameter("cancel") != null;
     boolean delete = request.getParameter("delete") != null;
@@ -112,45 +112,45 @@ public final class muc_002droom_002ddelete_jsp extends org.apache.jasper.runtime
         return;
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"muc-room-delete\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"muc-room-delete\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "roomJID="+URLEncoder.encode(roomJID.toBareJID(), "UTF-8") );
-      out.write("\"/>\r\n        <meta name=\"helpPage\" content=\"delete_a_group_chat_room.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n        <meta name=\"helpPage\" content=\"delete_a_group_chat_room.html\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n<b><a href=\"muc-room-edit-form.jsp?roomJID=");
+      out.write("\n<b><a href=\"muc-room-edit-form.jsp?roomJID=");
       out.print( URLEncoder.encode(room.getJID().toBareJID(), "UTF-8") );
       out.write('"');
       out.write('>');
       out.print( room.getJID().toBareJID() );
-      out.write("</a></b>\r\n");
+      out.write("</a></b>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"muc-room-delete.jsp\">\r\n<input type=\"hidden\" name=\"roomJID\" value=\"");
+      out.write("\n</p>\n\n<form action=\"muc-room-delete.jsp\">\n<input type=\"hidden\" name=\"roomJID\" value=\"");
       out.print( roomJID.toBareJID() );
-      out.write("\">\r\n\r\n<fieldset>\r\n    <legend>");
+      out.write("\">\n\n<fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</legend>\r\n    <div>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("</legend>\n    <div>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n            <td>\r\n                ");
+      out.write("\n            </td>\n            <td>\n                ");
       out.print( room.getJID().toBareJID() );
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("\n            </td>\n        </tr>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n            <td>\r\n                <input type=\"text\" size=\"50\" maxlength=\"150\" name=\"reason\">\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("\n            </td>\n            <td>\n                <input type=\"text\" size=\"50\" maxlength=\"150\" name=\"reason\">\n            </td>\n        </tr>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n            <td>\r\n                <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"alternateJID\">\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" name=\"delete\" value=\"");
+      out.write("\n            </td>\n            <td>\n                <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"alternateJID\">\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<input type=\"submit\" name=\"delete\" value=\"");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\">\r\n<input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n<input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n    </body>\r\n</html>");
+      out.write("\">\n</form>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -64,7 +64,7 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -73,10 +73,10 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters
     String hostname = ParamUtils.getParameter(request, "hostname");
 
@@ -94,10 +94,10 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
     // Number dateFormatter for all numbers on this page:
     NumberFormat numFormatter = NumberFormat.getNumberInstance();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-session-summary\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-session-summary\"/>\n    </head>\n    <body>\n\n<p>\n");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_1 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_1.setPageContext(_jspx_page_context);
@@ -111,7 +111,7 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
           _jspx_th_fmt_message_1.doInitBody();
         }
         do {
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -123,7 +123,6 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write('\r');
           out.write('\n');
           int evalDoAfterBody = _jspx_th_fmt_message_1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -137,90 +136,90 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_1);
-      out.write("\r\n\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">\r\n            ");
+      out.write("\n\n</p>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">\n            ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </th>\n    </tr>\n</thead>\n<tbody>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td>\r\n        ");
+      out.write("\n        </td>\n        <td>\n        ");
  if (!inSessions.isEmpty() && outSession == null) { 
-      out.write("\r\n            <img src=\"images/incoming_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n            <img src=\"images/incoming_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if (inSessions.isEmpty() && outSession != null) { 
-      out.write("\r\n            <img src=\"images/outgoing_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n            <img src=\"images/outgoing_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else { 
-      out.write("\r\n            <img src=\"images/both_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n            <img src=\"images/both_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n        <td>\r\n        ");
+      out.write("\n        </td>\n        <td>\n        ");
  if (!inSessions.isEmpty()) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       out.print( inSessions.get(0).getHostAddress() );
-      out.write("\r\n            /\r\n            ");
+      out.write("\n            /\n            ");
       out.print( inSessions.get(0).getHostName() );
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if (outSession != null) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       out.print( outSession.getHostAddress() );
-      out.write("\r\n            /\r\n            ");
+      out.write("\n            /\n            ");
       out.print( outSession.getHostName() );
-      out.write("\r\n        ");
+      out.write("\n        ");
  } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n<br>\n\n");
   // Show details of the incoming sessions
     for (IncomingServerSession inSession : inSessions) {
 
-      out.write("\r\n    <b>");
+      out.write("\n    <b>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</b>\r\n    <div class=\"jive-table\">\r\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr>\r\n        <th width=\"35%\" colspan=\"2\">");
+      out.write("</b>\n    <div class=\"jive-table\">\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr>\n        <th width=\"35%\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"20%\">");
+      out.write("</th>\n        <th width=\"20%\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"20%\">");
+      out.write("</th>\n        <th width=\"20%\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"25%\" nowrap>");
+      out.write("</th>\n        <th width=\"25%\" nowrap>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n    <tr>\r\n        ");
+      out.write("</th>\n    </tr>\n    <tr>\n        ");
   if (inSession.isSecure()) { 
-      out.write("\r\n            <td width=\"1%\">\r\n                <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\r\n            </td>\r\n         ");
+      out.write("\n            <td width=\"1%\">\n                <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\n            </td>\n         ");
  } else { 
-      out.write("\r\n            <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n         ");
+      out.write("\n            <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n         ");
  } 
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             Date creationDate = inSession.getCreationDate();
             Date lastActiveDate = inSession.getLastActiveDate();
@@ -236,42 +235,43 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
             boolean sameCreationDay = nowCal.get(Calendar.DAY_OF_YEAR) == creationCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == creationCal.get(Calendar.YEAR);
             boolean sameActiveDay = nowCal.get(Calendar.DAY_OF_YEAR) == lastActiveCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == lastActiveCal.get(Calendar.YEAR);
         
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       out.print( inSession.getStreamID());
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( sameCreationDay ? JiveGlobals.formatTime(creationDate) : JiveGlobals.formatDateTime(creationDate) );
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( sameActiveDay ? JiveGlobals.formatTime(lastActiveDate) : JiveGlobals.formatDateTime(lastActiveDate) );
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( numFormatter.format(inSession.getNumClientPackets()) );
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </div>\r\n\r\n    <br>\r\n");
+      out.write("</td>\n    </tr>\n    </table>\n    </div>\n\n    <br>\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Show details of the incoming session
     if (outSession != null) {
 
-      out.write("\r\n    <b>");
+      out.write("\n    <b>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</b>\r\n    <div class=\"jive-table\">\r\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr>\r\n        <th width=\"35%\" colspan=\"2\">");
+      out.write("</b>\n    <div class=\"jive-table\">\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr>\n        <th width=\"35%\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"20%\">");
+      out.write("</th>\n        <th width=\"20%\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"20%\">");
+      out.write("</th>\n        <th width=\"20%\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th width=\"25%\" nowrap>");
+      out.write("</th>\n        <th width=\"25%\" nowrap>");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n    <tr>\r\n        ");
+      out.write("</th>\n    </tr>\n    <tr>\n        ");
   if (outSession.isSecure()) { 
-      out.write("\r\n        <td width=\"1%\">\r\n            <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\r\n        </td>\r\n         ");
+      out.write("\n        <td width=\"1%\">\n            <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\n        </td>\n         ");
  } else { 
-      out.write("\r\n        <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n         ");
+      out.write("\n        <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n         ");
  } 
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             Date creationDate = outSession.getCreationDate();
             Date lastActiveDate = outSession.getLastActiveDate();
@@ -287,20 +287,20 @@ public final class server_002dsession_002ddetails_jsp extends org.apache.jasper.
             boolean sameCreationDay = nowCal.get(Calendar.DAY_OF_YEAR) == creationCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == creationCal.get(Calendar.YEAR);
             boolean sameActiveDay = nowCal.get(Calendar.DAY_OF_YEAR) == lastActiveCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == lastActiveCal.get(Calendar.YEAR);
         
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       out.print( outSession.getStreamID());
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( sameCreationDay ? JiveGlobals.formatTime(creationDate) : JiveGlobals.formatDateTime(creationDate) );
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( sameActiveDay ? JiveGlobals.formatTime(lastActiveDate) : JiveGlobals.formatDateTime(lastActiveDate) );
-      out.write("</td>\r\n        <td align=\"center\">");
+      out.write("</td>\n        <td align=\"center\">");
       out.print( numFormatter.format(outSession.getNumServerPackets()) );
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </div>\r\n\r\n    <br>\r\n");
+      out.write("</td>\n    </tr>\n    </table>\n    </div>\n\n    <br>\n");
   } 
-      out.write("\r\n\r\n<br>\r\n\r\n<form action=\"server-session-details.jsp\">\r\n<center>\r\n<input type=\"submit\" name=\"back\" value=\"");
+      out.write("\n\n<br>\n\n<form action=\"server-session-details.jsp\">\n<center>\n<input type=\"submit\" name=\"back\" value=\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\">\r\n</center>\r\n</form>\r\n\r\n    </body>\r\n</html>");
+      out.write("\">\n</center>\n</form>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

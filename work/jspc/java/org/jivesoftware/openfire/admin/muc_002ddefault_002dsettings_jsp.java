@@ -53,7 +53,7 @@ public final class muc_002ddefault_002dsettings_jsp extends org.apache.jasper.ru
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,10 +62,10 @@ public final class muc_002ddefault_002dsettings_jsp extends org.apache.jasper.ru
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     boolean save = request.getParameter("save") != null;
     boolean success = request.getParameter("success") != null;
@@ -173,15 +173,14 @@ public final class muc_002ddefault_002dsettings_jsp extends org.apache.jasper.ru
         return;
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"subPageID\" content=\"muc-defaultsettings\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("</title>\n<meta name=\"subPageID\" content=\"muc-defaultsettings\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "mucname="+URLEncoder.encode(mucname, "UTF-8") );
-      out.write("\"/>\r\n<meta name=\"helpPage\" content=\"set_group_chat_room_creation_permissions.html\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n<meta name=\"helpPage\" content=\"set_group_chat_room_creation_permissions.html\"/>\n</head>\n<body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
@@ -190,102 +189,102 @@ public final class muc_002ddefault_002dsettings_jsp extends org.apache.jasper.ru
       out.write('"');
       out.write('>');
       out.print( mucname );
-      out.write("</a></b>\r\n</p>\r\n\r\n");
+      out.write("</a></b>\n</p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n            ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<!-- BEGIN 'Default Room Settings' -->\r\n<form action=\"muc-default-settings.jsp?save\" method=\"post\">\r\n    <input type=\"hidden\" name=\"mucname\" value=\"");
+      out.write("\n\n<!-- BEGIN 'Default Room Settings' -->\n<form action=\"muc-default-settings.jsp?save\" method=\"post\">\n    <input type=\"hidden\" name=\"mucname\" value=\"");
       out.print( mucname );
-      out.write("\" />\r\n    <div class=\"jive-contentBoxHeader\">\r\n        ");
+      out.write("\" />\n    <div class=\"jive-contentBoxHeader\">\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n    </div>\r\n    <div class=\"jive-contentBox\">\r\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_publicroom\" value=\"true\" id=\"publicRoom\" type=\"checkbox\"\r\n                    ");
+      out.write("\n    </div>\n    <div class=\"jive-contentBox\">\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_publicroom\" value=\"true\" id=\"publicRoom\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.publicRoom", true)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"publicRoom\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"publicRoom\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_persistentroom\" value=\"true\" id=\"persistentRoom\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_persistentroom\" value=\"true\" id=\"persistentRoom\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.persistent", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"persistentRoom\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"persistentRoom\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_moderatedroom\" value=\"true\" id=\"moderated\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_moderatedroom\" value=\"true\" id=\"moderated\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.moderated", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"moderated\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"moderated\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_membersonly\" value=\"true\" id=\"membersOnly\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_membersonly\" value=\"true\" id=\"membersOnly\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.membersOnly", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"membersOnly\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"membersOnly\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_nonanonymous\" value=\"true\" id=\"nonanonymous\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_nonanonymous\" value=\"true\" id=\"nonanonymous\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.canAnyoneDiscoverJID", true)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"nonanonymous\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"nonanonymous\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_allowinvites\" value=\"true\" id=\"allowInvites\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_allowinvites\" value=\"true\" id=\"allowInvites\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.canOccupantsInvite", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"allowInvites\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"allowInvites\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_changesubject\" value=\"true\" id=\"changeSubject\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_changesubject\" value=\"true\" id=\"changeSubject\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.canOccupantsChangeSubject", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"changeSubject\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"changeSubject\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_reservednick\" value=\"true\" id=\"reservedNick\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_reservednick\" value=\"true\" id=\"reservedNick\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.loginRestrictedToNickname", false)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"reservedNick\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"reservedNick\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_canchangenick\" value=\"true\" id=\"canChangeNick\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_canchangenick\" value=\"true\" id=\"canChangeNick\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.canChangeNickname", true)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"canChangeNick\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"canChangeNick\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_registration\" value=\"true\" id=\"registration\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_registration\" value=\"true\" id=\"registration\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.registrationEnabled", true)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"registration\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"registration\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    <input name=\"roomconfig_enablelogging\" value=\"true\" id=\"enableLogging\" type=\"checkbox\"\r\n                    ");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    <input name=\"roomconfig_enablelogging\" value=\"true\" id=\"enableLogging\" type=\"checkbox\"\n                    ");
       out.print( ((MUCPersistenceManager.getBooleanProperty(mucname, "room.logEnabled", true)) ? "checked" : "") );
-      out.write(">\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"enableLogging\">");
+      out.write(">\n                </td>\n                <td width=\"99%\">\n                    <label for=\"enableLogging\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td width=\"1%\">\r\n                    &nbsp;\r\n                </td>\r\n                <td width=\"99%\">\r\n                    <label for=\"roomconfig_maxusers\">");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td width=\"1%\">\n                    &nbsp;\n                </td>\n                <td width=\"99%\">\n                    <label for=\"roomconfig_maxusers\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write(":</label>\r\n                    &nbsp;\r\n                    <select name=\"roomconfig_maxusers\">\r\n                        ");
+      out.write(":</label>\n                    &nbsp;\n                    <select name=\"roomconfig_maxusers\">\n                        ");
  for(int i=10; i<=50; i=i+10) { 
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( i );
-      out.write("\"\r\n                            ");
+      out.write("\"\n                            ");
       out.print( ((MUCPersistenceManager.getIntProperty(mucname, "room.maxUsers", 30)) == i ? "selected=\"selected\"" : "") );
-      out.write("\r\n                            >");
+      out.write("\n                            >");
       out.print( i );
-      out.write("</option>\r\n                        ");
+      out.write("</option>\n                        ");
  } 
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( 0 );
-      out.write("\"\r\n                        ");
+      out.write("\"\n                        ");
       out.print( ((MUCPersistenceManager.getIntProperty(mucname, "room.maxUsers", 30)) == 0 ? "selected=\"selected\"" : "") );
-      out.write("\r\n                        >");
+      out.write("\n                        >");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</option>\r\n                    </select>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n        </table>\r\n    </div>\r\n    <input type=\"submit\" value=\"");
+      out.write("</option>\n                    </select>\n                </td>\n            </tr>\n        </tbody>\n        </table>\n    </div>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END 'Default Room Settings' -->\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\">\n</form>\n<!-- END 'Default Room Settings' -->\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

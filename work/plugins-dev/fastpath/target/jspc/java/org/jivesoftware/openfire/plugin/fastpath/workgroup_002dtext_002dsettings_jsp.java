@@ -94,8 +94,8 @@ public final class workgroup_002dtext_002dsettings_jsp extends org.apache.jasper
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
 
     pageList = new ArrayList<InternalModel>();
@@ -141,19 +141,19 @@ public final class workgroup_002dtext_002dsettings_jsp extends org.apache.jasper
         updated = true;
     }
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n<html>\n    <head>\n        <title>");
       out.print( "Web Chat Text Settings for "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-text-settings\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-text-settings\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"edit_form_text.html\"/>-->\r\n\r\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\r\n        <script>\r\n        function restoreKey(name){\r\n            document.text._key.value = name;\r\n            document.text.submit();\r\n        }\r\n        </script>\r\n        <script language=\"javascript\">\r\n            function changeImage(image, img) {\r\n                img.src = image;\r\n            }\r\n        </script>\r\n    </head>\r\n    <body>\r\n\r\n      ");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"edit_form_text.html\"/>-->\n\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/style/global.css\">\n        <script>\n        function restoreKey(name){\n            document.text._key.value = name;\n            document.text.submit();\n        }\n        </script>\n        <script language=\"javascript\">\n            function changeImage(image, img) {\n                img.src = image;\n            }\n        </script>\n    </head>\n    <body>\n\n      ");
 
           if(updated){
       
-      out.write("\r\n       <div class=\"jive-success\">\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                <tbody>\r\n                    <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\r\n                    border=\"0\"></td>\r\n                        <td class=\"jive-icon-label\">\r\n                           Web UI Text Settings have been updated successfully\r\n                        </td></tr>\r\n                </tbody>\r\n            </table>\r\n        </div><br/>\r\n      ");
+      out.write("\n       <div class=\"jive-success\">\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                <tbody>\n                    <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\n                    border=\"0\"></td>\n                        <td class=\"jive-icon-label\">\n                           Web UI Text Settings have been updated successfully\n                        </td></tr>\n                </tbody>\n            </table>\n        </div><br/>\n      ");
  } 
-      out.write("\r\n\r\n      <!-- Create HTML Code Snippet Table -->\r\n        <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tr valign=\"top\">\r\n        <th colspan=\"3\">HTML Code Snippet</th>\r\n        </tr>\r\n        <tr valign=\"middle\">\r\n        <td><b>HTML Code</b><br/>\r\n        <span class=\"jive-description\">Copy this HTML Code wherever you would like to place a \"Chat with me\" button. This code will\r\n        display the correct presence information for this workgroup by either being online or offline. <i>(You must replace the url to the actual jivelive.jsp page)</i>\r\n    </span>\r\n        </td>\r\n        <td width=\"60%\" style=\"font-size:11px;\">\r\n       <font color=\"green\">&lt;!-- Insert this snippet where you would like the Chat button image to show up --></font><br/>\r\n        &lt;script language=\"JavaScript\" type=\"text/javascript\" src=\"url to jivelive.jsp\">&lt;/script><br/>\r\n        &lt;script>showChatButton('");
+      out.write("\n\n      <!-- Create HTML Code Snippet Table -->\n        <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tr valign=\"top\">\n        <th colspan=\"3\">HTML Code Snippet</th>\n        </tr>\n        <tr valign=\"middle\">\n        <td><b>HTML Code</b><br/>\n        <span class=\"jive-description\">Copy this HTML Code wherever you would like to place a \"Chat with me\" button. This code will\n        display the correct presence information for this workgroup by either being online or offline. <i>(You must replace the url to the actual jivelive.jsp page)</i>\n    </span>\n        </td>\n        <td width=\"60%\" style=\"font-size:11px;\">\n       <font color=\"green\">&lt;!-- Insert this snippet where you would like the Chat button image to show up --></font><br/>\n        &lt;script language=\"JavaScript\" type=\"text/javascript\" src=\"url to jivelive.jsp\">&lt;/script><br/>\n        &lt;script>showChatButton('");
       out.print( wgID );
-      out.write("');&lt;/script><br/>\r\n        <font color=\"green\">&lt;!-- End Of Spark Fastpath Snippet --></font>\r\n        </td>\r\n        </tr>\r\n        </table>\r\n        <br/><br/>\r\n");
+      out.write("');&lt;/script><br/>\n        <font color=\"green\">&lt;!-- End Of Spark Fastpath Snippet --></font>\n        </td>\n        </tr>\n        </table>\n        <br/><br/>\n");
 
     // User Input Page
     addToPage("User Input Page", chatSettings.getChatSetting(KeyEnum.user_input_page_title));
@@ -181,40 +181,39 @@ public final class workgroup_002dtext_002dsettings_jsp extends org.apache.jasper
     // Offline Page
     addToPage("No Help Page", chatSettings.getChatSetting(KeyEnum.no_help));
 
-      out.write("\r\n\r\n        <!-- Text Settings -->\r\n        <form name=\"text\" action=\"workgroup-text-settings.jsp\" method=\"post\">\r\n        ");
+      out.write("\n\n        <!-- Text Settings -->\n        <form name=\"text\" action=\"workgroup-text-settings.jsp\" method=\"post\">\n        ");
 
             for(InternalModel model : pageList){
         
-      out.write("\r\n          <table  class=\"jive-table\"  cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n               <tr>\r\n               <th colspan=\"2\">");
+      out.write("\n          <table  class=\"jive-table\"  cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n               <tr>\n               <th colspan=\"2\">");
       out.print( model.getPageName());
-      out.write("</th>\r\n               </tr>\r\n\r\n               ");
+      out.write("</th>\n               </tr>\n\n               ");
 
                   List list = model.getChatSettings();
                   Iterator iter = list.iterator();
                   while(iter.hasNext()){
                       ChatSetting chatSetting = (ChatSetting)iter.next();
                
-      out.write("\r\n               <tr valign=\"top\">\r\n                    <td  style=\"border:0px;\" width=\"25%\"><b>");
+      out.write("\n               <tr valign=\"top\">\n                    <td  style=\"border:0px;\" width=\"25%\"><b>");
       out.print( chatSetting.getLabel() );
-      out.write("</b><br/>\r\n                    <span class=\"jive-description\">");
+      out.write("</b><br/>\n                    <span class=\"jive-description\">");
       out.print( chatSetting.getDescription() );
-      out.write("</span>\r\n                    </td>\r\n                    <td rowspan=\"2\" align=\"left\"><textarea cols=\"60\" rows=\"6\" name=\"");
+      out.write("</span>\n                    </td>\n                    <td rowspan=\"2\" align=\"left\"><textarea cols=\"60\" rows=\"6\" name=\"");
       out.print( chatSetting.getKey() );
       out.write('"');
       out.write('>');
       out.print( chatSetting.getValue() );
-      out.write("</textarea></td>\r\n                    <input type=\"hidden\" name=\"key\" value=\"");
+      out.write("</textarea></td>\n                    <input type=\"hidden\" name=\"key\" value=\"");
       out.print( chatSetting.getKey() );
-      out.write("\" />\r\n               </tr>\r\n               <tr valign=\"bottom\">\r\n                 <td ><input type=\"submit\" name=\"restore\" value=\"Restore Defaults\" onClick=\"restoreKey('");
+      out.write("\" />\n               </tr>\n               <tr valign=\"bottom\">\n                 <td ><input type=\"submit\" name=\"restore\" value=\"Restore Defaults\" onClick=\"restoreKey('");
       out.print(chatSetting.getKey());
-      out.write("');\"></td>\r\n                </tr>\r\n              ");
+      out.write("');\"></td>\n                </tr>\n              ");
  } 
-      out.write("\r\n          </table><br/>\r\n        ");
+      out.write("\n          </table><br/>\n        ");
  } 
-      out.write("\r\n\r\n\r\n\r\n\r\n              <table>\r\n               <tr><td colspan=\"4\">\r\n                <input type=\"hidden\" name=\"_key\" />\r\n                <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n\n\n\n              <table>\n               <tr><td colspan=\"4\">\n                <input type=\"hidden\" name=\"_key\" />\n                <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\" />\r\n                <input type=\"submit\" name=\"saveText\" value=\"Update Text Settings\" />\r\n            </td>\r\n           </tr>\r\n        </table>\r\n        </form>\r\n    </body>\r\n</html>\r\n\r\n");
-      out.write('\r');
+      out.write("\" />\n                <input type=\"submit\" name=\"saveText\" value=\"Update Text Settings\" />\n            </td>\n           </tr>\n        </table>\n        </form>\n    </body>\n</html>\n\n");
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

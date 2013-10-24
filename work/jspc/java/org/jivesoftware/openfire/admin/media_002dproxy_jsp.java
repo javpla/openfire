@@ -56,7 +56,7 @@ public final class media_002dproxy_jsp extends org.apache.jasper.runtime.HttpJsp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -65,10 +65,10 @@ public final class media_002dproxy_jsp extends org.apache.jasper.runtime.HttpJsp
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
 
     MediaProxyService mediaProxyService = XMPPServer.getInstance().getMediaProxyService();
@@ -133,144 +133,144 @@ public final class media_002dproxy_jsp extends org.apache.jasper.runtime.HttpJsp
     }
 
 
-      out.write("\r\n<html>\r\n<head>\r\n    <title>Media Proxy</title>\r\n    <meta name=\"pageID\" content=\"media-proxy-service\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n    ");
+      out.write("\n<html>\n<head>\n    <title>Media Proxy</title>\n    <meta name=\"pageID\" content=\"media-proxy-service\"/>\n</head>\n<body>\n\n<p>\n    ");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("\r\n    <br>\r\n</p>\r\n\r\n");
+      out.write("\n    <br>\n</p>\n\n");
  if (success) { 
-      out.write("\r\n\r\n<div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" alt=\"Success\"\r\n                                           border=\"0\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                    ");
+      out.write("\n\n<div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n                <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" alt=\"Success\"\n                                           border=\"0\"></td>\n                <td class=\"jive-icon-label\">\n                    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n<br>\n\n");
  } 
-      out.write("\r\n\r\n<form action=\"media-proxy.jsp\" method=\"post\">\r\n    <div class=\"jive-contentBoxHeader\">\r\n        ");
+      out.write("\n\n<form action=\"media-proxy.jsp\" method=\"post\">\n    <div class=\"jive-contentBoxHeader\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n    </div>\r\n    <div class=\"jive-contentBox\">\r\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n            <tbody>\r\n                <tr valign=\"middle\">\r\n                    <td width=\"1%\" nowrap valign=\"top\">\r\n                        <input type=\"radio\" name=\"enabled\" value=\"true\" id=\"rb02\"\r\n                        ");
+      out.write("\n    </div>\n    <div class=\"jive-contentBox\">\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n            <tbody>\n                <tr valign=\"middle\">\n                    <td width=\"1%\" nowrap valign=\"top\">\n                        <input type=\"radio\" name=\"enabled\" value=\"true\" id=\"rb02\"\n                        ");
       out.print( (enabled ? "checked" : "") );
-      out.write(" >\r\n                    </td>\r\n                    <td width=\"99%\">\r\n                        <label for=\"rb02\">\r\n                            <b>\r\n                                ");
+      out.write(" >\n                    </td>\n                    <td width=\"99%\">\n                        <label for=\"rb02\">\n                            <b>\n                                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n                            </b>\r\n                            -\r\n                            ");
+      out.write("\n                            </b>\n                            -\n                            ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n                        </label>\r\n                        <br>\r\n                        <table>\r\n                            <tr>\r\n                                <td>\r\n                                    ");
+      out.write("\n                        </label>\n                        <br>\n                        <table>\n                            <tr>\n                                <td>\n                                    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n                                    :&nbsp;\r\n                                </td>\r\n                                <td>\r\n                                    <input type=\"text\" size=\"5\" maxlength=\"8\"\r\n                                           name=\"idleTimeout\"\r\n                                           value=\"");
+      out.write("\n                                    :&nbsp;\n                                </td>\n                                <td>\n                                    <input type=\"text\" size=\"5\" maxlength=\"8\"\n                                           name=\"idleTimeout\"\n                                           value=\"");
       out.print(mediaProxyService.getIdleTime()/1000);
-      out.write("\"\r\n                                           align=\"left\"> &nbsp;<i>\r\n                                    ");
+      out.write("\"\n                                           align=\"left\"> &nbsp;<i>\n                                    ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n                                </i>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    ");
+      out.write("\n                                </i>\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n                                    :&nbsp;\r\n                                </td>\r\n                                <td>\r\n                                    <input type=\"text\" size=\"5\" maxlength=\"8\"\r\n                                           name=\"lifetime\"\r\n                                           value=\"");
+      out.write("\n                                    :&nbsp;\n                                </td>\n                                <td>\n                                    <input type=\"text\" size=\"5\" maxlength=\"8\"\n                                           name=\"lifetime\"\n                                           value=\"");
       out.print(mediaProxyService.getLifetime());
-      out.write("\"\r\n                                           align=\"left\"> &nbsp;<i>\r\n                                    ");
+      out.write("\"\n                                           align=\"left\"> &nbsp;<i>\n                                    ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n                                </i>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    ");
+      out.write("\n                                </i>\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n                                    :&nbsp;\r\n                                </td>\r\n                                <td>\r\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"minport\"\r\n                                           value=\"");
+      out.write("\n                                    :&nbsp;\n                                </td>\n                                <td>\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"minport\"\n                                           value=\"");
       out.print(mediaProxyService.getMinPort());
-      out.write("\">\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    ");
+      out.write("\">\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n                                    :&nbsp;\r\n                                </td>\r\n                                <td>\r\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"maxport\"\r\n                                           value=\"");
+      out.write("\n                                    :&nbsp;\n                                </td>\n                                <td>\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"maxport\"\n                                           value=\"");
       out.print(mediaProxyService.getMaxPort());
-      out.write("\">\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    ");
+      out.write("\">\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n                                    :&nbsp;\r\n                                </td>\r\n                                <td>\r\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"echoport\"\r\n                                           value=\"");
+      out.write("\n                                    :&nbsp;\n                                </td>\n                                <td>\n                                    <input type=\"text\" size=\"7\" maxlength=\"20\" name=\"echoport\"\n                                           value=\"");
       out.print(mediaProxyService.getEchoPort());
-      out.write("\">\r\n                                </td>\r\n                            </tr>\r\n                        </table>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>&nbsp;</td>\r\n                </tr>\r\n                <tr valign=\"middle\">\r\n                    <td width=\"1%\" nowrap>\r\n                        <input type=\"radio\" name=\"enabled\" value=\"false\" id=\"rb01\"\r\n                        ");
+      out.write("\">\n                                </td>\n                            </tr>\n                        </table>\n                    </td>\n                </tr>\n                <tr>\n                    <td>&nbsp;</td>\n                </tr>\n                <tr valign=\"middle\">\n                    <td width=\"1%\" nowrap>\n                        <input type=\"radio\" name=\"enabled\" value=\"false\" id=\"rb01\"\n                        ");
       out.print( (!enabled ? "checked" : "") );
-      out.write(" >\r\n                    </td>\r\n                    <td width=\"99%\">\r\n                        <label for=\"rb01\">\r\n                            <b>\r\n                                ");
+      out.write(" >\n                    </td>\n                    <td width=\"99%\">\n                        <label for=\"rb01\">\n                            <b>\n                                ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n                            </b>\r\n                            -\r\n                            ");
+      out.write("\n                            </b>\n                            -\n                            ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n                        </label>\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    <input type=\"submit\" name=\"update\" value=\"");
+      out.write("\n                        </label>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n");
+      out.write("\">\n</form>\n\n");
  if (mediaProxyService.isEnabled()) { 
-      out.write("\r\n\r\n<p>\r\n    <b>\r\n        ");
+      out.write("\n\n<p>\n    <b>\n        ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n    </b><br>\r\n    ");
+      out.write("\n    </b><br>\n    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n        <thead>\r\n            <tr>\r\n                <th>&nbsp;</th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n</p>\n\n<div class=\"jive-table\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n        <thead>\n            <tr>\n                <th>&nbsp;</th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n                </th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n                    A\r\n                </th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                    A\n                </th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n                    B\r\n                </th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                    B\n                </th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n                </th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n                </th>\r\n                <th nowrap align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </th>\n                <th nowrap align=\"left\" valign=\"middle\">\n                    ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n                </th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n\r\n            ");
+      out.write("\n                </th>\n            </tr>\n        </thead>\n        <tbody>\n\n            ");
  // Print the list of agents
                 Collection<MediaProxySession> sessions = mediaProxyService.getAgents();
                 if (sessions.isEmpty()) {
             
-      out.write("\r\n            <tr>\r\n                <td align=\"center\" colspan=\"7\">\r\n                    ");
+      out.write("\n            <tr>\n                <td align=\"center\" colspan=\"7\">\n                    ");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n            ");
+      out.write("\n                </td>\n            </tr>\n\n            ");
 
                 }
                 int i = 0;
                 for (MediaProxySession proxySession : sessions) {
                     i++;
             
-      out.write("\r\n            <tr class=\"jive-");
+      out.write("\n            <tr class=\"jive-");
       out.print( (((i%2)==0) ? "even" : "odd") );
-      out.write("\">\r\n                <td width=\"1%\">\r\n                    ");
+      out.write("\">\n                <td width=\"1%\">\n                    ");
       out.print( i );
-      out.write("\r\n                </td>\r\n                <td width=\"10%\" align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"10%\" align=\"left\" valign=\"middle\">\n                    ");
       out.print(proxySession.getCreator());
-      out.write("\r\n                </td>\r\n                <td width=\"15%\" align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"15%\" align=\"left\" valign=\"middle\">\n                    ");
       out.print(proxySession.getHostA());
       out.write(':');
       out.print(proxySession.getLocalPortA());
-      out.write("\r\n                </td>\r\n                <td width=\"15%\" align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"15%\" align=\"left\" valign=\"middle\">\n                    ");
       out.print(proxySession.getHostB());
       out.write(':');
       out.print(proxySession.getLocalPortB());
-      out.write("\r\n                </td>\r\n                <td width=\"10%\" align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"10%\" align=\"left\" valign=\"middle\">\n                    ");
       out.print(proxySession.getLocalhost());
-      out.write("\r\n                </td>\r\n                <td width=\"20%\" align=\"left\" valign=\"middle\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"20%\" align=\"left\" valign=\"middle\">\n                    ");
       out.print((System.currentTimeMillis() - proxySession.getTimestamp()) / 1000);
-      out.write("\r\n                </td>\r\n                <td width=\"10%\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"10%\">\n                    ");
  if (proxySession instanceof RelaySession) { 
-      out.write("\r\n                    Smart Session\r\n                    ");
+      out.write("\n                    Smart Session\n                    ");
  } else { 
-      out.write("\r\n                    Fixed Session\r\n                    ");
+      out.write("\n                    Fixed Session\n                    ");
  } 
-      out.write("\r\n                </td>\r\n            </tr>\r\n\r\n            ");
+      out.write("\n                </td>\n            </tr>\n\n            ");
 
                 }
             
-      out.write("\r\n        </tbody>\r\n    </table>\r\n    <form action=\"\">\r\n        <input type=\"submit\" name=\"stop\" value=\"");
+      out.write("\n        </tbody>\n    </table>\n    <form action=\"\">\n        <input type=\"submit\" name=\"stop\" value=\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\"/>\r\n    </form>\r\n</div>\r\n\r\n");
+      out.write("\"/>\n    </form>\n</div>\n\n");
  } // end enabled check 
-      out.write("\r\n\r\n</body>\r\n</html>");
+      out.write("\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

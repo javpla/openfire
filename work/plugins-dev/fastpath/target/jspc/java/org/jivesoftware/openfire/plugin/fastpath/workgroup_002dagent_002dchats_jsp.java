@@ -50,7 +50,7 @@ public final class workgroup_002dagent_002dchats_jsp extends org.apache.jasper.r
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n<!-- Define Administration Bean -->\r\n");
+      out.write("\n\n\n\n\n\n<!-- Define Administration Bean -->\n");
 
     String wgID = ParamUtils.getParameter(request, "wgID");
     String agentJID = ParamUtils.getParameter(request, "agentJID");
@@ -71,36 +71,36 @@ public final class workgroup_002dagent_002dchats_jsp extends org.apache.jasper.r
 
     DateFormat formatter = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT);
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>Current chats of Agent</title>\r\n        <meta name=\"pageID\" content=\"workgroup-summary\"/>\r\n    </head>\r\n    <body>\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n  <tr>\r\n    <td colspan=\"8\">\r\nBelow is a list of current chats the agent <b>");
+      out.write("\n<html>\n    <head>\n        <title>Current chats of Agent</title>\n        <meta name=\"pageID\" content=\"workgroup-summary\"/>\n    </head>\n    <body>\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n  <tr>\n    <td colspan=\"8\">\nBelow is a list of current chats the agent <b>");
       out.print( agentJID );
-      out.write("</b> is having.</td>\r\n  </tr>\r\n</table>\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n  <tr>\r\n    <td colspan=\"8\" class=\"text\">\r\n    Total Chats: ");
+      out.write("</b> is having.</td>\n  </tr>\n</table>\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n  <tr>\n    <td colspan=\"8\" class=\"text\">\n    Total Chats: ");
       out.print( chatsInfo.size());
-      out.write("\r\n    </td>\r\n  </tr>\r\n</table>\r\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n  <thead>\r\n    <tr>\r\n      <th nowrap align=\"left\">Date</th>\r\n      <th nowrap>User ID</th>\r\n      <th nowrap>User JID</th>\r\n      <th nowrap>Room ID</th>\r\n      <th nowrap>Messages</th>\r\n    </tr>\r\n  </thead>\r\n    ");
+      out.write("\n    </td>\n  </tr>\n</table>\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n  <thead>\n    <tr>\n      <th nowrap align=\"left\">Date</th>\n      <th nowrap>User ID</th>\n      <th nowrap>User JID</th>\n      <th nowrap>Room ID</th>\n      <th nowrap>Messages</th>\n    </tr>\n  </thead>\n    ");
    // Print the list of chats
     if (chatsInfo.size() == 0) {
 
-      out.write("\r\n    <tr>\r\n      <td align=\"center\" colspan=\"8\">\r\n        <br/>Agent is not having chats at the moment\r\n      </td>\r\n    </tr>\r\n    ");
+      out.write("\n    <tr>\n      <td align=\"center\" colspan=\"8\">\n        <br/>Agent is not having chats at the moment\n      </td>\n    </tr>\n    ");
 
     }
 
     for (AgentSession.ChatInfo chatInfo : chatsInfo) {
 
-      out.write("\r\n    <tr class=\"c1\">\r\n      <td width=\"30%\">\r\n        ");
+      out.write("\n    <tr class=\"c1\">\n      <td width=\"30%\">\n        ");
       out.print( formatter.format(chatInfo.getDate()) );
-      out.write("\r\n      </td>\r\n      <td width=\"20%\" align=\"center\">\r\n        ");
+      out.write("\n      </td>\n      <td width=\"20%\" align=\"center\">\n        ");
       out.print( chatInfo.getUserID());
-      out.write("</td>\r\n      <td width=\"20%\" align=\"center\">\r\n        ");
+      out.write("</td>\n      <td width=\"20%\" align=\"center\">\n        ");
       out.print( chatInfo.getUserJID().toString() );
-      out.write("</td>\r\n      <td width=\"20%\" align=\"center\">\r\n        ");
+      out.write("</td>\n      <td width=\"20%\" align=\"center\">\n        ");
       out.print( chatInfo.getSessionID() );
-      out.write("\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        ");
+      out.write("\n      </td>\n      <td width=\"10%\" align=\"center\">\n        ");
  int count = 0;
         for (Packet packet : chatInfo.getPackets().keySet()) {
             if (packet instanceof Message) {
                 count++;
             }
         }
-      out.write("\r\n        <a href=\"workgroup-agent-chats.jsp?wgID=");
+      out.write("\n        <a href=\"workgroup-agent-chats.jsp?wgID=");
       out.print( workgroup.getJID().toString() );
       out.write("&agentJID=");
       out.print( agent.getAgentJID() );
@@ -109,17 +109,17 @@ public final class workgroup_002dagent_002dchats_jsp extends org.apache.jasper.r
       out.write('"');
       out.write('>');
       out.print( count );
-      out.write("</a>\r\n      </td>\r\n    </tr>\r\n    ");
+      out.write("</a>\n      </td>\n    </tr>\n    ");
  } 
-      out.write("\r\n  </thead>\r\n</table>\r\n\r\n\r\n");
+      out.write("\n  </thead>\n</table>\n\n\n");
  if (transcript != null) { 
-      out.write("\r\n<br>\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n  <tr>\r\n    <td colspan=\"8\">Below is the chat transcript of the room <b>");
+      out.write("\n<br>\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n  <tr>\n    <td colspan=\"8\">Below is the chat transcript of the room <b>");
       out.print( roomID );
-      out.write("</b>.</td>\r\n  </tr>\r\n</table>\r\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n  <thead>\r\n    <tr>\r\n      <th nowrap align=\"left\">Date</th>\r\n      <th nowrap>Sender</th>\r\n      <th nowrap>Message</th>\r\n    </tr>\r\n  </thead>\r\n    ");
+      out.write("</b>.</td>\n  </tr>\n</table>\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n  <thead>\n    <tr>\n      <th nowrap align=\"left\">Date</th>\n      <th nowrap>Sender</th>\n      <th nowrap>Message</th>\n    </tr>\n  </thead>\n    ");
    // Print the list of chats
     if (transcript.size() == 0) {
 
-      out.write("\r\n    <tr>\r\n      <td align=\"center\" colspan=\"8\">\r\n        <br/>No messages in the room where found\r\n      </td>\r\n    </tr>\r\n    ");
+      out.write("\n    <tr>\n      <td align=\"center\" colspan=\"8\">\n        <br/>No messages in the room where found\n      </td>\n    </tr>\n    ");
  }
 
     SortedMap<Date, Packet> sortedTranscript = new TreeMap<Date, Packet>();
@@ -133,17 +133,17 @@ public final class workgroup_002dagent_002dchats_jsp extends org.apache.jasper.r
             continue;
         }
 
-      out.write("\r\n    <tr class=\"c1\">\r\n      <td width=\"20%\">\r\n        ");
+      out.write("\n    <tr class=\"c1\">\n      <td width=\"20%\">\n        ");
       out.print( formatter.format(date) );
-      out.write("\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        ");
+      out.write("\n      </td>\n      <td width=\"10%\" align=\"center\">\n        ");
       out.print( StringUtils.escapeForXML(packet.getFrom().getResource()) );
-      out.write("</td>\r\n      <td width=\"70%\" align=\"center\">\r\n        ");
+      out.write("</td>\n      <td width=\"70%\" align=\"center\">\n        ");
       out.print( StringUtils.escapeForXML(((Message)packet).getBody()) );
-      out.write("</td>\r\n    </tr>\r\n    ");
+      out.write("</td>\n    </tr>\n    ");
  } 
-      out.write("\r\n  </thead>\r\n</table>\r\n\r\n");
+      out.write("\n  </thead>\n</table>\n\n");
  } 
-      out.write("\r\n</body>\r\n</html>\r\n");
+      out.write("\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

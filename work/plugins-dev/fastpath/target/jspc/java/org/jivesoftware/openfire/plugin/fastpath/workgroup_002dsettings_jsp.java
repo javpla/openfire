@@ -45,7 +45,7 @@ public final class workgroup_002dsettings_jsp extends org.apache.jasper.runtime.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>Workgroup Settings</title>\r\n        <meta name=\"pageID\" content=\"workgroup-settings\"/>\r\n        <!--<meta name=\"helpPage\" content=\"edit_global_workgroup_settings.html\"/>-->\r\n    </head>\r\n    <body>\r\n");
+      out.write("\n\n\n\n<html>\n    <head>\n        <title>Workgroup Settings</title>\n        <meta name=\"pageID\" content=\"workgroup-settings\"/>\n        <!--<meta name=\"helpPage\" content=\"edit_global_workgroup_settings.html\"/>-->\n    </head>\n    <body>\n");
 
 
     // Get a workgroup manager
@@ -57,7 +57,6 @@ public final class workgroup_002dsettings_jsp extends org.apache.jasper.runtime.
         return;
     }
 
-      out.write('\r');
       out.write('\n');
   // Get parameters
     int maxChats = ParamUtils.getIntParameter(request,"maxChats",0);
@@ -123,59 +122,60 @@ public final class workgroup_002dsettings_jsp extends org.apache.jasper.runtime.
         canChangeName = JiveGlobals.getBooleanProperty("xmpp.live.agent.change-properties", true);
     }
 
-      out.write("\r\n<style type=\"text/css\">\r\n    @import \"style/style.css\";\r\n</style>\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\r\n<tr><td colspan=\"2\">\r\nUse the form below to set properties that are global to all workgroups. The current set of\r\nproperties below only affect the default settings of newly created workgroups.\r\n</td></tr></table>\r\n<br>\r\n\r\n");
+      out.write("\n<style type=\"text/css\">\n    @import \"style/style.css\";\n</style>\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\n<tr><td colspan=\"2\">\nUse the form below to set properties that are global to all workgroups. The current set of\nproperties below only affect the default settings of newly created workgroups.\n</td></tr></table>\n<br>\n\n");
   if (errors.get("general") != null) { 
-      out.write("\r\n\r\n    <p class=\"jive-error-text\">\r\n    Error saving settings.\r\n    </p>\r\n\r\n");
+      out.write("\n\n    <p class=\"jive-error-text\">\n    Error saving settings.\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if ("true".equals(request.getParameter("success"))) { 
-      out.write("\r\n\r\n    <p class=\"jive-success-text\">\r\n    Settings updated successfully.\r\n    </p>\r\n\r\n");
+      out.write("\n\n    <p class=\"jive-success-text\">\n    Settings updated successfully.\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<form name=\"f\" action=\"workgroup-settings.jsp\" method=\"post\">\r\n\r\n<table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n<tr>\r\n    <th colspan=\"3\">Global Settings</th>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\" nowrap>\r\n        <b>Default maximum chat sessions per agent: *</b>\r\n\r\n        ");
+      out.write("\n\n<form name=\"f\" action=\"workgroup-settings.jsp\" method=\"post\">\n\n<table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"600\">\n<tr>\n    <th colspan=\"3\">Global Settings</th>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\" nowrap>\n        <b>Default maximum chat sessions per agent: *</b>\n\n        ");
   if (errors.get("maxChats") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } 
-      out.write("\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"maxChats\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"maxChats\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( maxChats );
-      out.write("\">\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\" nowrap>\r\n        <b>Default minimum chat sessions per agent: *</b>\r\n\r\n        ");
+      out.write("\">\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\" nowrap>\n        <b>Default minimum chat sessions per agent: *</b>\n\n        ");
   if (errors.get("minChats") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } else if (errors.get("minChatsGreater") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Min chats must be less than max chats.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Min chats must be less than max chats.\n            </span>\n\n        ");
   } 
-      out.write("\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"minChats\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"minChats\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( minChats );
-      out.write("\">\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Request timeout: *</b>\r\n\r\n        ");
+      out.write("\">\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Request timeout: *</b>\n\n        ");
   if (errors.get("requestTimeout") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br>\r\n        <span class=\"jive-description\">\r\n        The total time before an individual request will timeout if no agent accepts it.\r\n        </span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"requestTimeout\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n        <br>\n        <span class=\"jive-description\">\n        The total time before an individual request will timeout if no agent accepts it.\n        </span>\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"requestTimeout\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( requestTimeout );
-      out.write("\"> seconds\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\" nowrap>\r\n        <b>Agent timeout to accept an offer: *</b>\r\n\r\n        ");
+      out.write("\"> seconds\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\" nowrap>\n        <b>Agent timeout to accept an offer: *</b>\n\n        ");
   if (errors.get("offerTimeout") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } else if (errors.get("offerGreater") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Offer timeout must be less than request timeout.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Offer timeout must be less than request timeout.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br>\r\n        <span class=\"jive-description\">\r\n        The time each agent will be given to accept a chat request.\r\n        </span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"offerTimeout\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n        <br>\n        <span class=\"jive-description\">\n        The time each agent will be given to accept a chat request.\n        </span>\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"offerTimeout\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( offerTimeout );
-      out.write("\"> seconds\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Expire agent rejection: *</b>\r\n\r\n        ");
+      out.write("\"> seconds\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Expire agent rejection: *</b>\n\n        ");
   if (errors.get("rejectionTimeout") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } else if (errors.get("rejectionGreater") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Rejection timeout must be less than request timeout.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Rejection timeout must be less than request timeout.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br>\r\n        <span class=\"jive-description\">\r\n        The time each rejection will last. Once expired new offers for the rejected request may be sent again.\r\n        </span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"rejectionTimeout\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n        <br>\n        <span class=\"jive-description\">\n        The time each rejection will last. Once expired new offers for the rejected request may be sent again.\n        </span>\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"rejectionTimeout\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( rejectionTimeout );
-      out.write("\"> seconds\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Times to overflow before canceling request: *</b>\r\n\r\n        ");
+      out.write("\"> seconds\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Times to overflow before canceling request: *</b>\n\n        ");
   if (errors.get("maxOverflows") != null) { 
-      out.write("\r\n\r\n            <span class=\"jive-error-text\">\r\n            <br>Invalid number.\r\n            </span>\r\n\r\n        ");
+      out.write("\n\n            <span class=\"jive-error-text\">\n            <br>Invalid number.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br/>\r\n        <span class=\"jive-description\">\r\n        Number of times a request may be moved to other queues before giving up and canceling the request.\r\n        </span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"maxOverflows\" size=\"5\" maxlength=\"5\" value=\"");
+      out.write("\n        <br/>\n        <span class=\"jive-description\">\n        Number of times a request may be moved to other queues before giving up and canceling the request.\n        </span>\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"maxOverflows\" size=\"5\" maxlength=\"5\" value=\"");
       out.print( maxOverflows );
-      out.write("\">\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\" nowrap>\r\n        <b>Agents are allowed to change their names: *</b>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"checkbox\" name=\"canChangeName\" ");
+      out.write("\">\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\" nowrap>\n        <b>Agents are allowed to change their names: *</b>\n    </td>\n    <td class=\"c2\">\n        <input type=\"checkbox\" name=\"canChangeName\" ");
       out.print( (canChangeName ? "checked" : "") );
-      out.write(">\r\n    </td>\r\n</tr>\r\n</table>\r\n<br>\r\n\r\n* Required field.\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" name=\"save\" value=\"Save Settings\">\r\n\r\n</form>\r\n\r\n</body>\r\n</html>");
+      out.write(">\n    </td>\n</tr>\n</table>\n<br>\n\n* Required field.\n\n<br><br>\n\n<input type=\"submit\" name=\"save\" value=\"Save Settings\">\n\n</form>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

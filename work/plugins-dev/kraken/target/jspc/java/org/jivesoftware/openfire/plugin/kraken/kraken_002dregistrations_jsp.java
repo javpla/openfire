@@ -73,7 +73,7 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -82,7 +82,8 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     final KrakenPlugin plugin =
             (KrakenPlugin) XMPPServer.getInstance().getPluginManager().getPlugin("kraken");
@@ -356,163 +357,163 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
 
     int topRange = ((start + range) < resCount) ? (start + range) : resCount;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n<html>\r\n\r\n<head>\r\n<title>");
+      out.write("\n\n\n\n\n<html>\n\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"kraken-registrations\">\r\n<style type=\"text/css\">\r\n<!--\t@import url(\"style/kraken.css\");    -->\r\n</style>\r\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/interface/ConfigManager.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/interface/ConnectionTester.js\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\" >\r\n    DWREngine.setErrorHandler(handleError);\r\n    window.onerror = handleError;\r\n\r\n    function handleError(error) {\r\n        // swallow errors\r\n    }\r\n\r\n    var lastRegistrationID;\r\n\r\n\tfunction logoutSession(registrationID)\r\n\t{\r\n\t\t ConfigManager.logoutSession(registrationID, cb_logoutSession);\r\n\t}\r\n\t\r\n\tfunction cb_logoutSession(registrationID)\r\n\t{\r\n\t\tif(registrationID > 0)\r\n\t\t{\r\n\t\t\tdocument.getElementById('registrationUsername'+registrationID).parentNode.className = document.getElementById('registrationUsername'+registrationID).parentNode.className.replace(/on/g,'off');\r\n");
-      out.write("\t\t\tdocument.getElementById('registrationLogoff'+registrationID).innerHTML='';\r\n\t\t}\r\n\t}\r\n\r\n    function deleteRegistration(registrationID) {\r\n        lastRegistrationID = registrationID;\r\n        ConfigManager.deleteRegistration(registrationID, cb_deleteRegistration);\r\n    }\r\n\r\n    function cb_deleteRegistration(statusMsg) {\r\n        Effect.Fade(\"jiveRegistration\"+lastRegistrationID);\r\n        document.getElementById(\"regStatusMsg\").style.display = \"\";\r\n        if (statusMsg == null) {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
+      out.write("</title>\n<meta name=\"pageID\" content=\"kraken-registrations\">\n<style type=\"text/css\">\n<!--\t@import url(\"style/kraken.css\");    -->\n</style>\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/interface/ConfigManager.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/interface/ConnectionTester.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\" >\n    DWREngine.setErrorHandler(handleError);\n    window.onerror = handleError;\n\n    function handleError(error) {\n        // swallow errors\n    }\n\n    var lastRegistrationID;\n\n\tfunction logoutSession(registrationID)\n\t{\n\t\t ConfigManager.logoutSession(registrationID, cb_logoutSession);\n\t}\n\t\n\tfunction cb_logoutSession(registrationID)\n\t{\n\t\tif(registrationID > 0)\n\t\t{\n\t\t\tdocument.getElementById('registrationUsername'+registrationID).parentNode.className = document.getElementById('registrationUsername'+registrationID).parentNode.className.replace(/on/g,'off');\n\t\t\tdocument.getElementById('registrationLogoff'+registrationID).innerHTML='';\n");
+      out.write("\t\t}\n\t}\n\n    function deleteRegistration(registrationID) {\n        lastRegistrationID = registrationID;\n        ConfigManager.deleteRegistration(registrationID, cb_deleteRegistration);\n    }\n\n    function cb_deleteRegistration(statusMsg) {\n        Effect.Fade(\"jiveRegistration\"+lastRegistrationID);\n        document.getElementById(\"regStatusMsg\").style.display = \"\";\n        if (statusMsg == null) {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</div>\";\r\n        }\r\n        else {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\r\n        }\r\n        setTimeout(\"to_statusMessage()\", 5000);\r\n    }\r\n\r\n    function updateRegistration(registrationID) {\r\n        var usernameEntry = DWRUtil.getValue(\"gatewayUsername\"+registrationID);\r\n        var passwordEntry = DWRUtil.getValue(\"gatewayPassword\"+registrationID);\r\n        if (passwordEntry == \"********\") {\r\n            passwordEntry = null;\r\n        }\r\n        var nicknameEntry = DWRUtil.getValue(\"gatewayNickname\"+registrationID);\r\n        lastRegistrationID = registrationID;\r\n        ConfigManager.updateRegistration(registrationID, usernameEntry, passwordEntry, nicknameEntry, cb_updateRegistration);\r\n    }\r\n\r\n    function cb_updateRegistration(statusMsg) {\r\n        toggleEdit(lastRegistrationID);\r\n        var usernameEntry = DWRUtil.getValue(\"gatewayUsername\"+lastRegistrationID);\r\n        document.getElementById(\"registrationUsername\"+lastRegistrationID).innerHTML = usernameEntry;\r\n");
-      out.write("        document.getElementById(\"regStatusMsg\").style.display = \"\";\r\n        if (statusMsg == null) {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
+      out.write("</div>\";\n        }\n        else {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\n        }\n        setTimeout(\"to_statusMessage()\", 5000);\n    }\n\n    function updateRegistration(registrationID) {\n        var usernameEntry = DWRUtil.getValue(\"gatewayUsername\"+registrationID);\n        var passwordEntry = DWRUtil.getValue(\"gatewayPassword\"+registrationID);\n        if (passwordEntry == \"********\") {\n            passwordEntry = null;\n        }\n        var nicknameEntry = DWRUtil.getValue(\"gatewayNickname\"+registrationID);\n        lastRegistrationID = registrationID;\n        ConfigManager.updateRegistration(registrationID, usernameEntry, passwordEntry, nicknameEntry, cb_updateRegistration);\n    }\n\n    function cb_updateRegistration(statusMsg) {\n        toggleEdit(lastRegistrationID);\n        var usernameEntry = DWRUtil.getValue(\"gatewayUsername\"+lastRegistrationID);\n        document.getElementById(\"registrationUsername\"+lastRegistrationID).innerHTML = usernameEntry;\n");
+      out.write("        document.getElementById(\"regStatusMsg\").style.display = \"\";\n        if (statusMsg == null) {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</div>\";\r\n        }\r\n        else {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\r\n        }\r\n        setTimeout(\"to_statusMessage()\", 5000);\r\n    }\r\n\r\n    function addRegistration() {\r\n        var userEntry = DWRUtil.getValue(\"newRegistrationUser\");\r\n        var typeEntry = DWRUtil.getValue(\"newRegistrationType\");\r\n        var legacyUsernameEntry = DWRUtil.getValue(\"newRegistrationLegacyUsername\");\r\n        var legacyPasswordEntry = DWRUtil.getValue(\"newRegistrationLegacyPassword\");\r\n        var legacyNicknameEntry = DWRUtil.getValue(\"newRegistrationLegacyNickname\");\r\n        ConfigManager.addRegistration(userEntry, typeEntry, legacyUsernameEntry, legacyPasswordEntry, legacyNicknameEntry, cb_addRegistration);\r\n    }\r\n\r\n    function cb_addRegistration(statusMsg) {\r\n        toggleAdd();\r\n        document.getElementById(\"regStatusMsg\").style.display = \"\";\r\n        if (statusMsg == null) {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
+      out.write("</div>\";\n        }\n        else {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\n        }\n        setTimeout(\"to_statusMessage()\", 5000);\n    }\n\n    function addRegistration() {\n        var userEntry = DWRUtil.getValue(\"newRegistrationUser\");\n        var typeEntry = DWRUtil.getValue(\"newRegistrationType\");\n        var legacyUsernameEntry = DWRUtil.getValue(\"newRegistrationLegacyUsername\");\n        var legacyPasswordEntry = DWRUtil.getValue(\"newRegistrationLegacyPassword\");\n        var legacyNicknameEntry = DWRUtil.getValue(\"newRegistrationLegacyNickname\");\n        ConfigManager.addRegistration(userEntry, typeEntry, legacyUsernameEntry, legacyPasswordEntry, legacyNicknameEntry, cb_addRegistration);\n    }\n\n    function cb_addRegistration(statusMsg) {\n        toggleAdd();\n        document.getElementById(\"regStatusMsg\").style.display = \"\";\n        if (statusMsg == null) {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-success'><img src='images/success-16x16.gif' align='absmiddle' />");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</div>\";\r\n        }\r\n        else {\r\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\r\n        }\r\n        setTimeout(\"to_statusMessage()\", 5000);\r\n    }\r\n\r\n    function to_statusMessage() {\r\n        Effect.Fade(\"regStatusMsg\");\r\n    }\r\n\r\n    function pingSession() {\r\n        ConnectionTester.pingSession();\r\n        setTimeout(\"pingSession()\", 60000); // Every minute\r\n    }\r\n\r\n    setTimeout(\"pingSession()\", 60000); // One minute after first load\r\n\r\n    /*\r\n    toggleAdd function\r\n    This is the function that shows / hides the add registration form\r\n    */\r\n    function toggleAdd(theID) {\r\n        var jiveAddRegPanel = document.getElementById(\"jiveAddRegPanel\");\r\n        var jiveAddRegButton = document.getElementById(\"jiveAddRegButton\");\r\n        var jiveAddRegLink = document.getElementById(\"jiveAddRegLink\");\r\n        if ($(jiveAddRegPanel).style.display != 'none') {\r\n            Effect.SlideUp($(jiveAddRegPanel), {duration: .2})\r\n");
-      out.write("            $(jiveAddRegButton).className = \"jive-gateway-addregBtn\";\r\n            $(jiveAddRegLink).innerHTML = '");
+      out.write("</div>\";\n        }\n        else {\n            document.getElementById(\"regStatusMsg\").innerHTML = \"<div class='jive-error'><img src='images/error-16x16.gif' align='absmiddle' />\"+statusMsg+\"</div>\";\n        }\n        setTimeout(\"to_statusMessage()\", 5000);\n    }\n\n    function to_statusMessage() {\n        Effect.Fade(\"regStatusMsg\");\n    }\n\n    function pingSession() {\n        ConnectionTester.pingSession();\n        setTimeout(\"pingSession()\", 60000); // Every minute\n    }\n\n    setTimeout(\"pingSession()\", 60000); // One minute after first load\n\n    /*\n    toggleAdd function\n    This is the function that shows / hides the add registration form\n    */\n    function toggleAdd(theID) {\n        var jiveAddRegPanel = document.getElementById(\"jiveAddRegPanel\");\n        var jiveAddRegButton = document.getElementById(\"jiveAddRegButton\");\n        var jiveAddRegLink = document.getElementById(\"jiveAddRegLink\");\n        if ($(jiveAddRegPanel).style.display != 'none') {\n            Effect.SlideUp($(jiveAddRegPanel), {duration: .2})\n");
+      out.write("            $(jiveAddRegButton).className = \"jive-gateway-addregBtn\";\n            $(jiveAddRegLink).innerHTML = '");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("';\r\n        } else if ($(jiveAddRegPanel).style.display == 'none') {\r\n            Effect.SlideDown($(jiveAddRegPanel), {duration: .2})\r\n            $(jiveAddRegButton).className = \"jive-gateway-addregBtn jive-gateway-cancelAdd\";\r\n            $(jiveAddRegLink).innerHTML = '");
+      out.write("';\n        } else if ($(jiveAddRegPanel).style.display == 'none') {\n            Effect.SlideDown($(jiveAddRegPanel), {duration: .2})\n            $(jiveAddRegButton).className = \"jive-gateway-addregBtn jive-gateway-cancelAdd\";\n            $(jiveAddRegLink).innerHTML = '");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("';\r\n        }\r\n    }\r\n\r\n\r\n\r\n    /*\r\n    toggleEdit function\r\n    This is the function that shows / hides the edit fields for an existing registration\r\n    */\r\n    function toggleEdit(theNum) {\r\n        var normalRow = \"jiveRegistration\"+theNum;\r\n        var editRow = \"jiveRegistrationEdit\"+theNum;\r\n        if ($(editRow).style.display != 'none') {\r\n            $(editRow).className = \"jive-registrations-edit\";\r\n            $(editRow).style.display = 'none';\r\n            $(normalRow).className = \"jive-registrations-normal\";\r\n        } else if ($(editRow).style.display == 'none') {\r\n            $(normalRow).className = \"jive-registrations-normalHidden\";\r\n            $(editRow).className = \"jive-registrations-editVisible\";\r\n            Effect.Appear($(editRow), {duration: .2});\r\n        }\r\n    }\r\n</script>\r\n</head>\r\n\r\n<body>\r\n<p>");
+      out.write("';\n        }\n    }\n\n\n\n    /*\n    toggleEdit function\n    This is the function that shows / hides the edit fields for an existing registration\n    */\n    function toggleEdit(theNum) {\n        var normalRow = \"jiveRegistration\"+theNum;\n        var editRow = \"jiveRegistrationEdit\"+theNum;\n        if ($(editRow).style.display != 'none') {\n            $(editRow).className = \"jive-registrations-edit\";\n            $(editRow).style.display = 'none';\n            $(normalRow).className = \"jive-registrations-normal\";\n        } else if ($(editRow).style.display == 'none') {\n            $(normalRow).className = \"jive-registrations-normalHidden\";\n            $(editRow).className = \"jive-registrations-editVisible\";\n            Effect.Appear($(editRow), {duration: .2});\n        }\n    }\n</script>\n</head>\n\n<body>\n<p>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n<div id=\"regStatusMsg\" style=\"display: none\"></div>\r\n\r\n<!-- BEGIN add registration -->\r\n<div class=\"jive-gateway-addregBtn\" id=\"jiveAddRegButton\">\r\n\t<a href=\"\" onClick=\"toggleAdd(); return false\" id=\"jiveAddRegLink\">");
+      out.write("</p>\n\n<div id=\"regStatusMsg\" style=\"display: none\"></div>\n\n<!-- BEGIN add registration -->\n<div class=\"jive-gateway-addregBtn\" id=\"jiveAddRegButton\">\n\t<a href=\"\" onClick=\"toggleAdd(); return false\" id=\"jiveAddRegLink\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</a>\r\n</div>\r\n<div class=\"jive-gateway-addreg\" id=\"jiveAddRegPanel\" style=\"display: none;\">\r\n\t<div class=\"jive-gateway-addregPad\">\r\n\t\t<form action=\"\" name=\"jive-addRegistration\" onSubmit=\"return false\">\r\n        <input type=\"hidden\" name=\"action\" value=\"add\" />\r\n\t\t<div class=\"jive-registrations-addJid\">\r\n\t\t\t<input type=\"text\" name=\"newRegistrationUser\" id=\"newRegistrationUser\" size=\"12\" maxlength=\"50\" value=\"\"><br>\r\n\t\t\t<strong>");
+      out.write("</a>\n</div>\n<div class=\"jive-gateway-addreg\" id=\"jiveAddRegPanel\" style=\"display: none;\">\n\t<div class=\"jive-gateway-addregPad\">\n\t\t<form action=\"\" name=\"jive-addRegistration\" onSubmit=\"return false\">\n        <input type=\"hidden\" name=\"action\" value=\"add\" />\n\t\t<div class=\"jive-registrations-addJid\">\n\t\t\t<input type=\"text\" name=\"newRegistrationUser\" id=\"newRegistrationUser\" size=\"12\" maxlength=\"50\" value=\"\"><br>\n\t\t\t<strong>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t</div>\r\n\t\t<div class=\"jive-registrations-addGateway\">\r\n\t\t\t<select name=\"newRegistrationType\" id=\"newRegistrationType\" size=\"1\">\r\n\t\t\t<option value=\"0\" SELECTED> -- ");
+      out.write("</strong>\n\t\t</div>\n\t\t<div class=\"jive-registrations-addGateway\">\n\t\t\t<select name=\"newRegistrationType\" id=\"newRegistrationType\" size=\"1\">\n\t\t\t<option value=\"0\" SELECTED> -- ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(" -- </option>\r\n\t\t\t");
+      out.write(" -- </option>\n\t\t\t");
  if (trEnabled.get("aim")) { 
       out.write(" <option value=\"aim\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("facebook")) { 
       out.write(" <option value=\"facebook\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("gadugadu")) { 
       out.write(" <option value=\"gadugadu\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("gtalk")) { 
       out.write(" <option value=\"gtalk\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
  if (trEnabled.get("icq")) { 
       out.write(" <option value=\"icq\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
  if (trEnabled.get("irc")) { 
       out.write(" <option value=\"irc\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("livejournal")) { 
       out.write(" <option value=\"livejournal\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
  if (trEnabled.get("msn")) { 
       out.write(" <option value=\"msn\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("myspaceim")) { 
       out.write(" <option value=\"myspaceim\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("qq")) { 
       out.write(" <option value=\"qq\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("renren")) { 
       out.write(" <option value=\"renren\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("sametime")) { 
       out.write(" <option value=\"sametime\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("simple")) { 
       out.write(" <option value=\"simple\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (trEnabled.get("xmpp")) { 
       out.write(" <option value=\"xmpp\">");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
  if (trEnabled.get("yahoo")) { 
       out.write(" <option value=\"yahoo\">");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
       out.write("</option> ");
  } 
-      out.write("\r\n\t\t\t</select><br>\r\n\t\t\t<strong>");
+      out.write("\n\t\t\t</select><br>\n\t\t\t<strong>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t</div>\r\n\t\t<div class=\"jive-registrations-addUsername\">\r\n\t\t\t<input type=\"text\" name=\"newRegistrationLegacyUsername\" id=\"newRegistrationLegacyUsername\" size=\"12\" maxlength=\"50\" value=\"\"><br>\r\n\t\t\t<strong>");
+      out.write("</strong>\n\t\t</div>\n\t\t<div class=\"jive-registrations-addUsername\">\n\t\t\t<input type=\"text\" name=\"newRegistrationLegacyUsername\" id=\"newRegistrationLegacyUsername\" size=\"12\" maxlength=\"50\" value=\"\"><br>\n\t\t\t<strong>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t</div>\r\n\t\t<div class=\"jive-registrations-addPassword\">\r\n\t\t\t<input type=\"password\" name=\"newRegistrationLegacyPassword\" id=\"newRegistrationLegacyPassword\" size=\"12\" maxlength=\"50\" value=\"\"><br>\r\n\t\t\t<strong>");
+      out.write("</strong>\n\t\t</div>\n\t\t<div class=\"jive-registrations-addPassword\">\n\t\t\t<input type=\"password\" name=\"newRegistrationLegacyPassword\" id=\"newRegistrationLegacyPassword\" size=\"12\" maxlength=\"50\" value=\"\"><br>\n\t\t\t<strong>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t</div>\r\n        <div class=\"jive-registrations-addNickname\">\r\n            <input type=\"text\" name=\"newRegistrationLegacyNickname\" id=\"newRegistrationLegacyNickname\" size=\"12\" maxlength=\"50\" value=\"\"><br>\r\n            <strong>");
+      out.write("</strong>\n\t\t</div>\n        <div class=\"jive-registrations-addNickname\">\n            <input type=\"text\" name=\"newRegistrationLegacyNickname\" id=\"newRegistrationLegacyNickname\" size=\"12\" maxlength=\"50\" value=\"\"><br>\n            <strong>");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</strong>\r\n        </div>\r\n        <div class=\"jive-registrations-addButtons\">\r\n\t\t\t<input type=\"submit\" name=\"Submit\" value=\"");
+      out.write("</strong>\n        </div>\n        <div class=\"jive-registrations-addButtons\">\n\t\t\t<input type=\"submit\" name=\"Submit\" value=\"");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("\" class=\"savechanges\" onClick=\"addRegistration(); return false\"> &nbsp;\r\n\t\t\t<input type=\"reset\" name=\"reset\" value=\"");
+      out.write("\" class=\"savechanges\" onClick=\"addRegistration(); return false\"> &nbsp;\n\t\t\t<input type=\"reset\" name=\"reset\" value=\"");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("\" class=\"cancel\" onClick=\"toggleAdd();\">\r\n\t\t</div>\r\n\t\t</form>\r\n\t</div>\r\n</div>\r\n<!-- END add registration -->\r\n\r\n\r\n\r\n<!-- BEGIN registrations table -->\r\n<div class=\"jive-registrations\">\r\n\r\n\r\n\t<!-- BEGIN results -->\r\n\t<div class=\"jive-registrations-results\">\r\n\t\t");
+      out.write("\" class=\"cancel\" onClick=\"toggleAdd();\">\n\t\t</div>\n\t\t</form>\n\t</div>\n</div>\n<!-- END add registration -->\n\n\n\n<!-- BEGIN registrations table -->\n<div class=\"jive-registrations\">\n\n\n\t<!-- BEGIN results -->\n\t<div class=\"jive-registrations-results\">\n\t\t");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
       out.write(':');
@@ -564,275 +565,275 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_32);
-      out.write("\r\n\t</div>\r\n\t<!-- END results -->\r\n\r\n\r\n\t<!-- BEGIN results size (num per page) -->\r\n\t<div class=\"jive-registrations-resultsSize\"><form action=\"kraken-registrations.jsp\" method=\"get\">\r\n\t\t<select name=\"range\" id=\"range\" size=\"1\" onchange=\"this.form.submit()\">\r\n                ");
+      out.write("\n\t</div>\n\t<!-- END results -->\n\n\n\t<!-- BEGIN results size (num per page) -->\n\t<div class=\"jive-registrations-resultsSize\"><form action=\"kraken-registrations.jsp\" method=\"get\">\n\t\t<select name=\"range\" id=\"range\" size=\"1\" onchange=\"this.form.submit()\">\n                ");
   for (int rangePreset : RANGE_PRESETS) { 
-      out.write("\r\n\r\n                    <option value=\"");
+      out.write("\n\n                    <option value=\"");
       out.print( rangePreset );
       out.write('"');
       out.print( (rangePreset== range ? "selected" : "") );
       out.write('>');
       out.print( rangePreset );
-      out.write("</option>\r\n\r\n                ");
+      out.write("</option>\n\n                ");
   } 
-      out.write("\r\n\t\t</select>\r\n\t\t<span>");
+      out.write("\n\t\t</select>\n\t\t<span>");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("</span>\r\n\t</form></div>\r\n\t<!-- END results size -->\r\n\r\n\r\n\t<!-- BEGIN pagination -->\r\n\t<div class=\"jive-registrations-pagination\">\r\n\t\t<strong>");
+      out.write("</span>\n\t</form></div>\n\t<!-- END results size -->\n\n\n\t<!-- BEGIN pagination -->\n\t<div class=\"jive-registrations-pagination\">\n\t\t<strong>");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write(":</strong> &nbsp;\r\n            ");
+      out.write(":</strong> &nbsp;\n            ");
 
                 if (numPages > 1 && ((curPage) > 1)) {
             
-      out.write("\r\n                    <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                    <a href=\"kraken-registrations.jsp?start=");
       out.print( ((curPage-2)*range) );
       out.write("\">&lt; ");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("</a>\r\n            ");
+      out.write("</a>\n            ");
 
                 }
                 for (int i=0; i<numPages; i++) {
                     boolean isCurrent = (i+1) == curPage;
                     if (isCurrent) {
             
-      out.write("\r\n                        <strong>");
+      out.write("\n                        <strong>");
       out.print( (i+1) );
-      out.write("</strong> \r\n            ");
+      out.write("</strong> \n            ");
 
                     }
                     else {
             
-      out.write("\r\n                        <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                        <a href=\"kraken-registrations.jsp?start=");
       out.print( (i*range) );
       out.write('"');
       out.write('>');
       out.print( (i+1) );
-      out.write("</a> \r\n            ");
+      out.write("</a> \n            ");
 
                     }
                 }
                 if (numPages > 1 && ((curPage) < numPages)) {
             
-      out.write("\r\n                    <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                    <a href=\"kraken-registrations.jsp?start=");
       out.print( (curPage*range) );
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
-      out.write(" &gt;</a>\r\n            ");
+      out.write(" &gt;</a>\n            ");
 
                 }
             
-      out.write("\r\n\t</div>\r\n\t<!-- END pagination -->\r\n\t\r\n\t\r\n\t<!-- BEGIN gateway filter -->\r\n\t<form action=\"kraken-registrations.jsp\" name=\"jive-filterForm\">\r\n\t<div class=\"jive-gateway-filter\" id=\"jiveGatewayFilters\">\r\n\t\t<div>\r\n            <strong>");
+      out.write("\n\t</div>\n\t<!-- END pagination -->\n\t\n\t\n\t<!-- BEGIN gateway filter -->\n\t<form action=\"kraken-registrations.jsp\" name=\"jive-filterForm\">\n\t<div class=\"jive-gateway-filter\" id=\"jiveGatewayFilters\">\n\t\t<div>\n            <strong>");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
-      out.write(":</strong>\r\n            <div>\r\n            <label for=\"filterAIMcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"aim\" ");
+      out.write(":</strong>\n            <div>\n            <label for=\"filterAIMcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"aim\" ");
       out.print( ((filteropts.contains("aim")) ? "checked" : "") );
-      out.write(" id=\"filterAIMcheckbox\">\r\n                <img src=\"images/aim.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterAIMcheckbox\">\n                <img src=\"images/aim.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterFACEBOOKcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"facebook\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterFACEBOOKcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"facebook\" ");
       out.print( ((filteropts.contains("facebook")) ? "checked" : "") );
-      out.write(" id=\"filterFACEBOOKcheckbox\">\r\n                <img src=\"images/facebook.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterFACEBOOKcheckbox\">\n                <img src=\"images/facebook.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_43(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterGADUGADUcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"gadugadu\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterGADUGADUcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"gadugadu\" ");
       out.print( ((filteropts.contains("gadugadu")) ? "checked" : "") );
-      out.write(" id=\"filterGADUGADUcheckbox\">\r\n                <img src=\"images/gadugadu.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterGADUGADUcheckbox\">\n                <img src=\"images/gadugadu.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_44(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_45(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_46(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterGTALKcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"gtalk\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterGTALKcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"gtalk\" ");
       out.print( ((filteropts.contains("gtalk")) ? "checked" : "") );
-      out.write(" id=\"filterGTALKcheckbox\">\r\n                <img src=\"images/gtalk.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterGTALKcheckbox\">\n                <img src=\"images/gtalk.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_47(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_48(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_49(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterICQcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"icq\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterICQcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"icq\" ");
       out.print( ((filteropts.contains("icq")) ? "checked" : "") );
-      out.write(" id=\"filterICQcheckbox\">\r\n                <img src=\"images/icq.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterICQcheckbox\">\n                <img src=\"images/icq.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_50(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_51(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_52(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterIRCcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"irc\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterIRCcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"irc\" ");
       out.print( ((filteropts.contains("irc")) ? "checked" : "") );
-      out.write(" id=\"filterIRCcheckbox\">\r\n                <img src=\"images/irc.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterIRCcheckbox\">\n                <img src=\"images/irc.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_53(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_54(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_55(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterLIVEJOURNALcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"livejournal\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterLIVEJOURNALcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"livejournal\" ");
       out.print( ((filteropts.contains("livejournal")) ? "checked" : "") );
-      out.write(" id=\"filterLIVEJOURNALcheckbox\">\r\n                <img src=\"images/livejournal.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterLIVEJOURNALcheckbox\">\n                <img src=\"images/livejournal.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_56(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_57(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_58(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterMSNcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"msn\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterMSNcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"msn\" ");
       out.print( ((filteropts.contains("msn")) ? "checked" : "") );
-      out.write(" id=\"filterMSNcheckbox\">\r\n                <img src=\"images/msn.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterMSNcheckbox\">\n                <img src=\"images/msn.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_59(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_60(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_61(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <br />\r\n            <label for=\"filterMYSPACEIMcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"myspaceim\" ");
+      out.write("</span>-->\n            </label>\n            <br />\n            <label for=\"filterMYSPACEIMcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"myspaceim\" ");
       out.print( ((filteropts.contains("myspaceim")) ? "checked" : "") );
-      out.write(" id=\"filterMYSPACEIMcheckbox\">\r\n                <img src=\"images/myspaceim.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterMYSPACEIMcheckbox\">\n                <img src=\"images/myspaceim.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_62(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_63(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_64(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterQQcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"qq\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterQQcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"qq\" ");
       out.print( ((filteropts.contains("qq")) ? "checked" : "") );
-      out.write(" id=\"filterQQcheckbox\">\r\n                <img src=\"images/qq.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterQQcheckbox\">\n                <img src=\"images/qq.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_65(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_66(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_67(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterRENRENcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"renren\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterRENRENcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"renren\" ");
       out.print( ((filteropts.contains("renren")) ? "checked" : "") );
-      out.write(" id=\"filterRENRENcheckbox\">\r\n                <img src=\"images/renren.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterRENRENcheckbox\">\n                <img src=\"images/renren.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_68(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_69(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_70(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterSAMETIMEcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"sametime\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterSAMETIMEcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"sametime\" ");
       out.print( ((filteropts.contains("sametime")) ? "checked" : "") );
-      out.write(" id=\"filterSAMETIMEcheckbox\">\r\n                <img src=\"images/sametime.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterSAMETIMEcheckbox\">\n                <img src=\"images/sametime.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_71(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_72(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_73(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterSIMPLEcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"simple\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterSIMPLEcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"simple\" ");
       out.print( ((filteropts.contains("simple")) ? "checked" : "") );
-      out.write(" id=\"filterSIMPLEcheckbox\">\r\n                <img src=\"images/simple.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterSIMPLEcheckbox\">\n                <img src=\"images/simple.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_74(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_75(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_76(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterXMPPcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"xmpp\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterXMPPcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"xmpp\" ");
       out.print( ((filteropts.contains("xmpp")) ? "checked" : "") );
-      out.write(" id=\"filterXMPPcheckbox\">\r\n                <img src=\"images/xmpp.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterXMPPcheckbox\">\n                <img src=\"images/xmpp.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_77(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_78(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_79(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            <label for=\"filterYAHOOcheckbox\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"yahoo\" ");
+      out.write("</span>-->\n            </label>\n            <label for=\"filterYAHOOcheckbox\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"yahoo\" ");
       out.print( ((filteropts.contains("yahoo")) ? "checked" : "") );
-      out.write(" id=\"filterYAHOOcheckbox\">\r\n                <img src=\"images/yahoo.png\" border=\"0\" alt=\"");
+      out.write(" id=\"filterYAHOOcheckbox\">\n                <img src=\"images/yahoo.png\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_80(_jspx_page_context))
         return;
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_81(_jspx_page_context))
         return;
-      out.write("\"/>\r\n                <!--<span>");
+      out.write("\"/>\n                <!--<span>");
       if (_jspx_meth_fmt_message_82(_jspx_page_context))
         return;
-      out.write("</span>-->\r\n            </label>\r\n            </div>\r\n\t\t</div>\r\n        <div class=\"jive-gateway-filter-textentryline\">\r\n            <div class=\"jive-gateway-filter-textentry\">\r\n                <input type=\"text\" name=\"filterUser\" id=\"filterUser\" size=\"12\" maxlength=\"50\" value=\"");
+      out.write("</span>-->\n            </label>\n            </div>\n\t\t</div>\n        <div class=\"jive-gateway-filter-textentryline\">\n            <div class=\"jive-gateway-filter-textentry\">\n                <input type=\"text\" name=\"filterUser\" id=\"filterUser\" size=\"12\" maxlength=\"50\" value=\"");
       out.print( (filtervars.containsKey("filterUser") ? filtervars.get("filterUser") : "") );
-      out.write("\">\r\n                <span>");
+      out.write("\">\n                <span>");
       if (_jspx_meth_fmt_message_83(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </div>\r\n            <div class=\"jive-gateway-filter-textentry\">\r\n                <input type=\"text\" name=\"filterLegacyUsername\" id=\"filterLegacyUsername\" size=\"12\" maxlength=\"50\" value=\"");
+      out.write("</span>\n            </div>\n            <div class=\"jive-gateway-filter-textentry\">\n                <input type=\"text\" name=\"filterLegacyUsername\" id=\"filterLegacyUsername\" size=\"12\" maxlength=\"50\" value=\"");
       out.print( (filtervars.containsKey("filterLegacyUsername") ? filtervars.get("filterLegacyUsername") : "") );
-      out.write("\">\r\n                <span>");
+      out.write("\">\n                <span>");
       if (_jspx_meth_fmt_message_84(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </div>\r\n            <label for=\"filterActiveOnly\">\r\n                <input type=\"checkbox\" name=\"filter[]\" value=\"signedon\" ");
+      out.write("</span>\n            </div>\n            <label for=\"filterActiveOnly\">\n                <input type=\"checkbox\" name=\"filter[]\" value=\"signedon\" ");
       out.print( ((filteropts.contains("signedon")) ? "checked" : "") );
-      out.write(" id=\"filterActiveOnly\">\r\n                <span>");
+      out.write(" id=\"filterActiveOnly\">\n                <span>");
       if (_jspx_meth_fmt_message_85(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </label>\r\n            <input type=\"submit\" name=\"submit\" value=\"");
+      out.write("</span>\n            </label>\n            <input type=\"submit\" name=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_86(_jspx_page_context))
         return;
-      out.write("\" class=\"filterBtn\">\r\n        </div>\r\n    </div>\r\n\t</form>\r\n\t<!-- END gateway filter -->\r\n\r\n\r\n    <!-- BEGIN registrations table -->\r\n\t<table cellpadding=\"0\" cellspacing=\"0\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th width=\"20\" class=\"border-left\">&nbsp;</th>\r\n\t\t\t<th width=\"10%\">");
+      out.write("\" class=\"filterBtn\">\n        </div>\n    </div>\n\t</form>\n\t<!-- END gateway filter -->\n\n\n    <!-- BEGIN registrations table -->\n\t<table cellpadding=\"0\" cellspacing=\"0\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th width=\"20\" class=\"border-left\">&nbsp;</th>\n\t\t\t<th width=\"10%\">");
       if (_jspx_meth_fmt_message_87(_jspx_page_context))
         return;
-      out.write("</th>\r\n            ");
+      out.write("</th>\n            ");
  if (ClusterManager.isClusteringStarted()) { 
-      out.write("\r\n            <th width=\"15%\">");
+      out.write("\n            <th width=\"15%\">");
       if (_jspx_meth_fmt_message_88(_jspx_page_context))
         return;
-      out.write("</th>\r\n            ");
+      out.write("</th>\n            ");
  } 
-      out.write("\r\n            <th>");
+      out.write("\n            <th>");
       if (_jspx_meth_fmt_message_89(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t<th>");
+      out.write("</th>\n\t\t\t<th>");
       if (_jspx_meth_fmt_message_90(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t<th width=\"1%\"><div align=\"center\">");
+      out.write("</th>\n\t\t\t<th width=\"1%\"><div align=\"center\">");
       if (_jspx_meth_fmt_message_91(_jspx_page_context))
         return;
-      out.write("</div></th>\r\n\t\t\t<th width=\"1%\" class=\"border-right\">");
+      out.write("</div></th>\n\t\t\t<th width=\"1%\" class=\"border-right\">");
       if (_jspx_meth_fmt_message_92(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t\r\n");
+      out.write("</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t\n");
 
     int cnt = 0;
     for (regResult result : regResults) {
@@ -840,21 +841,21 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
         if (cnt < (start+1)) { continue; }
         if (cnt > (start+range)) { continue; }
 
-      out.write("\r\n\t\t<tr id=\"jiveRegistration");
+      out.write("\n\t\t<tr id=\"jiveRegistration");
       out.print( result.id );
-      out.write("\">\r\n\t\t\t<td align=\"center\">\r\n\t\t\t<img src=\"images/im_");
+      out.write("\">\n\t\t\t<td align=\"center\">\n\t\t\t<img src=\"images/im_");
       out.print( result.status );
       out.write(".gif\" alt=\"");
       out.print( result.linestatus );
-      out.write("\" border=\"0\"></td>\r\n\t\t\t<td>");
+      out.write("\" border=\"0\"></td>\n\t\t\t<td>");
       out.print( result.jid.getNode() );
-      out.write("</td>\r\n            ");
+      out.write("</td>\n            ");
  if (ClusterManager.isClusteringStarted()) { 
-      out.write("\r\n            <td>");
+      out.write("\n            <td>");
       out.print( result.clusterNode != null ? result.clusterNode : "&nbsp;" );
-      out.write("</td>\r\n            ");
+      out.write("</td>\n            ");
  } 
-      out.write("\r\n            <td><span class=\"jive-gateway-");
+      out.write("\n            <td><span class=\"jive-gateway-");
       out.print( result.linestatus );
       out.write(" jive-gateway-");
       out.print( result.type.toUpperCase() );
@@ -872,9 +873,9 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
       out.print( result.id );
       out.write(")\">logout</a>]</span> ");
  } 
-      out.write("</span></td>\r\n\t\t\t<td>");
+      out.write("</span></td>\n\t\t\t<td>");
       out.print( result.lastLogin );
-      out.write("</td>\r\n\t\t\t<td align=\"center\"><a href=\"javascript:noop()\" onClick=\"");
+      out.write("</td>\n\t\t\t<td align=\"center\"><a href=\"javascript:noop()\" onClick=\"");
  if (!trEnabled.get(result.type)) { 
       out.write("alert('You must enable this transport to modify registrations.'); return false;");
  } else { 
@@ -885,7 +886,7 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
       out.write("\"><img src=\"images/edit-16x16.gif\" alt=\"");
       if (_jspx_meth_fmt_message_93(_jspx_page_context))
         return;
-      out.write("\" border=\"0\"></a></td>\r\n            <td align=\"center\"><a href=\"javascript:noop()\" onClick=\"");
+      out.write("\" border=\"0\"></a></td>\n            <td align=\"center\"><a href=\"javascript:noop()\" onClick=\"");
  if (!trEnabled.get(result.type)) { 
       out.write("alert('You must enable this transport to delete registrations.'); return false;");
  } else { 
@@ -899,109 +900,109 @@ public final class kraken_002dregistrations_jsp extends org.apache.jasper.runtim
       out.write("\"><img src=\"images/delete-16x16.gif\" alt=\"");
       if (_jspx_meth_fmt_message_95(_jspx_page_context))
         return;
-      out.write("\" border=\"0\"></a></td>\r\n\t\t</tr>\r\n\t\t<tr id=\"jiveRegistrationEdit");
+      out.write("\" border=\"0\"></a></td>\n\t\t</tr>\n\t\t<tr id=\"jiveRegistrationEdit");
       out.print( result.id );
-      out.write("\" style=\"display: none\">\r\n\t\t\t<td align=\"center\"><img src=\"images/im_");
+      out.write("\" style=\"display: none\">\n\t\t\t<td align=\"center\"><img src=\"images/im_");
       out.print( result.status );
       out.write(".gif\" alt=\"");
       out.print( result.status );
-      out.write("\" border=\"0\"></td>\r\n\t\t\t<td>");
+      out.write("\" border=\"0\"></td>\n\t\t\t<td>");
       out.print( result.jid );
-      out.write("</td>\r\n\t\t\t<td colspan=\"4\"><form method=\"post\" id=\"editRegistration");
+      out.write("</td>\n\t\t\t<td colspan=\"4\"><form method=\"post\" id=\"editRegistration");
       out.print( result.id );
       out.write("\" name=\"editRegistration");
       out.print( result.id );
-      out.write("\" action=\"\" onSubmit=\"return false\">\r\n\t\t\t<span class=\"jive-gateway-");
+      out.write("\" action=\"\" onSubmit=\"return false\">\n\t\t\t<span class=\"jive-gateway-");
       out.print( result.linestatus );
       out.write(" jive-gateway-");
       out.print( result.type.toUpperCase() );
-      out.write("on\">\r\n\t\t\t\t<div class=\"jive-registrations-editUsername\">\r\n\t\t\t\t<input type=\"text\" name=\"gatewayUsername");
+      out.write("on\">\n\t\t\t\t<div class=\"jive-registrations-editUsername\">\n\t\t\t\t<input type=\"text\" name=\"gatewayUsername");
       out.print( result.id );
       out.write("\" id=\"gatewayUsername");
       out.print( result.id );
       out.write("\"size=\"12\" maxlength=\"50\" value=\"");
       out.print( result.username );
-      out.write("\"><br>\r\n\t\t\t\t<strong>");
+      out.write("\"><br>\n\t\t\t\t<strong>");
       if (_jspx_meth_fmt_message_96(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"jive-registrations-editPassword\">\r\n\t\t\t\t<input type=\"password\" name=\"gatewayPassword");
+      out.write("</strong>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"jive-registrations-editPassword\">\n\t\t\t\t<input type=\"password\" name=\"gatewayPassword");
       out.print( result.id );
       out.write("\" id=\"gatewayPassword");
       out.print( result.id );
-      out.write("\"size=\"12\" maxlength=\"50\" value=\"********\"><br>\r\n\t\t\t\t<strong>");
+      out.write("\"size=\"12\" maxlength=\"50\" value=\"********\"><br>\n\t\t\t\t<strong>");
       if (_jspx_meth_fmt_message_97(_jspx_page_context))
         return;
-      out.write("</strong>\r\n\t\t\t\t</div>\r\n                <div class=\"jive-registrations-editNickname\">\r\n                <input type=\"text\" name=\"gatewayNickname");
+      out.write("</strong>\n\t\t\t\t</div>\n                <div class=\"jive-registrations-editNickname\">\n                <input type=\"text\" name=\"gatewayNickname");
       out.print( result.id );
       out.write("%>\" id=\"gatewayNickname");
       out.print( result.id );
       out.write("\" size=\"12\" maxlength=\"50\" value=\"");
       out.print( result.nickname );
-      out.write("\"><br>\r\n                <strong>");
+      out.write("\"><br>\n                <strong>");
       if (_jspx_meth_fmt_message_98(_jspx_page_context))
         return;
-      out.write("</strong>\r\n                </div>\r\n                <div class=\"jive-registrations-editButtons\">\r\n\t\t\t\t<input type=\"submit\" name=\"Submit\" value=\"");
+      out.write("</strong>\n                </div>\n                <div class=\"jive-registrations-editButtons\">\n\t\t\t\t<input type=\"submit\" name=\"Submit\" value=\"");
       if (_jspx_meth_fmt_message_99(_jspx_page_context))
         return;
       out.write("\" class=\"savechanges\" onClick=\"updateRegistration('");
       out.print( result.id );
-      out.write("'); return false\" /> &nbsp;\r\n\t\t\t\t<input type=\"reset\" name=\"reset\" value=\"");
+      out.write("'); return false\" /> &nbsp;\n\t\t\t\t<input type=\"reset\" name=\"reset\" value=\"");
       if (_jspx_meth_fmt_message_100(_jspx_page_context))
         return;
       out.write("\" class=\"cancel\" onClick=\"toggleEdit(");
       out.print( result.id );
-      out.write(");\" />\r\n\t\t\t\t</div>\r\n\t\t\t</span>\r\n\t\t\t</form></td>\r\n\t\t</tr>\r\n");
+      out.write(");\" />\n\t\t\t\t</div>\n\t\t\t</span>\n\t\t\t</form></td>\n\t\t</tr>\n");
 
     }
 
-      out.write("\r\n\t</tbody>\r\n\t</table>\r\n\t<!-- BEGIN registrations table -->\r\n\r\n\r\n\t<!-- BEGIN pagination -->\r\n    <div class=\"jive-registrations-pagination\">\r\n        <strong>");
+      out.write("\n\t</tbody>\n\t</table>\n\t<!-- BEGIN registrations table -->\n\n\n\t<!-- BEGIN pagination -->\n    <div class=\"jive-registrations-pagination\">\n        <strong>");
       if (_jspx_meth_fmt_message_101(_jspx_page_context))
         return;
-      out.write(":</strong> &nbsp;\r\n            ");
+      out.write(":</strong> &nbsp;\n            ");
 
                 if (numPages > 1 && ((curPage) > 1)) {
             
-      out.write("\r\n                    <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                    <a href=\"kraken-registrations.jsp?start=");
       out.print( ((curPage-2)*range) );
       out.write("\">&lt; ");
       if (_jspx_meth_fmt_message_102(_jspx_page_context))
         return;
-      out.write("</a>\r\n            ");
+      out.write("</a>\n            ");
 
                 }
                 for (int i=0; i<numPages; i++) {
                     boolean isCurrent = (i+1) == curPage;
                     if (isCurrent) {
             
-      out.write("\r\n                        <strong>");
+      out.write("\n                        <strong>");
       out.print( (i+1) );
-      out.write("</strong>\r\n            ");
+      out.write("</strong>\n            ");
 
                     }
                     else {
             
-      out.write("\r\n                        <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                        <a href=\"kraken-registrations.jsp?start=");
       out.print( (i*range) );
       out.write('"');
       out.write('>');
       out.print( (i+1) );
-      out.write("</a>\r\n            ");
+      out.write("</a>\n            ");
 
                     }
                 }
                 if (numPages > 1 && ((curPage) < numPages)) {
             
-      out.write("\r\n                    <a href=\"kraken-registrations.jsp?start=");
+      out.write("\n                    <a href=\"kraken-registrations.jsp?start=");
       out.print( (curPage*range) );
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_103(_jspx_page_context))
         return;
-      out.write(" &gt;</a>\r\n            ");
+      out.write(" &gt;</a>\n            ");
 
                 }
             
-      out.write("\r\n    </div>\r\n\t<!-- END pagination -->\r\n\r\n\r\n</div>\r\n<!-- END registrations table -->\r\n\r\n\r\n<br clear=\"all\" />\r\n</body>\r\n\r\n</html>\r\n");
+      out.write("\n    </div>\n\t<!-- END pagination -->\n\n\n</div>\n<!-- END registrations table -->\n\n\n<br clear=\"all\" />\n</body>\n\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

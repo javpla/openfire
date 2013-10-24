@@ -52,7 +52,7 @@ public final class error_002dserverdown_jsp extends org.apache.jasper.runtime.Ht
       _jspx_out = out;
 
       out.write(' ');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -61,8 +61,8 @@ public final class error_002dserverdown_jsp extends org.apache.jasper.runtime.Ht
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
       org.jivesoftware.util.WebManager admin = null;
       synchronized (_jspx_page_context) {
@@ -72,25 +72,25 @@ public final class error_002dserverdown_jsp extends org.apache.jasper.runtime.Ht
           _jspx_page_context.setAttribute("admin", admin, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  admin.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   String path = request.getContextPath();
 
     // Title of this page
     String title = AdminConsole.getAppName() + " " +LocaleUtils.getLocalizedString("error.serverdown.title");
     pageinfo.setTitle(title);
 
-      out.write("\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n\r\n<html>\r\n<head>\r\n <title>");
+      out.write("\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n\n<html>\n<head>\n <title>");
       out.print( AdminConsole.getAppName() );
       out.write(' ');
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
       out.print( (pageinfo.getTitle() != null ? (": "+pageinfo.getTitle()) : "") );
-      out.write("</title>\r\n <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\r\n <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.write("</title>\n <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n <link rel=\"stylesheet\" type=\"text/css\" href=\"");
       out.print( path );
-      out.write("/style/global.css\">\r\n</head>\r\n\r\n<body>\r\n\r\n<div id=\"jive-header\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" border=\"0\">\r\n<tbody>\r\n    <tr>\r\n     <td>\r\n         <img src=\"");
+      out.write("/style/global.css\">\n</head>\n\n<body>\n\n<div id=\"jive-header\">\n<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" border=\"0\">\n<tbody>\n    <tr>\n     <td>\n         <img src=\"");
       out.print( path );
       out.write('/');
       out.print( AdminConsole.getLogoImage() );
@@ -99,26 +99,26 @@ public final class error_002dserverdown_jsp extends org.apache.jasper.runtime.Ht
       out.write(' ');
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\">\r\n     </td>\r\n     <td align=\"right\">\r\n         <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n         <tr>\r\n             <td>&nbsp;</td>\r\n             <td class=\"info\">\r\n                 <nobr>");
+      out.write("\">\n     </td>\n     <td align=\"right\">\n         <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n         <tr>\n             <td>&nbsp;</td>\n             <td class=\"info\">\n                 <nobr>");
       out.print( AdminConsole.getAppName() );
       out.write(' ');
       out.print( AdminConsole.getVersionString() );
-      out.write("</nobr>\r\n             </td>\r\n         </tr>\r\n         </table>\r\n     </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n<div id=\"jive-main\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tbody>\r\n    <tr valign=\"top\">\r\n        <td width=\"1%\">\r\n            <div id=\"jive-sidebar\">\r\n                <img src=\"");
+      out.write("</nobr>\n             </td>\n         </tr>\n         </table>\n     </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n<div id=\"jive-main\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tbody>\n    <tr valign=\"top\">\n        <td width=\"1%\">\n            <div id=\"jive-sidebar\">\n                <img src=\"");
       out.print( path );
-      out.write("/images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\">\r\n            </div>\r\n        </td>\r\n        <td width=\"99%\" id=\"jive-content\">\r\n\r\n        <div id=\"jive-title\">\r\n            ");
+      out.write("/images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\">\n            </div>\n        </td>\n        <td width=\"99%\" id=\"jive-content\">\n\n        <div id=\"jive-title\">\n            ");
       out.print( title );
-      out.write("\r\n        </div>\r\n\r\n        <p>\r\n        ");
+      out.write("\n        </div>\n\n        <p>\n        ");
       out.print( AdminConsole.getAppName() );
       out.write(' ');
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </p>\r\n\r\n        <ol>\r\n            <li>\r\n                ");
+      out.write("\n        </p>\n\n        <ol>\n            <li>\n                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n            </li>\r\n            <li>\r\n                <a href=\"index.jsp\">");
+      out.write("\n            </li>\n            <li>\n                <a href=\"index.jsp\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</a>.\r\n            </li>\r\n        </ol>\r\n\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n</body>\r\n</html>");
+      out.write("</a>.\n            </li>\n        </ol>\n\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

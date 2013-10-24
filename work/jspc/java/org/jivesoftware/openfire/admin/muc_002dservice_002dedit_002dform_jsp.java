@@ -53,7 +53,7 @@ public final class muc_002dservice_002dedit_002dform_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
 
    // Handle a cancel
     if (request.getParameter("cancel") != null) {
@@ -61,8 +61,8 @@ public final class muc_002dservice_002dedit_002dform_jsp extends org.apache.jasp
       return;
     }
 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
@@ -72,10 +72,10 @@ public final class muc_002dservice_002dedit_002dform_jsp extends org.apache.jasp
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     boolean create = ParamUtils.getBooleanParameter(request,"create");
     boolean save = request.getParameter("save") != null;
@@ -130,83 +130,85 @@ public final class muc_002dservice_002dedit_002dform_jsp extends org.apache.jasp
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n");
+      out.write("</title>\n");
  if (create) { 
-      out.write("\r\n<meta name=\"pageID\" content=\"muc-service-create\"/>\r\n");
+      out.write("\n<meta name=\"pageID\" content=\"muc-service-create\"/>\n");
  } else { 
-      out.write("\r\n<meta name=\"subPageID\" content=\"muc-service-edit-form\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("\n<meta name=\"subPageID\" content=\"muc-service-edit-form\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "mucname="+URLEncoder.encode(mucname, "UTF-8") );
-      out.write("\"/>\r\n");
+      out.write("\"/>\n");
  } 
-      out.write("\r\n<meta name=\"helpPage\" content=\"edit_group_chat_service_properties.html\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n");
+      out.write("\n<meta name=\"helpPage\" content=\"edit_group_chat_service_properties.html\"/>\n</head>\n<body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n            ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n            ");
  if (errors.get("mucname") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (errors.get("already_exists") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<!-- BEGIN 'Service Name'-->\r\n<form action=\"muc-service-edit-form.jsp\" method=\"post\">\r\n<input type=\"hidden\" name=\"save\" value=\"true\">\r\n");
+      out.write("\n\n<!-- BEGIN 'Service Name'-->\n<form action=\"muc-service-edit-form.jsp\" method=\"post\">\n<input type=\"hidden\" name=\"save\" value=\"true\">\n");
  if (!create) { 
-      out.write("\r\n<input type=\"hidden\" name=\"mucname\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"mucname\" value=\"");
       out.print( mucname );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } else { 
-      out.write("\r\n<input type=\"hidden\" name=\"create\" value=\"true\" />\r\n");
+      out.write("\n<input type=\"hidden\" name=\"create\" value=\"true\" />\n");
  } 
-      out.write("\r\n\r\n    <div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\n    <div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n            <tr>\r\n                <td class=\"c1\">\r\n                   ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n            <tr>\n                <td class=\"c1\">\n                   ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n                <td>\r\n                    ");
+      out.write("\n                </td>\n                <td>\n                    ");
  if (create) { 
-      out.write("\r\n                    <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"mucname\" value=\"");
+      out.write("\n                    <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"mucname\" value=\"");
       out.print( (mucname != null ? mucname : "") );
-      out.write("\">\r\n\r\n                    ");
+      out.write("\">\n\n                    ");
   if (errors.get("mucname") != null) { 
-      out.write("\r\n\r\n                    <span class=\"jive-error-text\">\r\n                    <br>");
+      out.write("\n\n                    <span class=\"jive-error-text\">\n                    <br>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n                    </span>\r\n\r\n                    ");
+      out.write("\n                    </span>\n\n                    ");
   } 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  } else { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       out.print( mucname );
-      out.write("\r\n                    ");
+      out.write("\n                    ");
  } 
-      out.write("\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">\r\n                   ");
+      out.write("\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">\n                   ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n                <td>\r\n                    <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"mucdesc\" value=\"");
+      out.write("\n                </td>\n                <td>\n                    <input type=\"text\" size=\"30\" maxlength=\"150\" name=\"mucdesc\" value=\"");
       out.print( (mucdesc != null ? mucdesc : "") );
-      out.write("\">\r\n                </td>\r\n            </tr>\r\n        </table>\r\n\t</div>\r\n    <input type=\"submit\" value=\"");
+      out.write("\">\n                </td>\n            </tr>\n        </table>\n\t</div>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END 'Service Name'-->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n<!-- END 'Service Name'-->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

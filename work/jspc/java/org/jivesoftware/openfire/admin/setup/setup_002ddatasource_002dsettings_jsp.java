@@ -111,8 +111,9 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -120,8 +121,10 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     boolean embeddedMode = false;
     try {
@@ -173,13 +176,13 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"currentStep\" content=\"2\"/>\r\n</head>\r\n<body>\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n    <meta name=\"currentStep\" content=\"2\"/>\n</head>\n<body>\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n\t<p>\r\n\t");
+      out.write("\n\t</h1>\n\n\t<p>\n\t");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_2 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_2.setPageContext(_jspx_page_context);
@@ -193,7 +196,7 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
           _jspx_th_fmt_message_2.doInitBody();
         }
         do {
-          out.write("\r\n\t    ");
+          out.write("\n\t    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -205,7 +208,6 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write('\r');
           out.write('\n');
           out.write('	');
           int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
@@ -220,50 +222,50 @@ public final class setup_002ddatasource_002dsettings_jsp extends org.apache.jasp
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_2);
-      out.write("\r\n\t</p>\r\n\r\n");
+      out.write("\n\t</p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <p class=\"jive-error-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-error-text\">\n    ");
       out.print( errors.get("general") );
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n\t<!-- BEGIN jive-contentBox -->\r\n\t<div class=\"jive-contentBox\">\r\n\r\n\t\t<form action=\"setup-datasource-settings.jsp\">\r\n\r\n<input type=\"hidden\" name=\"next\" value=\"true\">\r\n\r\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n<tr>\r\n    <td align=\"center\" valign=\"top\">\r\n        <input type=\"radio\" name=\"mode\" value=\"");
+      out.write("\n\n\t<!-- BEGIN jive-contentBox -->\n\t<div class=\"jive-contentBox\">\n\n\t\t<form action=\"setup-datasource-settings.jsp\">\n\n<input type=\"hidden\" name=\"next\" value=\"true\">\n\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n<tr>\n    <td align=\"center\" valign=\"top\">\n        <input type=\"radio\" name=\"mode\" value=\"");
       out.print( STANDARD );
-      out.write("\" id=\"rb02\"\r\n         ");
+      out.write("\" id=\"rb02\"\n         ");
       out.print( ((STANDARD.equals(mode)) ? "checked" : "") );
-      out.write(">\r\n    </td>\r\n    <td>\r\n        <label for=\"rb02\"><b>");
+      out.write(">\n    </td>\n    <td>\n        <label for=\"rb02\"><b>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</b></label>\r\n        <br>");
+      out.write("</b></label>\n        <br>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n</tr>\r\n\r\n");
+      out.write("\n    </td>\n</tr>\n\n");
   if (!embeddedMode) { 
-      out.write("\r\n\r\n    <tr>\r\n        <td align=\"center\" valign=\"top\">\r\n            <input type=\"radio\" name=\"mode\" value=\"");
+      out.write("\n\n    <tr>\n        <td align=\"center\" valign=\"top\">\n            <input type=\"radio\" name=\"mode\" value=\"");
       out.print( JNDI );
-      out.write("\" id=\"rb03\"\r\n             ");
+      out.write("\" id=\"rb03\"\n             ");
       out.print( ((JNDI.equals(mode)) ? "checked" : "") );
-      out.write(">\r\n        </td>\r\n        <td>\r\n            <label for=\"rb03\"><b>");
+      out.write(">\n        </td>\n        <td>\n            <label for=\"rb03\"><b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</b></label>\r\n            <br>");
+      out.write("</b></label>\n            <br>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n\r\n");
+      out.write("\n        </td>\n    </tr>\n\n");
   } 
-      out.write("\r\n\r\n<tr>\r\n    <td align=\"center\" valign=\"top\">\r\n        <input type=\"radio\" name=\"mode\" value=\"");
+      out.write("\n\n<tr>\n    <td align=\"center\" valign=\"top\">\n        <input type=\"radio\" name=\"mode\" value=\"");
       out.print( EMBEDDED );
-      out.write("\" id=\"rb01\"\r\n         ");
+      out.write("\" id=\"rb01\"\n         ");
       out.print( ((EMBEDDED.equals(mode)) ? "checked" : "") );
-      out.write(">\r\n    </td>\r\n    <td>\r\n        <label for=\"rb01\"><b>");
+      out.write(">\n    </td>\n    <td>\n        <label for=\"rb01\"><b>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</b></label>\r\n        <br>");
+      out.write("</b></label>\n        <br>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<br><br>\r\n\r\n\r\n\t\t<div align=\"right\">\r\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
+      out.write("\n    </td>\n</tr>\n</table>\n\n<br><br>\n\n\n\t\t<div align=\"right\">\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-save\" border=\"0\">\r\n\t\t</div>\r\n\t</form>\r\n\r\n\t</div>\r\n\t<!-- END jive-contentBox -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\" id=\"jive-setup-save\" border=\"0\">\n\t\t</div>\n\t</form>\n\n\t</div>\n\t<!-- END jive-contentBox -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

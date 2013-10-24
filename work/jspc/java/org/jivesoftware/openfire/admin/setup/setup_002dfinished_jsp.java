@@ -62,7 +62,7 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -70,7 +70,8 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     if (session == null || session.getAttribute("xmppSettings") == null || session.getAttribute("xmlSettings") == null) {
         // Session appears to have timed out, send back to first page.
@@ -91,13 +92,13 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
     // Notify that the XMPP server that setup is finished.
     XMPPServer.getInstance().finishSetup();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"currentStep\" content=\"5\"/>\r\n        <script type=\"text/javascript\">\r\n\r\n        function showhide(id){\r\n            var obj = document.getElementById(id);\r\n            if (obj.style.display == \"none\"){\r\n                obj.style.display = \"\";\r\n            } else {\r\n                obj.style.display = \"none\";\r\n            }\r\n        }\r\n\r\n        function toggleDivs() {\r\n            showhide('loginlink');\r\n            showhide('logintext');\r\n        }\r\n        </script>\r\n    </head>\r\n<body onload=\"setTimeout('toggleDivs()', 1500);\">\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n        <meta name=\"currentStep\" content=\"5\"/>\n        <script type=\"text/javascript\">\n\n        function showhide(id){\n            var obj = document.getElementById(id);\n            if (obj.style.display == \"none\"){\n                obj.style.display = \"\";\n            } else {\n                obj.style.display = \"none\";\n            }\n        }\n\n        function toggleDivs() {\n            showhide('loginlink');\n            showhide('logintext');\n        }\n        </script>\n    </head>\n<body onload=\"setTimeout('toggleDivs()', 1500);\">\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n\t<p>\r\n\t");
+      out.write("\n\t</h1>\n\n\t<p>\n\t");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_2 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_2.setPageContext(_jspx_page_context);
@@ -111,7 +112,7 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
           _jspx_th_fmt_message_2.doInitBody();
         }
         do {
-          out.write("\r\n\t    ");
+          out.write("\n\t    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -123,7 +124,6 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write('\r');
           out.write('\n');
           out.write('	');
           int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
@@ -138,7 +138,7 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_2);
-      out.write("\r\n\t</p>\r\n\r\n");
+      out.write("\n\t</p>\n\n");
 
     boolean useAdmin = false;
     try {
@@ -170,19 +170,19 @@ public final class setup_002dfinished_jsp extends org.apache.jasper.runtime.Http
         url = url.replace("setup/setup-finished.jsp", "login.jsp"+parameters);
     }
 
-      out.write("\r\n\r\n<br><br>\r\n\t<div id=\"loginlink\" style=\"display:none;\" class=\"jive_setup_launchAdmin\">\r\n\t\t<a href=\"");
+      out.write("\n\n<br><br>\n\t<div id=\"loginlink\" style=\"display:none;\" class=\"jive_setup_launchAdmin\">\n\t\t<a href=\"");
       out.print( url );
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t</div>\r\n\r\n\t<div id=\"logintext\" class=\"jive_setup_launchAdmin\">\r\n\t\t");
+      out.write("</a>\n\t</div>\n\n\t<div id=\"logintext\" class=\"jive_setup_launchAdmin\">\n\t\t");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(" <img src=\"../images/working-16x16.gif\" alt=\"");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\" width=\"16\" height=\"16\">\r\n\t</div>\r\n\r\n</body>\r\n</html>");
+      out.write("\" width=\"16\" height=\"16\">\n\t</div>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

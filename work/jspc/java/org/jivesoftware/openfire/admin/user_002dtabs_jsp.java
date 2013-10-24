@@ -58,10 +58,8 @@ public final class user_002dtabs_jsp extends org.apache.jasper.runtime.HttpJspBa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n");
       out.write('\n');
       org.jivesoftware.util.WebManager ad = null;
       synchronized (_jspx_page_context) {
@@ -71,17 +69,16 @@ public final class user_002dtabs_jsp extends org.apache.jasper.runtime.HttpJspBa
           _jspx_page_context.setAttribute("ad", ad, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  ad.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       if (_jspx_meth_c_set_0(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_set_1(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       java.lang.String tabName = null;
       synchronized (_jspx_page_context) {
@@ -90,7 +87,9 @@ public final class user_002dtabs_jsp extends org.apache.jasper.runtime.HttpJspBa
           throw new java.lang.InstantiationException("bean tabName not found within scope");
         }
       }
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
   // Get params
     String uname = ParamUtils.getParameter(request,"username");
 
@@ -100,79 +99,79 @@ public final class user_002dtabs_jsp extends org.apache.jasper.runtime.HttpJspBa
     // Get a presence manager
     PresenceManager presenceManager = ad.getPresenceManager();
 
-      out.write("\r\n\r\n<table class=\"jive-tabs\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr>\r\n");
+      out.write("\n\n<table class=\"jive-tabs\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr>\n");
       if (_jspx_meth_c_set_2(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    <td class=\"jive-");
+      out.write("\n\n    <td class=\"jive-");
       out.print( (("props".equals(tabName)) ? "selected-" : "") );
-      out.write("tab\" width=\"1%\" nowrap>\r\n        <a href=\"user-properties.jsp?username=");
+      out.write("tab\" width=\"1%\" nowrap>\n        <a href=\"user-properties.jsp?username=");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</a>\r\n    </td>\r\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\r\n\r\n");
+      out.write("</a>\n    </td>\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\n\n");
       if (_jspx_meth_c_set_3(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    <td class=\"jive-");
+      out.write("\n\n    <td class=\"jive-");
       out.print( (("edit".equals(tabName)) ? "selected-" : "") );
-      out.write("tab\" width=\"1%\" nowrap>\r\n        <a href=\"user-edit-form.jsp?username=");
+      out.write("tab\" width=\"1%\" nowrap>\n        <a href=\"user-edit-form.jsp?username=");
       if (_jspx_meth_c_out_1(_jspx_page_context))
         return;
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</a>\r\n    </td>\r\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\r\n\r\n");
+      out.write("</a>\n    </td>\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\n\n");
       if (_jspx_meth_c_set_4(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   // Only show the message tab if the user is online
         if (presenceManager.isAvailable(foundUser)) {
     
-      out.write("\r\n\r\n        <td class=\"jive-");
+      out.write("\n\n        <td class=\"jive-");
       out.print( (("message".equals(tabName)) ? "selected-" : "") );
-      out.write("tab\" width=\"1%\" nowrap>\r\n            <a href=\"user-message.jsp?username=");
+      out.write("tab\" width=\"1%\" nowrap>\n            <a href=\"user-message.jsp?username=");
       if (_jspx_meth_c_out_2(_jspx_page_context))
         return;
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</a>\r\n        </td>\r\n        <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\r\n\r\n        ");
+      out.write("</a>\n        </td>\n        <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\n\n        ");
       if (_jspx_meth_c_set_5(_jspx_page_context))
         return;
-      out.write("\r\n\r\n\r\n    ");
+      out.write("\n\n\n    ");
   } 
-      out.write("\r\n\r\n    <td class=\"jive-");
+      out.write("\n\n    <td class=\"jive-");
       out.print( (("pass".equals(tabName)) ? "selected-" : "") );
-      out.write("tab\" width=\"1%\" nowrap>\r\n        <a href=\"user-password.jsp?username=");
+      out.write("tab\" width=\"1%\" nowrap>\n        <a href=\"user-password.jsp?username=");
       if (_jspx_meth_c_out_3(_jspx_page_context))
         return;
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</a>\r\n    </td>\r\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\r\n\r\n");
+      out.write("</a>\n    </td>\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\n\n");
       if (_jspx_meth_c_set_6(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    <td class=\"jive-");
+      out.write("\n\n    <td class=\"jive-");
       out.print( (("delete".equals(tabName)) ? "selected-" : "") );
-      out.write("tab\" width=\"1%\" nowrap>\r\n        <a href=\"user-delete.jsp?username=");
+      out.write("tab\" width=\"1%\" nowrap>\n        <a href=\"user-delete.jsp?username=");
       if (_jspx_meth_c_out_4(_jspx_page_context))
         return;
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</a>\r\n    </td>\r\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\r\n");
+      out.write("</a>\n    </td>\n    <td class=\"jive-tab-spacer\" width=\"1%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\"></td>\n");
       if (_jspx_meth_c_set_7(_jspx_page_context))
         return;
-      out.write("\r\n    <td class=\"jive-tab-spring\" width=\"");
+      out.write("\n    <td class=\"jive-tab-spring\" width=\"");
       if (_jspx_meth_c_out_5(_jspx_page_context))
         return;
-      out.write("%\" align=\"right\" nowrap>\r\n        &nbsp;\r\n    </td>\r\n</tr>\r\n<tr>\r\n    <td class=\"jive-tab-bar\" colspan=\"99\">\r\n        &nbsp;\r\n    </td>\r\n</tr>\r\n</table>\r\n<table bgcolor=\"#dddddd\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr><td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" border=\"0\" alt=\"\"></td></tr>\r\n</table>\r\n<table bgcolor=\"#eeeeee\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr><td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" border=\"0\" alt=\"\"></td></tr>\r\n</table>");
+      out.write("%\" align=\"right\" nowrap>\n        &nbsp;\n    </td>\n</tr>\n<tr>\n    <td class=\"jive-tab-bar\" colspan=\"99\">\n        &nbsp;\n    </td>\n</tr>\n</table>\n<table bgcolor=\"#dddddd\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr><td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" border=\"0\" alt=\"\"></td></tr>\n</table>\n<table bgcolor=\"#eeeeee\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr><td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" border=\"0\" alt=\"\"></td></tr>\n</table>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

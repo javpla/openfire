@@ -57,7 +57,7 @@ public final class registration_002dprops_002dform_jsp extends org.apache.jasper
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
 
     boolean save = request.getParameter("save") != null;
     boolean saveWelcome = request.getParameter("savemessage") != null;
@@ -236,256 +236,256 @@ public final class registration_002dprops_002dform_jsp extends org.apache.jasper
     reCaptchaPublicKey = plugin.getReCaptchaPublicKey();
     reCaptchaPrivateKey = plugin.getReCaptchaPrivateKey();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"registration-props-form\"/>\r\n    </head>\r\n    <body>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nfunction addIMContact() {\r\n    document.regform.addIM.value = 'true';\r\n    document.regform.submit();\r\n}\r\n\r\nfunction addEmailContact() {\r\n    document.regform.addEmail.value = 'true';\r\n    document.regform.submit();\r\n}\r\n</script>\r\n\r\n<p>");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"registration-props-form\"/>\n    </head>\n    <body>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nfunction addIMContact() {\n    document.regform.addIM.value = 'true';\n    document.regform.submit();\n}\n\nfunction addEmailContact() {\n    document.regform.addEmail.value = 'true';\n    document.regform.submit();\n}\n</script>\n\n<p>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n<form action=\"registration-props-form.jsp?save\" name=\"regform\" method=\"post\">\r\n<input type=\"hidden\" name=\"addIM\" value=\"\">\r\n<input type=\"hidden\" name=\"addEmail\" value=\"\">\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("</p>\n\n<form action=\"registration-props-form.jsp?save\" name=\"regform\" method=\"post\">\n<input type=\"hidden\" name=\"addIM\" value=\"\">\n<input type=\"hidden\" name=\"addEmail\" value=\"\">\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</p>\r\n   \r\n    ");
+      out.write("</p>\n   \n    ");
  if (ParamUtils.getBooleanParameter(request, "settingsSaved")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    ");
+      out.write("\n   \n    ");
  if (errors.containsKey("groupNotFound")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"imenabled\" ");
+      out.write("\n   \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"imenabled\" ");
       out.print((imEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"emailenabled\" ");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"emailenabled\" ");
       out.print((emailEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"welcomeenabled\" ");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"welcomeenabled\" ");
       out.print((welcomeEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"groupenabled\" ");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"groupenabled\" ");
       out.print((groupEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</td\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"webenabled\" ");
+      out.write("</td\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"webenabled\" ");
       out.print((webEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
       out.write(' ');
       out.print(plugin.webRegistrationAddress() );
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"recaptcha\" ");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"recaptcha\" ");
       out.print((reCaptchaEnabled) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
       out.write(' ');
       out.print(plugin.webRegistrationAddress() );
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"recaptchanoscript\" ");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap><input type=\"checkbox\" name=\"recaptchanoscript\" ");
       out.print((reCaptchaNoScript) ? "checked" : "" );
-      out.write("></td>\r\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
+      out.write("></td>\n            <td width=\"99%\" align=\"left\" colspan=\"2\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap>&nbsp;</td>\r\n            <td width=\"24%\" align=\"left\">");
+      out.write("</td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap>&nbsp;</td>\n            <td width=\"24%\" align=\"left\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td width=\"75%\" align=\"left\"><input type=\"text\" name=\"recaptchapublickey\" size=\"40\" maxlength=\"100\" value=\"");
+      out.write("</td>\n            <td width=\"75%\" align=\"left\"><input type=\"text\" name=\"recaptchapublickey\" size=\"40\" maxlength=\"100\" value=\"");
       out.print( (reCaptchaPublicKey != null ? reCaptchaPublicKey : "") );
-      out.write("\"/></td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\" align=\"center\" nowrap>&nbsp;</td>\r\n            <td width=\"24%\" align=\"left\">");
+      out.write("\"/></td>\n        </tr>\n        <tr>\n            <td width=\"1%\" align=\"center\" nowrap>&nbsp;</td>\n            <td width=\"24%\" align=\"left\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td width=\"75%\" align=\"left\"><input type=\"text\" name=\"recaptchaprivatekey\" size=\"40\" maxlength=\"100\" value=\"");
+      out.write("</td>\n            <td width=\"75%\" align=\"left\"><input type=\"text\" name=\"recaptchaprivatekey\" size=\"40\" maxlength=\"100\" value=\"");
       out.print( (reCaptchaPrivateKey != null ? reCaptchaPrivateKey : "") );
-      out.write("\"/></td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    <br>\r\n    <input type=\"submit\" value=\"");
+      out.write("\"/></td>\n        </tr>\n    </tbody>\n    </table>\n    <br>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\"/>\r\n</div>\r\n\r\n<br>\r\n\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\"/>\n</div>\n\n<br>\n\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</p>\r\n   \r\n    ");
+      out.write("</p>\n   \n    ");
  if (ParamUtils.getBooleanParameter(request, "deleteSuccess")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } else if (ParamUtils.getBooleanParameter(request, "addSuccess")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } else if (errors.containsKey("missingContact")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } else if (errors.containsKey("remoteContact")) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n\r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n\n    ");
  } else if (errors.containsKey("userNotFound")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } else if (errors.containsKey("invalidAddress")) { 
-      out.write("\r\n   \r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n   \n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    <div>\r\n    <label for=\"contacttf\">");
+      out.write("\n   \n    <div>\n    <label for=\"contacttf\">");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write(":</label> \r\n    <input type=\"text\" name=\"contactIM\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write(":</label> \n    <input type=\"text\" name=\"contactIM\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (contactIM != null ? contactIM : "") );
-      out.write("\" id=\"contacttf\"/> \r\n    <input type=\"submit\" value=\"");
+      out.write("\" id=\"contacttf\"/> \n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\" onclick=\"return addIMContact();\"/>\r\n   \r\n    <br><br>\r\n   \r\n    <div class=\"jive-table\" style=\"width:400px;\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <thead>\r\n        <tr>\r\n            <th width=\"99%\">");
+      out.write("\" onclick=\"return addIMContact();\"/>\n   \n    <br><br>\n   \n    <div class=\"jive-table\" style=\"width:400px;\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <thead>\n        <tr>\n            <th width=\"99%\">");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th width=\"1%\" nowrap>");
+      out.write("</th>\n            <th width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n    ");
+      out.write("</th>\n        </tr>\n    </thead>\n    <tbody>\n    ");
  if (plugin.getIMContacts().size() == 0) { 
-      out.write("\r\n   \r\n    <tr>\r\n        <td width=\"100%\" colspan=\"2\" align=\"center\" nowrap>");
+      out.write("\n   \n    <tr>\n        <td width=\"100%\" colspan=\"2\" align=\"center\" nowrap>");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n   \r\n    ");
+      out.write("</td>\n    </tr>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    ");
+      out.write("\n   \n    ");
  for (String imContact : plugin.getIMContacts()) { 
-      out.write("\r\n   \r\n    <tr>\r\n        <td width=\"99%\">");
+      out.write("\n   \n    <tr>\n        <td width=\"99%\">");
       out.print(imContact );
-      out.write("</td>\r\n        <td width=\"1%\" align=\"center\"><a\r\n                       href=\"registration-props-form.jsp?deleteIM=true&contactIM=");
+      out.write("</td>\n        <td width=\"1%\" align=\"center\"><a\n                       href=\"registration-props-form.jsp?deleteIM=true&contactIM=");
       out.print(imContact );
-      out.write("\"\r\n                       title=\"Delete Contact?\"\r\n                       onclick=\"return confirm('Are you sure you want to delete this contact?');\"><img\r\n                       src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\r\n                       border=\"0\"></a>\r\n        </td>\r\n    </tr>\r\n   \r\n    ");
+      out.write("\"\n                       title=\"Delete Contact?\"\n                       onclick=\"return confirm('Are you sure you want to delete this contact?');\"><img\n                       src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\n                       border=\"0\"></a>\n        </td>\n    </tr>\n   \n    ");
  } 
-      out.write("\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    </div>\r\n   \r\n    <div>\r\n    <label for=\"emailtf\">");
+      out.write("\n    </tbody>\n    </table>\n    </div>\n    </div>\n   \n    <div>\n    <label for=\"emailtf\">");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write(":</label>\r\n    <input type=\"text\" name=\"contactEmail\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write(":</label>\n    <input type=\"text\" name=\"contactEmail\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (contactEmail != null ? contactEmail : "") );
-      out.write("\" id=\"emailtf\"/>\r\n    <input type=\"submit\" value=\"");
+      out.write("\" id=\"emailtf\"/>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("\" onclick=\"return addEmailContact();\"/>\r\n   \r\n    <br><br>\r\n   \r\n    <div class=\"jive-table\" style=\"width:400px;\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <thead>\r\n        <tr>\r\n            <th width=\"99%\">");
+      out.write("\" onclick=\"return addEmailContact();\"/>\n   \n    <br><br>\n   \n    <div class=\"jive-table\" style=\"width:400px;\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <thead>\n        <tr>\n            <th width=\"99%\">");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th width=\"1%\" nowrap>");
+      out.write("</th>\n            <th width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n    ");
+      out.write("</th>\n        </tr>\n    </thead>\n    <tbody>\n    ");
  if (plugin.getEmailContacts().size() == 0) { 
-      out.write("\r\n   \r\n    <tr>\r\n        <td width=\"100%\" colspan=\"2\" align=\"center\" nowrap>");
+      out.write("\n   \n    <tr>\n        <td width=\"100%\" colspan=\"2\" align=\"center\" nowrap>");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n   \r\n    ");
+      out.write("</td>\n    </tr>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    ");
+      out.write("\n   \n    ");
  for (String emailContact : plugin.getEmailContacts()) { 
-      out.write("\r\n   \r\n    <tr>\r\n        <td width=\"99%\">");
+      out.write("\n   \n    <tr>\n        <td width=\"99%\">");
       out.print(emailContact );
-      out.write("</td>\r\n        <td width=\"1%\" align=\"center\"><a\r\n                       href=\"registration-props-form.jsp?deleteEmail=true&contactEmail=");
+      out.write("</td>\n        <td width=\"1%\" align=\"center\"><a\n                       href=\"registration-props-form.jsp?deleteEmail=true&contactEmail=");
       out.print(emailContact );
-      out.write("\"\r\n                       title=\"Delete Contact?\"\r\n                       onclick=\"return confirm('Are you sure you want to delete this contact?');\"><img\r\n                       src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\r\n                       border=\"0\"></a>\r\n        </td>\r\n    </tr>\r\n   \r\n    ");
+      out.write("\"\n                       title=\"Delete Contact?\"\n                       onclick=\"return confirm('Are you sure you want to delete this contact?');\"><img\n                       src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\"\n                       border=\"0\"></a>\n        </td>\n    </tr>\n   \n    ");
  } 
-      out.write("\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    </div>\r\n</div>\r\n</form>\r\n\r\n<br>\r\n\r\n<form action=\"registration-props-form.jsp?savemessage=true\" method=\"post\">\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\n    </tbody>\n    </table>\n    </div>\n    </div>\n</div>\n</form>\n\n<br>\n\n<form action=\"registration-props-form.jsp?savemessage=true\" method=\"post\">\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("</p>\r\n   \r\n    ");
+      out.write("</p>\n   \n    ");
  if (ParamUtils.getBooleanParameter(request, "welcomeSaved")) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td width=\"5%\" valign=\"top\">Message:&nbsp;</td>\r\n            <td width=\"95%\"><textarea cols=\"45\" rows=\"5\" wrap=\"virtual\" name=\"welcomemessage\">");
+      out.write("\n   \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td width=\"5%\" valign=\"top\">Message:&nbsp;</td>\n            <td width=\"95%\"><textarea cols=\"45\" rows=\"5\" wrap=\"virtual\" name=\"welcomemessage\">");
       out.print( welcomeMessage );
-      out.write("</textarea></td>\r\n            ");
+      out.write("</textarea></td>\n            ");
  if (errors.containsKey("missingWelcomeMessage")) { 
-      out.write("\r\n            <span class=\"jive-error-text\"><br>");
+      out.write("\n            <span class=\"jive-error-text\"><br>");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } 
-      out.write("            \r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    \r\n    <br>\r\n    <input type=\"submit\" value=\"");
+      out.write("            \n        </tr>\n    </tbody>\n    </table>\n    \n    <br>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
-      out.write("\"/>\r\n    </div>\r\n</form>\r\n\r\n<br>\r\n\r\n<form action=\"registration-props-form.jsp?savegroup=true\" method=\"post\">\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\"/>\n    </div>\n</form>\n\n<br>\n\n<form action=\"registration-props-form.jsp?savegroup=true\" method=\"post\">\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
-      out.write("</p>\r\n   \r\n    ");
+      out.write("</p>\n   \n    ");
  if (ParamUtils.getBooleanParameter(request, "groupSaved")) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td>Default Group:&nbsp;<input type=\"text\" name=\"groupname\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write("\n\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td>Default Group:&nbsp;<input type=\"text\" name=\"groupname\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (group != null ? group : "") );
-      out.write("\"/>\r\n            ");
+      out.write("\"/>\n            ");
  if (errors.containsKey("groupNotFound")) { 
-      out.write(" \r\n            <span class=\"jive-error-text\"><br>");
+      out.write(" \n            <span class=\"jive-error-text\"><br>");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } 
-      out.write("\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    \r\n   <br>\r\n    <input type=\"submit\" value=\"");
+      out.write("\n        </tr>\n    </tbody>\n    </table>\n    \n   <br>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_43(_jspx_page_context))
         return;
-      out.write("\"/>\r\n    </div>\r\n</form>\r\n\r\n<br>\r\n\r\n<form action=\"registration-props-form.jsp?saveheader=true\" method=\"post\">\r\n<div class=\"jive-contentBoxHeader\">");
+      out.write("\"/>\n    </div>\n</form>\n\n<br>\n\n<form action=\"registration-props-form.jsp?saveheader=true\" method=\"post\">\n<div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_44(_jspx_page_context))
         return;
-      out.write("</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>");
+      out.write("</div>\n<div class=\"jive-contentBox\">\n    <p>");
       if (_jspx_meth_fmt_message_45(_jspx_page_context))
         return;
-      out.write("</p>\r\n   \r\n    ");
+      out.write("</p>\n   \n    ");
  if (ParamUtils.getBooleanParameter(request, "headerSaved")) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n            <td class=\"jive-icon-label\">");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n            <td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_46(_jspx_page_context))
         return;
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n   \r\n    ");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n   \n    ");
  } 
-      out.write("\r\n   \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td>Header Text:&nbsp;<input type=\"text\" name=\"header\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write("\n   \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td>Header Text:&nbsp;<input type=\"text\" name=\"header\" size=\"30\" maxlength=\"100\" value=\"");
       out.print(header );
-      out.write("\"/></td>\r\n            ");
+      out.write("\"/></td>\n            ");
  if (errors.containsKey("missingHeader")) { 
-      out.write("\r\n            <span class=\"jive-error-text\"><br>");
+      out.write("\n            <span class=\"jive-error-text\"><br>");
       if (_jspx_meth_fmt_message_47(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } 
-      out.write("\r\n         </tr>\r\n    </tbody>\r\n    </table>\r\n    \r\n    <br>\r\n    <input type=\"submit\" value=\"");
+      out.write("\n         </tr>\n    </tbody>\n    </table>\n    \n    <br>\n    <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_48(_jspx_page_context))
         return;
-      out.write("\"/>\r\n    </div>\r\n</form>\r\n\r\n</body>\r\n</html>");
+      out.write("\"/>\n    </div>\n</form>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

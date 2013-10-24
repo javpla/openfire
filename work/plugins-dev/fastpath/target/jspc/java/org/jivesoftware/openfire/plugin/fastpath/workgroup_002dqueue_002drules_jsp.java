@@ -43,14 +43,16 @@ public final class workgroup_002dqueue_002drules_jsp extends org.apache.jasper.r
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     final boolean addsuccess = ParamUtils.getParameter(request, "addsuccess") != null;
     final boolean deletesuccess = ParamUtils.getParameter(request, "deletesuccess") != null;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters //
     String wgID = ParamUtils.getParameter(request, "wgID");
     long   queueID = ParamUtils.getLongParameter(request, "qID", -1L);
@@ -88,26 +90,25 @@ public final class workgroup_002dqueue_002drules_jsp extends org.apache.jasper.r
     }
     DbProperties props = queue.getProperties();
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>Add Queue Rules</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-queues\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("\n<html>\n    <head>\n        <title>Add Queue Rules</title>\n        <meta name=\"subPageID\" content=\"workgroup-queues\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n    </head>\r\n    <body>\r\n        <p>Below is a list of routing rules for this queue. Use the form below to add new rules. Routing rules are\r\n        keyed off of incoming call request meta data. So, if you have a rule name and value of &quot;foo&quot; and\r\n        &quot;bar&quot; then this rule would match if there is an incoming meta data name of &quot;foo&quot; with the\r\n        value &quot;bar&quot;.</p>\r\n       ");
+      out.write("\"/>\n    </head>\n    <body>\n        <p>Below is a list of routing rules for this queue. Use the form below to add new rules. Routing rules are\n        keyed off of incoming call request meta data. So, if you have a rule name and value of &quot;foo&quot; and\n        &quot;bar&quot; then this rule would match if there is an incoming meta data name of &quot;foo&quot; with the\n        value &quot;bar&quot;.</p>\n       ");
  if (addsuccess) { 
-      out.write("\r\n            <div class=\"jive-success\">\r\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td class=\"jive-icon\">\r\n                                <img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/>\r\n                            </td>\r\n                            <td class=\"jive-icon-label\">Rule has been added.</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        ");
+      out.write("\n            <div class=\"jive-success\">\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                    <tbody>\n                        <tr>\n                            <td class=\"jive-icon\">\n                                <img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/>\n                            </td>\n                            <td class=\"jive-icon-label\">Rule has been added.</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ");
  } 
-      out.write("\r\n        ");
+      out.write("\n        ");
  if(deletesuccess) { 
-      out.write("\r\n            <div class=\"jive-success\">\r\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td class=\"jive-icon\">\r\n                                <img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/>\r\n                            </td>\r\n                            <td class=\"jive-icon-label\">Rule has been deleted.</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n            ");
+      out.write("\n            <div class=\"jive-success\">\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                    <tbody>\n                        <tr>\n                            <td class=\"jive-icon\">\n                                <img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/>\n                            </td>\n                            <td class=\"jive-icon-label\">Rule has been deleted.</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n            ");
  } 
-      out.write("\r\n    <br/>\r\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n        <tr>\r\n            <th>&nbsp;</th> <th>Name</th> <th>Value</th> <th>Delete</th>\r\n        </tr>\r\n");
+      out.write("\n    <br/>\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n        <tr>\n            <th>&nbsp;</th> <th>Name</th> <th>Value</th> <th>Delete</th>\n        </tr>\n");
 
         Collection<String> propertyKeys = props.getPropertyNames();
         if (propertyKeys.isEmpty()) {
 
-      out.write("\r\n            <tr>\r\n                <td colspan=\"4\" align=\"center\">\r\n                    <br/>\r\n                    <i>No rules set</i>\r\n                    <br/>\r\n                    <br/>\r\n                </td>\r\n            </tr>\r\n");
+      out.write("\n            <tr>\n                <td colspan=\"4\" align=\"center\">\n                    <br/>\n                    <i>No rules set</i>\n                    <br/>\n                    <br/>\n                </td>\n            </tr>\n");
 
         }
 
-      out.write('\r');
       out.write('\n');
 
         int counter = 0;
@@ -115,49 +116,49 @@ public final class workgroup_002dqueue_002drules_jsp extends org.apache.jasper.r
             counter++;
             String val = props.getProperty(key);
 
-      out.write("\r\n            <tr class=\"jive-");
+      out.write("\n            <tr class=\"jive-");
       out.print( (((counter % 2) == 0) ? "even" : "odd") );
-      out.write("\">\r\n                <td width=\"1%\" nowrap>\r\n                    ");
+      out.write("\">\n                <td width=\"1%\" nowrap>\n                    ");
       out.print( (counter) );
-      out.write(".\r\n                </td>\r\n                <td width=\"49%\">\r\n                    ");
+      out.write(".\n                </td>\n                <td width=\"49%\">\n                    ");
       out.print( StringUtils.escapeHTMLTags(key) );
-      out.write("\r\n                </td>\r\n                <td width=\"49%\">\r\n                    ");
+      out.write("\n                </td>\n                <td width=\"49%\">\n                    ");
       out.print( StringUtils.escapeHTMLTags(val) );
-      out.write("\r\n                </td>\r\n                <td width=\"1%\" nowrap align=\"center\">\r\n                    <a href=\"workgroup-queue-rules.jsp?wgID=");
+      out.write("\n                </td>\n                <td width=\"1%\" nowrap align=\"center\">\n                    <a href=\"workgroup-queue-rules.jsp?wgID=");
       out.print( wgID );
       out.write("&qID=");
       out.print( queueID );
       out.write("&delete=true&name=");
       out.print( key );
-      out.write("\">\r\n                    <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/> </a>\r\n                </td>\r\n            </tr>\r\n");
+      out.write("\">\n                    <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"/> </a>\n                </td>\n            </tr>\n");
 
         }
 
-      out.write("\r\n    </table>\r\n          <p>\r\n              <b>Add New Rule</b>\r\n          </p>\r\n    <form action=\"workgroup-queue-rules.jsp\" method=\"post\">\r\n        <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n    </table>\n          <p>\n              <b>Add New Rule</b>\n          </p>\n    <form action=\"workgroup-queue-rules.jsp\" method=\"post\">\n        <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\"/>\r\n        <input type=\"hidden\" name=\"qID\" value=\"");
+      out.write("\"/>\n        <input type=\"hidden\" name=\"qID\" value=\"");
       out.print( queueID );
-      out.write("\"/>\r\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n            <tr>\r\n                <td class=\"c1\">Name: *\r\n");
+      out.write("\"/>\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n            <tr>\n                <td class=\"c1\">Name: *\n");
 
                     if (errors.get("name") != null) {
 
-      out.write("\r\n                        <span class=\"jive-error-text\">\r\n                        <br/>Please enter a valid rule name. </span>\r\n");
+      out.write("\n                        <span class=\"jive-error-text\">\n                        <br/>Please enter a valid rule name. </span>\n");
 
                     }
 
-      out.write("\r\n                </td>\r\n                <td class=\"c2\">\r\n                    <input type=\"text\" name=\"name\" size=\"30\" value=\"");
+      out.write("\n                </td>\n                <td class=\"c2\">\n                    <input type=\"text\" name=\"name\" size=\"30\" value=\"");
       out.print( ((name != null) ? name : "") );
-      out.write("\"/>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"c1\">Value: *\r\n");
+      out.write("\"/>\n                </td>\n            </tr>\n            <tr>\n                <td class=\"c1\">Value: *\n");
 
                     if (errors.get("value") != null) {
 
-      out.write("\r\n                        <span class=\"jive-error-text\">\r\n                        <br/>Please enter a valid value for this rule. </span>\r\n");
+      out.write("\n                        <span class=\"jive-error-text\">\n                        <br/>Please enter a valid value for this rule. </span>\n");
 
                     }
 
-      out.write("\r\n                </td>\r\n                <td class=\"c2\">\r\n                    <input type=\"text\" name=\"value\" size=\"30\" value=\"");
+      out.write("\n                </td>\n                <td class=\"c2\">\n                    <input type=\"text\" name=\"value\" size=\"30\" value=\"");
       out.print( ((value != null) ? value : "") );
-      out.write("\"/>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n            <p>* Required fields</p>\r\n        <input type=\"submit\" name=\"add\" value=\"Add Rule\"/>\r\n    </form>\r\n    </body>\r\n</html>\r\n");
+      out.write("\"/>\n                </td>\n            </tr>\n        </table>\n            <p>* Required fields</p>\n        <input type=\"submit\" name=\"add\" value=\"Add Rule\"/>\n    </form>\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

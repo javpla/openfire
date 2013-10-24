@@ -57,7 +57,7 @@ public final class server_002dlocale_jsp extends org.apache.jasper.runtime.HttpJ
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -66,10 +66,10 @@ public final class server_002dlocale_jsp extends org.apache.jasper.runtime.HttpJ
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     String localeCode = ParamUtils.getParameter(request,"localeCode");
     String timeZoneID = ParamUtils.getParameter(request,"timeZoneID");
@@ -111,23 +111,23 @@ public final class server_002dlocale_jsp extends org.apache.jasper.runtime.HttpJ
     // Get the current time zone.
     TimeZone timeZone = JiveGlobals.getTimeZone();
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-locale\"/>\r\n        <meta name=\"helpPage\" content=\"edit_server_properties.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-locale\"/>\n        <meta name=\"helpPage\" content=\"edit_server_properties.html\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n\r\n<!-- BEGIN locale settings -->\r\n<form action=\"server-locale.jsp\" method=\"post\" name=\"sform\">\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n</p>\n\n\n<!-- BEGIN locale settings -->\n<form action=\"server-locale.jsp\" method=\"post\" name=\"sform\">\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<p>\r\n        <b>");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<p>\n        <b>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(":</b> ");
       out.print( locale.getDisplayName(locale) );
-      out.write(" /\r\n            ");
+      out.write(" /\n            ");
       out.print( LocaleUtils.getTimeZoneName(JiveGlobals.getTimeZone().getID(), locale) );
-      out.write("\r\n        </p>\r\n\r\n        ");
+      out.write("\n        </p>\n\n        ");
   boolean usingPreset = false;
             Locale[] locales = Locale.getAvailableLocales();
             for (Locale locale1 : locales) {
@@ -137,53 +137,53 @@ public final class server_002dlocale_jsp extends org.apache.jasper.runtime.HttpJ
                 }
             }
         
-      out.write("\r\n\r\n        <p><b>");
+      out.write("\n\n        <p><b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write(":</b></p>\r\n\r\n        <table cellspacing=\"0\" cellpadding=\"3\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"cs_CZ\" ");
+      out.write(":</b></p>\n\n        <table cellspacing=\"0\" cellpadding=\"3\" border=\"0\">\n        <tbody>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"cs_CZ\" ");
       out.print( ("cs_CZ".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc01\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc01\">Czech (cs_CZ)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"de\" ");
+      out.write("\n                     id=\"loc01\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc01\">Czech (cs_CZ)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"de\" ");
       out.print( ("de".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc02\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc02\">Deutsch (de)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"en\" ");
+      out.write("\n                     id=\"loc02\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc02\">Deutsch (de)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"en\" ");
       out.print( ("en".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc03\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc03\">English (en)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"es\" ");
+      out.write("\n                     id=\"loc03\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc03\">English (en)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"es\" ");
       out.print( ("es".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc04\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc04\">Espa&ntilde;ol (es)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"fr\" ");
+      out.write("\n                     id=\"loc04\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc04\">Espa&ntilde;ol (es)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"fr\" ");
       out.print( ("fr".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc05\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc05\">Fran&ccedil;ais (fr)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"nl\" ");
+      out.write("\n                     id=\"loc05\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc05\">Fran&ccedil;ais (fr)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"nl\" ");
       out.print( ("nl".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc06\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc06\">Nederlands (nl)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"pl_PL\" ");
+      out.write("\n                     id=\"loc06\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc06\">Nederlands (nl)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"pl_PL\" ");
       out.print( ("pl_PL".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc07\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc07\">Polski (pl_PL)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"pt_BR\" ");
+      out.write("\n                     id=\"loc07\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc07\">Polski (pl_PL)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"pt_BR\" ");
       out.print( ("pt_BR".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc08\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc08\">Portugu&ecirc;s Brasileiro (pt_BR)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"ru_RU\" ");
+      out.write("\n                     id=\"loc08\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc08\">Portugu&ecirc;s Brasileiro (pt_BR)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"ru_RU\" ");
       out.print( ("ru_RU".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc09\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc09\">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439; (ru_RU)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"sk\" ");
+      out.write("\n                     id=\"loc09\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc09\">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439; (ru_RU)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"sk\" ");
       out.print( ("sk".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc10\" />\r\n                </td>\r\n                <td colspan=\"2\">\r\n                    <label for=\"loc10\">Sloven&#269;ina (sk)</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"radio\" name=\"localeCode\" value=\"zh_CN\" ");
+      out.write("\n                     id=\"loc10\" />\n                </td>\n                <td colspan=\"2\">\n                    <label for=\"loc10\">Sloven&#269;ina (sk)</label>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"radio\" name=\"localeCode\" value=\"zh_CN\" ");
       out.print( ("zh_CN".equals(locale.toString()) ? "checked" : "") );
-      out.write("\r\n                     id=\"loc11\" />\r\n                </td>\r\n                <td>\r\n                    <a href=\"#\" onclick=\"document.sform.localeCode[1].checked=true; return false;\"><img src=\"images/language_zh_CN.gif\" border=\"0\" alt=\"\" /></a>\r\n                </td>\r\n                <td>\r\n                    <label for=\"loc11\">Simplified Chinese (zh_CN)</label>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n        </table>\r\n\r\n        <br>\r\n\r\n        <p><b>");
+      out.write("\n                     id=\"loc11\" />\n                </td>\n                <td>\n                    <a href=\"#\" onclick=\"document.sform.localeCode[1].checked=true; return false;\"><img src=\"images/language_zh_CN.gif\" border=\"0\" alt=\"\" /></a>\n                </td>\n                <td>\n                    <label for=\"loc11\">Simplified Chinese (zh_CN)</label>\n                </td>\n            </tr>\n        </tbody>\n        </table>\n\n        <br>\n\n        <p><b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":</b></p>\r\n\r\n        <select size=\"1\" name=\"timeZoneID\">\r\n        ");
+      out.write(":</b></p>\n\n        <select size=\"1\" name=\"timeZoneID\">\n        ");
  for (String[] timeZone1 : timeZones) {
             String selected = "";
             if (timeZone.getID().equals(timeZone1[0].trim())) {
                 selected = " selected";
             }
         
-      out.write("\r\n            <option value=\"");
+      out.write("\n            <option value=\"");
       out.print( timeZone1[0] );
       out.write('"');
       out.print( selected );
       out.write('>');
       out.print( timeZone1[1] );
-      out.write("\r\n                ");
+      out.write("\n                ");
   } 
-      out.write("\r\n        </select>\r\n\t</div>\r\n<input type=\"submit\" name=\"save\" value=\"");
+      out.write("\n        </select>\n\t</div>\n<input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END locale settings -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n<!-- END locale settings -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -49,7 +49,7 @@ public final class gojara_002dRegistrationsOverview_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	TransportSessionManager transportManager = TransportSessionManager.getInstance();
 	GojaraAdminManager gojaraAdminManager = GojaraAdminManager.getInstance();
@@ -65,7 +65,7 @@ public final class gojara_002dRegistrationsOverview_jsp extends org.apache.jaspe
 		sortParams.put("sortorder", "ASC");
 	}
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>Overview of existing Registrations</title>\r\n<meta name=\"pageID\" content=\"gojaraRegistrationAdministration\" />\r\n</head>\r\n<body>\r\n\t<div align=\"center\">\r\n\t<ul style=\"list-style: none;padding:0;margin:0;\">\r\n\t");
+      out.write("\n\n<html>\n<head>\n<title>Overview of existing Registrations</title>\n<meta name=\"pageID\" content=\"gojaraRegistrationAdministration\" />\n</head>\n<body>\n\t<div align=\"center\">\n\t<ul style=\"list-style: none;padding:0;margin:0;\">\n\t");
 
 		//do unregisters if supplied, we do them here because we generate output that should be displayed
 		if (request.getParameterMap() != null) {
@@ -77,23 +77,23 @@ public final class gojara_002dRegistrationsOverview_jsp extends org.apache.jaspe
 				String[] uservalues = request.getParameterValues(key.toString());
 				for (String transport : uservalues) {
 	
-      out.write("\r\n\t<li>");
+      out.write("\n\t<li>");
       out.print(transportManager.removeRegistrationOfUser(transport, key.toString()));
-      out.write("</li>\r\n\t");
+      out.write("</li>\n\t");
 
 		}
 			}
 		}
 	
-      out.write("\r\n\t</ul>\r\n\t</div>\r\n\r\n\r\n\t<div align=\"center\">\r\n\t");
+      out.write("\n\t</ul>\n\t</div>\n\n\n\t<div align=\"center\">\n\t");
  if (!gojaraAdminManager.areGatewaysConfigured()) {
-      out.write("\r\n\t\t<h2><a href=\"gojara-gatewayStatistics.jsp\">Warning: Not all Gateways are configured for admin usage. This means unregistrations will not be properly executed.<br/>\r\n\t\t Please configure admin_jid = gojaraadmin@");
+      out.write("\n\t\t<h2><a href=\"gojara-gatewayStatistics.jsp\">Warning: Not all Gateways are configured for admin usage. This means unregistrations will not be properly executed.<br/>\n\t\t Please configure admin_jid = gojaraadmin@");
       out.print( XMPPServer.getInstance().getServerInfo().getXMPPDomain() );
-      out.write("  in Spectrum2 transport configuration.</a></h2>\r\n\t ");
+      out.write("  in Spectrum2 transport configuration.</a></h2>\n\t ");
  } 
-      out.write("\r\n\t\t<h5>Logintime 1970 means User did register but never logged in,\r\n\t\t\tpropably because of invalid credentials.</h5>\r\n\t\t\t<br>\r\n\t\t\t<br>\r\n\t\tRegistrations total: <b style=\"font-size:150%\">");
+      out.write("\n\t\t<h5>Logintime 1970 means User did register but never logged in,\n\t\t\tpropably because of invalid credentials.</h5>\n\t\t\t<br>\n\t\t\t<br>\n\t\tRegistrations total: <b style=\"font-size:150%\">");
       out.print(transportManager.getNumberOfRegistrations());
-      out.write("</b><br>\r\n\t</div>\r\n\t<br>\r\n\t");
+      out.write("</b><br>\n\t</div>\n\t<br>\n\t");
 
 		//pagination logic
 		//get all records, we limit these later. Not all databes support limiting queries so we need to do it the bad way
@@ -122,41 +122,45 @@ public final class gojara_002dRegistrationsOverview_jsp extends org.apache.jaspe
 		if (next_items > numOfSessions)
 			next_items = numOfSessions;
 	
-      out.write("\r\n\t<p>\r\n\t\t<br> Pages: [\r\n\t\t");
+      out.write("\n\t<p>\n\t\t<br> Pages: [\n\t\t");
 
 			for (int i = 1; i <= numOfPages; i++) {
 		
-      out.write("\r\n\t\t");
+      out.write('\n');
+      out.write('	');
+      out.write('	');
       out.print("<a href=\"gojara-RegistrationsOverview.jsp?page=" + i + "&sortby=" + sortParams.get("sortby") + "&sortorder="
 						+ sortParams.get("sortorder") + "\" class=\"" + (current_page  == i ? "jive-current" : "") + "\">" + i
 						+ "</a>" );
-      out.write("\r\n\t\t");
+      out.write('\n');
+      out.write('	');
+      out.write('	');
 
 			}
 		
-      out.write("\r\n\t\t]\r\n\t</p>\r\n\t<form name=\"unregister-form\" id=\"gojara-RegOverviewUnregister\"\r\n\t\tmethod=\"POST\">\r\n\t\t<div class=\"jive-table\">\r\n\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<thead>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<th nowrap>#</th>\r\n\t\t\t\t\t\t<th nowrap>");
+      out.write("\n\t\t]\n\t</p>\n\t<form name=\"unregister-form\" id=\"gojara-RegOverviewUnregister\"\n\t\tmethod=\"POST\">\n\t\t<div class=\"jive-table\">\n\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th nowrap>#</th>\n\t\t\t\t\t\t<th nowrap>");
       out.print(JspHelper.sortingHelperRegistrations("username", sortParams));
-      out.write("</th>\r\n\t\t\t\t\t\t<th nowrap>");
+      out.write("</th>\n\t\t\t\t\t\t<th nowrap>");
       out.print(JspHelper.sortingHelperRegistrations("transport", sortParams));
-      out.write("</th>\r\n\t\t\t\t\t\t<th nowrap>Active?</th>\r\n\t\t\t\t\t\t<th nowrap>Admin Configured?</th>\r\n\t\t\t\t\t\t<th nowrap>");
+      out.write("</th>\n\t\t\t\t\t\t<th nowrap>Active?</th>\n\t\t\t\t\t\t<th nowrap>Admin Configured?</th>\n\t\t\t\t\t\t<th nowrap>");
       out.print(JspHelper.sortingHelperRegistrations("lastActivity", sortParams));
-      out.write("</th>\r\n\t\t\t\t\t\t<th nowrap>Unregister?</th>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</thead>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t");
+      out.write("</th>\n\t\t\t\t\t\t<th nowrap>Unregister?</th>\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t\t");
 	
 						int show_number = 1 + current_index;
 						for (SessionEntry registration : registrations.subList(current_index, next_items)) {
 					
-      out.write("\r\n\t\t\t\t\t<tr class=\"jive-odd\">\r\n\t\t\t\t\t\t<td>");
+      out.write("\n\t\t\t\t\t<tr class=\"jive-odd\">\n\t\t\t\t\t\t<td>");
       out.print( show_number);
-      out.write("</td>\r\n\t\t\t\t\t\t<td><a\r\n\t\t\t\t\t\t\thref=\"gojara-sessionDetails.jsp?username=");
+      out.write("</td>\n\t\t\t\t\t\t<td><a\n\t\t\t\t\t\t\thref=\"gojara-sessionDetails.jsp?username=");
       out.print(registration.getUsername());
-      out.write("\"\r\n\t\t\t\t\t\t\ttitle=\"Session Details for ");
+      out.write("\"\n\t\t\t\t\t\t\ttitle=\"Session Details for ");
       out.print(registration.getUsername());
       out.write('"');
       out.write('>');
       out.print(registration.getUsername());
-      out.write("</a></td>\r\n\t\t\t\t\t\t<td>");
+      out.write("</a></td>\n\t\t\t\t\t\t<td>");
       out.print(registration.getTransport());
-      out.write("</td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t");
+      out.write("</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t");
 
 								if (transportManager.isTransportActive(registration.getTransport())) {
 							
@@ -168,39 +172,39 @@ public final class gojara_002dRegistrationsOverview_jsp extends org.apache.jaspe
 
 							 	}
 							 
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t");
  if (gojaraAdminManager.isGatewayConfigured(registration.getTransport())) { 
-      out.write("\r\n\t\t\t\t\t\t<img alt=\"Yes\" src=\"/images/success-16x16.gif\"> \r\n\t\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t<img alt=\"Yes\" src=\"/images/success-16x16.gif\"> \n\t\t\t\t\t\t");
  	} else { 
-      out.write("\r\n\t\t\t\t\t\t <img alt=\"No\" src=\"/images/error-16x16.gif\" title=\"Sending unregister to unconfigured transport will result in NOT UNREGISTERING the registration.\">\r\n\t\t\t\t\t\t  ");
+      out.write("\n\t\t\t\t\t\t <img alt=\"No\" src=\"/images/error-16x16.gif\" title=\"Sending unregister to unconfigured transport will result in NOT UNREGISTERING the registration.\">\n\t\t\t\t\t\t  ");
  }
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<td\r\n\t\t\t\t\t\t\ttitle=\"");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td\n\t\t\t\t\t\t\ttitle=\"");
       out.print(JspHelper.dateDifferenceHelper(registration.getLast_activityAsDate()));
       out.write('"');
       out.write('>');
       out.print(registration.getLast_activityAsDate());
-      out.write("</td>\r\n\t\t\t\t\t\t<td><input type=\"checkbox\"\r\n\t\t\t\t\t\t\tname=\"");
+      out.write("</td>\n\t\t\t\t\t\t<td><input type=\"checkbox\"\n\t\t\t\t\t\t\tname=\"");
       out.print(registration.getUsername());
-      out.write("\"\r\n\t\t\t\t\t\t\tvalue=\"");
+      out.write("\"\n\t\t\t\t\t\t\tvalue=\"");
       out.print(registration.getTransport());
-      out.write("\"></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t");
+      out.write("\"></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t");
 
 						show_number++;
 						}
 					
-      out.write("\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\t\t<p>\r\n\t\t\tPages: [\r\n\t\t\t");
+      out.write("\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t</div>\n\t\t<p>\n\t\t\tPages: [\n\t\t\t");
 
 			for (int i = 1; i <= numOfPages; i++) {
 		
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
       out.print("<a href=\"gojara-RegistrationsOverview.jsp?page=" + i + "&sortby=" + sortParams.get("sortby") + "&sortorder="
 						+ sortParams.get("sortorder") + "\" class=\"" + (current_page == i ? "jive-current" : "") + "\">" + i
 						+ "</a>");
-      out.write("\r\n\t\t\t");
+      out.write("\n\t\t\t");
 
 				}
 			
-      out.write("\r\n\t\t\t]\r\n\t\t</p>\r\n\t\t<br>\r\n\t\t<div align=\"center\">\r\n\t\t\t<input type=\"submit\" value=\"Unregister\">\r\n\t\t</div>\r\n\t</form>\r\n</body>\r\n</html>");
+      out.write("\n\t\t\t]\n\t\t</p>\n\t\t<br>\n\t\t<div align=\"center\">\n\t\t\t<input type=\"submit\" value=\"Unregister\">\n\t\t</div>\n\t</form>\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -66,7 +66,7 @@ public final class setup_002dadmin_002dsettings_jsp extends org.apache.jasper.ru
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -74,8 +74,10 @@ public final class setup_002dadmin_002dsettings_jsp extends org.apache.jasper.ru
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters
     String username = ParamUtils.getParameter(request, "username");
@@ -230,38 +232,38 @@ public final class setup_002dadmin_002dsettings_jsp extends org.apache.jasper.ru
     session.setAttribute("xmppSettings", xmppSettings);
 
 
-      out.write("\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"currentStep\" content=\"4\"/>\r\n</head>\r\n<body>\r\n\r\n\r\n\t<h1>\r\n\t");
+      out.write("</title>\n    <meta name=\"currentStep\" content=\"4\"/>\n</head>\n<body>\n\n\n\t<h1>\n\t");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n\t</h1>\r\n\r\n");
+      out.write("\n\t</h1>\n\n");
  if(!ldap){ 
-      out.write("\r\n    <p>\r\n\t");
+      out.write("\n    <p>\n\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n\t</p>\r\n\r\n");
+      out.write("\n\t</p>\n\n");
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"error\">\r\n    ");
+      out.write("\n\n    <div class=\"error\">\n    ");
   if (errors.get("general") != null) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       out.print( errors.get("general") );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } else if (errors.get("administrator") != null) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } else { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    </div>\r\n\r\n");
+      out.write("\n    </div>\n\n");
   } 
-      out.write("\r\n\r\n\r\n\t<!-- BEGIN jive-contentBox -->\r\n\t<div class=\"jive-contentBox\">\r\n\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nvar clicked = false;\r\nfunction checkClick() {\r\n    if (!clicked) {\r\n        clicked = true;\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n</script>\r\n\r\n<form action=\"setup-admin-settings.jsp\" name=\"acctform\" method=\"post\" onsubmit=\"return checkClick();\">\r\n\r\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n\r\n");
+      out.write("\n\n\n\t<!-- BEGIN jive-contentBox -->\n\t<div class=\"jive-contentBox\">\n\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar clicked = false;\nfunction checkClick() {\n    if (!clicked) {\n        clicked = true;\n        return true;\n    }\n    return false;\n}\n</script>\n\n<form action=\"setup-admin-settings.jsp\" name=\"acctform\" method=\"post\" onsubmit=\"return checkClick();\">\n\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n\n");
 
     // If the current password is "admin", don't show the text box for them to type
     // the current password. This makes setup simpler for first-time users.
@@ -274,31 +276,32 @@ public final class setup_002dadmin_002dsettings_jsp extends org.apache.jasper.ru
     }
     if ("admin".equals(currentPass)) {
 
-      out.write("\r\n<input type=\"hidden\" name=\"password\" value=\"admin\">\r\n");
+      out.write("\n<input type=\"hidden\" name=\"password\" value=\"admin\">\n");
 
     }
     else {
 
-      out.write("\r\n\r\n<tr valign=\"top\">\r\n    <td class=\"jive-label\">\r\n        ");
+      out.write("\n\n<tr valign=\"top\">\n    <td class=\"jive-label\">\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"password\" name=\"password\" size=\"20\" maxlength=\"50\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"password\" name=\"password\" size=\"20\" maxlength=\"50\"\n         value=\"");
       out.print( ((password!=null) ? password : "") );
-      out.write("\"><br>\r\n\r\n        ");
+      out.write("\"><br>\n\n        ");
   if (errors.get("password") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } else { 
-      out.write("\r\n            <span class=\"jive-description\">\r\n            ");
+      out.write("\n            <span class=\"jive-description\">\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
  } 
-      out.write("\r\n    </td>\r\n</tr>\r\n\r\n");
+      out.write("\n    </td>\n</tr>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Get the current email address, if there is one.
     String currentEmail = "";
@@ -312,78 +315,78 @@ public final class setup_002dadmin_002dsettings_jsp extends org.apache.jasper.ru
         // Ignore.
     }
 
-      out.write("\r\n\r\n<tr valign=\"top\">\r\n    <td class=\"jive-label\" align=\"right\">\r\n        ");
+      out.write("\n\n<tr valign=\"top\">\n    <td class=\"jive-label\" align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"text\" name=\"email\" size=\"40\" maxlength=\"150\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"text\" name=\"email\" size=\"40\" maxlength=\"150\"\n         value=\"");
       out.print( ((email!=null) ? email : currentEmail) );
-      out.write("\"><br>\r\n\r\n        ");
+      out.write("\"><br>\n\n        ");
   if (errors.get("email") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } else { 
-      out.write("\r\n            <span class=\"jive-description\">\r\n            ");
+      out.write("\n            <span class=\"jive-description\">\n            ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
  } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"jive-label\" align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"jive-label\" align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"password\" name=\"newPassword\" size=\"20\" maxlength=\"50\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"password\" name=\"newPassword\" size=\"20\" maxlength=\"50\"\n         value=\"");
       out.print( ((newPassword!=null) ? newPassword : "") );
-      out.write("\"><br>\r\n\r\n        ");
+      out.write("\"><br>\n\n        ");
   if (errors.get("newPassword") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } else if (errors.get("match") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"jive-label\" align=\"right\">\r\n        ");
+      out.write("\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"jive-label\" align=\"right\">\n        ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n    </td>\r\n    <td>\r\n        <input type=\"password\" name=\"newPasswordConfirm\" size=\"20\" maxlength=\"50\"\r\n         value=\"");
+      out.write("\n    </td>\n    <td>\n        <input type=\"password\" name=\"newPasswordConfirm\" size=\"20\" maxlength=\"50\"\n         value=\"");
       out.print( ((newPasswordConfirm!=null) ? newPasswordConfirm : "") );
-      out.write("\"><br>\r\n        ");
+      out.write("\"><br>\n        ");
   if (errors.get("newPasswordConfirm") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            ");
+      out.write("\n            <span class=\"jive-error-text\">\n            ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n            </span>\r\n        ");
+      out.write("\n            </span>\n        ");
   } 
-      out.write("\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<br>\r\n\t\t<div align=\"right\">\r\n\t\t\t<input type=\"submit\" name=\"doSkip\" value=\"");
+      out.write("\n    </td>\n</tr>\n</table>\n\n<br>\n\t\t<div align=\"right\">\n\t\t\t<input type=\"submit\" name=\"doSkip\" value=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-skip\" border=\"0\">\r\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
+      out.write("\" id=\"jive-setup-skip\" border=\"0\">\n\t\t\t<input type=\"Submit\" name=\"continue\" value=\"");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\" id=\"jive-setup-save\" border=\"0\">\r\n\t\t</div>\r\n\r\n\t</form>\r\n\t</div>\r\n\t<!-- END jive-contentBox -->\r\n\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\n<!--\r\ndocument.acctform.newPassword.focus();\r\n//-->\r\n</script>\r\n\r\n\r\n\r\n");
+      out.write("\" id=\"jive-setup-save\" border=\"0\">\n\t\t</div>\n\n\t</form>\n\t</div>\n\t<!-- END jive-contentBox -->\n\n\n<script language=\"JavaScript\" type=\"text/javascript\">\n<!--\ndocument.acctform.newPassword.focus();\n//-->\n</script>\n\n\n\n");
  } else if (ldap) {
 if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"error\">\r\n    ");
+      out.write("\n\n    <div class=\"error\">\n    ");
   if (errors.get("general") != null) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       out.print( errors.get("general") );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } else if (errors.get("administrator") != null) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } else { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    </div>\r\n\r\n");
+      out.write("\n    </div>\n\n");
   }
     if (doTest) {
         StringBuffer testLink = new StringBuffer();
@@ -394,79 +397,78 @@ if (errors.size() > 0) {
         }
         testLink.append("&ldap=true");
 
-      out.write("\r\n\r\n    <a href=\"");
+      out.write("\n\n    <a href=\"");
       out.print( testLink );
       out.write("\" id=\"lbmessage\" title=\"");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\" style=\"display:none;\"></a>\r\n    <script type=\"text/javascript\">\r\n        function loadMsg() {\r\n            var lb = new lightbox(document.getElementById('lbmessage'));\r\n            lb.activate();\r\n        }\r\n        setTimeout('loadMsg()', 250);\r\n    </script>\r\n\r\n");
+      out.write("\" style=\"display:none;\"></a>\n    <script type=\"text/javascript\">\n        function loadMsg() {\n            var lb = new lightbox(document.getElementById('lbmessage'));\n            lb.activate();\n        }\n        setTimeout('loadMsg()', 250);\n    </script>\n\n");
  } 
-      out.write("\r\n<p>\r\n ");
+      out.write("\n<p>\n ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n  </p>\r\n<div class=\"jive-contentBox\">\r\n\r\n<form action=\"setup-admin-settings.jsp\" name=\"acctform\" method=\"post\">\r\n\r\n    <!-- Admin Table -->\r\n\r\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n    <tr valign=\"top\">\r\n        <td class=\"jive-label\">\r\n            ");
+      out.write("\n  </p>\n<div class=\"jive-contentBox\">\n\n<form action=\"setup-admin-settings.jsp\" name=\"acctform\" method=\"post\">\n\n    <!-- Admin Table -->\n\n<table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n    <tr valign=\"top\">\n        <td class=\"jive-label\">\n            ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n         <td>\r\n        <input type=\"text\" name=\"administrator\" size=\"20\" maxlength=\"50\"/>\r\n        </td>\r\n        <td>\r\n            <input type=\"submit\" name=\"addAdministrator\" value=\"");
+      out.write(":\n        </td>\n         <td>\n        <input type=\"text\" name=\"administrator\" size=\"20\" maxlength=\"50\"/>\n        </td>\n        <td>\n            <input type=\"submit\" name=\"addAdministrator\" value=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\"/>\r\n        </td>\r\n    </tr>\r\n</table>\r\n");
+      out.write("\"/>\n        </td>\n    </tr>\n</table>\n");
 
     String authorizedJIDs = xmppSettings.get("admin.authorizedJIDs");
     boolean hasAuthorizedName = authorizedJIDs != null && authorizedJIDs.length() > 0;
 
-      out.write("\r\n    ");
+      out.write("\n    ");
  if(hasAuthorizedName) { 
-      out.write("\r\n    <!-- List of admins -->\r\n    <table class=\"jive-vcardTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tr>\r\n            <th nowrap>");
+      out.write("\n    <!-- List of admins -->\n    <table class=\"jive-vcardTable\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tr>\n            <th nowrap>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th width=\"1%\" nowrap>");
+      out.write("</th>\n            <th width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th width=\"1%\" nowrap>");
+      out.write("</th>\n            <th width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n");
+      out.write("</th>\n        </tr>\n");
 
     for (String authJIDstr : StringUtils.stringToCollection(authorizedJIDs)) {
         JID authJID = new JID(authJIDstr);
 
-      out.write("\r\n    <tr valign=\"top\">\r\n        <td>\r\n            ");
+      out.write("\n    <tr valign=\"top\">\n        <td>\n            ");
       out.print( authJID.getNode());
-      out.write("\r\n        </td>\r\n        <td width=\"1%\" align=\"center\">\r\n            <a href=\"setup-admin-settings.jsp?ldap=true&test=true&username=");
+      out.write("\n        </td>\n        <td width=\"1%\" align=\"center\">\n            <a href=\"setup-admin-settings.jsp?ldap=true&test=true&username=");
       out.print( URLEncoder.encode(authJID.getNode(), "UTF-8") );
-      out.write("\"\r\n             title=\"");
+      out.write("\"\n             title=\"");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("\"\r\n             ><img src=\"../images/setup_btn_gearplay.gif\" width=\"14\" height=\"14\" border=\"0\" alt=\"");
+      out.write("\"\n             ><img src=\"../images/setup_btn_gearplay.gif\" width=\"14\" height=\"14\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("\"></a>\r\n        </td>\r\n        <td>\r\n            <input type=\"checkbox\" name=\"remove\" value=\"");
+      out.write("\"></a>\n        </td>\n        <td>\n            <input type=\"checkbox\" name=\"remove\" value=\"");
       out.print(authJID.toBareJID());
-      out.write("\"/>\r\n        </td>\r\n    </tr>\r\n\r\n    ");
+      out.write("\"/>\n        </td>\n    </tr>\n\n    ");
 
         }
         if (authorizedJIDs != null) {
     
-      out.write("\r\n         <tr valign=\"top\">\r\n        <td>\r\n           &nbsp;\r\n        </td>\r\n        <td>\r\n           &nbsp;\r\n        </td>\r\n        <td>\r\n            <input type=\"submit\" name=\"deleteAdmins\" value=\"Remove\"/>\r\n        </td>\r\n    </tr>\r\n\r\n        ");
+      out.write("\n         <tr valign=\"top\">\n        <td>\n           &nbsp;\n        </td>\n        <td>\n           &nbsp;\n        </td>\n        <td>\n            <input type=\"submit\" name=\"deleteAdmins\" value=\"Remove\"/>\n        </td>\n    </tr>\n\n        ");
 
             }
 
         
-      out.write("\r\n</table>\r\n    ");
+      out.write("\n</table>\n    ");
  } 
-      out.write("\r\n\r\n\r\n<input type=\"hidden\" name=\"ldap\" value=\"true\"/>\r\n\r\n     <div align=\"right\">\r\n    <br/>\r\n  <input type=\"submit\" name=\"ldapFinished\" value=\"");
+      out.write("\n\n\n<input type=\"hidden\" name=\"ldap\" value=\"true\"/>\n\n     <div align=\"right\">\n    <br/>\n  <input type=\"submit\" name=\"ldapFinished\" value=\"");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("\"  id=\"jive-setup-save\" border=\"0\" style=\"display:none;\">\r\n          </div>\r\n </form>\r\n\r\n</div>\r\n\r\n");
+      out.write("\"  id=\"jive-setup-save\" border=\"0\" style=\"display:none;\">\n          </div>\n </form>\n\n</div>\n\n");
 
     if(hasAuthorizedName) {
-      out.write("\r\n        <script type=\"text/javascript\">\r\n            document.getElementById(\"jive-setup-save\").style.display = \"\";\r\n        </script>\r\n    ");
+      out.write("\n        <script type=\"text/javascript\">\n            document.getElementById(\"jive-setup-save\").style.display = \"\";\n        </script>\n    ");
  } 
-      out.write('\r');
       out.write('\n');
  } 
-      out.write("\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

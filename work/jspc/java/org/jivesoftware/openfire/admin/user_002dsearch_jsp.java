@@ -55,8 +55,7 @@ public final class user_002dsearch_jsp extends org.apache.jasper.runtime.HttpJsp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n\n\n");
       out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
@@ -66,10 +65,8 @@ public final class user_002dsearch_jsp extends org.apache.jasper.runtime.HttpJsp
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
    webManager.init(request, response, session, application, out ); 
-      out.write('\r');
       out.write('\n');
   
     // Get parameters
@@ -101,31 +98,31 @@ public final class user_002dsearch_jsp extends org.apache.jasper.runtime.HttpJsp
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"user-search\"/>\r\n        <meta name=\"helpPage\" content=\"search_for_a_user.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"user-search\"/>\n        <meta name=\"helpPage\" content=\"search_for_a_user.html\"/>\n    </head>\n    <body>\n\n");
     if (errors.size() > 0) { 
-      out.write("\r\n<p class=\"jive-error-text\">");
+      out.write("\n<p class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</p>\r\n");
+      out.write("</p>\n");
     } 
-      out.write("\r\n<form name=\"f\" action=\"user-search.jsp\">\r\n  <input type=\"hidden\" name=\"search\" value=\"true\"/>\r\n  <fieldset>\r\n    <legend>");
+      out.write("\n<form name=\"f\" action=\"user-search.jsp\">\n  <input type=\"hidden\" name=\"search\" value=\"true\"/>\n  <fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</legend>\r\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\r\n      <tr class=\"c1\">\r\n        <td width=\"1%\" nowrap>");
+      out.write("</legend>\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\n      <tr class=\"c1\">\n        <td width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write(":</td>\r\n        <td class=\"c2\">\r\n          <input type=\"text\" name=\"username\" value=\"");
+      out.write(":</td>\n        <td class=\"c2\">\n          <input type=\"text\" name=\"username\" value=\"");
       out.print( ((username!=null) ? username : "") );
-      out.write("\" size=\"30\" maxlength=\"75\"/>\r\n        </td>\r\n      </tr>\r\n     <tr><td colspan=\"2\" nowrap><input type=\"submit\" name=\"search\" value=\"");
+      out.write("\" size=\"30\" maxlength=\"75\"/>\n        </td>\n      </tr>\n     <tr><td colspan=\"2\" nowrap><input type=\"submit\" name=\"search\" value=\"");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write("\"/><input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\"/></td>\r\n     </tr>\r\n    </table>\r\n  </fieldset>\r\n</form>\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.username.focus();\r\n</script>\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\"/></td>\n     </tr>\n    </table>\n  </fieldset>\n</form>\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.username.focus();\n</script>\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

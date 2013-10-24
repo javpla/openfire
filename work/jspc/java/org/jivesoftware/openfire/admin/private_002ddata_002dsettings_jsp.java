@@ -51,7 +51,7 @@ public final class private_002ddata_002dsettings_jsp extends org.apache.jasper.r
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -60,13 +60,12 @@ public final class private_002ddata_002dsettings_jsp extends org.apache.jasper.r
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"server-data-settings\"/>\r\n<meta name=\"helpPage\" content=\"set_private_data_storage_policy.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"server-data-settings\"/>\n<meta name=\"helpPage\" content=\"set_private_data_storage_policy.html\"/>\n</head>\n<body>\n\n");
   // Get parameters:
     boolean update = request.getParameter("update") != null;
     boolean privateEnabled = ParamUtils.getBooleanParameter(request,"privateEnabled");
@@ -79,10 +78,10 @@ public final class private_002ddata_002dsettings_jsp extends org.apache.jasper.r
         // Log the event
         webManager.logEvent((privateEnabled ? "enabled" : "disabled")+" private data storage", null);
     
-      out.write("\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n    ");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n    ");
 
     
     }
@@ -90,32 +89,32 @@ public final class private_002ddata_002dsettings_jsp extends org.apache.jasper.r
     // Set page vars
     privateEnabled = privateStorage.isEnabled();
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<!-- BEGIN 'Set Private Data Policy' -->\r\n<form action=\"private-data-settings.jsp\">\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n</p>\n\n<!-- BEGIN 'Set Private Data Policy' -->\n<form action=\"private-data-settings.jsp\">\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr valign=\"top\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"privateEnabled\" value=\"true\" id=\"rb01\"\r\n\t\t\t\t\t ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr valign=\"top\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"privateEnabled\" value=\"true\" id=\"rb01\"\n\t\t\t\t\t ");
       out.print( (privateEnabled ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb01\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb01\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</b> -\r\n\t\t\t\t\t");
+      out.write("</b> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"top\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"privateEnabled\" value=\"false\" id=\"rb02\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"top\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"privateEnabled\" value=\"false\" id=\"rb02\"\n\t\t\t\t\t ");
       out.print( (!privateEnabled ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb02\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb02\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</b> -\r\n\t\t\t\t\t");
+      out.write("</b> -\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t</div>\r\n    <input type=\"submit\" name=\"update\" value=\"");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n\t</div>\n    <input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- END 'Set Private Data Policy' -->\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n</form>\n<!-- END 'Set Private Data Policy' -->\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

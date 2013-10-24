@@ -60,7 +60,7 @@ public final class workgroup_002dqueues_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
 
     String wgID = ParamUtils.getParameter(request, "wgID");
     long qID = ParamUtils.getLongParameter(request, "qID", -1L);
@@ -71,7 +71,8 @@ public final class workgroup_002dqueues_jsp extends org.apache.jasper.runtime.Ht
 
     String errorMessage = "";
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Get a workgroup manager
     WorkgroupManager wgManager = WorkgroupManager.getInstance();
@@ -83,7 +84,8 @@ public final class workgroup_002dqueues_jsp extends org.apache.jasper.runtime.Ht
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters //
 
     // Load the workgroup
@@ -103,7 +105,9 @@ public final class workgroup_002dqueues_jsp extends org.apache.jasper.runtime.Ht
         return;
     }
 
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     final WorkgroupManager workgroupManager = WorkgroupManager.getInstance();
     FormManager formManager = FormManager.getInstance();
@@ -314,89 +318,92 @@ public final class workgroup_002dqueues_jsp extends org.apache.jasper.runtime.Ht
     rules = routingManager.getRoutingRules(workgroup);
 
 
-      out.write("\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n<html>\n<head>\n    <title>");
       out.print( "Workgroup Queues for " + wgID);
-      out.write("</title>\r\n    <meta name=\"subPageID\" content=\"workgroup-queues\"/>\r\n    <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n    <meta name=\"subPageID\" content=\"workgroup-queues\"/>\n    <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n    <!--<meta name=\"helpPage\" content=\"create_a_queue.html\"/>-->\r\n\r\n    <script type=\"text/javascript\">\r\n        function enableDefault() {\r\n\r\n            document.getElementById('advancedField').disabled = true;\r\n        }\r\n\r\n        function enableAdvanced() {\r\n\r\n            document.getElementById('advancedField').disabled = false;\r\n        }\r\n\r\n        function updateForm(selectbox){\r\n          window.location.href = \"workgroup-queues.jsp?wgID=");
+      out.write("\"/>\n    <!--<meta name=\"helpPage\" content=\"create_a_queue.html\"/>-->\n\n    <script type=\"text/javascript\">\n        function enableDefault() {\n\n            document.getElementById('advancedField').disabled = true;\n        }\n\n        function enableAdvanced() {\n\n            document.getElementById('advancedField').disabled = false;\n        }\n\n        function updateForm(selectbox){\n          window.location.href = \"workgroup-queues.jsp?wgID=");
       out.print( wgID);
-      out.write("&fElement=\"+selectbox.value;\r\n        }\r\n    </script>\r\n</head>\r\n\r\n<body>\r\n");
+      out.write("&fElement=\"+selectbox.value;\n        }\n    </script>\n</head>\n\n<body>\n");
 
     boolean added = ParamUtils.getBooleanParameter(request, "queueaddsuccess");
     boolean deleted = ParamUtils.getBooleanParameter(request, "deletesuccess");
 
 
-      out.write('\r');
       out.write('\n');
  if (errors) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       out.print( errorMessage);
-      out.write("\r\n</div><br/>\r\n");
+      out.write("\n</div><br/>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (added) { 
-      out.write("\r\n<div class=\"success\">\r\n    A new Request Queue has been added.\r\n</div><br>\r\n");
+      out.write("\n<div class=\"success\">\n    A new Request Queue has been added.\n</div><br>\n");
   }
 else if (deleted) { 
-      out.write("\r\n\r\n<div class=\"success\">\r\n    Request Queue has been removed.\r\n</div><br>\r\n");
+      out.write("\n\n<div class=\"success\">\n    Request Queue has been removed.\n</div><br>\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (handleEditForm && !errors) { 
-      out.write("\r\n<div class=\"success\">\r\n    Routing rules have been updated.\r\n</div>\r\n");
+      out.write("\n<div class=\"success\">\n    Routing rules have been updated.\n</div>\n");
  } 
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
  if (!errors && submit) { 
-      out.write("\r\n<div class=\"success\">\r\n    New routing rule has been added.\r\n</div>\r\n");
+      out.write("\n<div class=\"success\">\n    New routing rule has been added.\n</div>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n    A request queue handles incoming client support requests. To add members to a queue, click on an available queue below.\r\n</p>\r\n\r\n<table>\r\n    <tr>\r\n        <td>\r\n            <a href=\"workgroup-queue-create.jsp?wgID=");
+      out.write("\n\n<p>\n    A request queue handles incoming client support requests. To add members to a queue, click on an available queue below.\n</p>\n\n<table>\n    <tr>\n        <td>\n            <a href=\"workgroup-queue-create.jsp?wgID=");
       out.print( wgID );
-      out.write("\"><img src=\"/images/add-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n        </td>\r\n        <td>\r\n            <a href=\"workgroup-queue-create.jsp?wgID=");
+      out.write("\"><img src=\"/images/add-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n        </td>\n        <td>\n            <a href=\"workgroup-queue-create.jsp?wgID=");
       out.print( wgID );
-      out.write("\">Add Queue</a>\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n<br/>\r\n\r\n\r\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n    <tr>\r\n        <th nowrap align=\"left\" colspan=\"2\">Name/Description</th>\r\n        <th nowrap>Agents (active/total)</th>\r\n        <th nowrap>In Queue</th>\r\n        <th nowrap>Avg. Wait Time (sec)</th>\r\n        <th nowrap>Edit</th>\r\n        <th nowrap>Delete</th>\r\n    </tr>\r\n    ");
+      out.write("\">Add Queue</a>\n        </td>\n    </tr>\n</table>\n\n<br/>\n\n\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n    <tr>\n        <th nowrap align=\"left\" colspan=\"2\">Name/Description</th>\n        <th nowrap>Agents (active/total)</th>\n        <th nowrap>In Queue</th>\n        <th nowrap>Avg. Wait Time (sec)</th>\n        <th nowrap>Edit</th>\n        <th nowrap>Delete</th>\n    </tr>\n    ");
 
         int requestCount = workgroup.getRequestQueueCount();
         if (requestCount == 0) {
     
-      out.write("\r\n    <tr>\r\n        <td colspan=\"98\">\r\n            No queues.\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n    <tr>\n        <td colspan=\"98\">\n            No queues.\n        </td>\n    </tr>\n    ");
 
         }
         int i = 0;
         for (RequestQueue requestQueue : workgroup.getRequestQueues()) {
             i++;
     
-      out.write("\r\n    <tr>\r\n        <td width=\"1%\" valign=\"top\" nowrap>\r\n            ");
+      out.write("\n    <tr>\n        <td width=\"1%\" valign=\"top\" nowrap>\n            ");
       out.print( i );
-      out.write(".\r\n        </td>\r\n        <td width=\"37%\">\r\n            <a href=\"workgroup-queue-agents.jsp?wgID=");
+      out.write(".\n        </td>\n        <td width=\"37%\">\n            <a href=\"workgroup-queue-agents.jsp?wgID=");
       out.print( wgID );
       out.write("&qID=");
       out.print( requestQueue.getID() );
-      out.write("\"\r\n               title=\"Click to add/remove Agents and Groups.\"\r\n                ><b>");
+      out.write("\"\n               title=\"Click to add/remove Agents and Groups.\"\n                ><b>");
       out.print( requestQueue.getName() );
-      out.write("</b></a>\r\n\r\n            ");
+      out.write("</b></a>\n\n            ");
   if (requestQueue.getDescription() != null) { 
-      out.write("\r\n\r\n            <br>\r\n            <span class=\"jive-description\">\r\n                ");
+      out.write("\n\n            <br>\n            <span class=\"jive-description\">\n                ");
       out.print( requestQueue.getDescription() );
-      out.write("\r\n                </span>\r\n\r\n            ");
+      out.write("\n                </span>\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n        <td width=\"15%\" align=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td width=\"15%\" align=\"center\">\n            ");
       out.print( requestQueue.getAgentSessionList().getAvailableAgentCount() );
-      out.write("\r\n            /\r\n            ");
+      out.write("\n            /\n            ");
       out.print( requestQueue.getMemberCount() );
-      out.write("\r\n        </td>\r\n        <td width=\"15%\" align=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td width=\"15%\" align=\"center\">\n            ");
       out.print( requestQueue.getRequestCount() );
-      out.write("\r\n        </td>\r\n        <td width=\"15%\" align=\"center\">\r\n            ");
+      out.write("\n        </td>\n        <td width=\"15%\" align=\"center\">\n            ");
       out.print( requestQueue.getAverageTime() );
-      out.write("\r\n        </td>\r\n        <td width=\"1%\" align=\"center\">\r\n            <a href=\"workgroup-queue-agents.jsp?wgID=");
+      out.write("\n        </td>\n        <td width=\"1%\" align=\"center\">\n            <a href=\"workgroup-queue-agents.jsp?wgID=");
       out.print( wgID );
       out.write("&qID=");
       out.print( requestQueue.getID() );
-      out.write("\"\r\n               title=\"Click to manage this queue...\"\r\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n        </td>\r\n        <td width=\"1%\" align=\"center\">\r\n            <a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\"\n               title=\"Click to manage this queue...\"\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n        </td>\n        <td width=\"1%\" align=\"center\">\n            <a href=\"workgroup-queues.jsp?wgID=");
       out.print( wgID );
       out.write("&qID=");
       out.print( requestQueue.getID() );
-      out.write("&delete=true\"\r\n               title=\"Click to delete this queue...\"\r\n               onclick=\"return confirm('Are you sure you want to delete this queue?');\"\r\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n        </td>\r\n    </tr>\r\n\r\n    ");
+      out.write("&delete=true\"\n               title=\"Click to delete this queue...\"\n               onclick=\"return confirm('Are you sure you want to delete this queue?');\"\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n        </td>\n    </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n</table>\r\n\r\n<br/><br/>\r\n<b>Routing Rules</b>\r\n<br/>\r\n\r\n<p>\r\n    Specify which queue to route to based on the values assigned to the form variables in the Web Chat Client.\r\n</p>\r\n\r\n<table class=\"jive-table\" cellspacing=\"0\" width=\"100%\">\r\n    <th>Order</th><th>Query</th><th>Routes to Queue</th><th>Move</th><th>Edit</th><th>Delete</th>\r\n\r\n    <tr style=\"border-left: none;\">\r\n\r\n    </tr>\r\n\r\n\r\n    ");
+      out.write("\n\n</table>\n\n<br/><br/>\n<b>Routing Rules</b>\n<br/>\n\n<p>\n    Specify which queue to route to based on the values assigned to the form variables in the Web Chat Client.\n</p>\n\n<table class=\"jive-table\" cellspacing=\"0\" width=\"100%\">\n    <th>Order</th><th>Query</th><th>Routes to Queue</th><th>Move</th><th>Edit</th><th>Delete</th>\n\n    <tr style=\"border-left: none;\">\n\n    </tr>\n\n\n    ");
  for (RoutingRule rule : rules) {
         RequestQueue rq = null;
         try {
@@ -416,92 +423,92 @@ else if (deleted) {
 
         int rulePosition = rule.getPosition();
     
-      out.write("\r\n    <tr>\r\n        <td>");
+      out.write("\n    <tr>\n        <td>");
       out.print( rule.getPosition());
-      out.write(".</td>\r\n        <td>\r\n            ");
+      out.write(".</td>\n        <td>\n            ");
       out.print( rule.getQuery());
-      out.write("\r\n        </td>\r\n        <td>\r\n            ");
+      out.write("\n        </td>\n        <td>\n            ");
       out.print( rq.getName() );
-      out.write("\r\n        </td>\r\n        <td nowrap>\r\n            ");
+      out.write("\n        </td>\n        <td nowrap>\n            ");
   if ((rule.getPosition()) < rules.size()) { 
-      out.write("\r\n            <a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\n            <a href=\"workgroup-queues.jsp?wgID=");
       out.print( wgID );
       out.write("&changePos=true&down=true&pos=");
       out.print( rule.getPosition() );
-      out.write("\"\r\n                ><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" alt=\"Move this router down.\" border=\"0\"></a>\r\n            ");
+      out.write("\"\n                ><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" alt=\"Move this router down.\" border=\"0\"></a>\n            ");
   } else { 
-      out.write("\r\n            <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\r\n            ");
+      out.write("\n            <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\n            ");
   } 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   if (rule.getPosition() != 1) { 
-      out.write("\r\n            <a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\n            <a href=\"workgroup-queues.jsp?wgID=");
       out.print( wgID );
       out.write("&changePos=true&up=true&pos=");
       out.print( rule.getPosition() );
-      out.write("\"\r\n                ><img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" alt=\"Move this router up.\" border=\"0\"></a>\r\n            ");
+      out.write("\"\n                ><img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" alt=\"Move this router up.\" border=\"0\"></a>\n            ");
   } else { 
-      out.write("\r\n            <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\r\n            ");
+      out.write("\n            <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\n            ");
   } 
-      out.write("\r\n        <td align=\"center\">\r\n            <a href=\"workgroup-queues.jsp?edit=true&wgID=");
+      out.write("\n        <td align=\"center\">\n            <a href=\"workgroup-queues.jsp?edit=true&wgID=");
       out.print( wgID );
       out.write("&pos=");
       out.print( rule.getPosition() );
-      out.write("\"\r\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" alt=\"Edit the properties of this Router\" border=\"0\"\r\n                ></a>\r\n        </td>\r\n        <td align=\"center\">\r\n            <a href=\"workgroup-queues.jsp?remove=true&wgID=");
+      out.write("\"\n                ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" alt=\"Edit the properties of this Router\" border=\"0\"\n                ></a>\n        </td>\n        <td align=\"center\">\n            <a href=\"workgroup-queues.jsp?remove=true&wgID=");
       out.print( wgID );
       out.write("&pos=");
       out.print( rule.getPosition());
-      out.write("\"\r\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" alt=\"Delete this Router\" border=\"0\"\r\n                ></a>\r\n        </td>\r\n\r\n    </tr>\r\n    ");
+      out.write("\"\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" alt=\"Delete this Router\" border=\"0\"\n                ></a>\n        </td>\n\n    </tr>\n    ");
  } 
-      out.write("\r\n\r\n\r\n    ");
+      out.write("\n\n\n    ");
  if (rules.size() == 0) { 
-      out.write("\r\n    <tr>\r\n        <td colspan=\"7\" align=\"center\">There are no routing rules defined for this workgroup.</td>\r\n    </tr>\r\n    ");
+      out.write("\n    <tr>\n        <td colspan=\"7\" align=\"center\">There are no routing rules defined for this workgroup.</td>\n    </tr>\n    ");
 } 
-      out.write("\r\n\r\n</table>\r\n<br/>\r\n\r\n<div id=\"editform\" style=\"");
+      out.write("\n\n</table>\n<br/>\n\n<div id=\"editform\" style=\"");
       out.print( edit ? "" : "display:none;" );
-      out.write("\">\r\n    <fieldset>\r\n        <legend>Edit Routing Rule</legend>\r\n        <table cellspacing=\"0\" cellpadding=\"3\">\r\n            <form action=\"workgroup-queues.jsp\" method=\"post\">\r\n                <input type=\"hidden\" name=\"editPos\" value=\"");
+      out.write("\">\n    <fieldset>\n        <legend>Edit Routing Rule</legend>\n        <table cellspacing=\"0\" cellpadding=\"3\">\n            <form action=\"workgroup-queues.jsp\" method=\"post\">\n                <input type=\"hidden\" name=\"editPos\" value=\"");
       out.print( pos );
-      out.write("\"/>\r\n                <tr>\r\n                    <td colspan=\"3\">\r\n                        Update routing rule.\r\n                        <br/><br/>\r\n                    </td>\r\n                </tr>\r\n                ");
+      out.write("\"/>\n                <tr>\n                    <td colspan=\"3\">\n                        Update routing rule.\n                        <br/><br/>\n                    </td>\n                </tr>\n                ");
  if (!advancedBuilder) { 
-      out.write("\r\n                <tr>\r\n                    <td>\r\n                        Form Variable:\r\n                    </td>\r\n                    <td>\r\n                        <select name=\"editVariable\">\r\n                            ");
+      out.write("\n                <tr>\n                    <td>\n                        Form Variable:\n                    </td>\n                    <td>\n                        <select name=\"editVariable\">\n                            ");
  for (FormField field : dataForm.getFields()) { 
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( field.getVariable());
       out.write('"');
       out.write(' ');
       out.print( field.getVariable().equals(variable) ? "selected" : "");
       out.write('>');
       out.print( field.getVariable());
-      out.write("</option>\r\n                            ");
+      out.write("</option>\n                            ");
  } 
-      out.write("\r\n\r\n                        </select>\r\n                    </td>\r\n                </tr><tr>\r\n                <td>Form Value:</td>\r\n                <td>\r\n                    <input type=\"text\" name=\"editValue\" size=\"30\" value=\"");
+      out.write("\n\n                        </select>\n                    </td>\n                </tr><tr>\n                <td>Form Value:</td>\n                <td>\n                    <input type=\"text\" name=\"editValue\" size=\"30\" value=\"");
       out.print( value != null ? value : "" );
-      out.write("\"/>\r\n                </td>\r\n            </tr>\r\n\r\n                ");
+      out.write("\"/>\n                </td>\n            </tr>\n\n                ");
  }
                 else { 
-      out.write("\r\n                <tr>\r\n                    <input type=\"hidden\" name=\"editAdvancedQuery\" value=\"true\"/>\r\n                    <td>Edit Query:</td>\r\n                    <td><input type=\"text\" name=\"editQueryField\" size=\"40\" value=\"");
+      out.write("\n                <tr>\n                    <input type=\"hidden\" name=\"editAdvancedQuery\" value=\"true\"/>\n                    <td>Edit Query:</td>\n                    <td><input type=\"text\" name=\"editQueryField\" size=\"40\" value=\"");
       out.print( variable);
-      out.write("\"></td>\r\n                </tr>\r\n\r\n                ");
+      out.write("\"></td>\n                </tr>\n\n                ");
  } 
-      out.write("\r\n\r\n\r\n                <tr>\r\n\r\n                    <td>Route To Queue:</td>\r\n                    <td>\r\n                        <select name=\"editQueueID\">\r\n                            ");
+      out.write("\n\n\n                <tr>\n\n                    <td>Route To Queue:</td>\n                    <td>\n                        <select name=\"editQueueID\">\n                            ");
  for (RequestQueue queue : workgroup.getRequestQueues()) { 
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( queue.getID());
       out.write('"');
       out.write(' ');
       out.print( queue.getID() == queueID ? "selected" : "");
       out.write('>');
       out.print( queue.getName());
-      out.write("</option>\r\n                            ");
+      out.write("</option>\n                            ");
  } 
-      out.write("\r\n                        </select>\r\n                    </td>\r\n                    <td>\r\n                        <input type=\"submit\" name=\"editRule\" value=\"Update\"/>\r\n                    </td>\r\n                </tr>\r\n\r\n                <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n                        </select>\n                    </td>\n                    <td>\n                        <input type=\"submit\" name=\"editRule\" value=\"Update\"/>\n                    </td>\n                </tr>\n\n                <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\"/>\r\n            </form>\r\n        </table>\r\n    </fieldset>\r\n    <br/>\r\n</div>\r\n");
+      out.write("\"/>\n            </form>\n        </table>\n    </fieldset>\n    <br/>\n</div>\n");
 
     String formElement = request.getParameter("fElement");
 
-      out.write("\r\n\r\n<div style=\"");
+      out.write("\n\n<div style=\"");
       out.print( edit ? "display:none;" : "" );
-      out.write("\" class=\"jive-contentBox\">\r\n\t  <h4>Create New Routing Rule</h4>\r\n\r\n    <table cellspacing=\"0\" cellpadding=\"3\">\r\n        <form action=\"workgroup-queues.jsp\" method=\"post\">\r\n            <tr>\r\n                <td colspan=\"3\">\r\n                   Routing rules allow searches against incoming chat request metadata and allow for the routing to specific queues within this workgroup<br/><br/>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"3\">\r\n\r\n                    <table>\r\n                        <tr>\r\n                            <td><input type=\"radio\" name=\"selector\" value=\"queryBuilder\" checked onclick=\"enableDefault();\"></td>\r\n                            <td colspan=\"2\"><b>Form Field Matcher</b></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td></td>\r\n                            <td>\r\n                                Form Variable:\r\n                            </td>\r\n                            <td>\r\n                                <select name=\"variable\" onchange=\"updateForm(this);\">\r\n");
+      out.write("\" class=\"jive-contentBox\">\n\t  <h4>Create New Routing Rule</h4>\n\n    <table cellspacing=\"0\" cellpadding=\"3\">\n        <form action=\"workgroup-queues.jsp\" method=\"post\">\n            <tr>\n                <td colspan=\"3\">\n                   Routing rules allow searches against incoming chat request metadata and allow for the routing to specific queues within this workgroup<br/><br/>\n                </td>\n            </tr>\n            <tr>\n                <td colspan=\"3\">\n\n                    <table>\n                        <tr>\n                            <td><input type=\"radio\" name=\"selector\" value=\"queryBuilder\" checked onclick=\"enableDefault();\"></td>\n                            <td colspan=\"2\"><b>Form Field Matcher</b></td>\n                        </tr>\n                        <tr>\n                            <td></td>\n                            <td>\n                                Form Variable:\n                            </td>\n                            <td>\n                                <select name=\"variable\" onchange=\"updateForm(this);\">\n");
       out.write("                                    ");
  for (FormField field : dataForm.getFields()) {
                                             if(formElement == null){
@@ -509,16 +516,16 @@ else if (deleted) {
                                             }
                                         String selected = field.getVariable().equals(formElement) ? "selected" : "";
                                     
-      out.write("\r\n\r\n                                    <option value=\"");
+      out.write("\n\n                                    <option value=\"");
       out.print( field.getVariable());
       out.write('"');
       out.write(' ');
       out.print( selected );
       out.write('>');
       out.print( field.getVariable());
-      out.write("</option>\r\n                                    ");
+      out.write("</option>\n                                    ");
  } 
-      out.write("\r\n\r\n                                </select>\r\n                            </td>\r\n                        </tr><tr valign=\"top\">\r\n                        <td></td>\r\n                        <td>Form Value:</td>\r\n                        <td>\r\n                            ");
+      out.write("\n\n                                </select>\n                            </td>\n                        </tr><tr valign=\"top\">\n                        <td></td>\n                        <td>Form Value:</td>\n                        <td>\n                            ");
 
                                 for (org.jivesoftware.openfire.fastpath.dataforms.FormElement ele : form
                                         .getFormElements()) {
@@ -527,19 +534,19 @@ else if (deleted) {
                                     }
                                 }
                             
-      out.write("\r\n\r\n                        </td>\r\n                    </tr>\r\n                    </table>\r\n\r\n                </td>\r\n\r\n\r\n\r\n                <tr>\r\n                    <td colspan=\"3\">\r\n                        <div id=\"advanced\">\r\n\r\n                            <table width=\"600\">\r\n                                <tr>\r\n                                    <td><input type=\"radio\" name=\"selector\" value=\"advancedBuilder\" onclick=\"enableAdvanced();\"></td>\r\n                                    <td colspan=\"2\"><b>Query Builder</b></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td width=\"1%\" nowrap>Query:</td>\r\n                                    <td><input type=\"text\" name=\"advancedQuery\" size=\"40\" id=\"advancedField\"/></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td colspan=\"2\"><span class=\"jive-description\">Uses Lucene search syntax to search metadata. To search for\r\n");
-      out.write("                                    a match in the username as well as in a question, use the following syntax: <i>username:derek AND question:chat</i>.<br>Please refer to the\r\n                                    <a href=\"http://lucene.apache.org/java/docs/queryparsersyntax.html\" target=\"_blank\">Lucene Query Parser Syntax</a>&nbsp;tutorial for proper syntax.</span></td>\r\n                                </tr>\r\n                            </table>\r\n\r\n                        </div>\r\n                    </td>\r\n                </tr>\r\n\r\n\r\n                <td>\r\n                    <table>\r\n                        <tr>\r\n                            <td>Route To Queue:</td>\r\n                            <td>\r\n                                <select name=\"queueID\">\r\n                                    ");
+      out.write("\n\n                        </td>\n                    </tr>\n                    </table>\n\n                </td>\n\n\n\n                <tr>\n                    <td colspan=\"3\">\n                        <div id=\"advanced\">\n\n                            <table width=\"600\">\n                                <tr>\n                                    <td><input type=\"radio\" name=\"selector\" value=\"advancedBuilder\" onclick=\"enableAdvanced();\"></td>\n                                    <td colspan=\"2\"><b>Query Builder</b></td>\n                                </tr>\n                                <tr>\n                                    <td></td>\n                                    <td width=\"1%\" nowrap>Query:</td>\n                                    <td><input type=\"text\" name=\"advancedQuery\" size=\"40\" id=\"advancedField\"/></td>\n                                </tr>\n                                <tr>\n                                    <td></td>\n                                    <td colspan=\"2\"><span class=\"jive-description\">Uses Lucene search syntax to search metadata. To search for\n");
+      out.write("                                    a match in the username as well as in a question, use the following syntax: <i>username:derek AND question:chat</i>.<br>Please refer to the\n                                    <a href=\"http://lucene.apache.org/java/docs/queryparsersyntax.html\" target=\"_blank\">Lucene Query Parser Syntax</a>&nbsp;tutorial for proper syntax.</span></td>\n                                </tr>\n                            </table>\n\n                        </div>\n                    </td>\n                </tr>\n\n\n                <td>\n                    <table>\n                        <tr>\n                            <td>Route To Queue:</td>\n                            <td>\n                                <select name=\"queueID\">\n                                    ");
  for (RequestQueue queue : workgroup.getRequestQueues()) { 
-      out.write("\r\n                                    <option value=\"");
+      out.write("\n                                    <option value=\"");
       out.print( queue.getID());
       out.write('"');
       out.write('>');
       out.print( queue.getName());
-      out.write("</option>\r\n                                    ");
+      out.write("</option>\n                                    ");
  } 
-      out.write("\r\n                                </select>\r\n                            </td>\r\n                            <td>\r\n\r\n                                <input type=\"submit\" name=\"submit\" value=\"Add\"/>\r\n                            </td>\r\n                        </tr>\r\n                    </table>\r\n                </td>\r\n\r\n\r\n                <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n                                </select>\n                            </td>\n                            <td>\n\n                                <input type=\"submit\" name=\"submit\" value=\"Add\"/>\n                            </td>\n                        </tr>\n                    </table>\n                </td>\n\n\n                <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\"/>\r\n        </form>\r\n    </table>\r\n\r\n</div>\r\n\r\n\r\n<script type=\"text/javascript\">\r\n    enableDefault();\r\n</script>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\"/>\n        </form>\n    </table>\n\n</div>\n\n\n<script type=\"text/javascript\">\n    enableDefault();\n</script>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

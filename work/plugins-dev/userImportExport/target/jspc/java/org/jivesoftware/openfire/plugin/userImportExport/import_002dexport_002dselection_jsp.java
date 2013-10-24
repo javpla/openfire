@@ -41,7 +41,7 @@ public final class import_002dexport_002dselection_jsp extends org.apache.jasper
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>Import/Export Selection</title>\r\n        <meta name=\"pageID\" content=\"import-export-selection\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("\n\n<html>\n    <head>\n        <title>Import/Export Selection</title>\n        <meta name=\"pageID\" content=\"import-export-selection\"/>\n    </head>\n    <body>\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -50,16 +50,15 @@ public final class import_002dexport_002dselection_jsp extends org.apache.jasper
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
 
     ImportExportPlugin plugin = (ImportExportPlugin) XMPPServer.getInstance().getPluginManager().getPlugin("userimportexport");
 
-      out.write("\r\n\r\n<p>\r\n\r\nThe import and export functions allow you to read data into and write user\r\ndata from your Openfire installation.\r\n\r\n<ul>\r\n    <li><a href=\"import-user-data.jsp\">Import User Data</a></li>\r\n    <li><a href=\"export-user-data.jsp\">Export User Data</a></li>    \r\n</ul>\r\n\r\n");
+      out.write("\n\n<p>\n\nThe import and export functions allow you to read data into and write user\ndata from your Openfire installation.\n\n<ul>\n    <li><a href=\"import-user-data.jsp\">Import User Data</a></li>\n    <li><a href=\"export-user-data.jsp\">Export User Data</a></li>    \n</ul>\n\n");
  if (plugin.isUserProviderReadOnly()) { 
-      out.write("\r\n\r\n   Note: because you are using a read-only user data store such as LDAP or POP3 you will only be able to import user roster data, not users themselves.\r\n   Please see the <a href=\"../../plugin-admin.jsp?plugin=userimportexport&showReadme=true&decorator=none\">readme</a> for details.\r\n\r\n");
+      out.write("\n\n   Note: because you are using a read-only user data store such as LDAP or POP3 you will only be able to import user roster data, not users themselves.\n   Please see the <a href=\"../../plugin-admin.jsp?plugin=userimportexport&showReadme=true&decorator=none\">readme</a> for details.\n\n");
  } 
-      out.write("\r\n</p>\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n</p>\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

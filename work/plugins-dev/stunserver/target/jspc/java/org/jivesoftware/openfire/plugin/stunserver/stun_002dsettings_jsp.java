@@ -56,16 +56,16 @@ public final class stun_002dsettings_jsp extends org.apache.jasper.runtime.HttpJ
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<script type=\"text/javascript\">\r\n\r\n    function checkAndSubmit() {\r\n\r\n        var ip1 = document.settings.primaryAddress.value;\r\n        var ip2 = document.settings.secondaryAddress.value;\r\n        var port1 = document.settings.primaryPort.value;\r\n        var port2 = document.settings.secondaryPort.value;\r\n\r\n        var msg = \"\";\r\n\r\n        if (ip1 == ip2) {\r\n            msg += \"");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n<script type=\"text/javascript\">\n\n    function checkAndSubmit() {\n\n        var ip1 = document.settings.primaryAddress.value;\n        var ip2 = document.settings.secondaryAddress.value;\n        var port1 = document.settings.primaryPort.value;\n        var port2 = document.settings.secondaryPort.value;\n\n        var msg = \"\";\n\n        if (ip1 == ip2) {\n            msg += \"");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("\";\r\n        }\r\n        if (ip1 == 'CHOOSE' || ip2 == 'CHOOSE') {\r\n            msg += \"");
+      out.write("\";\n        }\n        if (ip1 == 'CHOOSE' || ip2 == 'CHOOSE') {\n            msg += \"");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\";\r\n        }\r\n        if (port1 == port2) {\r\n            if (msg != \"\") msg += \"\\n\";\r\n            msg += \"");
+      out.write("\";\n        }\n        if (port1 == port2) {\n            if (msg != \"\") msg += \"\\n\";\n            msg += \"");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\";\r\n        }\r\n\r\n        if (msg == \"\") {\r\n            document.settings.save.value = \"Change\";\r\n            document.settings.submit();\r\n        }\r\n        else alert(msg);\r\n\r\n    }\r\n\r\n</script>\r\n\r\n");
+      out.write("\";\n        }\n\n        if (msg == \"\") {\n            document.settings.save.value = \"Change\";\n            document.settings.submit();\n        }\n        else alert(msg);\n\n    }\n\n</script>\n\n");
 
 	STUNService stunService = (STUNService) XMPPServer.getInstance().getPluginManager().getPlugin("stunserver");
 
@@ -125,41 +125,41 @@ public final class stun_002dsettings_jsp extends org.apache.jasper.runtime.HttpJ
     }
 
 
-      out.write("\r\n<html>\r\n<head>\r\n    <title>\r\n        ");
+      out.write("\n<html>\n<head>\n    <title>\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n    </title>\r\n    <meta name=\"pageID\" content=\"stun-settings\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n    ");
+      out.write("\n    </title>\n    <meta name=\"pageID\" content=\"stun-settings\"/>\n</head>\n<body>\n\n<p>\n    ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
  if (success) { 
-      out.write("\r\n\r\n<div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\r\n                                           border=\"0\" alt=\"Success\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                    ");
+      out.write("\n\n<div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n                <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\n                                           border=\"0\" alt=\"Success\"></td>\n                <td class=\"jive-icon-label\">\n                    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n<br>\n\n");
  } else if (save) { 
-      out.write("\r\n\r\n<div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\"\r\n                                           border=\"0\" alt=\"\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                    ");
+      out.write("\n\n<div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n                <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\"\n                                           border=\"0\" alt=\"\"></td>\n                <td class=\"jive-icon-label\">\n                    ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n<br>\n\n");
  } else if (add) { 
-      out.write("\r\n\r\n<div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\"\r\n                                           border=\"0\" alt=\"\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                    ");
+      out.write("\n\n<div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n                <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\"\n                                           border=\"0\" alt=\"\"></td>\n                <td class=\"jive-icon-label\">\n                    ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n<br>\n\n");
  } 
-      out.write("\r\n\r\n\r\n<form action=\"\" method=\"post\" name=\"settings\">\r\n    <div class=\"jive-contentBoxHeader\">\r\n        ");
+      out.write("\n\n\n<form action=\"\" method=\"post\" name=\"settings\">\n    <div class=\"jive-contentBoxHeader\">\n        ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n    </div>\r\n    <div class=\"jive-contentBox\">\r\n\r\n        <table cellpadding=\"3\" cellspacing=\"5\" border=\"0\">\r\n            <tbody>\r\n                <tr>\r\n                    <td align=\"left\" colspan=\"2\">\r\n                        ");
+      out.write("\n    </div>\n    <div class=\"jive-contentBox\">\n\n        <table cellpadding=\"3\" cellspacing=\"5\" border=\"0\">\n            <tbody>\n                <tr>\n                    <td align=\"left\" colspan=\"2\">\n                        ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n                        :&nbsp<input type=\"checkbox\"\r\n                                     name=\"localEnabled\"\r\n                    ");
+      out.write("\n                        :&nbsp<input type=\"checkbox\"\n                                     name=\"localEnabled\"\n                    ");
       out.print(stunService.isLocalEnabled()?"checked":"");
-      out.write("\r\n                                     align=\"left\">\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\n                                     align=\"left\">\n                    </td>\n                </tr>\n                <tr>\n                    <td align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n                        :\r\n                    </td>\r\n                    <td>\r\n                        <select size=\"1\" name=\"primaryAddress\">\r\n                            <option value=\"CHOOSE\">-- Select Address --</option>\r\n                            ");
+      out.write("\n                        :\n                    </td>\n                    <td>\n                        <select size=\"1\" name=\"primaryAddress\">\n                            <option value=\"CHOOSE\">-- Select Address --</option>\n                            ");
 
 
 
@@ -170,89 +170,89 @@ public final class stun_002dsettings_jsp extends org.apache.jasper.runtime.HttpJ
 
 
                             
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( hostAddress );
       out.write('"');
       out.write(' ');
  if (isPrimaryAddress) { 
-      out.write("\r\n                                    selected ");
+      out.write("\n                                    selected ");
  } 
       out.write(' ');
       out.write('>');
       out.print( hostAddress );
-      out.write("\r\n                            </option>\r\n                            ");
+      out.write("\n                            </option>\n                            ");
  } 
-      out.write("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\n                    </td>\n                </tr>\n                <tr>\n                    <td align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n                        :\r\n                    </td>\r\n                    <td>\r\n                        <select size=\"1\" name=\"secondaryAddress\">\r\n                            <option value=\"CHOOSE\">-- Select Address --</option>\r\n                            ");
+      out.write("\n                        :\n                    </td>\n                    <td>\n                        <select size=\"1\" name=\"secondaryAddress\">\n                            <option value=\"CHOOSE\">-- Select Address --</option>\n                            ");
 
                                 for (InetAddress iaddress : addresses) {
                                     String hostAddress = iaddress.getHostAddress();
                                     boolean isSecondaryAddress = hostAddress.equals(stunService.getSecondaryAddress());
                             
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( hostAddress );
       out.write('"');
       out.write(' ');
  if (isSecondaryAddress) { 
-      out.write("\r\n                                    selected ");
+      out.write("\n                                    selected ");
  } 
       out.write(' ');
       out.write('>');
       out.print( hostAddress );
-      out.write("\r\n                            </option>\r\n                            ");
+      out.write("\n                            </option>\n                            ");
  } 
-      out.write("\r\n                        </select>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\n                        </select>\n                    </td>\n                </tr>\n                <tr>\n                    <td align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n                        :\r\n                    </td>\r\n                    <td>\r\n                        <input type=\"text\" size=\"6\"\r\n                               maxlength=\"10\"\r\n                               name=\"primaryPort\"\r\n                               value=\"");
+      out.write("\n                        :\n                    </td>\n                    <td>\n                        <input type=\"text\" size=\"6\"\n                               maxlength=\"10\"\n                               name=\"primaryPort\"\n                               value=\"");
       out.print(stunService.getPrimaryPort());
-      out.write("\"\r\n                               align=\"left\">\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\"\n                               align=\"left\">\n                    </td>\n                </tr>\n                <tr>\n                    <td align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n                        :\r\n                    </td>\r\n                    <td>\r\n                        <input type=\"text\" size=\"6\"\r\n                               maxlength=\"10\"\r\n                               name=\"secondaryPort\"\r\n                               value=\"");
+      out.write("\n                        :\n                    </td>\n                    <td>\n                        <input type=\"text\" size=\"6\"\n                               maxlength=\"10\"\n                               name=\"secondaryPort\"\n                               value=\"");
       out.print(stunService.getSecondaryPort());
-      out.write("\"\r\n                               align=\"left\">\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n                        <input type=\"hidden\" name=\"save\">\r\n                        <input type=\"button\" name=\"set\" value=\"");
+      out.write("\"\n                               align=\"left\">\n                    </td>\n                </tr>\n                <tr>\n                    <td>\n                        <input type=\"hidden\" name=\"save\">\n                        <input type=\"button\" name=\"set\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\"\r\n                               onclick=\"checkAndSubmit()\">\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</form>\r\n<form action=\"\" method=\"post\" name=\"add\">\r\n    <div class=\"jive-contentBoxHeader\">\r\n        ");
+      out.write("\"\n                               onclick=\"checkAndSubmit()\">\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</form>\n<form action=\"\" method=\"post\" name=\"add\">\n    <div class=\"jive-contentBoxHeader\">\n        ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n    </div>\r\n    <div class=\"jive-contentBox\">\r\n        <p>\r\n            ");
+      out.write("\n    </div>\n    <div class=\"jive-contentBox\">\n        <p>\n            ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n        </p>\r\n\r\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"300\">\r\n            <thead>\r\n                <tr>\r\n                    <th nowrap align=\"left\">\r\n                        ");
+      out.write("\n        </p>\n\n        <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"300\">\n            <thead>\n                <tr>\n                    <th nowrap align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n                    </th>\r\n                    <th nowrap align=\"left\">\r\n                        ");
+      out.write("\n                    </th>\n                    <th nowrap align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n                    </th>\r\n                    <th nowrap align=\"left\">\r\n                        ");
+      out.write("\n                    </th>\n                    <th nowrap align=\"left\">\n                        ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n                    </th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                ");
+      out.write("\n                    </th>\n                </tr>\n            </thead>\n            <tbody>\n                ");
 
                     int i = 0;
                     for (StunServerAddress stunServerAddress : stunService.getExternalServers()) {
                 
-      out.write("\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\n                <tr>\n                    <td align=\"left\">\n                        ");
       out.print(stunServerAddress.getServer());
-      out.write("\r\n                    </td>\r\n                    <td align=\"left\">\r\n                        ");
+      out.write("\n                    </td>\n                    <td align=\"left\">\n                        ");
       out.print(stunServerAddress.getPort());
-      out.write("\r\n                    </td>\r\n                    <td align=\"center\">\r\n                        <a href=\"#\" onclick=\"document.add.remove.value=");
+      out.write("\n                    </td>\n                    <td align=\"center\">\n                        <a href=\"#\" onclick=\"document.add.remove.value=");
       out.print(i++);
-      out.write(";document.add.submit();\">\r\n                            <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"\r\n                                 alt=\"");
+      out.write(";document.add.submit();\">\n                            <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"\n                                 alt=\"");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\">\r\n                        </a>\r\n                    </td>\r\n                </tr>\r\n                ");
+      out.write("\">\n                        </a>\n                    </td>\n                </tr>\n                ");
 
                     }
                 
-      out.write("\r\n                <input type=\"hidden\" name=\"remove\" value=\"\">\r\n                <tr>\r\n                    <td align=\"left\">\r\n                        <input type=\"text\" name=\"externalServer\" size=\"20\" maxlength=\"50\">\r\n                    </td>\r\n                    <td align=\"left\">\r\n                        <input type=\"text\" name=\"externalPort\" size=\"6\" maxlength=\"6\">\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n                        &nbsp;\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n                        <input type=\"submit\" name=\"add\" value=\"");
+      out.write("\n                <input type=\"hidden\" name=\"remove\" value=\"\">\n                <tr>\n                    <td align=\"left\">\n                        <input type=\"text\" name=\"externalServer\" size=\"20\" maxlength=\"50\">\n                    </td>\n                    <td align=\"left\">\n                        <input type=\"text\" name=\"externalPort\" size=\"6\" maxlength=\"6\">\n                    </td>\n                </tr>\n                <tr>\n                    <td>\n                        &nbsp;\n                    </td>\n                </tr>\n                <tr>\n                    <td>\n                        <input type=\"submit\" name=\"add\" value=\"");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\">\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n\r\n</form>\r\n</body>\r\n</html>");
+      out.write("\">\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n\n</form>\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

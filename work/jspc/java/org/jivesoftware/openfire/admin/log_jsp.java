@@ -101,7 +101,7 @@ public final class log_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -110,8 +110,10 @@ public final class log_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters
     String log = ParamUtils.getParameter(request,"log");
@@ -187,41 +189,41 @@ public final class log_jsp extends org.apache.jasper.runtime.HttpJspBase
     	Log.info("Could not open (log)file.", ex);
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n<html>\n<head>\n    <title>");
       out.print( log );
-      out.write("</title>\r\n    <meta name=\"decorator\" content=\"none\"/>\r\n    <style type=\"text/css\">\r\n    .log TABLE {\r\n        border : 1px #ccc solid;\r\n    }\r\n    .log TH {\r\n        font-family : verdana, arial, sans-serif;\r\n        font-weight : bold;\r\n        font-size : 8pt;\r\n    }\r\n    .log TR TH {\r\n        background-color : #ddd;\r\n        border-bottom : 1px #ccc solid;\r\n        padding-left : 2px;\r\n        padding-right : 2px;\r\n        text-align : left;\r\n    }\r\n    .log .head-num {\r\n        border-right : 1px #ccc solid;\r\n    }\r\n    .log TD {\r\n        font-family : courier new,monospace;\r\n        font-size : 9pt;\r\n        background-color : #ffe;\r\n    }\r\n    .log .num {\r\n        width : 1%;\r\n        background-color : #eee !important;\r\n        border-right : 1px #ccc solid;\r\n        padding-left : 2px;\r\n        padding-right : 2px;\r\n    }\r\n    .log .line {\r\n        padding-left : 10px;\r\n    }\r\n    .hilite {\r\n        color : #900;\r\n    }\r\n    .hilite-marker {\r\n        background-color : #ff0;\r\n        color : #000;\r\n        font-weight : bold;\r\n");
-      out.write("    }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n<div class=\"log\">\r\n<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr>\r\n    <th class=\"head-num\">");
+      out.write("</title>\n    <meta name=\"decorator\" content=\"none\"/>\n    <style type=\"text/css\">\n    .log TABLE {\n        border : 1px #ccc solid;\n    }\n    .log TH {\n        font-family : verdana, arial, sans-serif;\n        font-weight : bold;\n        font-size : 8pt;\n    }\n    .log TR TH {\n        background-color : #ddd;\n        border-bottom : 1px #ccc solid;\n        padding-left : 2px;\n        padding-right : 2px;\n        text-align : left;\n    }\n    .log .head-num {\n        border-right : 1px #ccc solid;\n    }\n    .log TD {\n        font-family : courier new,monospace;\n        font-size : 9pt;\n        background-color : #ffe;\n    }\n    .log .num {\n        width : 1%;\n        background-color : #eee !important;\n        border-right : 1px #ccc solid;\n        padding-left : 2px;\n        padding-right : 2px;\n    }\n    .log .line {\n        padding-left : 10px;\n    }\n    .hilite {\n        color : #900;\n    }\n    .hilite-marker {\n        background-color : #ff0;\n        color : #000;\n        font-weight : bold;\n    }\n    </style>\n");
+      out.write("</head>\n<body>\n\n<div class=\"log\">\n<table cellpadding=\"1\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr>\n    <th class=\"head-num\">");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</th>\r\n    <th>&nbsp;</th>\r\n</tr>\r\n<tr>\r\n    <td width=\"1%\" nowrap class=\"num\">\r\n        ");
+      out.write("</th>\n    <th>&nbsp;</th>\n</tr>\n<tr>\n    <td width=\"1%\" nowrap class=\"num\">\n        ");
   if ("asc".equals(mode)) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
   for (int j=start+1; j<=numLines; j++) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( j );
-      out.write("<br>\r\n            ");
+      out.write("<br>\n            ");
   } 
-      out.write("\r\n        ");
+      out.write("\n        ");
   } else { 
-      out.write("\r\n            ");
+      out.write("\n            ");
   for(int j=numLines; j>=start+1; j--) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( j );
-      out.write("<br>\r\n            ");
+      out.write("<br>\n            ");
   } 
-      out.write("\r\n        ");
+      out.write("\n        ");
   } 
-      out.write("\r\n    </td>\r\n    <td width=\"99%\" class=\"line\">\r\n        ");
+      out.write("\n    </td>\n    <td width=\"99%\" class=\"line\">\n        ");
  for (String line1 : lines) {
             if (line1 != null) {
         
-      out.write("\r\n        <nobr>");
+      out.write("\n        <nobr>");
       out.print( line1 );
-      out.write("\r\n        </nobr>\r\n        <br>\r\n\r\n        ");
+      out.write("\n        </nobr>\n        <br>\n\n        ");
  }
         }
         
-      out.write("\r\n    </td>\r\n</tr>\r\n</table>\r\n</div>\r\n\r\n</body>\r\n</html>");
+      out.write("\n    </td>\n</tr>\n</table>\n</div>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

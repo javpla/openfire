@@ -46,9 +46,9 @@ public final class workgroup_002dqueue_002dmanage_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters //
     String wgID = ParamUtils.getParameter(request, "wgID");
@@ -86,7 +86,7 @@ public final class workgroup_002dqueue_002dmanage_jsp extends org.apache.jasper.
     RequestQueue queue = workgroup.getRequestQueue(queueID);
     //AgentSelector newSelector = null;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n");
 
     RequestQueue.OverflowType overflowType = null;
     switch (overflow) {
@@ -148,54 +148,53 @@ public final class workgroup_002dqueue_002dmanage_jsp extends org.apache.jasper.
         }
     }
 
-      out.write("\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>Edit Queue Settings - ");
+      out.write("\n\n\n<html>\n    <head>\n        <title>Edit Queue Settings - ");
       out.print(queue.getName());
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-queues\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-queues\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"edit_queue_properties.html\"/>-->\r\n\r\n        <script language=\"JavaScript\" type=\"text/javascript\">\r\n        function openWin(el) {\r\n            var win = window.open('user-browser.jsp?formName=f&elName=agents','newWin','width=500,height=550,menubar=yes,location=no,personalbar=no,scrollbars=yes,resize=yes');\r\n        }\r\n\r\n        function openAgentGroupWindow(el){\r\n             var agentwin = window.open('agent-group-browser.jsp?formName=f&elName=agentGroups','newWin','width=500,height=550,menubar=yes,location=no,personalbar=no,scrollbars=yes,resize=yes');\r\n\r\n        }\r\n        </script>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\nThe queue name and description helps\r\nadministrators and agents with identifying a particular request queue.\r\n</p>\r\n\r\n<p>\r\n<a href=\"workgroup-queue-agents.jsp?wgID=");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"edit_queue_properties.html\"/>-->\n\n        <script language=\"JavaScript\" type=\"text/javascript\">\n        function openWin(el) {\n            var win = window.open('user-browser.jsp?formName=f&elName=agents','newWin','width=500,height=550,menubar=yes,location=no,personalbar=no,scrollbars=yes,resize=yes');\n        }\n\n        function openAgentGroupWindow(el){\n             var agentwin = window.open('agent-group-browser.jsp?formName=f&elName=agentGroups','newWin','width=500,height=550,menubar=yes,location=no,personalbar=no,scrollbars=yes,resize=yes');\n\n        }\n        </script>\n    </head>\n    <body>\n\n<p>\nThe queue name and description helps\nadministrators and agents with identifying a particular request queue.\n</p>\n\n<p>\n<a href=\"workgroup-queue-agents.jsp?wgID=");
       out.print( wgID );
       out.write("&qID=");
       out.print( queueID);
-      out.write("\">Edit Agents and Groups</a>\r\n    &nbsp;\r\n<a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\">Edit Agents and Groups</a>\n    &nbsp;\n<a href=\"workgroup-queues.jsp?wgID=");
       out.print( wgID );
-      out.write("\">View Queues</a>\r\n</p>\r\n\r\n\r\n");
+      out.write("\">View Queues</a>\n</p>\n\n\n");
  if(success != null && errors.size() == 0) { 
-      out.write("\r\n<div class=\"success\">\r\n   Workgroup Queue has been updated.\r\n</div>\r\n<br/>\r\n");
+      out.write("\n<div class=\"success\">\n   Workgroup Queue has been updated.\n</div>\n<br/>\n");
  } 
-      out.write('\r');
       out.write('\n');
   if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"error\">\r\n    Please fix the errors below.\r\n    </div>\r\n\r\n");
+      out.write("\n\n    <div class=\"error\">\n    Please fix the errors below.\n    </div>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"workgroup-queue-manage.jsp\" method=\"post\" name=\"f\">\r\n<input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n<form action=\"workgroup-queue-manage.jsp\" method=\"post\" name=\"f\">\n<input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\">\r\n<input type=\"hidden\" name=\"qID\" value=\"");
+      out.write("\">\n<input type=\"hidden\" name=\"qID\" value=\"");
       out.print( queueID );
-      out.write("\">\r\n    <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n        <tr>\r\n            <th colspan=\"3\">Queue Settings</th>\r\n        </tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Name: *</b>\r\n        ");
+      out.write("\">\n    <table width=\"100%\" class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n        <tr>\n            <th colspan=\"3\">Queue Settings</th>\n        </tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Name: *</b>\n        ");
   if (errors.get("name") != null) { 
-      out.write("\r\n            <span class=\"jive-error-text\">\r\n            Please enter a name.\r\n            </span>\r\n\r\n        ");
+      out.write("\n            <span class=\"jive-error-text\">\n            Please enter a name.\n            </span>\n\n        ");
   } 
-      out.write("\r\n         <br/>\r\n        <span class=\"jive-description\">\r\n        Please specify the name of the queue. The queue name should be created based on the Queue Routing rules.\r\n        </span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <input type=\"text\" name=\"name\" size=\"40\"\r\n         value=\"");
+      out.write("\n         <br/>\n        <span class=\"jive-description\">\n        Please specify the name of the queue. The queue name should be created based on the Queue Routing rules.\n        </span>\n    </td>\n    <td class=\"c2\">\n        <input type=\"text\" name=\"name\" size=\"40\"\n         value=\"");
       out.print( ((name != null) ? name : "") );
-      out.write("\">\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Description:</b>\r\n        <br/>\r\n        <span class=\"jive-description\">Specify a description for this queue to easily identify it.</span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <textarea name=\"description\" cols=\"40\" rows=\"2\" wrap=\"virtual\">");
+      out.write("\">\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Description:</b>\n        <br/>\n        <span class=\"jive-description\">Specify a description for this queue to easily identify it.</span>\n    </td>\n    <td class=\"c2\">\n        <textarea name=\"description\" cols=\"40\" rows=\"2\" wrap=\"virtual\">");
       out.print( ((description != null) ? description : "") );
-      out.write("</textarea>\r\n    </td>\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Request Timeout: (sec) *</b>\r\n        ");
+      out.write("</textarea>\n    </td>\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Request Timeout: (sec) *</b>\n        ");
   if (errors.get("requestTimeout") != null) { 
-      out.write("\r\n            &nbsp;\r\n            <span class=\"jive-error-text\">\r\n            Please enter a valid timeout value.\r\n            </span>\r\n\r\n        ");
+      out.write("\n            &nbsp;\n            <span class=\"jive-error-text\">\n            Please enter a valid timeout value.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br/>\r\n        <span class=\"jive-description\">The total time before an individual request will timeout if no agents accept it.</span>\r\n    </td>\r\n\r\n                <td width=\"99%\">\r\n                    <input type=\"text\" name=\"requestTimeout\" value=\"");
+      out.write("\n        <br/>\n        <span class=\"jive-description\">The total time before an individual request will timeout if no agents accept it.</span>\n    </td>\n\n                <td width=\"99%\">\n                    <input type=\"text\" name=\"requestTimeout\" value=\"");
       out.print( requestTimeout/1000L );
-      out.write("\"\r\n                     size=\"5\" maxlength=\"10\"\r\n                    >\r\n                </td>\r\n\r\n</tr>\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Offer Timeout: (sec) *</b>\r\n        ");
+      out.write("\"\n                     size=\"5\" maxlength=\"10\"\n                    >\n                </td>\n\n</tr>\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Offer Timeout: (sec) *</b>\n        ");
   if (errors.get("offerTimeout") != null) { 
-      out.write("\r\n            &nbsp;\r\n            <span class=\"jive-error-text\">\r\n            Please enter a valid timeout value.\r\n            </span>\r\n\r\n        ");
+      out.write("\n            &nbsp;\n            <span class=\"jive-error-text\">\n            Please enter a valid timeout value.\n            </span>\n\n        ");
   } 
-      out.write("\r\n        <br/>\r\n        <span class=\"jive-description\">The time each agent will be giving to accept a chat request.</span>\r\n    </td>\r\n    <td class=\"c2\">\r\n      <input type=\"text\" name=\"offerTimeout\" value=\"");
+      out.write("\n        <br/>\n        <span class=\"jive-description\">The time each agent will be giving to accept a chat request.</span>\n    </td>\n    <td class=\"c2\">\n      <input type=\"text\" name=\"offerTimeout\" value=\"");
       out.print( offerTimeout/1000 );
-      out.write("\" size=\"5\" maxlength=\"10\">\r\n    </td>\r\n</tr>\r\n\r\n\r\n<tr valign=\"top\">\r\n    <td class=\"c1\">\r\n        <b>Queue Overflow Policy:</b>\r\n        <br/>\r\n        <span class=\"jive-description\">Specify failover for this queue.</span>\r\n    </td>\r\n    <td class=\"c2\">\r\n        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" style=\"border-width:0px !important;\">\r\n        <tr>\r\n            <td>\r\n                <input type=\"radio\" name=\"overflow\" value=\"1\" id=\"over01\"\r\n                 ");
+      out.write("\" size=\"5\" maxlength=\"10\">\n    </td>\n</tr>\n\n\n<tr valign=\"top\">\n    <td class=\"c1\">\n        <b>Queue Overflow Policy:</b>\n        <br/>\n        <span class=\"jive-description\">Specify failover for this queue.</span>\n    </td>\n    <td class=\"c2\">\n        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" style=\"border-width:0px !important;\">\n        <tr>\n            <td>\n                <input type=\"radio\" name=\"overflow\" value=\"1\" id=\"over01\"\n                 ");
       out.print( ((overflowType==RequestQueue.OverflowType.OVERFLOW_NONE) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td>\r\n                <label for=\"over01\">Never overflow requests</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n                <input type=\"radio\" name=\"overflow\" value=\"2\" id=\"over02\"\r\n                 ");
+      out.write(">\n            </td>\n            <td>\n                <label for=\"over01\">Never overflow requests</label>\n            </td>\n        </tr>\n        <tr>\n            <td>\n                <input type=\"radio\" name=\"overflow\" value=\"2\" id=\"over02\"\n                 ");
       out.print( ((overflowType==RequestQueue.OverflowType.OVERFLOW_RANDOM) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td>\r\n                <label for=\"over02\">Overflow requests to a random queue</label>\r\n            </td>\r\n        </tr>\r\n\r\n        ");
+      out.write(">\n            </td>\n            <td>\n                <label for=\"over02\">Overflow requests to a random queue</label>\n            </td>\n        </tr>\n\n        ");
   // Get a list of all other queues in this workgroup
             List queues = new LinkedList();
             for(RequestQueue requestQueue : workgroup.getRequestQueues()){
@@ -204,35 +203,35 @@ public final class workgroup_002dqueue_002dmanage_jsp extends org.apache.jasper.
                 }
             }
         
-      out.write("\r\n\r\n        <tr>\r\n            <td>\r\n                <input type=\"radio\" name=\"overflow\" value=\"3\" id=\"over03\"\r\n                 ");
+      out.write("\n\n        <tr>\n            <td>\n                <input type=\"radio\" name=\"overflow\" value=\"3\" id=\"over03\"\n                 ");
       out.print( ((overflowType==RequestQueue.OverflowType.OVERFLOW_BACKUP) ? "checked" : "") );
-      out.write("\r\n                 ");
+      out.write("\n                 ");
       out.print( ((queues.size()==0) ? "disabled" : "") );
-      out.write(">\r\n            </td>\r\n            <td>\r\n                <label for=\"over03\">Overflow requests to a specified queue:</label>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>&nbsp;</td>\r\n            <td>\r\n                ");
+      out.write(">\n            </td>\n            <td>\n                <label for=\"over03\">Overflow requests to a specified queue:</label>\n            </td>\n        </tr>\n        <tr>\n            <td>&nbsp;</td>\n            <td>\n                ");
   if (queues.size() == 0) { 
-      out.write("\r\n\r\n                    No other queues -\r\n                    <a href=\"workgroup-queue-create.jsp?wgID=");
+      out.write("\n\n                    No other queues -\n                    <a href=\"workgroup-queue-create.jsp?wgID=");
       out.print( wgID );
-      out.write("\">create one</a>.\r\n\r\n                ");
+      out.write("\">create one</a>.\n\n                ");
   } else { 
-      out.write("\r\n\r\n                <select size=\"1\" name=\"overflowQID\" onchange=\"this.form.overflow[2].checked=true;\">\r\n\r\n                    <option value=\"\"></option>\r\n\r\n                    ");
+      out.write("\n\n                <select size=\"1\" name=\"overflowQID\" onchange=\"this.form.overflow[2].checked=true;\">\n\n                    <option value=\"\"></option>\n\n                    ");
   for (int i=0; i<queues.size(); i++) {
                             RequestQueue q = (RequestQueue)queues.get(i);
                     
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( q.getID() );
-      out.write("\"\r\n                        ");
+      out.write("\"\n                        ");
   if (backupQueue != null) { 
-      out.write("\r\n\r\n                            ");
+      out.write("\n\n                            ");
       out.print( ((backupQueue.getID()==q.getID()) ? "selected" : "") );
-      out.write("\r\n\r\n                        ");
+      out.write("\n\n                        ");
   } 
-      out.write("\r\n                         >");
+      out.write("\n                         >");
       out.print( q.getName() );
-      out.write("</option>\r\n\r\n                    ");
+      out.write("</option>\n\n                    ");
   } 
-      out.write("\r\n\r\n                </select>\r\n\r\n                ");
+      out.write("\n\n                </select>\n\n                ");
   } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n        </table>\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<br>\r\n\r\n* Required field.\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" name=\"update\" value=\"Save Settings\">\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.name.focus();\r\n</script>\r\n\r\n</body>\r\n</html>");
+      out.write("\n            </td>\n        </tr>\n        </table>\n    </td>\n</tr>\n</table>\n\n<br>\n\n* Required field.\n\n<br><br>\n\n<input type=\"submit\" name=\"update\" value=\"Save Settings\">\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.name.focus();\n</script>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -70,7 +70,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -79,13 +79,12 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"system-clustering\"/>\r\n<style type=\"text/css\">\r\n.jive-contentBox .local {\r\n    background-color: #ffc;\r\n    }\r\n</style>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"system-clustering\"/>\n<style type=\"text/css\">\n.jive-contentBox .local {\n    background-color: #ffc;\n    }\n</style>\n</head>\n<body>\n\n");
  // Get parameters
     boolean update = request.getParameter("update") != null;
     boolean clusteringEnabled = ParamUtils.getBooleanParameter(request, "clusteringEnabled");
@@ -150,75 +149,75 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
         statsMap.put(GetBasicStatistics.OUTGOING, current + " (" + Math.round(percentage) + "%)");
     }
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (update) {
         if (updateSucess) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
  if (ClusterManager.isClusteringStarted()) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             }
         
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\n            <td class=\"jive-icon-label\">\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n");
   }
 } else if (!clusteringAvailable) {
 
-      out.write("\r\n    <div class=\"warning\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" >\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon-label\">\r\n            <b>");
+      out.write("\n    <div class=\"warning\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" >\n    <tbody>\n        <tr>\n            <td class=\"jive-icon-label\">\n            <b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</b><br/><br/>\r\n            </td>\r\n        </tr>\r\n        <td valign=\"top\" align=\"left\" colspan=\"2\">\r\n            ");
+      out.write("</b><br/><br/>\n            </td>\n        </tr>\n        <td valign=\"top\" align=\"left\" colspan=\"2\">\n            ");
  if (usingEmbeddedDB) { 
-      out.write("\r\n                <span>");
+      out.write("\n                <span>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } else if (maxClusterNodes == 0) { 
-      out.write("\r\n                <span>");
+      out.write("\n                <span>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } else { 
-      out.write("\r\n                <span>");
+      out.write("\n                <span>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</span>\r\n            ");
+      out.write("</span>\n            ");
  } 
-      out.write("\r\n        </td>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n");
+      out.write("\n        </td>\n    </tbody>\n    </table>\n    </div>\n    <br>\n");
  } 
-      out.write(" \r\n\r\n<!-- BEGIN 'Clustering Enabled' -->\r\n<form action=\"system-clustering.jsp\" method=\"post\">\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write(" \n\n<!-- BEGIN 'Clustering Enabled' -->\n<form action=\"system-clustering.jsp\" method=\"post\">\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr>\r\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"clusteringEnabled\" value=\"false\" id=\"rb01\"\r\n\t\t\t\t\t ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"clusteringEnabled\" value=\"false\" id=\"rb01\"\n\t\t\t\t\t ");
       out.print( (!clusteringEnabled ? "checked" : "") );
       out.write(' ');
       out.print( clusteringAvailable ? "" : "disabled" );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb01\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb01\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"clusteringEnabled\" value=\"true\" id=\"rb02\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"clusteringEnabled\" value=\"true\" id=\"rb02\"\n\t\t\t\t\t ");
       out.print( (clusteringEnabled ? "checked" : "") );
       out.write(' ');
       out.print( clusteringAvailable ? "" : "disabled" );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb02\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb02\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
       out.write("</b> - ");
@@ -227,17 +226,17 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
       out.write(" <b>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</b> \r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n        <br/>\r\n        ");
+      out.write("</b> \n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n        <br/>\n        ");
  if (clusteringAvailable) { 
-      out.write("\r\n        <input type=\"submit\" name=\"update\" value=\"");
+      out.write("\n        <input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
  } 
-      out.write("\r\n    </div>\r\n</form>\r\n<!-- END 'Clustering Enabled' -->\r\n<br>\r\n<div class=\"jive-contentBoxHeader\">\r\n    ");
+      out.write("\n    </div>\n</form>\n<!-- END 'Clustering Enabled' -->\n<br>\n<div class=\"jive-contentBoxHeader\">\n    ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<div class=\"jive-contentBox\">\r\n    <p>\r\n        ");
+      out.write("\n</div>\n<div class=\"jive-contentBox\">\n    <p>\n        ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_17 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_17.setPageContext(_jspx_page_context);
@@ -251,7 +250,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
           _jspx_th_fmt_message_17.doInitBody();
         }
         do {
-          out.write("\r\n            ");
+          out.write("\n            ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -263,7 +262,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n            ");
+          out.write("\n            ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -275,7 +274,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write("\r\n            ");
+          out.write("\n            ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_2 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_2.setPageContext(_jspx_page_context);
@@ -287,7 +286,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_2);
-          out.write("\r\n            ");
+          out.write("\n            ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_3 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_3.setPageContext(_jspx_page_context);
@@ -299,7 +298,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_3);
-          out.write("\r\n        ");
+          out.write("\n        ");
           int evalDoAfterBody = _jspx_th_fmt_message_17.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -312,25 +311,25 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_17);
-      out.write("\r\n    </p>\r\n\r\n      <table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\r\n          <thead>\r\n              <tr>\r\n                  <th colspan=\"2\">\r\n                      ");
+      out.write("\n    </p>\n\n      <table cellpadding=\"3\" cellspacing=\"2\" border=\"0\">\n          <thead>\n              <tr>\n                  <th colspan=\"2\">\n                      ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th>\r\n                      ");
+      out.write("\n                  </th>\n                  <th>\n                      ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th style=\"text-align:center;\">\r\n                      ");
+      out.write("\n                  </th>\n                  <th style=\"text-align:center;\">\n                      ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th style=\"text-align:center;\">\r\n                      ");
+      out.write("\n                  </th>\n                  <th style=\"text-align:center;\">\n                      ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th style=\"text-align:center;\">\r\n                      ");
+      out.write("\n                  </th>\n                  <th style=\"text-align:center;\">\n                      ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th style=\"text-align:center;\">\r\n                      ");
+      out.write("\n                  </th>\n                  <th style=\"text-align:center;\">\n                      ");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n                  </th>\r\n                  <th width=\"90%\" class=\"last\">&nbsp;</th>\r\n              </tr>\r\n          </thead>\r\n          <tbody>\r\n            ");
+      out.write("\n                  </th>\n                  <th width=\"90%\" class=\"last\">&nbsp;</th>\n              </tr>\n          </thead>\n          <tbody>\n            ");
  if (!clusterNodesInfo.isEmpty()) {
                 for (ClusterNodeInfo nodeInfo : clusterNodesInfo) {
                     boolean isLocalMember =
@@ -349,37 +348,37 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
                         }
                     }
             
-      out.write("\r\n              <tr class=\"");
+      out.write("\n              <tr class=\"");
       out.print( (isLocalMember ? "local" : "") );
-      out.write("\" valign=\"middle\">\r\n                  <td align=\"center\" width=\"1%\">\r\n                      <a href=\"plugins/");
+      out.write("\" valign=\"middle\">\n                  <td align=\"center\" width=\"1%\">\n                      <a href=\"plugins/");
       out.print( CacheFactory.getPluginName() );
       out.write("/system-clustering-node.jsp?UID=");
       out.print( nodeID );
-      out.write("\"\r\n                       title=\"Click for more details\"\r\n                       ><img src=\"images/server-network-24x24.gif\" width=\"24\" height=\"24\" border=\"0\" alt=\"\"></a>\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\r\n                      <a href=\"plugins/");
+      out.write("\"\n                       title=\"Click for more details\"\n                       ><img src=\"images/server-network-24x24.gif\" width=\"24\" height=\"24\" border=\"0\" alt=\"\"></a>\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\n                      <a href=\"plugins/");
       out.print( CacheFactory.getPluginName() );
       out.write("/system-clustering-node.jsp?UID=");
       out.print( nodeID );
-      out.write("\">\r\n                      ");
+      out.write("\">\n                      ");
   if (isLocalMember) { 
-      out.write("\r\n                          <b>");
+      out.write("\n                          <b>");
       out.print( nodeInfo.getHostName() );
-      out.write("</b>\r\n                      ");
+      out.write("</b>\n                      ");
   } else { 
-      out.write("\r\n                          ");
+      out.write("\n                          ");
       out.print( nodeInfo.getHostName() );
-      out.write("\r\n                      ");
+      out.write("\n                      ");
   } 
-      out.write("</a>\r\n                      <br />\r\n                      ");
+      out.write("</a>\n                      <br />\n                      ");
       out.print( nodeInfo.getNodeID() );
-      out.write("\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\n                      ");
       out.print( JiveGlobals.formatDateTime(new Date(nodeInfo.getJoinedTime())) );
-      out.write("\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\n                      ");
       out.print( nodeStats != null ? nodeStats.get(GetBasicStatistics.CLIENT) : "N/A" );
-      out.write("\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\n                      ");
       out.print( nodeStats != null ? nodeStats.get(GetBasicStatistics.INCOMING) : "N/A" );
-      out.write("\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"1%\" valign=\"middle\">\n                      ");
       out.print( nodeStats != null ? nodeStats.get(GetBasicStatistics.OUTGOING) : "N/A" );
-      out.write("\r\n                  </td>\r\n                  <td class=\"jive-description\" nowrap width=\"75%\" valign=\"middle\">\r\n                  <table width=\"100%\">\r\n                    <tr>\r\n                      ");
+      out.write("\n                  </td>\n                  <td class=\"jive-description\" nowrap width=\"75%\" valign=\"middle\">\n                  <table width=\"100%\">\n                    <tr>\n                      ");
 
                           int percent = 0;
                           String memory = "N/A";
@@ -392,30 +391,30 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
                                 memory = mbFormat.format(usedMemory) + " MB of " + mbFormat.format(maxMemory) + " MB used";
                           }
                       
-      out.write("\r\n                        <td width=\"30%\">\r\n                          <div class=\"bar\">\r\n                          <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\r\n                          <tr>\r\n                              ");
+      out.write("\n                        <td width=\"30%\">\n                          <div class=\"bar\">\n                          <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\n                          <tr>\n                              ");
   if (percent == 0) { 
-      out.write("\r\n\r\n                                  <td width=\"100%\"><img src=\"images/percent-bar-left.gif\" width=\"100%\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                              ");
+      out.write("\n\n                                  <td width=\"100%\"><img src=\"images/percent-bar-left.gif\" width=\"100%\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                              ");
   } else { 
-      out.write("\r\n\r\n                                  ");
+      out.write("\n\n                                  ");
   if (percent >= 90) { 
-      out.write("\r\n\r\n                                      <td width=\"");
+      out.write("\n\n                                      <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"images/percent-bar-used-high.gif\"\r\n                                          ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                                  ");
+      out.write("%\" background=\"images/percent-bar-used-high.gif\"\n                                          ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                                  ");
   } else { 
-      out.write("\r\n\r\n                                      <td width=\"");
+      out.write("\n\n                                      <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"images/percent-bar-used-low.gif\"\r\n                                          ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                                  ");
+      out.write("%\" background=\"images/percent-bar-used-low.gif\"\n                                          ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                                  ");
   } 
-      out.write("\r\n                                  <td width=\"");
+      out.write("\n                                  <td width=\"");
       out.print( (100-percent) );
-      out.write("%\" background=\"images/percent-bar-left.gif\"\r\n                                      ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n                              ");
+      out.write("%\" background=\"images/percent-bar-left.gif\"\n                                      ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n                              ");
   } 
-      out.write("\r\n                          </tr>\r\n                          </table>\r\n                          </div>\r\n                        </td>\r\n                        <td class=\"jive-description\">\r\n                          ");
+      out.write("\n                          </tr>\n                          </table>\n                          </div>\n                        </td>\n                        <td class=\"jive-description\">\n                          ");
       out.print( memory );
-      out.write("\r\n                        </td>\r\n                      </tr>\r\n                    </table>\r\n                  </td>\r\n                  <td width=\"20%\">&nbsp;</td>\r\n              </tr>\r\n              ");
+      out.write("\n                        </td>\n                      </tr>\n                    </table>\n                  </td>\n                  <td width=\"20%\">&nbsp;</td>\n              </tr>\n              ");
  }
               } else if (ClusterManager.isClusteringStarting()) { 
-      out.write("\r\n              <tr valign=\"middle\" align=\"middle\" class=\"local\">\r\n                  <td colspan=8>\r\n                      ");
+      out.write("\n              <tr valign=\"middle\" align=\"middle\" class=\"local\">\n                  <td colspan=8>\n                      ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_24 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_24.setPageContext(_jspx_page_context);
@@ -429,7 +428,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
           _jspx_th_fmt_message_24.doInitBody();
         }
         do {
-          out.write("\r\n                          ");
+          out.write("\n                          ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_4 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_4.setPageContext(_jspx_page_context);
@@ -441,7 +440,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_4);
-          out.write("\r\n                          ");
+          out.write("\n                          ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_5 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_5.setPageContext(_jspx_page_context);
@@ -453,7 +452,7 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_5);
-          out.write("\r\n                      ");
+          out.write("\n                      ");
           int evalDoAfterBody = _jspx_th_fmt_message_24.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -466,9 +465,9 @@ public final class system_002dclustering_jsp extends org.apache.jasper.runtime.H
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_24);
-      out.write("\r\n                  </td>\r\n              </tr>\r\n              ");
+      out.write("\n                  </td>\n              </tr>\n              ");
  } 
-      out.write("\r\n        </tbody>\r\n        </table>\r\n</div>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n        </tbody>\n        </table>\n</div>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

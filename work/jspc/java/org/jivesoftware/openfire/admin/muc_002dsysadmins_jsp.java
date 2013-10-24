@@ -54,7 +54,7 @@ public final class muc_002dsysadmins_jsp extends org.apache.jasper.runtime.HttpJ
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -63,10 +63,10 @@ public final class muc_002dsysadmins_jsp extends org.apache.jasper.runtime.HttpJ
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     String userJID = ParamUtils.getParameter(request,"userJID");
     boolean add = request.getParameter("add") != null;
@@ -112,15 +112,14 @@ public final class muc_002dsysadmins_jsp extends org.apache.jasper.runtime.HttpJ
 	    }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"subPageID\" content=\"muc-sysadmin\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("</title>\n<meta name=\"subPageID\" content=\"muc-sysadmin\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "mucname="+URLEncoder.encode(mucname, "UTF-8") );
-      out.write("\"/>\r\n<meta name=\"helpPage\" content=\"edit_group_chat_service_administrators.html\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n<meta name=\"helpPage\" content=\"edit_group_chat_service_administrators.html\"/>\n</head>\n<body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
@@ -129,69 +128,69 @@ public final class muc_002dsysadmins_jsp extends org.apache.jasper.runtime.HttpJ
       out.write('"');
       out.write('>');
       out.print( mucname );
-      out.write("</a></b>\r\n</p>\r\n\r\n");
+      out.write("</a></b>\n</p>\n\n");
   if ("true".equals(request.getParameter("deletesuccess"))) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if ("true".equals(request.getParameter("addsuccess"))) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n\r\n<!-- BEGIN 'Administrators' -->\r\n<form action=\"muc-sysadmins.jsp?add\" method=\"post\">\r\n    <input type=\"hidden\" name=\"mucname\" value=\"");
+      out.write("\n\n\n<!-- BEGIN 'Administrators' -->\n<form action=\"muc-sysadmins.jsp?add\" method=\"post\">\n    <input type=\"hidden\" name=\"mucname\" value=\"");
       out.print( mucname );
-      out.write("\" />\r\n    <div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\" />\n    <div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<label for=\"userJIDtf\">");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<label for=\"userJIDtf\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t<input type=\"text\" name=\"userJID\" size=\"30\" maxlength=\"100\" value=\"");
+      out.write("</label>\n\t\t<input type=\"text\" name=\"userJID\" size=\"30\" maxlength=\"100\" value=\"");
       out.print( (userJID != null ? userJID : "") );
-      out.write("\"\r\n\t\t id=\"userJIDtf\">\r\n\t\t<input type=\"submit\" value=\"");
+      out.write("\"\n\t\t id=\"userJIDtf\">\n\t\t<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\">\r\n\t\t<br><br>\r\n\r\n\t\t<div class=\"jive-table\" style=\"width:400px;\">\r\n\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t<thead>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th width=\"99%\">");
+      out.write("\">\n\t\t<br><br>\n\n\t\t<div class=\"jive-table\" style=\"width:400px;\">\n\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th width=\"99%\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t\t\t<th width=\"1%\" nowrap>");
+      out.write("</th>\n\t\t\t\t\t<th width=\"1%\" nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t\t</tr>\r\n\t\t\t</thead>\r\n\t\t\t<tbody>\r\n\t\t\t\t");
+      out.write("</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t");
   if (mucService.getSysadmins().size() == 0) { 
-      out.write("\r\n\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td colspan=\"2\">\r\n\t\t\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan=\"2\">\n\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\r\n\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t");
   } 
-      out.write("\r\n\r\n\t\t\t\t");
+      out.write("\n\n\t\t\t\t");
   for (JID user : mucService.getSysadmins()) {
 	                	String username = JID.unescapeNode(user.getNode());
 	                    String userDisplay = username + '@' + user.getDomain();
 	            
-      out.write("\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t");
       out.print( userDisplay );
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<td width=\"1%\" align=\"center\">\r\n\t\t\t\t\t\t\t<a href=\"muc-sysadmins.jsp?userJID=");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td width=\"1%\" align=\"center\">\n\t\t\t\t\t\t\t<a href=\"muc-sysadmins.jsp?userJID=");
       out.print( user.toString() );
       out.write("&delete=true&mucname=");
       out.print( URLEncoder.encode(mucname, "UTF-8") );
-      out.write("\"\r\n\t\t\t\t\t\t\t title=\"");
+      out.write("\"\n\t\t\t\t\t\t\t title=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\"\r\n\t\t\t\t\t\t\t onclick=\"return confirm('");
+      out.write("\"\n\t\t\t\t\t\t\t onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("');\"\r\n\t\t\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\r\n\t\t\t\t");
+      out.write("');\"\n\t\t\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t");
   } 
-      out.write("\r\n\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\t</div>\r\n</form>\r\n<!-- END 'Administrators' -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\n\t\t\t</tbody>\n\t\t\t</table>\n\t\t</div>\n\t</div>\n</form>\n<!-- END 'Administrators' -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

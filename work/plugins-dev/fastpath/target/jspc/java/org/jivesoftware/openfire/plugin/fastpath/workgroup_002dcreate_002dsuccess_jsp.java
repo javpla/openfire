@@ -40,7 +40,8 @@ public final class workgroup_002dcreate_002dsuccess_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
    // Get parameters
     String wgID = ParamUtils.getParameter(request, "wgID");
 
@@ -57,7 +58,6 @@ public final class workgroup_002dcreate_002dsuccess_jsp extends org.apache.jaspe
 
     response.sendRedirect("workgroup-queues.jsp?wgID="+wgID+"&created=true");
 
-      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

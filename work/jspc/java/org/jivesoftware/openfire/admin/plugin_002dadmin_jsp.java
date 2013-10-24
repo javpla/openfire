@@ -74,7 +74,7 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -83,10 +83,10 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     String deletePlugin = ParamUtils.getParameter(request, "deleteplugin");
     String reloadPlugin = ParamUtils.getParameter(request, "reloadplugin");
@@ -194,7 +194,8 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
         }
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (showReadme) {
     String pluginName = ParamUtils.getParameter(request, "plugin");
     Plugin plugin = pluginManager.getPlugin(pluginName);
@@ -207,10 +208,8 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
                 String line;
                 while ((line = in.readLine()) != null) {
 
-      out.write('\r');
       out.write('\n');
       out.print( line );
-      out.write('\r');
       out.write('\n');
 
                     }
@@ -232,7 +231,6 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
         return;
     }
 
-      out.write('\r');
       out.write('\n');
  if (showChangelog) {
     String pluginName = ParamUtils.getParameter(request, "plugin");
@@ -246,10 +244,8 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
                 String line;
                 while ((line = in.readLine()) != null) {
 
-      out.write('\r');
       out.write('\n');
       out.print( line );
-      out.write('\r');
       out.write('\n');
 
                     }
@@ -271,79 +267,81 @@ public final class plugin_002dadmin_jsp extends org.apache.jasper.runtime.HttpJs
         return;
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"plugin-settings\"/>\r\n<meta name=\"helpPage\" content=\"manage_system_plugins.html\"/>\r\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/interface/downloader.js\" type=\"text/javascript\"></script>\r\n\r\n<script type=\"text/javascript\" >\r\n    DWREngine.setErrorHandler(handleError);\r\n\r\n    function handleError(error) {\r\n    }\r\n</script>\r\n\r\n<style type=\"text/css\">\r\n\r\n.textfield {\r\n    font-size: 11px;\r\n    font-family: verdana;\r\n    padding: 3px 2px;\r\n    background: #efefef;\r\n}\r\n\r\n.text {\r\n    font-size: 11px;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n}\r\n\r\n.small-label {\r\n    font-size: 11px;\r\n    font-weight: bold;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n}\r\n\r\n.small-label-link {\r\n    font-size: 11px;\r\n    font-weight: bold;\r\n    font-family: verdana;\r\n    text-decoration: underline;\r\n}\r\n\r\n.light-gray-border {\r\n    border-color: #ccc;\r\n    border-style: solid;\r\n    border-width: 1px 1px 1px 1px;\r\n");
-      out.write("    padding: 5px;\r\n\t-moz-border-radius: 3px;\r\n}\r\n\r\n.light-gray-border-bottom {\r\n    border-color: #dcdcdc;\r\n    border-style: solid;\r\n    border-width: 0px 0px 1px 0px;\r\n}\r\n\r\n.table-header {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    border-color: #ccc;\r\n    border-style: solid;\r\n    border-width: 1px 0 1px 0;\r\n    padding: 5px;\r\n}\r\n\r\n.table-header-left {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    border-color: #ccc;\r\n    border-style: solid;\r\n    border-width: 1px 0 1px 1px;\r\n    padding: 5px;\r\n\r\n}\r\n\r\n.table-header-right {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    border-color: #ccc;\r\n    border-style: solid;\r\n    border-width: 1px 1px 1px 0;\r\n    padding: 5px;\r\n}\r\n\r\n.table-font {\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n");
-      out.write("}\r\n\r\n.update {\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 0 1px 1px 1px;\r\n    padding: 5px;\r\n}\r\n\r\n.update-bottom {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 0 0 1px 0;\r\n    padding: 5px;\r\n}\r\n\r\n.update-bottom-left {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 0 0 1px 1px;\r\n    padding: 5px;\r\n}\r\n\r\n.update-bottom-right {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 0 1px 1px 0;\r\n");
-      out.write("    padding: 5px;\r\n}\r\n\r\n.update-top {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 9pt;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 1px 0px 0px 0px;\r\n    padding: 5px;\r\n}\r\n\r\n.update-right {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 8pt;\r\n    font-weight: bold;\r\n    background: #E7FBDE;\r\n    border-color: #73CB73;\r\n    border-style: solid;\r\n    border-width: 1px 1px 0px 0px;\r\n    padding: 5px;\r\n}\r\n\r\n.line-bottom-border {\r\n    text-align: left;\r\n    font-family: verdana, arial, helvetica, sans-serif;\r\n    font-size: 9pt;\r\n    border-color: #e3e3e3;\r\n    border-style: solid;\r\n    border-width: 0px 0px 1px 0px;\r\n    padding: 5px;\r\n}\r\n</style>\r\n\r\n\r\n<script type=\"text/javascript\">\r\n    function download(url, hashCode) {\r\n        document.getElementById(hashCode + \"-row\").style.display = 'none';\r\n        document.getElementById(hashCode + \"-update\").style.display = '';\r\n");
-      out.write("        downloader.downloadPlugin(downloadComplete, url);\r\n    }\r\n\r\n    function downloadComplete(update) {\r\n        document.getElementById(update.hashCode + \"-row\").style.display = 'none';\r\n        document.getElementById(update.hashCode + \"-update\").style.display = '';\r\n        document.getElementById(update.hashCode + \"-image\").innerHTML = '<img src=\"images/success-16x16.gif\" border=\"0\" alt=\"\"/>';\r\n        document.getElementById(update.hashCode + \"-text\").innerHTML = '");
+      out.write("</title>\n<meta name=\"pageID\" content=\"plugin-settings\"/>\n<meta name=\"helpPage\" content=\"manage_system_plugins.html\"/>\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/interface/downloader.js\" type=\"text/javascript\"></script>\n\n<script type=\"text/javascript\" >\n    DWREngine.setErrorHandler(handleError);\n\n    function handleError(error) {\n    }\n</script>\n\n<style type=\"text/css\">\n\n.textfield {\n    font-size: 11px;\n    font-family: verdana;\n    padding: 3px 2px;\n    background: #efefef;\n}\n\n.text {\n    font-size: 11px;\n    font-family: verdana, arial, helvetica, sans-serif;\n}\n\n.small-label {\n    font-size: 11px;\n    font-weight: bold;\n    font-family: verdana, arial, helvetica, sans-serif;\n}\n\n.small-label-link {\n    font-size: 11px;\n    font-weight: bold;\n    font-family: verdana;\n    text-decoration: underline;\n}\n\n.light-gray-border {\n    border-color: #ccc;\n    border-style: solid;\n    border-width: 1px 1px 1px 1px;\n    padding: 5px;\n");
+      out.write("\t-moz-border-radius: 3px;\n}\n\n.light-gray-border-bottom {\n    border-color: #dcdcdc;\n    border-style: solid;\n    border-width: 0px 0px 1px 0px;\n}\n\n.table-header {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    border-color: #ccc;\n    border-style: solid;\n    border-width: 1px 0 1px 0;\n    padding: 5px;\n}\n\n.table-header-left {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    border-color: #ccc;\n    border-style: solid;\n    border-width: 1px 0 1px 1px;\n    padding: 5px;\n\n}\n\n.table-header-right {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    border-color: #ccc;\n    border-style: solid;\n    border-width: 1px 1px 1px 0;\n    padding: 5px;\n}\n\n.table-font {\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n}\n\n.update {\n    font-family: verdana, arial, helvetica, sans-serif;\n");
+      out.write("    font-size: 8pt;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 0 1px 1px 1px;\n    padding: 5px;\n}\n\n.update-bottom {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 0 0 1px 0;\n    padding: 5px;\n}\n\n.update-bottom-left {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 0 0 1px 1px;\n    padding: 5px;\n}\n\n.update-bottom-right {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 0 1px 1px 0;\n    padding: 5px;\n}\n\n.update-top {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n");
+      out.write("    font-size: 9pt;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 1px 0px 0px 0px;\n    padding: 5px;\n}\n\n.update-right {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 8pt;\n    font-weight: bold;\n    background: #E7FBDE;\n    border-color: #73CB73;\n    border-style: solid;\n    border-width: 1px 1px 0px 0px;\n    padding: 5px;\n}\n\n.line-bottom-border {\n    text-align: left;\n    font-family: verdana, arial, helvetica, sans-serif;\n    font-size: 9pt;\n    border-color: #e3e3e3;\n    border-style: solid;\n    border-width: 0px 0px 1px 0px;\n    padding: 5px;\n}\n</style>\n\n\n<script type=\"text/javascript\">\n    function download(url, hashCode) {\n        document.getElementById(hashCode + \"-row\").style.display = 'none';\n        document.getElementById(hashCode + \"-update\").style.display = '';\n        downloader.downloadPlugin(downloadComplete, url);\n    }\n\n    function downloadComplete(update) {\n        document.getElementById(update.hashCode + \"-row\").style.display = 'none';\n");
+      out.write("        document.getElementById(update.hashCode + \"-update\").style.display = '';\n        document.getElementById(update.hashCode + \"-image\").innerHTML = '<img src=\"images/success-16x16.gif\" border=\"0\" alt=\"\"/>';\n        document.getElementById(update.hashCode + \"-text\").innerHTML = '");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("';\r\n    }\r\n</script>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("';\n    }\n</script>\n</head>\n\n<body>\n\n");
  if ("true".equals(request.getParameter("deletesuccess"))) { 
-      out.write("\r\n\r\n<div class=\"success\">\r\n   ");
+      out.write("\n\n<div class=\"success\">\n   ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n</div>\n<br>\n\n");
  }
 else if ("false".equals(request.getParameter("deletesuccess"))) { 
-      out.write("\r\n\r\n<div class=\"error\">\r\n    ");
+      out.write("\n\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n</div>\n<br>\n\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if ("true".equals(request.getParameter("reloadsuccess"))) { 
-      out.write("\r\n\r\n<div class=\"success\">\r\n   ");
+      out.write("\n\n<div class=\"success\">\n   ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n</div>\n<br>\n\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if ("true".equals(request.getParameter("uploadsuccess"))) { 
-      out.write("\r\n\r\n<div class=\"success\">\r\n   ");
+      out.write("\n\n<div class=\"success\">\n   ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n</div>\n<br>\n\n");
  }
 else if ("false".equals(request.getParameter("uploadsuccess"))) { 
-      out.write("\r\n\r\n<div class=\"error\">\r\n    ");
+      out.write("\n\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n<br>\r\n\r\n");
+      out.write("\n</div>\n<br>\n\n");
  } 
-      out.write("\r\n\r\n<p>\r\n    ");
+      out.write("\n\n<p>\n    ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<p>\r\n\r\n<div class=\"light-gray-border\" style=\"padding:10px;\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n <tr style=\"background:#eee;\">\r\n\r\n    <td nowrap colspan=\"3\" class=\"table-header-left\">");
+      out.write("\n</p>\n\n<p>\n\n<div class=\"light-gray-border\" style=\"padding:10px;\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n <tr style=\"background:#eee;\">\n\n    <td nowrap colspan=\"3\" class=\"table-header-left\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</td>\r\n    <td nowrap class=\"table-header\">");
+      out.write("</td>\n    <td nowrap class=\"table-header\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</td>\r\n    <td nowrap class=\"table-header\">");
+      out.write("</td>\n    <td nowrap class=\"table-header\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</td>\r\n    <td nowrap class=\"table-header\">");
+      out.write("</td>\n    <td nowrap class=\"table-header\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</td>\r\n    <td nowrap class=\"table-header\">");
+      out.write("</td>\n    <td nowrap class=\"table-header\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</td>\r\n    <td nowrap class=\"table-header-right\">");
+      out.write("</td>\n    <td nowrap class=\"table-header-right\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</td>\r\n</tr>\r\n\r\n<tbody>\r\n\r\n\r\n");
+      out.write("</td>\n</tr>\n\n<tbody>\n\n\n");
 
     // If only the admin plugin is installed, show "none".
     if (plugins.size() == 1) {
 
-      out.write("\r\n<tr>\r\n    <td align=\"center\" colspan=\"8\" style=\"padding:5px;\">");
+      out.write("\n<tr>\n    <td align=\"center\" colspan=\"8\" style=\"padding:5px;\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</td>\r\n</tr>\r\n");
+      out.write("</td>\n</tr>\n");
 
     }
 
@@ -365,85 +363,85 @@ else if ("false".equals(request.getParameter("uploadsuccess"))) {
             // Check if there is an update for this plugin
             Update update = updateManager.getPluginUpdate(pluginName, pluginVersion);
 
-      out.write("\r\n\r\n<tr valign=\"top\">\r\n    <td width=\"1%\" class=\"");
+      out.write("\n\n<tr valign=\"top\">\n    <td width=\"1%\" class=\"");
       out.print( update != null ? "update-top-left" : "line-bottom-border");
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
  if (icon.exists()) { 
-      out.write("\r\n        <img src=\"geticon?plugin=");
+      out.write("\n        <img src=\"geticon?plugin=");
       out.print( URLEncoder.encode(pluginDir.getName(), "utf-8") );
-      out.write("&showIcon=true&decorator=none\" width=\"16\" height=\"16\" alt=\"Plugin\">\r\n        ");
+      out.write("&showIcon=true&decorator=none\" width=\"16\" height=\"16\" alt=\"Plugin\">\n        ");
  }
         else { 
-      out.write("\r\n        <img src=\"images/plugin-16x16.gif\" width=\"16\" height=\"16\" alt=\"Plugin\">\r\n        ");
+      out.write("\n        <img src=\"images/plugin-16x16.gif\" width=\"16\" height=\"16\" alt=\"Plugin\">\n        ");
  } 
-      out.write("\r\n    </td>\r\n    <td width=\"20%\" nowrap valign=\"top\" class=\"");
+      out.write("\n    </td>\n    <td width=\"20%\" nowrap valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
       out.print( (pluginName != null ? pluginName : dirName) );
-      out.write(" &nbsp;\r\n        ");
+      out.write(" &nbsp;\n        ");
 
 
             boolean readmeExists = new File(pluginDir, "readme.html").exists();
             boolean changelogExists = new File(pluginDir, "changelog.html").exists();
         
-      out.write("\r\n\r\n\r\n    </td>\r\n    <td nowrap valign=\"top\" class=\"");
+      out.write("\n\n\n    </td>\n    <td nowrap valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        <p>");
+      out.write("\">\n        <p>");
  if (readmeExists) { 
-      out.write("\r\n            <a href=\"plugin-admin.jsp?plugin=");
+      out.write("\n            <a href=\"plugin-admin.jsp?plugin=");
       out.print( URLEncoder.encode(pluginDir.getName(), "utf-8") );
-      out.write("&showReadme=true&decorator=none\"\r\n                    ><img src=\"images/doc-readme-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"README\"></a>\r\n            ");
+      out.write("&showReadme=true&decorator=none\"\n                    ><img src=\"images/doc-readme-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"README\"></a>\n            ");
  }
             else { 
       out.write(" &nbsp; ");
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (changelogExists) { 
-      out.write("\r\n            <a href=\"plugin-admin.jsp?plugin=");
+      out.write("\n            <a href=\"plugin-admin.jsp?plugin=");
       out.print( URLEncoder.encode(pluginDir.getName(), "utf-8") );
-      out.write("&showChangelog=true&decorator=none\"\r\n                    ><img src=\"images/doc-changelog-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"changelog\"></a>\r\n            ");
+      out.write("&showChangelog=true&decorator=none\"\n                    ><img src=\"images/doc-changelog-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"changelog\"></a>\n            ");
  }
             else { 
       out.write(" &nbsp; ");
  } 
-      out.write("</p>\r\n    </td>\r\n    <td width=\"60%\" valign=\"top\" class=\"");
+      out.write("</p>\n    </td>\n    <td width=\"60%\" valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
       out.print( pluginDescription != null ? pluginDescription : "" );
-      out.write("\r\n    </td>\r\n    <td width=\"5%\" align=\"center\" valign=\"top\" class=\"");
+      out.write("\n    </td>\n    <td width=\"5%\" align=\"center\" valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        <p>");
+      out.write("\">\n        <p>");
       out.print( pluginVersion != null ? pluginVersion : "" );
-      out.write("</p>\r\n\r\n    </td>\r\n    <td width=\"15%\" nowrap valign=\"top\" class=\"");
+      out.write("</p>\n\n    </td>\n    <td width=\"15%\" nowrap valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
       out.print( pluginAuthor != null ? pluginAuthor : "" );
-      out.write("  &nbsp;\r\n    </td>\r\n    <td width=\"1%\" align=\"center\" valign=\"top\" class=\"");
+      out.write("  &nbsp;\n    </td>\n    <td width=\"1%\" align=\"center\" valign=\"top\" class=\"");
       out.print( update != null ? "update-top" : "line-bottom-border");
-      out.write("\">\r\n        <a href=\"plugin-admin.jsp?reloadplugin=");
+      out.write("\">\n        <a href=\"plugin-admin.jsp?reloadplugin=");
       out.print( dirName );
-      out.write("\"\r\n           title=\"");
+      out.write("\"\n           title=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\"\r\n                ><img src=\"images/refresh-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\"\n                ><img src=\"images/refresh-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\"></a>\r\n    </td>\r\n    <td width=\"1%\" align=\"center\" valign=\"top\" class=\"");
+      out.write("\"></a>\n    </td>\n    <td width=\"1%\" align=\"center\" valign=\"top\" class=\"");
       out.print( update != null ? "update-right" : "line-bottom-border");
-      out.write("\">\r\n        <a href=\"#\" onclick=\"if (confirm('");
+      out.write("\">\n        <a href=\"#\" onclick=\"if (confirm('");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write("')) { location.replace('plugin-admin.jsp?deleteplugin=");
       out.print( dirName );
-      out.write("'); } \"\r\n           title=\"");
+      out.write("'); } \"\n           title=\"");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\"\r\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\"\n                ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\"></a>\r\n    </td>\r\n</tr>\r\n\r\n");
+      out.write("\"></a>\n    </td>\n</tr>\n\n");
  if (update != null) { 
-      out.write("\r\n\r\n<!-- Has Updates, show show -->\r\n");
+      out.write("\n\n<!-- Has Updates, show show -->\n");
 
     String updateURL = update.getURL();
     if (updateURL.endsWith(".jar") || updateURL.endsWith(".zip") || updateURL.endsWith(".war")) {
@@ -451,9 +449,9 @@ else if ("false".equals(request.getParameter("uploadsuccess"))) {
         updateURL = "plugin-admin.jsp?download=true&url=" + updateURL;
     }
 
-      out.write("\r\n<tr id=\"");
+      out.write("\n<tr id=\"");
       out.print( update.hashCode() );
-      out.write("-row\">\r\n    <td class=\"update-bottom-left\">&nbsp;</td>\r\n    <td class=\"update-bottom\" nowrap>\r\n        <span class=\"small-label\">\r\n            ");
+      out.write("-row\">\n    <td class=\"update-bottom-left\">&nbsp;</td>\n    <td class=\"update-bottom\" nowrap>\n        <span class=\"small-label\">\n            ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_20 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_20.setPageContext(_jspx_page_context);
@@ -467,7 +465,7 @@ else if ("false".equals(request.getParameter("uploadsuccess"))) {
           _jspx_th_fmt_message_20.doInitBody();
         }
         do {
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -479,7 +477,7 @@ else if ("false".equals(request.getParameter("uploadsuccess"))) {
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n            ");
+          out.write("\n            ");
           int evalDoAfterBody = _jspx_th_fmt_message_20.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -492,60 +490,60 @@ else if ("false".equals(request.getParameter("uploadsuccess"))) {
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_20);
-      out.write("\r\n            </span>\r\n    </td>\r\n    <td nowrap class=\"update-bottom\">\r\n        ");
+      out.write("\n            </span>\n    </td>\n    <td nowrap class=\"update-bottom\">\n        ");
  if (update.getChangelog() != null) { 
-      out.write("\r\n        <span class=\"text\">(<a href=\"");
+      out.write("\n        <span class=\"text\">(<a href=\"");
       out.print( update.getChangelog());
       out.write('"');
       out.write('>');
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</a>)</span>\r\n        ");
+      out.write("</a>)</span>\n        ");
  }
         else { 
-      out.write("\r\n        &nbsp;\r\n        ");
+      out.write("\n        &nbsp;\n        ");
  } 
-      out.write("\r\n    </td>\r\n    <td class=\"update-bottom\">\r\n        <table>\r\n            <tr>\r\n                <td><a href=\"javascript:download('");
+      out.write("\n    </td>\n    <td class=\"update-bottom\">\n        <table>\n            <tr>\n                <td><a href=\"javascript:download('");
       out.print( update.getURL());
       out.write("', '");
       out.print(update.hashCode());
-      out.write("')\"><img src=\"images/icon_update-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"changelog\"></a></td>\r\n                <td><a href=\"javascript:download('");
+      out.write("')\"><img src=\"images/icon_update-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"changelog\"></a></td>\n                <td><a href=\"javascript:download('");
       out.print( update.getURL());
       out.write("', '");
       out.print(update.hashCode());
       out.write("')\"><span class=\"small-label\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</span></a></td>\r\n            </tr>\r\n        </table>\r\n    </td>\r\n    <td class=\"update-bottom\" colspan=\"3\">&nbsp;</td>\r\n    <td class=\"update-bottom-right\" colspan=\"3\">&nbsp;</td>\r\n</tr>\r\n\r\n    <tr id=\"");
+      out.write("</span></a></td>\n            </tr>\n        </table>\n    </td>\n    <td class=\"update-bottom\" colspan=\"3\">&nbsp;</td>\n    <td class=\"update-bottom-right\" colspan=\"3\">&nbsp;</td>\n</tr>\n\n    <tr id=\"");
       out.print( update.hashCode());
-      out.write("-update\" style=\"display:none;\">\r\n        <td colspan=\"8\" align=\"center\" class=\"update\">\r\n            <table>\r\n                <tr>\r\n                    <td id=\"");
+      out.write("-update\" style=\"display:none;\">\n        <td colspan=\"8\" align=\"center\" class=\"update\">\n            <table>\n                <tr>\n                    <td id=\"");
       out.print( update.hashCode());
-      out.write("-image\"><img src=\"images/working-16x16.gif\" border=\"0\" alt=\"\"/></td>\r\n                    <td id=\"");
+      out.write("-image\"><img src=\"images/working-16x16.gif\" border=\"0\" alt=\"\"/></td>\n                    <td id=\"");
       out.print( update.hashCode());
       out.write("-text\" class=\"table-font\">");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</td>\r\n                </tr>\r\n            </table>\r\n        </td>\r\n    </tr>\r\n\r\n\r\n");
+      out.write("</td>\n                </tr>\n            </table>\n        </td>\n    </tr>\n\n\n");
  } 
-      out.write("\r\n<tr><td></td></tr>\r\n\r\n<!-- End of update section -->\r\n");
+      out.write("\n<tr><td></td></tr>\n\n<!-- End of update section -->\n");
 
         }
     }
 
-      out.write("\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n</tbody>\n</table>\n</div>\n\n");
  if (uploadEnabled) { 
-      out.write("\r\n<br /><br />\r\n\r\n<div>\r\n    <h3>");
+      out.write("\n<br /><br />\n\n<div>\n    <h3>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</h3>\r\n    <p>");
+      out.write("</h3>\n    <p>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</p>\r\n    <form action=\"plugin-admin.jsp?uploadplugin\" enctype=\"multipart/form-data\" method=\"post\">\r\n        <input type=\"file\" name=\"uploadfile\" />\r\n        <input type=\"submit\" value=\"");
+      out.write("</p>\n    <form action=\"plugin-admin.jsp?uploadplugin\" enctype=\"multipart/form-data\" method=\"post\">\n        <input type=\"file\" name=\"uploadfile\" />\n        <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("\" />\r\n    </form>\r\n</div>\r\n");
+      out.write("\" />\n    </form>\n</div>\n");
  } 
-      out.write("\r\n\r\n</body>\r\n</html>");
+      out.write("\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

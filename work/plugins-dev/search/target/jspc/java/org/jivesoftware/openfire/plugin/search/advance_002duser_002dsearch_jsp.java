@@ -57,10 +57,10 @@ public final class advance_002duser_002dsearch_jsp extends org.apache.jasper.run
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n\n\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"advance-user-search\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"advance-user-search\"/>\n    </head>\n    <body>\n\n");
 
     String criteria = ParamUtils.getParameter(request, "criteria");
     boolean moreOptions = ParamUtils.getBooleanParameter(request, "moreOptions", false);
@@ -88,92 +88,92 @@ public final class advance_002duser_002dsearch_jsp extends org.apache.jasper.run
         }
     }
 
-      out.write("\r\n\r\n<form name=\"f\" action=\"advance-user-search.jsp\">\r\n    <input type=\"hidden\" name=\"search\" value=\"true\"/>\r\n    <input type=\"hidden\" name=\"moreOptions\" value=\"");
+      out.write("\n\n<form name=\"f\" action=\"advance-user-search.jsp\">\n    <input type=\"hidden\" name=\"search\" value=\"true\"/>\n    <input type=\"hidden\" name=\"moreOptions\" value=\"");
       out.print(moreOptions );
-      out.write("\"/>\r\n    \r\n    <div class=\"jive-contentBoxHeader\">");
+      out.write("\"/>\n    \n    <div class=\"jive-contentBoxHeader\">");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</div>\r\n    <div class=\"jive-contentBox\">\r\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\r\n        <tr class=\"c1\">\r\n            <td width=\"1%\" colspan=\"2\" nowrap>\r\n                ");
+      out.write("</div>\n    <div class=\"jive-contentBox\">\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\n        <tr class=\"c1\">\n            <td width=\"1%\" colspan=\"2\" nowrap>\n                ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n                &nbsp;<input type=\"text\" name=\"criteria\" value=\"");
+      out.write("\n                &nbsp;<input type=\"text\" name=\"criteria\" value=\"");
       out.print((criteria != null ? criteria : "") );
-      out.write("\" size=\"30\" maxlength=\"75\"/>\r\n                &nbsp;<input type=\"submit\" name=\"search\" value=\"");
+      out.write("\" size=\"30\" maxlength=\"75\"/>\n                &nbsp;<input type=\"submit\" name=\"search\" value=\"");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\"/>\r\n            </td>\r\n        </tr>\r\n        ");
+      out.write("\"/>\n            </td>\n        </tr>\n        ");
  if (moreOptions) { 
-      out.write("\r\n        <tr class=\"c1\">\r\n            <td width=\"1%\" colspan=\"2\" nowrap>");
+      out.write("\n        <tr class=\"c1\">\n            <td width=\"1%\" colspan=\"2\" nowrap>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write(":</td>\r\n        </tr>\r\n        \r\n        ");
+      out.write(":</td>\n        </tr>\n        \n        ");
  for (String searchField : searchFields) { 
-      out.write("\r\n        <tr class=\"c1\">\r\n            <td width=\"1%\" nowrap>");
+      out.write("\n        <tr class=\"c1\">\n            <td width=\"1%\" nowrap>");
       out.print(searchField );
-      out.write(":</td>\r\n            <td class=\"c2\">\r\n            ");
+      out.write(":</td>\n            <td class=\"c2\">\n            ");
  if (criteria == null) { 
-      out.write("\r\n                <input type=\"checkbox\" checked name=\"");
+      out.write("\n                <input type=\"checkbox\" checked name=\"");
       out.print(searchField );
-      out.write("\"/>\r\n              \r\n            ");
+      out.write("\"/>\n              \n            ");
  } else { 
-      out.write("\r\n                <input type=\"checkbox\" ");
+      out.write("\n                <input type=\"checkbox\" ");
       out.print(selectedFields.contains(searchField) ? "checked" : "" );
       out.write(" name=\"");
       out.print(searchField );
-      out.write("\"/>\r\n              \r\n            ");
+      out.write("\"/>\n              \n            ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n        ");
+      out.write("\n            </td>\n        </tr>\n        ");
  } 
-      out.write("\r\n        <tr>\r\n            <td nowrap>&raquo;&nbsp;<a href=\"advance-user-search.jsp?moreOptions=false\">");
+      out.write("\n        <tr>\n            <td nowrap>&raquo;&nbsp;<a href=\"advance-user-search.jsp?moreOptions=false\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</a></td>\r\n        </tr>\r\n        ");
+      out.write("</a></td>\n        </tr>\n        ");
  } else { 
-      out.write("\r\n        <tr>\r\n            <td nowrap>&raquo;&nbsp;<a href=\"advance-user-search.jsp?moreOptions=true\">");
+      out.write("\n        <tr>\n            <td nowrap>&raquo;&nbsp;<a href=\"advance-user-search.jsp?moreOptions=true\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</a></td>\r\n        </tr>\r\n        ");
+      out.write("</a></td>\n        </tr>\n        ");
  } 
-      out.write("\r\n        </table>\r\n    </div>\r\n</form>\r\n\r\n");
+      out.write("\n        </table>\n    </div>\n</form>\n\n");
  if (criteria != null) { 
-      out.write("\r\n<p>\r\n");
+      out.write("\n<p>\n");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
       out.write(':');
       out.write(' ');
       out.print(users.size() );
-      out.write("\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th>&nbsp;</th>\r\n        <th nowrap>");
+      out.write("\n</p>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th>&nbsp;</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</th>\r\n        ");
+      out.write("</th>\n        ");
   // Don't allow editing or deleting if users are read-only.
             if (!UserManager.getUserProvider().isReadOnly()) { 
-      out.write("\r\n        <th nowrap>");
+      out.write("\n        <th nowrap>");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</th>\r\n        ");
+      out.write("</th>\n        ");
  } 
-      out.write("\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n\r\n    ");
+      out.write("\n    </tr>\n</thead>\n<tbody>\n\n    ");
  if (users.isEmpty()) { 
-      out.write("\r\n    <tr>\r\n        <td align=\"center\" colspan=\"8\">");
+      out.write("\n    <tr>\n        <td align=\"center\" colspan=\"8\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</td>\r\n    </tr>\r\n    \r\n    ");
+      out.write("</td>\n    </tr>\n    \n    ");
 
     } else {
        int i = 0;
@@ -182,11 +182,11 @@ public final class advance_002duser_002dsearch_jsp extends org.apache.jasper.run
        for (User user : users) {
            i++;
     
-      out.write("\r\n    <tr class=\"jive-");
+      out.write("\n    <tr class=\"jive-");
       out.print( (((i%2)==0) ? "even" : "odd") );
-      out.write("\">\r\n        <td width=\"1%\">\r\n            ");
+      out.write("\">\n        <td width=\"1%\">\n            ");
       out.print( i );
-      out.write("\r\n        </td>\r\n        <td width=\"1%\" align=\"center\" valign=\"middle\">\r\n        ");
+      out.write("\n        </td>\n        <td width=\"1%\" align=\"center\" valign=\"middle\">\n        ");
  if (presenceManager.isAvailable(user)) {
                Presence presence = presenceManager.getPresence(user);
                
@@ -255,16 +255,16 @@ public final class advance_002duser_002dsearch_jsp extends org.apache.jasper.run
  
            }
         
-      out.write("\r\n       </td>\r\n       <td width=\"23%\">\r\n           <a href=\"../../user-properties.jsp?username=");
+      out.write("\n       </td>\n       <td width=\"23%\">\n           <a href=\"../../user-properties.jsp?username=");
       out.print( URLEncoder.encode(user.getUsername(), "UTF-8") );
       out.write('"');
       out.write('>');
       out.print( JID.unescapeNode(user.getUsername()) );
-      out.write("</a>\r\n       </td>\r\n       <td width=\"33\">\r\n           ");
+      out.write("</a>\n       </td>\n       <td width=\"33\">\n           ");
       out.print( user.getName() );
-      out.write(" &nbsp;\r\n       </td>\r\n       <td width=\"15%\">\r\n           ");
+      out.write(" &nbsp;\n       </td>\n       <td width=\"15%\">\n           ");
       out.print( JiveGlobals.formatDate(user.getCreationDate()) );
-      out.write(" &nbsp;\r\n       </td>\r\n        <td width=\"25%\">\r\n            ");
+      out.write(" &nbsp;\n       </td>\n        <td width=\"25%\">\n            ");
  long logoutTime = presenceManager.getLastActivity(user);
                 if (logoutTime > -1) {
                     out.println(StringUtils.getElapsedTime(logoutTime));
@@ -272,29 +272,29 @@ public final class advance_002duser_002dsearch_jsp extends org.apache.jasper.run
                 else {
                     out.println("&nbsp;");
                 } 
-      out.write("\r\n        </td>\r\n        ");
+      out.write("\n        </td>\n        ");
   // Don't allow editing or deleting if users are read-only.
             if (!UserManager.getUserProvider().isReadOnly()) { 
-      out.write("\r\n       <td width=\"1%\" align=\"center\">\r\n           <a href=\"../../user-edit-form.jsp?username=");
+      out.write("\n       <td width=\"1%\" align=\"center\">\n           <a href=\"../../user-edit-form.jsp?username=");
       out.print( URLEncoder.encode(user.getUsername(), "UTF-8") );
-      out.write("\"\r\n              title=\"");
+      out.write("\"\n              title=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\"\r\n              ><img src=\"images/edit-16x16.gif\" width=\"17\" height=\"17\" border=\"0\"></a>\r\n       </td>\r\n       <td width=\"1%\" align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n           <a href=\"../../user-delete.jsp?username=");
+      out.write("\"\n              ><img src=\"images/edit-16x16.gif\" width=\"17\" height=\"17\" border=\"0\"></a>\n       </td>\n       <td width=\"1%\" align=\"center\" style=\"border-right:1px #ccc solid;\">\n           <a href=\"../../user-delete.jsp?username=");
       out.print( URLEncoder.encode(user.getUsername(), "UTF-8") );
-      out.write("\"\r\n              title=\"");
+      out.write("\"\n              title=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\"\r\n              ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n       </td>\r\n       ");
+      out.write("\"\n              ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n       </td>\n       ");
  } 
-      out.write("\r\n   </tr>\r\n");
+      out.write("\n   </tr>\n");
 
         }
     }
 
-      out.write("\r\n\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n\n</tbody>\n</table>\n</div>\n\n");
  } 
-      out.write("\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.criteria.focus();\r\n</script>\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.criteria.focus();\n</script>\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

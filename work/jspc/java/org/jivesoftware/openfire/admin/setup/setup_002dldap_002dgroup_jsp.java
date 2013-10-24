@@ -60,7 +60,8 @@ public final class setup_002dldap_002dgroup_jsp extends org.apache.jasper.runtim
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -68,7 +69,8 @@ public final class setup_002dldap_002dgroup_jsp extends org.apache.jasper.runtim
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters
     boolean initialSetup = true;
@@ -78,7 +80,6 @@ public final class setup_002dldap_002dgroup_jsp extends org.apache.jasper.runtim
     Map<String, String> meta = new HashMap<String, String>();
     meta.put("currentStep", "3");
 
-      out.write('\r');
       out.write('\n');
       out.write("\n\n\n\n\n\n\n\n");
 

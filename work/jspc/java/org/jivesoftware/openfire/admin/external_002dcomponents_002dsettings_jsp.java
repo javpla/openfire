@@ -64,7 +64,7 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -73,13 +73,12 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"external-components-settings\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"external-components-settings\"/>\n</head>\n<body>\n\n");
   // Get parameters
     boolean update = request.getParameter("update") != null;
     boolean permissionUpdate = request.getParameter("permissionUpdate") != null;
@@ -239,7 +238,7 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
         }
     }
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_1 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_1.setPageContext(_jspx_page_context);
@@ -253,7 +252,7 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
           _jspx_th_fmt_message_1.doInitBody();
         }
         do {
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -265,7 +264,7 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -277,7 +276,6 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write('\r');
           out.write('\n');
           int evalDoAfterBody = _jspx_th_fmt_message_1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -291,234 +289,234 @@ public final class external_002dcomponents_002dsettings_jsp extends org.apache.j
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_1);
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (!errors.isEmpty()) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\n            <td class=\"jive-icon-label\">\n\n            ");
  if (errors.get("port") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("defaultSecret") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("subdomain") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("secret") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n\n");
   } else if (operationFailed) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\n            <td class=\"jive-icon-label\">\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
       out.write(' ');
       out.print( operationFailedDetail != null ? operationFailedDetail : "");
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n\n");
   } else if (updateSucess || allowSuccess || blockSuccess || deleteSuccess) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
  if (updateSucess) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if (allowSuccess) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if (blockSuccess) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } else if (deleteSuccess) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
 
             }
         
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n\r\n<!-- BEGIN 'Services Enabled' -->\r\n<form action=\"external-components-settings.jsp\" method=\"post\">\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\n\n<!-- BEGIN 'Services Enabled' -->\n<form action=\"external-components-settings.jsp\" method=\"post\">\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr>\r\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"componentEnabled\" value=\"false\" id=\"rb01\"\r\n\t\t\t\t\t ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"componentEnabled\" value=\"false\" id=\"rb01\"\n\t\t\t\t\t ");
       out.print( (!componentEnabled ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb01\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb01\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"componentEnabled\" value=\"true\" id=\"rb02\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td width=\"1%\" valign=\"top\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"componentEnabled\" value=\"true\" id=\"rb02\"\n\t\t\t\t\t ");
       out.print( (componentEnabled ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb02\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb02\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"top\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t<td width=\"1%\" nowrap class=\"c1\">\r\n\t\t\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"top\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t&nbsp;\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t<td width=\"1%\" nowrap class=\"c1\">\n\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t<input type=\"text\" size=\"10\" maxlength=\"50\" name=\"port\"\r\n\t\t\t\t\t\t\t value=\"");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t<input type=\"text\" size=\"10\" maxlength=\"50\" name=\"port\"\n\t\t\t\t\t\t\t value=\"");
       out.print( port );
-      out.write("\">\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t<td width=\"1%\" nowrap class=\"c1\">\r\n\t\t\t\t\t\t\t");
+      out.write("\">\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t<td width=\"1%\" nowrap class=\"c1\">\n\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t<input type=\"text\" size=\"15\" maxlength=\"70\" name=\"defaultSecret\"\r\n\t\t\t\t\t\t\t value=\"");
+      out.write("\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t<input type=\"text\" size=\"15\" maxlength=\"70\" name=\"defaultSecret\"\n\t\t\t\t\t\t\t value=\"");
       out.print( ((defaultSecret != null) ? defaultSecret : "") );
-      out.write("\">\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t\t<input type=\"submit\" name=\"update\" value=\"");
+      out.write("\">\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</table>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n\t\t<input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\">\r\n\t</div>\r\n</form>\r\n<!-- END 'Services Enabled' -->\r\n\r\n");
+      out.write("\">\n\t</div>\n</form>\n<!-- END 'Services Enabled' -->\n\n");
  if (componentEnabled) { 
-      out.write("\r\n\r\n<br>\r\n\r\n<!-- BEGIN 'Allowed to Connect' -->\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\n<br>\n\n<!-- BEGIN 'Allowed to Connect' -->\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\r\n\t\t\t<tr valign=\"top\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"permissionFilter\" value=\"");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\n\t\t\t<tr valign=\"top\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"permissionFilter\" value=\"");
       out.print( ExternalComponentManager.PermissionPolicy.blacklist );
-      out.write("\" id=\"rb03\"\r\n\t\t\t\t\t ");
+      out.write("\" id=\"rb03\"\n\t\t\t\t\t ");
       out.print( (ExternalComponentManager.PermissionPolicy.blacklist.toString().equals(permissionFilter) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb03\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb03\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"top\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"permissionFilter\" value=\"");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"top\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"permissionFilter\" value=\"");
       out.print( ExternalComponentManager.PermissionPolicy.whitelist );
-      out.write("\" id=\"rb04\"\r\n\t\t\t\t\t ");
+      out.write("\" id=\"rb04\"\n\t\t\t\t\t ");
       out.print( (ExternalComponentManager.PermissionPolicy.whitelist.toString().equals(permissionFilter) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb04\">\r\n\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb04\">\n\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t\t<br>\r\n\t\t<input type=\"submit\" name=\"permissionUpdate\" value=\"");
+      out.write("\n\t\t\t\t\t</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n\t\t<br>\n\t\t<input type=\"submit\" name=\"permissionUpdate\" value=\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\">\r\n\t\t</form>\r\n\t\t<br>\r\n\t\t<table class=\"jive-table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n\t\t<thead>\r\n\t\t\t<tr>\r\n\t\t\t\t<th width=\"1%\">&nbsp;</th>\r\n\t\t\t\t<th width=\"50%\" nowrap>");
+      out.write("\">\n\t\t</form>\n\t\t<br>\n\t\t<table class=\"jive-table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th width=\"1%\">&nbsp;</th>\n\t\t\t\t<th width=\"50%\" nowrap>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t\t<th width=\"49%\" nowrap>");
+      out.write("</th>\n\t\t\t\t<th width=\"49%\" nowrap>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t\t<th width=\"10%\" nowrap>");
+      out.write("</th>\n\t\t\t\t<th width=\"10%\" nowrap>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody>\r\n\t\t");
+      out.write("</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t");
  Collection<ExternalComponentConfiguration> configs = ExternalComponentManager.getAllowedComponents();
 		   if (configs.isEmpty()) { 
-      out.write("\r\n\t\t\t<tr>\r\n\t\t\t\t<td align=\"center\" colspan=\"7\">");
+      out.write("\n\t\t\t<tr>\n\t\t\t\t<td align=\"center\" colspan=\"7\">");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</td>\r\n\t\t\t</tr>\r\n\t\t   ");
+      out.write("</td>\n\t\t\t</tr>\n\t\t   ");
  }
 			else {
 			int count = 1;
 			for (Iterator<ExternalComponentConfiguration> it=configs.iterator(); it.hasNext(); count++) {
 				ExternalComponentConfiguration configuration = it.next();
 		   
-      out.write("\r\n\t\t\t<tr class=\"jive-");
+      out.write("\n\t\t\t<tr class=\"jive-");
       out.print( (((count%2)==0) ? "even" : "odd") );
-      out.write("\">\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
+      out.write("\">\n\t\t\t\t<td>\n\t\t\t\t\t");
       out.print( count );
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
+      out.write("\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t");
       out.print( configuration.getSubdomain() );
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
+      out.write("\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t");
       out.print( configuration.getSecret() );
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t\t<td align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n\t\t\t\t\t<a href=\"#\" onclick=\"if (confirm('");
+      out.write("\n\t\t\t\t</td>\n\t\t\t\t<td align=\"center\" style=\"border-right:1px #ccc solid;\">\n\t\t\t\t\t<a href=\"#\" onclick=\"if (confirm('");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
       out.write("')) { location.replace('external-components-settings.jsp?deleteConf=");
       out.print( configuration.getSubdomain() );
-      out.write("'); } \"\r\n\t\t\t\t\t title=\"");
+      out.write("'); } \"\n\t\t\t\t\t title=\"");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("\"\r\n\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t   ");
+      out.write("\"\n\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t   ");
  }
 		   }
 		
-      out.write("\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t\t<br>\r\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\r\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\r\n\t\t<tr>\r\n\t\t\t<td nowrap width=\"1%\">\r\n\t\t\t\t");
+      out.write("\n\t\t</tbody>\n\t\t</table>\n\t\t<br>\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\n\t\t<tr>\n\t\t\t<td nowrap width=\"1%\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t\t<input type=\"text\" size=\"40\" name=\"subdomain\" value=\"");
+      out.write("\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<input type=\"text\" size=\"40\" name=\"subdomain\" value=\"");
       out.print( componentAllowed ?  subdomain : "" );
-      out.write("\"/>\r\n\t\t\t</td>\r\n\t\t\t<td nowrap width=\"1%\">\r\n\t\t\t\t");
+      out.write("\"/>\n\t\t\t</td>\n\t\t\t<td nowrap width=\"1%\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t\t<input type=\"text\" size=\"15\" name=\"secret\"value=\"");
+      out.write("\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<input type=\"text\" size=\"15\" name=\"secret\"value=\"");
       out.print( componentAllowed ?  secret : "" );
-      out.write("\"/>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr align=\"center\">\r\n\t\t\t<td colspan=\"4\">\r\n\t\t\t\t<input type=\"submit\" name=\"componentAllowed\" value=\"");
+      out.write("\"/>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr align=\"center\">\n\t\t\t<td colspan=\"4\">\n\t\t\t\t<input type=\"submit\" name=\"componentAllowed\" value=\"");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t</form>\r\n\t\t</table>\r\n\t</div>\r\n<!-- END 'Allowed to Connect' -->\r\n\r\n<br>\r\n\r\n<!-- BEGIN 'Not Allowed to Connect' -->\r\n\t<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\">\n\t\t\t</td>\n\t\t</tr>\n\t\t</form>\n\t\t</table>\n\t</div>\n<!-- END 'Allowed to Connect' -->\n\n<br>\n\n<!-- BEGIN 'Not Allowed to Connect' -->\n\t<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\r\n\t\t<tbody>\r\n\t\t\t<tr><td><p>");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\n\t\t<tbody>\n\t\t\t<tr><td><p>");
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("</p></td></tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t\t<br><br>\r\n\t\t<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\r\n\t\t<thead>\r\n\t\t\t<tr>\r\n\t\t\t\t<th width=\"1%\">&nbsp;</th>\r\n\t\t\t\t<th width=\"89%\" nowrap>");
+      out.write("</p></td></tr>\n\t\t</tbody>\n\t\t</table>\n\t\t<br><br>\n\t\t<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th width=\"1%\">&nbsp;</th>\n\t\t\t\t<th width=\"89%\" nowrap>");
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t\t<th width=\"10%\" nowrap>");
+      out.write("</th>\n\t\t\t\t<th width=\"10%\" nowrap>");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
-      out.write("</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody>\r\n\t\t");
+      out.write("</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t");
  Collection<ExternalComponentConfiguration> blockedComponents = ExternalComponentManager.getBlockedComponents();
 		   if (blockedComponents.isEmpty()) { 
-      out.write("\r\n\t\t\t<tr>\r\n\t\t\t\t<td align=\"center\" colspan=\"7\">");
+      out.write("\n\t\t\t<tr>\n\t\t\t\t<td align=\"center\" colspan=\"7\">");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
-      out.write("</td>\r\n\t\t\t</tr>\r\n\t\t   ");
+      out.write("</td>\n\t\t\t</tr>\n\t\t   ");
  }
 			else {
 			int count = 1;
 			for (Iterator<ExternalComponentConfiguration> it=blockedComponents.iterator(); it.hasNext(); count++) {
 				ExternalComponentConfiguration configuration = it.next();
 		   
-      out.write("\r\n\t\t\t<tr class=\"jive-");
+      out.write("\n\t\t\t<tr class=\"jive-");
       out.print( (((count%2)==0) ? "even" : "odd") );
-      out.write("\">\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
+      out.write("\">\n\t\t\t\t<td>\n\t\t\t\t\t");
       out.print( count );
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
+      out.write("\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t");
       out.print( configuration.getSubdomain() );
-      out.write("\r\n\t\t\t\t</td>\r\n\t\t\t\t<td align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n\t\t\t\t\t<a href=\"#\" onclick=\"if (confirm('");
+      out.write("\n\t\t\t\t</td>\n\t\t\t\t<td align=\"center\" style=\"border-right:1px #ccc solid;\">\n\t\t\t\t\t<a href=\"#\" onclick=\"if (confirm('");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
       out.write("')) { location.replace('external-components-settings.jsp?deleteConf=");
       out.print( configuration.getSubdomain() );
-      out.write("'); } \"\r\n\t\t\t\t\t title=\"");
+      out.write("'); } \"\n\t\t\t\t\t title=\"");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
-      out.write("\"\r\n\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t   ");
+      out.write("\"\n\t\t\t\t\t ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></a>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t   ");
  }
 		   }
 		
-      out.write("\r\n\t\t</tbody>\r\n\t\t</table>\r\n\t\t<br>\r\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\r\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\r\n\t\t<tr>\r\n\t\t\t<td nowrap width=\"1%\">\r\n\t\t\t\t");
+      out.write("\n\t\t</tbody>\n\t\t</table>\n\t\t<br>\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\n\t\t<form action=\"external-components-settings.jsp\" method=\"post\">\n\t\t<tr>\n\t\t\t<td nowrap width=\"1%\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t\t<input type=\"text\" size=\"40\" name=\"subdomain\" value=\"");
+      out.write("\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<input type=\"text\" size=\"40\" name=\"subdomain\" value=\"");
       out.print( componentBlocked ?  subdomain : "" );
-      out.write("\"/>&nbsp;\r\n\t\t\t\t<input type=\"submit\" name=\"componentBlocked\" value=\"");
+      out.write("\"/>&nbsp;\n\t\t\t\t<input type=\"submit\" name=\"componentBlocked\" value=\"");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t</form>\r\n\t\t</table>\r\n\t</div>\r\n<!-- END 'Not Allowed to Connect' -->\r\n\r\n");
+      out.write("\">\n\t\t\t</td>\n\t\t</tr>\n\t\t</form>\n\t\t</table>\n\t</div>\n<!-- END 'Not Allowed to Connect' -->\n\n");
  } 
-      out.write("\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -58,9 +58,8 @@ public final class user_002dmessage_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
   // Get parameters
     String username = ParamUtils.getParameter(request,"username");
     boolean send = ParamUtils.getBooleanParameter(request,"send");
@@ -71,7 +70,8 @@ public final class user_002dmessage_jsp extends org.apache.jasper.runtime.HttpJs
     String[] jids = ParamUtils.getParameters(request,"jid");
     String message = ParamUtils.getParameter(request,"message");
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -80,10 +80,10 @@ public final class user_002dmessage_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(pageContext); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Handle a cancel
     if (request.getParameter("cancel") != null) {
@@ -164,105 +164,107 @@ public final class user_002dmessage_jsp extends org.apache.jasper.runtime.HttpJs
         }
     }
 
-      out.write("\r\n\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"user-message\"/>\r\n<meta name=\"helpPage\" content=\"send_an_administrative_message_to_users.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"user-message\"/>\n<meta name=\"helpPage\" content=\"send_an_administrative_message_to_users.html\"/>\n</head>\n<body>\n\n");
   if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nfunction updateSelect(el) {\r\n    if (el.checked) {\r\n        for (var e=0; e<el.form.jid.length; e++) {\r\n            el.form.jid[e].selected = true;\r\n        }\r\n    }\r\n    else {\r\n        for (var e=0; e<el.form.jid.length; e++) {\r\n            el.form.jid[e].selected = false;\r\n        }\r\n    }\r\n    el.form.message.focus();\r\n}\r\n</script>\r\n\r\n<form action=\"user-message.jsp\" method=\"post\" name=\"f\">\r\n");
+      out.write("\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nfunction updateSelect(el) {\n    if (el.checked) {\n        for (var e=0; e<el.form.jid.length; e++) {\n            el.form.jid[e].selected = true;\n        }\n    }\n    else {\n        for (var e=0; e<el.form.jid.length; e++) {\n            el.form.jid[e].selected = false;\n        }\n    }\n    el.form.message.focus();\n}\n</script>\n\n<form action=\"user-message.jsp\" method=\"post\" name=\"f\">\n");
  if(username != null){ 
-      out.write("\r\n<input type=\"hidden\" name=\"username\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"username\" value=\"");
       out.print( username );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } 
-      out.write("\r\n<input type=\"hidden\" name=\"tabs\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"tabs\" value=\"");
       out.print( tabs );
-      out.write("\">\r\n<input type=\"hidden\" name=\"send\" value=\"true\">\r\n");
+      out.write("\">\n<input type=\"hidden\" name=\"send\" value=\"true\">\n");
   if (sess != null) { 
-      out.write("\r\n\r\n    <input type=\"hidden\" name=\"sessionID\" value=\"");
+      out.write("\n\n    <input type=\"hidden\" name=\"sessionID\" value=\"");
       out.print( sess.getAddress().toString() );
-      out.write("\">\r\n\r\n");
+      out.write("\">\n\n");
   } 
-      out.write("\r\n\r\n\t<!-- BEGIN send message block -->\r\n\t<!--<div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\n\n\t<!-- BEGIN send message block -->\n\t<!--<div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>-->\r\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\r\n\r\n\t\t<tr><td colspan=3 class=\"text\" style=\"padding-bottom: 10px;\">\r\n\t\t");
+      out.write("\n\t</div>-->\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\n\t\t<table cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"600\">\n\n\t\t<tr><td colspan=3 class=\"text\" style=\"padding-bottom: 10px;\">\n\t\t");
    if (user == null) { 
-      out.write("\r\n\r\n\t\t\t<p>");
+      out.write("\n\n\t\t\t<p>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n\t\t");
+      out.write("</p>\n\n\t\t");
   } else { 
-      out.write("\r\n\r\n\t\t\t<p>");
+      out.write("\n\n\t\t\t<p>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n\t\t");
+      out.write("</p>\n\n\t\t");
   } 
-      out.write("\r\n\t\t</td></tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"jive-label\">\r\n\t\t\t\t");
+      out.write("\n\t\t</td></tr>\n\t\t<tr>\n\t\t\t<td class=\"jive-label\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t\t");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t");
   if (user == null) { 
-      out.write("\r\n\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\r\n\t\t\t\t");
+      out.write("\n\n\t\t\t\t");
   } else { 
-      out.write("\r\n\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t");
   if (sess != null && numSessions == 1) { 
-      out.write("\r\n\r\n\t\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t\t");
       out.print( sess.getAddress().toString() );
-      out.write("\r\n\t\t\t\t\t\t<input type=\"hidden\" name=\"jid\" value=\"");
+      out.write("\n\t\t\t\t\t\t<input type=\"hidden\" name=\"jid\" value=\"");
       out.print( sess.getAddress().toString() );
-      out.write("\">\r\n\r\n\t\t\t\t\t");
+      out.write("\">\n\n\t\t\t\t\t");
   } else { 
-      out.write("\r\n\r\n\t\t\t\t\t\t<select size=\"2\" name=\"jid\" multiple>\r\n\r\n\t\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t\t<select size=\"2\" name=\"jid\" multiple>\n\n\t\t\t\t\t\t");
 
                             for (ClientSession clisess : sessions) {
                         
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( clisess.getAddress().toString() );
       out.write('"');
       out.write('>');
       out.print( clisess.getAddress().toString() );
-      out.write("\r\n                            </option>\r\n\r\n                            ");
+      out.write("\n                            </option>\n\n                            ");
  } 
-      out.write("\r\n\r\n\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t<input type=\"checkbox\" name=\"sendToAll\" value=\"true\" id=\"cb01\"\r\n\t\t\t\t\t\t onfocus=\"updateSelect(this);\" onclick=\"updateSelect(this);\">\r\n\t\t\t\t\t\t<label for=\"cb01\">");
+      out.write("\n\n\t\t\t\t\t\t</select>\n\n\t\t\t\t\t\t<input type=\"checkbox\" name=\"sendToAll\" value=\"true\" id=\"cb01\"\n\t\t\t\t\t\t onfocus=\"updateSelect(this);\" onclick=\"updateSelect(this);\">\n\t\t\t\t\t\t<label for=\"cb01\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</label>\r\n\r\n\t\t\t\t\t");
+      out.write("</label>\n\n\t\t\t\t\t");
   } 
-      out.write("\r\n\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t");
   if (errors.get("jid") != null) { 
-      out.write("\r\n\r\n\t\t\t\t\t\t<br>\r\n\t\t\t\t\t\t<span class=\"jive-error-text\">\r\n\t\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<span class=\"jive-error-text\">\n\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</span>\r\n\r\n\t\t\t\t\t");
+      out.write("\n\t\t\t\t\t\t</span>\n\n\t\t\t\t\t");
   } 
-      out.write("\r\n\r\n\t\t\t\t");
+      out.write("\n\n\t\t\t\t");
   } 
-      out.write("\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr valign=\"top\">\r\n\t\t\t<td class=\"jive-label\">\r\n\t\t\t\t");
+      out.write("\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr valign=\"top\">\n\t\t\t<td class=\"jive-label\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(":\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t\t");
+      out.write(":\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t");
   if (errors.get("message") != null) { 
-      out.write("\r\n\r\n\t\t\t\t\t<span class=\"jive-error-text\">\r\n\t\t\t\t\t");
+      out.write("\n\n\t\t\t\t\t<span class=\"jive-error-text\">\n\t\t\t\t\t");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t</span>\r\n\t\t\t\t\t<br>\r\n\r\n\t\t\t\t");
+      out.write("\n\t\t\t\t\t</span>\n\t\t\t\t\t<br>\n\n\t\t\t\t");
   } 
-      out.write("\r\n\t\t\t\t<textarea name=\"message\" cols=\"55\" rows=\"5\" wrap=\"virtual\"></textarea>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t</table>\r\n\t</div>\r\n\t<!-- END send message block -->\r\n\r\n<input type=\"submit\" value=\"");
+      out.write("\n\t\t\t\t<textarea name=\"message\" cols=\"55\" rows=\"5\" wrap=\"virtual\"></textarea>\n\t\t\t</td>\n\t\t</tr>\n\t\t</table>\n\t</div>\n\t<!-- END send message block -->\n\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\">\r\n<input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n<input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\">\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.message.focus();\r\n</script>\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.message.focus();\n</script>\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

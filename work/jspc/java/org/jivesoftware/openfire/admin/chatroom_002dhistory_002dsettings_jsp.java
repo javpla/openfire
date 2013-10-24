@@ -58,7 +58,7 @@ public final class chatroom_002dhistory_002dsettings_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -67,14 +67,14 @@ public final class chatroom_002dhistory_002dsettings_jsp extends org.apache.jasp
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"server-chatroom-history\"/>\r\n        <meta name=\"helpPage\" content=\"edit_group_chat_history_settings.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"server-chatroom-history\"/>\n        <meta name=\"helpPage\" content=\"edit_group_chat_history_settings.html\"/>\n    </head>\n    <body>\n\n");
+      out.write('\n');
+      out.write('\n');
 
     // TODO: This file is never used currently.
     // Get parameters:
@@ -112,10 +112,10 @@ public final class chatroom_002dhistory_002dsettings_jsp extends org.apache.jasp
             webManager.logEvent("edited chatroom history settings", "type = "+policy+"\nmax messages = "+numMessages);
             // All done, redirect
             
-      out.write("\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n            ");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n            ");
 
         }
     }
@@ -134,55 +134,54 @@ public final class chatroom_002dhistory_002dsettings_jsp extends org.apache.jasp
         numMessages = historyStrat.getMaxNumber();
     }
 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(' ');
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"chatroom-history-settings.jsp\" method=\"post\">\r\n\r\n<fieldset>\r\n    <legend>");
+      out.write("\n</p>\n\n<form action=\"chatroom-history-settings.jsp\" method=\"post\">\n\n<fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</legend>\r\n    <div>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr valign=\"top\" class=\"\">\r\n            <td width=\"1%\" nowrap>\r\n                <input type=\"radio\" name=\"policy\" value=\"");
+      out.write("</legend>\n    <div>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr valign=\"top\" class=\"\">\n            <td width=\"1%\" nowrap>\n                <input type=\"radio\" name=\"policy\" value=\"");
       out.print( NONE );
-      out.write("\" id=\"rb01\"\r\n                 ");
+      out.write("\" id=\"rb01\"\n                 ");
       out.print( ((policy==NONE) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb01\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb01\"><b>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</b>\r\n                </label>");
+      out.write("</b>\n                </label>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td width=\"1%\" nowrap>\r\n                <input type=\"radio\" name=\"policy\" value=\"");
+      out.write("\n            </td>\n        </tr>\n        <tr valign=\"top\">\n            <td width=\"1%\" nowrap>\n                <input type=\"radio\" name=\"policy\" value=\"");
       out.print( ALL );
-      out.write("\" id=\"rb02\"\r\n                 ");
+      out.write("\" id=\"rb02\"\n                 ");
       out.print( ((policy==ALL) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb02\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb02\"><b>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</b></label>\r\n                ");
+      out.write("</b></label>\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("  \r\n            </td>\r\n        </tr>\r\n        <tr valign=\"top\" class=\"\">\r\n            <td width=\"1%\" nowrap>\r\n                <input type=\"radio\" name=\"policy\" value=\"");
+      out.write("  \n            </td>\n        </tr>\n        <tr valign=\"top\" class=\"\">\n            <td width=\"1%\" nowrap>\n                <input type=\"radio\" name=\"policy\" value=\"");
       out.print( NUMBER );
-      out.write("\" id=\"rb03\"\r\n                 ");
+      out.write("\" id=\"rb03\"\n                 ");
       out.print( ((policy==NUMBER) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"rb03\"><b>");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"rb03\"><b>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</b></label> - \r\n                ");
+      out.write("</b></label> - \n                ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n        </tr>\r\n        <tr valign=\"top\" class=\"\">\r\n            <td width=\"1%\" nowrap>\r\n                &nbsp;\r\n            </td>\r\n            <td width=\"99%\">\r\n                <input type=\"text\" name=\"numMessages\" size=\"5\" maxlength=\"10\"\r\n                 onclick=\"this.form.policy[2].checked=true;\"\r\n                 value=\"");
+      out.write("\n        </tr>\n        <tr valign=\"top\" class=\"\">\n            <td width=\"1%\" nowrap>\n                &nbsp;\n            </td>\n            <td width=\"99%\">\n                <input type=\"text\" name=\"numMessages\" size=\"5\" maxlength=\"10\"\n                 onclick=\"this.form.policy[2].checked=true;\"\n                 value=\"");
       out.print( ((numMessages > 0) ? ""+numMessages : "") );
-      out.write("\"> messages\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" name=\"update\" value=\"");
+      out.write("\"> messages\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\">\r\n\r\n</form>\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\">\n\n</form>\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

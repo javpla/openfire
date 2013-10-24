@@ -39,7 +39,7 @@ public final class graph_002dviewer_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<html>\r\n<title><meta name=\"decorator\" content=\"none\"/></title>\r\n<body>\r\n<div id=\"viewer\"></div>\r\n</body>\r\n</html>");
+      out.write("<html>\n<title><meta name=\"decorator\" content=\"none\"/></title>\n<body>\n<div id=\"viewer\"></div>\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

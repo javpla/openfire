@@ -45,7 +45,7 @@ public final class contentfilter_002dprops_002dedit_002dform_jsp extends org.apa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
 
     boolean save = request.getParameter("save") != null;
     boolean reset = request.getParameter("reset") !=null;
@@ -173,86 +173,86 @@ public final class contentfilter_002dprops_002dedit_002dform_jsp extends org.apa
     rejectionNotificationEnabled = plugin.isRejectionNotificationEnabled();
 
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>Content Filter</title>\r\n        <meta name=\"pageID\" content=\"contentfilter-props-edit-form\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\nUse the form below to edit content filter settings.<br>\r\n</p>\r\n\r\n");
+      out.write("\n\n<html>\n    <head>\n        <title>Content Filter</title>\n        <meta name=\"pageID\" content=\"contentfilter-props-edit-form\"/>\n    </head>\n    <body>\n\n<p>\nUse the form below to edit content filter settings.<br>\n</p>\n\n");
   if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n\t        <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n\t        <td class=\"jive-icon-label\">Settings updated successfully.</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n\t        <td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n\t        <td class=\"jive-icon-label\">Settings updated successfully.</td>\n        </tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (errors.size() > 0) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        \t<td class=\"jive-icon-label\">Error saving the settings.</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        \t<td class=\"jive-icon-label\">Error saving the settings.</td>\n        </tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"contentfilter-props-edit-form.jsp\" method=\"post\">\r\n\r\n<fieldset>\r\n    <legend>Filter</legend>\r\n    <div>\r\n    \r\n    <p>\r\n    To enable the content filter you need to set up some regular expressions.\r\n    </p>\r\n    \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n    \t<tr>\r\n    \t    <td width=\"1%\">\r\n            <input type=\"radio\" name=\"patternsenabled\" value=\"false\" id=\"not01\"\r\n             ");
+      out.write("\n\n<form action=\"contentfilter-props-edit-form.jsp\" method=\"post\">\n\n<fieldset>\n    <legend>Filter</legend>\n    <div>\n    \n    <p>\n    To enable the content filter you need to set up some regular expressions.\n    </p>\n    \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n    \t<tr>\n    \t    <td width=\"1%\">\n            <input type=\"radio\" name=\"patternsenabled\" value=\"false\" id=\"not01\"\n             ");
       out.print( ((patternsEnabled) ? "" : "checked") );
-      out.write(">\r\n        </td>\r\n        <td width=\"99%\">\r\n            <label for=\"not01\"><b>Disabled</b></label> - Packets will not be filtered.\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td width=\"1%\">\r\n            <input type=\"radio\" name=\"patternsenabled\" value=\"true\" id=\"not02\"\r\n             ");
+      out.write(">\n        </td>\n        <td width=\"99%\">\n            <label for=\"not01\"><b>Disabled</b></label> - Packets will not be filtered.\n        </td>\n    </tr>\n    <tr>\n        <td width=\"1%\">\n            <input type=\"radio\" name=\"patternsenabled\" value=\"true\" id=\"not02\"\n             ");
       out.print( ((patternsEnabled) ? "checked" : "") );
-      out.write(">\r\n        </td>\r\n        <td width=\"99%\">\r\n            <label for=\"not02\"><b>Enabled</b></label> - Packets will be filtered.\r\n        </td>\r\n    </tr>\r\n    \t<tr>\r\n        \t<td>&nbsp;</td>\r\n        \t<td align=\"left\">Patterns:&nbsp;</td>\r\n    </tr>\r\n    <tr>\r\n        <td>&nbsp;</td>\r\n\t    <td>\r\n\t        <textarea rows=\"10\" cols=\"100\" name=\"patterns\">");
+      out.write(">\n        </td>\n        <td width=\"99%\">\n            <label for=\"not02\"><b>Enabled</b></label> - Packets will be filtered.\n        </td>\n    </tr>\n    \t<tr>\n        \t<td>&nbsp;</td>\n        \t<td align=\"left\">Patterns:&nbsp;</td>\n    </tr>\n    <tr>\n        <td>&nbsp;</td>\n\t    <td>\n\t        <textarea rows=\"10\" cols=\"100\" name=\"patterns\">");
       out.print( (patterns != null ? patterns : "") );
-      out.write("</textarea>\r\n\t        \t");
+      out.write("</textarea>\n\t        \t");
  if (errors.containsKey("missingPatterns")) { 
-      out.write("\r\n\t            <span class=\"jive-error-text\">\r\n\t                <br>Please enter comma separated, regular expressions.\r\n\t            </span>\r\n\t            ");
+      out.write("\n\t            <span class=\"jive-error-text\">\n\t                <br>Please enter comma separated, regular expressions.\n\t            </span>\n\t            ");
  } else if (errors.containsKey("patternSyntaxException")) { 
-      out.write("\r\n\t            <span class=\"jive-error-text\">\r\n\t                <br>Invalid regular expression: ");
+      out.write("\n\t            <span class=\"jive-error-text\">\n\t                <br>Invalid regular expression: ");
       out.print( errors.get("patternSyntaxException") );
-      out.write(". Please try again.\r\n\t            </span>\r\n\t            ");
+      out.write(". Please try again.\n\t            </span>\n\t            ");
  } 
-      out.write("\r\n\t    </td>\r\n\t</tr>\r\n\t<tr>\r\n\t\t<td>&nbsp;</td>\r\n        <td><input type=\"checkbox\" name=\"filterstatus\" value=\"filterstatus\" ");
+      out.write("\n\t    </td>\n\t</tr>\n\t<tr>\n\t\t<td>&nbsp;</td>\n        <td><input type=\"checkbox\" name=\"filterstatus\" value=\"filterstatus\" ");
       out.print( filterStatusEnabled ? "checked" : "" );
-      out.write("/>Filter users presence status.</td>\r\n\t</tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<fieldset>\r\n    <legend>On Content Match</legend>\r\n    <div>\r\n    \r\n    <p>\r\n    Configure this feature to reject or allow (and optionally mask) packet content when there is a match.\r\n    </p>\r\n    \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n    \t<tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"allowonmatch\" value=\"false\" id=\"not03\"\r\n             ");
+      out.write("/>Filter users presence status.</td>\n\t</tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<fieldset>\n    <legend>On Content Match</legend>\n    <div>\n    \n    <p>\n    Configure this feature to reject or allow (and optionally mask) packet content when there is a match.\n    </p>\n    \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n    \t<tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"allowonmatch\" value=\"false\" id=\"not03\"\n             ");
       out.print( ((allowOnMatch) ? "" : "checked") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not01\"><b>Reject</b></label> - Packets will be rejected.\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"allowonmatch\" value=\"true\" id=\"not04\"\r\n             ");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not01\"><b>Reject</b></label> - Packets will be rejected.\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"allowonmatch\" value=\"true\" id=\"not04\"\n             ");
       out.print( ((allowOnMatch) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not02\"><b>Allow</b></label> - Packets will be allowed.\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n        \t<td>&nbsp;</td>\r\n\t        <td align=\"left\">Mask:&nbsp;\r\n\t        <input type=\"text\" size=\"100\" maxlength=\"100\" name=\"mask\" \r\n\t        \tvalue=\"");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not02\"><b>Allow</b></label> - Packets will be allowed.\n            </td>\n        </tr>\n        <tr>\n        \t<td>&nbsp;</td>\n\t        <td align=\"left\">Mask:&nbsp;\n\t        <input type=\"text\" size=\"100\" maxlength=\"100\" name=\"mask\" \n\t        \tvalue=\"");
       out.print( (mask != null ? mask : "") );
-      out.write("\">\r\n\t        \t");
+      out.write("\">\n\t        \t");
  if (errors.containsKey("missingMask")) { 
-      out.write("\r\n\t            <span class=\"jive-error-text\">\r\n\t                <br>Please enter a mask.\r\n\t            </span>\r\n\t            ");
+      out.write("\n\t            <span class=\"jive-error-text\">\n\t                <br>Please enter a mask.\n\t            </span>\n\t            ");
  } 
-      out.write("\r\n\t        </td>\r\n\t    </tr>\r\n\t    <tr>\r\n\t\t<td>&nbsp;</td>\r\n        <td><input type=\"checkbox\" name=\"maskenabled\" value=\"maskenabled\" ");
+      out.write("\n\t        </td>\n\t    </tr>\n\t    <tr>\n\t\t<td>&nbsp;</td>\n        <td><input type=\"checkbox\" name=\"maskenabled\" value=\"maskenabled\" ");
       out.print( maskEnabled ? "checked" : "" );
-      out.write("/>Enable mask.</td>\r\n\t</tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<fieldset>\r\n    <legend>Rejection Notification</legend>\r\n    <div>\r\n    \r\n    <p>\r\n    Enable this feature to have the sender notified whenever a packet is rejected.\r\n    NB: This feature is only operational if \"On Content Match\" is set to reject packets.\r\n    </p>\r\n    \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n    \t<tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"rejectionnotificationenabled\" value=\"false\" id=\"not05\"\r\n             ");
+      out.write("/>Enable mask.</td>\n\t</tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<fieldset>\n    <legend>Rejection Notification</legend>\n    <div>\n    \n    <p>\n    Enable this feature to have the sender notified whenever a packet is rejected.\n    NB: This feature is only operational if \"On Content Match\" is set to reject packets.\n    </p>\n    \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n    \t<tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"rejectionnotificationenabled\" value=\"false\" id=\"not05\"\n             ");
       out.print( ((rejectionNotificationEnabled) ? "" : "checked") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not01\"><b>Disabled</b></label> - Notifications will not be sent out.\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"rejectionnotificationenabled\" value=\"true\" id=\"not06\"\r\n             ");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not01\"><b>Disabled</b></label> - Notifications will not be sent out.\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"rejectionnotificationenabled\" value=\"true\" id=\"not06\"\n             ");
       out.print( ((rejectionNotificationEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not02\"><b>Enabled</b></label> - Notifications will be sent out.\r\n            </td>\r\n        </tr>\r\n         <tr>\r\n        \t<td>&nbsp;</td>\r\n\t        <td align=\"left\">Rejection message:&nbsp;\r\n\t        <input type=\"text\" size=\"100\" maxlength=\"100\" name=\"rejectionMsg\" \r\n\t        \tvalue=\"");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not02\"><b>Enabled</b></label> - Notifications will be sent out.\n            </td>\n        </tr>\n         <tr>\n        \t<td>&nbsp;</td>\n\t        <td align=\"left\">Rejection message:&nbsp;\n\t        <input type=\"text\" size=\"100\" maxlength=\"100\" name=\"rejectionMsg\" \n\t        \tvalue=\"");
       out.print( (rejectionMsg != null ? rejectionMsg : "") );
-      out.write("\">\r\n\t        \t");
+      out.write("\">\n\t        \t");
  if (errors.containsKey("missingRejectionMsg")) { 
-      out.write("\r\n\t            <span class=\"jive-error-text\">\r\n\t                <br>Please enter a rejection message.\r\n\t            </span>\r\n\t            ");
+      out.write("\n\t            <span class=\"jive-error-text\">\n\t                <br>Please enter a rejection message.\n\t            </span>\n\t            ");
  } 
-      out.write("\r\n\t        </td>\r\n\t    </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<fieldset>\r\n    <legend>Content Match Notification</legend>\r\n    <div>\r\n    \r\n    <p>\r\n    Enable this feature to have the contact person notified whenever there is a content match.\r\n    </p>\r\n    \r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n    \t<tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"notificationenabled\" value=\"false\" id=\"not07\"\r\n             ");
+      out.write("\n\t        </td>\n\t    </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<fieldset>\n    <legend>Content Match Notification</legend>\n    <div>\n    \n    <p>\n    Enable this feature to have the contact person notified whenever there is a content match.\n    </p>\n    \n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n    \t<tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"notificationenabled\" value=\"false\" id=\"not07\"\n             ");
       out.print( ((notificationEnabled) ? "" : "checked") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not01\"><b>Disabled</b></label> - Notifications will not be sent out.\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"1%\">\r\n            <input type=\"radio\" name=\"notificationenabled\" value=\"true\" id=\"not08\"\r\n             ");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not01\"><b>Disabled</b></label> - Notifications will not be sent out.\n            </td>\n        </tr>\n        <tr>\n            <td width=\"1%\">\n            <input type=\"radio\" name=\"notificationenabled\" value=\"true\" id=\"not08\"\n             ");
       out.print( ((notificationEnabled) ? "checked" : "") );
-      out.write(">\r\n            </td>\r\n            <td width=\"99%\">\r\n                <label for=\"not02\"><b>Enabled</b></label> - Notifications will be sent out.\r\n            </td>\r\n        </tr>        \r\n        <tr>\r\n        \t    <td>&nbsp;</td>\r\n\t        <td align=\"left\">Username:&nbsp\r\n                <input type=\"text\" size=\"20\" maxlength=\"100\" name=\"contactname\" value=\"");
+      out.write(">\n            </td>\n            <td width=\"99%\">\n                <label for=\"not02\"><b>Enabled</b></label> - Notifications will be sent out.\n            </td>\n        </tr>        \n        <tr>\n        \t    <td>&nbsp;</td>\n\t        <td align=\"left\">Username:&nbsp\n                <input type=\"text\" size=\"20\" maxlength=\"100\" name=\"contactname\" value=\"");
       out.print( (contactName != null ? contactName : "") );
       out.write('"');
       out.write('>');
       out.write('@');
       out.print( XMPPServer.getInstance().getServerInfo().getXMPPDomain() );
-      out.write("\r\n\t\t        ");
+      out.write("\n\t\t        ");
  if (errors.containsKey("missingContactName")) { 
-      out.write("\r\n\t\t            <span class=\"jive-error-text\">\r\n\t\t            <br>Please enter a username.\r\n\t\t            </span>\r\n\t\t        ");
+      out.write("\n\t\t            <span class=\"jive-error-text\">\n\t\t            <br>Please enter a username.\n\t\t            </span>\n\t\t        ");
  } else if (errors.containsKey("userNotFound")) { 
-      out.write("\r\n\t\t            <span class=\"jive-error-text\">\r\n\t\t            <br>Could not find user. Please try again.\r\n\t\t            </span>\r\n\t\t        ");
+      out.write("\n\t\t            <span class=\"jive-error-text\">\n\t\t            <br>Could not find user. Please try again.\n\t\t            </span>\n\t\t        ");
  } 
-      out.write("\r\n\t        </td>\r\n\t    </tr>\r\n\t    <tr>\r\n\t        <td>&nbsp;</td>\r\n\t        <td>\r\n                <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationbyim\" ");
+      out.write("\n\t        </td>\n\t    </tr>\n\t    <tr>\n\t        <td>&nbsp;</td>\n\t        <td>\n                <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationbyim\" ");
       out.print( notificationByIMEnabled ? "checked" : "" );
-      out.write("/>Notify by IM.\r\n                <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationbyemail\" ");
+      out.write("/>Notify by IM.\n                <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationbyemail\" ");
       out.print( notificationByEmailEnabled ? "checked" : "" );
-      out.write("/>Notify by Email.\r\n\t            <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationincludeoriginal\" ");
+      out.write("/>Notify by Email.\n\t            <input type=\"checkbox\" name=\"notificationcb\" value=\"notificationincludeoriginal\" ");
       out.print( includeOriginalEnabled ? "checked" : "" );
-      out.write("/>Include original packet.\r\n\t            ");
+      out.write("/>Include original packet.\n\t            ");
  if (errors.containsKey("mailServerNotConfigured")) { 
-      out.write("\r\n\t\t            <span class=\"jive-error-text\">\r\n\t\t            <br>Error, sending an email will fail because the mail server is not setup. Please go to the <a href=\"/system-email.jsp\">mail settings page</a> and set the mail host.\r\n\t\t            </span>\r\n\t\t        ");
+      out.write("\n\t\t            <span class=\"jive-error-text\">\n\t\t            <br>Error, sending an email will fail because the mail server is not setup. Please go to the <a href=\"/system-email.jsp\">mail settings page</a> and set the mail host.\n\t\t            </span>\n\t\t        ");
  } else if (errors.containsKey("userEmailNotConfigured")) { 
-      out.write("\r\n\t\t            <span class=\"jive-error-text\">\r\n\t\t            <br>Please configure <a href=\"/user-properties.jsp?username=");
+      out.write("\n\t\t            <span class=\"jive-error-text\">\n\t\t            <br>Please configure <a href=\"/user-properties.jsp?username=");
       out.print( contactName );
       out.write('"');
       out.write('>');
       out.print( contactName );
-      out.write("'s</a> email address.\r\n\t\t            </span>\r\n\t\t        ");
+      out.write("'s</a> email address.\n\t\t            </span>\n\t\t        ");
  } else if (errors.containsKey("notificationFormatNotConfigured")) { 
-      out.write("\r\n\t\t            <span class=\"jive-error-text\">\r\n\t\t            <br>Users must be notified by IM and/or Email.\r\n\t\t            </span>\r\n\t\t        ");
+      out.write("\n\t\t            <span class=\"jive-error-text\">\n\t\t            <br>Users must be notified by IM and/or Email.\n\t\t            </span>\n\t\t        ");
  } 
-      out.write("\r\n\t        </td>\r\n\t    </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" name=\"save\" value=\"Save settings\">\r\n<input type=\"submit\" name=\"reset\" value=\"Restore factory settings*\">\r\n</form>\r\n\r\n<br><br>\r\n\r\n<em>*Restores the plugin to its factory state, you will lose all changes ever made to this plugin!</em>\r\n</body>\r\n</html>");
+      out.write("\n\t        </td>\n\t    </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<input type=\"submit\" name=\"save\" value=\"Save settings\">\n<input type=\"submit\" name=\"reset\" value=\"Restore factory settings*\">\n</form>\n\n<br><br>\n\n<em>*Restores the plugin to its factory state, you will lose all changes ever made to this plugin!</em>\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

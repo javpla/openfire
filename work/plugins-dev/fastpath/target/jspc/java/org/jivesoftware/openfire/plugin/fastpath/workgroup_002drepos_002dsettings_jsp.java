@@ -48,8 +48,8 @@ public final class workgroup_002drepos_002dsettings_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
 
     final String wgID = request.getParameter("wgID");
@@ -94,11 +94,11 @@ public final class workgroup_002drepos_002dsettings_jsp extends org.apache.jaspe
     }
 
 
-      out.write("\r\n\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n\n\n<html>\n    <head>\n        <title>");
       out.print( "Search Settings for "+ wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-repos-settings\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-repos-settings\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"specify_search_settings_for_workgroup.html\"/>-->\r\n    </head>\r\n    <body>\r\n");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"specify_search_settings_for_workgroup.html\"/>-->\n    </head>\n    <body>\n");
 
 
     String kbSetting = workgroup.getProperties().getProperty("kb");
@@ -111,20 +111,20 @@ public final class workgroup_002drepos_002dsettings_jsp extends org.apache.jaspe
         forumSetting = "";
     }
 
-      out.write("\r\n    Use the form below to set the Jive Knowledge Base and/or Jive Forums you are using for this workgroup.\r\n    <br/><br/>\r\n");
+      out.write("\n    Use the form below to set the Jive Knowledge Base and/or Jive Forums you are using for this workgroup.\n    <br/><br/>\n");
  if (hasSubmitted && success){ 
-      out.write("\r\n            <div class=\"jive-success\">\r\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                    <tbody>\r\n                        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\r\n                                                       border=\"0\"></td>\r\n                            <td class=\"jive-icon-label\">\r\n                                Repository Settings have been updated.\r\n                            </td></tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n ");
+      out.write("\n            <div class=\"jive-success\">\n                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                    <tbody>\n                        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\"\n                                                       border=\"0\"></td>\n                            <td class=\"jive-icon-label\">\n                                Repository Settings have been updated.\n                            </td></tr>\n                    </tbody>\n                </table>\n            </div>\n ");
  } else if(hasSubmitted && !success) { 
-      out.write("\r\n\r\n        <p class=\"jive-error-text\">\r\n            An error occured. Please verify that you have filled out all required fields correctly and try again.\r\n        </p>\r\n");
+      out.write("\n\n        <p class=\"jive-error-text\">\n            An error occured. Please verify that you have filled out all required fields correctly and try again.\n        </p>\n");
  } 
-      out.write("\r\n    <p>\r\n    <form action=\"workgroup-repos-settings.jsp\" method=\"post\" name=\"f\">\r\n        <fieldset><legend>Jive Repositories</legend>\r\n            <div>\r\n                <table class=\"box\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n                    <tr>\r\n                        <td width=\"30%\" >\r\n                            <b>Jive Forum Document Root:</b><br/><span class=\"jive-description\">The document root of your Jive Forums installation (ex. http://www.jivesoftware.com/forums). </span>\r\n                        </td>\r\n                        <td width=\"70%\">\r\n                            <input type=\"text\" name=\"forum\" value=\"");
+      out.write("\n    <p>\n    <form action=\"workgroup-repos-settings.jsp\" method=\"post\" name=\"f\">\n        <fieldset><legend>Jive Repositories</legend>\n            <div>\n                <table class=\"box\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n                    <tr>\n                        <td width=\"30%\" >\n                            <b>Jive Forum Document Root:</b><br/><span class=\"jive-description\">The document root of your Jive Forums installation (ex. http://www.jivesoftware.com/forums). </span>\n                        </td>\n                        <td width=\"70%\">\n                            <input type=\"text\" name=\"forum\" value=\"");
       out.print( forumSetting);
-      out.write("\" size=\"40\" maxlength=\"150\">\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td width=\"30%\">\r\n                            <b>Jive Knowledge Base Document Root:</b><br/><span class=\"jive-description\">The document root of your Jive Knowledge Base installation (ex. http://www.jivesoftware.com/kb)</span>\r\n                        </td>\r\n                        <td width=\"70%\">\r\n                            <input type=\"text\" name=\"kb\" value=\"");
+      out.write("\" size=\"40\" maxlength=\"150\">\n                        </td>\n                    </tr>\n                    <tr>\n                        <td width=\"30%\">\n                            <b>Jive Knowledge Base Document Root:</b><br/><span class=\"jive-description\">The document root of your Jive Knowledge Base installation (ex. http://www.jivesoftware.com/kb)</span>\n                        </td>\n                        <td width=\"70%\">\n                            <input type=\"text\" name=\"kb\" value=\"");
       out.print( kbSetting );
-      out.write("\" size=\"40\" maxlength=\"150\">\r\n                        </td>\r\n                    </tr>\r\n                    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\" size=\"40\" maxlength=\"150\">\n                        </td>\n                    </tr>\n                    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\"/>\r\n                    ");
-      out.write("\r\n                    <tr>\r\n                        <td colspan=\"2\">\r\n                            <input type=\"submit\" name=\"save\" value=\"Save Changes\">\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n        </fieldset>\r\n    </form>\r\n    </body>\r\n</html>");
+      out.write("\"/>\n                    ");
+      out.write("\n                    <tr>\n                        <td colspan=\"2\">\n                            <input type=\"submit\" name=\"save\" value=\"Save Changes\">\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </fieldset>\n    </form>\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

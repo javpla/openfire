@@ -58,12 +58,13 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n<!-- Define Administration Bean -->\r\n");
+      out.write("\n\n\n\n<!-- Define Administration Bean -->\n");
 
     WorkgroupAdminManager webManager = new WorkgroupAdminManager();
     webManager.init(pageContext);
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     // Get muc server
     MultiUserChatService mucService = null;
@@ -74,9 +75,8 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
     }
 
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
 
     if (!ClusterManager.isSeniorClusterMember()) {
 
@@ -103,20 +103,20 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
         }
     }
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>Workgroup Summary</title>\r\n        <meta name=\"pageID\" content=\"workgroup-summary\"/>\r\n        <!--<meta name=\"helpPage\" content=\"get_around_in_the_admin_console.html\"/>-->\r\n    </head>\r\n    <body>\r\n    <style type=\"text/css\">\r\n        @import \"style/style.css\";\r\n    </style>\r\n");
+      out.write("\n<html>\n    <head>\n        <title>Workgroup Summary</title>\n        <meta name=\"pageID\" content=\"workgroup-summary\"/>\n        <!--<meta name=\"helpPage\" content=\"get_around_in_the_admin_console.html\"/>-->\n    </head>\n    <body>\n    <style type=\"text/css\">\n        @import \"style/style.css\";\n    </style>\n");
  if(mucService == null){ 
-      out.write("\r\n    <div class=\"warning\">\r\n        Fastpath needs a Group Conference service set up so rooms can be created on the server without restriction. Please set up a Group Conference service with permissions <a href=\"/muc-service-summary.jsp\">here</a>.\r\n    </div>\r\n\r\n");
+      out.write("\n    <div class=\"warning\">\n        Fastpath needs a Group Conference service set up so rooms can be created on the server without restriction. Please set up a Group Conference service with permissions <a href=\"/muc-service-summary.jsp\">here</a>.\n    </div>\n\n");
  } 
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     boolean deleted = ParamUtils.getParameter(request, "deleted") != null;
 
-      out.write('\r');
       out.write('\n');
  if(deleted){
-      out.write("\r\n    <div class=\"success\">\r\n       Workgroup has been deleted!\r\n     </div><br>\r\n");
+      out.write("\n    <div class=\"success\">\n       Workgroup has been deleted!\n     </div><br>\n");
  } 
-      out.write('\r');
       out.write('\n');
 
     int start = ParamUtils.getIntParameter(request, "start", 0);
@@ -127,21 +127,21 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
     int numPages = (int)Math.ceil((double)webManager.getWorkgroupManager().getWorkgroupCount()/(double)range);
     int curPage = (start/range) + 1;
 
-      out.write("\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n  <tr>\r\n    <td colspan=\"8\">\r\nBelow is the list of workgroups in the system. A workgroup is an alias for contacting a group of members and is made up of one or more queues.</td>\r\n  </tr>\r\n</table>\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n  <tr>\r\n    <td colspan=\"8\" class=\"text\">Total Workgroups: ");
+      out.write("\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n  <tr>\n    <td colspan=\"8\">\nBelow is the list of workgroups in the system. A workgroup is an alias for contacting a group of members and is made up of one or more queues.</td>\n  </tr>\n</table>\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n  <tr>\n    <td colspan=\"8\" class=\"text\">Total Workgroups: ");
       out.print( webManager.getWorkgroupManager().getWorkgroupCount());
-      out.write(".\r\n     ");
+      out.write(".\n     ");
  if(webManager.getNumPages() > 1) { 
-      out.write("\r\n        Showing ");
+      out.write("\n        Showing ");
       out.print( webManager.getStart() + 1);
       out.write(' ');
       out.write('-');
       out.write(' ');
       out.print( webManager.getStart() + webManager.getRange());
-      out.write("\r\n      ");
+      out.write("\n      ");
  } 
-      out.write("\r\n      <br/><br/>\r\n      ");
+      out.write("\n      <br/><br/>\n      ");
  if(webManager.getNumPages() > 1){ 
-      out.write("\r\n        <table border=\"0\" cellpadding=\"3\" cellspacing=\"0\">\r\n        <tr>\r\n          <td colspan=\"8\" class=\"text\">Pages: [\r\n            ");
+      out.write("\n        <table border=\"0\" cellpadding=\"3\" cellspacing=\"0\">\n        <tr>\n          <td colspan=\"8\" class=\"text\">Pages: [\n            ");
    for (int pageIndex=0; pageIndex<numPages; pageIndex++) {
 
             String sep = ((pageIndex+1)<numPages) ? " " : "";
@@ -149,19 +149,19 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
             boolean isCurrent = (pageIndex+1) == curPage;
 
     
-      out.write("\r\n            <a href=\"workgroup-summary.jsp?start=");
+      out.write("\n            <a href=\"workgroup-summary.jsp?start=");
       out.print( (pageIndex*range) );
       out.write("\" class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\">\r\n              ");
+      out.write("\">\n              ");
       out.print(  (pageIndex+1) );
-      out.write("\r\n            </a>\r\n            ");
+      out.write("\n            </a>\n            ");
       out.print(  sep );
-      out.write("\r\n            ");
+      out.write("\n            ");
    } 
-      out.write("]\r\n          </td>\r\n        </tr>\r\n        </table>\r\n      ");
+      out.write("]\n          </td>\n        </tr>\n        </table>\n      ");
  } 
-      out.write("\r\n    </td>\r\n  </tr>\r\n</table>\r\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n  <thead>\r\n    <tr>\r\n      <th nowrap align=\"left\" colspan=\"2\">Name</th>\r\n      <th nowrap>Status</th>\r\n      <th nowrap>Members (Active/Total) </th>\r\n      <th nowrap>Queues</th>\r\n      <th nowrap>Users in Queues</th>\r\n      <th nowrap>Edit</th>\r\n      <th nowrap>Delete</th>\r\n    </tr>\r\n  </thead>\r\n    ");
+      out.write("\n    </td>\n  </tr>\n</table>\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n  <thead>\n    <tr>\n      <th nowrap align=\"left\" colspan=\"2\">Name</th>\n      <th nowrap>Status</th>\n      <th nowrap>Members (Active/Total) </th>\n      <th nowrap>Queues</th>\n      <th nowrap>Users in Queues</th>\n      <th nowrap>Edit</th>\n      <th nowrap>Delete</th>\n    </tr>\n  </thead>\n    ");
    // Print the list of workgroups
 
     WorkgroupResultFilter filter = new WorkgroupResultFilter();
@@ -175,7 +175,7 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
     if (!workgroups.hasNext()) {
 
 
-      out.write("\r\n    <tr>\r\n      <td align=\"center\" colspan=\"8\">\r\n        <br/>No workgroups --\r\n        <a href=\"workgroup-create.jsp\">create workgroup<a>.\r\n            <br/>\r\n            <br/>\r\n          </a>\r\n        </a>\r\n      </td>\r\n    </tr>\r\n    ");
+      out.write("\n    <tr>\n      <td align=\"center\" colspan=\"8\">\n        <br/>No workgroups --\n        <a href=\"workgroup-create.jsp\">create workgroup<a>.\n            <br/>\n            <br/>\n          </a>\n        </a>\n      </td>\n    </tr>\n    ");
 
 
     }
@@ -189,47 +189,47 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
         i++;
 
 
-      out.write("\r\n    <tr class=\"c1\">\r\n      <td width=\"39%\" colspan=\"2\">\r\n        <a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\n    <tr class=\"c1\">\n      <td width=\"39%\" colspan=\"2\">\n        <a href=\"workgroup-queues.jsp?wgID=");
       out.print( workgroup.getJID().toString() );
-      out.write("\">\r\n            <b>");
+      out.write("\">\n            <b>");
       out.print(  workgroup.getJID().getNode() );
-      out.write("</b>\r\n          </a>\r\n        ");
+      out.write("</b>\n          </a>\n        ");
    if (workgroup.getDescription() != null) { 
-      out.write("\r\n        <span class=\"jive-description\">\r\n          <br/>\r\n          ");
+      out.write("\n        <span class=\"jive-description\">\n          <br/>\n          ");
       out.print(  workgroup.getDescription() );
-      out.write("\r\n        </span>\r\n        ");
+      out.write("\n        </span>\n        ");
    } 
-      out.write("\r\n      </td>\r\n      <td width=\"10%\" align=\"center\" nowrap>\r\n      <table>\r\n         <tr>\r\n             <td width=\"14\">\r\n                 ");
+      out.write("\n      </td>\n      <td width=\"10%\" align=\"center\" nowrap>\n      <table>\n         <tr>\n             <td width=\"14\">\n                 ");
    if (workgroup.getStatus() == Workgroup.Status.OPEN) { 
-      out.write("\r\n                 <img src=\"images/bullet-green-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently open, active and accepting requests.\" alt=\"\"/>\r\n                 </td><td nowrap>Open\r\n                     ");
+      out.write("\n                 <img src=\"images/bullet-green-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently open, active and accepting requests.\" alt=\"\"/>\n                 </td><td nowrap>Open\n                     ");
    } else if (workgroup.getStatus() == Workgroup.Status.READY) { 
-      out.write("\r\n                 <img src=\"images/bullet-yellow-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently ready to open when a member is available.\" alt=\"\"/>\r\n                 </td><td nowrap>Waiting for member\r\n                         ");
+      out.write("\n                 <img src=\"images/bullet-yellow-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently ready to open when a member is available.\" alt=\"\"/>\n                 </td><td nowrap>Waiting for member\n                         ");
    } else { 
-      out.write("\r\n                 <img src=\"images/bullet-red-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently closed.\" alt=\"\"/>\r\n                 </td><td nowrap>Closed\r\n                 ");
+      out.write("\n                 <img src=\"images/bullet-red-14x14.gif\" width=\"14\" height=\"14\" border=\"0\" title=\"Workgroup is currently closed.\" alt=\"\"/>\n                 </td><td nowrap>Closed\n                 ");
    } 
-      out.write("\r\n         </td>\r\n        </tr></table>\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        <a href=\"workgroup-agents-status.jsp?wgID=");
+      out.write("\n         </td>\n        </tr></table>\n      </td>\n      <td width=\"10%\" align=\"center\">\n        <a href=\"workgroup-agents-status.jsp?wgID=");
       out.print( workgroup.getJID().toString() );
-      out.write("\">\r\n          ");
+      out.write("\">\n          ");
       out.print(  webManager.getActiveAgentMemberCount(workgroup) );
       out.write('/');
       out.print(  webManager.getAgentsInWorkgroup(workgroup).size() );
-      out.write("\r\n        </a>\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        ");
+      out.write("\n        </a>\n      </td>\n      <td width=\"10%\" align=\"center\">\n        ");
       out.print(  workgroup.getRequestQueueCount() );
-      out.write("\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        ");
+      out.write("\n      </td>\n      <td width=\"10%\" align=\"center\">\n        ");
       out.print(  webManager.getWaitingCustomerCount(workgroup) );
-      out.write("\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        <a href=\"workgroup-queues.jsp?wgID=");
+      out.write("\n      </td>\n      <td width=\"10%\" align=\"center\">\n        <a href=\"workgroup-queues.jsp?wgID=");
       out.print( workgroup.getJID().toString() );
-      out.write("\" title=\"Click to edit...\">\r\n          <img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\r\n        </a>\r\n      </td>\r\n      <td width=\"10%\" align=\"center\">\r\n        <a href=\"workgroup-delete.jsp?wgID=");
+      out.write("\" title=\"Click to edit...\">\n          <img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\n        </a>\n      </td>\n      <td width=\"10%\" align=\"center\">\n        <a href=\"workgroup-delete.jsp?wgID=");
       out.print( workgroup.getJID().toString() );
-      out.write("\" title=\"Click to delete...\">\r\n          <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\r\n        </a>\r\n      </td>\r\n    </tr>\r\n    ");
+      out.write("\" title=\"Click to delete...\">\n          <img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/>\n        </a>\n      </td>\n    </tr>\n    ");
 
 
     }
 
 
-      out.write("\r\n  </thead>\r\n</table>\r\n");
+      out.write("\n  </thead>\n</table>\n");
  if(numPages > 1){ 
-      out.write("\r\n  <p>Pages: [\r\n    ");
+      out.write("\n  <p>Pages: [\n    ");
    for (int pageIndex=0; pageIndex<numPages; pageIndex++) {
 
             String sep = ((pageIndex+1)<numPages) ? " " : "";
@@ -237,19 +237,19 @@ public final class workgroup_002dsummary_jsp extends org.apache.jasper.runtime.H
             boolean isCurrent = (pageIndex+1) == curPage;
 
     
-      out.write("\r\n    <a href=\"workgroup-summary.jsp?start=");
+      out.write("\n    <a href=\"workgroup-summary.jsp?start=");
       out.print( (pageIndex*range) );
       out.write("\" class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\">\r\n      ");
+      out.write("\">\n      ");
       out.print(  (pageIndex+1) );
-      out.write("\r\n    </a>\r\n    ");
+      out.write("\n    </a>\n    ");
       out.print(  sep );
-      out.write("\r\n    ");
+      out.write("\n    ");
    } 
-      out.write("]\r\n  </p>\r\n");
+      out.write("]\n  </p>\n");
  } 
-      out.write("\r\n\r\n    </body>\r\n</html>");
+      out.write("\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

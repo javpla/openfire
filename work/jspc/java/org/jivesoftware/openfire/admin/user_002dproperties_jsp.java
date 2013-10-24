@@ -69,7 +69,7 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -78,7 +78,8 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     boolean cancel = request.getParameter("cancel") != null;
     boolean delete = request.getParameter("delete") != null;
@@ -124,37 +125,37 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"user-properties\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"user-properties\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "username="+URLEncoder.encode(username, "UTF-8") );
-      out.write("\"/>\r\n        <meta name=\"helpPage\" content=\"edit_user_properties.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n        <meta name=\"helpPage\" content=\"edit_user_properties.html\"/>\n    </head>\n    <body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (request.getParameter("success") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (request.getParameter("locksuccess") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (request.getParameter("unlocksuccess") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (request.getParameter("editsuccess") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
  } else if (user == null) { 
-      out.write("\r\n    <div class=\"warning\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        <td class=\"jive-icon-label\">\r\n            ");
+      out.write("\n    <div class=\"warning\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        <td class=\"jive-icon-label\">\n            ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_6 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_6.setPageContext(_jspx_page_context);
@@ -168,7 +169,7 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
           _jspx_th_fmt_message_6.doInitBody();
         }
         do {
-          out.write("\r\n                ");
+          out.write("\n                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -180,7 +181,7 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n            ");
+          out.write("\n            ");
           int evalDoAfterBody = _jspx_th_fmt_message_6.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -193,24 +194,24 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_6);
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n");
   } 
-      out.write("\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">\r\n            ");
+      out.write("\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">\n            ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        </th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    ");
+      out.write("\n        </th>\n    </tr>\n</thead>\n<tbody>\n    ");
  if (user == null) { 
-      out.write("\r\n    <tr>\r\n        <td colspan=\"2\" align=\"center\">\r\n            ");
+      out.write("\n    <tr>\n        <td colspan=\"2\" align=\"center\">\n            ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } else { 
-      out.write("\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
       out.print( JID.unescapeNode(user.getUsername()) );
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (lockedOut) { 
       out.write("<img src=\"/images/forbidden-16x16.gif\" align=\"top\" height=\"16\" width=\"16\" alt=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
@@ -222,7 +223,7 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
       out.write('/');
       out.write('>');
  } 
-      out.write("\r\n            ");
+      out.write("\n            ");
  if (pendingLockOut) { 
       out.write("<img src=\"/images/warning-16x16.gif\" align=\"top\" height=\"16\" width=\"16\" alt=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
@@ -234,120 +235,120 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
       out.write('/');
       out.write('>');
  } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
   if (presenceManager.isAvailable(user)) {
                     Presence presence = presenceManager.getPresence(user);
             
-      out.write("\r\n                ");
+      out.write("\n                ");
  if (presence.getShow() == null) { 
-      out.write("\r\n                <img src=\"images/user-green-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                <img src=\"images/user-green-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
  } 
-      out.write("\r\n                ");
+      out.write("\n                ");
  if (presence.getShow() == Presence.Show.chat) { 
-      out.write("\r\n                <img src=\"images/user-green-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                <img src=\"images/user-green-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
  } 
-      out.write("\r\n                ");
+      out.write("\n                ");
  if (presence.getShow() == Presence.Show.away) { 
-      out.write("\r\n                <img src=\"images/user-yellow-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                <img src=\"images/user-yellow-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
  } 
-      out.write("\r\n                ");
+      out.write("\n                ");
  if (presence.getShow() == Presence.Show.xa) { 
-      out.write("\r\n                <img src=\"images/user-yellow-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                <img src=\"images/user-yellow-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
  } 
-      out.write("\r\n                ");
+      out.write("\n                ");
  if (presence.getShow() == Presence.Show.dnd) { 
-      out.write("\r\n                <img src=\"images/user-red-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n                <img src=\"images/user-red-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\">\r\n                ");
+      out.write("\">\n                ");
  } 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   } else { 
-      out.write("\r\n\r\n                <img src=\"images/user-clear-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
+      out.write("\n\n                <img src=\"images/user-clear-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\">\r\n                (");
+      out.write("\">\n                (");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write(")\r\n\r\n            ");
+      out.write(")\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
       out.print( AdminManager.getInstance().isUserAdmin(user.getUsername(), true) ? LocaleUtils.getLocalizedString("global.yes") : LocaleUtils.getLocalizedString("global.no") );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
   if ("".equals(user.getName())) { 
-      out.write("\r\n                <span style=\"color:#999\">\r\n                <i>");
+      out.write("\n                <span style=\"color:#999\">\n                <i>");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</i>\r\n                </span>\r\n\r\n            ");
+      out.write("</i>\n                </span>\n\n            ");
   } else { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( user.getName() );
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
   if (user.getEmail() == null) { 
-      out.write("\r\n                <span style=\"color:#999\">\r\n                <i>");
+      out.write("\n                <span style=\"color:#999\">\n                <i>");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("</i>\r\n                </span>\r\n\r\n            ");
+      out.write("</i>\n                </span>\n\n            ");
   } else { 
-      out.write("\r\n                <a href=\"mailto:");
+      out.write("\n                <a href=\"mailto:");
       out.print( user.getEmail() );
       out.write('"');
       out.write('>');
       out.print( user.getEmail() );
-      out.write("</a>\r\n\r\n            ");
+      out.write("</a>\n\n            ");
   } 
-      out.write("\r\n            &nbsp;\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n            &nbsp;\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            ");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
       out.print( JiveGlobals.formatDate(user.getCreationDate()) );
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"c1\">\r\n            Groups:\r\n        </td>\r\n        <td>\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td class=\"c1\">\n            Groups:\n        </td>\n        <td>\n            ");
 
                 Collection<Group> groups = webManager.getGroupManager().getGroups(user);
                 if (groups.isEmpty()) {
             
-      out.write("\r\n                <i>None</i>\r\n            ");
+      out.write("\n                <i>None</i>\n            ");
 
                 }
                 else {
@@ -361,18 +362,18 @@ public final class user_002dproperties_jsp extends org.apache.jasper.runtime.Htt
                     }
                 }
             
-      out.write("\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write("\n        </td>\n    </tr>\n    ");
  } 
-      out.write("\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n<br><br>\r\n\r\n");
+      out.write("\n</tbody>\n</table>\n</div>\n\n<br><br>\n\n");
  if (user != null && !UserManager.getUserProvider().isReadOnly()) { 
-      out.write("\r\n\r\n<form action=\"user-edit-form.jsp\">\r\n<input type=\"hidden\" name=\"username\" value=\"");
+      out.write("\n\n<form action=\"user-edit-form.jsp\">\n<input type=\"hidden\" name=\"username\" value=\"");
       out.print( user.getUsername() );
-      out.write("\">\r\n<input type=\"submit\" value=\"");
+      out.write("\">\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n");
+      out.write("\">\n</form>\n\n");
  } 
-      out.write("\r\n\r\n</body>\r\n</html>");
+      out.write("\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

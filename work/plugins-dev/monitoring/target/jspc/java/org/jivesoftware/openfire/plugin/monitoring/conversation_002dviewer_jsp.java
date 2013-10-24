@@ -61,8 +61,7 @@ public final class conversation_002dviewer_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n\n\n\n\n\n");
       out.write('\n');
 
     // Get handle on the Monitoring plugin
@@ -100,30 +99,32 @@ public final class conversation_002dviewer_jsp extends org.apache.jasper.runtime
     }
 
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n    <meta name=\"decorator\" content=\"none\"/>\r\n\r\n    <title>Conversation Viewer</title>\r\n\r\n    <style type=\"text/css\">\r\n\t    @import \"style/style.css\";\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("\n\n<html>\n<head>\n    <meta name=\"decorator\" content=\"none\"/>\n\n    <title>Conversation Viewer</title>\n\n    <style type=\"text/css\">\n\t    @import \"style/style.css\";\n    </style>\n</head>\n\n<body>\n\n");
 
     if (conversation != null) {
 
-      out.write("\r\n\r\n<table width=\"100%\">\r\n    ");
+      out.write("\n\n<table width=\"100%\">\n    ");
  for (ArchivedMessage message : conversation.getMessages()) { 
-      out.write("\r\n    <tr valign=\"top\">\r\n        <td width=\"1%\" nowrap class=\"jive-description\" style=\"color:");
+      out.write("\n    <tr valign=\"top\">\n        <td width=\"1%\" nowrap class=\"jive-description\" style=\"color:");
       out.print( getColor(message.getFromJID()) );
-      out.write("\">\r\n            [");
+      out.write("\">\n            [");
       out.print( JiveGlobals.formatTime(message.getSentDate()));
       out.write(']');
       out.write(' ');
       out.print( message.getFromJID().getNode());
-      out.write(":</td>\r\n        <td><span class=\"jive-description\">");
+      out.write(":</td>\n        <td><span class=\"jive-description\">");
       out.print( StringUtils.escapeHTMLTags(message.getBody()));
-      out.write("</span></td>\r\n    </tr>\r\n    ");
+      out.write("</span></td>\n    </tr>\n    ");
 }
-      out.write("\r\n\r\n</table>\r\n\r\n");
+      out.write("\n\n</table>\n\n");
  }
 else { 
-      out.write("\r\nNo conversation could be found.\r\n");
+      out.write("\nNo conversation could be found.\n");
  } 
-      out.write("\r\n\r\n\r\n");
-      out.write("\r\n</body>\r\n</html>");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write("\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

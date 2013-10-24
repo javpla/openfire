@@ -74,8 +74,9 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -84,10 +85,10 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     int start = ParamUtils.getIntParameter(request,"start",0);
     int range = ParamUtils.getIntParameter(request,"range",webManager.getRowsPerPage("server-session-summary", DEFAULT_RANGE));
@@ -140,68 +141,69 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
     int curPage = (start/range) + 1;
     int maxIndex = (start+range <= sessionCount ? start+range : sessionCount);
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-session-summary\"/>\r\n        <meta name=\"helpPage\" content=\"view_active_server_sessions.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-session-summary\"/>\n        <meta name=\"helpPage\" content=\"view_active_server_sessions.html\"/>\n    </head>\n    <body>\n\n");
   if ("success".equals(request.getParameter("close"))) { 
-      out.write("\r\n\r\n    <p class=\"jive-success-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-success-text\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write(": <b>");
       out.print( hostnames.size() );
-      out.write("</b>\r\n\r\n");
+      out.write("</b>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    - ");
+      out.write("\n\n    - ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
       out.write(' ');
       out.print( (start+1) );
       out.write('-');
       out.print( (start+range) );
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   } 
-      out.write("\r\n - ");
+      out.write("\n - ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write(":\r\n<select size=\"1\" onchange=\"location.href='server-session-summary.jsp?start=0&range=' + this.options[this.selectedIndex].value;\">\r\n\r\n    ");
+      out.write(":\n<select size=\"1\" onchange=\"location.href='server-session-summary.jsp?start=0&range=' + this.options[this.selectedIndex].value;\">\n\n    ");
  for (int aRANGE_PRESETS : RANGE_PRESETS) { 
-      out.write("\r\n\r\n    <option value=\"");
+      out.write("\n\n    <option value=\"");
       out.print( aRANGE_PRESETS );
-      out.write("\"\r\n            ");
+      out.write("\"\n            ");
       out.print( (aRANGE_PRESETS == range ? "selected" : "") );
       out.write('>');
       out.print( aRANGE_PRESETS );
-      out.write("\r\n    </option>\r\n\r\n    ");
+      out.write("\n    </option>\n\n    ");
  } 
-      out.write("\r\n\r\n</select>\r\n</p>\r\n\r\n");
+      out.write("\n\n</select>\n</p>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n    [\r\n    ");
+      out.write(":\n    [\n    ");
   for (int i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"server-session-summary.jsp?start=");
+      out.write("\n        <a href=\"server-session-summary.jsp?start=");
       out.print( (i*range) );
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_6 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_6.setPageContext(_jspx_page_context);
@@ -215,7 +217,7 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
           _jspx_th_fmt_message_6.doInitBody();
         }
         do {
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -227,7 +229,7 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -239,7 +241,6 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write('\r');
           out.write('\n');
           int evalDoAfterBody = _jspx_th_fmt_message_6.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -253,31 +254,31 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_6);
-      out.write("\r\n</p>\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th>&nbsp;</th>\r\n        <th nowrap>");
+      out.write("\n</p>\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th>&nbsp;</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap colspan=\"3\">");
+      out.write("</th>\n        <th nowrap colspan=\"3\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n        <th nowrap>");
+      out.write("</th>\n        <th nowrap>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    ");
+      out.write("</th>\n    </tr>\n</thead>\n<tbody>\n    ");
   // Check if no out/in connection to/from a remote server exists
         if (hostnames.isEmpty()) {
     
-      out.write("\r\n        <tr>\r\n            <td colspan=\"9\">\r\n\r\n                ");
+      out.write("\n        <tr>\n            <td colspan=\"9\">\n\n                ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n\r\n            </td>\r\n        </tr>\r\n\r\n    ");
+      out.write("\n\n            </td>\n        </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
  int count = 0;
         hostnames = new ArrayList<String>(hostnames).subList(start, maxIndex);
         for (String host : hostnames) {
@@ -289,10 +290,11 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
                 continue;
             }
     
-      out.write("\r\n        ");
+      out.write("\n        ");
       out.write(' ');
-      out.write("\r\n\r\n\r\n\r\n \r\n\r\n ");
-      out.write("\r\n\r\n");
+      out.write("\n\n\n\n \n\n ");
+      out.write('\n');
+      out.write('\n');
  // Show the secured icon only if ALL sessions are secure
     boolean isSecured = true;
     // Check if all incoming sessions are secured
@@ -307,13 +309,13 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
         isSecured = outSession.isSecure();
     }
 
-      out.write("\r\n<tr class=\"jive-");
+      out.write("\n<tr class=\"jive-");
       out.print( (((count % 2) == 0) ? "even" : "odd") );
-      out.write("\">\r\n    <td width=\"1%\" nowrap>");
+      out.write("\">\n    <td width=\"1%\" nowrap>");
       out.print( count );
-      out.write("</td>\r\n    <td width=\"47%\" nowrap>\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n            <tr>\r\n            <td width=\"1%\" ><img src=\"getFavicon?host=");
+      out.write("</td>\n    <td width=\"47%\" nowrap>\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n            <tr>\n            <td width=\"1%\" ><img src=\"getFavicon?host=");
       out.print(host);
-      out.write("\" width=\"16\" height=\"16\" alt=\"\"></td>\r\n            <td><a href=\"server-session-details.jsp?hostname=");
+      out.write("\" width=\"16\" height=\"16\" alt=\"\"></td>\n            <td><a href=\"server-session-details.jsp?hostname=");
       out.print( URLEncoder.encode(host, "UTF-8") );
       out.write("\" title=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
@@ -321,48 +323,48 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
       out.write('"');
       out.write('>');
       out.print( host );
-      out.write("</a></td>\r\n            </tr>\r\n        </table>\r\n    </td>\r\n    ");
+      out.write("</a></td>\n            </tr>\n        </table>\n    </td>\n    ");
   if (isSecured) { 
-      out.write("\r\n    <td width=\"1%\">\r\n        <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\r\n    </td>\r\n     ");
+      out.write("\n    <td width=\"1%\">\n        <img src=\"images/lock.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\n    </td>\n     ");
  } else { 
-      out.write("\r\n    <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\r\n     ");
+      out.write("\n    <td width=\"1%\"><img src=\"images/blank.gif\" width=\"1\" height=\"1\" alt=\"\"></td>\n     ");
  } 
-      out.write("\r\n    ");
+      out.write("\n    ");
  if (!inSessions.isEmpty() && outSession == null) { 
-      out.write("\r\n        <td width=\"1%\">\r\n            <img src=\"images/incoming_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n        <td width=\"1%\">\n            <img src=\"images/incoming_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n        <td width=\"10%\">");
+      out.write("\">\n        </td>\n        <td width=\"10%\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } else if (inSessions.isEmpty() && outSession != null) { 
-      out.write("\r\n        <td width=\"1%\">\r\n            <img src=\"images/outgoing_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n        <td width=\"1%\">\n            <img src=\"images/outgoing_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n        <td width=\"10%\">");
+      out.write("\">\n        </td>\n        <td width=\"10%\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } else { 
-      out.write("\r\n        <td width=\"1%\">\r\n            <img src=\"images/both_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
+      out.write("\n        <td width=\"1%\">\n            <img src=\"images/both_32x16.gif\" width=\"32\" height=\"16\" border=\"0\" title=\"");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
       out.write("\" alt=\"");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n        <td width=\"10%\">");
+      out.write("\">\n        </td>\n        <td width=\"10%\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
  Date creationDate = null;
         Date lastActiveDate = null;
         if (!inSessions.isEmpty() && outSession == null) {
@@ -406,50 +408,50 @@ public final class server_002dsession_002dsummary_jsp extends org.apache.jasper.
         boolean sameCreationDay = nowCal.get(Calendar.DAY_OF_YEAR) == creationCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == creationCal.get(Calendar.YEAR);
         boolean sameActiveDay = nowCal.get(Calendar.DAY_OF_YEAR) == lastActiveCal.get(Calendar.DAY_OF_YEAR) && nowCal.get(Calendar.YEAR) == lastActiveCal.get(Calendar.YEAR);
     
-      out.write("\r\n\r\n    <td align=\"center\" width=\"20%\" nowrap>\r\n        ");
+      out.write("\n\n    <td align=\"center\" width=\"20%\" nowrap>\n        ");
       out.print( sameCreationDay ? JiveGlobals.formatTime(creationDate) : JiveGlobals.formatDateTime(creationDate) );
-      out.write("\r\n    </td>\r\n    <td align=\"center\" width=\"20%\" nowrap>\r\n        ");
+      out.write("\n    </td>\n    <td align=\"center\" width=\"20%\" nowrap>\n        ");
       out.print( sameActiveDay ? JiveGlobals.formatTime(lastActiveDate) : JiveGlobals.formatDateTime(lastActiveDate) );
-      out.write("\r\n    </td>\r\n\r\n    <td width=\"1%\" nowrap align=\"center\" style=\"border-right:1px #ccc solid;\">\r\n        <a href=\"server-session-summary.jsp?hostname=");
+      out.write("\n    </td>\n\n    <td width=\"1%\" nowrap align=\"center\" style=\"border-right:1px #ccc solid;\">\n        <a href=\"server-session-summary.jsp?hostname=");
       out.print( URLEncoder.encode(host, "UTF-8") );
-      out.write("&close=true\"\r\n         title=\"");
+      out.write("&close=true\"\n         title=\"");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\"\r\n         onclick=\"return confirm('");
+      out.write("\"\n         onclick=\"return confirm('");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("');\"\r\n         ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n    </td>\r\n</tr>");
-      out.write("\r\n    ");
+      out.write("');\"\n         ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n    </td>\n</tr>");
+      out.write("\n    ");
   } 
-      out.write("\r\n\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n\n</tbody>\n</table>\n</div>\n\n");
   if (numPages > 1) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write(":\r\n    [\r\n    ");
+      out.write(":\n    [\n    ");
   for (int i=0; i<numPages; i++) {
             String sep = ((i+1)<numPages) ? " " : "";
             boolean isCurrent = (i+1) == curPage;
     
-      out.write("\r\n        <a href=\"server-session-summary.jsp?start=");
+      out.write("\n        <a href=\"server-session-summary.jsp?start=");
       out.print( (i*range) );
-      out.write("\"\r\n         class=\"");
+      out.write("\"\n         class=\"");
       out.print( ((isCurrent) ? "jive-current" : "") );
-      out.write("\"\r\n         >");
+      out.write("\"\n         >");
       out.print( (i+1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   } 
-      out.write("\r\n    ]\r\n    </p>\r\n\r\n");
+      out.write("\n    ]\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<br>\r\n<p>\r\n");
+      out.write("\n\n<br>\n<p>\n");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
       out.write(':');
       out.write(' ');
       out.print( JiveGlobals.formatDateTime(new Date()) );
-      out.write("\r\n</p>\r\n\r\n    </body>\r\n</html>");
+      out.write("\n</p>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

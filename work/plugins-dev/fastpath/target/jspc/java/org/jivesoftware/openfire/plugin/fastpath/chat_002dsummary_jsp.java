@@ -59,12 +59,11 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>Chat Summary</title>\r\n    <meta name=\"pageID\" content=\"chat-summary\"/>\r\n    <style type=\"text/css\">@import url( /js/jscalendar/calendar-win2k-cold-1.css );</style>\r\n    <script type=\"text/javascript\" src=\"/js/jscalendar/calendar.js\"></script>\r\n    <script type=\"text/javascript\" src=\"/js/jscalendar/i18n.jsp\"></script>\r\n    <script type=\"text/javascript\" src=\"/js/jscalendar/calendar-setup.js\"></script>\r\n\r\n    <style type=\"text/css\">\r\n        .textfield {\r\n            font-size: 11px;\r\n            font-family: verdana;\r\n            padding: 3px 2px;\r\n            background: #efefef;\r\n        }\r\n\r\n        .text {\r\n            font-size: 11px;\r\n            font-family: verdana;\r\n        }\r\n    </style>\r\n    <!--<meta name=\"helpPage\" content=\"view_chat_transcript_reports_for_a_workgroup.html\"/>-->\r\n</head>\r\n\r\n<body>\r\n<style type=\"text/css\">\r\n    @import \"style/style.css\";\r\n</style>\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n<html>\n<head>\n    <title>Chat Summary</title>\n    <meta name=\"pageID\" content=\"chat-summary\"/>\n    <style type=\"text/css\">@import url( /js/jscalendar/calendar-win2k-cold-1.css );</style>\n    <script type=\"text/javascript\" src=\"/js/jscalendar/calendar.js\"></script>\n    <script type=\"text/javascript\" src=\"/js/jscalendar/i18n.jsp\"></script>\n    <script type=\"text/javascript\" src=\"/js/jscalendar/calendar-setup.js\"></script>\n\n    <style type=\"text/css\">\n        .textfield {\n            font-size: 11px;\n            font-family: verdana;\n            padding: 3px 2px;\n            background: #efefef;\n        }\n\n        .text {\n            font-size: 11px;\n            font-family: verdana;\n        }\n    </style>\n    <!--<meta name=\"helpPage\" content=\"view_chat_transcript_reports_for_a_workgroup.html\"/>-->\n</head>\n\n<body>\n<style type=\"text/css\">\n    @import \"style/style.css\";\n</style>\n");
 
     // Get a workgroup manager
     WorkgroupManager wgManager = WorkgroupManager.getInstance();
 
-      out.write('\r');
       out.write('\n');
  // Get parameters //
     boolean cancel = request.getParameter("cancel") != null;
@@ -190,17 +189,19 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
 
 
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if(errors){ 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       out.print( errorMessage);
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
    if (ModelUtil.hasLength(sess) && ModelUtil.hasLength(delete)) { 
-      out.write("\r\n<div class=\"success\">\r\n    Conversation has been removed.\r\n</div>\r\n");
+      out.write("\n<div class=\"success\">\n    Conversation has been removed.\n</div>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n   Allows for specific report retrieval of previous conversations during two specified dates.\r\n</p>\r\n\r\n<div  class=\"jive-contentBox\">\r\n<form name=\"workgroupForm\" method=\"post\" action=\"chat-summary.jsp\">\r\n  <h4>Chat Transcripts</h4>\r\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\r\n            <tr>\r\n                <td width=\"1%\" nowrap>\r\n                    <span class=\"text\">Select Workgroup:</span>\r\n                </td>\r\n                <td>\r\n                    <select name=\"workgroupBox\" class=\"text\">\r\n                        ");
+      out.write("\n\n<p>\n   Allows for specific report retrieval of previous conversations during two specified dates.\n</p>\n\n<div  class=\"jive-contentBox\">\n<form name=\"workgroupForm\" method=\"post\" action=\"chat-summary.jsp\">\n  <h4>Chat Transcripts</h4>\n        <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\n            <tr>\n                <td width=\"1%\" nowrap>\n                    <span class=\"text\">Select Workgroup:</span>\n                </td>\n                <td>\n                    <select name=\"workgroupBox\" class=\"text\">\n                        ");
 
                             String wgroup = request.getParameter("workgroupBox");
                             for (Workgroup w : wgManager.getWorkgroups()) {
@@ -209,35 +210,33 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
                                     selectionID = "selected";
                                 }
                         
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( w.getJID().toString() );
       out.write('"');
       out.write(' ');
       out.print( selectionID );
-      out.write(">\r\n                            ");
+      out.write(">\n                            ");
       out.print( w.getJID().toString() );
-      out.write("</option>\r\n                        ");
+      out.write("</option>\n                        ");
 
                             }
                         
-      out.write("\r\n                    </select>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td class=\"text\" width=\"1%\" nowrap>\r\n                    Choose Date:\r\n                </td>\r\n                <td nowrap>\r\n                    <!-- Start of Date -->\r\n                    <TABLE border=\"0\">\r\n                        <tr valign=\"top\">\r\n                            <td width=\"1%\" nowrap class=\"text\">\r\n                                From:\r\n                            </td>\r\n                            <td width=\"1%\" nowrap class=\"text\"><input type=\"text\" name=\"startDate\" id=\"startDate\" size=\"15\" value=\"");
+      out.write("\n                    </select>\n                </td>\n            </tr>\n            <tr>\n                <td class=\"text\" width=\"1%\" nowrap>\n                    Choose Date:\n                </td>\n                <td nowrap>\n                    <!-- Start of Date -->\n                    <TABLE border=\"0\">\n                        <tr valign=\"top\">\n                            <td width=\"1%\" nowrap class=\"text\">\n                                From:\n                            </td>\n                            <td width=\"1%\" nowrap class=\"text\"><input type=\"text\" name=\"startDate\" id=\"startDate\" size=\"15\" value=\"");
       out.print( start != null ? start : "");
-      out.write("\"/><br/>\r\n                            Use mm/dd/yy</td>\r\n                            <td width=\"1%\" nowrap>&nbsp;<img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"startDateTrigger\"></td>\r\n\r\n\r\n                            <TD width=\"1%\" nowrap class=\"text\">\r\n                                To:\r\n                            </td>\r\n                            <td width=\"1%\" nowrap class=\"text\"><input type=\"text\" name=\"endDate\" id=\"endDate\" size=\"15\" value=\"");
+      out.write("\"/><br/>\n                            Use mm/dd/yy</td>\n                            <td width=\"1%\" nowrap>&nbsp;<img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"startDateTrigger\"></td>\n\n\n                            <TD width=\"1%\" nowrap class=\"text\">\n                                To:\n                            </td>\n                            <td width=\"1%\" nowrap class=\"text\"><input type=\"text\" name=\"endDate\" id=\"endDate\" size=\"15\" value=\"");
       out.print( end != null ? end : "" );
-      out.write("\"/><br/>\r\n                             Use mm/dd/yy</td>\r\n                            <td>&nbsp;<img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"endDateTrigger\"></td>\r\n                         </TR>\r\n                    </TABLE>\r\n                    <!-- End Of Date -->\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <input type=\"submit\" name=\"submit\" value=\"View Chat Transcripts\"/>\r\n                </td>\r\n                <td align=\"left\">\r\n                    &nbsp;\r\n                </td>\r\n            </tr>\r\n        </table>\r\n</form>\r\n</div>\r\n");
+      out.write("\"/><br/>\n                             Use mm/dd/yy</td>\n                            <td>&nbsp;<img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"endDateTrigger\"></td>\n                         </TR>\n                    </TABLE>\n                    <!-- End Of Date -->\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    <input type=\"submit\" name=\"submit\" value=\"View Chat Transcripts\"/>\n                </td>\n                <td align=\"left\">\n                    &nbsp;\n                </td>\n            </tr>\n        </table>\n</form>\n</div>\n");
 
     StringBuffer buf = new StringBuffer();
     final String workgroupName = request.getParameter("workgroupBox");
 
-      out.write('\r');
       out.write('\n');
  if (ModelUtil.hasLength(workgroupName) && !errors) { 
-      out.write('\r');
       out.write('\n');
 
     final Workgroup g = wgManager.getWorkgroup(new JID(workgroupName));
 
-      out.write("\r\n<br>\r\n<table class=\"jive-table\"  cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <th nowrap>\r\n        Customer\r\n    </th>\r\n    <th>\r\n        Agent\r\n    </th>\r\n     <th>\r\n        Question\r\n    </th>\r\n    <th>\r\n        Date/Time\r\n    </th>\r\n    <th>\r\n        Options\r\n    </th>\r\n    ");
+      out.write("\n<br>\n<table class=\"jive-table\"  cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <th nowrap>\n        Customer\n    </th>\n    <th>\n        Agent\n    </th>\n     <th>\n        Question\n    </th>\n    <th>\n        Date/Time\n    </th>\n    <th>\n        Options\n    </th>\n    ");
 
         Collection list = ChatTranscriptManager.getChatSessionsForWorkgroup(g, startDate, endDate);
         Iterator citer = list.iterator();
@@ -249,7 +248,7 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
             }
             String sessionID = chatSession.getSessionID();
     
-      out.write("\r\n    <tr>\r\n         <td nowrap width=\"1%\" class=\"conversation-body\">\r\n               ");
+      out.write("\n    <tr>\n         <td nowrap width=\"1%\" class=\"conversation-body\">\n               ");
 
                 String email = chatSession.getEmail();
                 if (email.indexOf('@') != -1) {
@@ -269,7 +268,7 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
 
             }
         
-      out.write("\r\n\r\n        </td>\r\n        <td nowrap>\r\n            ");
+      out.write("\n\n        </td>\n        <td nowrap>\n            ");
 
                 AgentChatSession initial = chatSession.getFirstSession();
                 if (initial == null) {
@@ -296,13 +295,13 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
                 final String displayDate = dayFormatter
                     .format(new Date(chatSession.getStartTime()));
             
-      out.write("\r\n        </td>\r\n        <td>\r\n            ");
+      out.write("\n        </td>\n        <td>\n            ");
       out.print( chatSession.getQuestion() );
-      out.write("\r\n        </td>\r\n        <td nowrap>");
+      out.write("\n        </td>\n        <td nowrap>");
       out.print( displayDate  );
-      out.write("\r\n        </td>\r\n        <td nowrap>\r\n            <a href=\"chat-conversation.jsp?sessionID=");
+      out.write("\n        </td>\n        <td nowrap>\n            <a href=\"chat-conversation.jsp?sessionID=");
       out.print( sessionID );
-      out.write("\">View</a>\r\n            <a href=\"chat-summary.jsp?");
+      out.write("\">View</a>\n            <a href=\"chat-summary.jsp?");
       out.print(buf.toString() );
       out.write("&workgroupBox=");
       out.print( workgroupName);
@@ -312,19 +311,18 @@ public final class chat_002dsummary_jsp extends org.apache.jasper.runtime.HttpJs
       out.print(start);
       out.write("&endDate=");
       out.print(end);
-      out.write("&submit=true\">Delete</a>\r\n        </td>\r\n\r\n    </tr>\r\n    ");
+      out.write("&submit=true\">Delete</a>\n        </td>\n\n    </tr>\n    ");
  } 
-      out.write("</table>\r\n");
+      out.write("</table>\n");
 
     if (list.size() == 0) {
 
 
-      out.write("\r\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr>\r\n        <td class=\"c1\" colspan=6>\r\n            <tr><td class=\"text\">No Chats have occured in this workgroup.</td></tr>\r\n        </td>\r\n    </tr>\r\n</table>\r\n");
+      out.write("\n<table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr>\n        <td class=\"c1\" colspan=6>\n            <tr><td class=\"text\">No Chats have occured in this workgroup.</td></tr>\n        </td>\n    </tr>\n</table>\n");
  } 
-      out.write('\r');
       out.write('\n');
  } 
-      out.write("\r\n\r\n\r\n<script type=\"text/javascript\">\r\n    function catcalc(cal) {\r\n        var endDateField = $('endDate');\r\n        var startDateField = $('startDate');\r\n\r\n        var endTime = new Date(endDateField.value);\r\n        var startTime = new Date(startDateField.value);\r\n        if (endTime.getTime() < startTime.getTime()) {\r\n            alert(\"Dates do not match\");\r\n            startDateField.value = \"\";\r\n            endDateField.value= \"\";\r\n        }\r\n    }\r\n\r\n    Calendar.setup(\r\n    {\r\n        inputField  : \"startDate\",         // ID of the input field\r\n        ifFormat    : \"%m/%d/%y\",    // the date format\r\n        button      : \"startDateTrigger\",       // ID of the button\r\n        onUpdate    :  catcalc\r\n    });\r\n\r\n    Calendar.setup(\r\n    {\r\n        inputField  : \"endDate\",         // ID of the input field\r\n        ifFormat    : \"%m/%d/%y\",    // the date format\r\n        button      : \"endDateTrigger\",       // ID of the button\r\n        onUpdate    :  catcalc\r\n    });\r\n</script>\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n\n<script type=\"text/javascript\">\n    function catcalc(cal) {\n        var endDateField = $('endDate');\n        var startDateField = $('startDate');\n\n        var endTime = new Date(endDateField.value);\n        var startTime = new Date(startDateField.value);\n        if (endTime.getTime() < startTime.getTime()) {\n            alert(\"Dates do not match\");\n            startDateField.value = \"\";\n            endDateField.value= \"\";\n        }\n    }\n\n    Calendar.setup(\n    {\n        inputField  : \"startDate\",         // ID of the input field\n        ifFormat    : \"%m/%d/%y\",    // the date format\n        button      : \"startDateTrigger\",       // ID of the button\n        onUpdate    :  catcalc\n    });\n\n    Calendar.setup(\n    {\n        inputField  : \"endDate\",         // ID of the input field\n        ifFormat    : \"%m/%d/%y\",    // the date format\n        button      : \"endDateTrigger\",       // ID of the button\n        onUpdate    :  catcalc\n    });\n</script>\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

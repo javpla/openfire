@@ -55,7 +55,7 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -64,10 +64,9 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>Cluster Node Information</title>\r\n    <meta name=\"pageID\" content=\"system-clustering\"/>\r\n    <meta http-equiv=\"refresh\" content=\"10\" >\r\n    <style type=\"text/css\">\r\n    .warning {\r\n        color : #f00;\r\n        font-weight : bold;\r\n    }\r\n    .jive-stats .jive-table THEAD TH, .jive-stats .jive-table TBODY TD {\r\n        border-right : 1px #ccc solid;\r\n        text-align : center;\r\n    }\r\n    .jive-stats .jive-table .c6c7c8, .jive-stats .jive-table .c8, .jive-stats .jive-table TBODY .c8 {\r\n        border-right : 0px;\r\n    }\r\n    .jive-stats .jive-table TBODY TD TABLE TD {\r\n        border : 0px;\r\n    }\r\n\r\n    .jive-info .c1 {\r\n        width : 30%;\r\n    }\r\n    .jive-info .c2 {\r\n        width : 25%;\r\n    }\r\n    .jive-info .c3 {\r\n        width : 15%;\r\n        text-align : center;\r\n    }\r\n    .jive-info .c4 {\r\n        width : 30%;\r\n    }\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("\n\n\n\n\n\n<html>\n<head>\n    <title>Cluster Node Information</title>\n    <meta name=\"pageID\" content=\"system-clustering\"/>\n    <meta http-equiv=\"refresh\" content=\"10\" >\n    <style type=\"text/css\">\n    .warning {\n        color : #f00;\n        font-weight : bold;\n    }\n    .jive-stats .jive-table THEAD TH, .jive-stats .jive-table TBODY TD {\n        border-right : 1px #ccc solid;\n        text-align : center;\n    }\n    .jive-stats .jive-table .c6c7c8, .jive-stats .jive-table .c8, .jive-stats .jive-table TBODY .c8 {\n        border-right : 0px;\n    }\n    .jive-stats .jive-table TBODY TD TABLE TD {\n        border : 0px;\n    }\n\n    .jive-info .c1 {\n        width : 30%;\n    }\n    .jive-info .c2 {\n        width : 25%;\n    }\n    .jive-info .c3 {\n        width : 15%;\n        text-align : center;\n    }\n    .jive-info .c4 {\n        width : 30%;\n    }\n    </style>\n</head>\n\n<body>\n\n");
  // Is clustering enabled? If not, redirect back to the cache page
     if (!ClusterManager.isClusteringStarted()) {
         response.sendRedirect("../../system-clustering.jsp");
@@ -142,8 +141,7 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
         cacheNames[i] = caches[i].getName();
     }
 
-      out.write("\r\n\r\n<p>\r\nBelow you will find statistic information for the selected node. This page will be automatically\r\nrefreshed every 10 seconds.\r\n</p>\r\n\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr>\r\n    <td width=\"99%\">\r\n        &nbsp;\r\n    </td>\r\n    <td width=\"1%\" nowrap=\"nowrap\">\r\n        <a href=\"../../system-clustering.jsp\">&laquo; Back to cluster summary</a>\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<br />\r\n\r\n<div class=\"jive-stats\">\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th rowspan=\"2\" class=\"c1\">Node</th>\r\n        <th rowspan=\"2\" class=\"c2\">Memory Usage</th>\r\n        <th colspan=\"3\" class=\"c3c4c5\">Incoming Packets</th>\r\n        <th colspan=\"3\" class=\"c6c7c8\">Outgoing Packets</th>\r\n    </tr>\r\n    <tr>\r\n        <th class=\"c3\" colspan=\"2\">Packets Received</th>\r\n        <th class=\"c5\">Success</th>\r\n        <th class=\"c6\">CPU</th>\r\n        <th class=\"c7\">Throughput</th>\r\n        <th class=\"c8\">Success</th>\r\n    </tr>\r\n</thead>\r\n");
-      out.write("\r\n<tbody>\r\n\r\n");
+      out.write("\n\n<p>\nBelow you will find statistic information for the selected node. This page will be automatically\nrefreshed every 10 seconds.\n</p>\n\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr>\n    <td width=\"99%\">\n        &nbsp;\n    </td>\n    <td width=\"1%\" nowrap=\"nowrap\">\n        <a href=\"../../system-clustering.jsp\">&laquo; Back to cluster summary</a>\n    </td>\n</tr>\n</table>\n\n<br />\n\n<div class=\"jive-stats\">\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th rowspan=\"2\" class=\"c1\">Node</th>\n        <th rowspan=\"2\" class=\"c2\">Memory Usage</th>\n        <th colspan=\"3\" class=\"c3c4c5\">Incoming Packets</th>\n        <th colspan=\"3\" class=\"c6c7c8\">Outgoing Packets</th>\n    </tr>\n    <tr>\n        <th class=\"c3\" colspan=\"2\">Packets Received</th>\n        <th class=\"c5\">Success</th>\n        <th class=\"c6\">CPU</th>\n        <th class=\"c7\">Throughput</th>\n        <th class=\"c8\">Success</th>\n    </tr>\n</thead>\n\n<tbody>\n\n");
   for (int i=0; i<members.size(); i++) {
         ClusterNodeInfo m = members.get(i);
         if (member != m) {
@@ -151,11 +149,11 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
         }
         NodeRuntimeStats.NodeInfo nodeInfo = nodeInfoMap.get(m.getNodeID());
 
-      out.write("\r\n    <tr bgcolor=\"#ffffcc\">\r\n\r\n        <td nowrap class=\"c1\">\r\n            ");
+      out.write("\n    <tr bgcolor=\"#ffffcc\">\n\n        <td nowrap class=\"c1\">\n            ");
       out.print( m.getHostName() );
       out.write("<br/>");
       out.print( m.getNodeID() );
-      out.write("\r\n        </td>\r\n\r\n        <td class=\"c2\" valign=\"middle\">\r\n            ");
+      out.write("\n        </td>\n\n        <td class=\"c2\" valign=\"middle\">\n            ");
   double freeMem = (double)nodeInfo.getFreeMem()/(1024.0*1024.0);
                 double maxMem = (double)nodeInfo.getMaxMem()/(1024.0*1024.0);
                 double totalMem = (double)nodeInfo.getTotalMem()/(1024.0*1024.0);
@@ -164,44 +162,44 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
                 double percentUsed = 100.0 - percentFree;
                 int percent = 100-(int)Math.round(percentFree);
             
-      out.write("\r\n\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"250\">\r\n            <tr>\r\n                <td width=\"99%\">\r\n                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\r\n                    <tr>\r\n                        ");
+      out.write("\n\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"250\">\n            <tr>\n                <td width=\"99%\">\n                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"border:1px #666 solid;\">\n                    <tr>\n                        ");
   if (percent == 0) { 
-      out.write("\r\n\r\n                            <td width=\"100%\" style=\"padding:0px;\"><img src=\"../../images/percent-bar-left.gif\" width=\"100%\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                        ");
+      out.write("\n\n                            <td width=\"100%\" style=\"padding:0px;\"><img src=\"../../images/percent-bar-left.gif\" width=\"100%\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                        ");
   } else { 
-      out.write("\r\n\r\n                            ");
+      out.write("\n\n                            ");
   if (percent >= 90) { 
-      out.write("\r\n\r\n                                <td width=\"");
+      out.write("\n\n                                <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"../../images/percent-bar-used-high.gif\" style=\"padding:0px;\"\r\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                            ");
+      out.write("%\" background=\"../../images/percent-bar-used-high.gif\" style=\"padding:0px;\"\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                            ");
   } else { 
-      out.write("\r\n\r\n                                <td width=\"");
+      out.write("\n\n                                <td width=\"");
       out.print( percent );
-      out.write("%\" background=\"../../images/percent-bar-used-low.gif\" style=\"padding:0px;\"\r\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                            ");
+      out.write("%\" background=\"../../images/percent-bar-used-low.gif\" style=\"padding:0px;\"\n                                    ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                            ");
   } 
-      out.write("\r\n\r\n                            <td width=\"");
+      out.write("\n\n                            <td width=\"");
       out.print( (100-percent) );
-      out.write("%\" background=\"../../images/percent-bar-left.gif\" style=\"padding:0px;\"\r\n                                ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\r\n\r\n                        ");
+      out.write("%\" background=\"../../images/percent-bar-left.gif\" style=\"padding:0px;\"\n                                ><img src=\"images/blank.gif\" width=\"1\" height=\"4\" border=\"0\" alt=\"\"></td>\n\n                        ");
   } 
-      out.write("\r\n                    </tr>\r\n                    </table>\r\n                </td>\r\n                <td width=\"1%\" nowrap=\"nowrap\">\r\n                    ");
+      out.write("\n                    </tr>\n                    </table>\n                </td>\n                <td width=\"1%\" nowrap=\"nowrap\">\n                    ");
       out.print( mbFormat.format(totalMem) );
       out.write(" MB, ");
       out.print( decFormat.format(percentUsed) );
-      out.write("% used\r\n                </td>\r\n           </tr>\r\n           </table>\r\n\r\n        </td>\r\n        <td class=\"c3\" colspan=\"2\">\r\n            \r\n        </td>\r\n\r\n        <td class=\"c5\">\r\n            \r\n        </td>\r\n        <td class=\"c6\">\r\n           \r\n        </td>\r\n        <td class=\"c7\">\r\n           \r\n        </td>\r\n        <td class=\"c8\">\r\n            \r\n        </td>\r\n    </tr>\r\n\r\n");
+      out.write("% used\n                </td>\n           </tr>\n           </table>\n\n        </td>\n        <td class=\"c3\" colspan=\"2\">\n            \n        </td>\n\n        <td class=\"c5\">\n            \n        </td>\n        <td class=\"c6\">\n           \n        </td>\n        <td class=\"c7\">\n           \n        </td>\n        <td class=\"c8\">\n            \n        </td>\n    </tr>\n\n");
   } 
-      out.write("\r\n\r\n</tbody>\r\n\r\n</table>\r\n</div>\r\n</div>\r\n\r\n\r\n<br/>\r\n\r\n[<a href=\"system-clustering-node.jsp?clear=true&UID=");
+      out.write("\n\n</tbody>\n\n</table>\n</div>\n</div>\n\n\n<br/>\n\n[<a href=\"system-clustering-node.jsp?clear=true&UID=");
       out.print(uid);
-      out.write("\">Clear Cache Stats</a>]\r\n\r\n<br /><br />\r\n\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tr>\r\n    <td width=\"1%\"><img src=\"images/server-network-48x48.gif\" width=\"48\" height=\"48\" border=\"0\" alt=\"\" hspace=\"10\"></td>\r\n    <td width=\"99%\">\r\n        <span style=\"font-size:1.1em;\"><b>Node Details: ");
+      out.write("\">Clear Cache Stats</a>]\n\n<br /><br />\n\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tr>\n    <td width=\"1%\"><img src=\"images/server-network-48x48.gif\" width=\"48\" height=\"48\" border=\"0\" alt=\"\" hspace=\"10\"></td>\n    <td width=\"99%\">\n        <span style=\"font-size:1.1em;\"><b>Node Details: ");
       out.print( member.getHostName() );
       out.write(' ');
       out.write('(');
       out.print( member.getNodeID() );
-      out.write(")</b></span>\r\n        <br />\r\n        <span style=\"font-size:0.9em;\">\r\n        Joined: ");
+      out.write(")</b></span>\n        <br />\n        <span style=\"font-size:0.9em;\">\n        Joined: ");
       out.print( JiveGlobals.formatDateTime(new Date(member.getJoinedTime())) );
-      out.write("\r\n        </span>\r\n    </td>\r\n</tr>\r\n</table>\r\n\r\n<p>\r\nCache statistics for this cluster node appear below.\r\n</p>\r\n\r\n<div class=\"jive-info\">\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th class=\"c1\">Cache Type</th>\r\n        <th class=\"c2\">Size</th>\r\n        <th class=\"c3\">Objects</th>\r\n        <th class=\"c4\">Effectiveness</th>\r\n    </tr>\r\n</thead>\r\n\r\n<tbody>\r\n\r\n");
+      out.write("\n        </span>\n    </td>\n</tr>\n</table>\n\n<p>\nCache statistics for this cluster node appear below.\n</p>\n\n<div class=\"jive-info\">\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th class=\"c1\">Cache Type</th>\n        <th class=\"c2\">Size</th>\n        <th class=\"c3\">Objects</th>\n        <th class=\"c4\">Effectiveness</th>\n    </tr>\n</thead>\n\n<tbody>\n\n");
  Map cNames = (Map) cacheStats.get(member.getNodeID().toString());
     if (cNames == null) {
 
-      out.write("\r\n    <tr>\r\n    <td align=\"center\" colspan=\"4\"><i>No stats available</i></td>\r\n    </tr>\r\n\r\n");
+      out.write("\n    <tr>\n    <td align=\"center\" colspan=\"4\"><i>No stats available</i></td>\n    </tr>\n\n");
  } else {
     // Iterate through the cache names,
     for (String cacheName : cacheNames) {
@@ -228,44 +226,44 @@ public final class system_002dclustering_002dnode_jsp extends org.apache.jasper.
         }
         boolean lowEffec = (hits > 500 && hitPercent < 85.0 && freeMem < 20.0);
 
-      out.write("\r\n    <tr>\r\n        <td class=\"c1\">\r\n            ");
+      out.write("\n    <tr>\n        <td class=\"c1\">\n            ");
       out.print( cacheName );
-      out.write("\r\n        </td>\r\n        <td class=\"c2\">\r\n\r\n            ");
+      out.write("\n        </td>\n        <td class=\"c2\">\n\n            ");
  if (maxSize != -1 && maxSize != Integer.MAX_VALUE) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       out.print( mbFormat.format(totalMem) );
-      out.write(" MB,\r\n            ");
+      out.write(" MB,\n            ");
       out.print( percentFormat.format(usedMem));
-      out.write("% used\r\n            ");
+      out.write("% used\n            ");
  } else { 
-      out.write("\r\n            Unlimited\r\n            ");
+      out.write("\n            Unlimited\n            ");
  } 
-      out.write("\r\n\r\n        </td>\r\n        <td class=\"c3\">\r\n\r\n            ");
+      out.write("\n\n        </td>\n        <td class=\"c3\">\n\n            ");
       out.print( LocaleUtils.getLocalizedNumber(numObjects) );
-      out.write("\r\n\r\n        </td>\r\n        <td class=\"c4\">\r\n\r\n            ");
+      out.write("\n\n        </td>\n        <td class=\"c4\">\n\n            ");
  if (lowEffec) { 
-      out.write("\r\n            <font color=\"#ff0000\"><b>");
+      out.write("\n            <font color=\"#ff0000\"><b>");
       out.print( percentFormat.format(hitPercent));
-      out.write("%</b>\r\n                ");
+      out.write("%</b>\n                ");
   } else { 
-      out.write("\r\n                <b>");
+      out.write("\n                <b>");
       out.print( percentFormat.format(hitPercent));
-      out.write("%</b>\r\n                ");
+      out.write("%</b>\n                ");
   } 
-      out.write("\r\n                (");
+      out.write("\n                (");
       out.print( LocaleUtils.getLocalizedNumber(hits) );
-      out.write("\r\n                hits, ");
+      out.write("\n                hits, ");
       out.print( LocaleUtils.getLocalizedNumber(misses) );
-      out.write(" misses)\r\n\r\n        </td>\r\n    </tr>\r\n    ");
+      out.write(" misses)\n\n        </td>\n    </tr>\n    ");
 
         }
     }
     
-      out.write("\r\n</tbody>\r\n\r\n</table>\r\n</div>\r\n</div>\r\n\r\n<br /><br />\r\n\r\n<div class=\"jive-table\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<thead>\r\n    <tr>\r\n        <th colspan=\"2\">\r\n            Openfire Cluster Details\r\n        </th>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <tr>\r\n        <td width=\"100%\">\r\n            Hazelcast Version ");
+      out.write("\n</tbody>\n\n</table>\n</div>\n</div>\n\n<br /><br />\n\n<div class=\"jive-table\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<thead>\n    <tr>\n        <th colspan=\"2\">\n            Openfire Cluster Details\n        </th>\n    </tr>\n</thead>\n<tbody>\n    <tr>\n        <td width=\"100%\">\n            Hazelcast Version ");
       out.print( NodeRuntimeStats.getProviderConfig("hazelcast.version") );
-      out.write(" \r\n            Build ");
+      out.write(" \n            Build ");
       out.print( NodeRuntimeStats.getProviderConfig("hazelcast.build") );
-      out.write("\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n<br/>\r\n\r\n</body>\r\n</html>");
+      out.write("\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n<br/>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

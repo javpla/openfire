@@ -78,9 +78,8 @@ public final class workgroup_002dmacros_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n");
  // Get parameters
     String wgID = ParamUtils.getParameter(request, "wgID");
     boolean delete = request.getParameter("delete") != null;
@@ -109,30 +108,30 @@ public final class workgroup_002dmacros_jsp extends org.apache.jasper.runtime.Ht
         workgroupMacros.saveMacros(workgroup);
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       out.print( "Canned Responses for "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"add_canned_responses_to_a_workgroup.html\"/>-->\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\nBelow are the Canned Response Categories to create your own global canned responses. These global canned responses\r\nwill be available to all agents within the \"");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"add_canned_responses_to_a_workgroup.html\"/>-->\n    </head>\n    <body>\n\n<p>\nBelow are the Canned Response Categories to create your own global canned responses. These global canned responses\nwill be available to all agents within the \"");
       out.print(wgID);
-      out.write("\" workgroup to use in their chat sessions.\r\n</p>\r\n\r\n");
+      out.write("\" workgroup to use in their chat sessions.\n</p>\n\n");
   if (ModelUtil.hasLength(failure)) { 
-      out.write("\r\n\r\n    <p class=\"jive-error-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-error-text\">\n    ");
       out.print( failure);
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } else if (ModelUtil.hasLength(success)) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n\r\n            <tbody>\r\n                <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n\n    <div class=\"jive-success\">\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n\n            <tbody>\n                <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n                <td class=\"jive-icon-label\">\n                ");
       out.print( success);
-      out.write("\r\n                </td></tr>\r\n            </tbody>\r\n            </table>\r\n            </div><br>\r\n");
+      out.write("\n                </td></tr>\n            </tbody>\n            </table>\n            </div><br>\n");
  } 
-      out.write("\r\n\r\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\r\n<th colspan=\"2\">Manage Canned Categories</th>\r\n  <tr>\r\n    <td width=\"1%\">\r\n        <table cellspacing=\"0\" cellpadding=\"0\">\r\n        <tr>\r\n        <td width=\"1%\"><img src=\"images/folder-16x16.gif\"></td><td nowrap><a href=\"workgroup-view-responses.jsp?macroGroupTitle=");
+      out.write("\n\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\n<th colspan=\"2\">Manage Canned Categories</th>\n  <tr>\n    <td width=\"1%\">\n        <table cellspacing=\"0\" cellpadding=\"0\">\n        <tr>\n        <td width=\"1%\"><img src=\"images/folder-16x16.gif\"></td><td nowrap><a href=\"workgroup-view-responses.jsp?macroGroupTitle=");
       out.print(URLEncoder.encode(rootGroup.getTitle(), "UTF-8") );
       out.write("&wgID=");
       out.print(wgID);
       out.write('"');
       out.write('>');
       out.print( rootGroup.getTitle());
-      out.write("</a></td>\r\n        </tr>\r\n        </table>\r\n    </td>\r\n    <td>[<a href=\"workgroup-add-category.jsp?macroGroupTitle=");
+      out.write("</a></td>\n        </tr>\n        </table>\n    </td>\n    <td>[<a href=\"workgroup-add-category.jsp?macroGroupTitle=");
       out.print( URLEncoder.encode(rootGroup.getTitle(), "UTF-8"));
       out.write("&wgID=");
       out.print( wgID);
@@ -140,7 +139,7 @@ public final class workgroup_002dmacros_jsp extends org.apache.jasper.runtime.Ht
       out.print( URLEncoder.encode(rootGroup.getTitle(), "UTF-8"));
       out.write("&wgID=");
       out.print(wgID);
-      out.write("\">Add Response</a>]</td>\r\n    </tr>\r\n");
+      out.write("\">Add Response</a>]</td>\n    </tr>\n");
 
     StringBuilder builder = new StringBuilder();
 
@@ -149,11 +148,9 @@ public final class workgroup_002dmacros_jsp extends org.apache.jasper.runtime.Ht
         writeMacroGroup(groups, rootGroup, builder, 6, wgID);
     }
 
-      out.write('\r');
       out.write('\n');
       out.print( builder.toString() );
-      out.write("\r\n</table>\r\n</body>\r\n</html>\r\n\r\n");
-      out.write('\r');
+      out.write("\n</table>\n</body>\n</html>\n\n");
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

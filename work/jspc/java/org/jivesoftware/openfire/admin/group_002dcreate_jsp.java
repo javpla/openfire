@@ -60,7 +60,7 @@ public final class group_002dcreate_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -69,10 +69,10 @@ public final class group_002dcreate_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
   webManager.init(request, response, session, application, out); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     String groupName = ParamUtils.getParameter(request, "group");
 
@@ -157,155 +157,157 @@ public final class group_002dcreate_jsp extends org.apache.jasper.runtime.HttpJs
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
 
            // If editing the group.
            if (groupName != null) {
         
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  }
            // Otherwise creating a new group.
            else {
         
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } 
-      out.write("\r\n</title>\r\n\r\n");
+      out.write("\n</title>\n\n");
  if (groupName == null) { 
-      out.write("\r\n<meta name=\"pageID\" content=\"group-create\"/>\r\n");
+      out.write("\n<meta name=\"pageID\" content=\"group-create\"/>\n");
  }
    else { 
-      out.write("\r\n<meta name=\"subPageID\" content=\"group-edit\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("\n<meta name=\"subPageID\" content=\"group-edit\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "group="+URLEncoder.encode(groupName, "UTF-8") );
-      out.write("\"/>\r\n");
+      out.write("\"/>\n");
  } 
-      out.write("\r\n    \r\n<meta name=\"helpPage\" content=\"create_a_group.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("\n    \n<meta name=\"helpPage\" content=\"create_a_group.html\"/>\n</head>\n<body>\n\n");
       if (_jspx_meth_c_set_0(_jspx_page_context))
         return;
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (errors.get("general") != null) { 
-      out.write("\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\">\r\n                <img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\r\n            </td>\r\n            <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\">\n                <img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\">\n            </td>\n            <td class=\"jive-icon-label\">\n                ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div><br>\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n    ");
+      out.write("\n\n<p>\n    ");
 
         // If editing the group.
         if (groupName != null) {
     
-      out.write("\r\n    ");
+      out.write("\n    ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  }
        // Otherwise creating a new group.
        else {
     
-      out.write("\r\n    ");
+      out.write("\n    ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  } 
-      out.write("\r\n</p>\r\n\r\n<form name=\"f\" action=\"group-create.jsp\" method=\"post\">\r\n\r\n   ");
+      out.write("\n</p>\n\n<form name=\"f\" action=\"group-create.jsp\" method=\"post\">\n\n   ");
  if (groupName != null) { 
-      out.write("\r\n    <input type=\"hidden\" name=\"group\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"group\" value=\"");
       out.print( groupName );
-      out.write("\" id=\"existingName\">\r\n   ");
+      out.write("\" id=\"existingName\">\n   ");
  } 
-      out.write("\r\n\r\n    <!-- BEGIN create group -->\r\n\t<div class=\"jive-contentBoxHeader\">\r\n        ");
+      out.write("\n\n    <!-- BEGIN create group -->\n\t<div class=\"jive-contentBoxHeader\">\n        ");
 
             // If editing the group.
             if (groupName != null) {
         
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  }
            // Otherwise creating a new group.
            else {
         
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  } 
-      out.write("\r\n    </div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n    <tr valign=\"top\">\r\n        <td width=\"1%\" nowrap>\r\n            <label for=\"gname\">");
+      out.write("\n    </div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n    <tr valign=\"top\">\n        <td width=\"1%\" nowrap>\n            <label for=\"gname\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</label> *\r\n        </td>\r\n        <td width=\"99%\">\r\n            <input type=\"text\" name=\"name\" size=\"30\" maxlength=\"75\"\r\n             value=\"");
+      out.write("</label> *\n        </td>\n        <td width=\"99%\">\n            <input type=\"text\" name=\"name\" size=\"30\" maxlength=\"75\"\n             value=\"");
       out.print( ((name != null) ? name : "") );
-      out.write("\" id=\"gname\">\r\n        </td>\r\n    </tr>\r\n\r\n    ");
+      out.write("\" id=\"gname\">\n        </td>\n    </tr>\n\n    ");
   if (errors.get("name") != null || errors.get("groupAlreadyExists") != null) { 
-      out.write("\r\n\r\n        <tr valign=\"top\">\r\n            <td width=\"1%\" nowrap>&nbsp;</td>\r\n            <td width=\"99%\">\r\n                ");
+      out.write("\n\n        <tr valign=\"top\">\n            <td width=\"1%\" nowrap>&nbsp;</td>\n            <td width=\"99%\">\n                ");
   if (errors.get("name") != null) { 
-      out.write("\r\n                    <span class=\"jive-error-text\">");
+      out.write("\n                    <span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</span>\r\n                ");
+      out.write("</span>\n                ");
   } else if (errors.get("groupAlreadyExists") != null) { 
-      out.write("\r\n                    <span class=\"jive-error-text\">");
+      out.write("\n                    <span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</span>\r\n                ");
+      out.write("</span>\n                ");
   } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n\r\n    ");
+      out.write("\n            </td>\n        </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n    <tr valign=\"top\">\r\n        <td width=\"1%\" nowrap>\r\n            <label for=\"gdesc\">");
+      out.write("\n\n    <tr valign=\"top\">\n        <td width=\"1%\" nowrap>\n            <label for=\"gdesc\">");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</label>\r\n        </td>\r\n        <td width=\"99%\">\r\n            <textarea name=\"description\" cols=\"30\" rows=\"3\" id=\"gdesc\"\r\n             >");
+      out.write("</label>\n        </td>\n        <td width=\"99%\">\n            <textarea name=\"description\" cols=\"30\" rows=\"3\" id=\"gdesc\"\n             >");
       out.print( ((description != null) ? description : "") );
-      out.write("</textarea>\r\n        </td>\r\n    </tr>\r\n\r\n    ");
+      out.write("</textarea>\n        </td>\n    </tr>\n\n    ");
   if (errors.get("description") != null) { 
-      out.write("\r\n\r\n        <tr valign=\"top\">\r\n            <td width=\"1%\" nowrap>\r\n                &nbsp;\r\n            </td>\r\n            <td width=\"99%\">\r\n                <span class=\"jive-error-text\">");
+      out.write("\n\n        <tr valign=\"top\">\n            <td width=\"1%\" nowrap>\n                &nbsp;\n            </td>\n            <td width=\"99%\">\n                <span class=\"jive-error-text\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </td>\r\n        </tr>\r\n\r\n    ");
+      out.write("</span>\n            </td>\n        </tr>\n\n    ");
   } 
-      out.write("\r\n\r\n\t<tr>\r\n\t\t<td></td>\r\n\t\t<td>\r\n            ");
+      out.write("\n\n\t<tr>\n\t\t<td></td>\n\t\t<td>\n            ");
 
                // If editing the group.
                if (groupName != null) {
             
-      out.write("\r\n            <input type=\"submit\" name=\"edit\" value=\"");
+      out.write("\n            <input type=\"submit\" name=\"edit\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
  }
                // Otherwise creating a new group.
                else {
             
-      out.write("\r\n            <input type=\"submit\" name=\"create\" value=\"");
+      out.write("\n            <input type=\"submit\" name=\"create\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
  } 
-      out.write("\r\n            <input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\n            <input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\">\r\n\t\t</td>\r\n\t</tr>\r\n    </table>\r\n\t</div>\r\n\t<span class=\"jive-description\">* ");
+      out.write("\">\n\t\t</td>\n\t</tr>\n    </table>\n\t</div>\n\t<span class=\"jive-description\">* ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write(" </span>\r\n\t<!-- END create group -->\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.f.name.focus();\r\n</script>\r\n\r\n");
+      out.write(" </span>\n\t<!-- END create group -->\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.f.name.focus();\n</script>\n\n");
   // Disable the form if a read-only user provider.
 if (webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n\r\n<script language=\"Javascript\" type=\"text/javascript\">\r\n  function disable() {\r\nvar limit = document.forms[0].elements.length;\r\nfor (i=0;i<limit;i++) {\r\n  document.forms[0].elements[i].disabled = true;\r\n}\r\n  }\r\n  disable();\r\n</script>\r\n");
+      out.write("\n\n<script language=\"Javascript\" type=\"text/javascript\">\n  function disable() {\nvar limit = document.forms[0].elements.length;\nfor (i=0;i<limit;i++) {\n  document.forms[0].elements[i].disabled = true;\n}\n  }\n  disable();\n</script>\n");
  } 
-      out.write("\r\n\r\n</body>\r\n</html>%>");
+      out.write("\n\n</body>\n</html>%>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

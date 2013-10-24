@@ -61,7 +61,7 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -70,11 +70,12 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters
     boolean doClear = request.getParameter("doClear") != null;
@@ -110,101 +111,101 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
     NumberFormat intFormat = NumberFormat.getInstance(JiveGlobals.getLocale());
     DecimalFormat decFormat = new DecimalFormat("#,##0.00");
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-db\"/>\r\n    ");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-db\"/>\n    ");
   // Enable refreshing if specified
         if (refresh >= 10) {
     
-      out.write("\r\n        <meta http-equiv=\"refresh\" content=\"");
+      out.write("\n        <meta http-equiv=\"refresh\" content=\"");
       out.print( refresh );
       out.write(";URL=server-db-stats.jsp?refresh=");
       out.print( refresh );
-      out.write("\">\r\n\r\n    ");
+      out.write("\">\n\n    ");
   } 
-      out.write("\r\n</head>\r\n<body>\r\n\r\n<p>\r\n");
+      out.write("\n</head>\n<body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n\r\n\r\n\r\n<div class=\"jive-contentBox jive-contentBoxGrey\" style=\"width: 732px;\">\r\n<h3>");
+      out.write("\n</p>\n\n\n\n\n<div class=\"jive-contentBox jive-contentBoxGrey\" style=\"width: 732px;\">\n<h3>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</h3>\r\n\r\n<form action=\"server-db-stats.jsp\">\r\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\r\n    <tr>\r\n        <td>\r\n            <input type=\"radio\" name=\"enableStats\" value=\"true\" id=\"rb01\" ");
+      out.write("</h3>\n\n<form action=\"server-db-stats.jsp\">\n    <table cellpadding=\"3\" cellspacing=\"1\" border=\"0\">\n    <tr>\n        <td>\n            <input type=\"radio\" name=\"enableStats\" value=\"true\" id=\"rb01\" ");
       out.print( ((showQueryStats) ? "checked":"") );
-      out.write(">\r\n            <label for=\"rb01\">");
+      out.write(">\n            <label for=\"rb01\">");
       out.print( ((showQueryStats) ? "<b>" +
                     LocaleUtils.getLocalizedString("server.db_stats.enabled") + "</b>": LocaleUtils.getLocalizedString("server.db_stats.enabled")) );
-      out.write("</label>\r\n        </td>\r\n        <td>\r\n            <input type=\"radio\" name=\"enableStats\" value=\"false\" id=\"rb02\" ");
+      out.write("</label>\n        </td>\n        <td>\n            <input type=\"radio\" name=\"enableStats\" value=\"false\" id=\"rb02\" ");
       out.print( ((!showQueryStats) ? "checked":"") );
-      out.write(">\r\n            <label for=\"rb02\">");
+      out.write(">\n            <label for=\"rb02\">");
       out.print( ((!showQueryStats) ? "<b>" +
                      LocaleUtils.getLocalizedString("server.db_stats.disabled") + "</b>":  LocaleUtils.getLocalizedString("server.db_stats.disabled")) );
-      out.write("</label>\r\n        </td>\r\n        <td>\r\n            <input type=\"submit\" name=\"\" value=\"");
+      out.write("</label>\n        </td>\n        <td>\n            <input type=\"submit\" name=\"\" value=\"");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n    </tr>\r\n    </table>\r\n</form>\r\n\r\n");
+      out.write("\">\n        </td>\n    </tr>\n    </table>\n</form>\n\n");
   if (showQueryStats) { 
-      out.write("\r\n\t<br>\r\n\t<h3>");
+      out.write("\n\t<br>\n\t<h3>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</h3>\r\n\r\n    <form action=\"server-db-stats.jsp\">\r\n        <table cellpadding=\"3\" cellspacing=\"5\" border=\"0\">\r\n        <tr>\r\n            <td>\r\n                ");
+      out.write("</h3>\n\n    <form action=\"server-db-stats.jsp\">\n        <table cellpadding=\"3\" cellspacing=\"5\" border=\"0\">\n        <tr>\n            <td>\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write(":\r\n                <select size=\"1\" name=\"refresh\" onchange=\"this.form.submit();\">\r\n                <option value=\"none\">");
+      out.write(":\n                <select size=\"1\" name=\"refresh\" onchange=\"this.form.submit();\">\n                <option value=\"none\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\r\n                ");
+      out.write("\n\n                ");
   for(int aREFRESHES: REFRESHES){
                         String selected = ((aREFRESHES == refresh) ? " selected" : "");
                 
-      out.write("\r\n                    <option value=\"");
+      out.write("\n                    <option value=\"");
       out.print( aREFRESHES );
       out.write('"');
       out.print( selected );
-      out.write("\r\n                     >");
+      out.write("\n                     >");
       out.print( aREFRESHES
                             );
       out.write(' ');
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n\r\n                ");
+      out.write("\n\n                ");
   } 
-      out.write("\r\n                </select>\r\n            </td>\r\n            <td>\r\n                <input type=\"submit\" name=\"\" value=\"");
+      out.write("\n                </select>\n            </td>\n            <td>\n                <input type=\"submit\" name=\"\" value=\"");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\">\r\n            </td>\r\n            <td>|</td>\r\n            <td>\r\n                <input type=\"submit\" name=\"\" value=\"");
+      out.write("\">\n            </td>\n            <td>|</td>\n            <td>\n                <input type=\"submit\" name=\"\" value=\"");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\">\r\n            </td>\r\n            <td>|</td>\r\n            <td>\r\n                <input type=\"submit\" name=\"doClear\" value=\"");
+      out.write("\">\n            </td>\n            <td>|</td>\n            <td>\n                <input type=\"submit\" name=\"doClear\" value=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\">\r\n            </td>\r\n        </tr>\r\n        </table>\r\n    </form>\r\n\r\n</div>\r\n\r\n\r\n    <b>");
+      out.write("\">\n            </td>\n        </tr>\n        </table>\n    </form>\n\n</div>\n\n\n    <b>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</b>\r\n\r\n    <ul>\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</b>\n\n    <ul>\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getQueryCount(ProfiledConnection.Type.select)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getTotalQueryTime(ProfiledConnection.Type.select)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getAverageQueryTime(ProfiledConnection.Type.select)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getQueriesPerSecond(ProfiledConnection.Type.select)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td bgcolor=\"#ffffff\">");
+      out.write("</td>\n        <td bgcolor=\"#ffffff\">");
 
                     ProfiledConnectionEntry[] list = ProfiledConnection.getSortedQueries(ProfiledConnection.Type.select, doSortByTime);
 
@@ -212,7 +213,7 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
                         out.println(LocaleUtils.getLocalizedString("server.db_stats.no_queries"));
                     }
                     else { 
-      out.write("\r\n                &nbsp;\r\n         </td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    <br />\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\"><td>\r\n    ");
+      out.write("\n                &nbsp;\n         </td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    <br />\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\"><td>\n    ");
       out.println("<table width=\"100%\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" bgcolor=\"#aaaaaa\"><tr><td bgcolor=\"#ffffff\" align=\"left\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.query") + "</b></td>");
             out.println("<td bgcolor=\"#ffffff\"><b><a href=\"javascript:location.href='server-db-stats.jsp?doSortByTime=false&refresh=" + refresh + ";'\">" + LocaleUtils.getLocalizedString("server.db_stats.count") + "</a></b></td>");
             out.println("<td nowrap bgcolor=\"#ffffff\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.time") + "</b></td>");
@@ -228,33 +229,33 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
             out.println("</table>");
         }
      
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    </ul>\r\n\r\n    <b>");
+      out.write("</td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    </ul>\n\n    <b>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</b>\r\n\r\n    <ul>\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</b>\n\n    <ul>\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getQueryCount(ProfiledConnection.Type.insert)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getTotalQueryTime(ProfiledConnection.Type.insert)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getAverageQueryTime(ProfiledConnection.Type.insert)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getQueriesPerSecond(ProfiledConnection.Type.insert)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td bgcolor=\"#ffffff\">");
+      out.write("</td>\n        <td bgcolor=\"#ffffff\">");
 
                     list = ProfiledConnection.getSortedQueries(ProfiledConnection.Type.insert, doSortByTime);
 
@@ -262,7 +263,7 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
                         out.println(LocaleUtils.getLocalizedString("server.db_stats.no_queries"));
                     }
                     else { 
-      out.write("\r\n                &nbsp;\r\n         </td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    <br />\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\"><td>\r\n    ");
+      out.write("\n                &nbsp;\n         </td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    <br />\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\"><td>\n    ");
       out.println("<table width=\"100%\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" bgcolor=\"#aaaaaa\"><tr><td bgcolor=\"#ffffff\" align=\"middle\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.query") + "</b></td>");
             out.println("<td bgcolor=\"#ffffff\"><b><a href=\"javascript:location.href='server-db-stats.jsp?doSortByTime=false&refresh=" + refresh + ";'\">" + LocaleUtils.getLocalizedString("server.db_stats.count") + "</a></b></td>");
             out.println("<td nowrap bgcolor=\"#ffffff\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.time") + "</b></td>");
@@ -278,33 +279,33 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
             out.println("</table>");
         }
      
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    </ul>\r\n\r\n    <b>");
+      out.write("</td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    </ul>\n\n    <b>");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("</b>\r\n\r\n    <ul>\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</b>\n\n    <ul>\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getQueryCount(ProfiledConnection.Type.update)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getTotalQueryTime(ProfiledConnection.Type.update)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getAverageQueryTime(ProfiledConnection.Type.update)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getQueriesPerSecond(ProfiledConnection.Type.update)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td bgcolor=\"#ffffff\">");
+      out.write("</td>\n        <td bgcolor=\"#ffffff\">");
 
                     list = ProfiledConnection.getSortedQueries(ProfiledConnection.Type.update, doSortByTime);
 
@@ -312,7 +313,7 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
                         out.println(LocaleUtils.getLocalizedString("server.db_stats.no_queries"));
                     }
                     else { 
-      out.write("\r\n                &nbsp;\r\n         </td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    <br />\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\"><td>\r\n    ");
+      out.write("\n                &nbsp;\n         </td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    <br />\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\"><td>\n    ");
       out.println("<table width=\"100%\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" bgcolor=\"#aaaaaa\"><tr><td bgcolor=\"#ffffff\" align=\"middle\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.query") + "</b></td>");
             out.println("<td bgcolor=\"#ffffff\"><b><a href=\"javascript:location.href='server-db-stats.jsp?doSortByTime=false&refresh=" + refresh + ";'\">" + LocaleUtils.getLocalizedString("server.db_stats.count") + "</a></b></td>");
             out.println("<td nowrap bgcolor=\"#ffffff\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.time") + "</b></td>");
@@ -328,33 +329,33 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
             out.println("</table>");
         }
      
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    </ul>\r\n\r\n    <b>");
+      out.write("</td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    </ul>\n\n    <b>");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</b>\r\n\r\n    <ul>\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</b>\n\n    <ul>\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getQueryCount(ProfiledConnection.Type.delete)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( intFormat.format(ProfiledConnection.getTotalQueryTime(ProfiledConnection.Type.delete)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getAverageQueryTime(ProfiledConnection.Type.delete)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( decFormat.format(ProfiledConnection.getQueriesPerSecond(ProfiledConnection.Type.delete)) );
-      out.write("</td>\r\n    </tr>\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("</td>\n    </tr>\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("</td>\r\n        <td bgcolor=\"#ffffff\">");
+      out.write("</td>\n        <td bgcolor=\"#ffffff\">");
 
                     list = ProfiledConnection.getSortedQueries(ProfiledConnection.Type.delete, doSortByTime);
 
@@ -362,7 +363,7 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
                         out.println(LocaleUtils.getLocalizedString("server.db_stats.no_queries"));
                     }
                     else { 
-      out.write("\r\n                &nbsp;\r\n         </td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    <br />\r\n\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\r\n    <tr><td>\r\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tr bgcolor=\"#ffffff\"><td>\r\n    ");
+      out.write("\n                &nbsp;\n         </td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    <br />\n\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\">\n    <tr><td>\n    <table bgcolor=\"#aaaaaa\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tr bgcolor=\"#ffffff\"><td>\n    ");
       out.println("<table width=\"100%\" cellpadding=\"3\" cellspacing=\"1\" border=\"0\" bgcolor=\"#aaaaaa\"><tr><td bgcolor=\"#ffffff\" align=\"middle\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.query") + "</b></td>");
             out.println("<td bgcolor=\"#ffffff\"><b><a href=\"javascript:location.href='server-db-stats.jsp?doSortByTime=false&refresh=" + refresh + ";'\">" + LocaleUtils.getLocalizedString("server.db_stats.count") + "</a></b></td>");
             out.println("<td nowrap bgcolor=\"#ffffff\"><b>" + LocaleUtils.getLocalizedString("server.db_stats.time") + "</b></td>");
@@ -378,9 +379,9 @@ public final class server_002ddb_002dstats_jsp extends org.apache.jasper.runtime
             out.println("</table>");
         }
      
-      out.write("</td>\r\n    </tr>\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n\r\n    </ul>\r\n\r\n");
+      out.write("</td>\n    </tr>\n    </table>\n    </td></tr>\n    </table>\n\n    </ul>\n\n");
  } 
-      out.write("\r\n\r\n\r\n</body></html>\r\n");
+      out.write("\n\n\n</body></html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

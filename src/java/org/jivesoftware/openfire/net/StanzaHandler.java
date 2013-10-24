@@ -492,7 +492,7 @@ public abstract class StanzaHandler {
         else {
             // Check that the requested method is supported
             String method = doc.elementText("method");
-            if (!"zlib".equals(method)) {
+            if (!"zlib".equals(method) || !"exi".equals(method)) {
                 error = "<failure xmlns='http://jabber.org/protocol/compress'><unsupported-method/></failure>";
                 // Log a warning so that admins can track this case from the server side
                 Log.warn("Requested compression method is not supported: " + method +
@@ -506,15 +506,23 @@ public abstract class StanzaHandler {
             return false;
         }
         else {
-            // Start using compression for incoming traffic
-            connection.addCompression();
+        	/************************ EXI code ************************/ 
+        	if("zlib".equals(doc.elementText("method"))){
+        		// Start using compression for incoming traffic
+                connection.addCompression();
 
-            // Indicate client that he can proceed and compress the socket
-            connection.deliverRawText("<compressed xmlns='http://jabber.org/protocol/compress'/>");
-
-            // Start using compression for outgoing traffic
-            connection.startCompression();
+                // Start using compression for outgoing traffic
+                connection.startCompression();
+                connection.deliverRawText("<compressed xmlns='http://jabber.org/protocol/compress'/>");
+        	}else if("exi".equals(doc.elementText("method"))){
+        		// TODO: add exi compression filters
+        		//if(connection instanceof NIOConnection){}
+        		//NIOConnection nioConnection = (NIOConnection) connection;
+        		//nioConnection.startEXICompression();
+        	}
+        	// Indicate client that he can proceed and compress the socket
             return true;
+            /************************ fin EXI code ************************/ 
         }
     }
 

@@ -53,7 +53,7 @@ public final class group_002ddelete_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,10 +62,10 @@ public final class group_002ddelete_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     boolean cancel = request.getParameter("cancel") != null;
     boolean delete = request.getParameter("delete") != null;
@@ -93,43 +93,43 @@ public final class group_002ddelete_jsp extends org.apache.jasper.runtime.HttpJs
         return;
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"group-delete\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"group-delete\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "group="+URLEncoder.encode(groupName, "UTF-8") );
-      out.write("\"/>\r\n        <meta name=\"helpPage\" content=\"delete_a_group.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("\"/>\n        <meta name=\"helpPage\" content=\"delete_a_group.html\"/>\n    </head>\n    <body>\n\n");
  if (webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n<b><a href=\"group-edit.jsp?group=");
+      out.write("\n<b><a href=\"group-edit.jsp?group=");
       out.print( URLEncoder.encode(group.getName(), "UTF-8"));
       out.write('"');
       out.write('>');
       out.print( group.getName() );
-      out.write("</a></b>\r\n");
+      out.write("</a></b>\n");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"group-delete.jsp\">\r\n<input type=\"hidden\" name=\"group\" value=\"");
+      out.write("\n</p>\n\n<form action=\"group-delete.jsp\">\n<input type=\"hidden\" name=\"group\" value=\"");
       out.print( groupName );
-      out.write("\">\r\n<input type=\"submit\" name=\"delete\" value=\"");
+      out.write("\">\n<input type=\"submit\" name=\"delete\" value=\"");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\">\r\n<input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n<input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n    ");
+      out.write("\">\n</form>\n\n    ");
   // Disable the form if a read-only user provider.
     if (webManager.getGroupManager().isReadOnly()) { 
-      out.write("\r\n\r\n<script language=\"Javascript\" type=\"text/javascript\">\r\n  function disable() {\r\n    var limit = document.forms[0].elements.length;\r\n    for (i=0;i<limit;i++) {\r\n      document.forms[0].elements[i].disabled = true;\r\n    }\r\n  }\r\n  disable();\r\n</script>\r\n    ");
+      out.write("\n\n<script language=\"Javascript\" type=\"text/javascript\">\n  function disable() {\n    var limit = document.forms[0].elements.length;\n    for (i=0;i<limit;i++) {\n      document.forms[0].elements[i].disabled = true;\n    }\n  }\n  disable();\n</script>\n    ");
  } 
-      out.write("\r\n\r\n    </body>\r\n</html>");
+      out.write("\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

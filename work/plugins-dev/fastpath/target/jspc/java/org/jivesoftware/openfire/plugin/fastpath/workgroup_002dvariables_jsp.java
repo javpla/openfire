@@ -48,7 +48,6 @@ public final class workgroup_002dvariables_jsp extends org.apache.jasper.runtime
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
 
     String wgID = ParamUtils.getParameter(request, "wgID");
@@ -124,21 +123,21 @@ public final class workgroup_002dvariables_jsp extends org.apache.jasper.runtime
         description = "";
     }
 
-      out.write("\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n\n<html>\n    <head>\n        <title>");
       out.print( "Workgroup Variables for "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-variables\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-variables\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"create_a_form_variable.html\"/>-->\r\n\r\n        <script type=\"text/javascript\">\r\n          function Jtrim(st) {\r\n            var len = st.length;\r\n            var begin = 0, end = len - 1;\r\n            while (st.charAt(begin) == \" \" && begin < len) {\r\n                begin++;\r\n            }\r\n            while (st.charAt(end) == \" \" && end > begin) {\r\n                end--;\r\n            }\r\n            return st.substring(begin, end + 1);\r\n          }\r\n\r\n          function validateForm(){\r\n            if(!Jtrim(document.f.variableValue.value)){\r\n                alert(\"Please specify the name of the variable.\");\r\n                document.f.variableValue.focus();\r\n                return false;\r\n            }\r\n\r\n            if(!Jtrim(document.f.variableName.value)){\r\n               alert(\"Please specify the the new name of the variable.\");\r\n                document.f.variableName.focus();\r\n                return false;\r\n            }\r\n            return true;\r\n          }\r\n");
-      out.write("        </script>\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n Add all variables you wish to have collected during a Chat Request.\r\n</p>\r\n\r\n<p>\r\n<b>Important:</b> Save the form to have your changes take affect.\r\n</p>\r\n");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"create_a_form_variable.html\"/>-->\n\n        <script type=\"text/javascript\">\n          function Jtrim(st) {\n            var len = st.length;\n            var begin = 0, end = len - 1;\n            while (st.charAt(begin) == \" \" && begin < len) {\n                begin++;\n            }\n            while (st.charAt(end) == \" \" && end > begin) {\n                end--;\n            }\n            return st.substring(begin, end + 1);\n          }\n\n          function validateForm(){\n            if(!Jtrim(document.f.variableValue.value)){\n                alert(\"Please specify the name of the variable.\");\n                document.f.variableValue.focus();\n                return false;\n            }\n\n            if(!Jtrim(document.f.variableName.value)){\n               alert(\"Please specify the the new name of the variable.\");\n                document.f.variableName.focus();\n                return false;\n            }\n            return true;\n          }\n        </script>\n    </head>\n");
+      out.write("    <body>\n\n<p>\n Add all variables you wish to have collected during a Chat Request.\n</p>\n\n<p>\n<b>Important:</b> Save the form to have your changes take affect.\n</p>\n");
  if(save){ 
-      out.write("\r\n <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        \t<td class=\"jive-icon\"><img alt=\"success image\" src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n        \t<td class=\"jive-icon-label\">");
+      out.write("\n <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        \t<td class=\"jive-icon\"><img alt=\"success image\" src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n        \t<td class=\"jive-icon-label\">");
       out.print( message );
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br/>\r\n");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br/>\n");
  } 
-      out.write("\r\n\r\n  <form name=\"f\" action=\"workgroup-variables.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\r\n  <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n  <form name=\"f\" action=\"workgroup-variables.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\n  <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\">\r\n  <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" >\r\n    <tr>\r\n        <th colspan=\"7\">Create New Variable From Chat Request</th>\r\n    </tr>\r\n    <tr valign=\"top\">\r\n    <td width=\"25%\">HTTP Type:</td>\r\n    <td colspan=\"7\">\r\n        <select name=\"variableType\">\r\n        <option value=\"getRequest\">Request Parameter</option>\r\n        <option value=\"getCookie\">Cookie</option>\r\n        <option value=\"getHeader\">HTTP Header</option>\r\n        <option value=\"getSession\">Session Attribute</option>\r\n        </select>\r\n        <br/><span class=\"jive-description\">The type of variable to be retrieved.</span>\r\n        </td>\r\n    </tr>\r\n    <tr valign=\"top\">\r\n    <td width=\"25%\">Name:*</td><td colspan=\"6\"><input type=\"text\" name=\"variableValue\" size=\"40\"><br/><span class=\"jive-description\">The name of the variable to retrieve.</span></td>\r\n    </tr>\r\n\r\n    <tr valign=\"top\">\r\n    <td width=\"25%\">Assign New Name:*</td><td colspan=\"6\"><input type=\"text\" name=\"variableName\" size=\"40\"><br/><span class=\"jive-description\">Specify the name you wish to assign to the variable value upon retrieving the information.</span></td>\r\n");
-      out.write("    </tr>\r\n\r\n    <tr valign=\"top\">\r\n    <td width=\"25%\">Description:</td><td colspan=\"6\"><input type=\"text\" name=\"variableDescription\" size=\"40\"><br/><span class=\"jive-description\">Specify a general description of the variable being retrieved.</span></td>\r\n    </tr>\r\n    <tr>\r\n    <td colspan=\"7\"><input type=\"submit\" name=\"addVariable\" value=\"Add Variable\"></td>\r\n    </tr>\r\n   </form>\r\n     <form action=\"workgroup-variables.jsp\" method=\"post\">\r\n\r\n    <tr>\r\n        <th>Type</th><th>Name</th><th>Returned Name</th><th>Description</th><th>Delete</th>\r\n    </tr>\r\n    <!-- Build table -->\r\n    ");
+      out.write("\">\n  <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" >\n    <tr>\n        <th colspan=\"7\">Create New Variable From Chat Request</th>\n    </tr>\n    <tr valign=\"top\">\n    <td width=\"25%\">HTTP Type:</td>\n    <td colspan=\"7\">\n        <select name=\"variableType\">\n        <option value=\"getRequest\">Request Parameter</option>\n        <option value=\"getCookie\">Cookie</option>\n        <option value=\"getHeader\">HTTP Header</option>\n        <option value=\"getSession\">Session Attribute</option>\n        </select>\n        <br/><span class=\"jive-description\">The type of variable to be retrieved.</span>\n        </td>\n    </tr>\n    <tr valign=\"top\">\n    <td width=\"25%\">Name:*</td><td colspan=\"6\"><input type=\"text\" name=\"variableValue\" size=\"40\"><br/><span class=\"jive-description\">The name of the variable to retrieve.</span></td>\n    </tr>\n\n    <tr valign=\"top\">\n    <td width=\"25%\">Assign New Name:*</td><td colspan=\"6\"><input type=\"text\" name=\"variableName\" size=\"40\"><br/><span class=\"jive-description\">Specify the name you wish to assign to the variable value upon retrieving the information.</span></td>\n");
+      out.write("    </tr>\n\n    <tr valign=\"top\">\n    <td width=\"25%\">Description:</td><td colspan=\"6\"><input type=\"text\" name=\"variableDescription\" size=\"40\"><br/><span class=\"jive-description\">Specify a general description of the variable being retrieved.</span></td>\n    </tr>\n    <tr>\n    <td colspan=\"7\"><input type=\"submit\" name=\"addVariable\" value=\"Add Variable\"></td>\n    </tr>\n   </form>\n     <form action=\"workgroup-variables.jsp\" method=\"post\">\n\n    <tr>\n        <th>Type</th><th>Name</th><th>Returned Name</th><th>Description</th><th>Delete</th>\n    </tr>\n    <!-- Build table -->\n    ");
 
         int counter = 0;
         for(FormElement element : workgroupForm.getHiddenVars()){
@@ -170,25 +169,25 @@ public final class workgroup_002dvariables_jsp extends org.apache.jasper.runtime
             int indexOf = variableValue.indexOf("_");
             String varValue = variableValue.substring(indexOf + 1);
             if(type != null){
-      out.write("\r\n        <tr valign=\"top\">\r\n            <td><b>");
+      out.write("\n        <tr valign=\"top\">\n            <td><b>");
       out.print( type );
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( element.getVariable() );
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       out.print( varValue );
-      out.write("</td>\r\n            <td><span class=\"jive-description\">");
+      out.write("</td>\n            <td><span class=\"jive-description\">");
       out.print( element.getDescription() != null ? element.getDescription() : "&nbsp;" );
-      out.write("</span></td>\r\n            <td> <a href=\"workgroup-variables.jsp?wgID=");
+      out.write("</span></td>\n            <td> <a href=\"workgroup-variables.jsp?wgID=");
       out.print(wgID);
       out.write("&delete=true&index=");
       out.print(counter);
-      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\r\n        </tr>\r\n        ");
+      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\n        </tr>\n        ");
  } 
-      out.write("\r\n\r\n\r\n        ");
+      out.write("\n\n\n        ");
  counter++; }
-      out.write("\r\n\r\n    <tr>\r\n\r\n    <td colspan=\"7\"><input type=\"submit\" name=\"save\" value=\"Save Form\"></td>\r\n    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n    <tr>\n\n    <td colspan=\"7\"><input type=\"submit\" name=\"save\" value=\"Save Form\"></td>\n    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\">\r\n    </tr>\r\n   </table>\r\n   </form>\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n    </tr>\n   </table>\n   </form>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -55,7 +55,7 @@ public final class setup_002dldap_002dserver_005ftest_jsp extends org.apache.jas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
 
     boolean success = false;
     String errorDetail = "";
@@ -105,33 +105,33 @@ public final class setup_002dldap_002dserver_005ftest_jsp extends org.apache.jas
         }
     }
 
-      out.write("\r\n    <!-- BEGIN connection settings test panel -->\r\n\t<div class=\"jive-testPanel\">\r\n\t\t<div class=\"jive-testPanel-content\">\r\n\t\t\r\n\t\t\t<div align=\"right\" class=\"jive-testPanel-close\">\r\n\t\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
+      out.write("\n    <!-- BEGIN connection settings test panel -->\n\t<div class=\"jive-testPanel\">\n\t\t<div class=\"jive-testPanel-content\">\n\t\t\n\t\t\t<div align=\"right\" class=\"jive-testPanel-close\">\n\t\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</a>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t<h2>");
+      out.write("</a>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t\t<h2>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
       out.write(": <span>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</span></h2>\r\n            ");
+      out.write("</span></h2>\n            ");
  if (success) { 
-      out.write("\r\n            <h4 class=\"jive-testSuccess\">");
+      out.write("\n            <h4 class=\"jive-testSuccess\">");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\r\n\t\t\t<p>");
+      out.write("</h4>\n\n\t\t\t<p>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</p>\r\n            ");
+      out.write("</p>\n            ");
  } else { 
-      out.write("\r\n            <h4 class=\"jive-testError\">");
+      out.write("\n            <h4 class=\"jive-testError\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</h4>\r\n            <p>");
+      out.write("</h4>\n            <p>");
       out.print( errorDetail );
-      out.write("</p>\r\n            ");
+      out.write("</p>\n            ");
  } 
-      out.write("\r\n            \r\n        </div>\r\n\t</div>\r\n\t<!-- END connection settings test panel -->");
+      out.write("\n            \n        </div>\n\t</div>\n\t<!-- END connection settings test panel -->");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

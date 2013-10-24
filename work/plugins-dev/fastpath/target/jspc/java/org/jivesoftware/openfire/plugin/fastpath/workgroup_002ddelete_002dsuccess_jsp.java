@@ -39,9 +39,8 @@ public final class workgroup_002ddelete_002dsuccess_jsp extends org.apache.jaspe
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>Workgroup Deleted</title>\r\n        <meta name=\"pageID\" content=\"workgroup-settings\"/>\r\n    </head>\r\n    <body>\r\n<br>\r\n\r\n<p>\r\nWorkgroup deleted successfully.\r\n</p>\r\n\r\n<form action=\"workgroup-summary.jsp\">\r\n<input type=\"submit\" value=\"Workgroup Summary\">\r\n</form>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n\n<html>\n    <head>\n        <title>Workgroup Deleted</title>\n        <meta name=\"pageID\" content=\"workgroup-settings\"/>\n    </head>\n    <body>\n<br>\n\n<p>\nWorkgroup deleted successfully.\n</p>\n\n<form action=\"workgroup-summary.jsp\">\n<input type=\"submit\" value=\"Workgroup Summary\">\n</form>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

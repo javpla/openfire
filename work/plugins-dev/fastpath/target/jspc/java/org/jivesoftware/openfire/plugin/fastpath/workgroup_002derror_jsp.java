@@ -47,44 +47,46 @@ public final class workgroup_002derror_jsp extends org.apache.jasper.runtime.Htt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
 
     if (exception instanceof UnauthorizedException) {
 
-      out.write("\r\n                  <p>\r\n          You don't have admin privileges to perform this operation.\r\n                  </p>\r\n\r\n");
+      out.write("\n                  <p>\n          You don't have admin privileges to perform this operation.\n                  </p>\n\n");
 
 }
 else if (exception instanceof UserNotFoundException) {
     String username = ParamUtils.getParameter(request, "username");
 
-      out.write("\r\n                              <p>\r\n          The requested user\r\n\r\n");
+      out.write("\n                              <p>\n          The requested user\n\n");
 
           if (username != null) {
 
-      out.write("\r\n\r\n            (username: ");
+      out.write("\n\n            (username: ");
       out.print( username );
-      out.write(")\r\n\r\n");
+      out.write(')');
+      out.write('\n');
+      out.write('\n');
 
           }
 
-      out.write("\r\n\r\n          was not found.\r\n                              </p>\r\n\r\n");
+      out.write("\n\n          was not found.\n                              </p>\n\n");
 
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
 
     if (exception != null) {
       StringWriter sout = new StringWriter();
       PrintWriter  pout = new PrintWriter(sout);
       exception.printStackTrace(pout);
 
-      out.write("\r\n\r\n      Spark Fastpath Exception:\r\n\r\n      <pre> ");
+      out.write("\n\n      Spark Fastpath Exception:\n\n      <pre> ");
       out.print( sout.toString() );
-      out.write(" </pre>\r\n\r\n");
+      out.write(" </pre>\n\n");
 
     }
 
-      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

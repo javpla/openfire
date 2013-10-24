@@ -49,9 +49,8 @@ public final class workgroup_002dadd_002dresponse_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
  // Get parameters
     String wgID = ParamUtils.getParameter(request, "wgID");
     boolean add = request.getParameter("add") != null;
@@ -140,63 +139,64 @@ public final class workgroup_002dadd_002dresponse_jsp extends org.apache.jasper.
 
 
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       out.print( title );
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-macros\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n    </head>\r\n    <body>\r\n<script language=\"javascript\">\r\n        function Jtrim(st) {\r\n            var len = st.length;\r\n            var begin = 0, end = len - 1;\r\n            while (st.charAt(begin) == \" \" && begin < len) {\r\n                begin++;\r\n            }\r\n            while (st.charAt(end) == \" \" && end > begin) {\r\n                end--;\r\n            }\r\n            return st.substring(begin, end + 1);\r\n        }\r\n\r\n        function validateForm(){\r\n           if(!Jtrim(document.f.responseTitle.value)){\r\n              alert(\"You must specify a valid title for this response.\");\r\n              document.f.responseTitle.focus();\r\n              return false;\r\n           }\r\n\r\n           if(!Jtrim(document.f.responseBody.value)){\r\n                alert(\"You must specify a valid response body for this response.\");\r\n                document.f.responseBody.focus();\r\n                return false;\r\n            }\r\n           return true;\r\n        }\r\n\r\n\r\n</script>\r\n\r\n");
+      out.write("\"/>\n    </head>\n    <body>\n<script language=\"javascript\">\n        function Jtrim(st) {\n            var len = st.length;\n            var begin = 0, end = len - 1;\n            while (st.charAt(begin) == \" \" && begin < len) {\n                begin++;\n            }\n            while (st.charAt(end) == \" \" && end > begin) {\n                end--;\n            }\n            return st.substring(begin, end + 1);\n        }\n\n        function validateForm(){\n           if(!Jtrim(document.f.responseTitle.value)){\n              alert(\"You must specify a valid title for this response.\");\n              document.f.responseTitle.focus();\n              return false;\n           }\n\n           if(!Jtrim(document.f.responseBody.value)){\n                alert(\"You must specify a valid response body for this response.\");\n                document.f.responseBody.focus();\n                return false;\n            }\n           return true;\n        }\n\n\n</script>\n\n");
  if(!edit){ 
-      out.write("\r\n<p>\r\nCreate a new response to add to the \"<b>");
+      out.write("\n<p>\nCreate a new response to add to the \"<b>");
       out.print( groupTitle);
-      out.write("</b>\" using the form below.\r\n</p>\r\n");
+      out.write("</b>\" using the form below.\n</p>\n");
  } else { 
-      out.write("\r\n<p>\r\nEdit the response using the form below.\r\n</p>\r\n");
+      out.write("\n<p>\nEdit the response using the form below.\n</p>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (ModelUtil.hasLength(failure)) { 
-      out.write("\r\n\r\n    <p class=\"jive-error-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-error-text\">\n    ");
       out.print( failure);
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } else if (ModelUtil.hasLength(success)) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n\r\n            <tbody>\r\n                <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\r\n                <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n\n    <div class=\"jive-success\">\n            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n\n            <tbody>\n                <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\"></td>\n                <td class=\"jive-icon-label\">\n                ");
       out.print( success);
-      out.write("\r\n                </td></tr>\r\n            </tbody>\r\n            </table>\r\n            </div><br>\r\n");
+      out.write("\n                </td></tr>\n            </tbody>\n            </table>\n            </div><br>\n");
  } 
-      out.write("\r\n\r\n<form name=\"f\" action=\"workgroup-add-response.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\r\n<input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n\n<form name=\"f\" action=\"workgroup-add-response.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\">\n<input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\" />\r\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
+      out.write("\" />\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
       out.print( URLEncoder.encode(groupTitle, "UTF-8") );
-      out.write("\" />\r\n<input type=\"hidden\" name=\"add\" value=\"true\" />\r\n");
+      out.write("\" />\n<input type=\"hidden\" name=\"add\" value=\"true\" />\n");
 if(inEditMode){ 
-      out.write("\r\n<input type=\"hidden\" name=\"editAdd\" value=\"true\" />\r\n<input type=\"hidden\" name=\"entry\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"editAdd\" value=\"true\" />\n<input type=\"hidden\" name=\"entry\" value=\"");
       out.print(entry);
-      out.write("\" />\r\n");
+      out.write("\" />\n");
  } 
-      out.write("\r\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\r\n<th colspan=\"2\">");
+      out.write("\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\n<th colspan=\"2\">");
       out.print( inEditMode ? "Edit Response" : "Add New Response");
-      out.write("</th>\r\n  <tr valign=\"top\">\r\n  <td>Response Title<br/><span class=\"jive-description\">Please enter the title for this response.</span></td><td><input type=\"text\" name=\"responseTitle\" value=\"");
+      out.write("</th>\n  <tr valign=\"top\">\n  <td>Response Title<br/><span class=\"jive-description\">Please enter the title for this response.</span></td><td><input type=\"text\" name=\"responseTitle\" value=\"");
       out.print( macroTitle );
       out.write("\" size=\"40\" maxlength=\"40\"><br><span class=\"jive-description\">Adding new response to <b>");
       out.print( rootGroup.getTitle() );
-      out.write("</b></span></td>\r\n  </tr>\r\n  <tr valign=\"top\">\r\n  <td>Response Type<br/><span class=\"jive-description\">Please select the response type.</span></td><td>\r\n  <select name=\"responseType\">\r\n  <option value=\"0\">Text</option>\r\n  <option value=\"1\">URL</option>\r\n  <option value=\"2\">Image</option>\r\n  </select>\r\n  </td>\r\n  </tr>\r\n  <tr valign=\"top\">\r\n  <td width=\"40%\">Response Body<br/><span class=\"jive-description\">Enter your response body. If you selected a url or image, just enter the URL to either.</span></td><td><textarea name=\"responseBody\" cols=\"40\" rows=\"4\">");
+      out.write("</b></span></td>\n  </tr>\n  <tr valign=\"top\">\n  <td>Response Type<br/><span class=\"jive-description\">Please select the response type.</span></td><td>\n  <select name=\"responseType\">\n  <option value=\"0\">Text</option>\n  <option value=\"1\">URL</option>\n  <option value=\"2\">Image</option>\n  </select>\n  </td>\n  </tr>\n  <tr valign=\"top\">\n  <td width=\"40%\">Response Body<br/><span class=\"jive-description\">Enter your response body. If you selected a url or image, just enter the URL to either.</span></td><td><textarea name=\"responseBody\" cols=\"40\" rows=\"4\">");
       out.print( macroBody);
-      out.write("</textarea></td>\r\n  </tr>\r\n  <tr>\r\n  <td colspan=\"2\">\r\n  <input type=\"submit\" name=\"Add\" value=\"");
+      out.write("</textarea></td>\n  </tr>\n  <tr>\n  <td colspan=\"2\">\n  <input type=\"submit\" name=\"Add\" value=\"");
       out.print( inEditMode ? "Save Changes" : "Add Response" );
-      out.write("\">\r\n  </td>\r\n  </tr>\r\n</table>\r\n</form>\r\n\r\n<br><br>\r\n<p>\r\nViewing all responses in <b>\"");
+      out.write("\">\n  </td>\n  </tr>\n</table>\n</form>\n\n<br><br>\n<p>\nViewing all responses in <b>\"");
       out.print( groupTitle );
-      out.write("\"</b>\r\n</p>\r\n\r\n<form action=\"workgroup-add-response.jsp\" method=\"post\">\r\n<input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\"</b>\n</p>\n\n<form action=\"workgroup-add-response.jsp\" method=\"post\">\n<input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\" />\r\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
+      out.write("\" />\n<input type=\"hidden\" name=\"macroGroupTitle\" value=\"");
       out.print( URLEncoder.encode(groupTitle, "UTF-8") );
-      out.write("\" />\r\n<input type=\"hidden\" name=\"add\" value=\"true\" />\r\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\r\n<th colspan=\"1\">Title</th><th>Type</th><th>Options</th>\r\n");
+      out.write("\" />\n<input type=\"hidden\" name=\"add\" value=\"true\" />\n<table class=\"jive-table\" cellspacing=\"0\" cellpadding=\"0\"  width=\"100%\">\n<th colspan=\"1\">Title</th><th>Type</th><th>Options</th>\n");
 
     int count = 0;
     for(Macro macro : rootGroup.getMacros()){
-      out.write("\r\n        <tr>\r\n        <td>");
+      out.write("\n        <tr>\n        <td>");
       out.print( macro.getTitle());
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( "Text");
-      out.write("</td>\r\n        <td align=\"center\"><a href=\"workgroup-add-response.jsp?edit=true&wgID=");
+      out.write("</td>\n        <td align=\"center\"><a href=\"workgroup-add-response.jsp?edit=true&wgID=");
       out.print(wgID);
       out.write("&macroGroupTitle=");
       out.print( URLEncoder.encode(groupTitle, "UTF-8"));
@@ -208,12 +208,12 @@ if(inEditMode){
       out.print( URLEncoder.encode(groupTitle, "UTF-8"));
       out.write("&entry=");
       out.print(count);
-      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\r\n        </tr>\r\n\r\n");
+      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\n        </tr>\n\n");
 
         count++;
     }
 
-      out.write("\r\n</table>\r\n</form>\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\n</table>\n</form>\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

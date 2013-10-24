@@ -53,7 +53,7 @@ public final class liveStats_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	// webManager.init(request, response, session, application, out);
 	boolean componentSet = request.getParameter("component") != null;
@@ -66,15 +66,15 @@ public final class liveStats_jsp extends org.apache.jasper.runtime.HttpJspBase
 	String now = currentDate.getHours() + ":" + currentDate.getMinutes() + "." + currentDate.getSeconds()
 			+ "   " + currentDate.getDate() + "." + currentDate.getMonth() + "." + currentDate.getYear();
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>Live logs ");
+      out.write("\n\n<html>\n<head>\n<title>Live logs ");
       out.print(componentSet ? "for " + component : "");
-      out.write("</title>\r\n<meta name=\"decorator\" content=\"none\" />\r\n\r\n\r\n<link href=\"./css/liveStats.css\" rel=\"stylesheet\" type=\"text/css\">\r\n<script src=\"./js/http.js\" type=\"text/javascript\"></script>\r\n<script src=\"./js/jquery.js\" type=\"text/javascript\"></script>\r\n<script src=\"./js/liveStats.js\" type=\"text/javascript\"></script>\r\n<script language=\"javascript\" type=\"text/javascript\" src=\"./js/jquery.flot.js\"></script>\r\n</head>\r\n\r\n<body>\r\n\t<div class=\"div-main\">\r\n\t\t<div class=\"header\">\r\n\t\t\tLive statistics for\r\n\t\t\t");
+      out.write("</title>\n<meta name=\"decorator\" content=\"none\" />\n\n\n<link href=\"./css/liveStats.css\" rel=\"stylesheet\" type=\"text/css\">\n<script src=\"./js/http.js\" type=\"text/javascript\"></script>\n<script src=\"./js/jquery.js\" type=\"text/javascript\"></script>\n<script src=\"./js/liveStats.js\" type=\"text/javascript\"></script>\n<script language=\"javascript\" type=\"text/javascript\" src=\"./js/jquery.flot.js\"></script>\n</head>\n\n<body>\n\t<div class=\"div-main\">\n\t\t<div class=\"header\">\n\t\t\tLive statistics for\n\t\t\t");
       out.print(componentSet ? component : "NOT SET");
-      out.write("</div>\r\n\t\t<div class=\"graph\">Here should appear your stats</div>\r\n\r\n\t\t<table id=\"logTable\">\r\n\t\t\t<thead>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th>Date</th>\r\n\t\t\t\t\t<th>Type</th>\r\n\t\t\t\t\t<th>From</th>\r\n\t\t\t\t\t<th>To</th>\r\n\t\t\t\t</tr>\r\n\t\t\t</thead>\r\n\t\t\t<tbody class=\"tableBegin\">\r\n\t\t\t</tbody>\r\n\t\t\t<tfoot>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td colspan=\"2\">Live logging since ");
+      out.write("</div>\n\t\t<div class=\"graph\">Here should appear your stats</div>\n\n\t\t<table id=\"logTable\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>Date</th>\n\t\t\t\t\t<th>Type</th>\n\t\t\t\t\t<th>From</th>\n\t\t\t\t\t<th>To</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody class=\"tableBegin\">\n\t\t\t</tbody>\n\t\t\t<tfoot>\n\t\t\t\t<tr>\n\t\t\t\t\t<td colspan=\"2\">Live logging since ");
       out.print(now);
-      out.write("\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td colspan=\"2\"><form id=\"limitForm\">\r\n\t\t\t\t\t\t\t<input type=\"text\" id=\"tableLimit\">\r\n\t\t\t\t\t\t</form></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</tfoot>\r\n\t\t</table>\r\n\t</div>\r\n\t<span id=\"logSince\" style=\"visibility: hidden;\">");
+      out.write("\n\t\t\t\t\t</td>\n\t\t\t\t\t<td colspan=\"2\"><form id=\"limitForm\">\n\t\t\t\t\t\t\t<input type=\"text\" id=\"tableLimit\">\n\t\t\t\t\t\t</form></td>\n\t\t\t\t</tr>\n\t\t\t</tfoot>\n\t\t</table>\n\t</div>\n\t<span id=\"logSince\" style=\"visibility: hidden;\">");
       out.print(System.currentTimeMillis());
-      out.write("</span>\r\n\r\n</body>\r\n\r\n\r\n\r\n\r\n</html>");
+      out.write("</span>\n\n</body>\n\n\n\n\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

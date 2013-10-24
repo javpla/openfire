@@ -64,7 +64,7 @@ public final class muc_002droom_002dedit_002dform_jsp extends org.apache.jasper.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -73,10 +73,10 @@ public final class muc_002droom_002dedit_002dform_jsp extends org.apache.jasper.
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     boolean create = ParamUtils.getBooleanParameter(request,"create");
     boolean save = ParamUtils.getBooleanParameter(request,"save");
@@ -373,115 +373,116 @@ public final class muc_002droom_002dedit_002dform_jsp extends org.apache.jasper.
     DateFormat dateFormatter = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT);
     roomName = roomName == null ? "" : roomName;
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n");
+      out.write("\n\n<html>\n<head>\n");
  if (create) { 
-      out.write("\r\n<title>");
+      out.write("\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"muc-room-create\"/>\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"muc-room-create\"/>\n");
  } else { 
-      out.write("\r\n<title>");
+      out.write("\n<title>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"subPageID\" content=\"muc-room-edit-form\"/>\r\n");
+      out.write("</title>\n<meta name=\"subPageID\" content=\"muc-room-edit-form\"/>\n");
  } 
-      out.write("\r\n<meta name=\"extraParams\" content=\"");
+      out.write("\n<meta name=\"extraParams\" content=\"");
       out.print( "roomJID="+(roomJID != null ? URLEncoder.encode(roomJID.toBareJID(), "UTF-8") : "")+"&create="+create );
-      out.write("\"/>\r\n<meta name=\"helpPage\" content=\"view_group_chat_room_summary.html\"/>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("\"/>\n<meta name=\"helpPage\" content=\"view_group_chat_room_summary.html\"/>\n</head>\n<body>\n\n");
   if (!errors.isEmpty()) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\r\n            <td class=\"jive-icon-label\">\r\n\r\n            ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n            <td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"/></td>\n            <td class=\"jive-icon-label\">\n\n            ");
  if (errors.get("roomconfig_roomname") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("roomconfig_roomdesc") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("roomconfig_maxusers") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("roomconfig_roomsecret2") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("roomconfig_whois") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("roomName") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("room_already_exists") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("not_enough_permissions") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } else if (errors.get("room_topic") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (success || addsuccess) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
   if (success) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } else if (addsuccess) { 
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (!create) { 
-      out.write("\r\n    <p>\r\n    ");
+      out.write("\n    <p>\n    ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <div class=\"jive-table\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <thead>\r\n        <tr>\r\n            <th scope=\"col\">");
+      out.write("\n    </p>\n    <div class=\"jive-table\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <thead>\n        <tr>\n            <th scope=\"col\">");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th scope=\"col\">");
+      out.write("</th>\n            <th scope=\"col\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th scope=\"col\">");
+      out.write("</th>\n            <th scope=\"col\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</th>\r\n            <th scope=\"col\">");
+      out.write("</th>\n            <th scope=\"col\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr>\r\n            <td>");
+      out.write("</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>");
       out.print( room.getName() );
-      out.write("</td>\r\n            ");
+      out.write("</td>\n            ");
  if (room.getOccupantsCount() == 0) { 
-      out.write("\r\n            <td>");
+      out.write("\n            <td>");
       out.print( room.getOccupantsCount() );
       out.write(' ');
       out.write('/');
       out.write(' ');
       out.print( room.getMaxUsers() );
-      out.write("</td>\r\n            ");
+      out.write("</td>\n            ");
  } else { 
-      out.write("\r\n            <td><a href=\"muc-room-occupants.jsp?roomJID=");
+      out.write("\n            <td><a href=\"muc-room-occupants.jsp?roomJID=");
       out.print( URLEncoder.encode(roomJID.toBareJID(), "UTF-8"));
       out.write('"');
       out.write('>');
@@ -490,56 +491,58 @@ public final class muc_002droom_002dedit_002dform_jsp extends org.apache.jasper.
       out.write('/');
       out.write(' ');
       out.print( room.getMaxUsers() );
-      out.write("</a></td>\r\n            ");
+      out.write("</a></td>\n            ");
  } 
-      out.write("\r\n            <td>");
+      out.write("\n            <td>");
       out.print( dateFormatter.format(room.getCreationDate()) );
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       out.print( dateFormatter.format(room.getModificationDate()) );
-      out.write("</td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n    <br>\r\n    <p>");
+      out.write("</td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n    <br>\n    <p>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</p>\r\n");
+      out.write("</p>\n");
   } else { 
-      out.write("\r\n    <p>");
+      out.write("\n    <p>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</p>\r\n");
+      out.write("</p>\n");
   } 
-      out.write("\r\n<form action=\"muc-room-edit-form.jsp\">\r\n");
+      out.write("\n<form action=\"muc-room-edit-form.jsp\">\n");
  if (!create) { 
-      out.write("\r\n    <input type=\"hidden\" name=\"roomJID\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"roomJID\" value=\"");
       out.print( roomJID.toBareJID() );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } 
-      out.write("\r\n<input type=\"hidden\" name=\"save\" value=\"true\">\r\n<input type=\"hidden\" name=\"create\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"save\" value=\"true\">\n<input type=\"hidden\" name=\"create\" value=\"");
       out.print( create );
-      out.write("\">\r\n<input type=\"hidden\" name=\"roomconfig_persistentroom\" value=\"");
+      out.write("\">\n<input type=\"hidden\" name=\"roomconfig_persistentroom\" value=\"");
       out.print( persistentRoom );
-      out.write("\">\r\n\r\n    <table width=\"100%\" border=\"0\"> <tr>\r\n         <td width=\"70%\">\r\n            <table width=\"100%\" border=\"0\">\r\n                <tbody>\r\n                ");
+      out.write("\">\n\n    <table width=\"100%\" border=\"0\"> <tr>\n         <td width=\"70%\">\n            <table width=\"100%\" border=\"0\">\n                <tbody>\n                ");
  if (create) { 
-      out.write("\r\n                <tr>\r\n                    <td>");
+      out.write("\n                <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input type=\"text\" name=\"roomName\" value=\"");
+      out.write(":</td>\n                    <td><input type=\"text\" name=\"roomName\" value=\"");
       out.print( roomName );
-      out.write("\">\r\n                        ");
+      out.write("\">\n                        ");
  if (webManager.getMultiUserChatManager().getMultiUserChatServicesCount() > 1) { 
-      out.write("\r\n                        @<select name=\"mucName\">\r\n                        ");
+      out.write("\n                        @<select name=\"mucName\">\n                        ");
  for (MultiUserChatService service : webManager.getMultiUserChatManager().getMultiUserChatServices()) { 
-      out.write("\r\n                        ");
+      out.write("\n                        ");
       if (service.isHidden()) continue; 
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( service.getServiceDomain() );
       out.write('"');
       out.print( service.getServiceDomain().equals(mucName) ? " selected='selected'" : "" );
       out.write('>');
       out.print( service.getServiceDomain() );
-      out.write("</option>\r\n                        ");
+      out.write("</option>\n                        ");
  } 
-      out.write("\r\n                        </select>\r\n                        ");
+      out.write("\n                        </select>\n                        ");
  } else { 
-      out.write("\r\n                        @");
+      out.write("\n                        @");
 
                             // We only have one service, none-the-less, we have to run through the list to get the first
                             for (MultiUserChatService service : webManager.getMultiUserChatManager().getMultiUserChatServices()) {
@@ -551,156 +554,156 @@ public final class muc_002droom_002dedit_002dform_jsp extends org.apache.jasper.
                                 break;
                             }
                         
-      out.write("\r\n                        ");
+      out.write("\n                        ");
  } 
-      out.write("\r\n                    </td>\r\n                </tr>\r\n                ");
+      out.write("\n                    </td>\n                </tr>\n                ");
  } else { 
-      out.write("\r\n                <tr>\r\n                   <td>");
+      out.write("\n                <tr>\n                   <td>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                   <td>");
+      out.write(":</td>\n                   <td>");
       out.print( roomJID.getDomain() );
-      out.write("</td>\r\n               </tr>\r\n                ");
+      out.write("</td>\n               </tr>\n                ");
  } 
-      out.write("\r\n                 <tr>\r\n                    <td>");
+      out.write("\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input type=\"text\" name=\"roomconfig_roomname\" value=\"");
+      out.write(":</td>\n                    <td><input type=\"text\" name=\"roomconfig_roomname\" value=\"");
       out.print( (naturalName == null ? "" : naturalName) );
-      out.write("\">\r\n                    </td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write("\">\n                    </td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input name=\"roomconfig_roomdesc\" value=\"");
+      out.write(":</td>\n                    <td><input name=\"roomconfig_roomdesc\" value=\"");
       out.print( (description == null ? "" : description) );
-      out.write("\" type=\"text\" size=\"40\">\r\n                    </td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write("\" type=\"text\" size=\"40\">\n                    </td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input name=\"room_topic\" value=\"");
+      out.write(":</td>\n                    <td><input name=\"room_topic\" value=\"");
       out.print( (roomSubject == null ? "" : roomSubject) );
-      out.write("\" type=\"text\" size=\"40\">\r\n                    </td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write("\" type=\"text\" size=\"40\">\n                    </td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><select name=\"roomconfig_maxusers\">\r\n                            <option value=\"10\" ");
+      out.write(":</td>\n                    <td><select name=\"roomconfig_maxusers\">\n                            <option value=\"10\" ");
  if ("10".equals(maxUsers)) out.write("selected");
-      out.write(">10</option>\r\n                            <option value=\"20\" ");
+      out.write(">10</option>\n                            <option value=\"20\" ");
  if ("20".equals(maxUsers)) out.write("selected");
-      out.write(">20</option>\r\n                            <option value=\"30\" ");
+      out.write(">20</option>\n                            <option value=\"30\" ");
  if ("30".equals(maxUsers)) out.write("selected");
-      out.write(">30</option>\r\n                            <option value=\"40\" ");
+      out.write(">30</option>\n                            <option value=\"40\" ");
  if ("40".equals(maxUsers)) out.write("selected");
-      out.write(">40</option>\r\n                            <option value=\"50\" ");
+      out.write(">40</option>\n                            <option value=\"50\" ");
  if ("50".equals(maxUsers)) out.write("selected");
-      out.write(">50</option>\r\n                            <option value=\"0\" ");
+      out.write(">50</option>\n                            <option value=\"0\" ");
  if ("0".equals(maxUsers)) out.write("selected");
       out.write('>');
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</option>\r\n                        </select>\r\n                    </td>\r\n                </tr>\r\n                 <tr>\r\n                    <td valign=\"top\">");
+      out.write("</option>\n                        </select>\n                    </td>\n                </tr>\n                 <tr>\n                    <td valign=\"top\">");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><fieldset>\r\n                        <input name=\"roomconfig_presencebroadcast\" type=\"checkbox\" value=\"true\" id=\"moderator\" ");
+      out.write(":</td>\n                    <td><fieldset>\n                        <input name=\"roomconfig_presencebroadcast\" type=\"checkbox\" value=\"true\" id=\"moderator\" ");
  if ("true".equals(broadcastModerator)) out.write("checked");
-      out.write(">\r\n                        <LABEL FOR=\"moderator\">");
+      out.write(">\n                        <LABEL FOR=\"moderator\">");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("</LABEL>\r\n                        <input name=\"roomconfig_presencebroadcast2\" type=\"checkbox\" value=\"true\" id=\"participant\" ");
+      out.write("</LABEL>\n                        <input name=\"roomconfig_presencebroadcast2\" type=\"checkbox\" value=\"true\" id=\"participant\" ");
  if ("true".equals(broadcastParticipant)) out.write("checked");
-      out.write(">\r\n                        <LABEL FOR=\"participant\">");
+      out.write(">\n                        <LABEL FOR=\"participant\">");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</LABEL>\r\n                        <input name=\"roomconfig_presencebroadcast3\" type=\"checkbox\" value=\"true\" id=\"visitor\" ");
+      out.write("</LABEL>\n                        <input name=\"roomconfig_presencebroadcast3\" type=\"checkbox\" value=\"true\" id=\"visitor\" ");
  if ("true".equals(broadcastVisitor)) out.write("checked");
-      out.write(">\r\n                        <LABEL FOR=\"visitor\">");
+      out.write(">\n                        <LABEL FOR=\"visitor\">");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</LABEL>\r\n                        </fieldset></td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write("</LABEL>\n                        </fieldset></td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input type=\"password\" name=\"roomconfig_roomsecret\" ");
+      out.write(":</td>\n                    <td><input type=\"password\" name=\"roomconfig_roomsecret\" ");
  if(password != null) { 
       out.write(" value=\"");
       out.print( password );
       out.write('"');
       out.write(' ');
  } 
-      out.write("></td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write("></td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><input type=\"password\" name=\"roomconfig_roomsecret2\" ");
+      out.write(":</td>\n                    <td><input type=\"password\" name=\"roomconfig_roomsecret2\" ");
  if(confirmPassword != null) { 
       out.write(" value=\"");
       out.print( confirmPassword );
       out.write('"');
       out.write(' ');
  } 
-      out.write(">\r\n                    </td>\r\n                </tr>\r\n                 <tr>\r\n                    <td>");
+      out.write(">\n                    </td>\n                </tr>\n                 <tr>\n                    <td>");
       if (_jspx_meth_fmt_message_33(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                    <td><select name=\"roomconfig_whois\">\r\n                            <option value=\"moderator\" ");
+      out.write(":</td>\n                    <td><select name=\"roomconfig_whois\">\n                            <option value=\"moderator\" ");
  if ("moderator".equals(whois)) out.write("selected");
       out.write('>');
       if (_jspx_meth_fmt_message_34(_jspx_page_context))
         return;
-      out.write("</option>\r\n                            <option value=\"anyone\" ");
+      out.write("</option>\n                            <option value=\"anyone\" ");
  if ("anyone".equals(whois)) out.write("selected");
       out.write('>');
       if (_jspx_meth_fmt_message_35(_jspx_page_context))
         return;
-      out.write("</option>\r\n                        </select>\r\n                    </td>\r\n                 </tr>\r\n         </tbody>\r\n         </table>\r\n\r\n         </td>\r\n        <td width=\"30%\" valign=\"top\" >\r\n        <fieldset>\r\n        <legend>");
+      out.write("</option>\n                        </select>\n                    </td>\n                 </tr>\n         </tbody>\n         </table>\n\n         </td>\n        <td width=\"30%\" valign=\"top\" >\n        <fieldset>\n        <legend>");
       if (_jspx_meth_fmt_message_36(_jspx_page_context))
         return;
-      out.write("</legend>\r\n        <table width=\"100%\"  border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_publicroom\" value=\"true\" id=\"public\" ");
+      out.write("</legend>\n        <table width=\"100%\"  border=\"0\">\n        <tbody>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_publicroom\" value=\"true\" id=\"public\" ");
  if ("true".equals(publicRoom)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"public\">");
+      out.write(">\n                    <LABEL FOR=\"public\">");
       if (_jspx_meth_fmt_message_37(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_moderatedroom\" value=\"true\" id=\"moderated\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_moderatedroom\" value=\"true\" id=\"moderated\" ");
  if ("true".equals(moderatedRoom)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"moderated\">");
+      out.write(">\n                    <LABEL FOR=\"moderated\">");
       if (_jspx_meth_fmt_message_38(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_membersonly\" value=\"true\" id=\"membersOnly\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_membersonly\" value=\"true\" id=\"membersOnly\" ");
  if ("true".equals(membersOnly)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"membersOnly\">");
+      out.write(">\n                    <LABEL FOR=\"membersOnly\">");
       if (_jspx_meth_fmt_message_39(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_allowinvites\" value=\"true\" id=\"allowinvites\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_allowinvites\" value=\"true\" id=\"allowinvites\" ");
  if ("true".equals(allowInvites)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"allowinvites\">");
+      out.write(">\n                    <LABEL FOR=\"allowinvites\">");
       if (_jspx_meth_fmt_message_40(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_changesubject\" value=\"true\" id=\"changesubject\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_changesubject\" value=\"true\" id=\"changesubject\" ");
  if ("true".equals(changeSubject)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"changesubject\">");
+      out.write(">\n                    <LABEL FOR=\"changesubject\">");
       if (_jspx_meth_fmt_message_41(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_reservednick\" value=\"true\" id=\"reservednick\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_reservednick\" value=\"true\" id=\"reservednick\" ");
  if ("true".equals(reservedNick)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"reservednick\">");
+      out.write(">\n                    <LABEL FOR=\"reservednick\">");
       if (_jspx_meth_fmt_message_42(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_canchangenick\" value=\"true\" id=\"canchangenick\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_canchangenick\" value=\"true\" id=\"canchangenick\" ");
  if ("true".equals(canChangeNick)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"canchangenick\">");
+      out.write(">\n                    <LABEL FOR=\"canchangenick\">");
       if (_jspx_meth_fmt_message_43(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_registration\" value=\"true\" id=\"registration\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_registration\" value=\"true\" id=\"registration\" ");
  if ("true".equals(registrationEnabled)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"registration\">");
+      out.write(">\n                    <LABEL FOR=\"registration\">");
       if (_jspx_meth_fmt_message_44(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n            <tr>\r\n                <td><input type=\"checkbox\" name=\"roomconfig_enablelogging\" value=\"true\" id=\"enablelogging\" ");
+      out.write("</LABEL></td>\n            </tr>\n            <tr>\n                <td><input type=\"checkbox\" name=\"roomconfig_enablelogging\" value=\"true\" id=\"enablelogging\" ");
  if ("true".equals(enableLog)) out.write("checked");
-      out.write(">\r\n                    <LABEL FOR=\"enablelogging\">");
+      out.write(">\n                    <LABEL FOR=\"enablelogging\">");
       if (_jspx_meth_fmt_message_45(_jspx_page_context))
         return;
-      out.write("</LABEL></td>\r\n            </tr>\r\n        </tbody>\r\n        </table>\r\n        </fieldset>\r\n        </tr>\r\n         <tr align=\"center\">\r\n            <td colspan=\"2\"><input type=\"submit\" name=\"Submit\" value=\"");
+      out.write("</LABEL></td>\n            </tr>\n        </tbody>\n        </table>\n        </fieldset>\n        </tr>\n         <tr align=\"center\">\n            <td colspan=\"2\"><input type=\"submit\" name=\"Submit\" value=\"");
       if (_jspx_meth_fmt_message_46(_jspx_page_context))
         return;
-      out.write("\">\r\n            <input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n            <input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_47(_jspx_page_context))
         return;
-      out.write("\"></td>\r\n        </tr>\r\n    </table>\r\n</form>\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\"></td>\n        </tr>\n    </table>\n</form>\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

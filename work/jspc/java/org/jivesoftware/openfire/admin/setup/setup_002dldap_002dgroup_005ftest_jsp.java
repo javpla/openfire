@@ -56,7 +56,7 @@ public final class setup_002dldap_002dgroup_005ftest_jsp extends org.apache.jasp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n");
 
     String errorDetail = null;
     Collection<LdapGroupTester.Group> groups = new ArrayList<LdapGroupTester.Group>();
@@ -92,46 +92,46 @@ public final class setup_002dldap_002dgroup_005ftest_jsp extends org.apache.jasp
         errorDetail = LocaleUtils.getLocalizedString("setup.ldap.test.internal-server-error");
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<meta name=\"decorator\" content=\"none\"/>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- BEGIN connection settings test panel -->\r\n<div class=\"jive-testPanel\">\r\n\t<div class=\"jive-testPanel-content\">\r\n\r\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\r\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">Close</a>\r\n\t\t</div>\r\n\r\n\r\n\t\t<h2>");
+      out.write("\n\n<html>\n<head>\n<meta name=\"decorator\" content=\"none\"/>\n</head>\n<body>\n\n\n<!-- BEGIN connection settings test panel -->\n<div class=\"jive-testPanel\">\n\t<div class=\"jive-testPanel-content\">\n\n\t\t<div align=\"right\" class=\"jive-testPanel-close\">\n\t\t\t<a href=\"#\" class=\"lbAction\" rel=\"deactivate\">Close</a>\n\t\t</div>\n\n\n\t\t<h2>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
       out.write(": <span>");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</span></h2>\r\n\r\n        <p>");
+      out.write("</span></h2>\n\n        <p>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</p>\r\n\r\n        ");
+      out.write("</p>\n\n        ");
  if (errorDetail == null) { 
-      out.write("\r\n\r\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\" style=\"margin-right: 5px;\">\r\n            <tr>\r\n                <td width=\"19%\" class=\"jive-testpanel-vcard-header\">");
+      out.write("\n\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" class=\"jive-testTable-vcard\" style=\"margin-right: 5px;\">\n            <tr>\n                <td width=\"19%\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td width=\"80%\" class=\"jive-testpanel-vcard-header\">");
+      out.write("</td>\n                <td width=\"80%\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td width=\"1%\" class=\"jive-testpanel-vcard-header\">");
+      out.write("</td>\n                <td width=\"1%\" class=\"jive-testpanel-vcard-header\">");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</td>\r\n            </tr>\r\n            ");
+      out.write("</td>\n            </tr>\n            ");
  for (LdapGroupTester.Group group : groups) { 
-      out.write("\r\n            <tr>\r\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
+      out.write("\n            <tr>\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
       out.print( group.getName());
-      out.write("</td>\r\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
       out.print( group.getDescription());
-      out.write("</td>\r\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
+      out.write("</td>\n                <td valign=\"top\" class=\"jive-testpanel-vcard-value\">");
       out.print( group.getMembers());
-      out.write("</td>\r\n            </tr>\r\n            ");
+      out.write("</td>\n            </tr>\n            ");
  } 
-      out.write("\r\n        </table>\r\n        ");
+      out.write("\n        </table>\n        ");
  } else { 
-      out.write("\r\n        <h4 class=\"jive-testError\">");
+      out.write("\n        <h4 class=\"jive-testError\">");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</h4>\r\n        <p>");
+      out.write("</h4>\n        <p>");
       out.print( errorDetail );
-      out.write("</p>\r\n        ");
+      out.write("</p>\n        ");
  }
-      out.write("\r\n    </div>\r\n</div>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n    </div>\n</div>\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

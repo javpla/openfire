@@ -48,10 +48,11 @@ public final class workgroup_002doffline_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
  try { 
-      out.write("\r\n\r\n ");
+      out.write('\n');
+      out.write('\n');
+      out.write(' ');
 
      String wgID = request.getParameter("wgID");
      final WorkgroupManager workgroupManager = WorkgroupManager.getInstance();
@@ -96,41 +97,41 @@ public final class workgroup_002doffline_jsp extends org.apache.jasper.runtime.H
 
      }
  
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n<html>\n    <head>\n        <title>");
       out.print( "Offline Settings for "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-offline\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-offline\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"set_an_offline_policy_for_a_workgroup.html\"/>-->\r\n\r\n        <script>\r\n        function saveOfflineSettings(){\r\n             var todo = document.offline.todo;\r\n             if(todo[0].checked){\r\n                 var url = document.offline.redirectToPage.value;\r\n                 if(!Jtrim(url)){\r\n                   alert(\"Please specify the URL to forward to.\");\r\n                   document.offline.redirectToPage.focus();\r\n                   return;\r\n                 }\r\n                 document.offline.email.value = \"\";\r\n                 document.offline.subject.value = \"\";\r\n                 document.offline.headerField.value = \"\";\r\n\r\n                 document.offline.submit();\r\n             }\r\n             else if(todo[1].checked){\r\n               var email = document.offline.email.value;\r\n               var subject = document.offline.subject.value;\r\n               var message = document.offline.headerField.value;\r\n               document.offline.redirectToPage.value = '';\r\n");
-      out.write("\r\n               if(!Jtrim(email) || !Jtrim(subject) || !Jtrim(message)){\r\n                 alert(\"All fields are required.\");\r\n                 return;\r\n               }\r\n                document.offline.submit();\r\n             }\r\n        }\r\n\r\n\r\n\r\n         function Jtrim(st) {\r\n             var len = st.length;\r\n             var begin = 0, end = len - 1;\r\n             while (st.charAt(begin) == \" \" && begin < len) {\r\n                 begin++;\r\n             }\r\n             while (st.charAt(end) == \" \" && end > begin) {\r\n                 end--;\r\n             }\r\n             return st.substring(begin, end + 1);\r\n         }\r\n        </script>\r\n    </head>\r\n    <body>\r\n    Specify action to take when this workgroup has no available agents to take incoming chat requests.\r\n    ");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"set_an_offline_policy_for_a_workgroup.html\"/>-->\n\n        <script>\n        function saveOfflineSettings(){\n             var todo = document.offline.todo;\n             if(todo[0].checked){\n                 var url = document.offline.redirectToPage.value;\n                 if(!Jtrim(url)){\n                   alert(\"Please specify the URL to forward to.\");\n                   document.offline.redirectToPage.focus();\n                   return;\n                 }\n                 document.offline.email.value = \"\";\n                 document.offline.subject.value = \"\";\n                 document.offline.headerField.value = \"\";\n\n                 document.offline.submit();\n             }\n             else if(todo[1].checked){\n               var email = document.offline.email.value;\n               var subject = document.offline.subject.value;\n               var message = document.offline.headerField.value;\n               document.offline.redirectToPage.value = '';\n\n               if(!Jtrim(email) || !Jtrim(subject) || !Jtrim(message)){\n");
+      out.write("                 alert(\"All fields are required.\");\n                 return;\n               }\n                document.offline.submit();\n             }\n        }\n\n\n\n         function Jtrim(st) {\n             var len = st.length;\n             var begin = 0, end = len - 1;\n             while (st.charAt(begin) == \" \" && begin < len) {\n                 begin++;\n             }\n             while (st.charAt(end) == \" \" && end > begin) {\n                 end--;\n             }\n             return st.substring(begin, end + 1);\n         }\n        </script>\n    </head>\n    <body>\n    Specify action to take when this workgroup has no available agents to take incoming chat requests.\n    ");
  if(statusMessage != null && !statusMessage.equals("")) { 
-      out.write("\r\n    <div class=\"success\">\r\n        ");
+      out.write("\n    <div class=\"success\">\n        ");
       out.print( statusMessage );
-      out.write("\r\n    </div>\r\n    ");
+      out.write("\n    </div>\n    ");
  } 
-      out.write("\r\n\r\n      ");
+      out.write("\n\n      ");
  if(!emailConfigured){ 
-      out.write("\r\n            <div class=\"error\">\r\n                Email form will not be displayed until you configure your <a href=\"../../system-email.jsp\">email settings</a>.\r\n            </div>\r\n    ");
+      out.write("\n            <div class=\"error\">\n                Email form will not be displayed until you configure your <a href=\"../../system-email.jsp\">email settings</a>.\n            </div>\n    ");
  } 
-      out.write("\r\n\r\n    <div id=\"offline_message\">");
+      out.write("\n\n    <div id=\"offline_message\">");
       out.print( statusMessage );
-      out.write("</div>\r\n    <p/>\r\n    <form action=\"workgroup-offline.jsp\" method=\"get\" name=\"offline\">\r\n    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("</div>\n    <p/>\n    <form action=\"workgroup-offline.jsp\" method=\"get\" name=\"offline\">\n    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\" />\r\n    <div>\r\n        <div class=\"jive-contentBoxHeader\">\r\n        Offline Workgroup Action\r\n        </div>\r\n        <table width=\"100%\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" class=\"jive-contentBox\">\r\n                <tr valign=\"top\">\r\n                ");
+      out.write("\" />\n    <div>\n        <div class=\"jive-contentBoxHeader\">\n        Offline Workgroup Action\n        </div>\n        <table width=\"100%\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" class=\"jive-contentBox\">\n                <tr valign=\"top\">\n                ");
  String checked = offlineSettings.redirects() ? "checked" : ""; 
-      out.write("\r\n                            <td width=\"1%\">\r\n                                <input type=\"radio\" name=\"todo\" value=\"redirectToPage\" ");
+      out.write("\n                            <td width=\"1%\">\n                                <input type=\"radio\" name=\"todo\" value=\"redirectToPage\" ");
       out.print( checked );
-      out.write(" />\r\n                            </td>\r\n                            <td nowrap><b>Redirect To Web Page</b>\r\n                               </td>\r\n                            <td class=\"c2\">\r\n                                <input type=\"text\" name=\"redirectToPage\" size=\"40\" value=\"");
+      out.write(" />\n                            </td>\n                            <td nowrap><b>Redirect To Web Page</b>\n                               </td>\n                            <td class=\"c2\">\n                                <input type=\"text\" name=\"redirectToPage\" size=\"40\" value=\"");
       out.print( offlineSettings.getRedirectURL() );
-      out.write("\" /><br/>\r\n                                 <span class=\"jive-description\">e.g. http://www.jivesoftware.com/contact.html</span>\r\n                            </td>\r\n                </tr>\r\n                <tr>\r\n                    <td nowrap width=\"1%\">\r\n                         <input type=\"radio\" name=\"todo\" value=\"showEmailPage\" ");
+      out.write("\" /><br/>\n                                 <span class=\"jive-description\">e.g. http://www.jivesoftware.com/contact.html</span>\n                            </td>\n                </tr>\n                <tr>\n                    <td nowrap width=\"1%\">\n                         <input type=\"radio\" name=\"todo\" value=\"showEmailPage\" ");
       out.print(!offlineSettings.redirects() ? "checked" :"" );
-      out.write("/>\r\n                         <td><b>Display Email Form</b></td>\r\n                     </td>\r\n                     <td>&nbsp;</td>\r\n                </tr>\r\n                <!-- Email Address -->\r\n                <tr valign=\"top\">\r\n                    <td>&nbsp;</td>\r\n                    <td>Email Address:</td>\r\n                    <td>\r\n                        <input type=\"text\" size=\"40\" name=\"email\" value=\"");
+      out.write("/>\n                         <td><b>Display Email Form</b></td>\n                     </td>\n                     <td>&nbsp;</td>\n                </tr>\n                <!-- Email Address -->\n                <tr valign=\"top\">\n                    <td>&nbsp;</td>\n                    <td>Email Address:</td>\n                    <td>\n                        <input type=\"text\" size=\"40\" name=\"email\" value=\"");
       out.print( offlineSettings.getEmailAddress() );
-      out.write("\" /><br/>\r\n                        <span class=\"jive-description\">Email address to send all offline messages to.</span>\r\n                    </td>\r\n                </tr>\r\n                <!-- End of Email Address -->\r\n                <!-- Subject Line -->\r\n                 <tr valign=\"top\">\r\n                    <td>&nbsp;</td>\r\n                    <td>Subject:</td>\r\n                    <td>\r\n                        <input type=\"text\" size=\"40\" name=\"subject\" value=\"");
+      out.write("\" /><br/>\n                        <span class=\"jive-description\">Email address to send all offline messages to.</span>\n                    </td>\n                </tr>\n                <!-- End of Email Address -->\n                <!-- Subject Line -->\n                 <tr valign=\"top\">\n                    <td>&nbsp;</td>\n                    <td>Subject:</td>\n                    <td>\n                        <input type=\"text\" size=\"40\" name=\"subject\" value=\"");
       out.print( offlineSettings.getSubject() );
-      out.write("\"/><br/>\r\n                        <span class=\"jive-description\">The subject of all offline email messages.</span>\r\n                    </td>\r\n                </tr>\r\n                <!--  End Of Subject Line -->\r\n                <tr valign=\"top\">\r\n                     <td>&nbsp;</td>\r\n                    <td>Offline Text:</td>\r\n                    <td>\r\n                        <textarea name=\"headerField\" cols=\"40\" rows=\"5\">");
+      out.write("\"/><br/>\n                        <span class=\"jive-description\">The subject of all offline email messages.</span>\n                    </td>\n                </tr>\n                <!--  End Of Subject Line -->\n                <tr valign=\"top\">\n                     <td>&nbsp;</td>\n                    <td>Offline Text:</td>\n                    <td>\n                        <textarea name=\"headerField\" cols=\"40\" rows=\"5\">");
       out.print( offlineSettings.getOfflineText()  );
-      out.write("</textarea><br/>\r\n                        <span class=\"jive-description\">Text to display to the user in the email form.</span>\r\n                    </td>\r\n                </tr>\r\n                    <input type=\"hidden\" name=\"save\" value=\"save\">\r\n                 <tr>\r\n                </tr>\r\n            ");
-      out.write("\r\n            </table>\r\n            <table><tr>\r\n                 <td colspan=\"1\"> <input type=\"button\" name=\"save\" value=\"Save Changes\" onclick=\"return saveOfflineSettings();\" /></td>\r\n                <td colspan=\"1\"> <input type=\"submit\" name=\"delete\" value=\"Delete Changes\" /></td>\r\n            </tr></table>\r\n       </div>\r\n    </form>\r\n\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("</textarea><br/>\n                        <span class=\"jive-description\">Text to display to the user in the email form.</span>\n                    </td>\n                </tr>\n                    <input type=\"hidden\" name=\"save\" value=\"save\">\n                 <tr>\n                </tr>\n            ");
+      out.write("\n            </table>\n            <table><tr>\n                 <td colspan=\"1\"> <input type=\"button\" name=\"save\" value=\"Save Changes\" onclick=\"return saveOfflineSettings();\" /></td>\n                <td colspan=\"1\"> <input type=\"submit\" name=\"delete\" value=\"Delete Changes\" /></td>\n            </tr></table>\n       </div>\n    </form>\n\n</body>\n</html>\n\n");
  } catch(Exception ex){ex.printStackTrace();} 
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

@@ -136,7 +136,7 @@ public final class logviewer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n");
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -145,7 +145,8 @@ public final class logviewer_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.util.WebManager admin = null;
       synchronized (_jspx_page_context) {
         admin = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("admin", PageContext.PAGE_SCOPE);
@@ -154,11 +155,12 @@ public final class logviewer_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("admin", admin, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  admin.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     // Get parameters
     String log = ParamUtils.getParameter(request, "log");
@@ -251,165 +253,167 @@ public final class logviewer_jsp extends org.apache.jasper.runtime.HttpJspBase
     // Determine if any of the log files contents have been updated:
     HashMap newlogs = getLogUpdate(request, response, logDir);
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"server-logs\"/>\r\n        <meta name=\"helpPage\" content=\"use_the_server_logs.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"server-logs\"/>\n        <meta name=\"helpPage\" content=\"use_the_server_logs.html\"/>\n    </head>\n    <body>\n\n");
   if (refreshParam != null && !NONE.equals(refreshParam)) { 
-      out.write("\r\n    <meta http-equiv=\"refresh\" content=\"");
+      out.write("\n    <meta http-equiv=\"refresh\" content=\"");
       out.print( refresh );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
   } 
-      out.write("\r\n\r\n<div id=\"logviewer\">\r\n\r\n<style type=\"text/css\">\r\nSELECT, INPUT {\r\n    font-family : verdana, arial, sans-serif;\r\n    font-size : 8pt;\r\n}\r\n.date {\r\n    color : #00f;\r\n    border-width : 0 0 1px 0;\r\n    border-style : dotted;\r\n    border-color : #00f;\r\n}\r\n.buttons TD {\r\n    padding : 3px;\r\n}\r\n.buttons .icon-label {\r\n    padding-right : 1em;\r\n}\r\n.log-info {\r\n    border-width : 0 1px 1px 1px;\r\n    border-color : #ccc;\r\n    border-style : solid;\r\n}\r\nIFRAME {\r\n    border : 1px #666 solid;\r\n}\r\n</style>\r\n\r\n<form action=\"logviewer.jsp\" name=\"logViewer\" method=\"get\">\r\n<input type=\"hidden\" name=\"log\" value=\"");
+      out.write("\n\n<div id=\"logviewer\">\n\n<style type=\"text/css\">\nSELECT, INPUT {\n    font-family : verdana, arial, sans-serif;\n    font-size : 8pt;\n}\n.date {\n    color : #00f;\n    border-width : 0 0 1px 0;\n    border-style : dotted;\n    border-color : #00f;\n}\n.buttons TD {\n    padding : 3px;\n}\n.buttons .icon-label {\n    padding-right : 1em;\n}\n.log-info {\n    border-width : 0 1px 1px 1px;\n    border-color : #ccc;\n    border-style : solid;\n}\nIFRAME {\n    border : 1px #666 solid;\n}\n</style>\n\n<form action=\"logviewer.jsp\" name=\"logViewer\" method=\"get\">\n<input type=\"hidden\" name=\"log\" value=\"");
       out.print( log );
-      out.write("\">\r\n\r\n<div class=\"logviewer\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tbody>\r\n    <tr>\r\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\r\n        <td class=\"jive-tab");
+      out.write("\">\n\n<div class=\"logviewer\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tbody>\n    <tr>\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\n        <td class=\"jive-tab");
       out.print( (("error".equals(log))?"-active":"") );
-      out.write("\" width=\"1%\">\r\n            <a href=\"logviewer.jsp?log=error\"\r\n            >");
+      out.write("\" width=\"1%\">\n            <a href=\"logviewer.jsp?log=error\"\n            >");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("</a>\r\n            <span class=\"new\">\r\n            ");
+      out.write("</a>\n            <span class=\"new\">\n            ");
       out.print( ((newlogs.containsKey("error"))?"*":"") );
-      out.write("\r\n            </span>\r\n        </td>\r\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\r\n        <td class=\"jive-tab");
+      out.write("\n            </span>\n        </td>\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\n        <td class=\"jive-tab");
       out.print( (("warn".equals(log))?"-active":"") );
-      out.write("\" width=\"1%\">\r\n            <a href=\"logviewer.jsp?log=warn\"\r\n            >");
+      out.write("\" width=\"1%\">\n            <a href=\"logviewer.jsp?log=warn\"\n            >");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</a>\r\n            <span class=\"new\">\r\n            ");
+      out.write("</a>\n            <span class=\"new\">\n            ");
       out.print( ((newlogs.containsKey("warn"))?"*":"") );
-      out.write("\r\n            </span>\r\n        </td>\r\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\r\n        <td class=\"jive-tab");
+      out.write("\n            </span>\n        </td>\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\n        <td class=\"jive-tab");
       out.print( (("info".equals(log))?"-active":"") );
-      out.write("\" width=\"1%\">\r\n            <a href=\"logviewer.jsp?log=info\"\r\n            >");
+      out.write("\" width=\"1%\">\n            <a href=\"logviewer.jsp?log=info\"\n            >");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</a>\r\n            <span class=\"new\">\r\n            ");
+      out.write("</a>\n            <span class=\"new\">\n            ");
       out.print( ((newlogs.containsKey("info"))?"*":"") );
-      out.write("\r\n            </span>\r\n        </td>\r\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\r\n        <td class=\"jive-tab");
+      out.write("\n            </span>\n        </td>\n        <td class=\"jive-spacer\" width=\"1%\">&nbsp;</td>\n        <td class=\"jive-tab");
       out.print( (("debug".equals(log))?"-active":"") );
-      out.write("\" width=\"1%\">\r\n            <a href=\"logviewer.jsp?log=debug\"\r\n            >");
+      out.write("\" width=\"1%\">\n            <a href=\"logviewer.jsp?log=debug\"\n            >");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</a>\r\n            <span class=\"new\">\r\n            ");
+      out.write("</a>\n            <span class=\"new\">\n            ");
       out.print( ((newlogs.containsKey("debug"))?"*":"") );
-      out.write("\r\n            </span>\r\n        </td>\r\n        <td class=\"jive-stretch\" width=\"92%\" align=\"right\" nowrap>\r\n            &nbsp;\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n");
+      out.write("\n            </span>\n        </td>\n        <td class=\"jive-stretch\" width=\"92%\" align=\"right\" nowrap>\n            &nbsp;\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n");
   ByteFormat byteFormatter = new ByteFormat();
     Date lastMod = new Date(logFile.lastModified());
     DateFormat dateFormatter = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM);
 
-      out.write("\r\n\r\n<div class=\"log-info\">\r\n<table cellpadding=\"6\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n<tbody>\r\n    <tr>\r\n        <td>\r\n            <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n            <tr>\r\n                <td nowrap>");
+      out.write("\n\n<div class=\"log-info\">\n<table cellpadding=\"6\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n<tbody>\n    <tr>\n        <td>\n            <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n            <tr>\n                <td nowrap>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td nowrap><b>");
+      out.write("</td>\n                <td nowrap><b>");
       out.print( logFile.getName() );
       out.write("</b> (");
       out.print( byteFormatter.format(logFile.length()) );
-      out.write(")</td>\r\n                <td width=\"96%\" rowspan=\"3\">&nbsp;</td>\r\n                <td nowrap>");
+      out.write(")</td>\n                <td width=\"96%\" rowspan=\"3\">&nbsp;</td>\n                <td nowrap>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td nowrap>\r\n                    <input type=\"radio\" name=\"mode\" value=\"asc\"");
+      out.write("</td>\n                <td nowrap>\n                    <input type=\"radio\" name=\"mode\" value=\"asc\"");
       out.print( ("asc".equals(mode)?" checked":"") );
-      out.write("\r\n                     onclick=\"this.form.submit();\" id=\"rb01\"\r\n                     ><label for=\"rb01\">");
+      out.write("\n                     onclick=\"this.form.submit();\" id=\"rb01\"\n                     ><label for=\"rb01\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</label>\r\n                    <input type=\"radio\" name=\"mode\" value=\"desc\"");
+      out.write("</label>\n                    <input type=\"radio\" name=\"mode\" value=\"desc\"");
       out.print( ("desc".equals(mode)?" checked":"") );
-      out.write("\r\n                     onclick=\"this.form.submit();\" id=\"rb02\"\r\n                     ><label for=\"rb02\">");
+      out.write("\n                     onclick=\"this.form.submit();\" id=\"rb02\"\n                     ><label for=\"rb02\">");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td nowrap>");
+      out.write("</label>\n                </td>\n            </tr>\n            <tr>\n                <td nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td nowrap>\r\n                    <span>");
+      out.write("</td>\n                <td nowrap>\n                    <span>");
       out.print( dateFormatter.format(lastMod) );
-      out.write("</span>\r\n                </td>\r\n                <td nowrap>");
+      out.write("</span>\n                </td>\n                <td nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</td>\r\n                <td nowrap>\r\n                    <select name=\"lines\" size=\"1\"\r\n                     onchange=\"this.form.submit();\">\r\n                        ");
+      out.write("</td>\n                <td nowrap>\n                    <select name=\"lines\" size=\"1\"\n                     onchange=\"this.form.submit();\">\n                        ");
  for (String aLINES : LINES) {
                             String selected = (aLINES.equals(numLinesParam)) ? " selected" : "";
                         
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( aLINES );
       out.write('"');
       out.print( selected );
       out.write('>');
       out.print( aLINES );
-      out.write("</option>\r\n\r\n                        ");
+      out.write("</option>\n\n                        ");
   } 
-      out.write("\r\n                            <option value=\"All\"");
+      out.write("\n                            <option value=\"All\"");
       out.print( (("All".equals(numLinesParam))?" selected":"") );
-      out.write("\r\n                             >");
+      out.write("\n                             >");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</option>\r\n                    </select>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"2\">\r\n                    <script language=\"JavaScript\" type=\"text/javascript\">\r\n                        <!--\r\n                        function setLog(log) {\r\n                            document.logViewer.clearLog.value = 'false';\r\n                            document.logViewer.markLog.value = 'false';\r\n                            document.logViewer.saveLog.value = 'false';\r\n                            document.logViewer.emailLog.value = 'false';\r\n\r\n                            var t = eval(\"document.logViewer.\" + log);\r\n                            t.value = 'true';\r\n                        }\r\n                        // -->\r\n                    </script>\r\n                    <input type=\"hidden\" name=\"clearLog\" value=\"false\">\r\n                    <input type=\"hidden\" name=\"markLog\" value=\"false\">\r\n                    <input type=\"hidden\" name=\"saveLog\" value=\"false\">\r\n                    <input type=\"hidden\" name=\"emailLog\" value=\"false\">\r\n");
-      out.write("                    <div class=\"buttons\">\r\n                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td class=\"icon\">\r\n                                <a href=\"#\" onclick=\"if (confirm('");
+      out.write("</option>\n                    </select>\n                </td>\n            </tr>\n            <tr>\n                <td colspan=\"2\">\n                    <script language=\"JavaScript\" type=\"text/javascript\">\n                        <!--\n                        function setLog(log) {\n                            document.logViewer.clearLog.value = 'false';\n                            document.logViewer.markLog.value = 'false';\n                            document.logViewer.saveLog.value = 'false';\n                            document.logViewer.emailLog.value = 'false';\n\n                            var t = eval(\"document.logViewer.\" + log);\n                            t.value = 'true';\n                        }\n                        // -->\n                    </script>\n                    <input type=\"hidden\" name=\"clearLog\" value=\"false\">\n                    <input type=\"hidden\" name=\"markLog\" value=\"false\">\n                    <input type=\"hidden\" name=\"saveLog\" value=\"false\">\n                    <input type=\"hidden\" name=\"emailLog\" value=\"false\">\n");
+      out.write("                    <div class=\"buttons\">\n                    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                    <tbody>\n                        <tr>\n                            <td class=\"icon\">\n                                <a href=\"#\" onclick=\"if (confirm('");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
       out.write("')) {setLog('clearLog'); document.logViewer.submit(); return true;} else { return false; }\"><img src=\"images/delete-16x16.gif\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\"></a>\r\n                            </td>\r\n                            <td class=\"icon-label\">\r\n                                <a href=\"#\" onclick=\"if (confirm('");
+      out.write("\"></a>\n                            </td>\n                            <td class=\"icon-label\">\n                                <a href=\"#\" onclick=\"if (confirm('");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("')) {setLog('clearLog'); document.logViewer.submit(); return true;} else { return false; }\"\r\n                                 >");
+      out.write("')) {setLog('clearLog'); document.logViewer.submit(); return true;} else { return false; }\"\n                                 >");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</a>\r\n                            </td>\r\n                            <td class=\"icon\">\r\n                                <a href=\"#\" onclick=\"setLog('markLog'); document.logViewer.submit(); return true;\"><img src=\"images/mark-16x16.gif\" border=\"0\" alt=\"");
+      out.write("</a>\n                            </td>\n                            <td class=\"icon\">\n                                <a href=\"#\" onclick=\"setLog('markLog'); document.logViewer.submit(); return true;\"><img src=\"images/mark-16x16.gif\" border=\"0\" alt=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\"></a>\r\n                            </td>\r\n                            <td class=\"icon-label\">\r\n                                <a href=\"#\" onclick=\"setLog('markLog'); document.logViewer.submit(); return true;\"\r\n                                 >");
+      out.write("\"></a>\n                            </td>\n                            <td class=\"icon-label\">\n                                <a href=\"#\" onclick=\"setLog('markLog'); document.logViewer.submit(); return true;\"\n                                 >");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                    </table>\r\n                    </div>\r\n                </td>\r\n                <td nowrap>");
+      out.write("</a>\n                            </td>\n                        </tr>\n                    </tbody>\n                    </table>\n                    </div>\n                </td>\n                <td nowrap>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write(":</td>\r\n                <td nowrap>\r\n                    <select size=\"1\" name=\"refresh\" onchange=\"this.form.submit();\">\r\n                    ");
+      out.write(":</td>\n                <td nowrap>\n                    <select size=\"1\" name=\"refresh\" onchange=\"this.form.submit();\">\n                    ");
  for (String aREFRESHES : REFRESHES) {
                         String selected = aREFRESHES.equals(refreshParam) ? " selected" : "";
                     
-      out.write("\r\n                        <option value=\"");
+      out.write("\n                        <option value=\"");
       out.print( aREFRESHES );
       out.write('"');
       out.print( selected );
       out.write('>');
       out.print( aREFRESHES );
-      out.write("\r\n\r\n                    ");
+      out.write("\n\n                    ");
   } 
-      out.write("\r\n                    </select>\r\n                    (");
+      out.write("\n                    </select>\n                    (");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write(")\r\n                </td>\r\n            </tr>\r\n\r\n            ");
+      out.write(")\n                </td>\n            </tr>\n\n            ");
   if ("debug".equals(log)) { 
-      out.write("\r\n\r\n                <tr>\r\n                    <td colspan=\"5\">\r\n\r\n                        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                        <tr>\r\n                            <td width=\"1%\" nowrap>\r\n                                ");
+      out.write("\n\n                <tr>\n                    <td colspan=\"5\">\n\n                        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                        <tr>\n                            <td width=\"1%\" nowrap>\n                                ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write(": &nbsp;\r\n                            </td>\r\n                            <td width=\"1%\">\r\n                                <input type=\"radio\" name=\"debugEnabled\" value=\"true\"");
+      out.write(": &nbsp;\n                            </td>\n                            <td width=\"1%\">\n                                <input type=\"radio\" name=\"debugEnabled\" value=\"true\"");
       out.print( ((debugEnabled) ? " checked" : "") );
-      out.write(" id=\"de01\">\r\n                            </td>\r\n                            <td width=\"1%\" nowrap>\r\n                                <label for=\"de01\">");
+      out.write(" id=\"de01\">\n                            </td>\n                            <td width=\"1%\" nowrap>\n                                <label for=\"de01\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</label> &nbsp;\r\n                            </td>\r\n                            <td width=\"1%\">\r\n                                <input type=\"radio\" name=\"debugEnabled\" value=\"false\"");
+      out.write("</label> &nbsp;\n                            </td>\n                            <td width=\"1%\">\n                                <input type=\"radio\" name=\"debugEnabled\" value=\"false\"");
       out.print( ((!debugEnabled) ? " checked" : "") );
-      out.write(" id=\"de02\">\r\n                            </td>\r\n                            <td width=\"1%\" nowrap>\r\n                                <label for=\"de02\">Disabled</label> &nbsp;\r\n                            </td>\r\n                            <td width=\"1%\">\r\n                                <input type=\"hidden\" name=\"wasDebugEnabled\" value=\"");
+      out.write(" id=\"de02\">\n                            </td>\n                            <td width=\"1%\" nowrap>\n                                <label for=\"de02\">Disabled</label> &nbsp;\n                            </td>\n                            <td width=\"1%\">\n                                <input type=\"hidden\" name=\"wasDebugEnabled\" value=\"");
       out.print( debugEnabled );
-      out.write("\">\r\n                                <input type=\"submit\" name=\"\" value=\"");
+      out.write("\">\n                                <input type=\"submit\" name=\"\" value=\"");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\">\r\n                            </td>\r\n                            <td width=\"94%\">&nbsp;</td>\r\n                        </tr>\r\n                        </table>\r\n                    </td>\r\n                </tr>\r\n\r\n            ");
+      out.write("\">\n                            </td>\n                            <td width=\"94%\">&nbsp;</td>\n                        </tr>\n                        </table>\n                    </td>\n                </tr>\n\n            ");
   } 
-      out.write("\r\n\r\n            </table>\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n\r\n<br>\r\n\r\n<span class=\"jive-description\" style=\"color:#666;\">\r\n");
+      out.write("\n\n            </table>\n        </td>\n    </tr>\n</tbody>\n</table>\n</div>\n\n<br>\n\n<span class=\"jive-description\" style=\"color:#666;\">\n");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
       out.write(':');
       out.write(' ');
       out.print( JiveGlobals.getHomeDirectory() );
       out.print( File.separator );
-      out.write("logs\r\n</span>\r\n\r\n<br><br>\r\n\r\n<iframe src=\"log.jsp?log=");
+      out.write("logs\n</span>\n\n<br><br>\n\n<iframe src=\"log.jsp?log=");
       out.print( log );
       out.write("&mode=");
       out.print( mode );
       out.write("&lines=");
       out.print( ("All".equals(numLinesParam) ? "All" : String.valueOf(numLines)) );
-      out.write("\"\r\n    frameborder=\"0\" height=\"400\" width=\"100%\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\"></iframe>\r\n\r\n</form>\r\n\r\n</div>\r\n\r\n    </body>\r\n</html>");
+      out.write("\"\n    frameborder=\"0\" height=\"400\" width=\"100%\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\"></iframe>\n\n</form>\n\n</div>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

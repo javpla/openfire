@@ -54,7 +54,7 @@ public final class user_002dpassword_jsp extends org.apache.jasper.runtime.HttpJ
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager admin = null;
       synchronized (_jspx_page_context) {
         admin = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("admin", PageContext.PAGE_SCOPE);
@@ -63,10 +63,10 @@ public final class user_002dpassword_jsp extends org.apache.jasper.runtime.HttpJ
           _jspx_page_context.setAttribute("admin", admin, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  admin.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters //
     boolean cancel = request.getParameter("cancel") != null;
     boolean update = request.getParameter("update") != null;
@@ -108,66 +108,67 @@ public final class user_002dpassword_jsp extends org.apache.jasper.runtime.HttpJ
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"user-password\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"user-password\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "username="+URLEncoder.encode(username, "UTF-8") );
-      out.write("\"/>\r\n        <meta name=\"helpPage\" content=\"change_a_user_password.html\"/>\r\n    </head>\r\n    <body>\r\n\r\n");
+      out.write("\"/>\n        <meta name=\"helpPage\" content=\"change_a_user_password.html\"/>\n    </head>\n    <body>\n\n");
  if (UserManager.getUserProvider().isReadOnly()) { 
-      out.write("\r\n<div class=\"error\">\r\n    ");
+      out.write("\n<div class=\"error\">\n    ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (errors) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (unsupported) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (request.getParameter("success") != null) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<form action=\"user-password.jsp\" name=\"passform\" method=\"post\">\r\n<input type=\"hidden\" name=\"username\" value=\"");
+      out.write("\n</p>\n\n<form action=\"user-password.jsp\" name=\"passform\" method=\"post\">\n<input type=\"hidden\" name=\"username\" value=\"");
       out.print( username );
-      out.write("\">\r\n\r\n<fieldset>\r\n    <legend>");
+      out.write("\">\n\n<fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</legend>\r\n    <div>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("</legend>\n    <div>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write(":\r\n            </td>\r\n            <td class=\"c2\">\r\n                ");
+      out.write(":\n            </td>\n            <td class=\"c2\">\n                ");
       out.print( JID.unescapeNode(user.getUsername()) );
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write("\n            </td>\n        </tr>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write(":\r\n            </td>\r\n            <td class=\"c2\">\r\n                <input type=\"password\" name=\"password\" value=\"\" size=\"20\" maxlength=\"50\">\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td class=\"c1\">\r\n                ");
+      out.write(":\n            </td>\n            <td class=\"c2\">\n                <input type=\"password\" name=\"password\" value=\"\" size=\"20\" maxlength=\"50\">\n            </td>\n        </tr>\n        <tr>\n            <td class=\"c1\">\n                ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(":\r\n            </td>\r\n            <td class=\"c2\">\r\n                <input type=\"password\" name=\"passwordConfirm\" value=\"\" size=\"20\" maxlength=\"50\">\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br><br>\r\n\r\n<input type=\"submit\" value=\"");
+      out.write(":\n            </td>\n            <td class=\"c2\">\n                <input type=\"password\" name=\"passwordConfirm\" value=\"\" size=\"20\" maxlength=\"50\">\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br><br>\n\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\" name=\"update\">\r\n<input type=\"submit\" value=\"");
+      out.write("\" name=\"update\">\n<input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\" name=\"cancel\">\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\ndocument.passform.password.focus();\r\n</script>\r\n\r\n    ");
+      out.write("\" name=\"cancel\">\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\ndocument.passform.password.focus();\n</script>\n\n    ");
   // Disable the form if a read-only user provider.
     if (UserManager.getUserProvider().isReadOnly()) { 
-      out.write("\r\n\r\n<script language=\"Javascript\" type=\"text/javascript\">\r\n  function disable() {\r\n    var limit = document.forms[0].elements.length;\r\n    for (i=0;i<limit;i++) {\r\n      document.forms[0].elements[i].disabled = true;\r\n    }\r\n  }\r\n  disable();\r\n</script>\r\n    ");
+      out.write("\n\n<script language=\"Javascript\" type=\"text/javascript\">\n  function disable() {\n    var limit = document.forms[0].elements.length;\n    for (i=0;i<limit;i++) {\n      document.forms[0].elements[i].disabled = true;\n    }\n  }\n  disable();\n</script>\n    ");
  } 
-      out.write("\r\n\r\n    </body>\r\n</html>\r\n");
+      out.write("\n\n    </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

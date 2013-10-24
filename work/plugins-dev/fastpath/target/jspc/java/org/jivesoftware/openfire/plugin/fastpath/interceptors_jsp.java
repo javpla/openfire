@@ -216,11 +216,13 @@ public final class interceptors_jsp extends org.apache.jasper.runtime.HttpJspBas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
  try { 
-      out.write("\r\n\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
  // Get parameters
     String workgroupID = ParamUtils.getParameter(request, "wgID");
     String managerType = ParamUtils.getParameter(request, "managerType");
@@ -559,102 +561,105 @@ public final class interceptors_jsp extends org.apache.jasper.runtime.HttpJspBas
     }
 
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n");
+      out.write("\n\n<html>\n    <head>\n");
 
     if (isGlobal) { 
-      out.write("\r\n        <title>Global Packet Interceptors</title>\r\n        <meta name=\"pageID\" content=\"settings-interceptors\"/>\r\n    ");
+      out.write("\n        <title>Global Packet Interceptors</title>\n        <meta name=\"pageID\" content=\"settings-interceptors\"/>\n    ");
   } else { 
-      out.write("\r\n        <title>");
+      out.write("\n        <title>");
       out.print( "Packet Interceptors for " + workgroupID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-interceptors\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-interceptors\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+workgroupID );
-      out.write("\"/>\r\n\r\n    ");
+      out.write("\"/>\n\n    ");
  } 
-      out.write("\r\n        <!--<meta name=\"helpPage\" content=\"edit_or_uninstall_global_interceptors.html\"/>-->\r\n    </head>\r\n    <body>\r\n\r\n<span>\r\n\r\n<p>Interceptors examine packets before they enter the system and can modify or reject them. Use\r\nthe forms below to install and customize ");
+      out.write("\n        <!--<meta name=\"helpPage\" content=\"edit_or_uninstall_global_interceptors.html\"/>-->\n    </head>\n    <body>\n\n<span>\n\n<p>Interceptors examine packets before they enter the system and can modify or reject them. Use\nthe forms below to install and customize ");
       out.print( isGlobal ? "global" : "local");
-      out.write(" interceptors.\r\n");
+      out.write(" interceptors.\n");
  if ("workgroup".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked every time a packet is sent to ");
+      out.write("\nCurrent interceptors will be invoked every time a packet is sent to ");
       out.print( isGlobal ? "a" : "the");
-      out.write("\r\nworkgroup or ");
+      out.write("\nworkgroup or ");
       out.print( isGlobal ? "a" : "the");
-      out.write(" workgroup is sending a packet to a user or an agent.\r\n    ");
+      out.write(" workgroup is sending a packet to a user or an agent.\n    ");
  }
     else if ("agent".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked every time an agent sends a presence to\r\n");
+      out.write("\nCurrent interceptors will be invoked every time an agent sends a presence to\n");
       out.print( isGlobal ? "a" : "the");
-      out.write(" workgroup.\r\n    ");
+      out.write(" workgroup.\n    ");
  }
     else if ("chatbot".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked every time the chatbot of ");
+      out.write("\nCurrent interceptors will be invoked every time the chatbot of ");
       out.print( isGlobal ? "a" : "the");
-      out.write("\r\nworkgroup receives or sends a packet.\r\n    ");
+      out.write("\nworkgroup receives or sends a packet.\n    ");
  }
     else if ("queue".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked every time a user tries to join a queue of\r\n");
+      out.write("\nCurrent interceptors will be invoked every time a user tries to join a queue of\n");
       out.print( isGlobal ? "a" : "the");
-      out.write(" workgroup.\r\n    ");
+      out.write(" workgroup.\n    ");
  }
     else if ("room".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked when sending packets for creating a room, configuring a room\r\nor sending room invitations to an agent or a user.\r\n    ");
+      out.write("\nCurrent interceptors will be invoked when sending packets for creating a room, configuring a room\nor sending room invitations to an agent or a user.\n    ");
  }
     else if ("offer".equals(managerType)) { 
-      out.write("\r\nCurrent interceptors will be invoked when sending an offer to an agent or when an agent accepts\r\nor rejects an offer of ");
+      out.write("\nCurrent interceptors will be invoked when sending an offer to an agent or when an agent accepts\nor rejects an offer of ");
       out.print( isGlobal ? "a" : "the");
-      out.write(" workgroup.\r\n    ");
+      out.write(" workgroup.\n    ");
  } 
-      out.write("\r\n</p>\r\n\r\n</span>\r\n\r\n<p>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nvar routerInfo = new Array(\r\n");
+      out.write("\n</p>\n\n</span>\n\n<p>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar routerInfo = new Array(\n");
 	int i = 0;
     for(PacketInterceptor interceptor : interceptorManager.getAvailableInterceptors()){
 
         try {
             BeanDescriptor descriptor = (Introspector.getBeanInfo(interceptor.getClass())).getBeanDescriptor();
 
-      out.write("\r\n    new Array(\r\n        \"");
+      out.write("\n    new Array(\n        \"");
       out.print( descriptor.getBeanClass().getName() );
-      out.write("\",\r\n        \"");
+      out.write("\",\n        \"");
       out.print( descriptor.getValue("version") );
-      out.write("\",\r\n        \"");
+      out.write("\",\n        \"");
       out.print( descriptor.getValue("author") );
-      out.write("\",\r\n        \"");
+      out.write("\",\n        \"");
       out.print( StringUtils.replace(descriptor.getShortDescription(), "\"", "\\\"") );
-      out.write("\"\r\n    )\r\n");
+      out.write("\"\n    )\n");
           if ((interceptorManager.getAvailableInterceptors().size() - i) > 1) { 
-      out.write("\r\n\t\t,\r\n");
+      out.write("\n\t\t,\n");
 	        }
         } catch (Exception e) {}
          i++;
     }
 
-      out.write("\r\n);\r\nfunction properties(theForm) {\r\n    var className = theForm.interceptors.options[theForm.interceptors.selectedIndex].value;\r\n    var selected = 0;\r\n    for (selected=0; selected<routerInfo.length; selected++) {\r\n        if (routerInfo[selected][0] == className) {\r\n            var version = routerInfo[selected][1];\r\n            var author = routerInfo[selected][2];\r\n            var description = routerInfo[selected][3];\r\n            theForm.version.value = ((version==\"null\")?\"\":version);\r\n            theForm.author.value = ((author==\"null\")?\"\":author);\r\n            theForm.description.value = ((description==\"null\")?\"\":description);\r\n            break;\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<form action=\"interceptors.jsp\">\r\n");
+      out.write("\n);\nfunction properties(theForm) {\n    var className = theForm.interceptors.options[theForm.interceptors.selectedIndex].value;\n    var selected = 0;\n    for (selected=0; selected<routerInfo.length; selected++) {\n        if (routerInfo[selected][0] == className) {\n            var version = routerInfo[selected][1];\n            var author = routerInfo[selected][2];\n            var description = routerInfo[selected][3];\n            theForm.version.value = ((version==\"null\")?\"\":version);\n            theForm.author.value = ((author==\"null\")?\"\":author);\n            theForm.description.value = ((description==\"null\")?\"\":description);\n            break;\n        }\n    }\n}\n</script>\n\n<form action=\"interceptors.jsp\">\n");
  if (!isGlobal) { 
-      out.write("\r\n    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( workgroupID );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } 
-      out.write("\r\nConfigure interceptors of the realm:\r\n<select name=\"managerType\" onchange=\"this.form.submit();\">\r\n        <option value=\"workgroup\" ");
+      out.write("\nConfigure interceptors of the realm:\n<select name=\"managerType\" onchange=\"this.form.submit();\">\n        <option value=\"workgroup\" ");
  if ("workgroup".equals(managerType)) out.write("selected");
-      out.write(">Workgroup</option>\r\n        <option value=\"queue\" ");
+      out.write(">Workgroup</option>\n        <option value=\"queue\" ");
  if ("queue".equals(managerType)) out.write("selected");
-      out.write(">Queue</option>\r\n        <option value=\"offer\" ");
+      out.write(">Queue</option>\n        <option value=\"offer\" ");
  if ("offer".equals(managerType)) out.write("selected");
-      out.write(">Offer</option>\r\n        <option value=\"room\" ");
+      out.write(">Offer</option>\n        <option value=\"room\" ");
  if ("room".equals(managerType)) out.write("selected");
-      out.write(">Room</option>\r\n        <option value=\"chatbot\" ");
+      out.write(">Room</option>\n        <option value=\"chatbot\" ");
  if ("chatbot".equals(managerType)) out.write("selected");
-      out.write(">Chatbot</option>\r\n        <option value=\"agent\" ");
+      out.write(">Chatbot</option>\n        <option value=\"agent\" ");
  if ("agent".equals(managerType)) out.write("selected");
-      out.write(">Agent</option>\r\n    </select>\r\n</form>\r\n\r\n");
+      out.write(">Agent</option>\n    </select>\n</form>\n\n");
   // Print out a message if one exists
     String oneTimeMessage = errorMessage;
     if (oneTimeMessage != null) {
 
-      out.write("\r\n    <font size=\"-1\" color=\"#ff0000\">\r\n    <p><i>");
+      out.write("\n    <font size=\"-1\" color=\"#ff0000\">\n    <p><i>");
       out.print( oneTimeMessage );
-      out.write("</i></p>\r\n\r\n");
+      out.write("</i></p>\n\n");
   }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Colors
     String red = "#ffeeee";
     String yellow = "#ffffee";
@@ -662,11 +667,11 @@ public final class interceptors_jsp extends org.apache.jasper.runtime.HttpJspBas
 
     if (interceptorCount > 0) {
 
-      out.write("\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n<tr><td>\r\n    <b>Current Interceptors</b>\r\n    </td>\r\n    <td>\r\n    <a href=\"#\" onclick=\"helpwin('interceptors','current_interceptors');return false;\"\r\n     title=\"Click for help\"\r\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\r\n    </td>\r\n</tr>\r\n</table><br>\r\n<ul>\r\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tr><td>\r\n    <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n\t<tr bgcolor=\"#eeeeee\">\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>ORDER</b></font></td>\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>NAME</b></font></td>\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>DESCRIPTION</b></font></td>\r\n    ");
+      out.write("\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n<tr><td>\n    <b>Current Interceptors</b>\n    </td>\n    <td>\n    <a href=\"#\" onclick=\"helpwin('interceptors','current_interceptors');return false;\"\n     title=\"Click for help\"\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\n    </td>\n</tr>\n</table><br>\n<ul>\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tr><td>\n    <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n\t<tr bgcolor=\"#eeeeee\">\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>ORDER</b></font></td>\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>NAME</b></font></td>\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>DESCRIPTION</b></font></td>\n    ");
   if (interceptorCount > 1) { 
-      out.write("\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>MOVE</b></font></td>\r\n    ");
+      out.write("\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>MOVE</b></font></td>\n    ");
   } 
-      out.write("\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>EDIT</b></font></td>\r\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>DELETE</b></font></td>\r\n    </tr>\r\n");
+      out.write("\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>EDIT</b></font></td>\n\t<td align=\"center\"><font size=\"-2\" face=\"verdana\"><b>DELETE</b></font></td>\n    </tr>\n");
   // Loop through all interceptors
     for (PacketInterceptor interceptor : activeInterceptors) {
         try {
@@ -679,139 +684,143 @@ public final class interceptors_jsp extends org.apache.jasper.runtime.HttpJspBas
             // Description of this interceptor
             String description = StringUtils.escapeHTMLTags(descriptor.getShortDescription());
 
-      out.write("\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>");
+      out.write("\n    <tr bgcolor=\"#ffffff\">\n        <td>");
       out.print( (i+1) );
-      out.write("</td>\r\n        <td nowrap alt=\"dd\">");
+      out.write("</td>\n        <td nowrap alt=\"dd\">");
       out.print( descriptor.getDisplayName() );
-      out.write("</td>\r\n        <td>");
+      out.write("</td>\n        <td>");
       out.print( (description!=null)?description:"&nbsp;" );
-      out.write("</td>\r\n        ");
+      out.write("</td>\n        ");
   if (interceptorCount > 1) { 
-      out.write("\r\n        <td nowrap>\r\n            ");
+      out.write("\n        <td nowrap>\n            ");
   if ((i+1)<interceptorCount) { 
-      out.write("\r\n                <a href=\"interceptors.jsp?changePos=true&down=true&interceptorIndex=");
+      out.write("\n                <a href=\"interceptors.jsp?changePos=true&down=true&interceptorIndex=");
       out.print( i );
       out.write("&managerType=");
       out.print(managerType);
       out.print( isGlobal ? "" : "&wgID="+workgroupID );
-      out.write("\"\r\n                ><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" alt=\"Move this interceptor down.\" border=\"0\"></a>\r\n            ");
+      out.write("\"\n                ><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" alt=\"Move this interceptor down.\" border=\"0\"></a>\n            ");
   } else { 
-      out.write("\r\n                <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" />\r\n            ");
+      out.write("\n                <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" />\n            ");
   } 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
   if (i != 0) { 
-      out.write("\r\n                <a href=\"interceptors.jsp?changePos=true&up=true&interceptorIndex=");
+      out.write("\n                <a href=\"interceptors.jsp?changePos=true&up=true&interceptorIndex=");
       out.print( i );
       out.write("&managerType=");
       out.print(managerType);
       out.print( isGlobal ? "" : "&wgID="+workgroupID );
-      out.write("\"\r\n                ><img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" alt=\"Move this interceptor up.\" border=\"0\"></a>\r\n            ");
+      out.write("\"\n                ><img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" alt=\"Move this interceptor up.\" border=\"0\"></a>\n            ");
   } else { 
-      out.write("\r\n                <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" />\r\n            ");
+      out.write("\n                <img src=\"images/blank.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\" />\n            ");
   } 
-      out.write("\r\n        </td>\r\n        ");
+      out.write("\n        </td>\n        ");
   } 
-      out.write("\r\n        <td align=\"center\">\r\n            <a href=\"interceptors.jsp?edit=true&pos=");
+      out.write("\n        <td align=\"center\">\n            <a href=\"interceptors.jsp?edit=true&pos=");
       out.print( i );
       out.write("&managerType=");
       out.print(managerType);
       out.print( isGlobal ? "" : "&wgID="+workgroupID );
-      out.write("\"\r\n            ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" alt=\"Edit the properties of this interceptor\" border=\"0\"\r\n            ></a>\r\n        </td>\r\n        <td align=\"center\">\r\n            <a href=\"interceptors.jsp?remove=true&pos=");
+      out.write("\"\n            ><img src=\"images/edit-16x16.gif\" width=\"16\" height=\"16\" alt=\"Edit the properties of this interceptor\" border=\"0\"\n            ></a>\n        </td>\n        <td align=\"center\">\n            <a href=\"interceptors.jsp?remove=true&pos=");
       out.print( i );
       out.write("&managerType=");
       out.print(managerType);
       out.print( isGlobal ? "" : "&wgID="+workgroupID );
-      out.write("\"\r\n            ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" alt=\"Delete this interceptor\" border=\"0\"\r\n            ></a>\r\n        </td>\r\n    </tr>\r\n");
+      out.write("\"\n            ><img src=\"images/delete-16x16.gif\" width=\"16\" height=\"16\" alt=\"Delete this interceptor\" border=\"0\"\n            ></a>\n        </td>\n    </tr>\n");
   if (position == i && edit) { 
-      out.write("\r\n    <form action=\"interceptors.jsp\" method=\"post\">\r\n    ");
+      out.write("\n    <form action=\"interceptors.jsp\" method=\"post\">\n    ");
  if (!isGlobal) { 
-      out.write("\r\n        <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n        <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( workgroupID );
-      out.write("\">\r\n    ");
+      out.write("\">\n    ");
  } 
-      out.write("\r\n    <input type=\"hidden\" name=\"managerType\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"managerType\" value=\"");
       out.print( managerType );
-      out.write("\">\r\n    <input type=\"hidden\" name=\"saveProperties\" value=\"true\">\r\n    <input type=\"hidden\" name=\"interceptorIndex\" value=\"");
+      out.write("\">\n    <input type=\"hidden\" name=\"saveProperties\" value=\"true\">\n    <input type=\"hidden\" name=\"interceptorIndex\" value=\"");
       out.print( i );
-      out.write("\">\r\n    <tr bgcolor=\"#ffffff\">\r\n        <td>&nbsp;</td>\r\n        <td colspan=\"");
+      out.write("\">\n    <tr bgcolor=\"#ffffff\">\n        <td>&nbsp;</td>\n        <td colspan=\"");
       out.print( (interceptorCount > 1)?"5":"4" );
-      out.write("\">\r\n            <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n            ");
+      out.write("\">\n            <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n            ");
   int color = 1;
                 for (int j=0; j<descriptors.length; j++) {
                     color ++;
                     boolean isString = "java.lang.String".equals(descriptors[j].getPropertyType().getName());
                     if (isString) {
             
-      out.write("\r\n                    <tr bgcolor=");
+      out.write("\n                    <tr bgcolor=");
       out.print( (color%2==0)?"#f4f5f7":"#ffffff" );
-      out.write(">\r\n                        <td colspan=\"3\">\r\n                            ");
+      out.write(">\n                        <td colspan=\"3\">\n                            ");
       out.print( descriptors[j].getDisplayName() );
-      out.write("\r\n                            <br>\r\n                            <font size=\"-2\">");
+      out.write("\n                            <br>\n                            <font size=\"-2\">");
       out.print( descriptors[j].getShortDescription() );
-      out.write("</font>\r\n                        </td>\r\n                    </tr>\r\n                    <tr bgcolor=");
+      out.write("</font>\n                        </td>\n                    </tr>\n                    <tr bgcolor=");
       out.print( (color%2==0)?"#f4f5f7":"#ffffff" );
-      out.write(">\r\n                        <td colspan=\"3\">\r\n                            ");
+      out.write(">\n                        <td colspan=\"3\">\n                            ");
       out.print( getHTML(interceptor, descriptors[j]) );
-      out.write("\r\n                        </td>\r\n                    </tr>\r\n                ");
+      out.write("\n                        </td>\n                    </tr>\n                ");
   } else { 
-      out.write("\r\n                    <tr bgcolor=");
+      out.write("\n                    <tr bgcolor=");
       out.print( (color%2==0)?"#f4f5f7":"#ffffff" );
-      out.write(">\r\n                        <td width=\"70%\">\r\n                            ");
+      out.write(">\n                        <td width=\"70%\">\n                            ");
       out.print( descriptors[j].getDisplayName() );
-      out.write("\r\n                            <br>\r\n                            <font size=\"-2\">");
+      out.write("\n                            <br>\n                            <font size=\"-2\">");
       out.print( descriptors[j].getShortDescription() );
-      out.write("</font>\r\n                        </td>\r\n                        <td width=\"10%\">&nbsp;</td>\r\n                        <td width=\"10%\" nowrap>\r\n                            ");
+      out.write("</font>\n                        </td>\n                        <td width=\"10%\">&nbsp;</td>\n                        <td width=\"10%\" nowrap>\n                            ");
       out.print( getHTML(interceptor, descriptors[j]) );
-      out.write("\r\n                        </td>\r\n                    </tr>\r\n            ");
+      out.write("\n                        </td>\n                    </tr>\n            ");
       }
                 }
             
-      out.write("\r\n            <tr>\r\n                <td colspan=\"4\" align=\"right\">\r\n\r\n                    <input type=\"submit\" value=\"Save Properties\">\r\n\r\n                </td>\r\n            </tr>\r\n            </table>\r\n        </td>\r\n    </tr>\r\n    </form>\r\n");
+      out.write("\n            <tr>\n                <td colspan=\"4\" align=\"right\">\n\n                    <input type=\"submit\" value=\"Save Properties\">\n\n                </td>\n            </tr>\n            </table>\n        </td>\n    </tr>\n    </form>\n");
   } 
-      out.write('\r');
       out.write('\n');
       } catch (Exception e) { }
          i++;
     }
 
-      out.write("\r\n    </table>\r\n    </td></tr>\r\n    </table>\r\n    <br>\r\n\r\n");
+      out.write("\n    </table>\n    </td></tr>\n    </table>\n    <br>\n\n");
   } 
-      out.write("\r\n</ul>\r\n\r\n<p>\r\n\r\n<form action=\"interceptors.jsp\" method=\"post\">\r\n");
+      out.write("\n</ul>\n\n<p>\n\n<form action=\"interceptors.jsp\" method=\"post\">\n");
  if (!isGlobal) { 
-      out.write("\r\n    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( workgroupID );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } 
-      out.write("\r\n<input type=\"hidden\" name=\"managerType\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"managerType\" value=\"");
       out.print( managerType );
-      out.write("\">\r\n<input type=\"hidden\" name=\"install\" value=\"true\">\r\n\r\n<span class=\"jive-install-interceptor\">\r\n\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n<tr><td>\r\n    <b>Install Interceptor</b>\r\n    </td>\r\n    <td>\r\n    <a href=\"#\" onclick=\"helpwin('interceptors','install_interceptor');return false;\"\r\n     title=\"Click for help\"\r\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\r\n    </td>\r\n</tr>\r\n</table><br>\r\n\r\n<ul>\r\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1%\">\r\n    <tr><td>\r\n        <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\r\n        <tr bgcolor=\"#eeeeee\">\r\n            <td align=\"center\">\r\n                <font size=\"-2\" face=\"verdana\"><b>AVAILABLE INTERCEPTORS</b></font>\r\n            </td>\r\n        </tr>\r\n        <tr bgcolor=\"#ffffff\">\r\n            <td>\r\n                <table cellpadding=\"1\" cellspacing=\"0\" border=\"0\">\r\n                <tr>\r\n                    <td width=\"48%\" valign=\"top\">\r\n                        <select size=\"8\" name=\"interceptors\" onchange=\"properties(this.form);\">\r\n");
+      out.write("\">\n<input type=\"hidden\" name=\"install\" value=\"true\">\n\n<span class=\"jive-install-interceptor\">\n\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n<tr><td>\n    <b>Install Interceptor</b>\n    </td>\n    <td>\n    <a href=\"#\" onclick=\"helpwin('interceptors','install_interceptor');return false;\"\n     title=\"Click for help\"\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\n    </td>\n</tr>\n</table><br>\n\n<ul>\n\t<table bgcolor=\"#aaaaaa\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1%\">\n    <tr><td>\n        <table cellpadding=\"4\" cellspacing=\"1\" border=\"0\" width=\"100%\">\n        <tr bgcolor=\"#eeeeee\">\n            <td align=\"center\">\n                <font size=\"-2\" face=\"verdana\"><b>AVAILABLE INTERCEPTORS</b></font>\n            </td>\n        </tr>\n        <tr bgcolor=\"#ffffff\">\n            <td>\n                <table cellpadding=\"1\" cellspacing=\"0\" border=\"0\">\n                <tr>\n                    <td width=\"48%\" valign=\"top\">\n                        <select size=\"8\" name=\"interceptors\" onchange=\"properties(this.form);\">\n");
       out.write("                        ");
   for(PacketInterceptor interceptor : interceptorManager.getAvailableInterceptors()) {
                             boolean isInstalled = isInstalledInterceptor(workgroup, interceptorManager, interceptor);
                             BeanDescriptor descriptor = (Introspector.getBeanInfo(interceptor.getClass())).getBeanDescriptor();
                         
-      out.write("\r\n                            <option value=\"");
+      out.write("\n                            <option value=\"");
       out.print( descriptor.getBeanClass().getName() );
-      out.write("\"\r\n                             >");
+      out.write("\"\n                             >");
       out.print( descriptor.getDisplayName() );
-      out.write("\r\n\r\n                            ");
+      out.write("\n\n                            ");
   if (isInstalled) { 
-      out.write("\r\n\r\n                                *\r\n\r\n                            ");
+      out.write("\n\n                                *\n\n                            ");
   } 
-      out.write("\r\n\r\n                        ");
+      out.write("\n\n                        ");
   } 
-      out.write("\r\n                        </select>\r\n                        <br>\r\n                        (A * denotes the interceptor is already installed. You can install the\r\n                        same interceptor more than once.)\r\n                    </td>\r\n                    <td width=\"2%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\" /></td>\r\n                    <td width=\"48%\" valign=\"top\">\r\n\r\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                        <tr>\r\n                            <td><font size=\"-2\">VERSION</font></td>\r\n                            <td><input type=\"text\" size=\"20\" name=\"version\" style=\"width:100%\"></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td><font size=\"-2\">AUTHOR</font></td>\r\n                            <td><input type=\"text\" size=\"20\" name=\"author\" style=\"width:100%\"></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td valign=\"top\"><font size=\"-2\">DESCRIPTION</font></td>\r\n");
-      out.write("                            <td><textarea name=\"description\" cols=\"20\" rows=\"5\" wrap=\"virtual\"></textarea></td>\r\n                        </tr>\r\n                        </table>\r\n\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td colspan=\"3\" align=\"center\">\r\n\r\n                        <input type=\"submit\" value=\"Install\">\r\n\r\n                    </td>\r\n                </tr>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n        </table>\r\n    </td></tr>\r\n    </table>\r\n</ul>\r\n\r\n</span>\r\n\r\n</form>\r\n\r\n<form action=\"interceptors.jsp\">\r\n<input type=\"hidden\" name=\"addInterceptor\" value=\"true\">\r\n");
+      out.write("\n                        </select>\n                        <br>\n                        (A * denotes the interceptor is already installed. You can install the\n                        same interceptor more than once.)\n                    </td>\n                    <td width=\"2%\"><img src=\"images/blank.gif\" width=\"5\" height=\"1\" border=\"0\" alt=\"\" /></td>\n                    <td width=\"48%\" valign=\"top\">\n\n                        <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                        <tr>\n                            <td><font size=\"-2\">VERSION</font></td>\n                            <td><input type=\"text\" size=\"20\" name=\"version\" style=\"width:100%\"></td>\n                        </tr>\n                        <tr>\n                            <td><font size=\"-2\">AUTHOR</font></td>\n                            <td><input type=\"text\" size=\"20\" name=\"author\" style=\"width:100%\"></td>\n                        </tr>\n                        <tr>\n                            <td valign=\"top\"><font size=\"-2\">DESCRIPTION</font></td>\n");
+      out.write("                            <td><textarea name=\"description\" cols=\"20\" rows=\"5\" wrap=\"virtual\"></textarea></td>\n                        </tr>\n                        </table>\n\n                    </td>\n                </tr>\n                <tr>\n                    <td colspan=\"3\" align=\"center\">\n\n                        <input type=\"submit\" value=\"Install\">\n\n                    </td>\n                </tr>\n                </table>\n            </td>\n        </tr>\n        </table>\n    </td></tr>\n    </table>\n</ul>\n\n</span>\n\n</form>\n\n<form action=\"interceptors.jsp\">\n<input type=\"hidden\" name=\"addInterceptor\" value=\"true\">\n");
  if (!isGlobal) { 
-      out.write("\r\n    <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("\n    <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( workgroupID );
-      out.write("\">\r\n");
+      out.write('"');
+      out.write('>');
+      out.write('\n');
  } 
-      out.write("\r\n<input type=\"hidden\" name=\"managerType\" value=\"");
+      out.write("\n<input type=\"hidden\" name=\"managerType\" value=\"");
       out.print( managerType );
-      out.write("\">\r\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n<tr><td>\r\n    <b>Add Interceptor Class</b>\r\n    </td>\r\n    <td>\r\n    <a href=\"#\" onclick=\"helpwin('interceptors','add_interceptor_class');return false;\"\r\n     title=\"Click for help\"\r\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\r\n    </td>\r\n</tr>\r\n</table><br>\r\n<ul>\r\n    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\r\n    <tr>\r\n    \t<td>Class Name:</td>\r\n    \t<td><input type=\"text\" name=\"newClassname\" value=\"\" size=\"30\" maxlength=\"100\"></td>\r\n    \t<td><input type=\"submit\" value=\"Add Interceptor\"></td>\r\n    </tr>\r\n    </table>\r\n</ul>\r\n</form>\r\n\r\n<p>\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n<tr><td>\n    <b>Add Interceptor Class</b>\n    </td>\n    <td>\n    <a href=\"#\" onclick=\"helpwin('interceptors','add_interceptor_class');return false;\"\n     title=\"Click for help\"\n     ><img src=\"images/help-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" hspace=\"8\" alt=\"\" /></a>\n    </td>\n</tr>\n</table><br>\n<ul>\n    <table cellpadding=\"2\" cellspacing=\"0\" border=\"0\">\n    <tr>\n    \t<td>Class Name:</td>\n    \t<td><input type=\"text\" name=\"newClassname\" value=\"\" size=\"30\" maxlength=\"100\"></td>\n    \t<td><input type=\"submit\" value=\"Add Interceptor\"></td>\n    </tr>\n    </table>\n</ul>\n</form>\n\n<p>\n\n\n</body>\n</html>\n");
  } catch(Exception ex){ex.printStackTrace(); } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

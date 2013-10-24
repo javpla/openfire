@@ -62,8 +62,7 @@ public final class system_002demailtest_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
-      out.write('\r');
+      out.write("\n\n\n\n\n\n\n\n\n");
       out.write('\n');
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
@@ -73,10 +72,10 @@ public final class system_002demailtest_jsp extends org.apache.jasper.runtime.Ht
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get paramters
     boolean doTest = request.getParameter("test") != null;
     boolean cancel = request.getParameter("cancel") != null;
@@ -175,108 +174,109 @@ public final class system_002demailtest_jsp extends org.apache.jasper.runtime.Ht
         body = "This is a test message.";
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"pageID\" content=\"system-email\"/>\r\n    </head>\r\n    <body>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\nvar clicked = false;\r\nfunction checkClick(el) {\r\n    if (!clicked) {\r\n        clicked = true;\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n</script>\r\n\r\n<p>\r\n");
+      out.write("</title>\n        <meta name=\"pageID\" content=\"system-email\"/>\n    </head>\n    <body>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar clicked = false;\nfunction checkClick(el) {\n    if (!clicked) {\n        clicked = true;\n        return true;\n    }\n    return false;\n}\n</script>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (JiveGlobals.getProperty("mail.smtp.host") == null) { 
-      out.write("\r\n\r\n    <div class=\"jive-error\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr>\r\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n\t        <td class=\"jive-icon-label\">\r\n\t\t        ");
+      out.write("\n\n    <div class=\"jive-error\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr>\n        \t<td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n\t        <td class=\"jive-icon-label\">\n\t\t        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n\t        </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n\r\n");
+      out.write("\n\t        </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (doTest || sent) { 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
   if (success) { 
-      out.write("\r\n\r\n        <div class=\"jive-success\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr>\r\n            \t<td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n            \t<td class=\"jive-icon-label\">");
+      out.write("\n\n        <div class=\"jive-success\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr>\n            \t<td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n            \t<td class=\"jive-icon-label\">");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</td>\r\n            </tr>\r\n        </tbody>\r\n        </table>\r\n        </div>\r\n\r\n    ");
+      out.write("</td>\n            </tr>\n        </tbody>\n        </table>\n        </div>\n\n    ");
   } else { 
-      out.write("\r\n\r\n        <div class=\"jive-error\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n        <tbody>\r\n            <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n            <td class=\"jive-icon-label\">\r\n                ");
+      out.write("\n\n        <div class=\"jive-error\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n        <tbody>\n            <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n            <td class=\"jive-icon-label\">\n                ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n                ");
+      out.write("\n                ");
   if (mex != null) { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
   if (mex instanceof AuthenticationFailedException) { 
-      out.write("\r\n                    \t");
+      out.write("\n                    \t");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("                        \r\n                    ");
+      out.write("                        \n                    ");
   } else { 
-      out.write("\r\n                        (Message: ");
+      out.write("\n                        (Message: ");
       out.print( mex.getMessage() );
-      out.write(")\r\n                    ");
+      out.write(")\n                    ");
   } 
-      out.write("\r\n                ");
+      out.write("\n                ");
   } 
-      out.write("\r\n            </td></tr>\r\n        </tbody>\r\n        </table>\r\n        </div>\r\n\r\n    ");
+      out.write("\n            </td></tr>\n        </tbody>\n        </table>\n        </div>\n\n    ");
   } 
-      out.write("\r\n\r\n    <br>\r\n\r\n");
+      out.write("\n\n    <br>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"system-emailtest.jsp\" method=\"post\" name=\"f\" onsubmit=\"return checkClick(this);\">\r\n\r\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n<tbody>\r\n    <tr>\r\n        <td>\r\n            ");
+      out.write("\n\n<form action=\"system-emailtest.jsp\" method=\"post\" name=\"f\" onsubmit=\"return checkClick(this);\">\n\n<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n<tbody>\n    <tr>\n        <td>\n            ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            ");
+      out.write(":\n        </td>\n        <td>\n            ");
   String host = JiveGlobals.getProperty("mail.smtp.host");
                 if (host == null) {
             
-      out.write("\r\n                <i>");
+      out.write("\n                <i>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</i>\r\n            ");
+      out.write("</i>\n            ");
 
                 } else {
             
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( host );
       out.write(':');
       out.print( JiveGlobals.getIntProperty("mail.smtp.port", 25)  );
-      out.write("\r\n\r\n                ");
+      out.write("\n\n                ");
   if (JiveGlobals.getBooleanProperty("mail.smtp.ssl", false)) { 
-      out.write("\r\n\r\n                    (");
+      out.write("\n\n                    (");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write(")\r\n\r\n                ");
+      out.write(")\n\n                ");
   } 
-      out.write("\r\n            ");
+      out.write("\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td>\r\n            ");
+      out.write("\n        </td>\n    </tr>\n    <tr>\n        <td>\n            ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            <input type=\"hidden\" name=\"from\" value=\"");
+      out.write(":\n        </td>\n        <td>\n            <input type=\"hidden\" name=\"from\" value=\"");
       out.print( from );
-      out.write("\">\r\n            ");
+      out.write("\">\n            ");
       out.print( StringUtils.escapeHTMLTags(from) );
-      out.write("\r\n            <span class=\"jive-description\">\r\n            (<a href=\"user-edit-form.jsp?username=");
+      out.write("\n            <span class=\"jive-description\">\n            (<a href=\"user-edit-form.jsp?username=");
       out.print(user.getUsername());
-      out.write("\">Update Address</a>)\r\n            </span>\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td>\r\n            ");
+      out.write("\">Update Address</a>)\n            </span>\n        </td>\n    </tr>\n    <tr>\n        <td>\n            ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            <input type=\"text\" name=\"to\" value=\"");
+      out.write(":\n        </td>\n        <td>\n            <input type=\"text\" name=\"to\" value=\"");
       out.print( ((to != null) ? to : "") );
-      out.write("\"\r\n             size=\"40\" maxlength=\"100\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td>\r\n            ");
+      out.write("\"\n             size=\"40\" maxlength=\"100\">\n        </td>\n    </tr>\n    <tr>\n        <td>\n            ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            <input type=\"text\" name=\"subject\" value=\"");
+      out.write(":\n        </td>\n        <td>\n            <input type=\"text\" name=\"subject\" value=\"");
       out.print( ((subject != null) ? subject : "") );
-      out.write("\"\r\n             size=\"40\" maxlength=\"100\">\r\n        </td>\r\n    </tr>\r\n    <tr valign=\"top\">\r\n        <td>\r\n            ");
+      out.write("\"\n             size=\"40\" maxlength=\"100\">\n        </td>\n    </tr>\n    <tr valign=\"top\">\n        <td>\n            ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write(":\r\n        </td>\r\n        <td>\r\n            <textarea name=\"body\" cols=\"45\" rows=\"5\" wrap=\"virtual\">");
+      out.write(":\n        </td>\n        <td>\n            <textarea name=\"body\" cols=\"45\" rows=\"5\" wrap=\"virtual\">");
       out.print( body );
-      out.write("</textarea>\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td colspan=\"2\">\r\n            <br>\r\n            <input type=\"submit\" name=\"test\" value=\"");
+      out.write("</textarea>\n        </td>\n    </tr>\n    <tr>\n        <td colspan=\"2\">\n            <br>\n            <input type=\"submit\" name=\"test\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\">\r\n            <input type=\"submit\" name=\"cancel\" value=\"");
+      out.write("\">\n            <input type=\"submit\" name=\"cancel\" value=\"");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\">\r\n        </td>\r\n    </tr>\r\n</tbody>\r\n</table>\r\n\r\n</form>\r\n\r\n    </body>\r\n</html>");
+      out.write("\">\n        </td>\n    </tr>\n</tbody>\n</table>\n\n</form>\n\n    </body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -342,13 +342,13 @@ public final class system_002demailtest_jsp extends org.apache.jasper.runtime.Ht
         _jspx_th_fmt_message_2.doInitBody();
       }
       do {
-        out.write("\r\n\t\t\t\t    ");
+        out.write("\n\t\t\t\t    ");
         if (_jspx_meth_fmt_param_0(_jspx_th_fmt_message_2, _jspx_page_context))
           return true;
-        out.write("\r\n\t\t\t\t    ");
+        out.write("\n\t\t\t\t    ");
         if (_jspx_meth_fmt_param_1(_jspx_th_fmt_message_2, _jspx_page_context))
           return true;
-        out.write("\r\n\t\t\t\t");
+        out.write("\n\t\t\t\t");
         int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

@@ -63,7 +63,7 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -72,11 +72,10 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
  // Get parameters:
     boolean save = ParamUtils.getParameter(request, "save") != null;
@@ -127,39 +126,39 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n  <head>\r\n      <title>");
+      out.write("\n\n<html>\n  <head>\n      <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n      <meta name=\"pageID\" content=\"ssl-certificates\"/>\r\n  </head>\r\n  <body>\r\n\r\n  ");
+      out.write("</title>\n      <meta name=\"pageID\" content=\"ssl-certificates\"/>\n  </head>\n  <body>\n\n  ");
   if (errors.containsKey("privateKey")) { 
-      out.write("\r\n\r\n      <div class=\"jive-error\">\r\n      <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n      <tbody>\r\n          <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n          <td class=\"jive-icon-label\">\r\n          ");
+      out.write("\n\n      <div class=\"jive-error\">\n      <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n      <tbody>\n          <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n          <td class=\"jive-icon-label\">\n          ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n          </td></tr>\r\n      </tbody>\r\n      </table>\r\n      </div><br>\r\n\r\n  ");
+      out.write("\n          </td></tr>\n      </tbody>\n      </table>\n      </div><br>\n\n  ");
   } else if (errors.containsKey("certificate")) { 
-      out.write("\r\n\r\n      <div class=\"jive-error\">\r\n  <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n  <tbody>\r\n      <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n      <td class=\"jive-icon-label\">\r\n      ");
+      out.write("\n\n      <div class=\"jive-error\">\n  <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n  <tbody>\n      <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n      <td class=\"jive-icon-label\">\n      ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n      </td></tr>\r\n  </tbody>\r\n  </table>\r\n  </div><br>\r\n\r\n  ");
+      out.write("\n      </td></tr>\n  </tbody>\n  </table>\n  </div><br>\n\n  ");
   } else if (errors.containsKey("import")) {
           Exception e = (Exception)errors.get("import");
   
-      out.write("\r\n\r\n      <div class=\"jive-error\">\r\n      <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n      <tbody>\r\n          <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n          <td class=\"jive-icon-label\">\r\n          ");
+      out.write("\n\n      <div class=\"jive-error\">\n      <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n      <tbody>\n          <tr><td class=\"jive-icon\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n          <td class=\"jive-icon-label\">\n          ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n          ");
+      out.write("\n          ");
   if (e != null && e.getMessage() != null) { 
-      out.write("\r\n              ");
+      out.write("\n              ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
       out.write(':');
       out.write(' ');
       out.print( e.getMessage() );
-      out.write("\r\n          ");
+      out.write("\n          ");
   } 
-      out.write("\r\n          </td></tr>\r\n      </tbody>\r\n      </table>\r\n      </div><br>\r\n  ");
+      out.write("\n          </td></tr>\n      </tbody>\n      </table>\n      </div><br>\n  ");
  } 
-      out.write("\r\n\r\n  <p>\r\n  ");
+      out.write("\n\n  <p>\n  ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_5 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_5.setPageContext(_jspx_page_context);
@@ -173,7 +172,7 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
           _jspx_th_fmt_message_5.doInitBody();
         }
         do {
-          out.write("\r\n      ");
+          out.write("\n      ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -185,7 +184,7 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n      ");
+          out.write("\n      ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_1 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_1.setPageContext(_jspx_page_context);
@@ -197,7 +196,9 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_1);
-          out.write("\r\n  ");
+          out.write('\n');
+          out.write(' ');
+          out.write(' ');
           int evalDoAfterBody = _jspx_th_fmt_message_5.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -210,22 +211,22 @@ public final class import_002dcertificate_jsp extends org.apache.jasper.runtime.
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_5);
-      out.write("\r\n  </p>\r\n\r\n  <!-- BEGIN 'Import Private Key and Certificate' -->\r\n  <form action=\"import-certificate.jsp\" method=\"post\" name=\"f\">\r\n      <div class=\"jive-contentBoxHeader\">\r\n          ");
+      out.write("\n  </p>\n\n  <!-- BEGIN 'Import Private Key and Certificate' -->\n  <form action=\"import-certificate.jsp\" method=\"post\" name=\"f\">\n      <div class=\"jive-contentBoxHeader\">\n          ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n      </div>\r\n      <div class=\"jive-contentBox\">\r\n          <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n          <tbody>\r\n              <tr valign=\"top\">\r\n                  <td width=\"1%\" nowrap class=\"c1\">\r\n                      ");
+      out.write("\n      </div>\n      <div class=\"jive-contentBox\">\n          <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n          <tbody>\n              <tr valign=\"top\">\n                  <td width=\"1%\" nowrap class=\"c1\">\n                      ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n                  </td>\r\n                  <td width=\"99%\">\r\n                      <input type=\"text\" size=\"30\" maxlength=\"100\" name=\"passPhrase\">\r\n                  </td>\r\n              </tr>\r\n              <tr valign=\"top\">\r\n                  <td width=\"1%\" nowrap class=\"c1\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td width=\"99%\">\n                      <input type=\"text\" size=\"30\" maxlength=\"100\" name=\"passPhrase\">\n                  </td>\n              </tr>\n              <tr valign=\"top\">\n                  <td width=\"1%\" nowrap class=\"c1\">\n                      ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n                  </td>\r\n                  <td width=\"99%\">\r\n                      <textarea name=\"private-key\" cols=\"60\" rows=\"5\" wrap=\"virtual\"></textarea>\r\n                  </td>\r\n              </tr>\r\n              <tr valign=\"top\">\r\n                  <td width=\"1%\" nowrap class=\"c1\">\r\n                      ");
+      out.write("\n                  </td>\n                  <td width=\"99%\">\n                      <textarea name=\"private-key\" cols=\"60\" rows=\"5\" wrap=\"virtual\"></textarea>\n                  </td>\n              </tr>\n              <tr valign=\"top\">\n                  <td width=\"1%\" nowrap class=\"c1\">\n                      ");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n                  </td>\r\n                  <td width=\"99%\">\r\n                      <textarea name=\"certificate\" cols=\"60\" rows=\"5\" wrap=\"virtual\"></textarea>\r\n                  </td>\r\n              </tr>\r\n          </tbody>\r\n          </table>\r\n      </div>\r\n      <input type=\"submit\" name=\"save\" value=\"");
+      out.write("\n                  </td>\n                  <td width=\"99%\">\n                      <textarea name=\"certificate\" cols=\"60\" rows=\"5\" wrap=\"virtual\"></textarea>\n                  </td>\n              </tr>\n          </tbody>\n          </table>\n      </div>\n      <input type=\"submit\" name=\"save\" value=\"");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\">\r\n  </form>\r\n  <!-- END 'Import Private Key and Certificate' -->\r\n\r\n  </body>\r\n</html>\r\n");
+      out.write("\">\n  </form>\n  <!-- END 'Import Private Key and Certificate' -->\n\n  </body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

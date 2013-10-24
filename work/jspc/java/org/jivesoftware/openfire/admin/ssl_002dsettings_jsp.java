@@ -56,7 +56,7 @@ public final class ssl_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -65,13 +65,12 @@ public final class ssl_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write('\r');
       out.write('\n');
   try { 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  // Get parameters:
     boolean update = request.getParameter("update") != null;
     boolean success = ParamUtils.getBooleanParameter(request, "success");
@@ -204,148 +203,148 @@ public final class ssl_002dsettings_jsp extends org.apache.jasper.runtime.HttpJs
     }
     selfSigned = ServerDialback.isEnabledForSelfSigned();
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"server-ssl\"/>\r\n<meta name=\"helpPage\" content=\"manage_security_certificates.html\"/>\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\n\t<!-- // code for window popups\r\n\tfunction showOrHide(whichLayer, mode)\r\n\t{\r\n\r\n\t\tif (mode == \"show\") {\r\n\t\t\tmode = \"\";\r\n\t\t}\r\n\t\telse {\r\n\t\t\tmode = \"none\";\r\n\t\t}\r\n\r\n\t\tif (document.getElementById)\r\n\t\t{\r\n\t\t\t// this is the way the standards work\r\n\t\t\tvar style2 = document.getElementById(whichLayer).style;\r\n\t\t\tstyle2.display = mode;\r\n\t\t}\r\n\t\telse if (document.all)\r\n\t\t{\r\n\t\t\t// this is the way old msie versions work\r\n\t\t\tvar style2 = document.all[whichLayer].style;\r\n\t\t\tstyle2.display = mode;\r\n\t\t}\r\n\t\telse if (document.layers)\r\n\t\t{\r\n\t\t\t// this is the way nn4 works\r\n\t\t\tvar style2 = document.layers[whichLayer].style;\r\n\t\t\tstyle2.display = mode;\r\n\t\t}\r\n\t}\r\n\t//-->\r\n</script>\r\n</head>\r\n<body>\r\n\r\n");
+      out.write("</title>\n<meta name=\"pageID\" content=\"server-ssl\"/>\n<meta name=\"helpPage\" content=\"manage_security_certificates.html\"/>\n<script language=\"JavaScript\" type=\"text/javascript\">\n\t<!-- // code for window popups\n\tfunction showOrHide(whichLayer, mode)\n\t{\n\n\t\tif (mode == \"show\") {\n\t\t\tmode = \"\";\n\t\t}\n\t\telse {\n\t\t\tmode = \"none\";\n\t\t}\n\n\t\tif (document.getElementById)\n\t\t{\n\t\t\t// this is the way the standards work\n\t\t\tvar style2 = document.getElementById(whichLayer).style;\n\t\t\tstyle2.display = mode;\n\t\t}\n\t\telse if (document.all)\n\t\t{\n\t\t\t// this is the way old msie versions work\n\t\t\tvar style2 = document.all[whichLayer].style;\n\t\t\tstyle2.display = mode;\n\t\t}\n\t\telse if (document.layers)\n\t\t{\n\t\t\t// this is the way nn4 works\n\t\t\tvar style2 = document.layers[whichLayer].style;\n\t\t\tstyle2.display = mode;\n\t\t}\n\t}\n\t//-->\n</script>\n</head>\n<body>\n\n");
   if (success) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } else if (ParamUtils.getBooleanParameter(request,"deletesuccess")) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n<p>\r\n");
+      out.write("\n\n<p>\n");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n\r\n<!-- BEGIN 'Client Connection Security' -->\r\n<form action=\"ssl-settings.jsp\" method=\"post\">\r\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\r\n\t<h4>");
+      out.write("\n</p>\n\n\n<!-- BEGIN 'Client Connection Security' -->\n<form action=\"ssl-settings.jsp\" method=\"post\">\n\t<div class=\"jive-contentBox\" style=\"-moz-border-radius: 3px;\">\n\t<h4>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"notreq\" id=\"rb02\" onclick=\"showOrHide('custom', 'hide')\"\r\n\t\t\t\t\t\t ");
+      out.write("</h4>\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"notreq\" id=\"rb02\" onclick=\"showOrHide('custom', 'hide')\"\n\t\t\t\t\t\t ");
       out.print( ("notreq".equals(clientSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb02\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb02\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"req\" id=\"rb01\" onclick=\"showOrHide('custom', 'hide')\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"req\" id=\"rb01\" onclick=\"showOrHide('custom', 'hide')\"\n\t\t\t\t\t ");
       out.print( ("req".equals(clientSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb01\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb01\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"custom\" id=\"rb03\" onclick=\"showOrHide('custom', 'show')\"\r\n\t\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"clientSecurityRequired\" value=\"custom\" id=\"rb03\" onclick=\"showOrHide('custom', 'show')\"\n\t\t\t\t\t\t ");
       out.print( ("custom".equals(clientSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb03\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb03\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"top\" id=\"custom\" ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"top\" id=\"custom\" ");
  if (!"custom".equals(clientSecurityRequired)) out.write("style=\"display:none\""); 
-      out.write(">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t");
+      out.write(">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"ssl\" value=\"notavailable\" id=\"rb04\" ");
+      out.write("\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"ssl\" value=\"notavailable\" id=\"rb04\" ");
       out.print( ("notavailable".equals(ssl) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb04\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb04\">");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"ssl\" value=\"available\" id=\"rb05\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"ssl\" value=\"available\" id=\"rb05\" ");
       out.print( ("available".equals(ssl) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb05\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb05\">");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t");
+      out.write("</label>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"notavailable\" id=\"rb06\" ");
+      out.write("\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"notavailable\" id=\"rb06\" ");
       out.print( ("notavailable".equals(tls) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb06\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb06\">");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"optional\" id=\"rb07\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"optional\" id=\"rb07\" ");
       out.print( ("optional".equals(tls) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb07\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb07\">");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"required\" id=\"rb08\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"tls\" value=\"required\" id=\"rb08\" ");
       out.print( ("required".equals(tls) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb08\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.clientSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb08\">");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t    </tbody>\r\n\t\t</table>\r\n\r\n\r\n<!-- END 'Client Connection Security' -->\r\n\r\n    <br/>\r\n    <br/>\r\n\r\n<!-- BEGIN 'Server Connection Security' -->\r\n\r\n    <h4>");
+      out.write("</label>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t    </tbody>\n\t\t</table>\n\n\n<!-- END 'Client Connection Security' -->\n\n    <br/>\n    <br/>\n\n<!-- BEGIN 'Server Connection Security' -->\n\n    <h4>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</h4>\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"notreq\" id=\"rb09\" onclick=\"showOrHide('server_custom', 'hide')\"\r\n\t\t\t\t\t\t ");
+      out.write("</h4>\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"notreq\" id=\"rb09\" onclick=\"showOrHide('server_custom', 'hide')\"\n\t\t\t\t\t\t ");
       out.print( ("notreq".equals(serverSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb09\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb09\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"req\" id=\"rb10\" onclick=\"showOrHide('server_custom', 'hide')\"\r\n\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"req\" id=\"rb10\" onclick=\"showOrHide('server_custom', 'hide')\"\n\t\t\t\t\t ");
       out.print( ("req".equals(serverSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb10\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb10\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"custom\" id=\"rb11\" onclick=\"showOrHide('server_custom', 'show')\"\r\n\t\t\t\t\t\t ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"middle\">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t<input type=\"radio\" name=\"serverSecurityRequired\" value=\"custom\" id=\"rb11\" onclick=\"showOrHide('server_custom', 'show')\"\n\t\t\t\t\t\t ");
       out.print( ("custom".equals(serverSecurityRequired) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb11\">\r\n\t\t\t\t\t\t<b>");
+      out.write(">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb11\">\n\t\t\t\t\t\t<b>");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
       out.write("</b> - ");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t</label>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr valign=\"top\" id=\"server_custom\" ");
+      out.write("\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr valign=\"top\" id=\"server_custom\" ");
  if (!"custom".equals(serverSecurityRequired)) out.write("style=\"display:none\""); 
-      out.write(">\r\n\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t</td>\r\n\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t");
+      out.write(">\n\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n\t\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"dialback\" value=\"notavailable\" id=\"rb12\" ");
+      out.write("\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"dialback\" value=\"notavailable\" id=\"rb12\" ");
       out.print( ("notavailable".equals(dialback) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb12\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb12\">");
       if (_jspx_meth_fmt_message_26(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"dialback\" value=\"available\" id=\"rb13\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"dialback\" value=\"available\" id=\"rb13\" ");
       out.print( ("available".equals(dialback) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb13\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb13\">");
       if (_jspx_meth_fmt_message_27(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr valign=\"top\">\r\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t\t\t\t");
+      out.write("</label>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr valign=\"top\">\n\t\t\t\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t\t\t\t");
       if (_jspx_meth_fmt_message_28(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"server_tls\" value=\"notavailable\" id=\"rb14\" ");
+      out.write("\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"server_tls\" value=\"notavailable\" id=\"rb14\" ");
       out.print( ("notavailable".equals(server_tls) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb14\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb14\">");
       if (_jspx_meth_fmt_message_29(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"server_tls\" value=\"optional\" id=\"rb15\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t\t<input type=\"radio\" name=\"server_tls\" value=\"optional\" id=\"rb15\" ");
       out.print( ("optional".equals(server_tls) ? "checked" : "") );
-      out.write("\r\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb15\">");
+      out.write("\n\t\t\t\t\t\t\t\t\t   onclick=\"this.form.serverSecurityRequired[2].checked=true;\">&nbsp;<label for=\"rb15\">");
       if (_jspx_meth_fmt_message_30(_jspx_page_context))
         return;
-      out.write("</label>&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t</td>\r\n\t\t\t\t</tr>\r\n                <tr valign=\"middle\">\r\n                    <td width=\"1%\" nowrap>\r\n                        <input type=\"checkbox\" name=\"selfSigned\" id=\"cb02\" ");
+      out.write("</label>&nbsp;&nbsp;\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n                <tr valign=\"middle\">\n                    <td width=\"1%\" nowrap>\n                        <input type=\"checkbox\" name=\"selfSigned\" id=\"cb02\" ");
       out.print( (selfSigned ? "checked" : "") );
-      out.write(">\r\n                    </td>\r\n                    <td width=\"99%\">\r\n                        <label for=\"rb02\">\r\n                        ");
+      out.write(">\n                    </td>\n                    <td width=\"99%\">\n                        <label for=\"rb02\">\n                        ");
       if (_jspx_meth_fmt_message_31(_jspx_page_context))
         return;
-      out.write("\r\n                        </label>\r\n                    </td>\r\n                </tr>\r\n\t\t    </tbody>\r\n\t\t</table>\r\n\t</div>\r\n\r\n    <input type=\"submit\" name=\"update\" value=\"");
+      out.write("\n                        </label>\n                    </td>\n                </tr>\n\t\t    </tbody>\n\t\t</table>\n\t</div>\n\n    <input type=\"submit\" name=\"update\" value=\"");
       if (_jspx_meth_fmt_message_32(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n<!-- BEGIN 'Server Connection Security' -->\r\n\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\">\n</form>\n<!-- BEGIN 'Server Connection Security' -->\n\n</body>\n</html>\n\n");
   } catch (Throwable t) { t.printStackTrace(); } 
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

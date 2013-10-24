@@ -48,7 +48,6 @@ public final class workgroup_002ddataform_jsp extends org.apache.jasper.runtime.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
 
     String wgID = ParamUtils.getParameter(request, "wgID");
@@ -142,88 +141,88 @@ public final class workgroup_002ddataform_jsp extends org.apache.jasper.runtime.
         description = "";
     }
 
-      out.write("\r\n\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n\n<html>\n    <head>\n        <title>");
       out.print( "Workgroup Web Form for "+wgID);
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-forms\"/>\r\n        <meta name=\"extraParams\" content=\"wgID=");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-forms\"/>\n        <meta name=\"extraParams\" content=\"wgID=");
       out.print( wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"create_a_form.html\"/>-->\r\n    </head>\r\n    <body>\r\n\r\n<p>\r\n Create your own customized HTML Form to collect information from the user.\r\n</p>\r\n\r\n<p>\r\n<b>Important:</b>&nbsp;Saving the form makes the form visible to customers.\r\n</p>\r\n");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"create_a_form.html\"/>-->\n    </head>\n    <body>\n\n<p>\n Create your own customized HTML Form to collect information from the user.\n</p>\n\n<p>\n<b>Important:</b>&nbsp;Saving the form makes the form visible to customers.\n</p>\n");
  if(save){ 
-      out.write("\r\n <div class=\"success\">\r\n        \t");
+      out.write("\n <div class=\"success\">\n        \t");
       out.print( message );
-      out.write("\r\n</div>\r\n");
+      out.write("\n</div>\n");
  } 
-      out.write("\r\n\r\n  <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" >\r\n     <form action=\"workgroup-dataform.jsp\" method=\"post\">\r\n    <tr>\r\n        <th>Order</th><th>Label</th><th>Name</th><th>Type</th><th>Required</th><th>Edit</th><th>Delete</th>\r\n    </tr>\r\n    <!-- Build table -->\r\n    ");
+      out.write("\n\n  <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" >\n     <form action=\"workgroup-dataform.jsp\" method=\"post\">\n    <tr>\n        <th>Order</th><th>Label</th><th>Name</th><th>Type</th><th>Required</th><th>Edit</th><th>Delete</th>\n    </tr>\n    <!-- Build table -->\n    ");
 
         int counter = 0;
         int size = workgroupForm.getFormElements().size();
         for(FormElement element : workgroupForm.getFormElements()){
             boolean isHidden = (element.getAnswerType() == WorkgroupForm.FormEnum.hidden);
     
-      out.write("\r\n\r\n\r\n        <tr valign=\"top\" ");
+      out.write("\n\n\n        <tr valign=\"top\" ");
       out.print( isHidden ? "bgcolor=\"#fffff\"" : "");
-      out.write(">\r\n        <td>\r\n        ");
+      out.write(">\n        <td>\n        ");
  if(counter == 0 && size > 1) { 
-      out.write("\r\n          <a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n          <a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID);
       out.write("&changePos=true&down=true&index=");
       out.print(counter);
-      out.write("\">\r\n          <img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n\r\n          <img src=\"images/blank.gif\" width=\"16\" height=\"16\">\r\n        ");
+      out.write("\">\n          <img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n\n          <img src=\"images/blank.gif\" width=\"16\" height=\"16\">\n        ");
  } 
-      out.write("\r\n\r\n\r\n        ");
+      out.write("\n\n\n        ");
  if(counter > 0 && counter < size - 1){ 
-      out.write("\r\n         <a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n         <a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID);
       out.write("&changePos=true&down=true&index=");
       out.print(counter);
-      out.write("\"><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n         <a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\"><img src=\"images/arrow_down.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n         <a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID);
       out.write("&changePos=true&up=true&index=");
       out.print(counter);
-      out.write("\">\r\n          <img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n        ");
+      out.write("\">\n          <img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n        ");
 }
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
  if(counter > 0 && counter ==  size - 1){ 
-      out.write("\r\n         <img src=\"images/blank.gif\" width=\"16\" height=\"16\">\r\n          <a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n         <img src=\"images/blank.gif\" width=\"16\" height=\"16\">\n          <a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID);
       out.write("&changePos=true&up=true&index=");
       out.print(counter);
-      out.write("\">\r\n            <img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\r\n        ");
+      out.write("\">\n            <img src=\"images/arrow_up.gif\" width=\"16\" height=\"16\" border=\"0\"></a>\n        ");
 }
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
  if(size == 1){
-      out.write("\r\n        &nbsp;\r\n        ");
+      out.write("\n        &nbsp;\n        ");
 }
-      out.write("\r\n\r\n\r\n        </td>\r\n           ");
+      out.write("\n\n\n        </td>\n           ");
  if(!isHidden){ 
-      out.write("\r\n            <td><b>");
+      out.write("\n            <td><b>");
       out.print( element.getLabel());
-      out.write("</b></td>\r\n            <td>");
+      out.write("</b></td>\n            <td>");
       out.print( element.getVariable());
-      out.write("</td>\r\n            <td>");
+      out.write("</td>\n            <td>");
       out.print( FormUtils.createAnswers(element) );
       out.write("<br><span class=\"jive-description\">");
       out.print( element.getDescription() != null ? element.getDescription() : "" );
-      out.write("</span></td>\r\n\r\n            ");
+      out.write("</span></td>\n\n            ");
 
                 if(element.isRequired()){
             
-      out.write("\r\n            <td><a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n            <td><a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID );
       out.write("&notRequired=false&index=");
       out.print(counter );
-      out.write("\">Required</a></td>\r\n            ");
+      out.write("\">Required</a></td>\n            ");
  } else { 
-      out.write("\r\n            <td><a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n            <td><a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID );
       out.write("&notRequired=true&index=");
       out.print(counter );
-      out.write("\">Not Required</a></td>\r\n            ");
+      out.write("\">Not Required</a></td>\n            ");
  }
-      out.write("\r\n\r\n            <td>\r\n                <a href=\"create-element.jsp?wgID=");
+      out.write("\n\n            <td>\n                <a href=\"create-element.jsp?wgID=");
       out.print( wgID);
       out.write("&edit=true&index=");
       out.print( counter);
-      out.write("\"><img src=\"images/edit-16x16.gif\" border=\"0\" /></a></td>\r\n           ");
+      out.write("\"><img src=\"images/edit-16x16.gif\" border=\"0\" /></a></td>\n           ");
  } else {
             if(element.getAnswerType() == WorkgroupForm.FormEnum.hidden){
             String variableName = element.getVariable();
@@ -241,24 +240,24 @@ public final class workgroup_002ddataform_jsp extends org.apache.jasper.runtime.
             int indexOf = variableName.indexOf("_");
             String varName = variableName.substring(indexOf + 1);
             
-      out.write("\r\n              <td colspan=\"5\" align=\"center\">{Hidden variable - Type: ");
+      out.write("\n              <td colspan=\"5\" align=\"center\">{Hidden variable - Type: ");
       out.print(type);
       out.write(". Checks for variable:");
       out.print( varName);
-      out.write("}</td>\r\n\r\n           ");
+      out.write("}</td>\n\n           ");
  }}  
-      out.write("\r\n\r\n            <td> <a href=\"workgroup-dataform.jsp?wgID=");
+      out.write("\n\n            <td> <a href=\"workgroup-dataform.jsp?wgID=");
       out.print(wgID);
       out.write("&delete=true&index=");
       out.print(counter);
-      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\r\n        </tr>\r\n\r\n        ");
+      out.write("\"><img src=\"images/delete-16x16.gif\" border=\"0\"></a></td>\n        </tr>\n\n        ");
  counter++; }
-      out.write("\r\n\r\n    <tr>\r\n\r\n    <td colspan=\"1\"><input type=\"button\" name=\"create\" value=\"Add Field\" onclick=\"window.location.href='create-element.jsp?wgID=");
+      out.write("\n\n    <tr>\n\n    <td colspan=\"1\"><input type=\"button\" name=\"create\" value=\"Add Field\" onclick=\"window.location.href='create-element.jsp?wgID=");
       out.print( wgID);
-      out.write("'\"></td>\r\n        <td colspan=\"6\"><input type=\"submit\" name=\"save\" value=\"Save Changes\"></td>\r\n\r\n        <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("'\"></td>\n        <td colspan=\"6\"><input type=\"submit\" name=\"save\" value=\"Save Changes\"></td>\n\n        <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID );
-      out.write("\">\r\n    </tr>\r\n          </form>\r\n   </table>\r\n    <br/><br/>\r\n    <div style=\"width:600px\">\r\n    <p>Spark Fastpath has assigned certain functionality to certain form element names. Please review before building your list.\r\n    For a more customized approach via code, you may want to implement your own MetadataProvider. Please see the Web Chat Client api\r\n    for more information.\r\n    </p>\r\n</div>\r\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\r\n    <tr>\r\n    <th nowrap>Form Name</th><th>Description</th>\r\n    </tr>\r\n    <tr>\r\n    <td>username</td><td>Use this variable to allow a user to specify their own user name to use for this chat session.</td>\r\n    </tr>\r\n    <tr>\r\n    <td>password</td><td>Use this variable in conjunction with 'username' to allow a user to login to their account.</td>\r\n    </tr>\r\n    <tr>\r\n    <td>email</td><td>Use this form element name to allow a user to specify their email address.</td>\r\n    </tr>\r\n     <tr>\r\n    <td>question</td><td>Use this form element name to set the question a user asks before entering a queue.</td>\r\n");
-      out.write("    </tr>\r\n     <tr>\r\n    <td>agent</td><td>Use this form element name to specify a particular agent to initially route to in the workgroup. If the agent is not available, the failover is to route to others in the workgroup.</td>\r\n    </tr>\r\n    </table>\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n    </tr>\n          </form>\n   </table>\n    <br/><br/>\n    <div style=\"width:600px\">\n    <p>Spark Fastpath has assigned certain functionality to certain form element names. Please review before building your list.\n    For a more customized approach via code, you may want to implement your own MetadataProvider. Please see the Web Chat Client api\n    for more information.\n    </p>\n</div>\n    <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\n    <tr>\n    <th nowrap>Form Name</th><th>Description</th>\n    </tr>\n    <tr>\n    <td>username</td><td>Use this variable to allow a user to specify their own user name to use for this chat session.</td>\n    </tr>\n    <tr>\n    <td>password</td><td>Use this variable in conjunction with 'username' to allow a user to login to their account.</td>\n    </tr>\n    <tr>\n    <td>email</td><td>Use this form element name to allow a user to specify their email address.</td>\n    </tr>\n     <tr>\n    <td>question</td><td>Use this form element name to set the question a user asks before entering a queue.</td>\n");
+      out.write("    </tr>\n     <tr>\n    <td>agent</td><td>Use this form element name to specify a particular agent to initially route to in the workgroup. If the agent is not available, the failover is to route to others in the workgroup.</td>\n    </tr>\n    </table>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

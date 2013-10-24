@@ -450,4 +450,20 @@ public class NIOConnection implements Connection {
 				.onUnmappableCharacter(CodingErrorAction.REPORT);
         }
     }
+    
+    
+    /************************ EXI code ************************/ 
+     
+    
+    /**
+     * Adds the EXI compression method
+     */
+    /*
+    public void startEXICompression() {
+    	IoFilterChain chain = ioSession.getFilterChain();
+        EXIFilter exiFilter = (EXIFilter) chain.getEntry(EXIFilter.filterName);
+        exiFilter.registerExiUser(ioSession);
+        
+    }
+*/
 }

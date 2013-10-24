@@ -62,10 +62,10 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"pageID\" content=\"spark-version\"/>\r\n    <style type=\"text/css\">\r\n        @import \"style/style.css\";\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("</title>\n    <meta name=\"pageID\" content=\"spark-version\"/>\n    <style type=\"text/css\">\n        @import \"style/style.css\";\n    </style>\n</head>\n\n<body>\n\n");
 
     String submitted = ParamUtils.getParameter(request, "submit");
 
@@ -167,7 +167,9 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
 
 
 
-      out.write("\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       org.jivesoftware.admin.AdminPageBean pageinfo = null;
       synchronized (request) {
         pageinfo = (org.jivesoftware.admin.AdminPageBean) _jspx_page_context.getAttribute("pageinfo", PageContext.REQUEST_SCOPE);
@@ -176,38 +178,40 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
           _jspx_page_context.setAttribute("pageinfo", pageinfo, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n<br/><br/>\r\n\r\n<form name=\"f\" action=\"spark-form.jsp\" enctype=\"multipart/form-data\" method=\"post\">\r\n    <table>\r\n        <tr>\r\n            <td colspan=\"3\">");
+      out.write("\n<br/><br/>\n\n<form name=\"f\" action=\"spark-form.jsp\" enctype=\"multipart/form-data\" method=\"post\">\n    <table>\n        <tr>\n            <td colspan=\"3\">");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
       out.write("<tt>");
       out.print( buildDir.getAbsolutePath());
-      out.write("</tt></td>\r\n        </tr>\r\n\r\n        <tr>\r\n            <td><tt>");
+      out.write("</tt></td>\n        </tr>\n\n        <tr>\n            <td><tt>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</tt></td>\r\n            <td><input type=\"file\" name=\"file\" size=\"40\" /></td>\r\n            <td><input type=\"submit\" name=\"upload\" value=\"");
+      out.write("</tt></td>\n            <td><input type=\"file\" name=\"file\" size=\"40\" /></td>\n            <td><input type=\"submit\" name=\"upload\" value=\"");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\" /></td>\r\n        </tr>\r\n\r\n    </table>\r\n</form>\r\n\r\n");
+      out.write("\" /></td>\n        </tr>\n\n    </table>\n</form>\n\n");
  if(updated){
-      out.write("\r\n<div class=\"success\">\r\n     ");
+      out.write("\n<div class=\"success\">\n     ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n    </div><br>\r\n");
+      out.write("\n    </div><br>\n");
  } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if(uploaded){ 
-      out.write("\r\n<div class=\"success\">\r\n    ");
+      out.write("\n<div class=\"success\">\n    ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n</div><br/>\r\n");
+      out.write("\n</div><br/>\n");
  } 
-      out.write("\r\n\r\n<form action=\"spark-form.jsp\" method=\"GET\">\r\n<table><tr><td><img src=\"images/win.gif\" alt=\"\"></td><td><b>");
+      out.write("\n\n<form action=\"spark-form.jsp\" method=\"GET\">\n<table><tr><td><img src=\"images/win.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</b></td></tr></table>\r\n\r\n    ");
+      out.write("</b></td></tr></table>\n\n    ");
 
         File[] list = buildDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
@@ -216,16 +220,16 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
         });
         if (list != null && list.length > 0) {
     
-      out.write("\r\n\r\n    <div class=\"jive-table\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n            <thead>\r\n                <tr>\r\n                    <th nowrap>");
+      out.write("\n\n    <div class=\"jive-table\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n            <thead>\n                <tr>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</th>\r\n                </tr>\r\n\r\n            </thead>\r\n            <tbody>\r\n                ");
+      out.write("</th>\n                </tr>\n\n            </thead>\n            <tbody>\n                ");
 
                     for (File clientFile : list) {
                         Date buildDate = new Date(clientFile.lastModified());
@@ -235,30 +239,30 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
                             selected = "checked";
                         }
                 
-      out.write("\r\n                <tr>\r\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"windowsClient\"\r\n                                                         value=\"");
+      out.write("\n                <tr>\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"windowsClient\"\n                                                         value=\"");
       out.print( clientFile.getName() );
       out.write('"');
       out.write(' ');
       out.print( selected );
-      out.write("></td>\r\n                    <td width=\"1%\"><b>");
+      out.write("></td>\n                    <td width=\"1%\"><b>");
       out.print( clientFile.getName());
-      out.write("\r\n                    </b></td>\r\n                    <td>");
+      out.write("\n                    </b></td>\n                    <td>");
       out.print(date );
-      out.write("\r\n                    </td>\r\n\r\n                </tr>\r\n                ");
+      out.write("\n                    </td>\n\n                </tr>\n                ");
 
                     }
                 
-      out.write("\r\n\r\n            </tbody>\r\n\r\n        </table>\r\n    </div>\r\n\r\n    ");
+      out.write("\n\n            </tbody>\n\n        </table>\n    </div>\n\n    ");
  } else { 
-      out.write("\r\n\r\n    <ul><i>");
+      out.write("\n\n    <ul><i>");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("</i></ul>\r\n    ");
+      out.write("</i></ul>\n    ");
  } 
-      out.write("\r\n\r\n    <br/>\r\n<table><tr><td><img src=\"images/mac.gif\" alt=\"\"></td><td><b>");
+      out.write("\n\n    <br/>\n<table><tr><td><img src=\"images/mac.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("</b></td></tr></table>\r\n\r\n    ");
+      out.write("</b></td></tr></table>\n\n    ");
 
         list = buildDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
@@ -267,16 +271,16 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
         });
         if (list != null && list.length > 0) {
     
-      out.write("\r\n    <div class=\"jive-table\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                <thead>\r\n                <tr>\r\n                    <th nowrap>");
+      out.write("\n    <div class=\"jive-table\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                <thead>\n                <tr>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("</th>\r\n                </tr>\r\n\r\n            </thead>\r\n            <tbody>\r\n                ");
+      out.write("</th>\n                </tr>\n\n            </thead>\n            <tbody>\n                ");
 
                     for (File clientFile : list) {
                         Date buildDate = new Date(clientFile.lastModified());
@@ -286,30 +290,30 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
                             selected = "checked";
                         }
                 
-      out.write("\r\n                <tr>\r\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"macClient\"\r\n                                                         value=\"");
+      out.write("\n                <tr>\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"macClient\"\n                                                         value=\"");
       out.print( clientFile.getName());
       out.write('"');
       out.write(' ');
       out.print( selected);
-      out.write("></td>\r\n                    <td width=\"1%\"><b>");
+      out.write("></td>\n                    <td width=\"1%\"><b>");
       out.print( clientFile.getName());
-      out.write("\r\n                    </b></td>\r\n                    <td>");
+      out.write("\n                    </b></td>\n                    <td>");
       out.print(date );
-      out.write("\r\n                    </td>\r\n\r\n                </tr>\r\n                ");
+      out.write("\n                    </td>\n\n                </tr>\n                ");
 
                     }
                 
-      out.write("\r\n\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    ");
+      out.write("\n\n            </tbody>\n        </table>\n    </div>\n    ");
  } else { 
-      out.write("\r\n\r\n    <ul><i>");
+      out.write("\n\n    <ul><i>");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("</i></ul>\r\n    ");
+      out.write("</i></ul>\n    ");
  } 
-      out.write("\r\n<br/>\r\n<table><tr><td><img src=\"images/zip.gif\" alt=\"\"></td><td><b>");
+      out.write("\n<br/>\n<table><tr><td><img src=\"images/zip.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("</b></td></tr></table>\r\n     ");
+      out.write("</b></td></tr></table>\n     ");
 
         list = buildDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
@@ -318,16 +322,16 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
         });
         if (list != null && list.length > 0) {
     
-      out.write("\r\n    <div class=\"jive-table\">\r\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n                <thead>\r\n                <tr>\r\n                    <th nowrap>");
+      out.write("\n    <div class=\"jive-table\">\n        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                <thead>\n                <tr>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</th>\r\n                    <th nowrap>");
+      out.write("</th>\n                    <th nowrap>");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</th>\r\n                </tr>\r\n\r\n            </thead>\r\n            <tbody>\r\n                ");
+      out.write("</th>\n                </tr>\n\n            </thead>\n            <tbody>\n                ");
 
                     for (File clientFile : list) {
                         Date buildDate = new Date(clientFile.lastModified());
@@ -337,38 +341,38 @@ public final class spark_002dform_jsp extends org.apache.jasper.runtime.HttpJspB
                             selected = "checked";
                         }
                 
-      out.write("\r\n                <tr>\r\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"linuxClient\"\r\n                                                         value=\"");
+      out.write("\n                <tr>\n                    <td width=\"1%\" align=\"center\"><input type=\"radio\" name=\"linuxClient\"\n                                                         value=\"");
       out.print( clientFile.getName());
       out.write('"');
       out.write(' ');
       out.print( selected);
-      out.write("></td>\r\n                    <td width=\"1%\"><b>");
+      out.write("></td>\n                    <td width=\"1%\"><b>");
       out.print( clientFile.getName());
-      out.write("\r\n                    </b></td>\r\n                    <td>");
+      out.write("\n                    </b></td>\n                    <td>");
       out.print(date );
-      out.write("\r\n                    </td>\r\n\r\n                </tr>\r\n                ");
+      out.write("\n                    </td>\n\n                </tr>\n                ");
 
                     }
                 
-      out.write("\r\n\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    ");
+      out.write("\n\n            </tbody>\n        </table>\n    </div>\n    ");
  } else { 
-      out.write("\r\n\r\n    <ul><i>");
+      out.write("\n\n    <ul><i>");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</i></ul>\r\n    ");
+      out.write("</i></ul>\n    ");
  } 
-      out.write("\r\n\r\n\r\n<br/><br/>\r\n    <fieldset>\r\n    <legend>");
+      out.write("\n\n\n<br/><br/>\n    <fieldset>\n    <legend>");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</legend>\r\n\r\n    <div>\r\n    <p>\r\n    ");
+      out.write("</legend>\n\n    <div>\n    <p>\n    ");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n                <textarea name=\"optionalMessage\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
+      out.write("\n    </p>\n    <table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n    <tbody>\n        <tr>\n            <td>\n                <textarea name=\"optionalMessage\" cols=\"40\" rows=\"3\" wrap=\"virtual\">");
       out.print( optionalMessage);
-      out.write("</textarea>\r\n\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n    </table>\r\n    </div>\r\n</fieldset>\r\n\r\n<br/><br/>\r\n\r\n\r\n    <input type=\"submit\" name=\"submit\" value=\"");
+      out.write("</textarea>\n\n            </td>\n        </tr>\n    </tbody>\n    </table>\n    </div>\n</fieldset>\n\n<br/><br/>\n\n\n    <input type=\"submit\" name=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\">\r\n</form>\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\">\n</form>\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -98,7 +98,7 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     // Get handle on the Monitoring plugin
     MonitoringPlugin plugin = (MonitoringPlugin) XMPPServer.getInstance().getPluginManager().getPlugin(
@@ -230,98 +230,99 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
 
     boolean isArchiveEnabled = conversationManager.isArchivingEnabled();
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"pageID\" content=\"archive-search\"/>\r\n<script src=\"/js/prototype.js\" type=\"text/javascript\"></script>\r\n<script src=\"/js/scriptaculous.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\r\n<script src=\"dwr/interface/conversations.js\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domLib.js\"></script>\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domTT.js\"></script>\r\n\r\n<style type=\"text/css\">@import url( /js/jscalendar/calendar-win2k-cold-1.css );</style>\r\n<script type=\"text/javascript\" src=\"/js/jscalendar/calendar.js\"></script>\r\n<script type=\"text/javascript\" src=\"/js/jscalendar/i18n.jsp\"></script>\r\n<script type=\"text/javascript\" src=\"/js/jscalendar/calendar-setup.js\"></script>\r\n\r\n<script type=\"text/javascript\">\r\n    function hover(oRow) {\r\n        oRow.style.background = \"#A6CAF0\";\r\n        oRow.style.cursor = \"pointer\";\r\n");
-      out.write("    }\r\n\r\n    function noHover(oRow) {\r\n        oRow.style.background = \"white\";\r\n    }\r\n\r\n    function viewConversation(conversationID) {\r\n        window.frames['view'].location.href = \"conversation-viewer.jsp?conversationID=\" + conversationID;\r\n    }\r\n\r\n    function submitFormAgain(start, range){\r\n        document.f.start.value = start;\r\n        document.f.range.value = range;\r\n        document.f.parseRange.value = \"true\";\r\n        document.f.submit();\r\n    }\r\n</script>\r\n<style type=\"text/css\">\r\n    .small-label {\r\n        font-size: 11px;\r\n        font-weight: bold;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .small-label-no-bold {\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n\r\n    .small-label-with-padding {\r\n        font-size: 12px;\r\n        font-weight: bold;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n\r\n    .small-text {\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n        line-height: 11px;\r\n    }\r\n");
-      out.write("\r\n    .very-small-label {\r\n        font-size: 10px;\r\n        font-weight: bold;\r\n        font-family: Verdana, Arial, sans-serif;\r\n        padding-right:5px;\r\n    }\r\n\r\n\r\n    .stat {\r\n        margin: 0px 0px 8px 0px;\r\n        border: 1px solid #cccccc;\r\n        -moz-border-radius: 3px;\r\n    }\r\n\r\n    .stat td table {\r\n        margin: 5px 10px 5px 10px;\r\n    }\r\n    .stat div.verticalrule {\r\n        display: block;\r\n        width: 1px;\r\n        height: 110px;\r\n        background-color: #cccccc;\r\n        overflow: hidden;\r\n        margin-left: 3px;\r\n        margin-right: 3px;\r\n    }\r\n\r\n    .conversation-body {\r\n        color: black;\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .conversation-label1 {\r\n        color: blue;\r\n        font-size: 10px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .conversation-label2 {\r\n        color: red;\r\n        font-size: 10px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .conversation-label3 {\r\n        color: orchid;\r\n");
-      out.write("        font-size: 10px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .conversation-label4 {\r\n        color: black;\r\n        font-size: 10px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n    }\r\n\r\n    .conversation-table {\r\n        font-family: Verdana, Arial, sans-serif;\r\n        font-size: 11px;\r\n    }\r\n    .conversation-table td {\r\n        font-size: 11px;\r\n        padding: 5px 5px 5px 5px;\r\n    }\r\n\r\n    .light-gray-border {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n        border-width: 1px 1px 1px 1px;\r\n    }\r\n\r\n    .light-gray-border-bottom {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n        border-width: 0px 0px 1px 0px;\r\n    }\r\n\r\n    .small-description {\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n        color: #666;\r\n    }\r\n\r\n   .description {\r\n        font-size: 12px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n        color: #666;\r\n    }\r\n\r\n\r\n      .pagination {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n");
-      out.write("        border-width: 0px 0px 1px 0px;\r\n        font-size: 10px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n\r\n    }\r\n\r\n    .content {\r\n        border-color: #bbb;\r\n        border-style: solid;\r\n        border-width: 0px 0px 1px 0px;\r\n    }\r\n\r\n    /* Default DOM Tooltip Style */\r\n    div.domTT {\r\n        border: 1px solid #bbb;\r\n        background-color: #FFFBE2;\r\n        font-family: Arial, Helvetica sans-serif;\r\n        font-size: 9px;\r\n        padding: 5px;\r\n    }\r\n\r\n    div.domTT .caption {\r\n        font-family: serif;\r\n        font-size: 12px;\r\n        font-weight: bold;\r\n        padding: 1px 2px;\r\n        color: #FFFFFF;\r\n    }\r\n\r\n    div.domTT .contents {\r\n        font-size: 12px;\r\n        font-family: sans-serif;\r\n        padding: 3px 2px;\r\n    }\r\n\r\n    .textfield {\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n        height: 20px;\r\n        background: #efefef;\r\n    }\r\n\r\n    .keyword-field {\r\n        font-size: 11px;\r\n        font-family: Verdana, Arial, sans-serif;\r\n");
-      out.write("        height: 20px;\r\n    }\r\n\r\n    #searchResults {\r\n        margin: 10px 0px 10px 0px;\r\n    }\r\n\r\n    #searchResults h3 {\r\n        font-size: 14px;\r\n        padding: 0px;\r\n        margin: 0px 0px 2px 0px;\r\n        color: #555555;\r\n    }\r\n\r\n    #searchResults p.resultDescription {\r\n        margin: 0px 0px 12px 0px;\r\n    }\r\n</style>\r\n\r\n<style type=\"text/css\" title=\"setupStyle\" media=\"screen\">\r\n\t@import \"../../style/lightbox.css\";\r\n</style>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\" src=\"../../js/lightbox.js\"></script>\r\n\r\n<script type=\"text/javascript\">\r\n    var selectedConversation;\r\n\r\n    function showConversation(conv) {\r\n        selectedConversation = conv;\r\n        conversations.getConversationInfo(showConv, conv, true);\r\n    }\r\n\r\n    function showConv(results) {\r\n        $('chat-viewer-empty').style.display = 'none';\r\n        $('chat-viewer').style.display = '';\r\n        if (results.allParticipants != null) {\r\n            $('con-participant1').innerHTML = results.allParticipants.length;\r\n            $('con-participant2').innerHTML = '(<a href=\"#\" onclick=\"showOccupants(' + results.conversationID + ', 0);return false;\">view</a>)';\r\n");
-      out.write("        }\r\n        else {\r\n            $('con-participant1').innerHTML = results.participant1 + ',';\r\n            $('con-participant2').innerHTML = results.participant2;\r\n        }\r\n        $('con-chatTime').innerHTML = results.date;\r\n        $('conversation-body').innerHTML = results.body;\r\n        $('con-noMessages').innerHTML = results.messageCount;\r\n        $('con-duration').innerHTML = results.duration;\r\n        ");
+      out.write("</title>\n<meta name=\"pageID\" content=\"archive-search\"/>\n<script src=\"/js/prototype.js\" type=\"text/javascript\"></script>\n<script src=\"/js/scriptaculous.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/engine.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/util.js\" type=\"text/javascript\"></script>\n<script src=\"dwr/interface/conversations.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domLib.js\"></script>\n<script type=\"text/javascript\" language=\"javascript\" src=\"scripts/tooltips/domTT.js\"></script>\n\n<style type=\"text/css\">@import url( /js/jscalendar/calendar-win2k-cold-1.css );</style>\n<script type=\"text/javascript\" src=\"/js/jscalendar/calendar.js\"></script>\n<script type=\"text/javascript\" src=\"/js/jscalendar/i18n.jsp\"></script>\n<script type=\"text/javascript\" src=\"/js/jscalendar/calendar-setup.js\"></script>\n\n<script type=\"text/javascript\">\n    function hover(oRow) {\n        oRow.style.background = \"#A6CAF0\";\n        oRow.style.cursor = \"pointer\";\n");
+      out.write("    }\n\n    function noHover(oRow) {\n        oRow.style.background = \"white\";\n    }\n\n    function viewConversation(conversationID) {\n        window.frames['view'].location.href = \"conversation-viewer.jsp?conversationID=\" + conversationID;\n    }\n\n    function submitFormAgain(start, range){\n        document.f.start.value = start;\n        document.f.range.value = range;\n        document.f.parseRange.value = \"true\";\n        document.f.submit();\n    }\n</script>\n<style type=\"text/css\">\n    .small-label {\n        font-size: 11px;\n        font-weight: bold;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n    .small-label-no-bold {\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n\n    .small-label-with-padding {\n        font-size: 12px;\n        font-weight: bold;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n\n    .small-text {\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n        line-height: 11px;\n    }\n\n    .very-small-label {\n        font-size: 10px;\n");
+      out.write("        font-weight: bold;\n        font-family: Verdana, Arial, sans-serif;\n        padding-right:5px;\n    }\n\n\n    .stat {\n        margin: 0px 0px 8px 0px;\n        border: 1px solid #cccccc;\n        -moz-border-radius: 3px;\n    }\n\n    .stat td table {\n        margin: 5px 10px 5px 10px;\n    }\n    .stat div.verticalrule {\n        display: block;\n        width: 1px;\n        height: 110px;\n        background-color: #cccccc;\n        overflow: hidden;\n        margin-left: 3px;\n        margin-right: 3px;\n    }\n\n    .conversation-body {\n        color: black;\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n    .conversation-label1 {\n        color: blue;\n        font-size: 10px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n    .conversation-label2 {\n        color: red;\n        font-size: 10px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n    .conversation-label3 {\n        color: orchid;\n        font-size: 10px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n");
+      out.write("\n    .conversation-label4 {\n        color: black;\n        font-size: 10px;\n        font-family: Verdana, Arial, sans-serif;\n    }\n\n    .conversation-table {\n        font-family: Verdana, Arial, sans-serif;\n        font-size: 11px;\n    }\n    .conversation-table td {\n        font-size: 11px;\n        padding: 5px 5px 5px 5px;\n    }\n\n    .light-gray-border {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 1px 1px 1px 1px;\n    }\n\n    .light-gray-border-bottom {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 0px 0px 1px 0px;\n    }\n\n    .small-description {\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n        color: #666;\n    }\n\n   .description {\n        font-size: 12px;\n        font-family: Verdana, Arial, sans-serif;\n        color: #666;\n    }\n\n\n      .pagination {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 0px 0px 1px 0px;\n        font-size: 10px;\n        font-family: Verdana, Arial, sans-serif;\n");
+      out.write("\n    }\n\n    .content {\n        border-color: #bbb;\n        border-style: solid;\n        border-width: 0px 0px 1px 0px;\n    }\n\n    /* Default DOM Tooltip Style */\n    div.domTT {\n        border: 1px solid #bbb;\n        background-color: #FFFBE2;\n        font-family: Arial, Helvetica sans-serif;\n        font-size: 9px;\n        padding: 5px;\n    }\n\n    div.domTT .caption {\n        font-family: serif;\n        font-size: 12px;\n        font-weight: bold;\n        padding: 1px 2px;\n        color: #FFFFFF;\n    }\n\n    div.domTT .contents {\n        font-size: 12px;\n        font-family: sans-serif;\n        padding: 3px 2px;\n    }\n\n    .textfield {\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n        height: 20px;\n        background: #efefef;\n    }\n\n    .keyword-field {\n        font-size: 11px;\n        font-family: Verdana, Arial, sans-serif;\n        height: 20px;\n    }\n\n    #searchResults {\n        margin: 10px 0px 10px 0px;\n    }\n\n    #searchResults h3 {\n        font-size: 14px;\n        padding: 0px;\n");
+      out.write("        margin: 0px 0px 2px 0px;\n        color: #555555;\n    }\n\n    #searchResults p.resultDescription {\n        margin: 0px 0px 12px 0px;\n    }\n</style>\n\n<style type=\"text/css\" title=\"setupStyle\" media=\"screen\">\n\t@import \"../../style/lightbox.css\";\n</style>\n\n<script language=\"JavaScript\" type=\"text/javascript\" src=\"../../js/lightbox.js\"></script>\n\n<script type=\"text/javascript\">\n    var selectedConversation;\n\n    function showConversation(conv) {\n        selectedConversation = conv;\n        conversations.getConversationInfo(showConv, conv, true);\n    }\n\n    function showConv(results) {\n        $('chat-viewer-empty').style.display = 'none';\n        $('chat-viewer').style.display = '';\n        if (results.allParticipants != null) {\n            $('con-participant1').innerHTML = results.allParticipants.length;\n            $('con-participant2').innerHTML = '(<a href=\"#\" onclick=\"showOccupants(' + results.conversationID + ', 0);return false;\">view</a>)';\n        }\n        else {\n            $('con-participant1').innerHTML = results.participant1 + ',';\n");
+      out.write("            $('con-participant2').innerHTML = results.participant2;\n        }\n        $('con-chatTime').innerHTML = results.date;\n        $('conversation-body').innerHTML = results.body;\n        $('con-noMessages').innerHTML = results.messageCount;\n        $('con-duration').innerHTML = results.duration;\n        ");
  if (conversationManager.isArchivingEnabled()) { 
-      out.write("\r\n            $('con-chat-link').innerHTML = '<a href=\"conversation?conversationID='+selectedConversation+'\" class=\"very-small-label\"  style=\"text-decoration:none\" target=_blank>View PDF</a>';\r\n        ");
+      out.write("\n            $('con-chat-link').innerHTML = '<a href=\"conversation?conversationID='+selectedConversation+'\" class=\"very-small-label\"  style=\"text-decoration:none\" target=_blank>View PDF</a>';\n        ");
  } else { 
-      out.write("\r\n            Element.hide('pdf-image');\r\n        ");
+      out.write("\n            Element.hide('pdf-image');\n        ");
  } 
-      out.write("\r\n    }\r\n\r\n    function showOccupants(conversationID, start) {\r\n        var aref = document.getElementById('lbmessage');\r\n        aref.href = 'archive-conversation-participants.jsp?conversationID=' + conversationID + '&start=' + start;\r\n        var lbCont = document.getElementById('lbContent');\r\n        if (lbCont != null) {\r\n            document.getElementById('lightbox').removeChild(lbCont);\r\n        }\r\n        lb = new lightbox(aref);\r\n        lb.activate();\r\n    }\r\n\r\n    function grayOut(ele) {\r\n        if (ele.value == 'Any') {\r\n            ele.style.backgroundColor = \"#FFFBE2\";\r\n        }\r\n        else {\r\n            ele.style.backgroundColor = \"#ffffff\";\r\n        }\r\n    }\r\n</script>\r\n<script type=\"text/javascript\" src=\"/js/behaviour.js\"></script>\r\n<script type=\"text/javascript\">\r\n    // Add a nice little rollover effect to any row in a jive-table object. This will help\r\n    // visually link left and right columns.\r\n\r\n    var selectedElement;\r\n\r\n    var myrules = {\r\n        '.conversation-table TR' : function(el) {\r\n");
-      out.write("            var backgroundColor;\r\n            var selected = false;\r\n            el.onmouseover = function() {\r\n\r\n                if (selectedElement != null && selectedElement == this) {\r\n                    return;\r\n                }\r\n                backgroundColor = this.style.backgroundColor;\r\n                this.style.backgroundColor = '#dedede';\r\n                this.style.cursor = 'pointer';\r\n            }\r\n\r\n            el.onmouseout = function() {\r\n                if (selectedElement != this) {\r\n                    this.style.backgroundColor = backgroundColor;\r\n                }\r\n            }\r\n\r\n            el.onmousedown = function() {\r\n                this.style.backgroundColor = '#fffBc2';\r\n                if (selectedElement != null) {\r\n                    selectedElement.style.backgroundColor = backgroundColor;\r\n                }\r\n                selectedElement = this;\r\n            }\r\n        }\r\n    };\r\n\r\n    var textfieldRules = {\r\n        '.textfield' : function(el) {\r\n            el.onblur = function() {\r\n");
-      out.write("                var va = el.value;\r\n                if (va.length == 0 || va == 'Any') {\r\n                    this.style.backgroundColor = '#efefef';\r\n                    el.value = \"");
+      out.write("\n    }\n\n    function showOccupants(conversationID, start) {\n        var aref = document.getElementById('lbmessage');\n        aref.href = 'archive-conversation-participants.jsp?conversationID=' + conversationID + '&start=' + start;\n        var lbCont = document.getElementById('lbContent');\n        if (lbCont != null) {\n            document.getElementById('lightbox').removeChild(lbCont);\n        }\n        lb = new lightbox(aref);\n        lb.activate();\n    }\n\n    function grayOut(ele) {\n        if (ele.value == 'Any') {\n            ele.style.backgroundColor = \"#FFFBE2\";\n        }\n        else {\n            ele.style.backgroundColor = \"#ffffff\";\n        }\n    }\n</script>\n<script type=\"text/javascript\" src=\"/js/behaviour.js\"></script>\n<script type=\"text/javascript\">\n    // Add a nice little rollover effect to any row in a jive-table object. This will help\n    // visually link left and right columns.\n\n    var selectedElement;\n\n    var myrules = {\n        '.conversation-table TR' : function(el) {\n            var backgroundColor;\n");
+      out.write("            var selected = false;\n            el.onmouseover = function() {\n\n                if (selectedElement != null && selectedElement == this) {\n                    return;\n                }\n                backgroundColor = this.style.backgroundColor;\n                this.style.backgroundColor = '#dedede';\n                this.style.cursor = 'pointer';\n            }\n\n            el.onmouseout = function() {\n                if (selectedElement != this) {\n                    this.style.backgroundColor = backgroundColor;\n                }\n            }\n\n            el.onmousedown = function() {\n                this.style.backgroundColor = '#fffBc2';\n                if (selectedElement != null) {\n                    selectedElement.style.backgroundColor = backgroundColor;\n                }\n                selectedElement = this;\n            }\n        }\n    };\n\n    var textfieldRules = {\n        '.textfield' : function(el) {\n            el.onblur = function() {\n                var va = el.value;\n                if (va.length == 0 || va == 'Any') {\n");
+      out.write("                    this.style.backgroundColor = '#efefef';\n                    el.value = \"");
       out.print( anyText);
-      out.write("\";\r\n                }\r\n                else {\r\n                    this.style.backgroundColor = '#ffffff';\r\n                }\r\n            }\r\n\r\n            el.onfocus = function() {\r\n                var va = el.value;\r\n                if (va == 'Any') {\r\n                    this.style.backgroundColor = '#ffffff';\r\n                    el.value = \"\";\r\n                }\r\n            }\r\n        }\r\n    };\r\n\r\n    Behaviour.register(textfieldRules);\r\n    Behaviour.register(myrules);\r\n</script>\r\n<style type=\"text/css\">\r\n\t@import \"style/style.css\";\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<a href=\"archive-conversation-participants.jsp?conversationID=\" id=\"lbmessage\" title=\"");
+      out.write("\";\n                }\n                else {\n                    this.style.backgroundColor = '#ffffff';\n                }\n            }\n\n            el.onfocus = function() {\n                var va = el.value;\n                if (va == 'Any') {\n                    this.style.backgroundColor = '#ffffff';\n                    el.value = \"\";\n                }\n            }\n        }\n    };\n\n    Behaviour.register(textfieldRules);\n    Behaviour.register(myrules);\n</script>\n<style type=\"text/css\">\n\t@import \"style/style.css\";\n</style>\n</head>\n<body>\n\n<a href=\"archive-conversation-participants.jsp?conversationID=\" id=\"lbmessage\" title=\"");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\" style=\"display:none;\"></a>\r\n\r\n<form action=\"archive-search.jsp\" name=\"f\">\r\n<!-- Search Table -->\r\n<div>\r\n<table class=\"stat\">\r\n<tr valign=\"top\">\r\n<td>\r\n    <table>\r\n        <tr>\r\n            <td colspan=\"3\">\r\n                <img src=\"images/icon_participants.gif\" align=\"absmiddle\" alt=\"\" style=\"margin-right: 4px;\"/>\r\n                <b>");
+      out.write("\" style=\"display:none;\"></a>\n\n<form action=\"archive-search.jsp\" name=\"f\">\n<!-- Search Table -->\n<div>\n<table class=\"stat\">\n<tr valign=\"top\">\n<td>\n    <table>\n        <tr>\n            <td colspan=\"3\">\n                <img src=\"images/icon_participants.gif\" align=\"absmiddle\" alt=\"\" style=\"margin-right: 4px;\"/>\n                <b>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</b>\r\n                <a onmouseover=\"domTT_activate(this, event, 'content',\r\n                    '");
+      out.write("</b>\n                <a onmouseover=\"domTT_activate(this, event, 'content',\n                    '");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("',\r\n                    'trail', true, 'direction', 'northeast', 'width', '220');\"><img src=\"images/icon_help_14x14.gif\" alt=\"\" vspace=\"2\" align=\"texttop\"/></a>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n                <input type=\"text\" size=\"22\" name=\"participant1\" value=\"");
+      out.write("',\n                    'trail', true, 'direction', 'northeast', 'width', '220');\"><img src=\"images/icon_help_14x14.gif\" alt=\"\" vspace=\"2\" align=\"texttop\"/></a>\n            </td>\n        </tr>\n        <tr>\n            <td>\n                <input type=\"text\" size=\"22\" name=\"participant1\" value=\"");
       out.print( participant1 != null ? participant1 :
                 LocaleUtils.getLocalizedString("archive.search.participants.any", "monitoring") );
-      out.write("\" class=\"textfield\"/>\r\n            </td>\r\n\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n                <input type=\"text\" size=\"22\" name=\"participant2\" value=\"");
+      out.write("\" class=\"textfield\"/>\n            </td>\n\n        </tr>\n        <tr>\n            <td>\n                <input type=\"text\" size=\"22\" name=\"participant2\" value=\"");
       out.print( participant2 != null ? participant2 : anyText );
-      out.write("\" class=\"textfield\"/>\r\n            </td>\r\n\r\n        </tr>\r\n    </table>\r\n</td>\r\n<td width=\"0\" height=\"100%\" valign=\"middle\">\r\n    <div class=\"verticalrule\"></div>\r\n</td>\r\n<td>\r\n\r\n    <table>\r\n        <tr>\r\n            <td colspan=\"3\">\r\n                <img src=\"images/icon_daterange.gif\" align=\"absmiddle\" alt=\"\" style=\"margin: 0px 4px 0px 2px;\"/>\r\n                <b>");
+      out.write("\" class=\"textfield\"/>\n            </td>\n\n        </tr>\n    </table>\n</td>\n<td width=\"0\" height=\"100%\" valign=\"middle\">\n    <div class=\"verticalrule\"></div>\n</td>\n<td>\n\n    <table>\n        <tr>\n            <td colspan=\"3\">\n                <img src=\"images/icon_daterange.gif\" align=\"absmiddle\" alt=\"\" style=\"margin: 0px 4px 0px 2px;\"/>\n                <b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</b>\r\n                <a onmouseover=\"domTT_activate(this, event, 'content',\r\n                    '");
+      out.write("</b>\n                <a onmouseover=\"domTT_activate(this, event, 'content',\n                    '");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("',\r\n                    'trail', true, 'direction', 'northeast', 'width', '220');\"><img src=\"images/icon_help_14x14.gif\" vspace=\"2\" align=\"texttop\"/></a>\r\n            </td>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td>");
+      out.write("',\n                    'trail', true, 'direction', 'northeast', 'width', '220');\"><img src=\"images/icon_help_14x14.gif\" vspace=\"2\" align=\"texttop\"/></a>\n            </td>\n        </tr>\n        <tr valign=\"top\">\n            <td>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td>\r\n                <input type=\"text\" id=\"startDate\" name=\"startDate\" size=\"13\"\r\n                       value=\"");
+      out.write("</td>\n            <td>\n                <input type=\"text\" id=\"startDate\" name=\"startDate\" size=\"13\"\n                       value=\"");
       out.print( startDate != null ? startDate :
                        LocaleUtils.getLocalizedString("archive.search.daterange.any", "monitoring"));
-      out.write("\" class=\"textfield\"/><br/>\r\n                <span class=\"jive-description\">");
+      out.write("\" class=\"textfield\"/><br/>\n                <span class=\"jive-description\">");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </td>\r\n            <td>\r\n                <img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"startDateTrigger\">\r\n            </td>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td>");
+      out.write("</span>\n            </td>\n            <td>\n                <img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"startDateTrigger\">\n            </td>\n        </tr>\n        <tr valign=\"top\">\n            <td>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</td>\r\n            <td>\r\n                <input type=\"text\" id=\"endDate\" name=\"endDate\" size=\"13\"\r\n                       value=\"");
+      out.write("</td>\n            <td>\n                <input type=\"text\" id=\"endDate\" name=\"endDate\" size=\"13\"\n                       value=\"");
       out.print( endDate != null ? endDate :
                        LocaleUtils.getLocalizedString("archive.search.daterange.any", "monitoring") );
-      out.write("\" class=\"textfield\"/><br/>\r\n                <span class=\"jive-description\">");
+      out.write("\" class=\"textfield\"/><br/>\n                <span class=\"jive-description\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</span>\r\n            </td>\r\n            <td>\r\n                <img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"endDateTrigger\">\r\n            </td>\r\n        </tr>\r\n    </table>\r\n\r\n\r\n</td>\r\n<td>\r\n    <td width=\"0\" height=\"100%\" valign=\"middle\">\r\n        <div class=\"verticalrule\"></div>\r\n    </td>\r\n</td>\r\n<td>\r\n    <table>\r\n        <tr valign=\"top\">\r\n            <td>\r\n                <img src=\"images/icon_keywords.gif\" align=\"absmiddle\" alt=\"\" style=\"margin-right: 4px;\"/>\r\n                <b>");
+      out.write("</span>\n            </td>\n            <td>\n                <img src=\"images/icon_calendarpicker.gif\" vspace=\"3\" id=\"endDateTrigger\">\n            </td>\n        </tr>\n    </table>\n\n\n</td>\n<td>\n    <td width=\"0\" height=\"100%\" valign=\"middle\">\n        <div class=\"verticalrule\"></div>\n    </td>\n</td>\n<td>\n    <table>\n        <tr valign=\"top\">\n            <td>\n                <img src=\"images/icon_keywords.gif\" align=\"absmiddle\" alt=\"\" style=\"margin-right: 4px;\"/>\n                <b>");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
       out.write("</b> ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n                ");
+      out.write("\n            </td>\n        </tr>\n        <tr>\n            <td>\n                ");
  if(isArchiveEnabled){
-      out.write("\r\n                <input type=\"text\" name=\"keywords\" size=\"35\" class=\"keyword-field\" value=\"");
+      out.write("\n                <input type=\"text\" name=\"keywords\" size=\"35\" class=\"keyword-field\" value=\"");
       out.print( query != null ? query : "");
-      out.write("\"/>\r\n                ");
+      out.write("\"/>\n                ");
  } else { 
-      out.write("\r\n                    ");
+      out.write("\n                    ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n                ");
+      out.write("\n                ");
  } 
-      out.write("\r\n            </td>\r\n        </tr>\r\n    </table>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n<input type=\"submit\" name=\"submitForm\" value=\"");
+      out.write("\n            </td>\n        </tr>\n    </table>\n</td>\n</tr>\n</table>\n</div>\n<input type=\"submit\" name=\"submitForm\" value=\"");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\" class=\"small-text\"/>\r\n\r\n\r\n<input type=\"hidden\" name=\"start\"  />\r\n<input type=\"hidden\" name=\"range\"  />\r\n<input type=\"hidden\" name=\"parseRange\" />\r\n</form>\r\n\r\n");
+      out.write("\" class=\"small-text\"/>\n\n\n<input type=\"hidden\" name=\"start\"  />\n<input type=\"hidden\" name=\"range\"  />\n<input type=\"hidden\" name=\"parseRange\" />\n</form>\n\n");
 
     // Code for the searches.
 
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (conversations != null && conversations.size() > 0) { 
-      out.write("\r\n<table id=\"searchResults\" width=\"100%\" style=\"");
+      out.write("\n<table id=\"searchResults\" width=\"100%\" style=\"");
       out.print( conversations == null ? "display:none;" : "" );
-      out.write("\">\r\n    <tr>\r\n        <td colspan=\"2\">\r\n            <h3>");
+      out.write("\">\n    <tr>\n        <td colspan=\"2\">\n            <h3>");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
       out.write(' ');
       out.print( conversations.size() );
-      out.write("</h3>\r\n            <p class=\"resultDescription\">\r\n                ");
+      out.write("</h3>\n            <p class=\"resultDescription\">\n                ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_15 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_15.setPageContext(_jspx_page_context);
@@ -335,7 +336,7 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
           _jspx_th_fmt_message_15.doInitBody();
         }
         do {
-          out.write("\r\n                    ");
+          out.write("\n                    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_2 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_2.setPageContext(_jspx_page_context);
@@ -347,7 +348,7 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_2);
-          out.write("\r\n                ");
+          out.write("\n                ");
           int evalDoAfterBody = _jspx_th_fmt_message_15.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -360,11 +361,11 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_15);
-      out.write("\r\n            </p>\r\n        </td>\r\n    </tr>\r\n    <tr valign=\"top\">\r\n        <td width=\"300\">\r\n            <!-- Search Result Table -->\r\n            <table cellspacing=\"0\" class=\"light-gray-border\">\r\n                <tr class=\"light-gray-border-bottom\">\r\n                    <td class=\"light-gray-border-bottom\">\r\n                        ");
+      out.write("\n            </p>\n        </td>\n    </tr>\n    <tr valign=\"top\">\n        <td width=\"300\">\n            <!-- Search Result Table -->\n            <table cellspacing=\"0\" class=\"light-gray-border\">\n                <tr class=\"light-gray-border-bottom\">\n                    <td class=\"light-gray-border-bottom\">\n                        ");
 
                             int endPoint = (start + range) > conversations.size() ? conversations.size() : (start + range);
                         
-      out.write("\r\n                        <span class=\"small-label-with-padding\">\r\n                            ");
+      out.write("\n                        <span class=\"small-label-with-padding\">\n                            ");
       out.print( start + 1);
       out.write(' ');
       out.write('-');
@@ -373,11 +374,11 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
       out.write(' ');
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n                            ");
+      out.write("\n                            ");
       out.print( conversations.size());
-      out.write("</span>\r\n                    </td>\r\n                    <td align=\"right\" nowrap class=\"light-gray-border-bottom\" style=\"padding-right:3px;\">\r\n                          ");
+      out.write("</span>\n                    </td>\n                    <td align=\"right\" nowrap class=\"light-gray-border-bottom\" style=\"padding-right:3px;\">\n                          ");
   if (numPages > 1) { 
-      out.write("\r\n\r\n                        <p>\r\n                            ");
+      out.write("\n\n                        <p>\n                            ");
   int num = 5 + curPage;
                                 int s = curPage - 1;
                                 if (s > 5) {
@@ -388,9 +389,9 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
                                 }
                                 if (s > 2) {
                             
-      out.write("\r\n                            <a href=\"javascript:submitFormAgain('0', '");
+      out.write("\n                            <a href=\"javascript:submitFormAgain('0', '");
       out.print( range);
-      out.write("');\">1</a> ...\r\n\r\n                            ");
+      out.write("');\">1</a> ...\n\n                            ");
 
                                 }
                                 int i = 0;
@@ -398,33 +399,33 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
                                     String sep = ((i + 1) < numPages) ? " " : "";
                                     boolean isCurrent = (i + 1) == curPage;
                             
-      out.write("\r\n                            <a href=\"javascript:submitFormAgain('");
+      out.write("\n                            <a href=\"javascript:submitFormAgain('");
       out.print( (i*range) );
       out.write("', '");
       out.print( range );
-      out.write("');\"\r\n                               class=\"");
+      out.write("');\"\n                               class=\"");
       out.print( ((isCurrent) ? "small-label" : "small-label-no-bold") );
-      out.write("\"\r\n                                >");
+      out.write("\"\n                                >");
       out.print( (i + 1) );
       out.write("</a>");
       out.print( sep );
-      out.write("\r\n\r\n                            ");
+      out.write("\n\n                            ");
   } 
-      out.write("\r\n\r\n                            ");
+      out.write("\n\n                            ");
   if (i < numPages) { 
-      out.write("\r\n\r\n                            ... <a href=\"javascript:submitFormAgain('");
+      out.write("\n\n                            ... <a href=\"javascript:submitFormAgain('");
       out.print( ((numPages-1)*range) );
       out.write("', '");
       out.print( range );
       out.write("');\">");
       out.print( numPages );
-      out.write("</a>\r\n\r\n                            ");
+      out.write("</a>\n\n                            ");
   } 
-      out.write("\r\n                        </p>\r\n\r\n                        ");
+      out.write("\n                        </p>\n\n                        ");
   } else { 
-      out.write("\r\n                        &nbsp;\r\n                        ");
+      out.write("\n                        &nbsp;\n                        ");
   } 
-      out.write("\r\n\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td colspan=\"2\" align=\"left\">\r\n                        <div style=\"HEIGHT:300px;width:285px;OVERFLOW:auto\">\r\n                            <table cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" class=\"conversation-table\">\r\n\r\n                                ");
+      out.write("\n\n                    </td>\n                </tr>\n                <tr>\n                    <td colspan=\"2\" align=\"left\">\n                        <div style=\"HEIGHT:300px;width:285px;OVERFLOW:auto\">\n                            <table cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" class=\"conversation-table\">\n\n                                ");
 
                                     int i = 1;
                                     int end = start + range + 1;
@@ -443,29 +444,29 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
                                         }
 
                                 
-      out.write("\r\n                                <tr id=\"");
+      out.write("\n                                <tr id=\"");
       out.print( conversation.getConversationID());
       out.write("\" valign=\"top\" bgcolor=\"");
       out.print( color);
       out.write("\" onclick=\"showConversation('");
       out.print( conversation.getConversationID() );
-      out.write("'); return false;\">\r\n                                    <td><b>");
+      out.write("'); return false;\">\n                                    <td><b>");
       out.print( i );
-      out.write(".</b></td>\r\n                                    <td width=\"98%\">\r\n                                        ");
+      out.write(".</b></td>\n                                    <td width=\"98%\">\n                                        ");
  if (conversation.getRoom() == null) { 
-      out.write("\r\n                                            ");
+      out.write("\n                                            ");
 
                                                 Iterator iter = participants.keySet().iterator();
                                                 while (iter.hasNext()) {
                                                     String name = (String)iter.next();
                                             
-      out.write("\r\n                                            ");
+      out.write("\n                                            ");
       out.print( name);
-      out.write("<br/>\r\n                                            ");
+      out.write("<br/>\n                                            ");
  } 
-      out.write("\r\n                                        ");
+      out.write("\n                                        ");
  } else { 
-      out.write("\r\n                                            <i>");
+      out.write("\n                                            <i>");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_17 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_17.setPageContext(_jspx_page_context);
@@ -479,7 +480,7 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
           _jspx_th_fmt_message_17.doInitBody();
         }
         do {
-          out.write("\r\n                                                ");
+          out.write("\n                                                ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_3 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_3.setPageContext(_jspx_page_context);
@@ -491,7 +492,7 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_3);
-          out.write("\r\n                                            ");
+          out.write("\n                                            ");
           int evalDoAfterBody = _jspx_th_fmt_message_17.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -504,44 +505,44 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_17);
-      out.write("</i><br>\r\n                                            ");
+      out.write("</i><br>\n                                            ");
       if (_jspx_meth_fmt_message_18(_jspx_page_context))
         return;
       out.write(' ');
       out.print( conversation.getParticipants().size() );
-      out.write("\r\n                                        ");
+      out.write("\n                                        ");
  } 
-      out.write("\r\n                                    </td>\r\n                                    <td align=\"right\" nowrap>\r\n                                        ");
+      out.write("\n                                    </td>\n                                    <td align=\"right\" nowrap>\n                                        ");
       out.print( getFormattedDate(conversation));
-      out.write("\r\n                                    </td>\r\n                                </tr>\r\n                                ");
+      out.write("\n                                    </td>\n                                </tr>\n                                ");
  i++;
                                 } 
-      out.write("\r\n                            </table>\r\n                        </div>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </td>\r\n        <td>\r\n\r\n\r\n             <!-- Conversation Viewer (empty) -->\r\n            <div id=\"chat-viewer-empty\">\r\n                <table class=\"light-gray-border\" width=\"100%\" style=\"height: 323px;\">\r\n                    <tr>\r\n                        <td align=\"center\" valign=\"top\" bgcolor=\"#fafafa\">\r\n                            <br>\r\n                            <p>Select a conversation to the left to view details.</p></td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n\r\n            <!-- Conversation Viewer -->\r\n            <div id=\"chat-viewer\" style=\"display:none;\">\r\n                <table class=\"light-gray-border\" cellspacing=\"0\">\r\n                    <tr valign=\"top\">\r\n                        <td width=\"99%\" bgcolor=\"#f0f0f0\" class=\"light-gray-border-bottom\" style=\"padding: 3px 2px 4px 5px;\">\r\n                            <span class=\"small-label\">");
+      out.write("\n                            </table>\n                        </div>\n                    </td>\n                </tr>\n            </table>\n        </td>\n        <td>\n\n\n             <!-- Conversation Viewer (empty) -->\n            <div id=\"chat-viewer-empty\">\n                <table class=\"light-gray-border\" width=\"100%\" style=\"height: 323px;\">\n                    <tr>\n                        <td align=\"center\" valign=\"top\" bgcolor=\"#fafafa\">\n                            <br>\n                            <p>Select a conversation to the left to view details.</p></td>\n                    </tr>\n                </table>\n            </div>\n\n            <!-- Conversation Viewer -->\n            <div id=\"chat-viewer\" style=\"display:none;\">\n                <table class=\"light-gray-border\" cellspacing=\"0\">\n                    <tr valign=\"top\">\n                        <td width=\"99%\" bgcolor=\"#f0f0f0\" class=\"light-gray-border-bottom\" style=\"padding: 3px 2px 4px 5px;\">\n                            <span class=\"small-label\">");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("</span>&nbsp;\r\n                            <span class=\"small-text\" id=\"con-participant1\"></span>&nbsp;\r\n                            <span class=\"small-text\" id=\"con-participant2\"></span><br/>\r\n                            <span class=\"small-label\">");
+      out.write("</span>&nbsp;\n                            <span class=\"small-text\" id=\"con-participant1\"></span>&nbsp;\n                            <span class=\"small-text\" id=\"con-participant2\"></span><br/>\n                            <span class=\"small-label\">");
       if (_jspx_meth_fmt_message_20(_jspx_page_context))
         return;
-      out.write("</span>&nbsp;\r\n                            <span class=\"small-text\" id=\"con-noMessages\"></span><br/>\r\n                            <span class=\"small-label\">");
+      out.write("</span>&nbsp;\n                            <span class=\"small-text\" id=\"con-noMessages\"></span><br/>\n                            <span class=\"small-label\">");
       if (_jspx_meth_fmt_message_21(_jspx_page_context))
         return;
-      out.write("</span>&nbsp;\r\n                            <span class=\"small-text\" id=\"con-chatTime\"></span><br/>\r\n                            <span class=\"small-label\">");
+      out.write("</span>&nbsp;\n                            <span class=\"small-text\" id=\"con-chatTime\"></span><br/>\n                            <span class=\"small-label\">");
       if (_jspx_meth_fmt_message_22(_jspx_page_context))
         return;
-      out.write("</span>&nbsp;\r\n                            <span class=\"small-text\" id=\"con-duration\"></span>\r\n                        </td>\r\n                        <td id=\"pdf-image\" width=\"1%\" bgcolor=\"#f0f0f0\" nowrap align=\"right\" class=\"light-gray-border-bottom\" style=\"padding: 4px 3px 3px 0px;\">\r\n                            <img src=\"images/icon_pdf.gif\" alt=\"\" align=\"texttop\" border=\"0\" /> <span id=\"con-chat-link\"></span>\r\n                        </td>\r\n\r\n                    </tr>\r\n                    <tr>\r\n                        <td colspan=\"2\">\r\n                            <div class=\"conversation\" id=\"conversation-body\" style=\"HEIGHT:241px;width:100%;OVERFLOW:auto\">\r\n                            </div>\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n\r\n\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n");
+      out.write("</span>&nbsp;\n                            <span class=\"small-text\" id=\"con-duration\"></span>\n                        </td>\n                        <td id=\"pdf-image\" width=\"1%\" bgcolor=\"#f0f0f0\" nowrap align=\"right\" class=\"light-gray-border-bottom\" style=\"padding: 4px 3px 3px 0px;\">\n                            <img src=\"images/icon_pdf.gif\" alt=\"\" align=\"texttop\" border=\"0\" /> <span id=\"con-chat-link\"></span>\n                        </td>\n\n                    </tr>\n                    <tr>\n                        <td colspan=\"2\">\n                            <div class=\"conversation\" id=\"conversation-body\" style=\"HEIGHT:241px;width:100%;OVERFLOW:auto\">\n                            </div>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n\n\n        </td>\n    </tr>\n</table>\n\n");
  } else if(submit) { 
-      out.write("\r\n<span class=\"description\">\r\n");
+      out.write("\n<span class=\"description\">\n");
       if (_jspx_meth_fmt_message_23(_jspx_page_context))
         return;
-      out.write("\r\n</span>\r\n");
+      out.write("\n</span>\n");
  } 
-      out.write("\r\n\r\n\r\n<script type=\"text/javascript\">\r\n    grayOut(f.participant1);\r\n    grayOut(f.participant2);\r\n    grayOut(f.startDate);\r\n    grayOut(f.endDate);\r\n\r\n     function catcalc(cal) {\r\n        var endDateField = $('endDate');\r\n        var startDateField = $('startDate');\r\n\r\n        var endTime = new Date(endDateField.value);\r\n        var startTime = new Date(startDateField.value);\r\n        if(endTime.getTime() < startTime.getTime()){\r\n            alert(\"");
+      out.write("\n\n\n<script type=\"text/javascript\">\n    grayOut(f.participant1);\n    grayOut(f.participant2);\n    grayOut(f.startDate);\n    grayOut(f.endDate);\n\n     function catcalc(cal) {\n        var endDateField = $('endDate');\n        var startDateField = $('startDate');\n\n        var endTime = new Date(endDateField.value);\n        var startTime = new Date(startDateField.value);\n        if(endTime.getTime() < startTime.getTime()){\n            alert(\"");
       if (_jspx_meth_fmt_message_24(_jspx_page_context))
         return;
-      out.write("\");\r\n            startDateField.value = \"");
+      out.write("\");\n            startDateField.value = \"");
       if (_jspx_meth_fmt_message_25(_jspx_page_context))
         return;
-      out.write("\";\r\n        }\r\n    }\r\n\r\n    Calendar.setup(\r\n    {\r\n        inputField  : \"startDate\",         // ID of the input field\r\n        ifFormat    : \"%m/%d/%y\",    // the date format\r\n        button      : \"startDateTrigger\",       // ID of the button\r\n        onUpdate    :  catcalc\r\n    });\r\n\r\n    Calendar.setup(\r\n    {\r\n        inputField  : \"endDate\",         // ID of the input field\r\n        ifFormat    : \"%m/%d/%y\",    // the date format\r\n        button      : \"endDateTrigger\",       // ID of the button\r\n        onUpdate    :  catcalc\r\n    });\r\n</script>\r\n</body>\r\n</html>\r\n\r\n");
+      out.write("\";\n        }\n    }\n\n    Calendar.setup(\n    {\n        inputField  : \"startDate\",         // ID of the input field\n        ifFormat    : \"%m/%d/%y\",    // the date format\n        button      : \"startDateTrigger\",       // ID of the button\n        onUpdate    :  catcalc\n    });\n\n    Calendar.setup(\n    {\n        inputField  : \"endDate\",         // ID of the input field\n        ifFormat    : \"%m/%d/%y\",    // the date format\n        button      : \"endDateTrigger\",       // ID of the button\n        onUpdate    :  catcalc\n    });\n</script>\n</body>\n</html>\n\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -787,13 +788,13 @@ public final class archive_002dsearch_jsp extends org.apache.jasper.runtime.Http
         _jspx_th_fmt_message_12.doInitBody();
       }
       do {
-        out.write("\r\n                        ");
+        out.write("\n                        ");
         if (_jspx_meth_fmt_param_0(_jspx_th_fmt_message_12, _jspx_page_context))
           return true;
-        out.write("\r\n                        ");
+        out.write("\n                        ");
         if (_jspx_meth_fmt_param_1(_jspx_th_fmt_message_12, _jspx_page_context))
           return true;
-        out.write("\r\n                    ");
+        out.write("\n                    ");
         int evalDoAfterBody = _jspx_th_fmt_message_12.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

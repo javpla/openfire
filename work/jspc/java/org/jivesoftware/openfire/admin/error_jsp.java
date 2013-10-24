@@ -68,56 +68,57 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n");
       if (_jspx_meth_fmt_setBundle_0(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
   boolean debug = "true".equals(JiveGlobals.getProperty("skin.default.debug"));
     if (debug) {
         exception.printStackTrace();
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (exception instanceof UnauthorizedException) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } else if (exception instanceof UserNotFoundException) {
         String username = ParamUtils.getParameter(request,"username");
 
-      out.write("\r\n        <p>\r\n        ");
+      out.write("\n        <p>\n        ");
   if (username == null) { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
   } else { 
-      out.write("\r\n            ");
+      out.write("\n            ");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
   } 
-      out.write("\r\n        </p>\r\n\r\n");
+      out.write("\n        </p>\n\n");
   } else if (exception instanceof GroupNotFoundException) { 
-      out.write("\r\n\r\n    <p>\r\n    ");
+      out.write("\n\n    <p>\n    ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n    </p>\r\n    \r\n");
+      out.write("\n    </p>\n    \n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (exception != null) {
         StringWriter sout = new StringWriter();
         PrintWriter pout = new PrintWriter(sout);
         exception.printStackTrace(pout);
 
-      out.write("\r\n    ");
+      out.write("\n    ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n    <pre>\r\n");
+      out.write("\n    <pre>\n");
       out.print( sout.toString() );
-      out.write("\r\n    </pre>\r\n\r\n");
+      out.write("\n    </pre>\n\n");
   } 
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -202,10 +203,10 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_fmt_message_2.doInitBody();
       }
       do {
-        out.write("\r\n                ");
+        out.write("\n                ");
         if (_jspx_meth_fmt_param_0(_jspx_th_fmt_message_2, _jspx_page_context))
           return true;
-        out.write("\r\n            ");
+        out.write("\n            ");
         int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

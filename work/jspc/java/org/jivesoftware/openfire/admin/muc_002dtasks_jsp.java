@@ -53,7 +53,7 @@ public final class muc_002dtasks_jsp extends org.apache.jasper.runtime.HttpJspBa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write("\n\n\n\n\n\n\n\n");
       org.jivesoftware.util.WebManager webManager = null;
       synchronized (_jspx_page_context) {
         webManager = (org.jivesoftware.util.WebManager) _jspx_page_context.getAttribute("webManager", PageContext.PAGE_SCOPE);
@@ -62,10 +62,10 @@ public final class muc_002dtasks_jsp extends org.apache.jasper.runtime.HttpJspBa
           _jspx_page_context.setAttribute("webManager", webManager, PageContext.PAGE_SCOPE);
         }
       }
-      out.write('\r');
       out.write('\n');
  webManager.init(request, response, session, application, out ); 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     boolean kickEnabled = ParamUtils.getBooleanParameter(request,"kickEnabled");
     String idletime = ParamUtils.getParameter(request,"idletime");
@@ -161,15 +161,14 @@ public final class muc_002dtasks_jsp extends org.apache.jasper.runtime.HttpJspBa
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n<head>\r\n<title>");
+      out.write("\n\n<html>\n<head>\n<title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n<meta name=\"subPageID\" content=\"muc-tasks\"/>\r\n<meta name=\"extraParams\" content=\"");
+      out.write("</title>\n<meta name=\"subPageID\" content=\"muc-tasks\"/>\n<meta name=\"extraParams\" content=\"");
       out.print( "mucname="+URLEncoder.encode(mucname, "UTF-8") );
-      out.write("\"/>\r\n<meta name=\"helpPage\" content=\"edit_idle_user_settings.html\"/>\r\n</head>\r\n<body>\r\n\r\n<p>\r\n");
+      out.write("\"/>\n<meta name=\"helpPage\" content=\"edit_idle_user_settings.html\"/>\n</head>\n<body>\n\n<p>\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
@@ -178,87 +177,88 @@ public final class muc_002dtasks_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write('"');
       out.write('>');
       out.print( mucname );
-      out.write("</a></b>\r\n</p>\r\n\r\n");
+      out.write("</a></b>\n</p>\n\n");
   if (kickSettingSuccess || logSettingSuccess) { 
-      out.write("\r\n\r\n    <div class=\"jive-success\">\r\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n    <tbody>\r\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n        <td class=\"jive-icon-label\">\r\n        ");
+      out.write("\n\n    <div class=\"jive-success\">\n    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n    <tbody>\n        <tr><td class=\"jive-icon\"><img src=\"images/success-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n        <td class=\"jive-icon-label\">\n        ");
   if (kickSettingSuccess) { 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } else if (logSettingSuccess) { 
-      out.write("\r\n\r\n            ");
+      out.write("\n\n            ");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("\r\n\r\n        ");
+      out.write("\n\n        ");
   } 
-      out.write("\r\n        </td></tr>\r\n    </tbody>\r\n    </table>\r\n    </div><br>\r\n\r\n");
+      out.write("\n        </td></tr>\n    </tbody>\n    </table>\n    </div><br>\n\n");
   } 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
  if (errors.size() != 0) {  
-      out.write("\r\n\r\n   <table class=\"jive-error-message\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"350\"> <tr valign=\"top\">\r\n    <td width=\"1%\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\r\n    <td width=\"99%\" class=\"jive-error-text\">\r\n\r\n\t\t");
+      out.write("\n\n   <table class=\"jive-error-message\" cellpadding=\"3\" cellspacing=\"0\" border=\"0\" width=\"350\"> <tr valign=\"top\">\n    <td width=\"1%\"><img src=\"images/error-16x16.gif\" width=\"16\" height=\"16\" border=\"0\" alt=\"\"></td>\n    <td width=\"99%\" class=\"jive-error-text\">\n\n\t\t");
  if (errors.get("idletime") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
  }
            else if (errors.get("logfreq") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("\r\n        ");
+      out.write("\n        ");
   }
             else if (errors.get("logbatchsize") != null) { 
-      out.write("\r\n                ");
+      out.write("\n                ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n            ");
+      out.write("\n            ");
   } 
-      out.write("\r\n    </td>\r\n    </tr>\r\n    </table><br>\r\n\r\n");
+      out.write("\n    </td>\n    </tr>\n    </table><br>\n\n");
  } 
-      out.write("\r\n\r\n\r\n<!-- BEGIN 'Idle User Settings' -->\r\n<form action=\"muc-tasks.jsp?kickSettings\" method=\"post\">\r\n    <input type=\"hidden\" name=\"mucname\" value=\"");
+      out.write("\n\n\n<!-- BEGIN 'Idle User Settings' -->\n<form action=\"muc-tasks.jsp?kickSettings\" method=\"post\">\n    <input type=\"hidden\" name=\"mucname\" value=\"");
       out.print( mucname );
-      out.write("\" />\r\n    <div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\" />\n    <div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tbody>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickEnabled\" value=\"false\" id=\"rb01\"\r\n\t\t\t\t\t ");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\">\n\t\t<tbody>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"kickEnabled\" value=\"false\" id=\"rb01\"\n\t\t\t\t\t ");
       out.print( ((mucService.getUserIdleTime() < 0) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t<label for=\"rb01\">");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t<label for=\"rb01\">");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr valign=\"middle\">\r\n\t\t\t\t<td width=\"1%\" nowrap>\r\n\t\t\t\t\t<input type=\"radio\" name=\"kickEnabled\" value=\"true\" id=\"rb02\"\r\n\t\t\t\t\t ");
+      out.write("</label>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr valign=\"middle\">\n\t\t\t\t<td width=\"1%\" nowrap>\n\t\t\t\t\t<input type=\"radio\" name=\"kickEnabled\" value=\"true\" id=\"rb02\"\n\t\t\t\t\t ");
       out.print( ((mucService.getUserIdleTime() > -1) ? "checked" : "") );
-      out.write(">\r\n\t\t\t\t</td>\r\n\t\t\t\t<td width=\"99%\">\r\n\t\t\t\t\t\t<label for=\"rb02\">");
+      out.write(">\n\t\t\t\t</td>\n\t\t\t\t<td width=\"99%\">\n\t\t\t\t\t\t<label for=\"rb02\">");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("</label>\r\n\t\t\t\t\t\t <input type=\"text\" name=\"idletime\" size=\"5\" maxlength=\"5\"\r\n\t\t\t\t\t\t\t onclick=\"this.form.kickEnabled[1].checked=true;\"\r\n\t\t\t\t\t\t\t value=\"");
+      out.write("</label>\n\t\t\t\t\t\t <input type=\"text\" name=\"idletime\" size=\"5\" maxlength=\"5\"\n\t\t\t\t\t\t\t onclick=\"this.form.kickEnabled[1].checked=true;\"\n\t\t\t\t\t\t\t value=\"");
       out.print( mucService.getUserIdleTime() == -1 ? 30 : mucService.getUserIdleTime() / 1000 / 60 );
-      out.write("\">\r\n\t\t\t\t\t\t ");
+      out.write("\">\n\t\t\t\t\t\t ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write(".\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t\t</table>\r\n        <br/>\r\n        <input type=\"submit\" value=\"");
+      out.write(".\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t</table>\n        <br/>\n        <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\">\r\n\t</div>\r\n</form>\r\n<!-- END 'Idle User Settings' -->\r\n\r\n<br>\r\n\r\n<!-- BEGIN 'Conversation Logging' -->\r\n<form action=\"muc-tasks.jsp?logSettings\" method=\"post\">\r\n    <input type=\"hidden\" name=\"mucname\" value=\"");
+      out.write("\">\n\t</div>\n</form>\n<!-- END 'Idle User Settings' -->\n\n<br>\n\n<!-- BEGIN 'Conversation Logging' -->\n<form action=\"muc-tasks.jsp?logSettings\" method=\"post\">\n    <input type=\"hidden\" name=\"mucname\" value=\"");
       out.print( mucname );
-      out.write("\" />\r\n    <div class=\"jive-contentBoxHeader\">\r\n\t\t");
+      out.write("\" />\n    <div class=\"jive-contentBoxHeader\">\n\t\t");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n\t</div>\r\n\t<div class=\"jive-contentBox\">\r\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\r\n\t\t<tr valign=\"middle\">\r\n\t\t\t<td width=\"1%\" nowrap class=\"c1\">\r\n\t\t\t\t");
+      out.write("\n\t</div>\n\t<div class=\"jive-contentBox\">\n\t\t<table cellpadding=\"3\" cellspacing=\"0\" border=\"0\" >\n\t\t<tr valign=\"middle\">\n\t\t\t<td width=\"1%\" nowrap class=\"c1\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t</td>\r\n\t\t\t<td width=\"99%\">\r\n\t\t\t\t<input type=\"text\" name=\"logfreq\" size=\"15\" maxlength=\"50\"\r\n\t\t\t\t value=\"");
+      out.write("\n\t\t\t</td>\n\t\t\t<td width=\"99%\">\n\t\t\t\t<input type=\"text\" name=\"logfreq\" size=\"15\" maxlength=\"50\"\n\t\t\t\t value=\"");
       out.print( mucService.getLogConversationsTimeout() / 1000 );
-      out.write("\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr valign=\"middle\">\r\n\t\t\t<td width=\"1%\" nowrap class=\"c1\">\r\n\t\t\t\t");
+      out.write("\">\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr valign=\"middle\">\n\t\t\t<td width=\"1%\" nowrap class=\"c1\">\n\t\t\t\t");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n\t\t\t</td>\r\n\t\t\t<td width=\"99%\">\r\n\t\t\t\t<input type=\"text\" name=\"logbatchsize\" size=\"15\" maxlength=\"50\"\r\n\t\t\t\t value=\"");
+      out.write("\n\t\t\t</td>\n\t\t\t<td width=\"99%\">\n\t\t\t\t<input type=\"text\" name=\"logbatchsize\" size=\"15\" maxlength=\"50\"\n\t\t\t\t value=\"");
       out.print( mucService.getLogConversationBatchSize() );
-      out.write("\">\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t</table>\r\n        <br/>\r\n        <input type=\"submit\" value=\"");
+      out.write("\">\n\t\t\t</td>\n\t\t</tr>\n\t\t</table>\n        <br/>\n        <input type=\"submit\" value=\"");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\">\r\n\t</div>\r\n</form>\r\n<!-- END 'Conversation Logging' -->\r\n\r\n\r\n</body>\r\n</html>");
+      out.write("\">\n\t</div>\n</form>\n<!-- END 'Conversation Logging' -->\n\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

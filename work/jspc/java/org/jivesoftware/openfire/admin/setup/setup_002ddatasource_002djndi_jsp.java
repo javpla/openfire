@@ -111,8 +111,9 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write("\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	// Redirect if we've already run setup:
 	if (!XMPPServer.getInstance().isSetupMode()) {
@@ -120,8 +121,10 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
         return;
     }
 
-      out.write("\r\n\r\n");
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
 
     boolean embeddedMode = false;
     try {
@@ -136,7 +139,8 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
         return;
     }
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   // Get parameters
     String jndiName = ParamUtils.getParameter(request,"jndiName");
     String jndiNameMode = ParamUtils.getParameter(request,"jndiNameMode");
@@ -176,13 +180,13 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
         }
     }
 
-      out.write("\r\n\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n\n<html>\n    <head>\n        <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n        <meta name=\"currentStep\" content=\"2\"/>\r\n    </head>\r\n<body>\r\n\r\n<p class=\"jive-setup-page-header\">\r\n");
+      out.write("</title>\n        <meta name=\"currentStep\" content=\"2\"/>\n    </head>\n<body>\n\n<p class=\"jive-setup-page-header\">\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n\r\n<p>\r\n");
+      out.write("\n</p>\n\n<p>\n");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_2 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_2.setPageContext(_jspx_page_context);
@@ -196,7 +200,7 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
           _jspx_th_fmt_message_2.doInitBody();
         }
         do {
-          out.write("\r\n    ");
+          out.write("\n    ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -208,10 +212,9 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n    ");
+          out.write("\n    ");
           if (_jspx_meth_fmt_param_1(_jspx_th_fmt_message_2, _jspx_page_context))
             return;
-          out.write('\r');
           out.write('\n');
           int evalDoAfterBody = _jspx_th_fmt_message_2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -225,13 +228,13 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_2);
-      out.write("\r\n</p>\r\n\r\n");
+      out.write("\n</p>\n\n");
   if (errors.size() > 0 && errors.get("jndiName") == null) { 
-      out.write("\r\n\r\n    <p class=\"jive-error-text\">\r\n    ");
+      out.write("\n\n    <p class=\"jive-error-text\">\n    ");
       out.print( errors.get("general") );
-      out.write("\r\n    </p>\r\n\r\n");
+      out.write("\n    </p>\n\n");
   } 
-      out.write("\r\n\r\n<form action=\"setup-datasource-jndi.jsp\" name=\"jndiform\" method=\"post\">\r\n\r\n");
+      out.write("\n\n<form action=\"setup-datasource-jndi.jsp\" name=\"jndiform\" method=\"post\">\n\n");
   boolean isLookupNames = false;
     Context context = null;
     NamingEnumeration ne = null;
@@ -242,28 +245,29 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
     }
     catch (Exception e) {}
 
-      out.write("\r\n\r\n");
+      out.write('\n');
+      out.write('\n');
   if (!isLookupNames) { 
-      out.write("\r\n\r\n    ");
+      out.write("\n\n    ");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("\r\n    <input type=\"text\" name=\"jndiName\" size=\"30\" maxlength=\"100\"\r\n     value=\"");
+      out.write("\n    <input type=\"text\" name=\"jndiName\" size=\"30\" maxlength=\"100\"\n     value=\"");
       out.print( ((jndiName!=null) ? jndiName : "") );
-      out.write("\">\r\n\r\n");
+      out.write("\">\n\n");
   } else { 
-      out.write("\r\n\r\n    <table cellpadding=\"3\" cellspacing=\"3\" border=\"0\">\r\n    <tr>\r\n        <td><input type=\"radio\" name=\"jndiNameMode\" value=\"custom\"></td>\r\n        <td>\r\n            <span onclick=\"document.jndiform.jndiName.focus();\"\r\n            >");
+      out.write("\n\n    <table cellpadding=\"3\" cellspacing=\"3\" border=\"0\">\n    <tr>\n        <td><input type=\"radio\" name=\"jndiNameMode\" value=\"custom\"></td>\n        <td>\n            <span onclick=\"document.jndiform.jndiName.focus();\"\n            >");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</span>\r\n            &nbsp;\r\n            <input type=\"text\" name=\"jndiName\" size=\"30\" maxlength=\"100\"\r\n             value=\"");
+      out.write("</span>\n            &nbsp;\n            <input type=\"text\" name=\"jndiName\" size=\"30\" maxlength=\"100\"\n             value=\"");
       out.print( ((jndiName!=null) ? jndiName : "") );
-      out.write("\"\r\n             onfocus=\"this.form.jndiNameMode[0].checked=true;\">\r\n            ");
+      out.write("\"\n             onfocus=\"this.form.jndiNameMode[0].checked=true;\">\n            ");
   if (errors.get("jndiName") != null) { 
-      out.write("\r\n\r\n                <span class=\"jive-error-text\"><br>\r\n                ");
+      out.write("\n\n                <span class=\"jive-error-text\"><br>\n                ");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("\r\n                </span>\r\n\r\n            ");
+      out.write("\n                </span>\n\n            ");
   } 
-      out.write("\r\n        </td>\r\n    </tr>\r\n        ");
+      out.write("\n        </td>\n    </tr>\n        ");
   int i = 0;
             while (ne != null && ne.hasMore()) {
                 i++;
@@ -271,25 +275,25 @@ public final class setup_002ddatasource_002djndi_jsp extends org.apache.jasper.r
                 String name = "java:comp/env/jdbc/" + binding.getName();
                 String display = "java:comp/env/jdbc/<b>" + binding.getName() + "</b>";
         
-      out.write("\r\n            <tr>\r\n                <td><input type=\"radio\" name=\"jndiNameMode\" value=\"");
+      out.write("\n            <tr>\n                <td><input type=\"radio\" name=\"jndiNameMode\" value=\"");
       out.print( name );
       out.write("\" id=\"rb");
       out.print( i );
-      out.write("\"></td>\r\n                <td>\r\n                    <label for=\"rb");
+      out.write("\"></td>\n                <td>\n                    <label for=\"rb");
       out.print( i );
-      out.write("\" style=\"font-weight:normal\"\r\n                     >");
+      out.write("\" style=\"font-weight:normal\"\n                     >");
       out.print( display );
-      out.write("</label>\r\n                </td>\r\n            </tr>\r\n\r\n        ");
+      out.write("</label>\n                </td>\n            </tr>\n\n        ");
   } 
-      out.write("\r\n    </table>\r\n\r\n");
+      out.write("\n    </table>\n\n");
   } 
-      out.write("\r\n\r\n<br><br>\r\n\r\n<hr size=\"0\">\r\n\r\n<div align=\"right\">\r\n    <input type=\"submit\" name=\"continue\" value=\" ");
+      out.write("\n\n<br><br>\n\n<hr size=\"0\">\n\n<div align=\"right\">\n    <input type=\"submit\" name=\"continue\" value=\" ");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write(" \">\r\n    <br>\r\n    ");
+      out.write(" \">\n    <br>\n    ");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("\r\n</div>\r\n\r\n</form>\r\n\r\n<script language=\"JavaScript\" type=\"text/javascript\">\r\n<!--\r\ndocument.jndiform.jndiName.focus();\r\n//-->\r\n</script>\r\n\r\n</body>\r\n</html>");
+      out.write("\n</div>\n\n</form>\n\n<script language=\"JavaScript\" type=\"text/javascript\">\n<!--\ndocument.jndiform.jndiName.focus();\n//-->\n</script>\n\n</body>\n</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -62,7 +62,6 @@ public final class create_002delement_jsp extends org.apache.jasper.runtime.Http
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
 
     String wgID = ParamUtils.getParameter(request, "wgID");
@@ -189,53 +188,52 @@ public final class create_002delement_jsp extends org.apache.jasper.runtime.Http
         listItems = "";
     }
 
-      out.write("\r\n<html>\r\n    <head>\r\n        <title>");
+      out.write("\n<html>\n    <head>\n        <title>");
       out.print( title );
-      out.write("</title>\r\n        <meta name=\"subPageID\" content=\"workgroup-forms\"/>\r\n        <meta name=\"extraParams\" content=\"");
+      out.write("</title>\n        <meta name=\"subPageID\" content=\"workgroup-forms\"/>\n        <meta name=\"extraParams\" content=\"");
       out.print( "wgID="+wgID );
-      out.write("\"/>\r\n        <!--<meta name=\"helpPage\" content=\"create_a_custom_form_field.html\"/>-->\r\n\r\n        <script>\r\n         function Jtrim(st) {\r\n            var len = st.length;\r\n            var begin = 0, end = len - 1;\r\n            while (st.charAt(begin) == \" \" && begin < len) {\r\n                begin++;\r\n            }\r\n            while (st.charAt(end) == \" \" && end > begin) {\r\n                end--;\r\n            }\r\n            return st.substring(begin, end + 1);\r\n         }\r\n\r\n         function validateForm(){\r\n             if(!Jtrim(document.f.label.value)){\r\n               alert(\"Please supply a label for this form element.\");\r\n               document.f.label.focus();\r\n               return false;\r\n             }\r\n\r\n             if(!Jtrim(document.f.variable.value)){\r\n               alert(\"Please supply a variable for this form element.\");\r\n               document.f.variable.focus();\r\n               return false;\r\n             }\r\n\r\n              if(document.f.variable.value.indexOf(\" \") != -1){\r\n               alert(\"Please supply a valid variable name for this form element.\");\r\n");
-      out.write("               document.f.variable.focus();\r\n               return false;\r\n             }\r\n\r\n             var v = document.f.answer.value;\r\n             if(v == '");
+      out.write("\"/>\n        <!--<meta name=\"helpPage\" content=\"create_a_custom_form_field.html\"/>-->\n\n        <script>\n         function Jtrim(st) {\n            var len = st.length;\n            var begin = 0, end = len - 1;\n            while (st.charAt(begin) == \" \" && begin < len) {\n                begin++;\n            }\n            while (st.charAt(end) == \" \" && end > begin) {\n                end--;\n            }\n            return st.substring(begin, end + 1);\n         }\n\n         function validateForm(){\n             if(!Jtrim(document.f.label.value)){\n               alert(\"Please supply a label for this form element.\");\n               document.f.label.focus();\n               return false;\n             }\n\n             if(!Jtrim(document.f.variable.value)){\n               alert(\"Please supply a variable for this form element.\");\n               document.f.variable.focus();\n               return false;\n             }\n\n              if(document.f.variable.value.indexOf(\" \") != -1){\n               alert(\"Please supply a valid variable name for this form element.\");\n");
+      out.write("               document.f.variable.focus();\n               return false;\n             }\n\n             var v = document.f.answer.value;\n             if(v == '");
       out.print( WorkgroupForm.FormEnum.dropdown_box);
       out.write("' || v == '");
       out.print( WorkgroupForm.FormEnum.radio_button);
       out.write("' || v == '");
       out.print( WorkgroupForm.FormEnum.checkbox);
-      out.write("'){\r\n                if(!Jtrim(document.f.items.value)){\r\n                  alert(\"Please supply at least one item for a multi choice  element.\");\r\n                  return false;\r\n                }\r\n             }\r\n\r\n             return true;\r\n         }\r\n        </script>\r\n    </head>\r\n    <body>\r\n\r\n    <form name=\"f\" action=\"create-element.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\"  >\r\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\r\n        <tr>\r\n            <th colspan=\"2\">New Form Element</th>\r\n        </tr>\r\n        <tr valign=\"top\">\r\n            <td>Variable Label:*</td><td><input type=\"text\" size=\"60\" name=\"label\" value=\"");
+      out.write("'){\n                if(!Jtrim(document.f.items.value)){\n                  alert(\"Please supply at least one item for a multi choice  element.\");\n                  return false;\n                }\n             }\n\n             return true;\n         }\n        </script>\n    </head>\n    <body>\n\n    <form name=\"f\" action=\"create-element.jsp\" method=\"post\" onsubmit=\"return validateForm(); return false;\"  >\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\n        <tr>\n            <th colspan=\"2\">New Form Element</th>\n        </tr>\n        <tr valign=\"top\">\n            <td>Variable Label:*</td><td><input type=\"text\" size=\"60\" name=\"label\" value=\"");
       out.print( label );
-      out.write("\">\r\n            <br/><span class=\"jive-description\">The text to display on the HTML Form. e.g. Product:</span>\r\n            </td>\r\n        </tr>\r\n       <tr valign=\"top\">\r\n            <td>Variable Name:*</td><td><input type=\"text\" size=\"60\" name=\"variable\" value=\"");
+      out.write("\">\n            <br/><span class=\"jive-description\">The text to display on the HTML Form. e.g. Product:</span>\n            </td>\n        </tr>\n       <tr valign=\"top\">\n            <td>Variable Name:*</td><td><input type=\"text\" size=\"60\" name=\"variable\" value=\"");
       out.print( variable);
-      out.write("\">\r\n            <br/><span class=\"jive-description\">The name of the html form element. e.g. product_name</span>\r\n            </td>\r\n        </tr>\r\n       <tr valign=\"top\">\r\n            <td>Description:</td><td><input type=\"text\" size=\"60\" name=\"description\" value=\"");
+      out.write("\">\n            <br/><span class=\"jive-description\">The name of the html form element. e.g. product_name</span>\n            </td>\n        </tr>\n       <tr valign=\"top\">\n            <td>Description:</td><td><input type=\"text\" size=\"60\" name=\"description\" value=\"");
       out.print( description );
-      out.write("\">\r\n             <br/><span class=\"jive-description\">A description of this form element.</span>\r\n            </td>\r\n        </tr>\r\n       <tr valign=\"top\">\r\n        <td>Answer Type:*</td>\r\n        <td>\r\n            <select name=\"answer\">\r\n                ");
+      out.write("\">\n             <br/><span class=\"jive-description\">A description of this form element.</span>\n            </td>\n        </tr>\n       <tr valign=\"top\">\n        <td>Answer Type:*</td>\n        <td>\n            <select name=\"answer\">\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.dropdown_box, "Dropdown Box", answerType) );
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.checkbox, "Checkbox", answerType) );
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.radio_button, "Radio Button", answerType) );
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.textfield, "TextField", answerType) );
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.textarea, "TextArea", answerType) );
-      out.write("\r\n                ");
+      out.write("\n                ");
       out.print( getOption(WorkgroupForm.FormEnum.password, "Password", answerType) );
-      out.write("\r\n            </select>\r\n        </td>\r\n        </tr>\r\n        <tr>\r\n            <td>&nbsp;</td>\r\n            <td><input type=\"checkbox\" name=\"required\" ");
+      out.write("\n            </select>\n        </td>\n        </tr>\n        <tr>\n            <td>&nbsp;</td>\n            <td><input type=\"checkbox\" name=\"required\" ");
       out.print( required ? "checked" : "");
-      out.write(">&nbsp;<b>Required</b></td>\r\n        </tr>\r\n        <tr>\r\n        <td colspan=\"2\"><input type=\"checkbox\" name=\"prepopulate\" ");
+      out.write(">&nbsp;<b>Required</b></td>\n        </tr>\n        <tr>\n        <td colspan=\"2\"><input type=\"checkbox\" name=\"prepopulate\" ");
       out.print( hasCookie ? "checked" : "");
-      out.write(">Populate with user's previous choice.</td>\r\n        </tr>\r\n        </table>\r\n\r\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\r\n        <tr>\r\n            <th colspan=\"2\">Add List Items</th>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"2\"><i>Hit return after each list item.</i></td>\r\n        </tr>\r\n        <tr>\r\n        <td colspan=\"2\">\r\n            <textarea name=\"items\" cols=\"40\" rows=\"3\">");
+      out.write(">Populate with user's previous choice.</td>\n        </tr>\n        </table>\n\n        <table class=\"jive-table\" cellpadding=\"3\" cellspacing=\"0\" width=\"600\">\n        <tr>\n            <th colspan=\"2\">Add List Items</th>\n        </tr>\n        <tr>\n            <td colspan=\"2\"><i>Hit return after each list item.</i></td>\n        </tr>\n        <tr>\n        <td colspan=\"2\">\n            <textarea name=\"items\" cols=\"40\" rows=\"3\">");
       out.print( listItems );
-      out.write("</textarea>\r\n        </td>\r\n        </tr>\r\n        <tr>\r\n           <td><input type=\"submit\" name=\"createElement\" value=\"Update\">&nbsp;\r\n           <input type=\"button\" name=\"cancel\" value=\"Cancel\" onclick=\"javascript:window.location.href='workgroup-dataform.jsp?wgID=");
+      out.write("</textarea>\n        </td>\n        </tr>\n        <tr>\n           <td><input type=\"submit\" name=\"createElement\" value=\"Update\">&nbsp;\n           <input type=\"button\" name=\"cancel\" value=\"Cancel\" onclick=\"javascript:window.location.href='workgroup-dataform.jsp?wgID=");
       out.print(wgID);
-      out.write("'\"></td>\r\n        </tr>\r\n        </table>\r\n        <input type=\"hidden\" name=\"wgID\" value=\"");
+      out.write("'\"></td>\n        </tr>\n        </table>\n        <input type=\"hidden\" name=\"wgID\" value=\"");
       out.print( wgID);
-      out.write("\">\r\n        ");
+      out.write("\">\n        ");
  if(edit) { 
-      out.write("\r\n        <input type=\"hidden\" name=\"saveEdit\" value=\"true\" />\r\n        <input type=\"hidden\" name=\"saveIndex\" value=\"");
+      out.write("\n        <input type=\"hidden\" name=\"saveEdit\" value=\"true\" />\n        <input type=\"hidden\" name=\"saveIndex\" value=\"");
       out.print( index );
-      out.write("\" />\r\n        ");
+      out.write("\" />\n        ");
  } 
-      out.write("\r\n    </form>\r\n</body>\r\n</html>\r\n\r\n");
-      out.write('\r');
+      out.write("\n    </form>\n</body>\n</html>\n\n");
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

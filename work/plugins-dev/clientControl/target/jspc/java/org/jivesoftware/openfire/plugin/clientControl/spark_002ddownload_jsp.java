@@ -58,13 +58,13 @@ public final class spark_002ddownload_jsp extends org.apache.jasper.runtime.Http
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n\r\n\r\n\r\n\r\n\r\n<html>\r\n<head>\r\n    <title>");
+      out.write("\n\n\n\n\n\n<html>\n<head>\n    <title>");
       if (_jspx_meth_fmt_message_0(_jspx_page_context))
         return;
-      out.write("</title>\r\n    <meta name=\"pageID\" content=\"spark-download\"/>\r\n    <style type=\"text/css\">\r\n        @import \"style/style.css\";\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n");
+      out.write("</title>\n    <meta name=\"pageID\" content=\"spark-download\"/>\n    <style type=\"text/css\">\n        @import \"style/style.css\";\n    </style>\n</head>\n\n<body>\n\n");
       if (_jspx_meth_fmt_message_1(_jspx_page_context))
         return;
-      out.write("\r\n<br/><br/>\r\n\r\n\r\n");
+      out.write("\n<br/><br/>\n\n\n");
 
     String url = request.getRequestURL().toString();
     String server = XMPPServer.getInstance().getServerInfo().getXMPPDomain();
@@ -94,105 +94,105 @@ public final class spark_002ddownload_jsp extends org.apache.jasper.runtime.Http
 
     boolean showEmailTemplate = windowsClientExists || macClientExists || linuxClientExists;
 
-      out.write("\r\n<table><tr><td><img src=\"images/win.gif\" alt=\"\"></td><td><b>");
+      out.write("\n<table><tr><td><img src=\"images/win.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_2(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n    ");
+      out.write("</b></td>\n    ");
  if(windowsClientExists){ 
-      out.write("\r\n    <td><a href=\"getspark?os=windows\">");
+      out.write("\n    <td><a href=\"getspark?os=windows\">");
       out.print( url );
-      out.write("?os=windows</a></td>\r\n    ");
+      out.write("?os=windows</a></td>\n    ");
  } else { 
-      out.write("\r\n    <td>");
+      out.write("\n    <td>");
       if (_jspx_meth_fmt_message_3(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } 
-      out.write("\r\n    </tr>\r\n    <tr>\r\n        <td><img src=\"images/mac.gif\" alt=\"\"></td><td><b>");
+      out.write("\n    </tr>\n    <tr>\n        <td><img src=\"images/mac.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_4(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n    ");
+      out.write("</b></td>\n    ");
  if(macClientExists){ 
-      out.write("\r\n        <td><a href=\"getspark?os=mac\">");
+      out.write("\n        <td><a href=\"getspark?os=mac\">");
       out.print( url );
-      out.write("?os=mac</a></td>\r\n    ");
+      out.write("?os=mac</a></td>\n    ");
  } else { 
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       if (_jspx_meth_fmt_message_5(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } 
-      out.write("\r\n    </tr>\r\n      <tr>\r\n        <td><img src=\"images/zip.gif\" alt=\"\"></td><td><b>");
+      out.write("\n    </tr>\n      <tr>\n        <td><img src=\"images/zip.gif\" alt=\"\"></td><td><b>");
       if (_jspx_meth_fmt_message_6(_jspx_page_context))
         return;
-      out.write("</b></td>\r\n    ");
+      out.write("</b></td>\n    ");
  if(linuxClientExists){ 
-      out.write("\r\n        <td><a href=\"getspark?os=linux\">");
+      out.write("\n        <td><a href=\"getspark?os=linux\">");
       out.print( url );
-      out.write("?os=linux</a></td>\r\n    ");
+      out.write("?os=linux</a></td>\n    ");
  } else { 
-      out.write("\r\n        <td>");
+      out.write("\n        <td>");
       if (_jspx_meth_fmt_message_7(_jspx_page_context))
         return;
-      out.write("</td>\r\n    ");
+      out.write("</td>\n    ");
  } 
-      out.write("\r\n    </tr>\r\n\r\n</table>\r\n<br/><br/>\r\n");
+      out.write("\n    </tr>\n\n</table>\n<br/><br/>\n");
  if(showEmailTemplate){
-      out.write("\r\n<p><b>");
+      out.write("\n<p><b>");
       if (_jspx_meth_fmt_message_8(_jspx_page_context))
         return;
-      out.write("</b></p>\r\n<p>\r\n");
+      out.write("</b></p>\n<p>\n");
       if (_jspx_meth_fmt_message_9(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n<div style=\"padding:4px;background-color:#eee;width:500px;\">\r\n<p>\r\n    ");
+      out.write("\n</p>\n<div style=\"padding:4px;background-color:#eee;width:500px;\">\n<p>\n    ");
       if (_jspx_meth_fmt_message_10(_jspx_page_context))
         return;
-      out.write("\r\n    <br/><br/>\r\n    ");
+      out.write("\n    <br/><br/>\n    ");
       if (_jspx_meth_fmt_message_11(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  if(windowsClientExists) { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       out.print( url + "?os=windows" );
-      out.write("\r\n    ");
+      out.write("\n    ");
  } else { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_12(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  } 
-      out.write("\r\n    <br/>\r\n    ");
+      out.write("\n    <br/>\n    ");
       if (_jspx_meth_fmt_message_13(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  if(macClientExists) { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       out.print( url + "?os=mac" );
-      out.write("\r\n    ");
+      out.write("\n    ");
  } else { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_14(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  } 
-      out.write("\r\n    <br/>\r\n    ");
+      out.write("\n    <br/>\n    ");
       if (_jspx_meth_fmt_message_15(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  if(linuxClientExists) { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       out.print( url + "?os=linux" );
-      out.write("\r\n    ");
+      out.write("\n    ");
  } else { 
-      out.write("\r\n        ");
+      out.write("\n        ");
       if (_jspx_meth_fmt_message_16(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
  } 
-      out.write("\r\n    <br/><br/>\r\n    ");
+      out.write("\n    <br/><br/>\n    ");
       if (_jspx_meth_fmt_message_17(_jspx_page_context))
         return;
-      out.write("\r\n    ");
+      out.write("\n    ");
       //  fmt:message
       org.apache.taglibs.standard.tag.rt.fmt.MessageTag _jspx_th_fmt_message_18 = (org.apache.taglibs.standard.tag.rt.fmt.MessageTag) _jspx_tagPool_fmt_message_key.get(org.apache.taglibs.standard.tag.rt.fmt.MessageTag.class);
       _jspx_th_fmt_message_18.setPageContext(_jspx_page_context);
@@ -206,7 +206,7 @@ public final class spark_002ddownload_jsp extends org.apache.jasper.runtime.Http
           _jspx_th_fmt_message_18.doInitBody();
         }
         do {
-          out.write("\r\n        ");
+          out.write("\n        ");
           //  fmt:param
           org.apache.taglibs.standard.tag.rt.fmt.ParamTag _jspx_th_fmt_param_0 = (org.apache.taglibs.standard.tag.rt.fmt.ParamTag) _jspx_tagPool_fmt_param_value_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.ParamTag.class);
           _jspx_th_fmt_param_0.setPageContext(_jspx_page_context);
@@ -218,7 +218,7 @@ public final class spark_002ddownload_jsp extends org.apache.jasper.runtime.Http
             return;
           }
           _jspx_tagPool_fmt_param_value_nobody.reuse(_jspx_th_fmt_param_0);
-          out.write("\r\n    ");
+          out.write("\n    ");
           int evalDoAfterBody = _jspx_th_fmt_message_18.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -231,12 +231,12 @@ public final class spark_002ddownload_jsp extends org.apache.jasper.runtime.Http
         return;
       }
       _jspx_tagPool_fmt_message_key.reuse(_jspx_th_fmt_message_18);
-      out.write("\r\n    ");
+      out.write("\n    ");
       if (_jspx_meth_fmt_message_19(_jspx_page_context))
         return;
-      out.write("\r\n</p>\r\n</div>\r\n");
+      out.write("\n</p>\n</div>\n");
  } 
-      out.write("\r\n\r\n\r\n</body>\r\n</html>\r\n");
+      out.write("\n\n\n</body>\n</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
