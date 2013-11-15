@@ -1,45 +1,58 @@
-Fri Nov 15 12:45:34 CLST 2013
+Fri Nov 15 13:08:56 CLST 2013
 Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Queue Tasks, Completed Tasks, Sessions, NIO Read, NIO Written, Queued NIO events, Queues NIO writes
-1384530274751,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,0,0,0,0,0,0
-1384530279688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,0,0,0,0,0,0
-1384530284687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,1,0,0,0,0,0
-1384530289687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,1,0,4,1,1,1,0,0
-1384530294688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530299687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530304688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530309688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530314688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530319687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530324687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530329687,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-1384530334688,org.jivesoftware.database.EmbeddedConnectionProvider@762573dd,17,0,0,5,0,16,1,0,0
-Fri Nov 15 12:49:17 CLST 2013
+1384531676413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,0,0,0,0,0,0
+1384531681412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,0,0,0,0,0,0
+1384531686414,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,0,0,0,0,0,0
+1384531691413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,0,0,0,0,0,0
+1384531696414,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,2,1,3,1,0,0
+1384531701413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531706412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531711413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531716412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531721413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531726412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531731412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531736412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531741413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531746413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531751413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531756413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531761412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531766412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531771413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531776412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531781413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531786412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531791412,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531796413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+1384531801413,org.jivesoftware.database.EmbeddedConnectionProvider@13cc6f7e,17,0,0,8,1,14,1,0,0
+Fri Nov 15 13:17:25 CLST 2013
 Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Queue Tasks, Completed Tasks, Sessions, NIO Read, NIO Written, Queued NIO events, Queues NIO writes
-1384530497267,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,0,0,0,0,0,0
-1384530502267,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,0,0,0,0,0,0
-1384530507266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,0,0,0,0,0,0
-1384530512273,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,2,1,0,0,0,0
-1384530517267,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530522266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530527267,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530532266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530537267,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530542266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530547266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530552266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-1384530557266,org.jivesoftware.database.EmbeddedConnectionProvider@158c156,17,0,0,8,1,15,1,0,0
-Fri Nov 15 12:57:48 CLST 2013
+1384532185467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532190467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532195467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532200467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532205467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532210468,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532215467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532220467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532225467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532230468,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532235467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,0,0,0,0,0,0
+1384532240467,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,0,0,1,0,0,0,0,0
+1384532245468,org.jivesoftware.database.EmbeddedConnectionProvider@6f882f9f,17,1,0,6,1,14,1,0,0
+Fri Nov 15 13:19:48 CLST 2013
 Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Queue Tasks, Completed Tasks, Sessions, NIO Read, NIO Written, Queued NIO events, Queues NIO writes
-1384531008814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,0,0,0,0,0,0
-1384531013813,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,0,0,0,0,0,0
-1384531018828,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,1,0,0,0,0,0
-1384531023830,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,1,0,8,1,3,1,0,0
-1384531028814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531033813,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531038818,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531043814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531048814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531053813,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531058814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531063813,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
-1384531068814,org.jivesoftware.database.EmbeddedConnectionProvider@686b24e5,17,0,0,9,1,16,1,0,0
+1384532328441,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532333414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532338415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532343414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532348415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532353414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532358414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532363415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532368415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532373414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532378414,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532383415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,0,0,0,0,0,0
+1384532388415,org.jivesoftware.database.EmbeddedConnectionProvider@730a6f3,17,0,0,1,0,1,1,0,0

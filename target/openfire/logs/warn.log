@@ -1,0 +1,4 @@
+2013.11.15 13:21:59 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<setup xmlns="http://jabber.org/protocol/compress/exi" configurationId="717295711"/>
+2013.11.15 13:21:59 org.jivesoftware.openfire.IQRouter - Error or result packet could not be delivered <iq type="result" id="3mk0V-6" to="smackuser@javier.placencio/Smack"><query xmlns="jabber:iq:roster"><item jid="javier@javier.placencio" name="javier" subscription="both"><group>Sin clasificar</group></item></query></iq>
+2013.11.15 13:21:59 org.jivesoftware.openfire.net.StanzaHandler - Ignoring available presence packet of closed session: 
+<presence id="3mk0V-7"/>
