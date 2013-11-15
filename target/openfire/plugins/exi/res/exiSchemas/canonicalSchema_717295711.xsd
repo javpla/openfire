@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+
+<xs:schema 
+	xmlns:xs='http://www.w3.org/2001/XMLSchema' 
+	targetNamespace='urn:xmpp:exi:cs' 
+	xmlns='urn:xmpp:exi:cs' 
+	elementFormDefault='qualified'>
+
+	<xs:import namespace='http://www.w3.org/XML/1998/namespace' schemaLocation='C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\res\xml.xsd'/>
+	<xs:import namespace='jabber:client' schemaLocation='C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\res\jabber-client.xsd'/>
+	<xs:import namespace='jabber:x:event' schemaLocation='C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\res\x-event.xsd'/>
+	<xs:import namespace='urn:ietf:params:xml:ns:xmpp-stanzas' schemaLocation='C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\res\stanzaerror.xsd'/>
+</xs:schema>
