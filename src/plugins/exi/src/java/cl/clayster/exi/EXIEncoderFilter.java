@@ -25,7 +25,9 @@ public class EXIEncoderFilter extends IoFilterAdapter {
 System.out.println("XML: " + msg);
 			if(!msg.startsWith("<compressed ")){
 				try {
-					message = ((EXIProcessor) session.getAttribute(EXIFilter.EXI_PROCESSOR)).encodeByteBuffer(msg.substring(0, msg.lastIndexOf('>') + 1));
+					ByteBuffer bb = ((EXIProcessor) session.getAttribute(EXIFilter.EXI_PROCESSOR)).encodeByteBuffer(msg.substring(0, msg.lastIndexOf('>') + 1));
+					super.messageSent(nextFilter, session, bb);
+					return;
 				} catch (IOException | EXIException | SAXException | TransformerException e) {
 					e.printStackTrace();
 				}

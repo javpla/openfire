@@ -35,9 +35,6 @@ public class XMPPEncoder extends ProtocolEncoderAdapter {
 
     public void encode(IoSession session, Object message, ProtocolEncoderOutput out)
             throws Exception {
-        // Ignore. Do nothing. Content being sent is already a bytebuffer (of strings) 
-    	if(session.containsAttribute("exiProcessor")){
-    		System.out.println();
-    	}
+        // Ignore. Do nothing. Content being sent is already a bytebuffer (of strings)
     }
 }

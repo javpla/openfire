@@ -81,7 +81,6 @@
 	<classpathentry kind="lib" path="build/lib/merge/jzlib.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/libidn.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/log4j.jar"/>
-	<classpathentry kind="lib" path="build/lib/merge/mina-core.jar" sourcepath="C:/Users/Javier/Downloads/ProtocolCodecFilter.zip"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-filter-compression.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-filter-ssl.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-integration-jmx.jar"/>
@@ -159,5 +158,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xerces"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/exificient"/>
+	<classpathentry kind="lib" path="build/lib/merge/mina-core.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
