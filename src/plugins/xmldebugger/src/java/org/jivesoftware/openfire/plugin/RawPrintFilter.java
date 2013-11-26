@@ -58,7 +58,7 @@ public class RawPrintFilter extends IoFilterAdapter {
             Charset encoder = Charset.forName("UTF-8");
             CharBuffer charBuffer = encoder.decode(byteBuffer.buf());
             // Print buffer content
-            System.out.println(prefix + " - RECV (" + session.hashCode() + ")(t=" + System.currentTimeMillis() + "): " + charBuffer);
+            System.err.println(prefix + " - RECV (" + session.hashCode() + "): " + charBuffer);
             // Reset to old position in the buffer
             byteBuffer.position(currentPos);
         }
