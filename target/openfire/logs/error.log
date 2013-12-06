@@ -6879,6 +6879,7 @@ java.lang.Exception: <downloadSchemaResponse> PROCESSED!!!!!
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 2013.12.06 11:18:38 org.jivesoftware.openfire.nio.ConnectionHandler - ConnectionHandler reports unexpected exception for session: (SOCKET, R: /127.0.0.1:60307, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
 java.lang.Exception: <setup> PROCESSED!!!!!
 	at cl.clayster.exi.EXIFilter.messageReceived(EXIFilter.java:103)
@@ -6974,3 +6975,5 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
 	at java.lang.Thread.run(Unknown Source)
+=======
+>>>>>>> 60d51adaf98d31dadd5b80bd189e6e304c2a7775

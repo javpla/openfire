@@ -1229,6 +1229,7 @@ Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Qu
 1386337963691,org.jivesoftware.database.EmbeddedConnectionProvider@32c5ad22,17,0,0,6,1,14,1,0,0
 1386337968692,org.jivesoftware.database.EmbeddedConnectionProvider@32c5ad22,17,0,0,6,1,14,1,0,0
 1386337973692,org.jivesoftware.database.EmbeddedConnectionProvider@32c5ad22,17,0,0,6,1,14,1,0,0
+<<<<<<< HEAD
 Fri Dec 06 11:18:01 CLST 2013
 Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Queue Tasks, Completed Tasks, Sessions, NIO Read, NIO Written, Queued NIO events, Queues NIO writes
 1386339421365,org.jivesoftware.database.EmbeddedConnectionProvider@7d9c80e5,17,0,0,0,0,0,0,0,0
@@ -1430,3 +1431,5 @@ Timestamp, DB min, DB max, DB current, DB used, Core Threads, Active Threads, Qu
 1386341371009,org.jivesoftware.database.EmbeddedConnectionProvider@21f5156c,17,0,0,0,0,0,0,0,0
 1386341376010,org.jivesoftware.database.EmbeddedConnectionProvider@21f5156c,17,0,0,0,0,0,0,0,0
 1386341381010,org.jivesoftware.database.EmbeddedConnectionProvider@21f5156c,17,0,0,0,0,0,0,0,0
+=======
+>>>>>>> 60d51adaf98d31dadd5b80bd189e6e304c2a7775

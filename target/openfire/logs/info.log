@@ -5518,6 +5518,7 @@ java.io.IOException: Se ha forzado la interrupción de una conexión existente por
 2013.12.06 11:00:55 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket iniciado (sin encriptar) en el puerto: 5222
 2013.12.06 11:00:55 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket SSL (encriptado) iniciado en el puerto: 5223
 2013.12.06 11:01:04 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+<<<<<<< HEAD
 2013.12.06 11:16:51 org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
 2013.12.06 11:16:51 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
 2013.12.06 11:16:51 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
@@ -5706,3 +5707,5 @@ java.io.IOException: Se ha forzado la interrupción de una conexión existente por
 2013.12.06 11:43:17 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket del servidor iniciado (sin encriptar) en el puerto: 5269
 2013.12.06 11:43:17 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket iniciado (sin encriptar) en el puerto: 5222
 2013.12.06 11:43:17 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket SSL (encriptado) iniciado en el puerto: 5223
+=======
+>>>>>>> 60d51adaf98d31dadd5b80bd189e6e304c2a7775
