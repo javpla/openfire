@@ -1,14 +1,109 @@
-2013.12.02 17:38:56 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<exi:streamStart xmlns:exi="http://jabber.org/protocol/compress/exi" from="smackuser@javier.placencio/Smack" xml:lang="en" to="javier.placencio" version="1.0"><exi:xmlns namespace="jabber:client" prefix=""/><exi:xmlns namespace="http://etherx.jabber.org/streams" prefix="streams"/><exi:xmlns namespace="http://jabber.org/protocol/compress/exi" prefix="exi"/></exi:streamStart>
-2013.12.02 17:38:56 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<exi:streamEnd xmlns:exi="http://jabber.org/protocol/compress/exi"></exi:streamEnd>
-2013.12.02 17:40:08 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<exi:streamStart xmlns:exi="http://jabber.org/protocol/compress/exi" from="smackuser@javier.placencio/Smack" xml:lang="en" to="javier.placencio" version="1.0"><exi:xmlns namespace="jabber:client" prefix=""/><exi:xmlns namespace="http://etherx.jabber.org/streams" prefix="streams"/><exi:xmlns namespace="http://jabber.org/protocol/compress/exi" prefix="exi"/></exi:streamStart>
-2013.12.03 15:52:51 org.jivesoftware.openfire.nio.NIOConnection - No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@4ffe4a06 MINA Session: (SOCKET, R: /127.0.0.1:64770, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
-2013.12.03 16:16:49 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2013.12.03 16:16:59 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2013.12.03 16:17:23 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.03 16:17:24 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.05 12:06:02 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.05 12:06:02 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.05 17:37:44 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2013.12.05 17:37:51 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2013.12.05 17:38:18 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.05 17:38:19 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.12.06 13:04:10 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2013.12.06 13:04:14 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '24'
+2013.12.06 13:04:15 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '21'
+2013.12.06 13:04:16 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '20'
+2013.12.06 13:04:20 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
+2013.12.06 13:04:45 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.12.06 13:04:45 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.12.06 13:05:39 org.jivesoftware.admin.LoginLimitManager - Failed admin console login attempt by admin from 0:0:0:0:0:0:0:1
+2013.12.06 13:07:04 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '25'
+2013.12.06 13:08:10 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@f907be socket: Socket[addr=/127.0.0.1,port=61604,localport=5269] session: null
+2013.12.06 13:08:10 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@49a6fb9d socket: Socket[addr=/127.0.0.1,port=61605,localport=5269] session: null
+2013.12.06 13:08:13 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+java.net.UnknownHostException: placencio
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2013.12.06 13:09:13 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@5eedabd8 socket: Socket[addr=/127.0.0.1,port=61620,localport=5269] session: null
+2013.12.06 13:09:14 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@1b46a970 socket: Socket[addr=/127.0.0.1,port=61621,localport=5269] session: null
+2013.12.06 13:09:16 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+java.net.UnknownHostException: placencio
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2013.12.06 13:09:34 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@4af1fdc7 socket: Socket[addr=/127.0.0.1,port=61625,localport=5269] session: null
+2013.12.06 13:09:34 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: javier.placencio. Connection: org.jivesoftware.openfire.net.SocketConnection@6de97bbd socket: Socket[addr=/127.0.0.1,port=61626,localport=5269] session: null
+2013.12.06 13:09:37 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+java.net.UnknownHostException: placencio
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2013.12.06 13:26:44 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '50'
+2013.12.06 13:26:45 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@48a7ea30 socket: Socket[addr=/127.0.0.1,port=62530,localport=5269] session: null
+2013.12.06 13:26:45 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@7439522 socket: Socket[addr=/127.0.0.1,port=62531,localport=5269] session: null
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:29 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 14:06:30 org.jivesoftware.openfire.reporting.stats.StatsEngine - Sample task not run because less then a second has passed since last sample.
+2013.12.06 15:02:38 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@1b1c2fd2 socket: Socket[addr=/127.0.0.1,port=63184,localport=5269] session: null
+2013.12.06 15:02:39 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@3ef14f51 socket: Socket[addr=/127.0.0.1,port=63185,localport=5269] session: null
+2013.12.06 15:02:39 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@57d3074 socket: Socket[addr=/127.0.0.1,port=63186,localport=5269] session: null
+2013.12.06 15:02:40 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@16dace85 socket: Socket[addr=/127.0.0.1,port=63188,localport=5269] session: null
+2013.12.06 15:30:42 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@40fb8e65 socket: Socket[addr=/127.0.0.1,port=63408,localport=5269] session: null
+2013.12.06 15:30:42 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@7f612b5b socket: Socket[addr=/127.0.0.1,port=63409,localport=5269] session: null
+2013.12.06 15:30:43 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@787fe0a socket: Socket[addr=/127.0.0.1,port=63410,localport=5269] session: null
+2013.12.06 15:30:43 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@50db7a72 socket: Socket[addr=/127.0.0.1,port=63411,localport=5269] session: null
+2013.12.09 16:29:39 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.12.09 16:29:39 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2013.12.09 16:30:52 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@50de4bd2 socket: Socket[addr=/127.0.0.1,port=54497,localport=5269] session: null
+2013.12.09 16:30:53 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@3245def1 socket: Socket[addr=/127.0.0.1,port=54498,localport=5269] session: null
+2013.12.09 16:31:26 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@276595b socket: Socket[addr=/127.0.0.1,port=54499,localport=5269] session: null
+2013.12.09 16:31:26 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@5516d383 socket: Socket[addr=/127.0.0.1,port=54500,localport=5269] session: null
+2013.12.09 16:32:47 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@17e7075b socket: Socket[addr=/127.0.0.1,port=54505,localport=5269] session: null
+2013.12.09 16:32:48 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@74782192 socket: Socket[addr=/127.0.0.1,port=54506,localport=5269] session: null
+2013.12.09 16:33:14 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@95c5503 socket: Socket[addr=/127.0.0.1,port=54519,localport=5269] session: null
+2013.12.09 16:33:14 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@588f2091 socket: Socket[addr=/127.0.0.1,port=54520,localport=5269] session: null
+2013.12.09 16:33:34 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@4ffea259 socket: Socket[addr=/127.0.0.1,port=54533,localport=5269] session: null
+2013.12.09 16:33:34 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@266c1ec socket: Socket[addr=/127.0.0.1,port=54534,localport=5269] session: null
+2013.12.09 16:34:33 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@51ee1175 socket: Socket[addr=/127.0.0.1,port=54539,localport=5269] session: null
+2013.12.09 16:34:33 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@3b696433 socket: Socket[addr=/127.0.0.1,port=54540,localport=5269] session: null
+2013.12.09 16:34:49 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@3605334 socket: Socket[addr=/127.0.0.1,port=54544,localport=5269] session: null
+2013.12.09 16:34:49 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: 127.0.0.1. Connection: org.jivesoftware.openfire.net.SocketConnection@244e2417 socket: Socket[addr=/127.0.0.1,port=54545,localport=5269] session: null
+2013.12.10 12:25:46 org.jivesoftware.openfire.nio.NIOConnection - No ACK was received when sending stanza to: org.jivesoftware.openfire.nio.NIOConnection@45a2f54a MINA Session: (SOCKET, R: /127.0.0.1:56376, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
+2013.12.10 12:36:20 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2013.12.10 12:36:27 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
