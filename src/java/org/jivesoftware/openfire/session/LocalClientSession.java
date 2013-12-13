@@ -785,7 +785,7 @@ public class LocalClientSession extends LocalSession implements ClientSession {
         if (conn.getCompressionPolicy() != Connection.CompressionPolicy.disabled &&
                 !conn.isCompressed()) {
             sb.append(
-                    "<compression xmlns=\"http://jabber.org/features/compress\"><method>zlib</method><method>exi</method></compression>");
+                    "<compression xmlns=\"http://jabber.org/features/compress\"><method>zlib</method></compression>");
         }
 
         if (getAuthToken() == null) {
