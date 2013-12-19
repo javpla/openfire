@@ -505,8 +505,7 @@ public abstract class StanzaHandler {
             connection.deliverRawText(error);
             return false;
         }
-        else {
-        	/************************ EXI code ************************/ 
+        else { 
         	if("zlib".equals(doc.elementText("method"))){
         		// Start using compression for incoming traffic
                 connection.addCompression();
@@ -514,15 +513,9 @@ public abstract class StanzaHandler {
                 // Start using compression for outgoing traffic
                 connection.startCompression();
                 connection.deliverRawText("<compressed xmlns='http://jabber.org/protocol/compress'/>");
-        	}else if("exi".equals(doc.elementText("method"))){
-        		// TODO: add exi compression filters
-        		//if(connection instanceof NIOConnection){}
-        		//NIOConnection nioConnection = (NIOConnection) connection;
-        		//nioConnection.startEXICompression();
-        	}
         	// Indicate client that he can proceed and compress the socket
-            return true;
-            /************************ fin EXI code ************************/ 
+        	}
+            return true;            
         }
     }
 
