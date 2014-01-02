@@ -1,8 +1,29 @@
-2013.12.16 12:48:42 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.16 12:48:42 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.16 16:31:53 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2013.12.16 16:32:00 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2013.12.16 16:32:28 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.16 16:32:28 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.18 12:48:43 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2013.12.18 12:48:44 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2014.01.02 13:23:06 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
+java.net.UnknownHostException: javier.placencio
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2014.01.02 13:23:06 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: clayster.cl id: b30a02a3 for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><dialback xmlns="urn:xmpp:features:dialback"/></stream:features>
+2014.01.02 13:23:07 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: jabber.se id: 3629845849 for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="http://www.process-one.net/en/ejabberd/" ver="1BbHYInnnbaHIA3m+vJn723HeN4="/></stream:features>
+2014.01.02 13:23:09 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+java.net.UnknownHostException: placencio
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2014.01.02 13:23:09 org.jivesoftware.openfire.net.SocketReadingMode - TLS requested by initiator when TLS was never offered by server. Closing connection : org.jivesoftware.openfire.net.SocketConnection@6dd0d81c socket: Socket[addr=/130.236.254.152,port=59110,localport=5269] session: org.jivesoftware.openfire.session.LocalIncomingServerSession@3f8d87e5 status: -1 address: exi.clayster.cl/cf542988 id: cf542988
