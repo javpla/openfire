@@ -1,6 +1,6 @@
-2014.01.10 13:38:36 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 13:38:43 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 13:38:53 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
+2014.01.13 15:56:35 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2014.01.13 15:56:46 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
+2014.01.13 15:57:02 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
 java.net.UnknownHostException: javier.placencio
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
 	at java.net.PlainSocketImpl.connect(Unknown Source)
@@ -13,8 +13,8 @@ java.net.UnknownHostException: javier.placencio
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-2014.01.10 13:38:54 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: clayster.cl id: 2a56c85a for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><dialback xmlns="urn:xmpp:features:dialback"/></stream:features>
-2014.01.10 13:38:56 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+2014.01.13 15:57:02 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: clayster.cl id: 76e8c2c7 for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><dialback xmlns="urn:xmpp:features:dialback"/></stream:features>
+2014.01.13 15:57:04 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
 java.net.UnknownHostException: placencio
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
 	at java.net.PlainSocketImpl.connect(Unknown Source)
@@ -27,7 +27,7 @@ java.net.UnknownHostException: placencio
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-2014.01.10 13:39:08 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
+2014.01.13 15:57:27 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
 java.net.UnknownHostException: javier.placencio
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
 	at java.net.PlainSocketImpl.connect(Unknown Source)
@@ -40,7 +40,7 @@ java.net.UnknownHostException: javier.placencio
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-2014.01.10 13:39:10 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
+2014.01.13 15:57:29 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
 java.net.UnknownHostException: placencio
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
 	at java.net.PlainSocketImpl.connect(Unknown Source)
@@ -53,92 +53,8 @@ java.net.UnknownHostException: placencio
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-2014.01.10 13:40:57 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: cl(DNS lookup: cl:5269)
+2014.01.13 15:59:04 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: cl(DNS lookup: cl:5269)
 java.net.UnknownHostException: cl
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:02:19 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 14:02:27 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 14:09:48 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
-java.net.UnknownHostException: javier.placencio
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:09:49 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: clayster.cl id: 2e04640d for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><dialback xmlns="urn:xmpp:features:dialback"/></stream:features>
-2014.01.10 14:09:51 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
-java.net.UnknownHostException: placencio
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:10:38 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 14:10:46 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2014.01.10 14:10:51 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
-java.net.UnknownHostException: javier.placencio
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:10:52 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: clayster.cl id: f0cf9f6b for domain: exi.clayster.cl answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><dialback xmlns="urn:xmpp:features:dialback"/></stream:features>
-2014.01.10 14:10:53 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
-java.net.UnknownHostException: placencio
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:208)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:10:58 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: javier.placencio(DNS lookup: javier.placencio:5269)
-java.net.UnknownHostException: javier.placencio
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
-	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
-	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-2014.01.10 14:10:58 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: placencio(DNS lookup: placencio:5269)
-java.net.UnknownHostException: placencio
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
 	at java.net.PlainSocketImpl.connect(Unknown Source)
 	at java.net.SocksSocketImpl.connect(Unknown Source)
