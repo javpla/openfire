@@ -159,5 +159,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/xerces"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/exificient"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-core.jar"/>
+	<classpathentry kind="lib" path="target/openfire/plugins/exi/lib/commons-io-2.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
