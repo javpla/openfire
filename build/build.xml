@@ -95,7 +95,7 @@
     <property name="jar.starter.name" value="startup.jar"/>
     <property name="jar.dest.dir" value="${work.dir}/lib"/>
     <property name="resources.dir" value="${src.dir}/resources"/>
-	<property name="pack200.enabled" value="true"/>
+        <property name="pack200.enabled" value="true"/>
 
     <property name="overlay.dir"   value="${basedir}/custom"/>
     <property name="overlay.src.dir"   value="${overlay.dir}/source"/>
@@ -324,7 +324,7 @@
                 <equals arg1="${overlay.props.found}" arg2="true"/>
                 <then>
                   <echo>Found overlay file: ${overlay.dir}/${overlay.properties.file}</echo>
-		          <property file="${overlay.dir}/${overlay.properties.file}"/>
+                          <property file="${overlay.dir}/${overlay.properties.file}"/>
                     <replace dir="${target.i18n.dir}">
                         <replacefilter token="title = Wildfire" value="title=${title}"/>
                         <replacefilter token="short.title = Wildfire" value="short.title=${short.title}"/>
@@ -610,7 +610,7 @@
         <!-- Run jUnit -->
         <mkdir dir="${test.results.dest.dir}"/>
         <junit printsummary="yes" haltonfailure="yes" fork="yes" dir="${test.dest.dir}">
-	    <sysproperty key="openfireHome" value="${target.openfireHome}"/>
+            <sysproperty key="openfireHome" value="${target.openfireHome}"/>
 
             <!-- We must add our own classes to the classpath for testing -->
             <classpath>
@@ -1115,29 +1115,29 @@
         <if>
             <equals arg1="${bundle.jre}" arg2="true"/>
             <then>
-	      <rpm specFile="openfire.spec"
-		  topDir="${target.rpm}"
-		  command="-ba --target i386 --define 'OPENFIRE_VERSION ${version}' --define 'OPENFIRE_SOURCE ${release.fullname.src}.tar.gz' --define 'OPENFIRE_BUILDDATE ${rpm.builddate}'"
-		  failOnError="true"
-		  />
+              <rpm specFile="openfire.spec"
+                  topDir="${target.rpm}"
+                  command="-ba --target i386 --define 'OPENFIRE_VERSION ${version}' --define 'OPENFIRE_SOURCE ${release.fullname.src}.tar.gz' --define 'OPENFIRE_BUILDDATE ${rpm.builddate}'"
+                  failOnError="true"
+                  />
 
-	      <copy todir="${release.dest.dir}" >
-		  <fileset dir="${target.rpm}/SRPMS" />
-		  <fileset dir="${target.rpm}/RPMS/i386" />
-	      </copy>
-	    </then>
+              <copy todir="${release.dest.dir}" >
+                  <fileset dir="${target.rpm}/SRPMS" />
+                  <fileset dir="${target.rpm}/RPMS/i386" />
+              </copy>
+            </then>
             <else>
-	      <rpm specFile="openfire.spec"
-		  topDir="${target.rpm}"
-		  command="-ba --target noarch --define 'OPENFIRE_VERSION ${version}' --define 'OPENFIRE_SOURCE ${release.fullname.src}.tar.gz' --define 'OPENFIRE_BUILDDATE ${rpm.builddate}'"
-		  failOnError="true"
-		  />
+              <rpm specFile="openfire.spec"
+                  topDir="${target.rpm}"
+                  command="-ba --target noarch --define 'OPENFIRE_VERSION ${version}' --define 'OPENFIRE_SOURCE ${release.fullname.src}.tar.gz' --define 'OPENFIRE_BUILDDATE ${rpm.builddate}'"
+                  failOnError="true"
+                  />
 
-	      <copy todir="${release.dest.dir}" >
-		  <fileset dir="${target.rpm}/SRPMS" />
-		  <fileset dir="${target.rpm}/RPMS/noarch" />
-	      </copy>
-	    </else>
+              <copy todir="${release.dest.dir}" >
+                  <fileset dir="${target.rpm}/SRPMS" />
+                  <fileset dir="${target.rpm}/RPMS/noarch" />
+              </copy>
+            </else>
         </if>
     </target>
 
@@ -1167,17 +1167,17 @@
             <fileset dir="${release.out.dir}"/>
         </copy>
 
-	<chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/openfirectl" />
-	<chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/openfire.sh" />
-	<chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/extra/embedded-db-viewer.sh" />
+        <chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/openfirectl" />
+        <chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/openfire.sh" />
+        <chmod perm="0755" file="${target.solaris.root}/opt/openfire/bin/extra/embedded-db-viewer.sh" />
 
-	<delete file="${target.solaris.root}/opt/openfire/bin/openfire.bat" />
-	<delete file="${target.solaris.root}/opt/openfire/bin/openfire-dev.bat" />
-	<delete file="${target.solaris.root}/opt/openfire/bin/extra/openfire-launchd-wrapper.sh" />
-	<delete file="${target.solaris.root}/opt/openfire/bin/extra/openfired" />
-	<delete dir="${target.solaris.root}/opt/openfire/bin/extra/redhat" />
-	<delete file="${target.solaris.root}/opt/openfire/bin/extra/redhat-postinstall.sh" />
-	<delete file="${target.solaris.root}/opt/openfire/bin/extra/embedded-db-viewer.bat" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/openfire.bat" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/openfire-dev.bat" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/extra/openfire-launchd-wrapper.sh" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/extra/openfired" />
+        <delete dir="${target.solaris.root}/opt/openfire/bin/extra/redhat" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/extra/redhat-postinstall.sh" />
+        <delete file="${target.solaris.root}/opt/openfire/bin/extra/embedded-db-viewer.bat" />
 
         <copy tofile="${target.solaris.root}/pkginfo" file="${basedir}/build/pkg/pkginfo" />
         <copy tofile="${target.solaris.root}/opt/openfire/resources/solaris/openfire.xml" file="${basedir}/build/solaris/openfire.xml" />
@@ -1319,8 +1319,8 @@
                         destdir="${plugin.dev.dest.dir}/@{plugin}/target/classes"
                         includeAntRuntime="no"
                         debug="on"
-                        source="1.7"
-                        target="1.7"
+                        source="1.5"
+                        target="1.6"
                         >
                     <src path="@{pluginsrc}/@{plugin}/src/java"/>
                     <classpath>
@@ -1863,13 +1863,13 @@
             <arg line="-uc"/>
         </exec>
 
-	<!-- Copy the resulting files into target -->
-	<copy todir="${debian.release.dir}">
+        <!-- Copy the resulting files into target -->
+        <copy todir="${debian.release.dir}">
             <fileset dir="${debian.work.dir}/.." followsymlinks="false">
-		<include name="**/*.deb" />
-		<include name="**/*.changes" />
-		<include name="**/*.dsc" />
-		<include name="**/*.gz" />
+                <include name="**/*.deb" />
+                <include name="**/*.changes" />
+                <include name="**/*.dsc" />
+                <include name="**/*.gz" />
             </fileset>
         </copy>
     </target>

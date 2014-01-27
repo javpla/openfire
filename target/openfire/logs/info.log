@@ -1,574 +1,171 @@
-2014.01.21 16:17:16 org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
-2014.01.21 16:17:16 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Clearspace SSO Nonce
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
-2014.01.21 16:17:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
-2014.01.21 16:17:17 org.jivesoftware.openfire.pubsub.PubSubModule - Dominio de Publicar-Suscribir: pubsub.exi.clayster.cl
-2014.01.21 16:17:17 org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Dominio de Chat Multi-usuario: conference.exi.clayster.cl
-2014.01.21 16:17:18 org.jivesoftware.openfire.XMPPServer - Openfire 3.8.3 Alpha [21-ene-2014 16:17:18]
-2014.01.21 16:17:20 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
-2014.01.21 16:17:20 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
-2014.01.21 16:17:21 org.jivesoftware.openfire.container.AdminConsolePlugin - Consola de administración escuchando en:
+2014.01.27 18:47:49 org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2014.01.27 18:47:49 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Clearspace SSO Nonce
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2014.01.27 18:47:50 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2014.01.27 18:47:50 org.jivesoftware.openfire.pubsub.PubSubModule - Dominio de Publicar-Suscribir: pubsub.exi.clayster.cl
+2014.01.27 18:47:51 org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Dominio de Chat Multi-usuario: conference.exi.clayster.cl
+2014.01.27 18:47:52 org.jivesoftware.openfire.XMPPServer - Openfire 3.8.3 Alpha [27-ene-2014 18:47:52]
+2014.01.27 18:47:54 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2014.01.27 18:47:54 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2014.01.27 18:47:56 org.jivesoftware.openfire.container.AdminConsolePlugin - Consola de administración escuchando en:
   http://exi.clayster.cl:9090
   https://exi.clayster.cl:9091
-2014.01.21 16:17:21 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
-2014.01.21 16:17:21 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager -  Created TransportSessionManager
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
-2014.01.21 16:17:22 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
-2014.01.21 16:17:22 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
-2014.01.21 16:17:24 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
-2014.01.21 16:17:25 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
-2014.01.21 16:17:25 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
-2014.01.21 16:17:25 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
-2014.01.21 16:17:27 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket del servidor iniciado (sin encriptar) en el puerto: 5269
-2014.01.21 16:17:27 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket iniciado (sin encriptar) en el puerto: 5222
-2014.01.21 16:17:27 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket SSL (encriptado) iniciado en el puerto: 5223
-2014.01.21 16:17:45 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
-2014.01.21 16:21:48 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Server Configurations
-2014.01.21 16:21:53 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Secret Keys Cache
-2014.01.21 16:32:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\lib\exificient.jar
-2014.01.21 16:32:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\lib\plugin-exi.jar
-2014.01.21 16:32:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\lib\xercesImpl.jar
-2014.01.21 16:32:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\exi\lib\xml-apis.jar
-2014.01.21 16:34:52 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing broadcast.exi.clayster.cl from watched Transports.
-2014.01.21 16:34:53 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\broadcast\lib\plugin-broadcast.jar
-2014.01.21 16:34:55 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing updater.exi.clayster.cl from watched Transports.
-2014.01.21 16:34:55 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing manager.exi.clayster.cl from watched Transports.
-2014.01.21 16:34:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\commons-fileupload-1.0.jar
-2014.01.21 16:34:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl-jspc.jar
-2014.01.21 16:34:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl.jar
-2014.01.21 16:34:58 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter-jspc.jar
-2014.01.21 16:34:58 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter.jar
-2014.01.21 16:35:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess-jspc.jar
-2014.01.21 16:35:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess.jar
-2014.01.21 16:35:03 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener-jspc.jar
-2014.01.21 16:35:03 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener.jar
-2014.01.21 16:35:07 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing workgroup.exi.clayster.cl from watched Transports.
-2014.01.21 16:35:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\commons-fileupload-1.0.jar
-2014.01.21 16:35:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\lucene.jar
-2014.01.21 16:35:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath-jspc.jar
-2014.01.21 16:35:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath.jar
-2014.01.21 16:35:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\xstream.jar
-2014.01.21 16:35:11 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Destroying GoJara
-2014.01.21 16:35:11 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Freezing GoJara Maininterceptor.
-2014.01.21 16:35:11 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\json.jar
-2014.01.21 16:35:11 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara-jspc.jar
-2014.01.21 16:35:11 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara.jar
-2014.01.21 16:35:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-2.5.1.jar
-2014.01.21 16:35:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-cloud-2.5.1.jar
-2014.01.21 16:35:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast-jspc.jar
-2014.01.21 16:35:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast.jar
-2014.01.21 16:35:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\jnsapi.jar
-2014.01.21 16:35:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes-jspc.jar
-2014.01.21 16:35:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes.jar
-2014.01.21 16:35:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\log4j.jar
-2014.01.21 16:35:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried-jspc.jar
-2014.01.21 16:35:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried.jar
-2014.01.21 16:35:22 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Registration Cache
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\concurrent.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\dwr.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpclient.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpcore.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipapi.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipri.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jakarta-regexp.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jcip-annotations.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jggapi.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jml.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-common.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-protocol.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jqql.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jsocks.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\json.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\martyr.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\msim.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\openymsg.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken-jspc.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smack.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smackx.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\stcomm.jar
-2014.01.21 16:35:22 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\xmlrpc.jar
-2014.01.21 16:35:29 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\loadstats\lib\plugin-loadStats.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\dwr.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\itext.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\jcommon.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\jfreechart.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\jrobin.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\lucene.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\picocontainer.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\plugin-monitoring-jspc.jar
-2014.01.21 16:35:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\monitoring\lib\plugin-monitoring.jar
-2014.01.21 16:35:36 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd-jspc.jar
-2014.01.21 16:35:36 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd.jar
-2014.01.21 16:35:39 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter-jspc.jar
-2014.01.21 16:35:39 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter.jar
-2014.01.21 16:35:41 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence-jspc.jar
-2014.01.21 16:35:41 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence.jar
-2014.01.21 16:35:44 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration-jspc.jar
-2014.01.21 16:35:44 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration.jar
-2014.01.21 16:35:44 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\recaptcha4j.jar
-2014.01.21 16:35:46 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search-jspc.jar
-2014.01.21 16:35:46 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search.jar
-2014.01.21 16:35:49 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\jstun-0.6.1.jar
-2014.01.21 16:35:49 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver-jspc.jar
-2014.01.21 16:35:49 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver.jar
-2014.01.21 16:35:51 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription-jspc.jar
-2014.01.21 16:35:51 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription.jar
-2014.01.21 16:35:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation-jspc.jar
-2014.01.21 16:35:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\commons-fileupload-1.0.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\isorelax.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\msv.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport-jspc.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\relaxngDatatype.jar
-2014.01.21 16:35:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\xsdlib.jar
-2014.01.21 16:35:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice-jspc.jar
-2014.01.21 16:35:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice.jar
-2014.01.21 16:36:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger-jspc.jar
-2014.01.21 16:36:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger.jar
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
-2014.01.21 16:36:04 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
-2014.01.21 16:36:05 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
-2014.01.21 16:36:06 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
-2014.01.21 16:36:06 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
-2014.01.21 16:36:06 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
-2014.01.21 16:36:06 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
-2014.01.21 16:38:49 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing broadcast.exi.clayster.cl from watched Transports.
-2014.01.21 16:38:49 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\broadcast\lib\plugin-broadcast.jar
-2014.01.21 16:38:52 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing updater.exi.clayster.cl from watched Transports.
-2014.01.21 16:38:52 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing manager.exi.clayster.cl from watched Transports.
-2014.01.21 16:38:52 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\commons-fileupload-1.0.jar
-2014.01.21 16:38:52 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl-jspc.jar
-2014.01.21 16:38:52 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl.jar
-2014.01.21 16:38:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter-jspc.jar
-2014.01.21 16:38:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter.jar
-2014.01.21 16:38:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess-jspc.jar
-2014.01.21 16:38:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess.jar
-2014.01.21 16:38:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener-jspc.jar
-2014.01.21 16:38:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener.jar
-2014.01.21 16:39:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\commons-fileupload-1.0.jar
-2014.01.21 16:39:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\lucene.jar
-2014.01.21 16:39:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath-jspc.jar
-2014.01.21 16:39:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath.jar
-2014.01.21 16:39:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\xstream.jar
-2014.01.21 16:39:05 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Destroying GoJara
-2014.01.21 16:39:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Freezing GoJara Maininterceptor.
-2014.01.21 16:39:05 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\json.jar
-2014.01.21 16:39:05 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara-jspc.jar
-2014.01.21 16:39:05 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara.jar
-2014.01.21 16:39:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-2.5.1.jar
-2014.01.21 16:39:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-cloud-2.5.1.jar
-2014.01.21 16:39:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast-jspc.jar
-2014.01.21 16:39:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast.jar
-2014.01.21 16:39:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\jnsapi.jar
-2014.01.21 16:39:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes-jspc.jar
-2014.01.21 16:39:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes.jar
-2014.01.21 16:39:15 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\log4j.jar
-2014.01.21 16:39:15 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried-jspc.jar
-2014.01.21 16:39:15 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried.jar
-2014.01.21 16:39:17 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Registration Cache
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\concurrent.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\dwr.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpclient.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpcore.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipapi.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipri.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jakarta-regexp.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jcip-annotations.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jggapi.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jml.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-common.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-protocol.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jqql.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jsocks.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\json.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\martyr.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\msim.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\openymsg.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken-jspc.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smack.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smackx.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\stcomm.jar
-2014.01.21 16:39:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\xmlrpc.jar
-2014.01.21 16:39:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\loadstats\lib\plugin-loadStats.jar
-2014.01.21 16:40:11 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd-jspc.jar
-2014.01.21 16:40:11 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd.jar
-2014.01.21 16:40:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter-jspc.jar
-2014.01.21 16:40:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter.jar
-2014.01.21 16:40:16 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence-jspc.jar
-2014.01.21 16:40:16 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence.jar
-2014.01.21 16:40:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration-jspc.jar
-2014.01.21 16:40:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration.jar
-2014.01.21 16:40:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\recaptcha4j.jar
-2014.01.21 16:40:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search-jspc.jar
-2014.01.21 16:40:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search.jar
-2014.01.21 16:40:23 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\jstun-0.6.1.jar
-2014.01.21 16:40:23 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver-jspc.jar
-2014.01.21 16:40:23 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver.jar
-2014.01.21 16:40:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription-jspc.jar
-2014.01.21 16:40:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription.jar
-2014.01.21 16:40:28 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation-jspc.jar
-2014.01.21 16:40:28 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\commons-fileupload-1.0.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\isorelax.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\msv.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport-jspc.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\relaxngDatatype.jar
-2014.01.21 16:40:30 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\xsdlib.jar
-2014.01.21 16:40:35 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice-jspc.jar
-2014.01.21 16:40:35 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice.jar
-2014.01.21 16:40:37 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger-jspc.jar
-2014.01.21 16:40:37 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger.jar
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
-2014.01.21 16:40:41 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
-2014.01.21 16:40:41 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
-2014.01.21 16:40:42 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
-2014.01.21 16:40:42 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
-2014.01.21 16:40:43 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
-2014.01.21 16:40:43 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
-2014.01.21 16:43:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd-jspc.jar
-2014.01.21 16:43:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd.jar
-2014.01.21 16:43:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter-jspc.jar
-2014.01.21 16:43:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter.jar
-2014.01.21 16:43:59 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing presence.exi.clayster.cl from watched Transports.
-2014.01.21 16:43:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence-jspc.jar
-2014.01.21 16:43:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence.jar
-2014.01.21 16:44:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration-jspc.jar
-2014.01.21 16:44:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration.jar
-2014.01.21 16:44:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\recaptcha4j.jar
-2014.01.21 16:44:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing search.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search-jspc.jar
-2014.01.21 16:44:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search.jar
-2014.01.21 16:44:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\jstun-0.6.1.jar
-2014.01.21 16:44:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver-jspc.jar
-2014.01.21 16:44:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver.jar
-2014.01.21 16:44:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription-jspc.jar
-2014.01.21 16:44:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription.jar
-2014.01.21 16:44:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation-jspc.jar
-2014.01.21 16:44:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\commons-fileupload-1.0.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\isorelax.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\msv.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport-jspc.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\relaxngDatatype.jar
-2014.01.21 16:44:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\xsdlib.jar
-2014.01.21 16:44:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice-jspc.jar
-2014.01.21 16:44:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice.jar
-2014.01.21 16:44:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger-jspc.jar
-2014.01.21 16:44:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger.jar
-2014.01.21 16:44:22 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
-2014.01.21 16:44:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:22 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:43 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing broadcast.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:43 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\broadcast\lib\plugin-broadcast.jar
-2014.01.21 16:44:45 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing updater.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:45 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing manager.exi.clayster.cl from watched Transports.
-2014.01.21 16:44:45 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\commons-fileupload-1.0.jar
-2014.01.21 16:44:45 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl-jspc.jar
-2014.01.21 16:44:45 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl.jar
-2014.01.21 16:44:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter-jspc.jar
-2014.01.21 16:44:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter.jar
-2014.01.21 16:44:50 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess-jspc.jar
-2014.01.21 16:44:50 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess.jar
-2014.01.21 16:44:52 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener-jspc.jar
-2014.01.21 16:44:52 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener.jar
-2014.01.21 16:44:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\commons-fileupload-1.0.jar
-2014.01.21 16:44:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\lucene.jar
-2014.01.21 16:44:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath-jspc.jar
-2014.01.21 16:44:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath.jar
-2014.01.21 16:44:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\xstream.jar
-2014.01.21 16:44:58 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Destroying GoJara
-2014.01.21 16:44:58 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Freezing GoJara Maininterceptor.
-2014.01.21 16:44:58 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\json.jar
-2014.01.21 16:44:58 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara-jspc.jar
-2014.01.21 16:44:58 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara.jar
-2014.01.21 16:45:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-2.5.1.jar
-2014.01.21 16:45:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-cloud-2.5.1.jar
-2014.01.21 16:45:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast-jspc.jar
-2014.01.21 16:45:01 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast.jar
-2014.01.21 16:45:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\jnsapi.jar
-2014.01.21 16:45:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes-jspc.jar
-2014.01.21 16:45:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes.jar
-2014.01.21 16:45:06 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\log4j.jar
-2014.01.21 16:45:06 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried-jspc.jar
-2014.01.21 16:45:06 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried.jar
-2014.01.21 16:45:09 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Registration Cache
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\concurrent.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\dwr.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpclient.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpcore.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipapi.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipri.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jakarta-regexp.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jcip-annotations.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jggapi.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jml.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-common.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-protocol.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jqql.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jsocks.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\json.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\martyr.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\msim.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\openymsg.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken-jspc.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smack.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smackx.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\stcomm.jar
-2014.01.21 16:45:09 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\xmlrpc.jar
-2014.01.21 16:45:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\loadstats\lib\plugin-loadStats.jar
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
-2014.01.21 16:46:04 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 6
-2014.01.21 16:46:05 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
-2014.01.21 16:46:06 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
-2014.01.21 17:12:55 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing broadcast.exi.clayster.cl from watched Transports.
-2014.01.21 17:12:55 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\broadcast\lib\plugin-broadcast.jar
-2014.01.21 17:12:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing updater.exi.clayster.cl from watched Transports.
-2014.01.21 17:12:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing manager.exi.clayster.cl from watched Transports.
-2014.01.21 17:12:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\commons-fileupload-1.0.jar
-2014.01.21 17:12:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl-jspc.jar
-2014.01.21 17:12:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl.jar
-2014.01.21 17:13:00 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter-jspc.jar
-2014.01.21 17:13:00 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter.jar
-2014.01.21 17:13:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess-jspc.jar
-2014.01.21 17:13:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess.jar
-2014.01.21 17:13:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener-jspc.jar
-2014.01.21 17:13:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener.jar
-2014.01.21 17:13:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\commons-fileupload-1.0.jar
-2014.01.21 17:13:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\lucene.jar
-2014.01.21 17:13:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath-jspc.jar
-2014.01.21 17:13:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath.jar
-2014.01.21 17:13:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\xstream.jar
-2014.01.21 17:13:10 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Destroying GoJara
-2014.01.21 17:13:10 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Freezing GoJara Maininterceptor.
-2014.01.21 17:13:10 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\json.jar
-2014.01.21 17:13:10 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara-jspc.jar
-2014.01.21 17:13:10 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara.jar
-2014.01.21 17:13:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-2.5.1.jar
-2014.01.21 17:13:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-cloud-2.5.1.jar
-2014.01.21 17:13:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast-jspc.jar
-2014.01.21 17:13:13 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast.jar
-2014.01.21 17:13:16 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\jnsapi.jar
-2014.01.21 17:13:16 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes-jspc.jar
-2014.01.21 17:13:16 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes.jar
-2014.01.21 17:13:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\log4j.jar
-2014.01.21 17:13:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried-jspc.jar
-2014.01.21 17:13:18 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried.jar
-2014.01.21 17:13:21 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Registration Cache
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\concurrent.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\dwr.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpclient.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpcore.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipapi.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipri.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jakarta-regexp.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jcip-annotations.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jggapi.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jml.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-common.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-protocol.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jqql.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jsocks.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\json.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\martyr.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\msim.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\openymsg.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken-jspc.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smack.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smackx.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\stcomm.jar
-2014.01.21 17:13:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\xmlrpc.jar
-2014.01.21 17:13:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\loadstats\lib\plugin-loadStats.jar
-2014.01.21 17:14:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd-jspc.jar
-2014.01.21 17:14:12 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd.jar
-2014.01.21 17:14:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter-jspc.jar
-2014.01.21 17:14:14 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter.jar
-2014.01.21 17:14:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence-jspc.jar
-2014.01.21 17:14:17 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence.jar
-2014.01.21 17:14:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration-jspc.jar
-2014.01.21 17:14:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration.jar
-2014.01.21 17:14:19 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\recaptcha4j.jar
-2014.01.21 17:14:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search-jspc.jar
-2014.01.21 17:14:21 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search.jar
-2014.01.21 17:14:24 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\jstun-0.6.1.jar
-2014.01.21 17:14:24 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver-jspc.jar
-2014.01.21 17:14:24 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver.jar
-2014.01.21 17:14:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription-jspc.jar
-2014.01.21 17:14:26 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\subscription\lib\plugin-subscription.jar
-2014.01.21 17:14:28 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation-jspc.jar
-2014.01.21 17:14:28 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\usercreation\lib\plugin-userCreation.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\commons-fileupload-1.0.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\isorelax.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\msv.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport-jspc.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\plugin-userImportExport.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\relaxngDatatype.jar
-2014.01.21 17:14:31 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userimportexport\lib\xsdlib.jar
-2014.01.21 17:14:33 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice-jspc.jar
-2014.01.21 17:14:33 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\userservice\lib\plugin-userservice.jar
-2014.01.21 17:14:36 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger-jspc.jar
-2014.01.21 17:14:36 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\xmldebugger\lib\plugin-xmldebugger.jar
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
-2014.01.21 17:14:38 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
-2014.01.21 17:14:39 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
-2014.01.21 17:14:40 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
-2014.01.21 17:14:40 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
-2014.01.21 17:14:40 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
-2014.01.21 17:14:40 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
-2014.01.21 17:21:36 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing broadcast.exi.clayster.cl from watched Transports.
-2014.01.21 17:21:36 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\broadcast\lib\plugin-broadcast.jar
-2014.01.21 17:21:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing updater.exi.clayster.cl from watched Transports.
-2014.01.21 17:21:38 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing manager.exi.clayster.cl from watched Transports.
-2014.01.21 17:21:38 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\commons-fileupload-1.0.jar
-2014.01.21 17:21:38 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl-jspc.jar
-2014.01.21 17:21:38 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\clientcontrol\lib\plugin-clientControl.jar
-2014.01.21 17:21:41 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter-jspc.jar
-2014.01.21 17:21:41 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\contentfilter\lib\plugin-contentFilter.jar
-2014.01.21 17:21:43 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess-jspc.jar
-2014.01.21 17:21:43 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\dbaccess\lib\plugin-dbaccess.jar
-2014.01.21 17:21:45 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener-jspc.jar
-2014.01.21 17:21:45 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\emaillistener\lib\plugin-emailListener.jar
-2014.01.21 17:21:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\commons-fileupload-1.0.jar
-2014.01.21 17:21:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\lucene.jar
-2014.01.21 17:21:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath-jspc.jar
-2014.01.21 17:21:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\plugin-fastpath.jar
-2014.01.21 17:21:48 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\fastpath\lib\xstream.jar
-2014.01.21 17:21:51 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Destroying GoJara
-2014.01.21 17:21:51 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Freezing GoJara Maininterceptor.
-2014.01.21 17:21:51 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\json.jar
-2014.01.21 17:21:51 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara-jspc.jar
-2014.01.21 17:21:51 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\gojara\lib\plugin-gojara.jar
-2014.01.21 17:21:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-2.5.1.jar
-2014.01.21 17:21:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\hazelcast-cloud-2.5.1.jar
-2014.01.21 17:21:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast-jspc.jar
-2014.01.21 17:21:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\hazelcast\lib\plugin-hazelcast.jar
-2014.01.21 17:21:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\jnsapi.jar
-2014.01.21 17:21:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes-jspc.jar
-2014.01.21 17:21:57 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\jinglenodes\lib\plugin-jingleNodes.jar
-2014.01.21 17:21:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\log4j.jar
-2014.01.21 17:21:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried-jspc.jar
-2014.01.21 17:21:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\justmarried\lib\plugin-justmarried.jar
-2014.01.21 17:22:02 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Registration Cache
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\concurrent.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\dwr.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpclient.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\httpcore.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipapi.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jainsipri.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jakarta-regexp.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jcip-annotations.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jggapi.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jml.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-common.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\joscar-protocol.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jqql.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\jsocks.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\json.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\martyr.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\msim.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\openymsg.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken-jspc.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\plugin-kraken.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smack.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\smackx.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\stcomm.jar
-2014.01.21 17:22:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\kraken\lib\xmlrpc.jar
-2014.01.21 17:22:08 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\loadstats\lib\plugin-loadStats.jar
-2014.01.21 17:22:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd-jspc.jar
-2014.01.21 17:22:54 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\motd\lib\plugin-motd.jar
-2014.01.21 17:22:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter-jspc.jar
-2014.01.21 17:22:56 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\packetfilter\lib\plugin-packetFilter.jar
-2014.01.21 17:22:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence-jspc.jar
-2014.01.21 17:22:59 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\presence\lib\plugin-presence.jar
-2014.01.21 17:23:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration-jspc.jar
-2014.01.21 17:23:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\plugin-registration.jar
-2014.01.21 17:23:02 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\registration\lib\recaptcha4j.jar
-2014.01.21 17:23:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search-jspc.jar
-2014.01.21 17:23:04 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\search\lib\plugin-search.jar
-2014.01.21 17:23:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\jstun-0.6.1.jar
-2014.01.21 17:23:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver-jspc.jar
-2014.01.21 17:23:07 org.jivesoftware.openfire.container.PluginClassLoader - Unloading plugin JAR file C:\Users\Javier\workspace\Personales\openfire\target\openfire\plugins\stunserver\lib\plugin-stunserver.jar
+2014.01.27 18:47:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2014.01.27 18:47:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager -  Created TransportSessionManager
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
+2014.01.27 18:47:57 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
+2014.01.27 18:47:57 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
+2014.01.27 18:47:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
+2014.01.27 18:47:59 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
+2014.01.27 18:47:59 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
+2014.01.27 18:47:59 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
+2014.01.27 18:48:00 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2014.01.27 18:48:00 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket iniciado (sin encriptar) en el puerto: 5222
+2014.01.27 18:48:00 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket SSL (encriptado) iniciado en el puerto: 5223
+2014.01.27 18:48:22 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2014.01.27 18:48:32 org.jivesoftware.openfire.nio.ConnectionHandler - ConnectionHandler reports IOException for session: (SOCKET, R: /127.0.0.1:65150, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
+java.io.IOException: Se ha forzado la interrupción de una conexión existente por el host remoto
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:225)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:198)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:375)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.read(SocketIoProcessor.java:218)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.process(SocketIoProcessor.java:198)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.access$400(SocketIoProcessor.java:45)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor$Worker.run(SocketIoProcessor.java:485)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+2014.01.27 18:48:51 org.jivesoftware.openfire.nio.ConnectionHandler - ConnectionHandler reports IOException for session: (SOCKET, R: /127.0.0.1:65155, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
+java.io.IOException: Se ha forzado la interrupción de una conexión existente por el host remoto
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:225)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:198)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:375)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.read(SocketIoProcessor.java:218)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.process(SocketIoProcessor.java:198)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.access$400(SocketIoProcessor.java:45)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor$Worker.run(SocketIoProcessor.java:485)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+2014.01.27 18:52:56 org.jivesoftware.openfire.XMPPServer - Registering shutdown hook (standalone mode)
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Servers Cache
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Components Cache
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing Users Cache
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing AnonymousUsers Cache
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Routing User Sessions
+2014.01.27 18:52:56 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Roster
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Multicast Service
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Message Size
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for VCard
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Privacy Lists
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer Cache
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Clearspace SSO Nonce
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Offline Presence Cache
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Last Activity Cache
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for User
+2014.01.27 18:52:57 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Remote Users Existence
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Components Sessions
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Connection Managers Sessions
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Incoming Server Sessions
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Sessions by Hostname
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Validated Domains
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Client Session Info Cache
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Entity Capabilities Users
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Directed Presences
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created local-only cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for PEPServiceManager
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for File Transfer
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Published Items
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Features
+2014.01.27 18:52:58 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Disco Server Items
+2014.01.27 18:52:58 org.jivesoftware.openfire.pubsub.PubSubModule - Dominio de Publicar-Suscribir: pubsub.exi.clayster.cl
+2014.01.27 18:52:58 org.jivesoftware.openfire.muc.spi.MultiUserChatServiceImpl - Dominio de Chat Multi-usuario: conference.exi.clayster.cl
+2014.01.27 18:52:59 org.jivesoftware.openfire.XMPPServer - Openfire 3.8.3 Alpha [27-ene-2014 18:52:59]
+2014.01.27 18:53:01 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Misses
+2014.01.27 18:53:01 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Favicon Hits
+2014.01.27 18:53:03 org.jivesoftware.openfire.container.AdminConsolePlugin - Consola de administración escuchando en:
+  http://exi.clayster.cl:9090
+  https://exi.clayster.cl:9091
+2014.01.27 18:53:04 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group
+2014.01.27 18:53:04 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Group Metadata Cache
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager -  Created TransportSessionManager
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Created MainInterceptor for GoJara Plugin.
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created DiscoIQRegisteredProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created IQRosterPayloadProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created NonPersistantProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created StatisticsProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created ClientToComponentUpdateProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created WhitelistProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created MucFilterProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.messagefilter.processors.AbstractRemoteRosterProcessor - Created GojaraAdminProcessor
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Starting RemoteRoster Plugin
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.sessions.TransportSessionManager - Initializing Sessions.
+2014.01.27 18:53:05 org.jivesoftware.openfire.plugin.gojara.base.RemoteRosterPlugin - Started Gojara successfully. Currently running interceptors: 4
+2014.01.27 18:53:05 org.jinglenodes.JingleNodesPlugin - Jingle Nodes Loaded.
+2014.01.27 18:53:06 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Kraken Session Location Cache
+2014.01.27 18:53:07 org.jivesoftware.openfire.plugin.PacketFilterPlugin - Packet Filter loaded...
+2014.01.27 18:53:08 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.contact.exi.clayster.cl from watched Transports.
+2014.01.27 18:53:08 org.jivesoftware.openfire.plugin.gojara.messagefilter.MainInterceptor - Removing registration.notification.enabled.exi.clayster.cl from watched Transports.
+2014.01.27 18:53:09 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket del servidor iniciado (sin encriptar) en el puerto: 5269
+2014.01.27 18:53:10 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket iniciado (sin encriptar) en el puerto: 5222
+2014.01.27 18:53:10 org.jivesoftware.openfire.spi.ConnectionManagerImpl - Socket SSL (encriptado) iniciado en el puerto: 5223
+2014.01.27 18:56:11 org.jivesoftware.util.cache.CacheFactory - Created cache [org.jivesoftware.util.cache.DefaultLocalCacheStrategy] for Locked Out Accounts
+2014.01.27 18:57:44 org.jivesoftware.openfire.nio.ConnectionHandler - ConnectionHandler reports IOException for session: (SOCKET, R: /127.0.0.1:65298, L: /127.0.0.1:5222, S: 0.0.0.0/0.0.0.0:5222)
+java.io.IOException: Se ha forzado la interrupción de una conexión existente por el host remoto
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:225)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:198)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:375)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.read(SocketIoProcessor.java:218)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.process(SocketIoProcessor.java:198)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.access$400(SocketIoProcessor.java:45)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor$Worker.run(SocketIoProcessor.java:485)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
