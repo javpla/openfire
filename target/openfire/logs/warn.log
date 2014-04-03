@@ -1,5 +1,7 @@
-2014.03.28 17:57:40 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2014.03.28 17:57:47 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2014.03.28 18:00:37 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
-2014.03.28 18:00:44 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
-2014.03.28 18:04:28 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<exi:streamEnd xmlns:exi="http://jabber.org/protocol/compress/exi"></exi:streamEnd>
+2014.04.03 00:31:03 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2014.04.03 00:31:10 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
+2014.04.03 00:34:00 org.jivesoftware.openfire.net.StanzaHandler - Paquete con etiqueta inesperada (no es message,iq,presence)<streamEnd xmlns:exi="http://jabber.org/protocol/compress/exi"></streamEnd>
+2014.04.03 00:34:42 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2014.04.03 00:34:51 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
+2014.04.03 00:40:22 org.jivesoftware.openfire.container.AdminConsolePlugin - Admin console: Using RSA certificates but they are not valid for the hosted domain
+2014.04.03 00:40:30 org.jivesoftware.openfire.http.HttpBindManager - HTTP binding: Using RSA certificates but they are not valid for the hosted domain
