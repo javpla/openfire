@@ -492,7 +492,7 @@ public abstract class StanzaHandler {
         else {
             // Check that the requested method is supported
             String method = doc.elementText("method");
-            if (!"zlib".equals(method) || !"exi".equals(method)) {
+            if (!"zlib".equals(method)) {
                 error = "<failure xmlns='http://jabber.org/protocol/compress'><unsupported-method/></failure>";
                 // Log a warning so that admins can track this case from the server side
                 Log.warn("Requested compression method is not supported: " + method +

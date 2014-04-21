@@ -160,5 +160,6 @@
 	<classpathentry kind="lib" path="src/plugins/exi/lib/exificient.jar"/>
 	<classpathentry kind="lib" path="src/plugins/exi/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xerces"/>
+	<classpathentry kind="lib" path="src/plugins/exi/lib/jxl.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

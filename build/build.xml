@@ -1319,7 +1319,7 @@
                         destdir="${plugin.dev.dest.dir}/@{plugin}/target/classes"
                         includeAntRuntime="no"
                         debug="on"
-                        source="1.7"
+                        source="1.6"
                         target="1.6"
                         >
                     <src path="@{pluginsrc}/@{plugin}/src/java"/>
